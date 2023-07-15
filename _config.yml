@@ -3,8 +3,8 @@ role: Mobile Engineer
 description: Ione Souza Junior - Mobile Engineer
 
 url: https://ionixjunior.dev
-paginate_path: "post/page:num/"
-permalink: post/:title/
+paginate_path: "page:num/"
+permalink: :title/
 
 # Header Option
 # header: large
