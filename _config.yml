@@ -14,7 +14,9 @@ sass:
 
 markdown: kramdown
 highlighter: rouge
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-target-blank
 paginate: 5
 
 navigation:
