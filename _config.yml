@@ -1,9 +1,10 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS
+title: Ione Souza Junior
+role: Mobile Engineer
+description: Ione Souza Junior - Mobile Engineer
 
-url: https://long-haul.netlify.app
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+url: https://ionixjunior.dev
+paginate_path: "page:num/"
+permalink: :title/
 
 # Header Option
 # header: large
@@ -17,21 +18,17 @@ plugins: [jekyll-paginate]
 paginate: 5
 
 navigation:
-    - title: Home
+    - title: Início
       url: /index.html
-    - title: About
+    - title: Sobre
       url: /about
-    - title: Contact
-      url: /contact
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
+    github: ionixjunior
+    twitter: ionixjunior
+    linkedin: ionixjunior
 
-google_analytics: "UA-58263416-1"
+google_analytics: "G-G7JHVXT0LV"
 
-disqus:
-    shortname: brianmaierjr
+# disqus:
+#     shortname: brianmaierjr
