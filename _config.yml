@@ -17,6 +17,7 @@ highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-target-blank
+  - jekyll-redirect-from
 paginate: 5
 
 navigation:
