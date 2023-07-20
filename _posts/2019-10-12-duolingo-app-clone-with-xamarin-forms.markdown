@@ -2,6 +2,8 @@
 layout: post
 title:  "Duolingo App clone com Xamarin.Forms"
 date:   2019-10-12
+redirect_from:
+    - /duolingo-app-clone-com-xamarin-forms
 ---
 
 <p class="intro"><span class="dropcap">F</span>ala galera! Tudo bem com vocês?

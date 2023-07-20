@@ -2,6 +2,8 @@
 layout: post
 title:  "Como customizar cor do UINavigationBar e UIAlertController no Xamarin.iOS"
 date:   2017-07-12
+redirect_from:
+    - /como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios
 ---
 
 <p class="intro"><span class="dropcap">F</span>ala galera, beleza? Já faz um tempo que queria escrever aqui no blog. Felizmente, hoje tive a oportunidade de compartilhar com vocês mais uma coisa que aprendi nos últimos dias. Este post fala sobre como customizar os estilos de alguns elementos de UI no Xamarin.iOS em apps desenvolvidos com Xamarin.Forms. Vamos lá!</p>
