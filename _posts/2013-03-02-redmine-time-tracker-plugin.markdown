@@ -18,7 +18,10 @@ O plugin pode ser encontrado [neste repositório][redmine-time-tracker] no GitHu
 
 Como pode ser visto abaixo, a única implementação realizada foi adicionar o campo “Activity” no formulário.
 
-<img src="/assets/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Imagem da tela do Redmine com o campo Activity adicionado."> 
+<figure>
+	<img src="/assets/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Imagem da tela do Redmine com o campo Activity adicionado."> 
+	<figcaption>Imagem da tela do Redmine com o campo Activity adicionado.</figcaption>
+</figure>
 
 Com isso, é possível obter relatórios de apontamento de horas de forma mais correta, pois cada apontamento estará vinculado ao seu correto tipo de atividade.
 

@@ -10,7 +10,10 @@ redirect_from:
 
 Ao liberar um aplicativo para testes, alguns usuários disseram “olha aqui o que consegui fazer…”. Então, eu fiz aquela cara de “o que vocês fizeram dessa vez…” e fui verificar. Identifiquei que o usuário havia clicado 2x em um determinado botão, fazendo com que abrisse 2x a página solicitada. Neste caso relatado, o usuário nem teve culpa ou maldade. Sem querer ( eu prefiro acreditar nisso! ), ele clicou rapidamente mais de uma vez no botão e o problema aconteceu. Vale mencionar que o app não travou, ele apenas abriu a mesma página mais de uma vez, algo similar a isso:
 
-<img src="/assets/img/duplo-clique-app-mobile.gif" alt="Exemplo de duplo clique sendo realizado em uma tela do app."> 
+<figure>
+	<img src="/assets/img/duplo-clique-app-mobile.gif" alt="Exemplo de duplo clique sendo realizado em uma tela do app."> 
+	<figcaption>Exemplo de duplo clique sendo realizado em uma tela do app.</figcaption>
+</figure>
 
 Com isso, lembrei que quando comecei a trabalhar com desenvolvimento mobile, eu já havia perguntando isso para um desenvolvedor que trabalhava na Xamarin e ele respondeu o seguinte:
 

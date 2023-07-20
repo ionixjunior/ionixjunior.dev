@@ -85,11 +85,17 @@ Ao abrir o MOBAC, vamos clicar no menu Atlas -> Convert Atlas Format e seleciona
 
 Em seguida, na aba Map Source, selecione o OpenStreetMap MapQuest (1), então, iremos visualizar o mapa (2). Com o mapa aberto, é possível controlar o zoom do mesmo (3) para visualizar as regiões do globo.
 
-<img src="/assets/img/mobac-tela1.jpg" alt="Tela do MOBAC">
+<figure>
+	<img src="/assets/img/mobac-tela1.jpg" alt="Tela do MOBAC."> 
+	<figcaption>Tela do MOBAC.</figcaption>
+</figure>
 
 No exemplo ilustrado, selecionei uma área da cidade de São Paulo para fins demonstrativos. Para baixar uma área do mapa, basta utilizar o cursor para selecionar a área desejada. Você irá visualizar a área selecionada hachurada em vermelho (4). Após selecionar uma área, você deve informar na aba Zoom Levels quais os zooms que deseja baixar os map tiles (5). Observe que, quanto maior a área selecionada e maior o zoom, mais imagens serão baixadas. Após selecionar os zooms desejados, clique em Add selection (6), ainda na aba Zoom Levels.
 
-<img src="/assets/img/mobac-tela2.jpg" alt="Tela do MOBAC">
+<figure>
+	<img src="/assets/img/mobac-tela2.jpg" alt="Tela do MOBAC."> 
+	<figcaption>Tela do MOBAC.</figcaption>
+</figure>
 
 Após isso, basta baixar o mapa clicando em Atlas -> Create Atlas. Agora aguarde, mas fique atento caso existirem mensagens de erro. Talvez algumas imagens estejam indisponíveis para download devido a sobrecarga que este processo causa nos servidores.
 
