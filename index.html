@@ -6,9 +6,10 @@ title: Ione Souza Junior
 <div class="home" id="home">
 	<h1 class="pageTitle">Posts</h1>
 	<div class="posts noList">
+		{% capture date_format %}{% t date_format %}{% endcapture %}
 		{%- for post in paginator.posts -%}
 		<article>
-			<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+			<span class="date">{{ post.date | date: date_format }}</span>
 			<h3>
 				<a class="post-link" href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a>
 			</h3>
