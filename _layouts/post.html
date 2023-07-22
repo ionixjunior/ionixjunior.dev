@@ -10,7 +10,8 @@ layout: default
   <header>
     {% capture date_format %}{% t date_format %}{% endcapture %}
     <h1 class="postTitle">{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: date_format }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+    {% assign minutes = page.content | number_of_words | divided_by:180 %}
+    <p class="meta">{{ page.date | date: date_format }} | <span class="time">{{ minutes }}</span> {% if minutes == 1 %}{% t minute_read_singular %}{% else %}{% t minute_read_plural %}{% endif %}</p>
   </header>
 
   {{ content }}

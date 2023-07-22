@@ -1,1 +1,3 @@
-date_format: "%d/%m/%Y" 
+date_format: "%d/%m/%Y"
+minute_read_singular: "minuto de leitura"
+minute_read_plural: "minutos de leitura"
