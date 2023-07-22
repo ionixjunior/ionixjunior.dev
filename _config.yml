@@ -18,6 +18,7 @@ plugins:
   - jekyll-paginate
   - jekyll-target-blank
   - jekyll-redirect-from
+  - jekyll-multiple-languages-plugin
 paginate: 5
 
 navigation:
