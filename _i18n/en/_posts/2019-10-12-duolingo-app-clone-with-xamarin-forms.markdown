@@ -1,28 +1,28 @@
 ---
 layout: post
-title:  "Duolingo App clone com Xamarin.Forms"
-date:   2019-10-12
+title: "Duolingo app clone with Xamarin.Forms"
+date: 2019-10-12
 redirect_from:
-    - /duolingo-app-clone-com-xamarin-forms
+  - /duolingo-app-clone-com-xamarin-forms
 ---
 
-<p class="intro"><span class="dropcap">F</span>ala galera! Tudo bem com vocês?
-Depois de um tempo, aqui estou escrevendo novamente! Mas hoje não vai ter nenhum artigo técnico, apenas vou compartilhar com vocês uma série de live streams que estou fazendo para desenvolver um clone do app do Duolingo com Xamarin.Forms. Se interessou? Então acompanha aí esse post para saber mais informações.</p>
+<p class="intro"><span class="dropcap">H</span>ey folks! How are you doing?
+After a while, here I am writing again! But today, there won't be any technical article. Instead, I'll share with you a series of live streams I'm doing to develop a Duolingo app clone with Xamarin.Forms. Do you interested? Then read on to find out more.</p>
 
-Por que iniciei estas lives? Bom, recentemente tive a oportunidade de participar de algumas lives na [Maratona Xamarin do Monkey Nights][maratona-xamarin] (live [desenvolvimento de telas com XAML][live-dev-telas]) e no [Canal dotNET][canal-dotnet] ([clone do app Yellow parte I][live-clone-I] e [parte II][live-clone-II]). Gostei tanto dessa experiência que resolvi fazer minhas próprias lives.
+Why did I start these live streams? Well, recently, I had the opportunity to participate in some live streams on the [Maratona Xamarin do Monkey Nights][maratona-xamarin] (live [developing screens with XAML][live-dev-telas]) and on [Canal dotNET][canal-dotnet] ([Yellow app clone Part I][live-clone-I] and [Part II][live-clone-II]). I enjoyed this experience so much that I decided to do my own live streams.
 
-O principal objetivo é desenvolver com **Xamarin.Forms**, um aplicativo conhecido para mostrar como desenvolver um app profissional e elegante, mostrando o potencial da plataforma.
+The main goal is to develop with **Xamarin.Forms**, a well-known application, to demonstrate how to build a professional and elegant app, showcasing the potential of the platform.
 
-Até a data de publicação deste post já existem sete partes destas lives. Estou fazendo transmissões simultâneas no [Twitch][twitch] e [Youtube][youtube] (escolha sua rede social favorita e me acompanha lá). Para quem gosta mais de Youtube, [criei uma playlist com as lives][playlist] do **Duolingo**, assim fica mais fácil acompanhar a evolução delas.
+As of the publication date of this post, there are already seven parts of these live streams. I'm doing simultaneous broadcasts on [Twitch][twitch] and [YouTube][youtube] (choose your favorite social network and follow me there). For those who prefer YouTube, [I created a playlist with the Duolingo live streams][playlist], making it easier to follow their progress.
 
 <figure>
-	<img src="/assets/img/live_do_duolingo_com_xamarin_forms-1024x594.png" alt="Parte VII da live do clone do Duolingo com Xamarin.Forms. Na imagem o resultado parcial obtido da implementação do Android e iOS e um print do app original para comparar."> 
-	<figcaption>Parte VII da live do clone do Duolingo com Xamarin.Forms. Na imagem o resultado parcial obtido da implementação do Android e iOS e um print do app original para comparar.</figcaption>
+	<img src="/assets/img/live_do_duolingo_com_xamarin_forms-1024x594.png" alt="Part VII of the Duolingo app clone live stream with Xamarin.Forms. The image shows the partial result obtained from the implementation on Android and iOS and a screenshot of the original app for comparison."> 
+	<figcaption>Part VII of the Duolingo app clone live stream with Xamarin.Forms. The image shows the partial result obtained from the implementation on Android and iOS and a screenshot of the original app for comparison.</figcaption>
 </figure>
 
-Estas lives são semanais, geralmente no sábado pela manhã, e duram cerca de duas horas cada. Que tal participar da próxima live ao vivo? Inscreva-se nos canais para saber quando a live irá começar ou siga-me no [Twitter][twitter]. Sempre posto lá quando a transmissão está começando.
+These live streams are held weekly, usually on Saturday mornings, and each lasts for about two hours. How about participating in the next live stream? Subscribe to the channels to be notified when the live stream starts, or follow me on [Twitter][twitter]. I always post there when the broadcast is about to begin.
 
-E aí, bora participar da próxima live? Te espero lá. Um abraço!
+So, are you ready to join the next live stream? I'll be waiting for you there. Cheers!
 
 [maratona-xamarin]: https://www.youtube.com/channel/UCFaQBRaoHrAxcGoeY8E5jvQ
 [live-dev-telas]:   https://youtu.be/fEgpcreVcyk

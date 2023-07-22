@@ -1,52 +1,52 @@
 ---
 layout: post
-title:  "Customizando SeparatorInset do UITableView do iOS – Xamarin.Forms"
-date:   2018-07-30
+title: "Customizing SeparatorInset of UITableView in iOS – Xamarin.Forms"
+date: 2018-07-30
 redirect_from:
-    - /customizando-separatorinset-do-uitableview-do-ios-xamarin-forms
+  - /customizando-separatorinset-do-uitableview-do-ios-xamarin-forms
 ---
 
-<p class="intro"><span class="dropcap">A</span>viso importante: este é um post destinado para pessoas desenvolvedoras perfeccionistas. Olá, pessoal! Hoje trouxe uma pequena dica de como customizar o SeparatorInset de um UITableView do iOS em uma aplicação com Xamarin.Forms. Mas afinal, o que é isso? Do que estamos falando? Vamos conferir neste post!</p>
+<p class="intro"><span class="dropcap">I</span>mportant notice: this post is intended for perfectionist developers. Hello, folks! Today, I bring a small tip on how to customize the SeparatorInset of a UITableView in iOS in a Xamarin.Forms application. But what is that? What are we talking about? Let's find out in this post!</p>
 
-Como mencionei no início do post, somente irá perceber este detalhe quem realmente é perfeccionista, então, vamos mostrar algumas coisas que acontecem no desenvolvimento **iOS** com **Xamarin.Forms** antes de chegar no assunto principal do post.
+As I mentioned at the beginning of the post, only those who are truly perfectionists will notice this detail. So, let's show a few things that happen in **iOS** development with **Xamarin.Forms** before we get to the main topic of the post.
 
-Falando no desenvolvimento de uma tela com **ListView**, podemos construir os itens do mesmo utilizando built-in cells – lembra deles? **TextCell**, **ImageCell**, **SwichCell**, **EntryCell** – ou então com um **ViewCell** contendo a customização que você deseja.
+Talking about developing a screen with a **ListView**, we can build its items using built-in cells – remember them? **TextCell**, **ImageCell**, **SwitchCell**, **EntryCell** – or with a **ViewCell** containing the customization you desire.
 
-Olhando para um **ListView** populado com um **TextCell** em seus itens, temos o seguinte resultado:
-
-<figure>
-	<img src="/assets/img/text-cell-577x1024.png" width="300" alt="ListView usando TextCell em cada item"> 
-	<figcaption>ListView usando TextCell em cada item</figcaption>
-</figure>
-
-Agora, vamos popular essa mesma lista utilizando um **ImageCell**, teremos o seguinte resultado:
+Looking at a **ListView** populated with a **TextCell** in its items, we get the following result:
 
 <figure>
-	<img src="/assets/img/image-cell-577x1024.png" width="300" alt="ListView usando ImageCell em cada item"> 
-	<figcaption>ListView usando ImageCell em cada item</figcaption>
+	<img src="/assets/img/text-cell-577x1024.png" width="300" alt="ListView using TextCell in each item"> 
+	<figcaption>ListView using TextCell in each item</figcaption>
 </figure>
 
-Comparando as duas imagens, podemos ver que a linha separadora de cada item tem uma margem definida à esquerda do elemento. Essa margem tem um valor padrão do **iOS** quando utilizado o **TextCell**, diferente do **ImageCell** que tem a margem em relação a imagem inserida.
-
-Provavelmente você já havia notado isso. Agora, vamos para a parte que talvez você nunca havia prestado atenção ou dado importância: Vamos customizar este mesmo **ListView** utilizando o **ViewCell** nos itens:
+Now, let's populate the same list using an **ImageCell**, and we get the following result:
 
 <figure>
-	<img src="/assets/img/view-cell-577x1024.png" width="300" alt="ListView usando ViewCell em cada item"> 
-	<figcaption>ListView usando ViewCell em cada item</figcaption>
+	<img src="/assets/img/image-cell-577x1024.png" width="300" alt="ListView using ImageCell in each item"> 
+	<figcaption>ListView using ImageCell in each item</figcaption>
 </figure>
 
-Veja o que aconteceu: A margem do separador dos itens agora não respeita a imagem inserida, está com o mesmo espaçamento do exemplo do **TextCell**. Confira abaixo a comparação dos exemplos mostrados:
+Comparing the two images, we can see that the separator line of each item has a left margin defined. This margin has a default value in **iOS** when using **TextCell**, unlike **ImageCell**, which has a margin related to the inserted image.
+
+You probably had noticed that already. Now, let's get to the part that maybe you never paid attention to or didn't give importance to: Let's customize the same **ListView** using **ViewCell** for its items:
 
 <figure>
-	<img src="/assets/img/comparacao-cells.png" width="600" alt="Comparação entre TextCell, ImageCell e ViewCell"> 
-	<figcaption>Comparação entre TextCell, ImageCell e ViewCell</figcaption>
+	<img src="/assets/img/view-cell-577x1024.png" width="300" alt="ListView using ViewCell in each item"> 
+	<figcaption>ListView using ViewCell in each item</figcaption>
 </figure>
 
-Isso acontece pois como a inserção dos controles no **ViewCell** é dinâmica, o **Xamarin.Forms** não consegue descobrir de forma automática qual deve ser o espaçamento da margem esquerda do separador da lista.
+Notice what happened: The margin of the item separators now doesn't respect the inserted image and has the same spacing as the **TextCell** example. Below is the comparison of the shown examples:
 
-Antes de falar em "como resolver isso", apenas gostaria de deixar claro que isso não é um problema ou erro. Na minha opinião, é apenas um capricho que, quem for muito detalhista, vai querer customizar para ficar com a aparência do comportamento padrão do **iOS**.
+<figure>
+	<img src="/assets/img/comparacao-cells.png" width="600" alt="Comparison between TextCell, ImageCell, and ViewCell"> 
+	<figcaption>Comparison between TextCell, ImageCell, and ViewCell</figcaption>
+</figure>
 
-Legal, mas como "resolver"? Simples, basta criar um render para o **ViewCell** e fazer a sobrecarga do **GetCell** para customizar manualmente o atributo **SeparatorInset** do **UITableView**, como pode ser visto abaixo:
+This happens because the insertion of controls in **ViewCell** is dynamic, and **Xamarin.Forms** cannot automatically determine what should be the left margin spacing of the list separator.
+
+Before discussing "how to solve this," I just want to make it clear that this is not a problem or error. In my opinion, it's just a detail that those who are very detail-oriented will want to customize to achieve the appearance of the standard **iOS** behavior.
+
+Alright, so how do we "solve" it? Simple, just create a renderer for the **ViewCell** and override the **GetCell** method to manually customize the **SeparatorInset** attribute of the **UITableView**, as seen below:
 
 {%- highlight cs -%}
 using Core.Controls;
@@ -70,11 +70,11 @@ namespace Core.iOS.Renderers
 }
 {%- endhighlight -%}
 
-Note que o valor inserido para a margem foi manual e dependerá do tamanho da imagem contida no item.
+Note that the value inserted for the margin was set manually and will depend on the size of the image contained in the item.
 
-Por tratar-se de um render do **ViewCell**, provavelmente, você não desejará configurar este valor para todos os **ViewCells** da aplicação, então, criei um **ViewCell** específico da lista e o utilizei no **ListView**.
+Since it's a **ViewCell** renderer, you probably won't want to configure this value for all the **ViewCells** in the application. So, I created a specific **ViewCell** for the list and used it in the **ListView**.
 
-Abaixo o custom control:
+Below is the custom control:
 
 {%- highlight cs -%}
 using Xamarin.Forms;
@@ -87,7 +87,7 @@ namespace Core.Controls
 }
 {%- endhighlight -%}
 
-Abaixo a tela:
+Below is the screen:
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -116,19 +116,19 @@ Abaixo a tela:
 </ContentPage>
 {%- endhighlight -%}
 
-Agora sim, o resultado final ficou mais agradável:
+Now, the final result looks much better:
 
 <figure>
-	<img src="/assets/img/custom-view-cell-577x1024.png" width="300" alt="ListView usando CustomViewCell em cada item"> 
-	<figcaption>ListView usando CustomViewCell em cada item</figcaption>
+	<img src="/assets/img/custom-view-cell-577x1024.png" width="300" alt="ListView using CustomViewCell in each item"> 
+	<figcaption>ListView using CustomViewCell in each item</figcaption>
 </figure>
 
-Pronto! Agora o **ViewCell** com imagem está com o espaçamento padrão da margem esquerda.
+There you go! Now the **ViewCell** with an image has the standard left margin spacing.
 
-O projeto de exemplo utilizado neste artigo está no [GitHub][projeto].
+The example project used in this article can be found on [GitHub][projeto].
 
-É isso galera, espero que tenham gostado da dica de hoje.
+That's it, folks! I hope you enjoyed today's tip.
 
-Um abraço e até a próxima!
+Best regards, and until next time!
 
 [projeto]: https://github.com/ionixjunior/XamarinPlayground/tree/master/XFViewCellRenderer

@@ -1,22 +1,22 @@
 ---
 layout: post
-title:  "Como customizar cor do UINavigationBar e UIAlertController no Xamarin.iOS"
-date:   2017-07-12
+title: "How to customize UINavigationBar and UIAlertController color in Xamarin.iOS"
+date: 2017-07-12
 redirect_from:
     - /como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios
 ---
 
-<p class="intro"><span class="dropcap">F</span>ala galera, beleza? Já faz um tempo que queria escrever aqui no blog. Felizmente, hoje tive a oportunidade de compartilhar com vocês mais uma coisa que aprendi nos últimos dias. Este post fala sobre como customizar os estilos de alguns elementos de UI no Xamarin.iOS em apps desenvolvidos com Xamarin.Forms. Vamos lá!</p>
+<p class="intro"><span class="dropcap">H</span>ey, folks! How's it going? It's been a while since I wanted to write here on the blog. Fortunately, today I have the opportunity to share with you something I learned in the last few days. This post talks about customizing the styles of some UI elements in Xamarin.iOS in apps developed with Xamarin.Forms. Let's get started!</p>
 
-Para exemplificar, criei um novo app com **Xamarin.Forms**. Nele, adicionei uma página de início com uma barra de navegação e inseri dois botões no corpo da página e mais um botão na barra de navegação, e obti este maravilhoso resultado compilando no **iOS**:
+To illustrate, I created a new app with **Xamarin.Forms**. In it, I added a home page with a navigation bar and placed two buttons in the body of the page and another button on the navigation bar. After compiling on **iOS**, I got this marvelous result:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar com cor padrão"> 
-	<figcaption>Navigation bar com cor padrão</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar with default color"> 
+	<figcaption>Navigation bar with default color</figcaption>
 </figure>
 
-Lindo né? Então experimente mostrar isso para alguém que espera que o aplicativo seja bonito. Provavelmente será um desastre! Qual será o próximo passo então? Acertou quem disse customizar as cores. Mas como fazer?
-A maneira mais simples e mais rápida é adicionar um style nos resources do nosso projeto compartilhado e customizar a cor de fundo da barra de navegação e a cor da letra da mesma. O arquivo que estamos falando é o **App.xaml**. Customizamos da seguinte maneira:
+Looks nice, right? Now try showing it to someone who expects the app to be beautiful. It will probably be a disaster! What's the next step then? Those who said "customize the colors" got it right. But how to do it?
+The simplest and fastest way is to add a style to the resources of our shared project and customize the background color of the navigation bar and its text color. The file we're talking about is **App.xaml**. We customize it like this:
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="utf-8"?>
@@ -35,15 +35,15 @@ A maneira mais simples e mais rápida é adicionar um style nos resources do nos
 </Application>
 {%- endhighlight -%}
 
-Como resultado, temos:
+The result is:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar com cor customizada"> 
-	<figcaption>Navigation bar com cor customizada</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar with custom color"> 
+	<figcaption>Navigation bar with custom color</figcaption>
 </figure>
 
-Nossa! Já sou designer! rsrs
-Porém, ainda existem aqueles botões que continuam com o estilo padrão do **iOS**, em azul. Vamos customiza-los também, apenas adicionando mais um estilo aos resources:
+Wow! Now I'm a designer! Just kidding 🙂
+However, there are still those buttons that remain with the default **iOS** style, in blue. Let's customize them too, by simply adding another style to the resources:
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="utf-8"?>
@@ -66,29 +66,29 @@ Porém, ainda existem aqueles botões que continuam com o estilo padrão do **iO
 </Application>
 {%- endhighlight -%}
 
-Agora sim, bem melhor...
+Now it looks much better...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Botões da tela com cor customizada"> 
-	<figcaption>Botões da tela com cor customizada</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Screen buttons with custom color"> 
+	<figcaption>Screen buttons with custom color</figcaption>
 </figure>
 
-Agora você sai animado com seu app "todo estilizado" e vai implementar um botão que deve fazer uma pergunta ao usuário. Então, após implementar vamos testar e...
+You feel proud of your "all styled" app and decide to implement a button that should ask the user a question. After implementing it, you test it and...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog exibido com botões na cor padrão"> 
-	<figcaption>Dialog exibido com botões na cor padrão</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog displayed with default colored buttons"> 
+	<figcaption>Dialog displayed with default colored buttons</figcaption>
 </figure>
 
-Olha o botão azul, padrão, novamente… Dai a pessoa fala:
+Oh, look at the blue button again... You say:
 
-<blockquote>...mas eu alterei a cor dos botões, eu juro...</blockquote>
+<blockquote>...but I changed the button's color, I swear...</blockquote>
 
-A pessoa programadora não está errada, porém, acontece que este botão pertence ao **UIAlertController** e está fora do alcance da estilização do **Button**, que realizamos lá nos styles do **Xamarin.Forms**. E agora? Calma, devemos fazer uma customização lá no **Xamarin.iOS**, assim teremos o resultado que desejamos. Legal, mas como faz?
+The programmer is not wrong, but the thing is, this button belongs to **UIAlertController** and is outside the scope of the **Button** styling we did in **Xamarin.Forms**. What now? Don't worry, we have to do some customization in **Xamarin.iOS** to get the desired result. Cool, but how do we do it?
 
-No **AppDelegate.css** iremos criar um novo método para definir nossos estilos personalizados, que chamei de **BuildStyles** neste projeto de exemplo. Como já havia definido as cores padrões nos resources lá do projeto compartilhado, carreguei estes resources e as cores definidas e converti o **Color** do **Xamarin.Forms** em **UIColor** do **iOS**, então apliquei o estilo a um determinado objeto do **UIKit**.
+In **AppDelegate.cs**, we will create a new method to define our custom styles, which I named **BuildStyles** in this example project. As I had already defined the default colors in the shared project's resources, I loaded these resources and the defined colors, then converted the **Xamarin.Forms** **Color** to **iOS** **UIColor**, and finally applied the style to a specific **UIKit** object.
 
-Como o componente que queremos estilizar é o **UIAlertController**, inicialmente procurei a propriedade **Appearance** neste objeto, mas sem sucesso. Só depois descobri que o objeto **UIView** seria o responsável por fazer essa estilização, não somente no **UIAlertController**, mas também em outros elementos de UI do **iOS**. No final, chamei o método para carregar os estilos no **FinishedLaunching** após a chamada do **Xamarin.Forms**, pois o método de estilos chama os resources do **Xamarin.Forms**, fique ligado nisso.
+As the component we want to style is **UIAlertController**, I initially looked for the **Appearance** property in this object but without success. I later found out that the **UIView** object would be responsible for styling not only **UIAlertController** but also other **iOS** UI elements. In the end, I called the style method in **FinishedLaunching** after calling **Xamarin.Forms** because the style method uses **Xamarin.Forms** resources, so keep that in mind.
 
 {%- highlight cs -%}
 using Foundation;
@@ -139,28 +139,28 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
 }
 {%- endhighlight -%}
 
-Agora sim a pessoa programadora vibra e diz:
+Now the programmer is excited and says:
 
-<blockquote>eu te disse que tinha feito...</blockquote>
-
-<figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog exibido com botões em cor customizada"> 
-	<figcaption>Dialog exibido com botões em cor customizada</figcaption>
-</figure>
-
-Por fim, faremos mais uma implementação, que consiste em exibir uma imagem utilizando o visualizador de arquivos padrão de cada plataforma. Neste exemplo, utilizaremos o **DependencyService** para invocar o **QuickLookPreview** do **iOS** para chamar uma imagem que está na pasta **Resources** da plataforma. Vamos ver como fica:
+<blockquote>I told you I did it...</blockquote>
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview com botões em cor customizada"> 
-	<figcaption>QuickLookPreview com botões em cor customizada</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog displayed with custom colored buttons"> 
+	<figcaption>Dialog displayed with custom colored buttons</figcaption>
 </figure>
 
-Ué, mas… Onde está a barra de navegação com aquela cor esperta que havíamos definido??
-Sim, definimos, porém, realizamos no objeto **NavigationPage** do **Xamarin.Forms**. Como utilizamos **DependencyService** para chamar uma view direto do **iOS**, as configurações de estilo permaneceram as padrões do **iOS**, por isso essa barra branca novamente.
+Finally, let's do one more implementation, which consists of displaying an image using the default file viewer of each platform. In this example, we will use **DependencyService** to invoke **iOS**'s **QuickLookPreview** to display an image that is in the **Resources** folder of the platform. Let's see how it looks:
 
-Pelo menos o botão **Done** e o de compartilhamento já estão verdes, mas isso é graças a definição do estilo no **UIView**, caso contrário eles estariam azuis.
+<figure>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview with custom colored buttons"> 
+	<figcaption>QuickLookPreview with custom colored buttons</figcaption>
+</figure>
 
-E agora, como resolver? Vamos voltar no **AppDelegate.cs** no método de estilo que criamos, e vamos adicionar o estilo ao **UINavigationBar**.
+Huh, but... Where's the navigation bar with that smart color we defined??
+Yes, we defined it, but we did it on the **NavigationPage** object of **Xamarin.Forms**. Since we used **DependencyService** to call a view directly from **iOS**, the style settings remained the default **iOS** ones, that's why we see that white bar again.
+
+At least the **Done** button and the sharing button are green, but that's thanks to the **UIView** styling; otherwise, they would be blue.
+
+Now, how do we solve this? Let's go back to **AppDelegate.cs** in the style method we created, and let's add the style to **UINavigationBar**.
 
 {%- highlight cs -%}
 private void BuildStyles()
@@ -199,21 +199,21 @@ private void BuildStyles()
 }
 {%- endhighlight -%}
 
-Primeiro, definimos a cor na barra de navegação (linha 28). Depois definimos a cor do texto dos botões presentes na navegação (linha 29). Por último, modificamos a cor do texto presente na barra de navegação (linhas 30, 31 e 32).
+First, we set the color in the navigation bar (line 28). Then we define the color of the buttons' text present in the navigation (line 29). Lastly, we modify the color of the text present in the navigation bar (lines 30, 31, and 32).
 
-Olha o que temos agora...
+Now, look what we have...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview com navigation bar em cor customizada"> 
-	<figcaption>QuickLookPreview com navigation bar em cor customizada</figcaption>
+	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview with navigation bar in custom color"> 
+	<figcaption>QuickLookPreview with navigation bar in custom color</figcaption>
 </figure>
 
-Pronto! Agora você aprendeu como realizar algumas customizações nos estilos dos elementos do **Xamarin.iOS**.
+There you go! Now you have learned how to perform some customizations on the styles of **Xamarin.iOS** elements.
 
-O projeto que utilizei como exemplo está no [Github, aqui][projeto].
+The project I used as an example is on [Github, here][projeto].
 
-O que achou? Deixe seu comentário com sua opinião, sugestão, crítica ou elogio.
+What do you think? Leave your comment with your opinion, suggestion, criticism, or compliment.
 
-Abraço e até a próxima!
+Cheers, and until next time!
 
 [projeto]: https://github.com/ionixjunior/XamarinPlayground/tree/master/XFiOSCustomStyle

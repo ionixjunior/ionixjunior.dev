@@ -1,25 +1,25 @@
 ---
 layout: post
-title:  "Série “como fazer”"
-date:   2017-01-08
+title: "Series 'how to do'"
+date: 2017-01-08
 redirect_from:
     - /serie-como-fazer
 ---
 
-<p class="intro"><span class="dropcap">Q</span>uando iniciamos o desenvolvimento de um software é normal nos inspirarmos em uma ideia já existente. Isso pode ser uma tela bem feita, uma experiência boa para o usuário, um case de sucesso.</p>
+<p class="intro"><span class="dropcap">W</span>hen we start developing software, it's normal to draw inspiration from an existing idea. It could be a well-designed screen, a great user experience, or a successful case study.</p>
 
-Acredito que isso seja uma característica em comum quando falamos de desenvolvimento desktop, web ou mobile, afinal de contas, quem nunca escutou isso:
+I believe this is a common characteristic when it comes to desktop, web, or mobile development. After all, who hasn't heard something like this:
 
-<blockquote>No sistema tal, quando você manda uma foto é possível recortar ela ali no próprio sistema ( crop )... Quero que no nosso sistema seja assim também, igual...</blockquote>
+<blockquote>In system XYZ, when you send a photo, it's possible to crop it right there in the system... I want the same feature in our system...</blockquote>
 
-<blockquote>Tá vendo esse site aqui, olha só, tá usando esses botões bonitos e modernos... Quero que no nosso site seja igual...</blockquote>
+<blockquote>Do you see this website here? Look, it's using these beautiful and modern buttons... I want the same for our website...</blockquote>
 
-<blockquote>Você viu ali no WhatsApp, quando a pessoa lê a mensagem aparece aqueles dois tracinhos azuis... Quero igual no nosso app...</blockquote>
+<blockquote>Did you notice in WhatsApp, when someone reads a message, those two blue ticks appear... I want the same in our app...</blockquote>
 
-Levando isso em consideração, estou planejando uma série de posts para falar sobre "como fazer" uma determinada feature de algum aplicativo conhecido. Como estou trabalhando com Xamarin.Forms à quase dois anos, os posts serão focados utilizando ele para aplicativos nas plataformas Android e iOS.
+Taking this into consideration, I'm planning a series of posts to talk about "how to do" a certain feature from a well-known application. Since I've been working with Xamarin.Forms for almost two years, the posts will focus on using it for Android and iOS applications.
 
-E porque isso??? Sei que muita gente utiliza Xamarin.Forms e que essas pessoas, ou gostam muito ou odeiam muito o framework. Eu faço parte daqueles que gostam do framework, mas isso é porque eu entendi que existem limitações nele, e que, se você souber conviver com elas e souber desenvolver alguns workarounds quando necessário, você vai se sair bem.
+And why is that??? I know many people use Xamarin.Forms, and these people either really love or really hate the framework. I'm one of those who like the framework, but that's because I understood that it has its limitations, and if you know how to deal with them and develop some workarounds when necessary, you'll do well.
 
-Então é isso pessoal, meus posts vão focar em mostrar "como fazer" algumas coisas que não são padrões no framework. Espero que vocês gostem.
+So, folks, my posts will focus on showing "how to do" some things that are not standard in the framework. I hope you like them.
 
-Em breve começo a publicar. Abraço!
+I'll start publishing soon. Hugs!

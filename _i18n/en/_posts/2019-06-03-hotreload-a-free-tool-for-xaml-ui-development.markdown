@@ -1,61 +1,61 @@
 ---
 layout: post
-title:  "HotReload: uma ferramenta gratuita para desenvolvimento de UI em XAML"
-date:   2019-06-03
+title: "HotReload: A free tool for XAML UI development"
+date: 2019-06-03
 redirect_from:
-    - /hotreload-uma-ferramenta-gratuita-para-desenvolvimento-de-ui-em-xaml
+  - /hotreload-uma-ferramenta-gratuita-para-desenvolvimento-de-ui-em-xaml
 ---
 
-<p class="intro"><span class="dropcap">H</span>á um tempo escrevi um post chamado Xamarin.Forms e UI – Qual ferramenta é mais produtiva?. Neste post, criei um comparativo entre as principais ferramentas existentes naquele momento para facilitar o desenvolvimento de apps com Xamarin.Forms usando XAML. Agora surgiu uma nova ferramenta chamada HotReload. Vamos dar uma conferida nela e compará-la junto com as demais ferramentas?</p>
+<p class="intro"><span class="dropcap">S</span>ome time ago, I wrote a post called Xamarin.Forms and UI - Which tool is more productive?. In that post, I created a comparison between the main existing tools at that time to facilitate app development with Xamarin.Forms using XAML. Now, a new tool called HotReload has emerged. Let's take a look at it and compare it with the other tools, shall we?</p>
 
-Aqui está o [link do post][post-primeiro-comparativo] que comentei acima. 
+Here's the [link to the post][post-primeiro-comparativo] I mentioned above.
 
-Acho que uma das coisas mais fantásticas no **HotReload** é o fato dele ser **open source**! Sim, você pode conferir o [projeto no Github][hot-reload] e quem sabe até auxiliar o pessoal lá.
+One of the most fantastic things about **HotReload** is that it's **open source**! Yes, you can check out the [project on GitHub][hot-reload] and maybe even contribute to it.
 
-Não vou realizar uma introdução detalhada sobre o **HotReload**, pois o [Mahmoud Ali][akamud] já fez. [Aqui está o review][review-akamud] que ele fez da ferramenta. Então, você pode conferir isso por lá também. O foco aqui é o comparativo com as demais ferramentas que já havia avaliado no outro post. Bora lá!
+I won't provide a detailed introduction to **HotReload**, as [Mahmoud Ali][akamud] has already done it. [Here's the review][review-akamud] he made of the tool. So, you can check that out as well. The focus here is on the comparison with the other tools I evaluated in the previous post. Let's get started!
 
-### Custo
-Essa ferramenta é gratuita! Sim, agora podemos contar com uma solução gratuita para o desenvolvimento de interfaces usando **XAML**.
+### Cost
+This tool is free! Yes, now we have a free solution for UI development using **XAML**.
 
-### Suporte a custom renders, effects, componente de terceiros, native views, ContentViews, animações e design time data
-Em todos esses estes quesitos o **HotReload** funcionou perfeitamente. Nenhum problema considerável encontrado nesses testes.
+### Support for Custom Renders, Effects, Third-Party Components, Native Views, ContentViews, Animations, and Design Time Data
+In all these aspects, **HotReload** worked perfectly. No significant issues were found in these tests.
 
-### Suporte a ResourceDictionary
-A ferramenta dá suporte ao **ResourceDictionary**, mas com uma ressalva. Se a tela que estamos alterando possuir um **ResourceDictionary** e realizamos alterações nele, nenhum problema ocorre. Entretanto, caso realizarmos alterações no **ResourceDictionary** global da aplicação, essas alterações não são imediatamente propagadas para a tela, podendo até fazer com que o app trave. O exemplo que fiz foi bem simples, com o reload em ação, adicionei um novo estilo ao **ResourceDictionary** e tentei referenciá-lo na página. Daí a tela ficou em branco e nada mais funcionou. Mas calma, já tem até um [issue][issue-64] aberto para isso e logo deverá ser resolvido.
+### Support for ResourceDictionary
+The tool supports **ResourceDictionary**, but with one caveat. If the screen we are editing has a **ResourceDictionary**, and we make changes to it, no problems occur. However, if we make changes to the global **ResourceDictionary** of the application, these changes are not immediately propagated to the screen and may even cause the app to crash. The example I tried was simple; I added a new style to the **ResourceDictionary** and tried to reference it on the page. Then the screen went blank, and nothing worked anymore. But don't worry; there's already an [issue][issue-64] opened for this, and it will be resolved soon.
 
-EXTRA EXTRA: Informo que o problema citado acima já foi resolvido! 🙂 No momento que eu estava escrevendo este artigo o problema existia, ele recém foi corrigido. A solução do problema chegou com a versão 1.3.0 da biblioteca, então, atualize o pacote NuGet.
+EXTRA EXTRA: I inform you that the problem mentioned above has already been fixed! 🙂 At the time I was writing this article, the problem existed, but it has been recently resolved. The solution to the problem came with version 1.3.0 of the library, so make sure to update the NuGet package.
 
-### Suporte a múltiplos dispositivos simultaneamente
-Sim, com o **HotReload** também temos suporte ao preview em múltiplos dispositivos simultaneamente. No entanto, algumas pequenas configurações devem ser realizadas para que tudo isso funcione conforme esperado. Novamente, o [Mahmoud Ali][akamud] já fez um post super detalhado explicando tudo isso e, inclusive, até criou um script para facilitar toda essa configuração.
+### Support for Multiple Devices Simultaneously
+Yes, with **HotReload**, we also have support for previews on multiple devices simultaneously. However, some small configurations need to be made for everything to work as expected. Once again, [Mahmoud Ali][akamud] wrote a super-detailed post explaining all of this, and he even created a script to facilitate all these configurations.
 
-**Update: 22/06/19**: Recentemente foi lançada uma atualização da extensão que faz a descoberta automática dos IPs dos devices. Fantástico! Isso significa menos configuração para iniciar nossos projetos 😉
+**Update: 22/06/19**: A recent update of the extension has added automatic discovery of device IPs. Fantastic! This means less configuration to start our projects 😉
 
-### Notificações de erros
-O **HotReload** mostra sim as notificações dos erros, mas você precisa estar com o app executando no emulador / simulador / device enquanto realiza as alterações no **XAML** 🙂 Eu não havia percebido isso pois estava testando-o sem executar o app nos devices, por isso não visualizava os erros quando eles aconteciam.
+### Error Notifications
+**HotReload** does show error notifications, but you need to have the app running on the emulator/simulator/device while making changes to the **XAML** 🙂 I didn't notice this because I was testing it without running the app on devices, so I didn't see the errors when they occurred.
 
-### Fatos interessantes
-Durante os testes estava realizando alterações em uma página e tudo estava acontecendo conforme o esperado. Alterei a cor de fundo de uma tela e a cor mudou, no entanto, quando removi a cor, a mesma não foi restaurada para a padrão. Um tanto estranho, mas nada muito grave. É algo contornável e até pode ter relação com o problema citado acima no issue que referenciei. Em breve, isso deve ser superado e poderemos contar com uma ferramenta ainda melhor.
+### Interesting Facts
+During the tests, I made changes to a page, and everything happened as expected. I changed the background color of a screen, and the color changed. However, when I removed the color, it didn't revert to the default. A bit strange, but not a serious issue. It's something that can be worked around and might be related to the problem mentioned in the issue I referenced. Soon, this should be overcome, and we can have an even better tool.
 
-### Considerações e tabela comparativa
-Finalmente a comunidade pode contar com uma solução boa e gratuita. Particularmente falando, ainda gosto muito do **LiveXAML** por ele ser mais prático (não necessita de quaisquer workarounds), mas estou testando o **HotReload** e confesso que estou muito impressionado com tudo e bastante motivado, pois por ser um projeto **open source**, a tendência é acontecer uma evolução muito rápida desta ferramenta.
+### Considerations and Comparative Table
+Finally, the community can rely on a good and free solution. Personally, I still like **LiveXAML** a lot because it's more practical (no need for workarounds), but I'm testing **HotReload**, and I confess I'm very impressed with everything and very motivated because it's an **open-source** project, which means this tool is likely to evolve rapidly.
 
-Abaixo a tabela comparativa das ferramentas de **UI** (agora com o **HotReload** incluído):
+Below is the comparative table of UI tools (now including **HotReload**):
 
-| Características                            | HotReload       | LiveXAML        | Gorilla Player       | XAML Previewer     | Xamarin Live Player |
-| ------------------------------------------ | --------------- | --------------- | -------------------- | ------------------ | ------------------- |
-| Preço                                      | Gratuito        | $240 ou $24/mês | Gratuito             | Gratuito           | Gratuito            |
-| Suporte à custom renderers                 | ✅              | ✅              | ✅ (com Gorilla SDK) | ⚠️ (somente no iOS) | ❌                  |
-| Suporte à effects                          | ✅              | ✅              | ✅ (com Gorilla SDK) | ⚠️ (somente no iOS) | ❌                  |
-| Suporte à componentes de terceiros         | ✅              | ✅              | ✅ (com Gorilla SDK) | ✅                 | -                   |
-| Suporte à native views                     | ✅              | ✅              | ❌                   | ✅                 | -                   |
-| Suporte à ContentViews                     | ✅              | ✅              | ✅                   | ✅                 | -                   |
-| Suporte à ResourceDictionary               | ✅              | ✅              | ✅                   | ✅                 | -                   |
-| Suporte à multiplos devices ao mesmo tempo | ✅              | ✅              | ✅                   | ❌                 | ❌                  |
-| Notificação de erros                       | ✅              | ✅              | ✅                   | ✅                 | ✅                  |
+| Features                                    | HotReload       | LiveXAML          | Gorilla Player       | XAML Previewer     | Xamarin Live Player |
+| ------------------------------------------- | --------------- | ----------------- | -------------------- | ------------------ | ------------------- |
+| Price                                       | Free            | $240 or $24/month | Free                 | Free               | Free                |
+| Support for custom renderers                | ✅              | ✅                | ✅ (with Gorilla SDK) | ⚠️ (only on iOS)    | ❌                  |
+| Support for effects                         | ✅              | ✅                | ✅ (with Gorilla SDK) | ⚠️ (only on iOS)    | ❌                  |
+| Support for third-party components          | ✅              | ✅                | ✅ (with Gorilla SDK) | ✅                 | -                   |
+| Support for native views                    | ✅              | ✅                | ❌                    | ✅                 | -                   |
+| Support for ContentViews                    | ✅              | ✅                | ✅                    | ✅                 | -                   |
+| Support for ResourceDictionary              | ✅              | ✅                | ✅                    | ✅                 | -                   |
+| Support for multiple devices simultaneously | ✅              | ✅                | ✅                    | ❌                 | ❌                  |
+| Error notifications                         | ✅              | ✅                | ✅                    | ✅                 | ✅                  |
 
-Por hoje é isso. Valeu, galera. Um abraço!
+That's all for today, folks. Thanks, and have a great day!
 
-[post-primeiro-comparativo]: /xamarin-forms-and-ui-which-tool-is-more-productive
+[post-primeiro-comparativo]: /{{ site.lang }}/xamarin-forms-and-ui-which-tool-is-more-productive
 [hot-reload]:                https://github.com/AndreiMisiukevich/HotReload
 [akamud]:                    https://github.com/akamud
 [review-akamud]:             http://high5devs.com/2019/04/hotreload-desenvolvendo-telas-mais-rapido-para-xamarin-forms-de-maneira-gratuita/

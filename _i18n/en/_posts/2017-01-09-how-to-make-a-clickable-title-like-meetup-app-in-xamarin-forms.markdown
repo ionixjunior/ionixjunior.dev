@@ -1,28 +1,27 @@
 ---
 layout: post
-title:  "Como fazer o título clicável similar ao app Meetup no Xamarin.Forms"
-date:   2017-01-09
+title: "How to create a clickable title similar to the Meetup app in Xamarin.Forms"
+date: 2017-01-09
 redirect_from:
     - /como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarin-forms
 ---
 
-<p class="intro"><span class="dropcap">C</span>onhece o app Meetup? Meetup é uma rede social que tem o objetivo de facilitar reuniões em grupo offline. E por que estou falando disso? Apenas para dar uma introdução no assunto. O que quero falar hoje é sobre como fazer o título clicável do app Meetup para iOS em um app desenvolvido com Xamarin.Forms.</p>
+<p class="intro"><span class="dropcap">D</span>o you know the Meetup app? Meetup is a social network designed to facilitate offline group meetings. Why am I talking about it? Just to introduce the subject. What I want to talk about today is how to create a clickable title like the Meetup app for iOS in an app developed with Xamarin.Forms.</p>
 
-Uma das coisas que me chamou atenção [nesse app][meetup] é a tela inicial, onde mostra o nome da cidade que você configurou, e também uma imagem de uma seta ao lado. Na verdade, esses dois elementos são um botão, que te permite clicar e ir para uma outra tela, onde você poderá redefinir a cidade selecionada.
-
+One of the things that caught my attention in [this app][meetup] is the home screen, which displays the name of the configured city and an arrow icon next to it. In reality, these two elements form a button that allows you to click and go to another screen, where you can reset the selected city.
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Página inicial do Meetup"> 
-    <figcaption>Página inicial do Meetup</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Meetup home page"> 
+    <figcaption>Meetup home page</figcaption>
 </figure>
 
-Achei essa abordagem bem bacana e inteligente, pois no geral, não temos muito espaço na tela para encher-la de botões, nem fica muito agradável para o usuário. Então, quanto mais otimizarmos o espaço livre, melhor.
+I found this approach quite clever and intelligent since, in general, we don't have much screen space to fill with buttons, and it's not very pleasing to the user. So, the more we optimize the available space, the better.
 
-Por isso pensei, como fazer o título do app Meetup em um aplicativo utilizando Xamarin.Forms? Não foi difícil e consegui fazer a implementação dele para o iOS. Futuramente irei implementar também para Android e atualizo o post aqui pra vocês, beleza?
+This made me think: how can we achieve the Meetup app's title behavior in a Xamarin.Forms application? It wasn't difficult, and I managed to implement it for iOS. I'll also implement it for Android in the future and update this post, alright?
 
-Então vamos prosseguir?
+Shall we proceed?
 
-Para começar, criei uma **ContentPage** para a página inicial e especifiquei os dois atributos configuráveis para texto e ícone. Sem a customização do render, você não verá texto e imagem lado a lado, somente um deles aparecerá.
+To start, I created a **ContentPage** for the home page and specified the two configurable attributes for text and icon. Without the custom renderer, you won't see both the text and the image side by side; only one of them will appear.
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="utf-8"?>
@@ -43,11 +42,11 @@ Para começar, criei uma **ContentPage** para a página inicial e especifiquei o
 </ContentPage>
 {%- endhighlight -%}
 
-Agora, para iniciar as customiazações, iniciei a implementação do custom render.
+Now, to start the customizations, I began implementing the custom renderer.
 
-Minha tentativa inicial foi criar um render para o **NavigationRenderer**, mas não obti sucesso. Depois de algumas pesquisas, achei uma implementação parecida com o que eu queria, que utilizava o **PageRenderer**.
+My initial attempt was to create a renderer for the **NavigationRenderer**, but it didn't work. After some research, I found a similar implementation that used the **PageRenderer**.
 
-Dessa forma, criei um custom render para o **PageRenderer**, fazendo override do método **WillMoveToParentViewController**.
+Thus, I created a custom renderer for the **PageRenderer**, overriding the **WillMoveToParentViewController** method.
 
 {%- highlight cs -%}
 using Core.iOS.Renderers;
@@ -68,11 +67,11 @@ namespace Core.iOS.Renderers
 }
 {%- endhighlight -%}
 
-Com isso, já é possível começar a modificar o render da **ContentPage** do nosso app feito utilizando Xamarin.Forms. Então, vamos programar neste método...
+With this, we can start modifying the renderer of our Xamarin.Forms **ContentPage**. So, let's code in this method...
 
-Nesse render, a lógica será: Carregar a instância da ContentPage que criamos lá com o **XAML**; Ler os seus atributos **Title** e **Icon**; Criar um novo componente visual que será um botão, contendo o título e o ícone configurados. No final, vamos atualizar o título da **NavigationPage** com o novo elemento criado. Simples assim!
+In this renderer, the logic is as follows: Load the instance of the **ContentPage** created in **XAML**; Read its **Title** and **Icon** attributes; Create a new visual component that will be a button containing the configured title and icon. Finally, update the **NavigationPage** title with the newly created element. Simple as that!
 
-Para carregar a instância da **ContentPage**, vamos utilizar o atributo **Element**, que está definido na classe **PageRenderer**. Através dele iremos conseguir acessar as propriedades **Title** e **Icon** que definimos no **XAML**.
+To load the instance of the **ContentPage**, we'll use the **Element** attribute, which is defined in the **PageRenderer** class. Through it, we can access the **Title** and **Icon** properties defined in the **XAML**.
 
 {%- highlight cs -%}
 if (Element == null)
@@ -81,7 +80,7 @@ if (Element == null)
 var page = Element as ContentPage;
 {%- endhighlight -%}
 
-Agora, vamos criar um botão utilizando o **UIButton**, adicionar o título e o ícone localizado na **ContentPage**, e ainda, definir a cor do texto que irá aparecer. Vamos também adicionar esse novo objeto para ser renderizado no lugar do render padrão, utilizando a referência do **UIViewController** para acessar o **NavigationItem**.
+Now, let's create a button using **UIButton**, add the title and icon located in the **ContentPage**, and set the text color. We'll also add this new object to be rendered in place of the default render, using the reference of the **UIViewController** to access the **NavigationItem**.
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -92,14 +91,14 @@ buttonTitle.SetImage(new UIImage(page.Icon), UIControlState.Normal);
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Pronto, vamos ver o que dá isso:
+Let's see how it looks:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="Navigation bar do app com botão clicável"> 
-    <figcaption>Navigation bar do app com botão clicável</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="App's navigation bar with a clickable button"> 
+    <figcaption>App's navigation bar with a clickable button</figcaption>
 </figure>
 
-Opa, parece que algo está errado, pois não apareceu o ícone. Mas não está errado, apenas não chamamos o método responsável por organizar o conteúdo na tela. Então, vamos chamar o **SizeToFit** no botão:
+Oops, something seems wrong; the icon didn't appear. But it's not wrong; we just forgot to call the method responsible for arranging the content on the screen. So, let's call **SizeToFit** on the button:
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -111,14 +110,14 @@ buttonTitle.SizeToFit();
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Vamos conferir:
+Let's check it out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="Navigation bar do app com botão clicável e ícone aparecendo"> 
-    <figcaption>Navigation bar do app com botão clicável e ícone aparecendo</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="App's navigation bar with a clickable button and the icon displayed"> 
+    <figcaption>App's navigation bar with a clickable button and the icon displayed</figcaption>
 </figure>
 
-Melhorou! Mas a imagem está do lado esquerdo, não do lado direito. Dá pra inverter. Para isso, vamos especificar o atributo **Transform** do **UIButton**.
+Much better! But the image is on the left, not the right. We can invert it. To do this, let's specify the **Transform** attribute of the **UIButton**.
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -131,14 +130,14 @@ buttonTitle.SizeToFit();
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Olha só como fica:
+Look how it turns out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos aparecendo invertidos"> 
-    <figcaption>Navigation bar do app com botão clicável e ícone e textos aparecendo invertidos</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="App's navigation bar with a clickable button and inverted text and icon"> 
+    <figcaption>App's navigation bar with a clickable button and inverted text and icon</figcaption>
 </figure>
 
-Ué, estou lendo árabe?? Não, é que invertemos a posição do botão. É como inverter horizontalmente em 180 graus. E agora, como resolver? Podemos aplicar também a propriedade **Transform** no título e no ícone, e aí vai dar o resultado que esperamos. Note que neste ícone, nem precisa aplicar a propriedade, mas se você tiver uma imagem que não possui os lados iguais, neste caso, vai precisar aplicar.
+Hey, am I reading Arabic?? No, we just inverted the button's position. It's like flipping it horizontally by 180 degrees. So how do we fix this? We can apply the **Transform** property to both the title and the icon, and then we'll get the expected result. Note that for this icon, you don't even need to apply the property, but if you have an image that doesn't have equal sides, in that case, you'll need to apply it.
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -153,14 +152,14 @@ buttonTitle.SizeToFit();
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Olha como ficou:
+See how it looks now:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos corrigidos"> 
-    <figcaption>Navigation bar do app com botão clicável e ícone e textos corrigidos</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="App's navigation bar with a clickable button and corrected text and icon"> 
+    <figcaption>App's navigation bar with a clickable button and corrected text and icon</figcaption>
 </figure>
 
-Bem melhor! Ficou mais parecido, mas ainda faltam algumas coisas. Note que o título e o ícone estão muito próximos. Podemos fazer uma "gambiarrazinha", apenas colocando alguns espaços no fim do título, ou então, utilizar a propriedade **ImageEdgeInsets** para configurar o espaçamento, o que é o mais indicado:
+Much better! It's more similar now, but there are still some things missing. Note that the title and icon are very close together. We can apply a little "hack" by adding some spaces at the end of the title, or we can use the **ImageEdgeInsets** property to adjust the spacing, which is more recommended:
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -176,14 +175,14 @@ buttonTitle.SizeToFit();
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Conferindo:
+Let's check it out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e espaçamento entre texto e ícone"> 
-    <figcaption>Navigation bar do app com botão clicável e espaçamento entre texto e ícone</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="App's navigation bar with a clickable button and spacing between text and icon"> 
+    <figcaption>App's navigation bar with a clickable button and spacing between text and icon</figcaption>
 </figure>
 
-Estamos quase lá! O que falta? Algumas perfumarias… Se você conferir no app do Meetup, tem mais duas características naquele título. Uma é o título em negrito e a outra é quando, ao clicarmos nele o mesmo fica em tom de cinza. Podemos fazer isso facilmente ajustando a fonte e definindo a cor cinza quando o estado do botão estiver clicado.
+We're almost there! What's missing? A few finishing touches... If you check the Meetup app, there are two more characteristics in that title. One is that the title appears in bold, and the other is that when we click on it, it turns gray. We can easily achieve this by adjusting the font and setting the color to gray when the button's state is highlighted.
 
 {%- highlight cs -%}
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
@@ -201,22 +200,22 @@ buttonTitle.SizeToFit();
 parent.NavigationItem.TitleView = buttonTitle;
 {%- endhighlight -%}
 
-Vamos conferir:
+Let's see the result:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e fonte customizada"> 
-    <figcaption>Navigation bar do app com botão clicável e fonte customizada</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="App's navigation bar with a clickable button and custom font"> 
+    <figcaption>App's navigation bar with a clickable button and custom font</figcaption>
 </figure>
 
-Olha aí, não é que deu certo!
+There you go! It worked!
 
-E agora, o que falta? Falta uma característica, a principal, na minha opinião: esse botão precisa ser clicável para podermos direcionar o app para outra página. Para isso, podemos implementar o evento **TouchUpInside** do **UIButton**.
+And now, what's left? One important feature, in my opinion: this button needs to be clickable so we can direct the app to another page. To achieve this, we can implement the **TouchUpInside** event of the **UIButton**.
 
-Mas agora as coisas começam a ficar um pouco mais complicadas. Pense comigo: até o momento, utilizamos o título e o ícone, atributos esses que já existem na **ContentPage**. Mas nela não existe nenhum atributo onde possamos vincular uma ação ou evento para poder realizar uma operação.
+However, things are starting to get a bit more complicated now. Think about it: until now, we used the title and icon, attributes that already exist in the **ContentPage**. However, there's no attribute in it where we can link an action or event to perform an operation.
 
-Acredito que o ideal seria estendermos a **ContentPage** e implementarmos um comando para que possamos efetuar a operação no custom render. Aí, quando clicarmos no botão, vamos capturar o evento no **TouchUpInside** e iremos chamar o comando, que estará setado na nossa **ContentPage**. Vamos tentar?
+I think it would be best to extend the **ContentPage** and implement a command so that we can perform the operation in the custom renderer. Then, when we click on the button, we capture the event in **TouchUpInside** and call the command set in our **ContentPage**. Shall we try it?
 
-Primeiro, vamos estender a **ContentPage**, criei uma classe chamada **CustomContentPage**. Nela, implementei uma bindable property chamada **Command**.
+First, let's extend the **ContentPage**; I created a class called **CustomContentPage**. In it, I implemented a bindable property called **Command**.
 
 {%- highlight cs -%}
 using System.Windows.Input;
@@ -243,7 +242,7 @@ namespace Core.Controls
 }
 {%- endhighlight -%}
 
-No code behind da página, precisei alterar a herança da **ContentPage** para a nova página criada. Você também terá que fazer isso.
+In the page's code-behind, I needed to change the inheritance from **ContentPage** to the new page we created. You'll also have to do this.
 
 {%- highlight cs -%}
 using Core.Controls;
@@ -262,7 +261,7 @@ namespace Core.Views
 }
 {%- endhighlight -%}
 
-O **XAML** também precisou sofrer alterações, pois agora a página herda de **CustomContentPage**, portanto, precisamos alterar essa referência lá também. Notem que também foi preciso declarar o namespace onde a página que criei está localizada.
+The **XAML** also needed changes since the page now inherits from **CustomContentPage**, so we need to change that reference there as well. Notice that we also had to declare the namespace where the page I created is located.
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="utf-8"?>
@@ -284,7 +283,7 @@ O **XAML** também precisou sofrer alterações, pois agora a página herda de *
 </controls:CustomContentPage>
 {%- endhighlight -%}
 
-Agora, podemos adicionar um comando na propriedade **Command** que tem a **CustomContentPage**.
+Now, we can add a command to the **Command** property of the **CustomContentPage**.
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="utf-8"?>
@@ -307,9 +306,9 @@ Agora, podemos adicionar um comando na propriedade **Command** que tem a **Custo
 </controls:CustomContentPage>
 {%- endhighlight -%}
 
-OMG! Mas que loucura! Calma que ainda piora. Agora vamos voltar lá para nosso custom render e fazer algumas customizações.
+OMG! This is getting crazy! Don't worry; it gets worse. Now let's go back to our custom renderer and make some customizations.
 
-Primeiro, iremos alterar a declaração do **ExportRenderer** para realizarmos o vínculo com a **CustomContentPage**, não mais com a **ContentPage**.
+First, we'll change the **ExportRenderer** declaration to connect it with **CustomContentPage**, not **ContentPage**.
 
 {%- highlight cs -%}
 [assembly: ExportRenderer(typeof(CustomContentPage), typeof(CustomContentPageRenderer))]
@@ -322,7 +321,7 @@ namespace Core.iOS.Renderers
 }
 {%- endhighlight -%}
 
-Depois vamos customizar a implementação do **WillMoveToParentViewController**, fazendo o cast do **Element** para a classe **CustomContentPage** e implementando o evento **TouchUpInside**.
+Then, let's customize the **WillMoveToParentViewController** implementation, casting the **Element** to the **CustomContentPage** class and implementing the **TouchUpInside** event.
 
 {%- highlight cs -%}
 public override void WillMoveToParentViewController(UIViewController parent)
@@ -358,20 +357,20 @@ public override void WillMoveToParentViewController(UIViewController parent)
 }
 {%- endhighlight -%}
 
-Pronto! E qual é o resultado disso?
+Done! And what's the result of this?
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Exemplo da tela implementada"> 
-    <figcaption>Exemplo da tela implementada</figcaption>
+    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Example of the implemented screen"> 
+    <figcaption>Example of the implemented screen</figcaption>
 </figure>
 
-Olha aí.. Não é que deu certo mesmo!!
+Look at that... It actually worked!!
 
-Esse post ficou muito grande, talvez seja melhor eu publicar as customizações do Android em um novo post. Ainda não fiz a implementação, talvez demore um pouco. Assim que tiver novidades comunico a vocês.
+This post became very long; maybe it's better to publish the Android customizations in a new post. I haven't implemented it yet; it might take a while. As soon as I have updates, I'll let you know.
 
-O código de exemplo utilizado no post está no [GitHub][projeto].
+The sample code used in the post is on [GitHub][projeto].
 
-Abraço, aguardo feedback. Críticas e sugestões são sempre bem vindas ( e dinheiro na minha conta também, brincadeirinha rsrs ).
+Hugs! I look forward to your feedback. Critiques and suggestions are always welcome (and money in my account too, just kidding haha).
 
 [projeto]: https://github.com/ionixjunior/XamarinPlayground/tree/master/CustomTitle
 [meetup]:  https://www.meetup.com
