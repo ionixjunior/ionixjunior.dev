@@ -1,28 +1,28 @@
 ---
 layout: post
-title:  "Aplicativo com mapa offline usando Ionic Framework"
-date:   2016-01-18
+title: "Offline map app using Ionic Framework"
+date: 2016-01-18
 redirect_from:
-    - /aplicativo-com-mapa-offline-usando-ionic-framework
+  - /aplicativo-com-mapa-offline-usando-ionic-framework
 ---
 
-<p class="intro"><span class="dropcap">V</span>amos lá, esse post foi inspirado em uma dúvida postada no Slack do Ionic Brazil. A pergunta foi mais ou menos assim: “Alguém já fez algo relacionado a mapas, como baixar o mapa pro celular do cara, sem precisar ficar carregando o mapa online?”</p>
+<p class="intro"><span class="dropcap">L</span>et's go! This post was inspired by a question posted in the Ionic Brazil Slack. The question was something like: "Has anyone done anything related to maps, like downloading the map to the user's phone, without needing to load it online?"</p>
 
-Tendo em vista que isso também pode ser dúvida de outros desenvolvedores, aqui vai um breve post que tem como objetivo deixar as coisas um pouco mais claras em relação ao assunto.
+Considering that this might be a doubt for other developers as well, here's a brief post aimed to clarify things on this subject.
 
-O projeto exemplo pode ser baixado no [Github][projeto].
+The example project can be downloaded from [GitHub][project].
 
-Neste projeto exemplo, foi utilizado o template maps do wizard do Ionic Framework. Então, a partir de agora vejamos as alterações que realizei no projeto.
+In this sample project, the maps template from the Ionic Framework wizard was used. Now, let's see the changes I made to the project.
 
-### Alterando mapa para utilizar engine Leaflet
+### Switching the Map to Use Leaflet Engine
 
-No projeto existe uma diretiva personalizada chamada map, existente no arquivo directives.js. O que vamos fazer é customizá-la para carregar os mapas utilizando [Leaflet][leaflet] ao invés do Google Maps.
+In the project, there is a custom directive called `map`, located in the `directives.js` file. What we'll do is customize it to load the maps using [Leaflet][leaflet] instead of Google Maps.
 
-Então, vamos adicionar o Leaflet nas dependências do projeto. Poderíamos simplesmente utilizar bower install leaflet –save-dev mas isso iria trazer algumas dependências desnecessárias do AngularJS, pois o Ionic Framework já incorpora todas elas, então, vamos adicionar o Leaflet manualmente no projeto. Na página de [download do Leaflet][leaflet-download] você encontra o pacote para baixar. Neste projeto de exemplo, utilizei a última versão estável, 0.7.7.
+First, we need to add Leaflet to the project dependencies. We could simply use `bower install leaflet --save-dev`, but that would bring some unnecessary AngularJS dependencies, as the Ionic Framework already includes all of them. So, let's add Leaflet manually to the project. You can download the package from the [Leaflet download page][leaflet-download]. In this example project, I used the latest stable version, 0.7.7.
 
-Após baixar, você pode mover o conteúdo para a pasta www/lib do projeto e em seguida referenciar os arquivos javascript e CSS da biblioteca no arquivo index.html do aplicativo.
+After downloading, move the contents to the `www/lib` folder of the project, and then reference the JavaScript and CSS files of the library in the `index.html` file of the app.
 
-Neste projeto, o elemento que está renderizando o mapa é a diretiva map, localizada no arquivo index.html. O que precisamos fazer é alterar a engine de criação do mapa para o Leaflet ao invés do Google Maps. Começamos alterando a diretiva no arquivo directives.js:
+In this project, the element rendering the map is the `map` directive, located in the `index.html` file. What we need to do is change the map creation engine to Leaflet instead of Google Maps. We'll start by modifying the directive in the `directives.js` file:
 
 {%- highlight js -%}
 link: function ($scope, $element, $attr) {
@@ -47,7 +47,7 @@ link: function ($scope, $element, $attr) {
 }
 {%- endhighlight -%}
 
-Mas apenas isso não basta, no controller MapCtrl também precisamos alterar o método que centraliza o mapa em uma determinada latitude e longitude, pois como trocamos a engine para o Leaflet, agora não iremos mais usar os objetos do Google Maps para interagir com o mapa. Alterei o arquivo controllers.js na linha destacada:
+But that's not enough; in the `MapCtrl` controller, we also need to change the method that centers the map at a certain latitude and longitude. As we switched to the Leaflet engine, we won't use the Google Maps objects to interact with the map anymore. I modified the `controllers.js` file on the highlighted line:
 
 {%- highlight js -%}
 $scope.centerOnMe = function () {
@@ -71,43 +71,43 @@ $scope.centerOnMe = function () {
 };
 {%- endhighlight -%}
 
-Por fim, excluí a inserção da biblioteca do Google Maps, presente no arquivo www/index.html. Com isso, já temos o aplicativo funcionando com o mapa utilizando a engine do Leaflet.
+Finally, I removed the insertion of the Google Maps library from the `www/index.html` file. With this, we have the app working with the map using the Leaflet engine.
 
-### Baixando mapas utilizando MOBAC
+### Downloading Maps using MOBAC
 
-[MOBAC, Mobile Atlas Creator][mobac] é um programa open source que cria atlas offline para dispositivos portáteis de GPS e aplicativos de telefone celular como TrekBuddy, AndNav e outras aplicações Android e Windows CE. Bom, isso é o que diz a descrição dele no site, mas como podemos tirar proveito disso?
+[MOBAC, Mobile Atlas Creator][mobac] is an open-source program that creates offline atlases for portable GPS devices and phone applications such as TrekBuddy, AndNav, and other Android and Windows CE applications. Well, that's what its website description says, but how can we take advantage of it?
 
-Com MOBAC, conseguimos selecionar uma parte do mapa, baixar os map tiles, adiciona-los no nosso aplicativo e, por fim, fazer a engine do Leaflet carregar os map tiles contidos no aplicativo. Então, vamos baixa-lo para iniciar as operações. Atualmente o MOBAC está na versão 2.0.0 beta 1.
+With MOBAC, we can select a map area, download the map tiles, add them to our app, and then make the Leaflet engine load the map tiles from the app itself. So, let's download it to start the operations. Currently, MOBAC is in version 2.0.0 beta 1.
 
-MOBAC é um aplicativo multiplataforma, desenvolvido em Java, então, você não deverá ter problemas para executa-lo em seu sistema operacional, sendo Windows, Linux, Mac, etc... ).
+MOBAC is a multi-platform application, developed in Java, so you shouldn't have any problems running it on your operating system, be it Windows, Linux, Mac, etc...
 
-Ao abrir o MOBAC, vamos clicar no menu Atlas -> Convert Atlas Format e selecionar a opção Osmdroid ZIP.
+When you open MOBAC, click on `Atlas` -> `Convert Atlas Format`, and select the `Osmdroid ZIP` option.
 
-Em seguida, na aba Map Source, selecione o OpenStreetMap MapQuest (1), então, iremos visualizar o mapa (2). Com o mapa aberto, é possível controlar o zoom do mesmo (3) para visualizar as regiões do globo.
-
-<figure>
-	<img src="/assets/img/mobac-tela1.jpg" alt="Tela do MOBAC."> 
-	<figcaption>Tela do MOBAC.</figcaption>
-</figure>
-
-No exemplo ilustrado, selecionei uma área da cidade de São Paulo para fins demonstrativos. Para baixar uma área do mapa, basta utilizar o cursor para selecionar a área desejada. Você irá visualizar a área selecionada hachurada em vermelho (4). Após selecionar uma área, você deve informar na aba Zoom Levels quais os zooms que deseja baixar os map tiles (5). Observe que, quanto maior a área selecionada e maior o zoom, mais imagens serão baixadas. Após selecionar os zooms desejados, clique em Add selection (6), ainda na aba Zoom Levels.
+Next, in the `Map Source` tab, select `OpenStreetMap MapQuest` (1); then, you will see the map (2). You can control the zoom of the map (3) to visualize the globe's regions.
 
 <figure>
-	<img src="/assets/img/mobac-tela2.jpg" alt="Tela do MOBAC."> 
-	<figcaption>Tela do MOBAC.</figcaption>
+	<img src="/assets/img/mobac-tela1.jpg" alt="MOBAC Screen."> 
+	<figcaption>MOBAC Screen.</figcaption>
 </figure>
 
-Após isso, basta baixar o mapa clicando em Atlas -> Create Atlas. Agora aguarde, mas fique atento caso existirem mensagens de erro. Talvez algumas imagens estejam indisponíveis para download devido a sobrecarga que este processo causa nos servidores.
+In the illustrated example, I selected an area of São Paulo city for demonstrative purposes. To download a map area, simply use the cursor to select the desired area. You will see the selected area hashed in red (4). After selecting an area, you must inform in the `Zoom Levels` tab which zoom levels you want to download the map tiles (5). Note that the larger the selected area and the higher the zoom, the more images will be downloaded. After selecting the desired zooms, click `Add selection` (6) in the `Zoom Levels` tab.
 
-Um detalhe muito importante aqui é que devemos utilizar isso com moderação, pois isso sobrecarrega os servidores de mapas e prejudica a utilização de outros usuários. Na página da wiki contém alguns [conselhos aos usuários][conselhos].
+<figure>
+	<img src="/assets/img/mobac-tela2.jpg" alt="MOBAC Screen."> 
+	<figcaption>MOBAC Screen.</figcaption>
+</figure>
 
-Bom, após baixar o mapa selecionado, podemos clicar em Open Atlas Folder e visualizar o nosso mapa recém baixado. Nosso mapa está disponível em formato ZIP. Ao descompactar, uma pasta MapQuest aparecerá e dentro dela outras pastas com as numerações dos zooms selecionados. Dentro da pasta de cada zoom haverão outras pastas com as coordenadas de do eixo X e dentro destas pastas, estarão as respectivas imagens em formato JPG com as coordenadas do eixo Y. O que fazer agora? Vamos adicionar a pasta MapQuest dentro do nosso aplicativo.
+After that, simply download the map by clicking on `Atlas` -> `Create Atlas`. Now, wait, but be attentive in case there are error messages. Some images may be unavailable for download due to the overload that this process causes on the servers.
 
-### Adicionando mapa baixado com MOBAC no aplicativo Ionic
+A very important detail here is that we should use this with moderation, as it overloads the map servers and hampers the use for other users. The wiki page contains some [advice for users][advice].
 
-Agora a parte mais esperada do tutorial. Vamos adicionar a pasta MapQuest extraída do arquivo ZIP para dentro de nosso aplicativo na pasta www.
+Well, after downloading the selected map, we can click on `Open Atlas Folder` and view our freshly downloaded map. Our map is available in ZIP format. After unpacking, a `MapQuest` folder will appear, and inside it, other folders with the selected zoom numbers. Within each zoom folder, there will be other folders with X-axis coordinates, and inside these folders will be the respective JPG images with the Y-axis coordinates. What to do now? Let's add the `MapQuest` folder to our app.
 
-O próximo passo é voltar na diretiva map e alterar o tile layer para não carregar da referência online, e sim da offline. Também vamos alterar a latitude e longitude inicial para carregamento do mapa, fazendo o ajuste para carregar de acordo com o lugar que baixamos o mapa:
+### Adding the Downloaded Map with MOBAC to the Ionic App
+
+Now, the most awaited part of the tutorial. Let's add the `MapQuest` folder extracted from the ZIP file to the `www` folder of our app.
+
+The next step is to go back to the `map` directive and change the tile layer not to load from the online reference, but from the offline reference. We'll also change the initial latitude and longitude for map loading, making adjustments to load according to the place where we downloaded the map:
 
 {%- highlight js -%}
 link: function ($scope, $element, $attr) {
@@ -132,16 +132,16 @@ link: function ($scope, $element, $attr) {
 }
 {%- endhighlight -%}
 
-Perceba que configuramos uma URL relativa na configuração do tile layer para carregar os mapas. Essa referência relativa aponta para a pasta www. Como a pasta MapQuest já está em www, basta apenas referenciar a pasta e o Leaflet irá carregar as imagens corretamente a partir do endereço local. Note que, como modificamos o tile layer para carregar os mapas localmente, quaisquer outras partes do mapa que tentarmos consumir não poderão ser visualizadas.
+Notice that we configured a relative URL in the tile layer's configuration to load the maps. This relative reference points to the `www` folder. As the `MapQuest` folder is already in `www`, we only need to reference the folder, and Leaflet will correctly load the images from the local address. Note that, as we modified the tile layer to load the maps locally, any other parts of the map that we try to consume will not be visible.
 
-Observação importante: o mapa que incluí no aplicativo possui aproximadamente 4 MB. Se você tentar incluir um mapa de uma cidade inteira ou de uma região muito grande, irá perceber que a compilação do aplicativo irá demorar. Isso se deve ao fato das imagens estarem incluídas na pasta www do aplicativo, então, em cada processo de compilação, os mapas incluídos nesta pasta serão processados.
+Important note: the map I included in the app is approximately 4 MB. If you try to include a map of an entire city or a very large region, you will notice that the app's compilation will take a while. This is because the images are included in the `www` folder of the app, so in each compilation process, the maps included in this folder will be processed.
 
-Para evitar que isso aconteça, podemos utilizar de outras técnicas, como por exemplo, baixar o mapa com o aplicativo em execução e chavear a diretiva map para carregar online ou offline, o que acha? Isso poderá ser pauta para um novo artigo.
+To avoid this, we can use other techniques, such as downloading the map with the app running and switching the `map` directive to load online or offline. What do you think? This could be the subject of a new article.
 
-Por hoje é só. Deixe seu comentário, sendo ele crítica ou sugestão.
+That's all for today. Leave your comment, whether it's criticism or suggestions.
 
-[projeto]:          https://github.com/ionixjunior/ionic-offline-maps
+[project]:          https://github.com/ionixjunior/ionic-offline-maps
 [leaflet]:          http://leafletjs.com/
 [leaflet-download]: https://leafletjs.com/download.html
 [mobac]:            http://mobac.sourceforge.net/
-[conselhos]:        https://wiki.openstreetmap.org/wiki/Blocked_Tiles
+[advice]:           https://wiki.openstreetmap.org/wiki/Blocked_Tiles

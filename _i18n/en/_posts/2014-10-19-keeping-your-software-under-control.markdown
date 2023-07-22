@@ -1,20 +1,20 @@
 ---
 layout: post
-title:  "Mantendo seu software sob controle"
-date:   2014-10-19
+title: "Keeping your software under control"
+date: 2014-10-19
 redirect_from:
-    - /mantendo-seu-software-sob-controle
+  - /mantendo-seu-software-sob-controle
 ---
 
-<p class="intro"><span class="dropcap">N</span>a última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.</p>
+<p class="intro"><span class="dropcap">L</span>ast Wednesday, October 15, 2014, I was at Católica SC for the GDG Academic Week BSI 2014 event, where I gave a presentation on software quality tools.</p>
 
-Por tratar-se de uma palestra rápida, a apresentação aborda apenas algumas das principais ferramentas para controle de qualidade de software.
+As it was a quick talk, the presentation covers only some of the main tools for software quality control.
 
-A apresentação pode ser encontrada em [aqui][apresentacao].
+The presentation can be found [here][presentation].
 
-Durante a apresentação, existem alguns trechos onde demonstro o uso das ferramentas. O código utilizado onde constam os exemplos está no [Github][repositorio].
+During the presentation, there are some parts where I demonstrate the use of the tools. The code used in the examples can be found on [GitHub][repository].
 
-Por fim, gostaria de agradecer aos organizadores do evento por ter concedido-me essa oportunidade.
+Finally, I would like to thank the event organizers for granting me this opportunity.
 
-[apresentacao]: https://speakerdeck.com/ionixjunior/mantendo-seu-software-sob-controle
-[repositorio]:  https://github.com/ionixjunior/php-qa
+[presentation]: https://speakerdeck.com/ionixjunior/mantendo-seu-software-sob-controle
+[repository]:  https://github.com/ionixjunior/php-qa

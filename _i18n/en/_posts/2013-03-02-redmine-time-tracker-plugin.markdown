@@ -1,28 +1,28 @@
 ---
 layout: post
-title:  "Redmine Time Tracker plugin"
-date:   2013-03-02
+title: "Redmine Time Tracker plugin"
+date: 2013-03-02
 ---
 
-<p class="intro"><span class="dropcap">N</span>os primeiros testes que fiz com Redmine, percebi que a maneira que ele disponibiliza para fazer apontamento de horas é um pouco precária, e até onde vi, não existe um client estilo o Worklog, e principalmente, open source, para realizar essa tarefa de maneira sutil.</p>
+<p class="intro"><span class="dropcap">I</span>n the initial tests I performed with Redmine, I noticed that the time tracking feature it provides is somewhat limited, and as far as I could see, there isn't a client similar to Worklog, especially an open-source one, for seamless time tracking.</p>
 
-Foi então que achei o plugin Redmine Time Tracker. Com ele você consegue ter uma interface mais agradável para realizar apontamento de horas. Não tem toda a praticidade de um client, mas é possível escolher uma issue e em seguida iniciar o apontamento de horas.
+That's when I found the Redmine Time Tracker plugin. With it, you can have a more user-friendly interface for time tracking. It doesn't have all the convenience of a client, but you can choose an issue and then start tracking time on it.
 
-Porém, ao realizar os primeiros testes encontrei alguns problemas.
+However, during the initial tests, I encountered some issues.
 
-No apontamento de horas padrão do Redmine, é possível escolher o tipo de horas apontadas, por exemplo, suporte, desenvolvimento  e outros tipos que o administrador poderá cadastrar. Mas no apontamento de horas realizado por este plugin, não é possível realizar esta seleção, o tipo de apontamento cadastrado para todos estes registros é uma marcação própria do plugin.
+In the default time tracking feature of Redmine, you can choose the type of hours tracked, such as support, development, and other types that the administrator can configure. But in the time tracking done by this plugin, you can't make that selection. The type of time tracking recorded for all these entries is a proprietary mark of the plugin.
 
-Como eu precisava ter um controle dos tipos de atividades realizadas pelos apontamentos utilizando o plugin, decidi realizar um fork do plugin e implementar o campo do tipo de atividade na tela de cadastramento do apontamento.
+As I needed to have control over the types of activities performed in the time tracking using the plugin, I decided to fork the plugin and implement the "Activity" field on the time tracking entry form.
 
-O plugin pode ser encontrado [neste repositório][redmine-time-tracker] no GitHub.
+The plugin can be found [in this repository][redmine-time-tracker] on GitHub.
 
-Como pode ser visto abaixo, a única implementação realizada foi adicionar o campo “Activity” no formulário.
+As you can see below, the only implementation was adding the "Activity" field to the form.
 
 <figure>
-	<img src="/assets/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Imagem da tela do Redmine com o campo Activity adicionado."> 
-	<figcaption>Imagem da tela do Redmine com o campo Activity adicionado.</figcaption>
+	<img src="/assets/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Image of the Redmine screen with the added Activity field."> 
+	<figcaption>Image of the Redmine screen with the added Activity field.</figcaption>
 </figure>
 
-Com isso, é possível obter relatórios de apontamento de horas de forma mais correta, pois cada apontamento estará vinculado ao seu correto tipo de atividade.
+With this modification, it is possible to obtain time tracking reports more accurately, as each entry will be linked to its correct activity type.
 
 [redmine-time-tracker]: https://github.com/ionixjunior/redmine_time_tracker

@@ -1,30 +1,30 @@
 ---
 layout: post
-title:  "SetupMyProject – Configure seu projeto em menos de 5 minutos"
-date:   2016-01-30
+title: "SetupMyProject – Configure your project in less than 5 minutes"
+date: 2016-01-30
 redirect_from:
-    - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos
+  - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos
 ---
 
-<p class="intro"><span class="dropcap">E</span>ssa dica é destinada a desenvolvedores Java e se chama SetupMyProject.</p>
+<p class="intro"><span class="dropcap">T</span>his tip is intended for Java developers and it's called SetupMyProject.</p>
 
-Imagine uma aplicação web que agiliza o setup de um projeto baseando-se nas opções selecionadas em um assistente de configuração. Pois é, [SetupMyProject][projeto] faz isso.
+Imagine a web application that streamlines project setup based on the options selected in a configuration wizard. Well, [SetupMyProject][project] does exactly that.
 
-Com ele, podemos facilmente criar um projeto Java apenas informando qual framework MVC queremos usar, versão do Java, banco de dados, plugins que queremos adicionar ao projeto e mais alguns ajustes finos.
+With this tool, we can easily create a Java project by simply selecting the desired MVC framework, Java version, database, plugins, and a few other fine-tuning adjustments.
 
-Nas opções disponíveis para configuração do projeto constam:
+The available options for project configuration include:
 
-#### Frameworks MVC
-* Sprint
+#### MVC Frameworks
+* Spring
 * JSF
 * VRaptor
 * Vaadin
 
-#### Versão do Java
+#### Java Version
 * Java 7
 * Java 8
 
-#### Banco de dados
+#### Database
 * MySQL 5
 * Oracle
 * PostgreSQL
@@ -37,8 +37,8 @@ Nas opções disponíveis para configuração do projeto constam:
 * JPA
 * CDI
 
-No final do procedimento, é disponibilizado o download do projeto, pronto para abrir no Eclipse. O Maven se encarregará de baixar todas as dependências necessárias para deixar o projeto pronto. Simples e muito prático!
+At the end of the process, the project is available for download, ready to be opened in Eclipse. Maven will take care of downloading all the necessary dependencies to make the project ready. Simple and very practical!
 
-Precisando criar um novo projeto Java? Experimente essa opção, vale a pena!
+Need to create a new Java project? Give this option a try, it's worth it!
 
-[projeto]: https://github.com/asouza/setupmyproject
+[project]: https://github.com/asouza/setupmyproject

@@ -1,43 +1,43 @@
 ---
 layout: post
-title:  "Gerador automático de formulários – Zend Form Generator"
-date:   2012-07-01
+title: "Automatic form generator - Zend Form Generator"
+date: 2012-07-01
 redirect_from:
     - /gerador-automatico-de-formularios-zend-form-generator
 ---
 
-<p class="intro"><span class="dropcap">C</span>riar formulários, na maioria das vezes, torna-se uma atividade muito repetitiva e também cansativa, principalmente se em sua aplicação existem muitos formulários a serem criados.</p>
+<p class="intro"><span class="dropcap">C</span>reating forms often becomes a very repetitive and tiring task, especially if your application requires the creation of many forms.</p>
 
-Pensando nisso, desenvolvi uma maneira mais fácil para criar estes formulários, se chama Zend Form Generator, e beneficia os utilizadores do Zend Form.
+To address this, I developed an easier way to create forms called Zend Form Generator, which benefits Zend Form users.
 
-O projeto encontra-se [neste repositório][zend-form-generator] no GitHub.
+The project can be found [in this repository][zend-form-generator] on GitHub.
 
-A logística é a seguinte: grande parte dos formulários da aplicação, efetuarão coleta das informações digitadas para serem inseridas no banco de dados. Partindo deste princípio, podemos imaginar que, para cada tabela existente no banco de dados, deverá ser necessário construir um formulário afim de coletar dados para esta tabela.
+The logic is as follows: in most cases, the forms in the application will collect information to be inserted into the database. Based on this, we can imagine that, for each table in the database, a form will need to be created to collect data for that table.
 
-Baseado na logística descrita acima, desenvolvi uma biblioteca para ler as tabelas de um banco de dados e suas respectivas colunas, e com isso, criar os respectivos formulários e seus campos.
+Based on the described logic, I developed a library to read the tables and their respective columns from a database and, with this information, generate the corresponding forms and their fields.
 
-Atualmente o projeto dá suporte para banco de dados MySQL e PostgreSQL. O objetivo é estender essa biblioteca para dar suporte aos banco de dados suportados pelo PDO e também prover uma maneira melhor para estilizar os formulários utilizando os Decorators.
+Currently, the project supports MySQL and PostgreSQL databases. The goal is to extend this library to support databases supported by PDO and also to provide a better way to style forms using decorators.
 
-Para usar é fácil, configure o seu banco de dados no arquivo zend-form-generator.php
+Using it is easy. First, configure your database in the zend-form-generator.php file.
 
-Em seguida basta você executar o script na linha de comando e passar o parâmetro “generate-forms” seguido do nome da pasta onde deseja criar seus formulários, em nosso exemplo, chamamos de “Forms”:
+Then, you simply need to execute the script on the command line, passing the "generate-forms" parameter followed by the name of the folder where you want to create your forms. In our example, we'll call it "Forms":
 
 {%- highlight php -%}
 php zend-form-generator.php generate-forms Forms
 {%- endhighlight -%}
 
-Por padrão, os formulários serão gerados com a nomenclatura padrão das aplicações Zend “Application_Form_XXXX”. Caso você deseje utilizar namespaces ao invés deste padrão, basta apenas especificar o nome do namespace após o nome da pasta onde irá gerar os formulários:
+By default, the forms will be generated with the standard Zend application naming convention "Application_Form_XXXX". If you prefer to use namespaces instead of this convention, you just need to specify the namespace name after the folder name where you want to generate the forms:
 
 {%- highlight php -%}
 php zend-form-generator.php generate-forms Forms Name\Your\Namespace
 {%- endhighlight -%}
 
-Você vai notar que todos os formulários gerados, não irão ser criados com as chaves primárias das tabelas, pois geralmente, estas chaves primárias serão geradas automaticamente no banco de dados. Caso você precise criar os formulários com estes campos de chave primária, basta inserir o parâmetro “–primary-keys” antes do nome da pasta de destino. Esta dica também vale para a geração de formulários com namespaces:
+You will notice that all the generated forms will not include the primary keys of the tables since these primary keys are generally auto-generated in the database. If you need to create forms with these primary key fields, simply add the "--primary-keys" parameter before the destination folder name. This tip also applies when generating forms with namespaces:
 
 {%- highlight php -%}
 php zend-form-generator.php generate-forms --primary-keys Forms
 {%- endhighlight -%}
 
-Dúvidas? Sugestões? Deixe seu comentário abaixo.
+Any questions or suggestions? Please leave your comments below.
 
 [zend-form-generator]: https://github.com/ionixjunior/zend-form-generator

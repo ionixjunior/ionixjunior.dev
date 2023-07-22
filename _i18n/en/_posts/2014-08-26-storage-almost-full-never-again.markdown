@@ -1,44 +1,42 @@
 ---
 layout: post
-title:  "“Storage almost full”, nunca mais!"
-date:   2014-08-26
+title: "“Storage almost full,” No more!"
+date: 2014-08-26
 redirect_from:
-    - /storage-almost-full-nunca-mais
+  - /storage-almost-full-nunca-mais
 ---
 
-<p class="intro"><span class="dropcap">V</span>ocê compra um celular novinho em folha e vai enchendo de fotos, vídeos, aplicativos e depois de um tempo você vê aquela mensagem de que não tem mais espaço no dispositivo para armazenar informações. E agora, como faz?</p>
+<p class="intro"><span class="dropcap">Y</span>ou buy a brand new smartphone and start filling it with photos, videos, and apps. After some time, you see that dreaded message saying there's no more space on your device to store information. Now, what do you do?</p>
 
-Este é um ótimo momento para você tirar toda a “tranqueira” do celular para dar espaço a novas “tranqueiras”. Mas onde guardar as “tranqueiras” velhas?
+This is a perfect moment to clear out all the "junk" from your phone to make space for new "junk." But where do you store the old "junk"?
 
-Já passou o tempo onde armazenávamos nossos arquivos digitais em CD’s, agora preferimos colocar tudo na nuvem ( cloud, ou CLÁUDIO ) para salvar as informações de nossos dispositivos.
+Gone are the days when we stored our digital files on CDs. Now, we prefer to put everything in the cloud to save our device's information.
 
-O objetivo deste post é sugerir uma maneira barata ( grátis, para ser mais exato ) para realizar backup de fotos e vídeos do celular.
+The goal of this post is to suggest a cheap (free, to be precise) way to back up photos and videos from your phone.
 
-Após uma breve pesquisa e algumas semanas de teste, sugiro 2 serviços para armazenamento gratuito de arquivos e que possuem aplicativos para Android e iOS para sincronização de dados:
+After a brief research and a few weeks of testing, I recommend 2 services for free file storage that have Android and iOS apps for data synchronization:
 
 ### Cloud Mail.Ru
 
-Este foi o serviço que mais gostei e que utilizo atualmente. Cloud Mail.Ru, ( dica do Lucas Churchill ) é um serviço russo de e-mail que possui 100 GB de espaço na faixa ( é isso mesmo, 100 GB )! Este serviço possui aplicativos para Android e iOS para sincronização de fotos e vídeos do dispositivo.
+This was the service I liked the most and currently use. Cloud Mail.Ru (tip from Lucas Churchill) is a Russian email service that offers a whopping 100 GB of free space! That's right, 100 GB! This service has Android and iOS apps for syncing photos and videos from your device.
 
-Para utilizar este serviço você precisará [realizar um cadastro][cadastro-mailru] ( se vira com o russo ), onde você irá criar uma conta de e-mail do Mail.Ru. Depois basta apenas baixar o aplicativo e utilizar a conta para sincronizar fotos e vídeos.
+To use this service, you'll need to [register][registration-mailru] (good luck with the Russian), where you'll create a Mail.Ru email account. Then, simply download the app and use your account to sync photos and videos.
 
- 
+Initially, the app proved to be stable, uploading files one by one. I synchronized a total of approximately 7 GB of files to this service, and the app never froze.
 
-Em um primeiro momento, o aplicativo mostrou-se bem estável, realizando o upload dos arquivos um a um. Realizei a sincronização de um total aproximado de 7 GB de arquivos para este serviço e o aplicativo em momento algum travou.
-
-Quando a sincronização estiver sendo realizada, todas as fotos e vídeos enviados poderão ser localizados na interface web do Mail.Ru em uma pasta chamada **Camera Uploads**, onde você poderá visualizar todas as imagens sincronizadas por você até o momento.
+While the synchronization is in progress, all the photos and videos you send can be found in the Mail.Ru web interface in a folder named **Camera Uploads**, where you can view all the images you've synced so far.
 
 ### Mega
 
-Mega é o sucessor do Megaupload. O site foi lançado em 19 de janeiro de 2013 para coincidir com o aniversário de um ano do término do Megaupload ( obrigado Wikipedia ).
+Mega is the successor of Megaupload. The site was launched on January 19, 2013, to coincide with the one-year anniversary of the end of Megaupload (thanks, Wikipedia).
 
-Neste serviço temos 50 GB de espaço grátis, e também existem aplicativos para Android e iOS para realizar a sincronização de fotos. **O aplicativo não dá suporte à sincronização de vídeos**. Para realizar a sincronização das fotos, você deve [criar uma conta no Mega][cadastro-mega] e baixar o aplicativo no seu dispositivo. Com isso, basta ativar a opção **PhotoSync** no aplicativo para dar início à sincronização.
+This service provides 50 GB of free space, and there are also Android and iOS apps available for photo synchronization. **The app does not support video synchronization**. To sync photos, you need to [create an account on Mega][registration-mega] and download the app to your device. Then, activate the **PhotoSync** option in the app to start syncing.
 
-Em algumas semanas de teste, pude encontrar alguns problemas no aplicativo. Após sincronizar algumas imagens para a nuvem, apaguei o cache do aplicativo ( disponível nas opções de configuração do dispositivo ). Após isso, o aplicativo “se perdeu” e não sabia quais fotos já havia enviado para a nuvem, o que ocasionou no reenvio de todas as fotos novamente.
+During a few weeks of testing, I encountered some issues with the app. After syncing some images to the cloud, I cleared the app's cache (available in the device's settings). After that, the app "got lost" and didn't know which photos were already sent to the cloud, resulting in re-uploading all the photos again.
 
-Lembrando que, para ambas as soluções, a sincronização não é bidirecional, você sincroniza apenas do dispositivo para a nuvem. Caso queira baixar os conteúdos que já estão na nuvem, terá que acessar a interface web do serviço e realizar a navegação por lá para encontrar o conteúdo e baixá-lo. Também é importante ressaltar que para sincronizar os conteúdos para a nuvem o aplicativo deve estar aberto, não basta apenas abrir o aplicativo e bloquear a tela do dispositivo que a sincronização não vai funcionar.
+Keep in mind that, for both solutions, the synchronization is not bidirectional; you only sync from the device to the cloud. If you want to download content that's already in the cloud, you'll have to access the service's web interface and navigate there to find and download the content. It's also important to note that the app must be open to sync content to the cloud; simply opening the app and locking the device screen won't trigger the synchronization.
 
-É isso, fica aqui a dica para quem sofre com armazenamento de mídia no dispositivo. Abraço!
+That's it! Here's a tip for those struggling with media storage on their devices. Cheers!
 
-[cadastro-mailru]: https://account.mail.ru/signup
-[cadastro-mega]:   https://mega.nz/register
+[registration-mailru]: https://account.mail.ru/signup
+[registration-mega]:   https://mega.nz/register

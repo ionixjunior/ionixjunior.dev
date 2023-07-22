@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Xamarin disponível gratuitamente para desenvolvedores"
-date:   2016-04-06
+title: "Xamarin available for free for developers"
+date: 2016-04-06
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
 redirect_from:
-    - /xamarin-disponivel-gratuitamente-para-desenvolvedores
+  - /xamarin-disponivel-gratuitamente-para-desenvolvedores
 ---
 
-<p class="intro"><span class="dropcap">R</span>ecentemente foi noticiado pela Microsoft que a plataforma Xamarin estará disponível gratuitamente para os desenvolvedores.</p>
+<p class="intro"><span class="dropcap">R</span>ecently, Microsoft announced that the Xamarin platform is available for free to developers.</p>
 
-Se você já tinha sua licença trial do Xamarin, agora pode convertê-la para community edition e desenvolver seus aplicativos sem as restrições que existiam.
+If you already had your Xamarin trial license, you can now convert it to the community edition and develop your applications without the previous restrictions.
 
-Isso, com certeza, irá impulsionar diversos desenvolvedores a utilizarem a plataforma. Pensando nisso, estarei nas próximas semanas dedicando-me a escrever alguns tutoriais que tenho preparado há quase um ano, quando iniciei meus trabalhos com Xamarin.
+This will undoubtedly encourage many developers to use the platform. With that in mind, I will be dedicating myself to writing some tutorials in the coming weeks that I have been preparing for almost a year since I started working with Xamarin.
 
-Em breve teremos novidades. Valeu!
+Stay tuned for updates. Thank you!

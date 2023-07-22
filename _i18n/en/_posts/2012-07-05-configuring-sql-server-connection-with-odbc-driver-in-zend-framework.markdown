@@ -1,30 +1,30 @@
 ---
 layout: post
-title:  "Configurando conexão SQL Server com driver ODBC no Zend Framework"
-date:   2012-07-05
+title: "Configuring SQL Server connection with ODBC driver in Zend Framework"
+date: 2012-07-05
 redirect_from:
     - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework
 ---
 
-<p class="intro"><span class="dropcap">G</span>rande parte dos Desenvolvedores Web que trabalham com sites ou desenvolvimento de sistemas utilizam MySQL ou PostgreSQL como banco de dados, e em um projeto que desenvolvi não foi diferente, optei por utilizar o MySQL.</p>
+<p class="intro"><span class="dropcap">M</span>any Web Developers who work with websites or systems development use MySQL or PostgreSQL as their database, and in a project I developed, it was no different - I opted for MySQL.</p>
 
-Mas no decorrer do projeto, surgiu a necessidade de portá-lo para ser utilizado em SQL Server. Foi então que dei pulos de alegria por poder usufruir das facilidades que um ORM fornece em relação à abstração, neste caso, eu estava usando Doctrine 1.
+However, during the project, the need arose to switch to using SQL Server. That's when I was delighted to take advantage of the facilities that an ORM provides in terms of abstraction, in this case, I was using Doctrine 1.
 
-Mas quem disse que foi fácil ou rápido? Apesar de simples, demorei um pouco para descobrir os “macetes” de como configurar o DSN da conexão para o SQL Server, e aqui neste post vai a dica para vocês que necessitarem realizar tal tarefa.
+But who said it was easy or quick? Although it's simple, it took me a little while to figure out the "tricks" of configuring the DSN connection for SQL Server, and in this post, I'll share the tips for those of you who need to perform this task.
 
-Junto com o Doctrine 1, foi utilizado Zend Framework no projeto, então, a configuração dos dados de conexão com o banco estavam no application.ini da aplicação. Neste arquivo constava o DSN de configuração da conexão, que no MySQL, é assim:
+Together with Doctrine 1, Zend Framework was used in the project, so the configuration of the database connection data was in the application.ini file of the application. In this file, the DSN configuration for MySQL looks like this:
 
 {%- highlight ini -%}
 doctrine.dsn = "mysql://USERNAME:PASSWORD@HOSTNAME/DATABASE"
 {%- endhighlight -%}
 
-Para configurar o SQL Server aqui, a sintaxe é um pouco diferente, neste caso, utilizei o driver ODBC para conexão:
+To configure SQL Server here, the syntax is a little different. In this case, I used the ODBC driver for the connection:
 
 {%- highlight ini -%}
 doctrine.dsn = "odbc:Driver={SQL Server};Server=HOSTNAME;Database=DATABASE;Uid=USERNAME;Pwd=PASSWORD"
 {%- endhighlight -%}
 
-É só isso?? NÃO, falta a parte de inicialização do Doctrine, que foi definida do arquivo Bootstrap da aplicação. Vejamos abaixo o exemplo do MySQL:
+Is that all? NO, there's still the part of Doctrine initialization, which was defined in the Bootstrap file of the application. Let's see the example for MySQL:
 
 {%- highlight php -%}
 protected function _initDoctrine()
@@ -44,14 +44,14 @@ protected function _initDoctrine()
 }
 {%- endhighlight -%}
 
-Até aqui você já deve estar familiarizado, certo? Isto funciona no MySQL perfeitamente, porém, no SQL Server é necessário fazer um ajuste na linha 13, pois precisamos passar o DSN da conexão em um array:
+Until here, you should already be familiar, right? This works perfectly with MySQL. However, for SQL Server, you need to make an adjustment on line 13 since we need to pass the DSN connection in an array:
 
 {%- highlight php -%}
 $manager->openConnection( array($doctrineConfig['dsn']) );
 {%- endhighlight -%}
 
-Simples né?
+Simple, right?
 
-Com essas dicas acima você já conseguirá rodar sua aplicação no SQL Server.
+With these tips above, you can now run your application on SQL Server.
 
-Quaisquer dicas e/ou sugestões, deixe seu comentário.
+For any tips and/or suggestions, please leave your comments.

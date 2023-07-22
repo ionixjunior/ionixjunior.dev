@@ -1,140 +1,140 @@
 ---
 layout: post
-title:  "Xamarin.Forms – Corrigindo a renderização do ImageCell no Android"
-date:   2016-04-27
+title: "Xamarin.Forms – Fixing ImageCell rendering on Android"
+date: 2016-04-27
 image: imagecell-ios-and-android.png
 redirect_from:
-    - /xamarin-forms-corrigindo-a-renderizacao-do-imagecell-no-android
+  - /xamarin-forms-corrigindo-a-renderizacao-do-imagecell-no-android
 ---
 
-<p class="intro"><span class="dropcap">A</span>o utilizar TableView no Xamarin Forms temos algumas opções de elementos para utilizar, tais como, TextCell, ImageCell, SwitchCell, EntryCell. Estes elementos citados são chamados de built-in cells. Neste artigo, vamos falar um pouco sobre o ImageCell.</p>
+<p class="intro"><span class="dropcap">W</span>hen using TableView in Xamarin Forms, we have some options for elements, such as TextCell, ImageCell, SwitchCell, EntryCell. These elements are referred to as built-in cells. In this article, we'll talk a bit about ImageCell.</p>
 
-Com ImageCell, podemos facilmente adicionar uma imagem e textos. Vejamos uma simples utilização.
+With ImageCell, we can easily add an image and texts. Let's see a simple usage:
 
-{%- highlight xml -%}
+{% highlight xml %}
 <TableView Intent="Menu">
-    <TableRoot>
-        <TableSection>
-            <ImageCell ImageSource="location.png" Text="Localização" />
-            <ImageCell ImageSource="settings.png" Text="Configurações" />
-            <ImageCell ImageSource="email.png" Text="E-mail" />
-        </TableSection>
-    </TableRoot>
+  <TableRoot>
+    <TableSection>
+      <ImageCell ImageSource="location.png" Text="Location" />
+      <ImageCell ImageSource="settings.png" Text="Settings" />
+      <ImageCell ImageSource="email.png" Text="E-mail" />
+    </TableSection>
+  </TableRoot>
 </TableView>
-{%- endhighlight -%}
+{% endhighlight %}
 
-### O problema
+### The Problem
 
-Existe algumas diferenças na renderização deste componente entre as plataformas Android e iOS. No Android, quando utilizamos uma imagem muito pequena no ImageCell, esta imagem fica esticada, ocupando todo o container da imagem, que é de 60×60, confira:
+There are some differences in rendering this component between Android and iOS platforms. On Android, when we use a very small image in ImageCell, it gets stretched and occupies the entire image container, which is 60x60 pixels, as shown below:
 
 <figure>
-	<img src="/assets/img/default-imagecell-ios-and-android.png" alt="Exibição padrão do ImageCell no iOS e Android."> 
-	<figcaption>Exibição padrão do ImageCell no iOS e Android.</figcaption>
+	<img src="/assets/img/default-imagecell-ios-and-android.png" alt="Default ImageCell rendering on iOS and Android."> 
+	<figcaption>Default ImageCell rendering on iOS and Android.</figcaption>
 </figure>
 
-### A solução
+### The Solution
 
-Bom, felizmente temos duas soluções para resolver este problema. Vamos explora-las.
+Fortunately, we have two solutions to fix this problem. Let's explore them.
 
-Para os exemplos que serão mostrados, foi adicionado uma página contendo um TableView com três opções, cada um contendo uma imagem e um texto descritivo.
+For the examples shown, we have added a page containing a TableView with three options, each containing an image and a descriptive text.
 
-### Solução 1 – Customizando o ViewCell
+### Solution 1 – Customizing the ViewCell
 
-Uma das maneiras mais fáceis é não utilizar o ImageCell e customizar a célula a ser renderizada, tendo assim flexibilidade para manipular cada elemento adicionado.
+One of the easiest ways is not to use ImageCell and customize the cell to be rendered, thus having flexibility to manipulate each added element.
 
-{%- highlight xml -%}
+{% highlight xml %}
 <TableView Intent="Menu">
-    <TableRoot>
-        <TableSection>
-            <ViewCell>
-                <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
-                    <Image Source="location.png" />
-                    <Label Text="Localização" VerticalOptions="Center" />
-                </StackLayout>
-            </ViewCell>
+  <TableRoot>
+    <TableSection>
+      <ViewCell>
+        <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+          <Image Source="location.png" />
+          <Label Text="Location" VerticalOptions="Center" />
+        </StackLayout>
+      </ViewCell>
             
-            <ViewCell>
-                <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
-                    <Image Source="settings.png" />
-                    <Label Text="Configurações" VerticalOptions="Center" />
-                </StackLayout>
-            </ViewCell>
+      <ViewCell>
+        <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+          <Image Source="settings.png" />
+          <Label Text="Settings" VerticalOptions="Center" />
+        </StackLayout>
+      </ViewCell>
 
-            <ViewCell>
-                <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
-                    <Image Source="email.png" />
-                    <Label Text="E-mail" VerticalOptions="Center" />
-                </StackLayout>
-            </ViewCell>
-        </TableSection>
-    </TableRoot>
+      <ViewCell>
+        <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+          <Image Source="email.png" />
+          <Label Text="E-mail" VerticalOptions="Center" />
+        </StackLayout>
+      </ViewCell>
+    </TableSection>
+  </TableRoot>
 </TableView>
-{%- endhighlight -%}
+{% endhighlight %}
 
-Desta forma, conseguimos obter um resultado satisfatório, vejamos:
-
-<figure>
-	<img src="/assets/img/viewcell-ios-and-android.png" alt="Exibição com ViewCell no iOS e Android."> 
-	<figcaption>Exibição com ViewCell no iOS e Android.</figcaption>
-</figure>
-
-Funcionou para o Android, porém, acredito que essa solução ainda não seja a ideal. Se prestarmos atenção, iremos perceber que na renderização do iOS houve uma pequena diferença. Vamos analisar a renderização do ImageCell padrão e do ViewCell customizado, recém criado.
-
-Note que na imagem da esquerda ( renderizado com ImageCell ) a linha que delimita as células começa a partir do texto, enquanto na imagem da direita ( renderizado com ViewCell customizado ) essa linha começa juntamente com a imagem.
+This way, we obtain a satisfactory result, as shown below:
 
 <figure>
-	<img src="/assets/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparação do ImageCell com o ViewCell no iOS."> 
-	<figcaption>Comparação do ImageCell com o ViewCell no iOS.</figcaption>
+	<img src="/assets/img/viewcell-ios-and-android.png" alt="ViewCell rendering on iOS and Android."> 
+	<figcaption>ViewCell rendering on iOS and Android.</figcaption>
 </figure>
 
-Isso parece ser um detalhe simples, mas na minha opinião, é uma evidência clara de que não estamos utilizando o padrão que a plataforma propõe. Além disso, em grandes listas, poderemos ter problemas com performance na renderização destas células customizadas. Se você conferir na documentação, a sugestão do Xamarin é sempre utilizar built-in cells, ou seja, ImageCell, TextCell…
+It worked for Android, but I believe this solution is still not ideal. If we pay attention, we'll notice a small difference in the iOS rendering. Let's analyze the rendering of the default ImageCell and the newly created custom ViewCell.
 
-Então, o que fazer? Vamos analisar a solução 2 para descobrir.
+Notice that in the left image (rendered with ImageCell), the line that delimits the cells starts from the text, while in the right image (rendered with custom ViewCell), this line starts together with the image.
 
-### Solução 2 – Implementando ImageCellRenderer no Android
+<figure>
+	<img src="/assets/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparison of ImageCell with ViewCell on iOS."> 
+	<figcaption>Comparison of ImageCell with ViewCell on iOS.</figcaption>
+</figure>
 
-Vamos ter um pouco mais de trabalho para essa implementação, mas iremos garantir um melhor comportamento em ambas as plataformas.
+This may seem like a simple detail, but in my opinion, it is a clear indication that we are not using the standard proposed by the platform. Moreover, in large lists, we may have performance issues with the rendering of these customized cells. If you check the documentation, Xamarin suggests always using built-in cells, such as ImageCell, TextCell, etc.
 
-Primeiro, vamos criar nosso próprio custom control do ImageCell:
+So, what to do? Let's explore Solution 2 to find out.
 
-{%- highlight cs -%}
+### Solution 2 – Implementing ImageCellRenderer on Android
+
+We'll have a little more work for this implementation, but we'll ensure better behavior on both platforms.
+
+First, let's create our own custom control for ImageCell:
+
+{% highlight cs %}
 using System;
 using Xamarin.Forms;
 
 namespace Core.Controls
 {
-    public class CustomImageCell : ImageCell
-    {
-    }
+  public class CustomImageCell : ImageCell
+  {
+  }
 }
-{%- endhighlight -%}
+{% endhighlight %}
 
-Em seguida, vamos atualizar o XAML para referenciar o custom control recém criado:
+Next, let's update the XAML to reference the newly created custom control:
 
-{%- highlight xml -%}
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:control="clr-namespace:Core.Controls;assembly=Core"  
              x:Class="Core.Views.HomeView" 
              Title="Home">
-    <ContentPage.Content>
-        <TableView Intent="Menu">
-            <TableRoot>
-                <TableSection>
-                    <control:CustomImageCell ImageSource="location.png" Text="Localização" />
-                    <control:CustomImageCell ImageSource="settings.png" Text="Configurações" />
-                    <control:CustomImageCell ImageSource="email.png" Text="E-mail" />
-                </TableSection>
-            </TableRoot>
-        </TableView>
-    </ContentPage.Content>
+  <ContentPage.Content>
+    <TableView Intent="Menu">
+      <TableRoot>
+        <TableSection>
+          <control:CustomImageCell ImageSource="location.png" Text="Location" />
+          <control:CustomImageCell ImageSource="settings.png" Text="Settings" />
+          <control:CustomImageCell ImageSource="email.png" Text="E-mail" />
+        </TableSection>
+      </TableRoot>
+    </TableView>
+  </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+{% endhighlight %}
 
-Agora, basta personalizarmos a aparência do nosso custom control na plataforma Android.
+Now, let's customize the appearance of our custom control on the Android platform.
 
-{%- highlight cs -%}
+{% highlight cs %}
 using System;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
@@ -145,32 +145,32 @@ using Android.Widget;
 [assembly: ExportRenderer (typeof (CustomImageCell), typeof (CustomImageCellRenderer))]
 namespace Core.Droid.Renders
 {
-    public class CustomImageCellRenderer : ImageCellRenderer
+  public class CustomImageCellRenderer : ImageCellRenderer
+  {
+    protected override Android.Views.View GetCellCore (Cell item, Android.Views.View convertView, Android.Views.ViewGroup parent, Android.Content.Context context)
     {
-        protected override Android.Views.View GetCellCore (Cell item, Android.Views.View convertView, Android.Views.ViewGroup parent, Android.Content.Context context)
-        {
-            LinearLayout cell = (LinearLayout)base.GetCellCore (item, convertView, parent, context);
-            ImageView image = (ImageView)cell.GetChildAt (0);
-            image.SetScaleType (ImageView.ScaleType.Center);
-            return cell;
-        }
+      LinearLayout cell = (LinearLayout)base.GetCellCore (item, convertView, parent, context);
+      ImageView image = (ImageView)cell.GetChildAt (0);
+      image.SetScaleType (ImageView.ScaleType.Center);
+      return cell;
     }
+  }
 }
-{%- endhighlight -%}
+{% endhighlight %}
 
-O mais importante aqui é a configuração que estamos aplicando para a imagem, onde configuramos o ScaleType Center. Com isso, já conseguimos realizar a renderização mais adequada no Android:
+The most important part here is the configuration we are applying to the image, where we set the ScaleType to Center. With this, we achieve a more appropriate rendering on Android:
 
 <figure>
-	<img src="/assets/img/imagecell-ios-and-android.png" alt="Exibição padrão no iOS e custom renderer no Android."> 
-	<figcaption>Exibição padrão no iOS e custom renderer no Android.</figcaption>
+	<img src="/assets/img/imagecell-ios-and-android.png" alt="Default rendering on iOS and custom renderer on Android."> 
+	<figcaption>Default rendering on iOS and custom renderer on Android.</figcaption>
 </figure>
 
-Note que não personalizamos a aparência no iOS, somente especificamos a aparência no Android, portanto, no iOS continua a renderização do ImageCell padrão, que já estava adequada.
+Note that we did not customize the appearance on iOS; we only specified the appearance on Android, so the default ImageCell rendering, which was already appropriate, remains on iOS.
 
-Pronto! O que achou? Deixe seu comentário, sendo critica ou sugestão.
+There you have it! What do you think? Feel free to leave your comments, whether criticism or suggestions.
 
-Você também pode baixar o projeto e testar cada cenário relatado no post. O repositório está no [GitHub][projeto].
+You can also download the project and test each scenario described in the post. The repository is on [GitHub][projeto].
 
-Por hoje é só, abraço!
+That's all for today, cheers!
 
 [projeto]: https://github.com/ionixjunior/XFImageCellApp

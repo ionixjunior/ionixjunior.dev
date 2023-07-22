@@ -1,33 +1,33 @@
 ---
 layout: post
-title:  "Xamarin.Forms – Prevenindo duplo clique"
+title:  "Xamarin.Forms - Preventing double click"
 date:   2016-12-04
 redirect_from:
     - /xamarin-forms-prevenindo-duplo-clique
 ---
 
-<p class="intro"><span class="dropcap">O</span>lá, estou de volta! Hoje vou falar sobre uma situação que enfrentei essa semana e precisei bolar uma solução. Vou falar sobre duplo clique na navegação do mobile ( se é que podemos chamar assim ).</p>
+<p class="intro"><span class="dropcap">H</span>i, I'm back! Today I'm going to talk about a situation I faced this week and had to come up with a solution. I'm going to talk about double clicking on mobile navigation (if we can call it that).</p>
 
-Ao liberar um aplicativo para testes, alguns usuários disseram “olha aqui o que consegui fazer…”. Então, eu fiz aquela cara de “o que vocês fizeram dessa vez…” e fui verificar. Identifiquei que o usuário havia clicado 2x em um determinado botão, fazendo com que abrisse 2x a página solicitada. Neste caso relatado, o usuário nem teve culpa ou maldade. Sem querer ( eu prefiro acreditar nisso! ), ele clicou rapidamente mais de uma vez no botão e o problema aconteceu. Vale mencionar que o app não travou, ele apenas abriu a mesma página mais de uma vez, algo similar a isso:
+When releasing an app for testing, some users said "look what I managed to do...". So, I made that face of "what did you guys do this time..." and went to check. I identified that the user had clicked 2x on a certain button, causing the requested page to open 2x. In this reported case, the user was not even at fault or malicious. Unintentionally (I prefer to believe that!), he clicked quickly more than once on the button and the problem happened. It is worth mentioning that the app did not crash, it just opened the same page more than once, something similar to this:
 
 <figure>
-	<img src="/assets/img/duplo-clique-app-mobile.gif" alt="Exemplo de duplo clique sendo realizado em uma tela do app."> 
-	<figcaption>Exemplo de duplo clique sendo realizado em uma tela do app.</figcaption>
+	<img src="/assets/img/duplo-clique-app-mobile.gif" alt="Example of double click being performed on an app screen."> 
+	<figcaption>Example of double click being performed on an app screen.</figcaption>
 </figure>
 
-Com isso, lembrei que quando comecei a trabalhar com desenvolvimento mobile, eu já havia perguntando isso para um desenvolvedor que trabalhava na Xamarin e ele respondeu o seguinte:
+With that, I remembered that when I started working with mobile development, I had already asked this to a developer who worked at Xamarin and he replied the following:
 
 <blockquote>For the button issues, you may need to modify the events handling the button click event so that it disables the button after it has been clicked once. Although, in a real case your users should not be performing a "double-click" type of event.</blockquote>
 
-E agora, o que fazer? Confiar no usuário?? Acreditar que ele não vai realmente querer te trollar e “sair fazendo” o que não deve no app???
+And now, what to do? Trust the user?? Believe that he really won't want to troll you and "go doing" what he shouldn't in the app???
 
-Resolvi não confiar, então, implementei uma simples validação na navegação para resolver esse problema.
+I decided not to trust, so I implemented a simple validation in navigation to solve this problem.
 
-### A solução
+### The solution
 
-A solução que vou citar leva em consideração que temos um sistema de navegação centralizado, então, tornou fácil a implementação dessa validação.
+The solution I will mention takes into account that we have a centralized navigation system, so it was easy to implement this validation.
 
-O cenário é o seguinte: temos 2 páginas, Page1View e Page2View. Na Page1View, temos um botão. Este botão tem um comando, que ao clicar, irá chamar a Page2View, como pode ser visto abaixo na view ( xaml e code behind ):
+The scenario is as follows: we have 2 pages, Page1View and Page2View. On Page1View, we have a button. This button has a command, which when clicked, will call Page2View, as can be seen below in the view (xaml and code behind):
 
 {%- highlight xml -%}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -65,7 +65,7 @@ namespace Core.Views
 }
 {%- endhighlight -%}
 
-E abaixo, a implementação do view model desta página:
+And below is the implementation of this page's view model:
 
 {%- highlight cs -%}
 using System.Threading.Tasks;
@@ -87,7 +87,7 @@ namespace Core.ViewModels
 }
 {%- endhighlight -%}
 
-Vejam que na execução do comando, o algoritmo utiliza DependencyService para carregar a implementação de INavigationHelper, e assim, consumir o método GotoPage2 para navegar para próxima página. Neste interface, consta todos as navegações que o app irá ter, neste caso, temos apenas 1 página:
+Notice that in the execution of the command, the algorithm uses DependencyService to load the implementation of INavigationHelper, and thus consume the GotoPage2 method to navigate to the next page. In this interface are all navigations that the app will have, in this case we have only 1 page:
 
 {%- highlight cs -%}
 using System.Threading.Tasks;
@@ -101,7 +101,7 @@ namespace Core.Interfaces
 }
 {%- endhighlight -%}
 
-No App.xaml.cs, registrei a dependência, informando ao DependencyService que para resolver a interface INavigationHelper deve utilizar a implementação NavigationHelper.
+In App.xaml.cs, I registered the dependency, informing DependencyService that to resolve INavigationHelper interface it should use NavigationHelper implementation.
 
 {%- highlight cs -%}
 using Core.Helpers;
@@ -125,7 +125,7 @@ namespace Core
 }
 {%- endhighlight -%}
 
-E aqui temos a implementação do NavigationHelper:
+And here is the implementation of NavigationHelper:
 
 {%- highlight cs -%}
 using System;
@@ -162,16 +162,16 @@ namespace Core.Helpers
 }
 {%- endhighlight -%}
 
-Na implementação do NavigationHelper, existe um método privado chamado Navigate, e o objetivo aqui é que todas as chamadas de páginas sejam executadas por este método, pois o “pulo do gato” esta na validação existente nele, onde é verificado se já está sendo navegado. Caso sim, a operação é abortada. Caso contrário, o atributo _isNavigating é alterado para true, executado a operação e após 500 milissegundos é retornado o estado original do atributo, _isNavigating = false.
+In the implementation of NavigationHelper, there is a private method called Navigate, and the goal here is that all page calls are executed by this method, because the "trick" is in the validation that exists in it, where it is checked if it is already being navigated. If so, the operation is aborted. Otherwise, the _isNavigating attribute is changed to true, the operation is executed and after 500 milliseconds the original state of the attribute is returned, _isNavigating = false.
 
-Pronto, resolvido o problema. E aí, o que achou? Ah, neste caso, eu consegui apenas fazer a simulação deste problema no Android, ok? No iOS o problema não aconteceu com o componente Button utilizado no projeto.
+Ready, problem solved. And then, what did you think? Ah, in this case, I was only able to simulate this problem on Android, ok? On iOS the problem did not happen with the Button component used in the project.
 
-Talvez essa solução não seja tão elegante, mas resolveu o problema e os usuários agora já não irão mais conseguir fazer isso!
+Maybe this solution is not so elegant, but it solved the problem and users will no longer be able to do that!
 
-Se você tem alguma idéia melhor ou conhece uma implementação mais aprimorada em relação a isso, favor deixe seu comentário.
+If you have a better idea or know a more refined implementation regarding this, please leave your comment.
 
-O link do projeto de exemplo que criei encontra-se no [Github][projeto].
+The link to the example project I created can be found on [Github][project].
 
-Abraço!
+Hug!
 
-[projeto]: https://github.com/ionixjunior/XFNavigation
+[project]: https://github.com/ionixjunior/XFNavigation

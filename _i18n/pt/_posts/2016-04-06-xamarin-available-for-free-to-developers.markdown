@@ -7,7 +7,7 @@ redirect_from:
     - /xamarin-disponivel-gratuitamente-para-desenvolvedores
 ---
 
-<p class="intro"><span class="dropcap">R</span>ecentemente foi noticiado pela Microsoft que a plataforma Xamarin estará disponível gratuitamente para os desenvolvedores.</p>
+<p class="intro"><span class="dropcap">R</span>ecentemente foi noticiado pela Microsoft que a plataforma Xamarin está disponível gratuitamente para os desenvolvedores.</p>
 
 Se você já tinha sua licença trial do Xamarin, agora pode convertê-la para community edition e desenvolver seus aplicativos sem as restrições que existiam.
 
