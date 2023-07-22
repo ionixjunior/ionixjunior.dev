@@ -10,7 +10,7 @@ title: Ione Souza Junior
 		<article>
 			<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
 			<h3>
-				<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+				<a class="post-link" href="{{ site.baseurl | append: post.url }}">{{ post.title }}</a>
 			</h3>
 			<p>
 				{%- if post.description -%}{{ post.description }}{%- else -%}{{
