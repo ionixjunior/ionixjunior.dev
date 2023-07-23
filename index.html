@@ -26,11 +26,11 @@ title: Ione Souza Junior
 		<a
 			href="{{ site.baseurl | append: paginator.previous_page_path }}"
 			class="previous button__outline"
-			>Posts Novos</a
+			>{% t new_posts %}</a
 		>
 		{%- endif -%} {%- if paginator.next_page -%}
 		<a href="{{ site.baseurl | append: paginator.next_page_path }}" class="next button__outline"
-			>Posts Antigos</a
+			>{% t old_posts %}</a
 		>
 		{%- endif -%}
 	</div>
