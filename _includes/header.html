@@ -1,11 +1,11 @@
  <div class="header {% if site.header == "large" %}header--large{% endif %}">
      <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
          {%- if site.lang == "en" -%}
          <a href="/" class="lang-button">🇧🇷</a>
          {%- else -%}
          <a href="/en" class="lang-button">🇺🇸</a>
          {%- endif -%}
-         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
          <h2 class="logo"><a href="{{ site.baseurl }}/">{{ site.role }}</a></h2>
          <nav class="nav-collapse">
              <ul class="noList">
