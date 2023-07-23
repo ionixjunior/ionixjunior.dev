@@ -4,7 +4,7 @@ title:  "Como fazer o título clicável similar ao app Meetup no Xamarin.Forms"
 date:   2017-01-09
 translations: ["en"]
 redirect_from:
-    - /como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarin-forms
+    - /como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarin-forms/
 ---
 
 <p class="intro"><span class="dropcap">C</span>onhece o app Meetup? Meetup é uma rede social que tem o objetivo de facilitar reuniões em grupo offline. E por que estou falando disso? Apenas para dar uma introdução no assunto. O que quero falar hoje é sobre como fazer o título clicável do app Meetup para iOS em um app desenvolvido com Xamarin.Forms.</p>

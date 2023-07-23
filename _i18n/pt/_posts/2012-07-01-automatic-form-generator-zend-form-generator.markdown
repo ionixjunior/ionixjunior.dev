@@ -4,7 +4,7 @@ title:  "Gerador automático de formulários – Zend Form Generator"
 date:   2012-07-01
 translations: ["en"]
 redirect_from:
-    - /gerador-automatico-de-formularios-zend-form-generator
+    - /gerador-automatico-de-formularios-zend-form-generator/
 ---
 
 <p class="intro"><span class="dropcap">C</span>riar formulários, na maioria das vezes, torna-se uma atividade muito repetitiva e também cansativa, principalmente se em sua aplicação existem muitos formulários a serem criados.</p>

@@ -4,7 +4,7 @@ title:  "SetupMyProject – Configure seu projeto em menos de 5 minutos"
 date:   2016-01-30
 translations: ["en"]
 redirect_from:
-    - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos
+    - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos/
 ---
 
 <p class="intro"><span class="dropcap">E</span>ssa dica é destinada a desenvolvedores Java e se chama SetupMyProject.</p>

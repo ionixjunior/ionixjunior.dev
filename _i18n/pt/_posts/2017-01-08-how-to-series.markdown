@@ -4,7 +4,7 @@ title:  "Série “como fazer”"
 date:   2017-01-08
 translations: ["en"]
 redirect_from:
-    - /serie-como-fazer
+    - /serie-como-fazer/
 ---
 
 <p class="intro"><span class="dropcap">Q</span>uando iniciamos o desenvolvimento de um software é normal nos inspirarmos em uma ideia já existente. Isso pode ser uma tela bem feita, uma experiência boa para o usuário, um case de sucesso.</p>

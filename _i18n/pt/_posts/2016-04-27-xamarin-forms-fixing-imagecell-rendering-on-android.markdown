@@ -5,7 +5,7 @@ date:   2016-04-27
 translations: ["en"]
 image: imagecell-ios-and-android.png
 redirect_from:
-    - /xamarin-forms-corrigindo-a-renderizacao-do-imagecell-no-android
+    - /xamarin-forms-corrigindo-a-renderizacao-do-imagecell-no-android/
 ---
 
 <p class="intro"><span class="dropcap">A</span>o utilizar TableView no Xamarin Forms temos algumas opções de elementos para utilizar, tais como, TextCell, ImageCell, SwitchCell, EntryCell. Estes elementos citados são chamados de built-in cells. Neste artigo, vamos falar um pouco sobre o ImageCell.</p>

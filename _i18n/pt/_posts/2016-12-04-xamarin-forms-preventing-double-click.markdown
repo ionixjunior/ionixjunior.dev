@@ -4,7 +4,7 @@ title:  "Xamarin.Forms – Prevenindo duplo clique"
 date:   2016-12-04
 translations: ["en"]
 redirect_from:
-    - /xamarin-forms-prevenindo-duplo-clique
+    - /xamarin-forms-prevenindo-duplo-clique/
 ---
 
 <p class="intro"><span class="dropcap">O</span>lá, estou de volta! Hoje vou falar sobre uma situação que enfrentei essa semana e precisei bolar uma solução. Vou falar sobre duplo clique na navegação do mobile ( se é que podemos chamar assim ).</p>

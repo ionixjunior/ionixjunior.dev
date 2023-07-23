@@ -4,7 +4,7 @@ title:  "“Storage almost full”, nunca mais!"
 date:   2014-08-26
 translations: ["en"]
 redirect_from:
-    - /storage-almost-full-nunca-mais
+    - /storage-almost-full-nunca-mais/
 ---
 
 <p class="intro"><span class="dropcap">V</span>ocê compra um celular novinho em folha e vai enchendo de fotos, vídeos, aplicativos e depois de um tempo você vê aquela mensagem de que não tem mais espaço no dispositivo para armazenar informações. E agora, como faz?</p>

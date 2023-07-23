@@ -4,7 +4,7 @@ title:  "Vídeo aulas de desenvolvimento de interfaces com Xamarin.Forms"
 date:   2022-01-03
 translations: ["en"]
 redirect_from:
-    - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms
+    - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms/
 ---
 
 <p class="intro"><span class="dropcap">E</span>m maio de 2020 fiz uma live perguntando "o que você gostaria de ver em vídeo aulas sobre desenvolvimento de interfaces com Xamarin.Forms". Afinal de contas, que fim teve essa iniciativa? É isso o que você vai saber neste post.</p>
