@@ -66,6 +66,39 @@ object {
 	color: $white;
 }
 
+.lang-button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	float: right;
+	line-height: 2em;
+	margin-top: 0.5em;
+	background-color: $background-color;
+	border-radius: 4px;
+	padding: 0 0.5em;
+	color: white;
+	text-decoration: none;
+	position: relative;
+	right: 2rem;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: white;
+		background-color: darken($background-color, 10%);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.nav-toggle {
+		margin: 0 10px;
+	}
+}
+  
+  
 /***************
 LINK STYLING
 ***************/
