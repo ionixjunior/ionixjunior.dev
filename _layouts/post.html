@@ -11,7 +11,24 @@ layout: default
     {% capture date_format %}{% t date_format %}{% endcapture %}
     <h1 class="postTitle">{{ page.title }}</h1>
     {% assign minutes = page.content | number_of_words | divided_by:180 %}
-    <p class="meta">{{ page.date | date: date_format }} | <span class="time">{{ minutes }}</span> {% if minutes == 1 %}{% t minute_read_singular %}{% else %}{% t minute_read_plural %}{% endif %}</p>
+    <p class="meta">
+      {{ page.date | date: date_format }} 
+      | <span class="time">{{ minutes }}</span> {% if minutes == 1 %}{% t minute_read_singular %}{% else %}{% t minute_read_plural %}{% endif %} 
+      {% if page.translations %}
+      | {% t translations %}: 
+      {% for translation in page.translations %}
+        {% if site.lang == "en" %}
+          <a href="{{ site.baseurl_root }}{{ page.url }}">
+            {{ translation }}
+          </a>
+        {% else %}
+          <a href="{{ site.baseurl }}/{{ translation }}{{ page.url }}">
+            {{ translation }}
+          </a>
+        {% endif %}
+      {% endfor %}
+      {% endif %}
+    </p>
   </header>
 
   {{ content }}
