@@ -2,6 +2,7 @@
 layout: post
 title: "Configuring SQL Server connection with ODBC driver in Zend Framework"
 date: 2012-07-05
+translations: ["pt"]
 redirect_from:
     - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework
 ---

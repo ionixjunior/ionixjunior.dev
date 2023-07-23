@@ -2,6 +2,7 @@
 layout: post
 title: "Keeping your software under control"
 date: 2014-10-19
+translations: ["pt"]
 redirect_from:
   - /mantendo-seu-software-sob-controle
 ---

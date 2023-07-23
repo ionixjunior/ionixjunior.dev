@@ -2,6 +2,7 @@
 layout: post
 title:  "Xamarin.Forms and the problems you should avoid"
 date:   2016-06-02
+translations: ["pt"]
 redirect_from:
     - /xamarin-forms-e-os-problemas-que-voce-deve-evitar
 ---

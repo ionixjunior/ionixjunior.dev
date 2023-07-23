@@ -2,6 +2,7 @@
 layout: post
 title: "Xamarin.Forms and UI – Which tool is more productive?"
 date: 2018-02-20
+translations: ["pt"]
 redirect_from:
   - /xamarin-forms-e-ui-qual-ferramenta-e-mais-produtiva
 ---

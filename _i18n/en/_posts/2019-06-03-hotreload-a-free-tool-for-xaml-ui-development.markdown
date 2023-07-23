@@ -2,6 +2,7 @@
 layout: post
 title: "HotReload: A free tool for XAML UI development"
 date: 2019-06-03
+translations: ["pt"]
 redirect_from:
   - /hotreload-uma-ferramenta-gratuita-para-desenvolvimento-de-ui-em-xaml
 ---

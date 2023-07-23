@@ -2,6 +2,7 @@
 layout: post
 title: "Video tutorials for developing interfaces with Xamarin.Forms"
 date: 2022-01-03
+translations: ["pt"]
 redirect_from:
   - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms
 ---

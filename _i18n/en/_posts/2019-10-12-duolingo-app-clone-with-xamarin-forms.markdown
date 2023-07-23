@@ -2,6 +2,7 @@
 layout: post
 title: "Duolingo app clone with Xamarin.Forms"
 date: 2019-10-12
+translations: ["pt"]
 redirect_from:
   - /duolingo-app-clone-com-xamarin-forms
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Offline map app using Ionic Framework"
 date: 2016-01-18
+translations: ["pt"]
 redirect_from:
   - /aplicativo-com-mapa-offline-usando-ionic-framework
 ---
