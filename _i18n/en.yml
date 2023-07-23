@@ -5,3 +5,6 @@ change_language: "Change language to Portuguese"
 translations: "Translations"
 old_posts: "Old posts"
 new_posts: "New posts"
+menu:
+  home: "Home"
+  about: "About"

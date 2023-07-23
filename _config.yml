@@ -22,9 +22,9 @@ plugins:
 paginate: 5
 
 navigation:
-    - title: Início
+    - title: menu.home
       url: /index.html
-    - title: Sobre
+    - title: menu.about
       url: /about
 
 social:

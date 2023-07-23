@@ -5,3 +5,6 @@ change_language: "Mudar idioma para Inglês"
 translations: "Traduções"
 old_posts: "Posts antigos"
 new_posts: "Posts novos"
+menu:
+  home: "Início"
+  about: "Sobre"
