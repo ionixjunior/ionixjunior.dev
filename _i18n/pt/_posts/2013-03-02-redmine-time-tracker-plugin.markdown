@@ -2,6 +2,7 @@
 layout: post
 title:  "Redmine Time Tracker plugin"
 date:   2013-03-02
+translations: ["en"]
 ---
 
 <p class="intro"><span class="dropcap">N</span>os primeiros testes que fiz com Redmine, percebi que a maneira que ele disponibiliza para fazer apontamento de horas é um pouco precária, e até onde vi, não existe um client estilo o Worklog, e principalmente, open source, para realizar essa tarefa de maneira sutil.</p>

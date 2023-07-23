@@ -7,4 +7,5 @@ gem "http_parser"
 gem "webrick", "~> 1.7"
 gem "jekyll-target-blank"
 gem "jekyll-redirect-from"
+gem "jekyll-multiple-languages-plugin"
  
