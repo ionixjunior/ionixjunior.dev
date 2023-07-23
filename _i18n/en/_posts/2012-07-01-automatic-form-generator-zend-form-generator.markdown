@@ -3,8 +3,6 @@ layout: post
 title: "Automatic form generator - Zend Form Generator"
 date: 2012-07-01
 translations: ["pt"]
-redirect_from:
-    - /gerador-automatico-de-formularios-zend-form-generator
 ---
 
 <p class="intro"><span class="dropcap">C</span>reating forms often becomes a very repetitive and tiring task, especially if your application requires the creation of many forms.</p>

@@ -3,8 +3,6 @@ layout: post
 title: "Video tutorials for developing interfaces with Xamarin.Forms"
 date: 2022-01-03
 translations: ["pt"]
-redirect_from:
-  - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms
 ---
 
 <p class="intro"><span class="dropcap">I</span>n May 2020, I hosted a live session asking, "What would you like to see in video tutorials about developing interfaces with Xamarin.Forms?" So, what happened to that initiative? That's what you'll find out in this post.</p>

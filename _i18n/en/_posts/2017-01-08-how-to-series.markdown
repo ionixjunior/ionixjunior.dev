@@ -3,8 +3,6 @@ layout: post
 title: "Series 'how to do'"
 date: 2017-01-08
 translations: ["pt"]
-redirect_from:
-    - /serie-como-fazer
 ---
 
 <p class="intro"><span class="dropcap">W</span>hen we start developing software, it's normal to draw inspiration from an existing idea. It could be a well-designed screen, a great user experience, or a successful case study.</p>
