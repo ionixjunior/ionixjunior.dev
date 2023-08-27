@@ -3,6 +3,7 @@ layout: post
 title: "Customizing SeparatorInset of UITableView in iOS – Xamarin.Forms"
 date: 2018-07-30
 translations: ["pt"]
+tags: ["xamarin", "ios"]
 ---
 
 <p class="intro"><span class="dropcap">I</span>mportant notice: this post is intended for perfectionist developers. Hello, folks! Today, I bring a small tip on how to customize the SeparatorInset of a UITableView in iOS in a Xamarin.Forms application. But what is that? What are we talking about? Let's find out in this post!</p>

@@ -3,6 +3,7 @@ layout: post
 title: "SetupMyProject – Configure your project in less than 5 minutes"
 date: 2016-01-30
 translations: ["pt"]
+tags: ["misc"]
 ---
 
 <p class="intro"><span class="dropcap">T</span>his tip is intended for Java developers and it's called SetupMyProject.</p>
