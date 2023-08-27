@@ -3,7 +3,7 @@ layout: post
 title: "Redmine Time Tracker plugin"
 date: 2013-03-02
 translations: ["pt"]
-tags: ["redmine"]
+tags: ["misc"]
 ---
 
 <p class="intro"><span class="dropcap">I</span>n the initial tests I performed with Redmine, I noticed that the time tracking feature it provides is somewhat limited, and as far as I could see, there isn't a client similar to Worklog, especially an open-source one, for seamless time tracking.</p>
