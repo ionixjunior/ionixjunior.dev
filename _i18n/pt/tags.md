@@ -18,7 +18,7 @@
     <div>
         <ul class="noList">
             {% for tag in tags %}
-            <h2 id="{{ tag }}">{{ tag }}</h2>
+            <h2 id="{{ tag }}">#{{ tag }}</h2>
             {% for post in site.posts %}
             {% if post.tags contains tag %}
             <li>
