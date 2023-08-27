@@ -3,6 +3,7 @@ layout: post
 title: "Offline map app using Ionic Framework"
 date: 2016-01-18
 translations: ["pt"]
+tags: ["ionic"]
 ---
 
 <p class="intro"><span class="dropcap">L</span>et's go! This post was inspired by a question posted in the Ionic Brazil Slack. The question was something like: "Has anyone done anything related to maps, like downloading the map to the user's phone, without needing to load it online?"</p>

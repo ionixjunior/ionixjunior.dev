@@ -3,6 +3,7 @@ layout: post
 title:  "Customizando SeparatorInset do UITableView do iOS – Xamarin.Forms"
 date:   2018-07-30
 translations: ["en"]
+tags: ["xamarin"]
 redirect_from:
     - /customizando-separatorinset-do-uitableview-do-ios-xamarin-forms/
 ---

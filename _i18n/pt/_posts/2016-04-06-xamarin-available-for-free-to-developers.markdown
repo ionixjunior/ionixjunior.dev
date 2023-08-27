@@ -4,6 +4,7 @@ title:  "Xamarin disponível gratuitamente para desenvolvedores"
 date:   2016-04-06
 translations: ["en"]
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
+tags: ["xamarin"]
 redirect_from:
     - /xamarin-disponivel-gratuitamente-para-desenvolvedores/
 ---
