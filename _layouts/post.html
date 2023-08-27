@@ -30,7 +30,7 @@ layout: default
       {% endif %}
       |
       {% for tag in page.tags %}
-        <a href="">#{{ tag }}</a>
+       <a href="{{ site.baseurl | append: '/tags/#' | append: tag }}">#{{ tag }}</a>
       {% endfor %}
     </p>
   </header>
