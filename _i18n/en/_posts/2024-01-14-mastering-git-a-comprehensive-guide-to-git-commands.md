@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mastering Git: A Comprehensive Guide to Git Commands"
-date:   2024-01-13
+date:   2024-01-14
 translations: ["pt"]
 tags: ["git"]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dominando o Git: Um Guia Abrangente para Comandos do Git"
-date:   2024-01-13
+date:   2024-01-14
 translations: ["en"]
 tags: ["git"]
 ---
