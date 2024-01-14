@@ -28,7 +28,7 @@ Nesta série, vou desmembrar cada comando do Git em postagens de fácil compreen
 
 ### Mantenha-se atualizado
 
-Não deixe de marcar esta página, pois a atualizarei com links para cada nova postagem da série. Siga-me nas [redes sociais][twitter] para anúncios e insights adicionais.
+Fique atento a esta página, pois a atualizarei com links para cada nova postagem da série. Siga-me nas [redes sociais][twitter] para anúncios e insights adicionais.
 
 ### Participe da discussão
 
