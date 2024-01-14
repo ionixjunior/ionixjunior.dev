@@ -77,10 +77,18 @@
 	<link rel="stylesheet" href="/assets/css/style.css" />
 
 	<!-- Canonical URL -->
-	<link
-		rel="canonical"
-		href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
-	/>
+	{% if site.lang == "en" %}
+		<link
+			rel="canonical"
+			href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}"
+		/>
+	{% else %}
+		<link
+			rel="canonical"
+			href="{{ page.url | replace:'index.html','' | prepend: site.url }}"
+		/>
+	{% endif %}
+	
 
 	{%- if site.google_analytics and jekyll.environment == "production" -%} {%- include google_analytics.html -%} {%-
 	endif -%}
