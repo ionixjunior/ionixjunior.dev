@@ -9,7 +9,14 @@
 	{%- endif -%}
 	<meta property="og:locale" content="{{ site.lang }}">
 	<title>{{ page.title }}</title>
+
 	{% assign title = page.title | url_encode %}
+	{% if site.lang == "en" %}
+	{% assign baseurl = site.url | append: site.baseurl %}
+	{% else %}
+	{% assign baseurl = site.url %}
+	{% endif %}
+
 	<!-- Open Graph Meta -->
 	<meta content="{{ site.title }}" property="og:site_name" />
 	{%- if page.title -%}
@@ -25,7 +32,7 @@
 	{%- else -%}
 	<meta content="{{ site.description }}" property="og:description" />
 	{%- endif -%} {%- if page.url -%}
-	<meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+	<meta content="{{ baseurl }}{{ page.url }}" property="og:url" />
 	{%- endif -%} {%- if page.date -%}
 	<meta
 		content="{{ page.date | date_to_xmlschema }}"
@@ -53,7 +60,7 @@
 	{%- else -%}
 	<meta name="twitter:title" content="{{ site.title }}" />
 	{%- endif -%} {%- if page.url -%}
-	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
+	<meta name="twitter:url" content="{{ baseurl }}{{ page.url }}" />
 	{%- endif -%} {%- if page.image -%}
 	<meta
 		name="twitter:image:src"
@@ -75,7 +82,7 @@
 
 	<!-- Stylesheet -->
 	<link rel="stylesheet" href="/assets/css/style.css" />
-
+	
 	<!-- Canonical URL -->
 	{% if site.lang == "en" %}
 		<link
