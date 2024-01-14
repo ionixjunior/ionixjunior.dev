@@ -34,6 +34,6 @@ Fique atento a esta página, pois a atualizarei com links para cada nova postage
 
 Incentivo você a interagir comigo e com outras pessoas desenvolvedoras na seção de comentários. Compartilhe suas ideias, faça perguntas e me diga sobre quais comandos do Git você gostaria de explorar mais a fundo.
 
-Vamos embarcar juntos nesta jornada de domínio do Git – capacitando desenvolvedores um comando de cada vez!
+Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas habilidades, comando por comando!
 
 [twitter]: https://twitter.com/ionixjunior
