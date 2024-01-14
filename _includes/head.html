@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="" />
 	<title>{{ page.title }}</title>
-
+	{% assign title = page.title | url_encode %}
 	<!-- Open Graph Meta -->
 	<meta content="{{ site.title }}" property="og:site_name" />
 	{%- if page.title -%}
@@ -34,7 +34,7 @@
 	/>
 	{%- else -%}
 	<meta
-		content="{{ '/assets/img/cover.jpg' | prepend: site.url }}"
+		content="{{ title | prepend: 'https://ionixjuniordevthumbnail.azurewebsites.net/api/Generate?title=' }}"
 		property="og:image"
 	/>
 	{%- endif -%}
@@ -55,7 +55,6 @@
 		content="{{ site.url }}/assets/img/{{ page.image }}"
 	/>
 	{%- else -%}
-	{% assign title = page.title | url_encode %}
 	<meta
 		name="twitter:image"
 		content="{{ title | prepend: 'https://ionixjuniordevthumbnail.azurewebsites.net/api/Generate?title=' }}"
