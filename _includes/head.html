@@ -40,7 +40,7 @@
 	{%- endif -%}
 
 	<!-- Twitter Cards -->
-	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@{{ site.social.twitter }}" />
 	<meta name="twitter:creator" content="@{{ site.social.twitter }}" />
 	{%- if page.title -%}
@@ -55,13 +55,14 @@
 	<meta name="twitter:description" content="{{ site.description }}" />
 	{%- endif -%} {%- if page.image -%}
 	<meta
-		name="twitter:image:src"
+		name="twitter:image"
 		content="{{ site.url }}/assets/img/{{ page.image }}"
 	/>
 	{%- else -%}
+	{% assign title = page.title | url_encode %}
 	<meta
-		name="twitter:image:src"
-		content="{{ '/assets/img/cover.jpg' | prepend: site.url }}"
+		name="twitter:image"
+		content="{{ title | prepend: 'https://ionixjuniordevthumbnail.azurewebsites.net/api/Generate?title=' }}"
 	/>
 	{%- endif -%}
 
