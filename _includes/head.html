@@ -51,12 +51,12 @@
 	<meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
 	{%- endif -%} {%- if page.image -%}
 	<meta
-		name="twitter:image"
+		name="twitter:image:src"
 		content="{{ site.url }}/assets/img/{{ page.image }}"
 	/>
 	{%- else -%}
 	<meta
-		name="twitter:image"
+		name="twitter:image:src"
 		content="{{ title | prepend: 'https://ionixjuniordevthumbnail.azurewebsites.net/api/Generate?title=' }}"
 	/>
 	{%- endif -%}
