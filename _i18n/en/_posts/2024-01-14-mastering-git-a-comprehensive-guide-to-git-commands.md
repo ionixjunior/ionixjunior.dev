@@ -13,7 +13,7 @@ tags: ["git"]
 In this series, I will break down each Git command into digestible posts, offering step-by-step tutorials, practical examples, and real-world use cases. From foundational commands like `git init` to advanced techniques like efficient bug hunting using `git bisect`.
 
 ### Series outline
-1. Git Basics: An In-Depth Look at Essential Commands
+1. [Git Basics: An In-Depth Look at Essential Commands][post_1]
     * A solid foundation covering fundamental Git commands.
 2. Git Add Command Explained: A Step-by-Step Tutorial
     * Understanding the significance of the "git add" command.
@@ -37,3 +37,4 @@ I encourage you to engage with me and fellow developers in the comments section.
 Embark with me on the journey to Git mastery – together, we'll enhance our skills, one command at a time!
 
 [twitter]: https://twitter.com/ionixjunior
+[post_1]:  /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/

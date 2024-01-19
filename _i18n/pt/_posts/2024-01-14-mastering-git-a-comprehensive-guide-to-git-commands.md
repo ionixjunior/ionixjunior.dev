@@ -13,7 +13,7 @@ tags: ["git"]
 Nesta série, vou desmembrar cada comando do Git em postagens de fácil compreensão, oferecendo tutoriais passo a passo, exemplos práticos e casos de uso do mundo real. Desde comandos fundamentais como `git init` até técnicas avançadas como a caça eficiente a bugs usando `git bisect`.
 
 ### Esboço da série
-1. Git Básico: Uma Análise Profunda nos Comandos Essenciais
+1. [Git Básico: Uma Análise Profunda nos Comandos Essenciais][post_1]
     * Uma base sólida cobrindo comandos fundamentais do Git.
 2. Comando Git Add Explorado: Um Tutorial Passo a Passo
     * Compreensão da importância do comando "git add".
@@ -37,3 +37,4 @@ Incentivo você a interagir comigo e com outras pessoas desenvolvedoras na seç�
 Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas habilidades, comando por comando!
 
 [twitter]: https://twitter.com/ionixjunior
+[post_1]:  /git-basics-an-in-depth-look-at-essential-commands/
