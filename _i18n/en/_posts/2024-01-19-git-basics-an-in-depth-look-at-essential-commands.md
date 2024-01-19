@@ -207,10 +207,10 @@ Date:   Sun Jan 14 17:16:03 2024 -0000
 
 If your repository has a lot of commits, they will be paged based on the height of your terminal. To navigate and see more commits, just press space.
 
-### Conclusion
-I believe these are the most first commands that you can need using Git for the first time, and you will use them all the time. 
+### The journey continues
+I believe these are the first commands you will need when using Git for the first time, and you will use them frequently. But this is not the end! Stay tuned because I will soon publish more posts about Git, covering additional commands. 
 
-Stay tuned because I will publish more posts about Git as soon as possible covering more commands. Tell me in the comments your thoughts about this post. Is there another Git basic command that you believe is essential? 
+Share your thoughts on this post in the comments. Is there another essential Git command you believe should be included?
 
 See you soon!
 

@@ -207,10 +207,10 @@ Date:   Sun Jan 14 17:16:03 2024 -0000
 
 Se o seu repositório tiver muitos commits, eles serão paginados com base na altura do seu terminal. Para navegar e ver mais commits, basta pressionar a barra de espaço.
 
-### Conclusão
-Acredito que estes são os primeiros comandos que você pode precisar ao usar o Git pela primeira vez, e você os usará o tempo todo.
+### A jornada continua
+Acredito que esses são os primeiros comandos que você precisará ao usar o Git pela primeira vez, e você os usará com frequência. Mas este não é o fim! Fique ligado porque em breve publicarei mais posts sobre Git, abordando mais comandos.
 
-Fique ligado, porque vou publicar mais posts sobre o Git o mais rápido possível, cobrindo mais comandos. Diga-me nos comentários o que você achou deste post. Existe outro comando básico do Git que você acha essencial?
+Compartilhe sua opinião sobre esta postagem nos comentários. Existe outro comando essencial do Git que você acredita que deveria ser incluído?
 
 Até breve!
 
