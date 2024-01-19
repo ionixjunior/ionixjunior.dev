@@ -44,6 +44,11 @@
 		content="{{ site.url }}/assets/img/{{ page.image }}"
 		property="og:image"
 	/>
+	{%- elsif page.social_image -%}
+	<meta
+		content="{{ site.url }}/assets/img/cards/{{ page.social_image }}"
+		property="og:image"
+	/>
 	{%- else -%}
 	<meta
 		content="{{ title | prepend: 'https://ionixjuniordevthumbnail.azurewebsites.net/api/Generate?title=' }}"
