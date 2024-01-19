@@ -137,20 +137,6 @@ Um lugar onde você pode explicar alguns aspectos da mudança em detalhes."
 
 Para as melhores práticas de mensagens de commit, sugiro que você leia [este post][git_commit_post]. Foi escrito em 2014, mas ainda é muito relevante.
 
-Você faz o commit e depois percebe um erro em sua mensagem de commit. Talvez haja erros de digitação, ou você deseja incluir mais detalhes. Mas como você resolve isso se o commit já estiver concluído? Não se preocupe! Você pode facilmente corrigir seu commit:
-
-{%- highlight bash -%}
-git commit --amend
-{%- endhighlight -%}
-
-Dessa forma, o Git exibe seu editor preferido, e você pode corrigir sua mensagem de commit. Agora pense na seguinte situação: você termina o commit e esquece de adicionar alguns arquivos. Precisa fazer outro commit? Não! Você pode adicionar este arquivo ao stage usando `git add` e incrementar seu último commit. Mais uma coisa: se você não quiser alterar sua mensagem, pode especificar o parâmetro `--no-edit`, e o Git não solicitará nada.
-
-{%- highlight bash -%}
-git commit --amend --no-edit
-{%- endhighlight -%}
-
-Cuidado com a opção `amend` porque ela altera o hash do commit. Se o commit existir apenas em sua máquina local, sem problema. Mas se o commit já existir no repositório remoto (como GitHub, GitLab ou BitBucket), talvez seus colegas tenham dificuldade em atualizar o projeto depois que você enviar seu commit alterado para o repositório remoto.
-
 ### git status
 Digite o comando status para ver o que está acontecendo no seu diretório de trabalho.
 

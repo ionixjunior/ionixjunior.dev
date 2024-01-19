@@ -137,20 +137,6 @@ A place where you can explain some aspects of the change in detail."
 
 For commit messages best practices, I suggest you read [this post][git_commit_post]. It was written in 2014 but is still very relevant.
 
-You commit your files and then notice an error in your commit message. Maybe there are typos, or you wish to include more details. But how do you address this if the commit is already completed? No need to worry! You can effortlessly amend your commit:
-
-{%- highlight bash -%}
-git commit --amend
-{%- endhighlight -%}
-
-This way, Git prompts you to your preferred editor, and you can fix your message commit. Now think about the following situation: You finish the commit and forget to add some files. Do you need to do another commit? No! You can add this file to the stage using `git add` and then amend your last commit. One more thing: If you don't want to change your message, you can specify the `--no-edit` parameter, and Git won't prompt you anything.
-
-{%- highlight bash -%}
-git commit --amend --no-edit
-{%- endhighlight -%}
-
-Be careful with the amend option because it changes the commit hash. If the commit exists only in your local machine, no problem. But if the commit already exists in the remote repository (like GitHub, GitLab, or BitBucket), maybe your colleagues have difficulty updating the project after you push the amended changes to the remote repository.
-
 ### git status
 Type the status command to see what is happening in your working directory.
 
