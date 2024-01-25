@@ -7,28 +7,28 @@ tags: ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.en.png"
 ---
 
-<p class="intro"><span class="dropcap">T</span>o add files to a Git repository, we need to add them to a specific area to commit, and Git calls it the staged area. But why this step is necessary? If I change something I want to add it to the repository, right? Yes, but I will show you some benefits of this behavior, and I will explain more details about the command. Let's go!</p>
+<p class="intro"><span class="dropcap">T</span>o add files to a Git repository, they must be included in a specific area to commit. But why is this step necessary? If I make changes, don't I want to add them to the repository? Yes, indeed, but I'll show you some benefits of this approach and explain more details about the command. Let's get started!</p>
 
-### Understanding stage
-In a Git repository, the staging area is the crucial intermediary step between modifying your files and permanently saving those changes in a commit. Staging allows you to carefully curate which modifications you want to include in your next commit, giving you granular control over the evolution of your project and helping you to articulate your thought process more effectively through commits.
+### Understanding the staging area
+In a Git repository, the staging area is the crucial intermediary step between modifying your files and permanently saving those changes in a commit. Staging allows you to carefully curate which modifications you want to include in your next commit, providing granular control over your project's development and aiding in articulating your thought process more effectively through commits.
 
-When you make changes to your project files, Git recognizes these modifications, but they are not automatically included in the next commit. This is where the concept of staging comes into play. The staging area serves as a temporary storage space where you selectively choose which changes should be part of the next commit. 
+When you make changes to your project files, Git recognizes these modifications, but they are not automatically included in the next commit. This is where the concept of staging comes into play. The staging area is a temporary storage space where you selectively choose which changes should be part of the next commit.
 
-By intentionally staging specific modifications, you have the flexibility to group related changes together or commit them separately. This helps maintain a clean and organized version history, making it easier to understand the progression of your project or feature over time. 
+By staging specific modifications intentionally, you can group related changes or commit them separately. This promotes a clean and organized version history, facilitating a clearer understanding of your project's or feature's progression over time.
 
 Now you know about the staging area, let's talk about how to add your files to the stage.
 
-### Adding files to the stage
-As you can see in the [last post][git_add_last_post], we can add files to the stage area using different ways. But all of these options add the entire file to the stage. Below I will explore more about it and you will become a pro at this.
+### Adding files to the staging area
+As demonstrated in the [last post][git_add_last_post], we can add files to the staging area using various methods. However, all these options stage the entire file. Below, I'll delve deeper, helping you become proficient in this.
 
-For the examples, I am using [this repository][book_tracking_repo] to make some changes and show you how to use the commands.
+I'm utilizing [this repository][book_tracking_repo] for the examples, implementing changes to demonstrate how the commands work.
 
 ### Partial staging
-When we use the `git add` command, we can add the `-p` parameter to review all the changes that we are introducing and choose what of them we want to add to the stage. 
+When we use the `git add` command with the `-p` parameter, we can review all changes introduced and choose which ones to add to the stage.
 
-But, why is so important if I can just add all the changes into one simple commit? Technically, it is not a problem to add all the changes into one commit, but if you want to organize your commit history and wish to express your way of thinking, consider investing some time to organize your changes. I like so much this because when I go forward using baby steps, I can go back to reverting some specific commit and not an entire implementation. 
+Why is it crucial that I can consolidate all changes into a single commit? Technically, bundling all changes into one commit poses no issues. Yet, if you appreciate an organized commit history and want to articulate your thought process, invest time in structuring your changes. I favor this approach because progressing in small increments allows me to later revert specific commits without impacting the entire implementation.
 
-Suppose I need to change a font name in a specific file of my project. I do this but I am a little bit disturbed with some comments inside this file and I decided to remove them too. So, what I will write in the commit title? "Change font style and remove some unnecessary comments"? Wrong answer. Adding all the changes in the same commit can cause a little bit mess because you can lose the ability to divide the principal change of the secondary change. Let's see how we can divide this into two separate commits.
+Suppose I need to change a font name in a specific project file. As I do this, I find some comments inside the file that I decide to remove. Now, what should I write in the commit title? "Change font style and remove unnecessary comments"? Wrong. Combining all these changes in one commit can lead to confusion, as it may obscure the distinction between the primary and secondary changes. Let's explore how we can separate these into two distinct commits.
 
 {%- highlight bash -%}
 git add -p
@@ -53,7 +53,7 @@ index 920883f..f174577 100644
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
 {%- endhighlight -%}
 
-Git is telling us that they found two hunks and this is the first one - see this in the last line. I just changed the font name of "Geordia-Bold" to "Geordia". This is the first commit that I want to make. But can I do this? Note that in the last line exists a lot of options (y,n,q,a,d,j,J,g,/,e,?). Each of them is responsible for taking some action. I choose the last one to see the Git help about these commands. Just type `?`:
+Git is telling us that they found two hunks, and this is the first one - see this in the last line. I just changed the font name "Geordia-Bold" to "Geordia". This is the first commit that I want to make. But how can I do this? Note that in the last line exists a lot of options (y,n,q,a,d,j,J,g,/,e,?). Each of them is responsible for taking some action. I choose the last one to see the Git help with these commands. Just type `?`:
 
 {%- highlight diff -%}
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? ?
@@ -81,19 +81,19 @@ e - manually edit the current hunk
 {%- endhighlight -%}
 
 Now we can see what does every option:
-- y: Add this hunk to the stage. Similar to `git add`, but only for this piece of code;
+- y: Add this hunk to the stage. Similar to `git add` but only for this piece of code;
 - n: Discard this hunk to the stage. This piece of code won't be added, but you won't lose it;
 - q: Exit the changes selection;
-- a: Add this hunk to the stage and all of the following are located in the same file. This is a little bit dangerous if you don't know or remember what exists in the next hunks;
+- a: Add this hunk to the stage and all later hunks in the file. This is a little bit dangerous if you don't know or remember what exists in the next hunks;
 - d: Discard this and another later hunks in this file;
 - j: Leave this hunk undecided if you have some doubt and go to the next undecided hunk;
 - J: Leave this hunk undecided if you have some doubt and go to the next hunk;
 - g: This is an interesting option: You can navigate between the hunks of this file. This can be good if you can check some parts of the code before adding or discarding something;
-- /: Similar option of the function above, but you can specify some regex expression to find a particular hunk;
+- /: Similar option to the function above, but you can specify some regex expression to find a particular hunk;
 - e: This is amazing because if your hunk changes a lot of lines, you can select what lines make sense to add;
 - ?: This was the option that I used to see the help.
 
-Some many options. What do I need to do? In this case, I am focusing on the font name change. So I will accept it just by typing `y`. Now, Git show us the second hunk. This is the piece of code that I removed from the comments. I just leave this to another commit. I will discard it just by typing `n`.
+There are many options. What do I need to do? In this case, I am focusing on the font name change. So I will accept it just by typing `y`. Now, Git shows us the second hunk. This is the piece of code that I removed from the comments. I will leave this to another commit. I will discard it just by typing `n`.
 
 {%- highlight diff -%}
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
@@ -134,12 +134,12 @@ Changes not staged for commit:
 
 Note the `AppDelegate.swift` file is located in a staged area and a not staged area. This is possible because we select only one hunk of the changes and add it to the stage. So, if we do this commit, only the staged changes will be committed.
 
-I know, I can hear you right now telling me that this is easier to make using a Git GUI tool. Ok, you are right, but this is what the Git GUI tool will do under the hood. But if you prefer or have only the command line, you will know how to do this. This was a small sample of how to use this option. There are more possibilities and I encourage you to explore them.
+I know. I can hear you now telling me that this is easier to make using a Git GUI tool. Ok, you are right, but this is what the Git GUI tool will do under the hood. But if you prefer or have only the command line, you will know how to add files to the staging area. This was a small sample of how to use this option. There are more possibilities, and I encourage you to explore them.
 
-Let's check another way to do this using a more powerful command - but more difficult too. 
+Let's explore an alternative approach, leveraging a more robust command.
 
 ### Staging using interactive mode
-The interactive mode is more powerful them the previous command because it provides us more granular control over staging. I have added a new file to the project and I will show you the `git status`.
+The interactive mode is more powerful because it provides a more granular control over staging. I have added a new file to the project, and now I show you the `git status`.
 
 {%- highlight bash -%}
 git status
@@ -158,7 +158,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 {%- endhighlight -%}
 
-Note the untracked file at the end of the Git message. If I run `git add -p`, this file will not be shown. But by using interactive mode we will have the possibility to work with it. This occurs because `git add -p` only works by listening to the changes in the repository files, not new files not added. Think with me: How can I add some piece of code to a new file if it does not exist in the repository? It does not make sense! However, using the interactive mode is not a problem because it enables us to add this file to the repository.
+Note the untracked file at the end of the Git message. If I run `git add -p`, this file will not be shown. But by using interactive mode, we will have the possibility to work with it. This occurs because `git add -p` only works by listening to the changes in the repository files, not new files not added. However, using the interactive mode is not a problem because it enables us to add this file to the repository.
 
 {%- highlight diff -%}
 git add -i
@@ -174,18 +174,18 @@ What now>
 
 {%- endhighlight -%}
 
-At the beginning of the message we can see the "status". Below we can see the commands that we can use. Each of them contains a number and you can use the number of the command you want to execute in the "What now" dialog in the last line. Let's talk about the options:
+At the message's outset, "status" is visible. Below, you'll find available commands, each associated with a number. You can then execute the desired command by entering its number in the "What now" dialog at the bottom. Now, let's delve into the options:
 
 - 1: Show the file paths with changes;
-- 2: Add the changes into to staged area;
+- 2: Add the changes into the staged area;
 - 3: Revert the changes to go back to the unstaged area;
 - 4: Add the untracked files to the stage. Note we can't see these files on status;
-- 5: Pick hunks and add them selectively. It is the same as the `git add -p`
+- 5: Pick hunks and add them selectively. It is the same as the `git add -p`;
 - 6: Show the diff of the staged changes;
 - 7: Exit the interactive mode;
 - 8: Show the help menu.
 
-The status (option 1) is what we are seeing now. Let's explore option 2 to add the changes to the staged area. In "What now", I typed 2.
+The status (option 1) is what we are seeing now. Let's explore option 2 to add the changes to the staged area. In "What now" I typed 2.
 
 {%- highlight diff -%}
 What now> 2
@@ -195,7 +195,7 @@ What now> 2
 Update>> 
 {%- endhighlight -%}
 
-Now Git shows two files that I changed and asks me which of them I need to do the action. Note the files are enumerated and we need to use this to inform in the "Update" dialog. I will choose the `AppDelegate.swift` file, enumerated as the number 2.
+Now Git shows two files that I changed and asks me which of them I need to do the action. Note the files are enumerated, and we need to use this to inform in the "Update" dialog. I will choose the `AppDelegate.swift` file, enumerated as the number 2.
 
 {%- highlight diff -%}
 Update>> 2   
@@ -205,7 +205,7 @@ Update>> 2
 Update>> 
 {%- endhighlight -%}
 
-Git shows again the same content and asks me the same question, but note the file that I have selected contains an astheristic. We can add more files, but now I will just press "enter" to finish it.
+Git displays the same content and repeats the question, but notice the selected file has an asterisk. You can add more files, but for now, I'll just press "enter" to complete the process.
 
 {%- highlight diff -%}
 Update>> 
@@ -217,7 +217,7 @@ updated 1 path
 What now> 
 {%- endhighlight -%}
 
-Git told us that he updated 1 path and gave me again the commands that I can use now. If we check the status right now, we can see some changes in the table.
+Git informed us that it updated one path and provided the commands once again. Checking the current status will reveal changes in the table.
 
 {%- highlight diff -%}
 What now> 1
@@ -231,7 +231,7 @@ What now> 1
 What now> 
 {%- endhighlight -%}
 
-Note that in the staged column, the `AppDelegate.swift` files contains the discrimination of the changes: 1 line added or changed and 6 removed. You can see what is in the stage using option 6 (diff). 
+Note that in the staged column, the `AppDelegate.swift` files contain the discrimination of the changes: one line added or changed and six removed. You can see what is in the stage using option 6 (diff). 
 
 {%- highlight diff -%}
 What now> 6
@@ -240,7 +240,7 @@ What now> 6
 Review diff>>
 {%- endhighlight -%}
 
-Again, Git will show us the staged files and we need to pick one of them to see the diff. Let's choose file number 1 in the "Review diff" dialog.
+Again, Git will show us the staged files, and we need to pick one of them to see the diff. Let's choose file number 1 in the "Review diff" dialog.
 
 {%- highlight diff -%}
 Review diff>> 1
@@ -280,7 +280,7 @@ index 920883f..f174577 100644
 What now> 
 {%- endhighlight -%}
 
-The Git shows us all the changes that are in the stage. Let's explore another option. If you want to discard this changes to the stage, you can use the revert option enumerated by 3.
+The Git shows us all the changes that are in the stage. Let's explore another option. If you want to discard these changes to the stage, you can use the revert option enumerated by 3.
 
 {%- highlight diff -%}
 What now> 3
@@ -298,7 +298,7 @@ Revert>> 1
 Revert>> 
 {%- endhighlight -%}
 
-Check if the file you choose contains the astheristic and If there is no other file to revert, just press enter.
+Check if the file you choose contains the asterisk, and If there is no other file to revert to, just press enter.
 
 {%- highlight diff -%}
 Revert>> 
@@ -310,7 +310,7 @@ reverted 1 path
 What now> 
 {%- endhighlight -%}
 
-The Git told us there is 1 path that was reverted. Let's check the status to see what is happening.
+The Git told us there is one path that was reverted. Let's check the status to see what is happening.
 
 {%- highlight diff -%}
 What now> 1
@@ -324,7 +324,7 @@ What now> 1
 What now> 
 {%- endhighlight -%}
 
-Now everything goes back to the beginning!
+Now everything is back to the beginning!
 
 I told you about untracked files, right? Let's explore option 4 to see it in action.
 
@@ -335,7 +335,7 @@ What now> 4
 Add untracked>> 
 {%- endhighlight -%}
 
-The interactive mode shows us the untracked files. Here I have only one file, but there may be multiple files in your project. Choose what files you need to add to the stage. In my case, file 1.
+The interactive mode displays the untracked files. I have only one file in this project, but your project might have multiple files. Choose the files you want to add to the stage. In my case, it's file 1.
 
 {%- highlight diff -%}
 Add untracked>> 1   
@@ -356,7 +356,7 @@ added 1 path
 What now> 
 {%- endhighlight -%}
 
-The Git told us that 1 path was added. Let's check the status to see what is happening.
+The Git told us that one path was added. Let's check the status to see what is happening.
 
 {%- highlight diff -%}
 What now> 1
@@ -373,7 +373,7 @@ What now>
 
 Now we have the new file in the staged area. It works! 
 
-Now let's explore more one option: The patch. This is option 5 and is the same as `git add -p`. Let's see:
+Now let's explore one more option: The patch. This is option 5 and is the same as `git add -p`. Let's see:
 
 {%- highlight diff -%}
 What now> 5
@@ -413,14 +413,14 @@ index 920883f..f174577 100644
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
 {%- endhighlight -%}
 
-Now we can see the same thing in the previous section of this post. Nothing is different here. Accept or deny the hunks that you want and at the end, you will be redirected to the interactive mode commands.
+Now, observe the same process as in the previous section of this post. Nothing differs. Accept or deny the hunks as needed; in the end, you'll be redirected to the interactive mode commands.
 
-In these commands, the option 7 you can exit the interactive mode, and with option 8 you can see some basic instructions for each command. We are done right now. If you testing these options with me, just press 7 to exit the interactive mode. After this, you can commit your changes and be happy.
+In these commands, with option 7 you can exit the interactive mode, and with option 8 you can see some basic instructions for each command. We are done right now. After this, you can exit the interactive mode, commit your changes, and be happy.
 
-Using the interactive mode we can revert some files of the stage. But we can do this without using it. Let's learn.
+Using the interactive mode, we can revert some files of the stage. But we can do this without using it. Let's learn.
 
 ### Unstaging changes
-Just as I can add files to the stage, I can also remove them. If you type `git status` you can see the Git tip telling how to do this. Let's check.
+Just as I can add files to the stage, I can also remove them. If you type `git status`, you can see the Git tip telling how to do this. Let's check.
 
 {%- highlight diff -%}
 git status      
@@ -438,7 +438,7 @@ Changes not staged for commit:
 	modified:   BookTracking/AppDelegate.swift
 {%- endhighlight -%}
 
-See the Git tips above the file names. Let's unstage the changes at the `AppDelegate.swift` file.
+See the Git tips above the file names. Let's unstage the changes in the `AppDelegate.swift` file.
 
 {%- highlight diff -%}
 git restore --staged BookTracking/AppDelegate.swift
@@ -460,7 +460,7 @@ Changes not staged for commit:
 	modified:   BookTracking/AppDelegate.swift
 {%- endhighlight -%}
 
-Now we can see the `AppDelegate.swift` file was going back to the unstaged files. Great! But what's happening if we use the same command without the `--staged` parameter? Let's see.
+Now we can see the `AppDelegate.swift` file was going back to the unstaged files. Great! But what happens if we use the same command without the `--staged` parameter? Let's see.
 
 {%- highlight diff -%}
 git restore BookTracking/AppDelegate.swift
@@ -481,7 +481,7 @@ Changes not staged for commit:
 	modified:   BookTracking.xcodeproj/project.pbxproj
 {%- endhighlight -%}
 
-Oh no! I lost my changes! Be careful with these commands may you can lose your hard work.
+Oh no! I lost my changes! Be careful with these commands may you lose your hard work.
 
 ### Staging files day-to-day
 When diving into the world of Git, it's commonplace to add every change to the staging area as a beginner. However, as your experience with version control grows, especially within the context of the platform you're using and the features you're developing, the significance of the staging step becomes increasingly apparent.
