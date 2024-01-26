@@ -14,19 +14,19 @@ Em um repositório Git, a área de preparação é a etapa intermediária crucia
 
 Quando você faz alterações nos arquivos do seu projeto, o Git reconhece essas modificações, mas elas não são incluídas automaticamente no próximo commit. É aqui que entra o conceito de preparação. A área de preparação é um espaço de armazenamento temporário onde você escolhe seletivamente quais alterações devem fazer parte do próximo commit.
 
-Ao preparar modificações específicas intencionalmente, você pode agrupar alterações relacionadas ou commitá-las separadamente. Isso promove um histórico de versão limpo e organizado, facilitando uma compreensão mais clara da progressão do seu projeto ou funcionalidade ao longo do tempo.
+Ao preparar modificações específicas intencionalmente, você pode agrupar alterações relacionadas ou fazer commit separadamente. Isso promove um histórico de versão limpo e organizado, facilitando uma compreensão mais clara da progressão do seu projeto ou funcionalidade ao longo do tempo.
 
-Agora que você conhece a área de preparação, vamos falar sobre como adicionar seus arquivos à área de preparação.
+Agora que você conhece a área de preparação, vamos falar sobre como adicionar seus arquivos à ela.
 
 ### Adicionando arquivos à área de preparação
-Como demonstrado no [último post][git_add_last_post], podemos adicionar arquivos à área de preparação usando vários métodos. No entanto, todas essas opções adicionam o arquivo inteiro à área de preparação. Abaixo, vou aprofundar mais, ajudando você a se tornar proficiente nisso.
+Como demonstrado no [último post][git_add_last_post], podemos adicionar arquivos à área de preparação usando vários métodos. No entanto, todas essas opções que vimos adicionam o arquivo inteiro à área de preparação. Abaixo, vou aprofundar mais, ajudando você a se tornar proficiente nisso.
 
 Estou utilizando [este repositório][book_tracking_repo] para os exemplos, implementando alterações para mostrar como os comandos funcionam.
 
 ### Preparação parcial
 Quando usamos o comando `git add` com o parâmetro `-p`, podemos revisar todas as alterações introduzidas e escolher quais adicionar à área de preparação.
 
-Por que é crucial que eu possa consolidar todas as alterações em um único commit? Tecnicamente, agrupar todas as alterações em um commit não apresenta problemas. No entanto, se você aprecia um histórico de commit organizado e deseja articular seu processo de pensamento, invista tempo na estruturação de suas alterações. Eu prefiro essa abordagem porque progredir em pequenos incrementos me permite reverter commits específicos posteriormente sem impactar toda a implementação.
+Por que é importante pensar sobre isso? Tecnicamente, agrupar todas as alterações em um commit não apresenta problemas. No entanto, se você aprecia um histórico de commit organizado e deseja articular seu processo de pensamento, invista tempo na estruturação de suas alterações. Eu prefiro essa abordagem porque progredir em pequenos incrementos me permite reverter commits específicos posteriormente sem impactar toda a implementação. Quando estamos desenvolvendo um software, é comum mudarmos nosso pensamento e termos outra ideia baseada no que estamos descobrindo, e desta forma, você pode mudar sua implementação de forma estruturada e organizada.
 
 Suponha que eu precise alterar o nome de uma fonte em um arquivo específico do projeto. Enquanto faço isso, encontro alguns comentários dentro do arquivo que decido remover. Agora, o que devo escrever no título do commit? "Alterar estilo da fonte e remover comentários desnecessários"? Errado. Combinar todas essas alterações em um commit pode levar à confusão, pois pode obscurecer a distinção entre as mudanças primárias e secundárias. Vamos explorar como podemos separar essas alterações em dois commits distintos.
 
@@ -53,7 +53,7 @@ index 920883f..f174577 100644
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
 {%- endhighlight -%}
 
-O Git está nos informando que encontrou dois trechos, e este é o primeiro. Eu apenas mudei o nome da fonte "Geordia-Bold" para "Geordia". Este é o primeiro commit que quero fazer. Mas como faço isso? Observe que na última linha existem muitas opções (y,n,q,a,d,j,J,g,/,e,?). Cada uma delas é responsável por tomar alguma ação. Escolhi a última para ver a ajuda do Git com esses comandos. Basta digitar `?`:
+O Git está nos informando que encontrou dois trechos, e este é o primeiro. Eu apenas mudei o nome da fonte "Geordia-Bold" para "Geordia". Este é o primeiro commit que quero fazer. Mas como faço isso? Observe que na última linha existem muitas opções (y,n,q,a,d,j,J,g,/,e,?). Cada uma delas é responsável por realizar alguma ação. Escolhi a última para ver a ajuda do Git com esses comandos. Basta digitar `?`:
 
 {%- highlight diff -%}
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? ?
@@ -89,12 +89,12 @@ Agora podemos ver o que cada opção faz:
 - d: Descarta este e os trechos seguintes neste arquivo;
 - j: Deixa este trecho indefinido se você tiver alguma dúvida e passa para o próximo trecho indefinido;
 - J: Deixa este trecho indefinido se você tiver alguma dúvida e passa para o próximo trecho;
-- g: Esta é uma opção interessante: você pode navegar entre os trechos deste arquivo. Isso pode ser bom se você puder verificar algumas partes do código antes de adicionar ou descartar algo;
+- g: Esta é uma opção interessante: você pode navegar entre os trechos deste arquivo. Isso pode ser bom para você verificar algumas partes do código antes de adicionar ou descartar algo;
 - /: Opção semelhante à função acima, mas você pode especificar alguma expressão regular para encontrar um trecho específico;
 - e: Isso é incrível porque, se o seu trecho alterar muitas linhas, você pode selecionar quais linhas fazem sentido adicionar;
 - ?: Esta foi a opção que usei para ver a ajuda.
 
-Há muitas opções. O que preciso fazer? Neste caso, estou focando na alteração do nome da fonte. Então vou aceitar apenas digitando `y`. Agora, o Git nos mostra o segundo trecho. Este é o trecho de código que removi dos comentários. Vou deixar isso para outro commit. Vou descartá-lo digitando `n`.
+Há muitas opções. O que preciso fazer? Neste caso, estou focando na alteração do nome da fonte. Então vou aceitar este trecho apenas digitando `y`. Agora, o Git nos mostra o segundo trecho. Este é o trecho de código que removi dos comentários. Vou deixar isso para outro commit. Vou descartá-lo digitando `n`.
 
 {%- highlight diff -%}
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
@@ -133,9 +133,9 @@ Changes not staged for commit:
 	modified:   BookTracking/AppDelegate.swift
 {%- endhighlight -%}
 
-Observe que o arquivo `AppDelegate.swift` está localizado em uma área de preparação e em uma área não preparada. Isso é possível porque selecionamos apenas um trecho.
+Observe que o arquivo `AppDelegate.swift` está localizado tanto na área de preparação quanto fora da área de preparação. Isso é possível porque selecionamos apenas um trecho do arquivo para realizar o commit.
 
-Eu sei. Posso ouvir você agora me dizendo que é mais fácil fazer isso usando uma ferramenta Git GUI. Ok, você está certo, mas é isso que a ferramenta Git GUI fará nos bastidores. Mas se você preferir ou tiver apenas a linha de comando, saberá como adicionar arquivos à área de preparação. Isso foi uma pequena amostra de como usar esta opção. Existem mais possibilidades, e eu o encorajo a explorá-las.
+Eu sei. Posso ouvir você agora me dizendo que é mais fácil fazer isso usando uma ferramenta de Git GUI. Ok, você está certo, mas é isso que a ferramenta de Git GUI fará nos bastidores. Mas se você preferir ou tiver apenas a linha de comando, saberá como adicionar arquivos à área de preparação. Isso foi uma pequena amostra de como usar esta opção. Existem mais possibilidades, e eu o encorajo a explorá-las.
 
 Vamos explorar uma abordagem alternativa, utilizando um comando mais robusto.
 
@@ -159,7 +159,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 {%- endhighlight -%}
 
-Observe o arquivo não rastreado no final da mensagem do Git. Se eu executar `git add -p`, este arquivo não será mostrado. Mas usando o modo interativo, teremos a possibilidade de trabalhar com ele. Isso ocorre porque `git add -p` só funciona ouvindo as alterações nos arquivos do repositório, não em novos arquivos não adicionados. No entanto, usar o modo interativo não é um problema porque nos permite adicionar este arquivo ao repositório.
+Observe o arquivo não rastreado no final da mensagem do Git. Se eu executar `git add -p`, este arquivo não será mostrado. Mas usando o modo interativo, teremos a possibilidade de trabalhar com ele. Isso ocorre porque `git add -p` só funciona analisando as alterações nos arquivos do repositório, não em novos arquivos ainda não adicionados. No entanto, usar o modo interativo não é um problema porque nos permite adicionar este arquivo ao repositório.
 
 {%- highlight diff -%}
 git add -i
@@ -175,18 +175,18 @@ What now>
 
 {%- endhighlight -%}
 
-No início da mensagem, "status" é visível. Abaixo, você encontrará comandos disponíveis, cada um associado a um número. Você pode então executar o comando desejado digitando seu número no diálogo "O que fazer" na parte inferior. Agora, vamos aprofundar nas opções:
+No início da mensagem, o "status" é visível. Abaixo, você encontrará comandos disponíveis, cada um associado a um número. Você pode então executar o comando desejado digitando seu número no diálogo "What now" na parte inferior. Agora, vamos aprofundar nas opções:
 
-- 1: Mostrar os caminhos dos arquivos com alterações;
-- 2: Adicionar as alterações à área de preparação;
-- 3: Reverter as alterações para voltar à área não preparada;
-- 4: Adicionar os arquivos não rastreados à área de preparação. Observe que não podemos ver esses arquivos no status;
-- 5: Escolher trechos e adicioná-los seletivamente. É o mesmo que `git add -p`;
-- 6: Mostrar a diferença das alterações na área de preparação;
-- 7: Sair do modo interativo;
-- 8: Mostrar o menu de ajuda.
+- 1: Mostra os caminhos dos arquivos com alterações;
+- 2: Adiciona as alterações à área de preparação;
+- 3: Reverte as alterações para voltar à área não preparada;
+- 4: Adiciona os arquivos não rastreados à área de preparação. Observe que não podemos ver esses arquivos no status;
+- 5: Escolha trechos e adicione-os seletivamente. É o mesmo que `git add -p`;
+- 6: Mostra a diferença das alterações na área de preparação;
+- 7: Sai do modo interativo;
+- 8: Mostra o menu de ajuda.
 
-O status (opção 1) é o que estamos vendo agora. Vamos explorar a opção 2 para adicionar as alterações à área de preparação. Em "O que fazer" eu digitei 2.
+O status (opção 1) é o que estamos vendo agora. Vamos explorar a opção 2 para adicionar as alterações à área de preparação. Em "What now" eu digitei 2.
 
 {%- highlight diff -%}
 What now> 2
@@ -196,7 +196,7 @@ What now> 2
 Update>> 
 {%- endhighlight -%}
 
-Agora o Git mostra dois arquivos que eu alterei e pergunta qual deles eu preciso fazer a ação. Observe que os arquivos são enumerados, e precisamos usar isso para informar no diálogo "Atualizar". Vou escolher o arquivo `AppDelegate.swift`, enumerado como o número 2.
+Agora o Git mostra dois arquivos que eu alterei e pergunta qual deles eu quero fazer a ação. Observe que os arquivos são enumerados, e precisamos usar isso para informar no diálogo "Update". Vou escolher o arquivo `AppDelegate.swift`, enumerado como o número 2.
 
 {%- highlight diff -%}
 Update>> 2   
@@ -232,7 +232,7 @@ What now> 1
 What now> 
 {%- endhighlight -%}
 
-Observe que na coluna preparada, o arquivo `AppDelegate.swift` contém a discriminação das alterações: uma linha adicionada ou alterada e seis removidas. Você pode ver o que está na área de preparação usando a opção 6 (diff).
+Observe que na coluna "staged", o arquivo `AppDelegate.swift` contém a discriminação das alterações: uma linha adicionada ou alterada e seis removidas. Você pode ver o que está na área de preparação usando a opção 6 (diff).
 
 {%- highlight diff -%}
 What now> 6
@@ -241,7 +241,7 @@ What now> 6
 Review diff>>
 {%- endhighlight -%}
 
-Novamente, o Git nos mostrará os arquivos preparados, e precisamos escolher um deles para ver a diferença. Vamos escolher o arquivo número 1 no diálogo "Revisar diff".
+Novamente, o Git nos mostrará os arquivos preparados, e precisamos escolher um deles para ver a diferença. Vamos escolher o arquivo número 1 no diálogo "Review diff".
 
 {%- highlight diff -%}
 Review diff>> 1
@@ -281,7 +281,7 @@ index 920883f..f174577 100644
 What now> 
 {%- endhighlight -%}
 
-O Git nos mostra todas as alterações que estão na área de preparação. Vamos explorar outra opção. Se você quiser descartar essas alterações para a área de preparação, pode usar a opção de reverter enumerada por 3.
+O Git nos mostra todas as alterações que estão na área de preparação. Vamos explorar outra opção. Se você quiser descartar essas alterações para a área de preparação, pode usar a ação de reverter, que é a opção 3.
 
 {%- highlight diff -%}
 What now> 3
@@ -290,7 +290,7 @@ What now> 3
 Revert>> 
 {%- endhighlight -%}
 
-Novamente, o Git nos perguntará quais alterações queremos reverter. Vou selecionar o arquivo número 1 para continuar.
+Novamente, o Git nos perguntará quais arquivos queremos reverter. Vou selecionar o arquivo número 1 para continuar.
 
 {%- highlight diff -%}
 Revert>> 1
@@ -299,7 +299,7 @@ Revert>> 1
 Revert>> 
 {%- endhighlight -%}
 
-Verifique se o arquivo que você escolheu contém o asterisco, e se não houver outro arquivo para reverter, basta pressionar enter.
+Verifique se o arquivo que você escolheu contém o asterisco, e se não houver outro arquivo para reverter, basta pressionar "enter".
 
 {%- highlight diff -%}
 Revert>> 
@@ -311,7 +311,7 @@ reverted 1 path
 What now> 
 {%- endhighlight -%}
 
-O Git nos disse que houve um caminho revertido. Vamos verificar o status para ver o que está acontecendo.
+O Git nos disse que reverteu um arquivo. Vamos verificar o status para ver o que está acontecendo.
 
 {%- highlight diff -%}
 What now> 1
@@ -325,7 +325,7 @@ What now> 1
 What now> 
 {%- endhighlight -%}
 
-Agora tudo está de volta ao início!
+Agora tudo está como era antes!
 
 Eu falei sobre arquivos não rastreados, certo? Vamos explorar a opção 4 para vê-la em ação.
 
@@ -336,7 +336,7 @@ What now> 4
 Add untracked>> 
 {%- endhighlight -%}
 
-O modo interativo exibe os arquivos não rastreados. Eu tenho apenas um arquivo neste projeto, mas seu projeto pode ter vários arquivos. Escolha os arquivos que você deseja adicionar à área de preparação. No meu caso, é o arquivo 1.
+O modo interativo exibe os arquivos não rastreados. Eu tenho apenas um novo arquivo neste projeto, mas seu projeto pode ter vários arquivos. Escolha os arquivos que você deseja adicionar à área de preparação. No meu caso, é o arquivo 1.
 
 {%- highlight diff -%}
 Add untracked>> 1   
@@ -357,7 +357,7 @@ added 1 path
 What now> 
 {%- endhighlight -%}
 
-O Git nos disse que um caminho foi adicionado. Vamos verificar o status para ver o que está acontecendo.
+O Git nos disse que um arquivo foi adicionado. Vamos verificar o status para ver o que está acontecendo.
 
 {%- highlight diff -%}
 What now> 1
@@ -374,7 +374,7 @@ What now>
 
 Agora temos o novo arquivo na área de preparação. Funciona!
 
-Agora vamos explorar mais uma opção: O patch. Esta é a opção 5 e é o mesmo que `git add -p`. Vamos ver:
+Vamos explorar mais uma opção: O patch. Esta é a opção 5 e é o mesmo que `git add -p`. Vamos ver:
 
 {%- highlight diff -%}
 What now> 5
@@ -414,15 +414,15 @@ index 920883f..f174577 100644
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
 {%- endhighlight -%}
 
-Agora, observe o mesmo processo da seção anterior deste post. Nada muda. Aceite ou negue os trechos conforme necessário; no final, você será redirecionado para os comandos do modo interativo.
+Agora, observe o mesmo processo da seção anterior deste post. Nada muda. Aceite ou negue os trechos conforme necessidade. No final, você será redirecionado para os comandos do modo interativo.
 
-Nesses comandos, com a opção 7 você pode sair do modo interativo, e com a opção 8 você pode ver algumas instruções básicas para cada comando. Estamos prontos agora. Depois disso, você pode sair do modo interativo, commitar suas alterações e ser feliz.
+Nesses comandos, com a opção 7 você pode sair do modo interativo, e com a opção 8 você pode ver algumas instruções básicas para cada comando. Acabamos aqui! Depois disso, você pode sair do modo interativo, commitar suas alterações e ser feliz.
 
-Usando o modo interativo, podemos reverter alguns arquivos da área de preparação. Mas podemos fazer isso sem usá-lo. Vamos aprender.
+Usando o modo interativo, podemos reverter alguns arquivos da área de preparação. Mas podemos fazer isso de uma forma mais simples. Vamos aprender.
 
-## Desfazendo alterações
+## Removendo arquivos da área de preparação
 
-Assim como posso adicionar arquivos ao palco, também posso removê-los. Se você digitar `git status`, poderá ver a dica do Git sobre como fazer isso. Vamos conferir.
+Assim como posso adicionar arquivos à area de preparação, também posso removê-los. Se você digitar `git status`, poderá ver a dica do Git sobre como fazer isso. Vamos conferir.
 
 {%- highlight diff -%}
 git status      
@@ -440,7 +440,7 @@ Changes not staged for commit:
 	modified:   BookTracking/AppDelegate.swift
 {%- endhighlight -%}
 
-Veja as dicas do Git acima dos nomes dos arquivos. Vamos desfazer as alterações no arquivo `AppDelegate.swift`.
+Veja as dicas do Git acima dos nomes dos arquivos. Vamos remover da área de preparação as alterações no arquivo `AppDelegate.swift`.
 
 {%- highlight diff -%}
 git restore --staged BookTracking/AppDelegate.swift
@@ -483,25 +483,24 @@ Changes not staged for commit:
 	modified:   BookTracking.xcodeproj/project.pbxproj
 {%- endhighlight -%}
 
-Oh não! Perdi minhas alterações! Tenha cuidado com esses comandos para não perder seu trabalho árduo.
+Oh não! Perdi minhas alterações! Sem o parâmetro `--staged`, o Git descartará as alterações na área não preparada e será impossível recuperar qualquer coisa. Tenha cuidado com esses comandos para não perder seu trabalho árduo.
 
-## Adicionando arquivos ao palco no dia a dia
+## Usando a área de preparação no dia a dia
+Ao mergulhar no mundo do Git, é comum adicionar todas as alterações à area de preparação e fazer apenas um commit. No entanto, à medida que sua experiência cresce, a importância da etapa de preparação torna-se cada vez mais evidente.
 
-Ao mergulhar no mundo do Git, é comum adicionar cada alteração ao palco como iniciante. No entanto, à medida que sua experiência com controle de versão cresce, especialmente no contexto da plataforma que você está usando e nos recursos que está desenvolvendo, a importância da etapa de preparação torna-se cada vez mais evidente.
+O uso estratégico do comando `git add` permite que você faça a transição do hábito inicial de preparar tudo para uma abordagem mais refinada. Cuidar do que será inserido em cada commit leva a um histórico de versão que conta uma história clara e lógica da evolução do seu projeto. Commits pequenos e focados não são apenas uma prática, mas uma estratégia para manter um histórico organizado e compreensível.
 
-O uso estratégico do comando `git add` permite que você faça a transição do hábito inicial de preparar tudo para uma abordagem mais refinada. Cuidar cuidadosamente do que vai em cada confirmação leva a um histórico de versão que conta uma história clara e lógica da evolução do seu projeto. Confirmações pequenas e focadas não são apenas uma prática, mas uma estratégia para manter um histórico organizado e compreensível.
+Considere a natureza colaborativa de muitos projetos de desenvolvimento. Ao preparar as alterações cuidadosamente, você contribui para um processo de desenvolvimento mais colaborativo e eficiente. Cada commit se torna uma contribuição significativa, facilitando para os membros da equipe compreender, revisar, e integrar alterações de forma transparente.
 
-Considere a natureza colaborativa de muitos projetos de desenvolvimento. Ao preparar as alterações cuidadosamente, você contribui para um processo de desenvolvimento mais colaborativo e eficiente. Cada confirmação se torna uma contribuição significativa, facilitando para os membros da equipe compreender, revisar, e integrar alterações de forma transparente.
+Dividir suas alterações em commits menores e bem definidos facilita a depuração mais eficiente. Se surgir um problema, você pode identificar exatamente o commit responsável, tornando mais simples identificar e corrigir problemas sem vasculhar um commit monolítico que abrange várias alterações.
 
-Dividir suas alterações em confirmações menores e bem definidas facilita a depuração mais eficiente. Se surgir um problema, você pode identificar exatamente a confirmação responsável, tornando mais simples identificar e corrigir problemas sem vasculhar uma confirmação monolítica que abrange várias alterações.
+Encontrar o equilíbrio certo entre commits coesos e mudanças granulares é uma arte que evolui com a experiência. Cada commit deve encapsular uma unidade lógica de trabalho, fornecendo uma visão do progresso sem sobrecarregar o histórico de commits.
 
-Encontrar o equilíbrio certo entre confirmações coesas e mudanças granulares é uma arte que evolui com a experiência. Cada confirmação deve encapsular uma unidade lógica de trabalho, fornecendo uma visão do progresso sem sobrecarregar o histórico de confirmações.
+Eu aprendi a apreciar isso e fazer inúmeras pequenas alterações, cada uma encapsulando uma mudança específica. Essa prática não apenas está alinhada com as melhores práticas de controle de versão, mas também aprimora a agilidade geral do seu processo de desenvolvimento.
 
-Eu aprendi a apreciar a beleza de fazer inúmeras pequenas confirmações, cada uma encapsulando uma alteração específica. Essa prática não apenas está alinhada com as melhores práticas de controle de versão, mas também aprimora a agilidade geral do seu processo de desenvolvimento.
+Ao embarcar em sua jornada com o Git, deixe a área de preparação ser sua aliada na criação de um histórico de versão que não é apenas um registro de alterações, mas uma narrativa do crescimento e refinamento do seu projeto. Dê uma chance a esta forma de pensar e observe como ela transforma seu fluxo de trabalho de controle de versão em uma colaboração eficiente e sem problemas.
 
-Ao embarcar em sua jornada com o Git, deixe a área de preparação ser sua aliada na criação de um histórico de versão que não é apenas um registro de alterações, mas uma narrativa do crescimento e refinamento do seu projeto. Abraçar o poder da preparação cuidadosa e observe como ela transforma seu fluxo de trabalho de controle de versão em uma colaboração eficiente e sem problemas.
-
-É isso! Você usa este comando? Já conhecia essas possibilidades ou entende como este comando pode ajudá-lo? Compartilhe seus pensamentos sobre esta postagem nos comentários.
+É isso! Você usa este comando? Já conhecia essas possibilidades ou como este comando pode ajudá-lo? Compartilhe seus pensamentos sobre esta postagem nos comentários.
 
 Até breve!
 

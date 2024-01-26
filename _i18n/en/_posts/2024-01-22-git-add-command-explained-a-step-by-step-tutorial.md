@@ -19,14 +19,14 @@ By staging specific modifications intentionally, you can group related changes o
 Now you know about the staging area, let's talk about how to add your files to the stage.
 
 ### Adding files to the staging area
-As demonstrated in the [last post][git_add_last_post], we can add files to the staging area using various methods. However, all these options stage the entire file. Below, I'll delve deeper, helping you become proficient in this.
+As demonstrated in the [last post][git_add_last_post], we can add files to the staging area using various methods. However, all these options stage the entire file to the staging area. Below, I'll delve deeper, helping you become proficient in this.
 
 I'm utilizing [this repository][book_tracking_repo] for the examples, implementing changes to demonstrate how the commands work.
 
 ### Partial staging
 When we use the `git add` command with the `-p` parameter, we can review all changes introduced and choose which ones to add to the stage.
 
-Why is it crucial that I can consolidate all changes into a single commit? Technically, bundling all changes into one commit poses no issues. Yet, if you appreciate an organized commit history and want to articulate your thought process, invest time in structuring your changes. I favor this approach because progressing in small increments allows me to later revert specific commits without impacting the entire implementation.
+Why is important to think about it? Technically, bundling all changes into one commit poses no issues. Yet, if you appreciate an organized commit history and want to articulate your thought process, invest time in structuring your changes. I favor this approach because progressing in small increments allows me to later revert specific commits without impacting the entire implementation. When we are developing software, it is common to change our thinking and have another idea based on what we are discovering, and this way, you can change your implementation in a structured and organized way.
 
 Suppose I need to change a font name in a specific project file. As I do this, I find some comments inside the file that I decide to remove. Now, what should I write in the commit title? "Change font style and remove unnecessary comments"? Wrong. Combining all these changes in one commit can lead to confusion, as it may obscure the distinction between the primary and secondary changes. Let's explore how we can separate these into two distinct commits.
 
@@ -88,12 +88,12 @@ Now we can see what does every option:
 - d: Discard this and another later hunks in this file;
 - j: Leave this hunk undecided if you have some doubt and go to the next undecided hunk;
 - J: Leave this hunk undecided if you have some doubt and go to the next hunk;
-- g: This is an interesting option: You can navigate between the hunks of this file. This can be good if you can check some parts of the code before adding or discarding something;
+- g: This is an interesting option: You can navigate between the hunks of this file. This can be good to you check some parts of the code before adding or discarding something;
 - /: Similar option to the function above, but you can specify some regex expression to find a particular hunk;
 - e: This is amazing because if your hunk changes a lot of lines, you can select what lines make sense to add;
 - ?: This was the option that I used to see the help.
 
-There are many options. What do I need to do? In this case, I am focusing on the font name change. So I will accept it just by typing `y`. Now, Git shows us the second hunk. This is the piece of code that I removed from the comments. I will leave this to another commit. I will discard it just by typing `n`.
+There are many options. What do I need to do? In this case, I am focusing on the font name change. So I will accept this hunk just by typing `y`. Now, Git shows us the second hunk. This is the piece of code that I removed from the comments. I will leave this to another commit. I will discard it just by typing `n`.
 
 {%- highlight diff -%}
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
@@ -195,7 +195,7 @@ What now> 2
 Update>> 
 {%- endhighlight -%}
 
-Now Git shows two files that I changed and asks me which of them I need to do the action. Note the files are enumerated, and we need to use this to inform in the "Update" dialog. I will choose the `AppDelegate.swift` file, enumerated as the number 2.
+Now Git shows two files that I changed and asks me which of them I want to do the action. Note the files are enumerated, and we need to use this to inform in the "Update" dialog. I will choose the `AppDelegate.swift` file, enumerated as the number 2.
 
 {%- highlight diff -%}
 Update>> 2   
@@ -289,7 +289,7 @@ What now> 3
 Revert>> 
 {%- endhighlight -%}
 
-Again, Git will ask us what changes we want to revert. I will select file number 1 to proceed.
+Again, Git will ask us what files we want to revert. I will select file number 1 to proceed.
 
 {%- highlight diff -%}
 Revert>> 1
@@ -298,7 +298,7 @@ Revert>> 1
 Revert>> 
 {%- endhighlight -%}
 
-Check if the file you choose contains the asterisk, and If there is no other file to revert to, just press enter.
+Check if the file you choose contains the asterisk, and If there is no other file to revert to, just press "enter".
 
 {%- highlight diff -%}
 Revert>> 
@@ -335,7 +335,7 @@ What now> 4
 Add untracked>> 
 {%- endhighlight -%}
 
-The interactive mode displays the untracked files. I have only one file in this project, but your project might have multiple files. Choose the files you want to add to the stage. In my case, it's file 1.
+The interactive mode displays the untracked files. I have only one new file in this project, but your project might have multiple files. Choose the files you want to add to the stage. In my case, it's file 1.
 
 {%- highlight diff -%}
 Add untracked>> 1   
@@ -373,7 +373,7 @@ What now>
 
 Now we have the new file in the staged area. It works! 
 
-Now let's explore one more option: The patch. This is option 5 and is the same as `git add -p`. Let's see:
+Let's explore one more option: The patch. This is option 5 and is the same as `git add -p`. Let's see:
 
 {%- highlight diff -%}
 What now> 5
@@ -413,7 +413,7 @@ index 920883f..f174577 100644
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
 {%- endhighlight -%}
 
-Now, observe the same process as in the previous section of this post. Nothing differs. Accept or deny the hunks as needed; in the end, you'll be redirected to the interactive mode commands.
+Now, observe the same process as in the previous section of this post. Nothing differs. Accept or deny the hunks as needed. In the end, you'll be redirected to the interactive mode commands.
 
 In these commands, with option 7 you can exit the interactive mode, and with option 8 you can see some basic instructions for each command. We are done right now. After this, you can exit the interactive mode, commit your changes, and be happy.
 
@@ -481,10 +481,10 @@ Changes not staged for commit:
 	modified:   BookTracking.xcodeproj/project.pbxproj
 {%- endhighlight -%}
 
-Oh no! I lost my changes! Be careful with these commands may you lose your hard work.
+Oh no! I lost my changes! Without the `--staged` parameter, Git will discard the changes in the not staged area, and it is impossible to recover anything. Be careful with these commands may you lose your hard work.
 
 ### Staging files day-to-day
-When diving into the world of Git, it's commonplace to add every change to the staging area as a beginner. However, as your experience with version control grows, especially within the context of the platform you're using and the features you're developing, the significance of the staging step becomes increasingly apparent.
+When diving into the world of Git, it's commonplace to add all changes to the staging area and make only one commit. However, as your experience grows, the significance of the staging step becomes increasingly apparent.
 
 Strategic use of the `git add` command allows you to transition from the initial habit of staging everything to a more nuanced approach. Carefully curating what goes into each commit leads to a version history that tells a clear and logical story of your project's evolution. Small, focused commits become not just a practice but a strategy for maintaining an organized and comprehensible history.
 
