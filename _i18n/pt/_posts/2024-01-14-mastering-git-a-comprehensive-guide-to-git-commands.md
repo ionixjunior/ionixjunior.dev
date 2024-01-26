@@ -15,7 +15,7 @@ Nesta série, vou desmembrar cada comando do Git em postagens de fácil compreen
 ### Esboço da série
 1. [Git Básico: Uma Análise Profunda nos Comandos Essenciais][post_1]
     * Uma base sólida cobrindo comandos fundamentais do Git.
-2. Comando Git Add Explorado: Um Tutorial Passo a Passo
+2. [Comando Git Add Explorado: Um Tutorial Passo a Passo][post_2]
     * Compreensão da importância do comando "git add".
 3. Entendendo o Git Commit: O Coração do Controle de Versão
     * Insights profundos sobre o comando crucial "git commit".
@@ -38,3 +38,4 @@ Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas h
 
 [twitter]: https://twitter.com/ionixjunior
 [post_1]:  /git-basics-an-in-depth-look-at-essential-commands/
+[post_2]:  /git-add-command-explained-a-step-by-step-tutorial/

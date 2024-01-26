@@ -15,7 +15,7 @@ In this series, I will break down each Git command into digestible posts, offeri
 ### Series outline
 1. [Git Basics: An In-Depth Look at Essential Commands][post_1]
     * A solid foundation covering fundamental Git commands.
-2. Git Add Command Explained: A Step-by-Step Tutorial
+2. [Git Add Command Explained: A Step-by-Step Tutorial][post_2]
     * Understanding the significance of the "git add" command.
 3. Understanding Git Commit: The Heart of Version Control
     * In-depth insights into the crucial "git commit" command.
@@ -38,3 +38,4 @@ Embark with me on the journey to Git mastery – together, we'll enhance our ski
 
 [twitter]: https://twitter.com/ionixjunior
 [post_1]:  /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/
+[post_2]:  /{{ site.lang }}/git-add-command-explained-a-step-by-step-tutorial/
