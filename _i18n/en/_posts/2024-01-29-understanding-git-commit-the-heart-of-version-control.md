@@ -12,7 +12,6 @@ social_image: "understanding-git-commit-the-heart-of-version-control.en.png"
 The Git commit, a snapshot frozen in the chronicles of your project's history, is more than meets the eye. Let's dissect its anatomy, understanding the key elements that compose this fundamental building block of version control.
 
 ### Anatomy of a Git Commit
-
 Each commit contains four main elements: Hash, author, date and time of the commit, and the message.
 
 The hash is a cryptographic fingerprint ensuring data integrity. This hash, often expressed as a series of characters, serves as a distinctive label for each commit, allowing Git to maintain a precise record of changes.
@@ -40,13 +39,13 @@ As long as the files have been added to the staging area, you can start to use t
 ### Amend the last commit
 You commit your files and then notice an error in your commit message. Maybe there are typos, or you wish to include more details. But how do you address this if the commit is already completed? No need to worry! You can effortlessly amend your last commit:
 
-{%- highlight bash -%}
+{%- highlight sh -%}
 git commit --amend
 {%- endhighlight -%}
 
 This way, Git prompts you to your preferred editor, and you can fix your message commit. Now think about the following situation: You finish the commit and forget to add some files. Do you need to do another commit? No! You can add this file to the stage using `git add` and then amend your last commit. One more thing: If you don't want to change your message, you can specify the `--no-edit` parameter, and Git won't prompt you anything.
 
-{%- highlight bash -%}
+{%- highlight sh -%}
 git commit --amend --no-edit
 {%- endhighlight -%}
 
@@ -55,16 +54,28 @@ Be careful with the `--amend` option because it changes the commit hash. If the 
 ### Include files to the staging area and commit together
 If you are feeling very confident and plan to commit all the changed files without reviewing anything (please, don't do this), you can use the `-a` option. This parameter will stage the changes automatically before the commit.
 
-{%- highlight diff -%}
+{%- highlight sh -%}
 git commit -a -m "Commit title"
 {%- endhighlight -%}
 
 If you prefer, you can join the parameters.
 
-{%- highlight diff -%}
+{%- highlight sh -%}
 git commit -am "Commit title"
 {%- endhighlight -%}
 
 I already use this a lot. Very easy, and very simple, but without any control over what you are adding to the repository. Use wisely.
+
+### Make empty commits
+What? This does not make sense! Yes, this does not make sense, but sometimes can be useful. Imagine you are configuring your project pipeline in a CI/CD platform (like GitHub Actions, Azure DevOps, CircleCI, and so on) and you need to make a commit to test. What you will do? Change some file and test your pipeline? This will work, but you can make a commit without to change anything.
+
+{%- highlight sh -%}
+git commit --allow-empty -m "Title of your empty commit"
+{%- endhighlight -%}
+
+### That's it
+This was one more Git command to learn how to use and practice. Remember, each commit that you do represents one more chapter of the software history that you are telling. 
+
+Happy coding, where each commit echoes the spirit of progress. Bye!
 
 [git_basics_post]: /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/#git-commit
