@@ -47,7 +47,13 @@ You commit your files and then notice an error in your commit message. Maybe the
 git commit --amend
 {%- endhighlight -%}
 
-This way, Git prompts you to your preferred editor, and you can fix your message commit. Now think about the following situation: You finish the commit and forget to add some files. Do you need to do another commit? No! You can add this file to the stage using `git add` and then amend your last commit. One more thing: If you don't want to change your message, you can specify the `--no-edit` parameter, and Git won't prompt you anything.
+This way, Git prompts you to your preferred editor, and you can fix your message commit. If you just need to update the commit message and don't see the Git prompt, you can include the message with the command.
+
+{%- highlight sh -%}
+git commit --amend -m "Your new title"
+{%- endhighlight -%}
+
+Now think about the following situation: You finish the commit and forget to add some files. Do you need to do another commit? No! You can add this file to the stage using `git add` and then amend your last commit with the new files. One more thing: If you don't want to change your message, you can specify the `--no-edit` parameter, and Git won't prompt you anything.
 
 {%- highlight sh -%}
 git commit --amend --no-edit
@@ -62,7 +68,7 @@ If you are feeling very confident and plan to commit all the changed files witho
 git commit -a -m "Commit title"
 {%- endhighlight -%}
 
-If you prefer, you can join the parameters.
+If you prefer, you can join the parameters to simplify.
 
 {%- highlight sh -%}
 git commit -am "Commit title"
@@ -71,14 +77,14 @@ git commit -am "Commit title"
 I already use this a lot. Very easy, and very simple, but without any control over what you are adding to the repository. Use wisely.
 
 ### Make empty commits
-What? This does not make sense! Yes, this does not make sense, but sometimes can be useful. Imagine you are configuring your project pipeline in a CI/CD platform (like GitHub Actions, Azure DevOps, CircleCI, and so on) and you need to make a commit to test. What you will do? Change some file and test your pipeline? This will work, but you can make a commit without to change anything.
+What? This does not make sense! Yes, this does not make sense, but sometimes can be useful. Imagine you are configuring your project pipeline in a CI/CD platform (like GitHub Actions, Azure DevOps, CircleCI, and so on) and you need to make a commit to test the pipeline trigger. What you will do? Do you change some files and send them to the remote repository? This will work, but you can make a commit without changing anything.
 
 {%- highlight sh -%}
 git commit --allow-empty -m "Title of your empty commit"
 {%- endhighlight -%}
 
 ### That's it
-This was one more Git command to learn how to use and practice. Remember, each commit that you do represents one more chapter of the software history that you are telling. 
+This was one more Git command to learn how to use and practice. Remember, each commit that you make represents one more chapter of the software history that you are telling. Be generous with your colleagues and try to explain the things you are developing. They will thank you later.
 
 Happy coding, where each commit echoes the spirit of progress. Bye!
 
