@@ -9,7 +9,7 @@ social_image: "understanding-git-commit-the-heart-of-version-control.en.png"
 
 <p class="intro"><span class="dropcap">I</span>n the realm of version control, the Git commit is more than a snapshot; it's the heartbeat of your project. Each commit is a deliberate note in the symphony of development, encapsulating changes, decisions, and progress. Join me as we unravel the essence of the Git commit—understanding its components, mastering the art of concise messages, and appreciating its pivotal role in shaping a coherent version of history.</p>
 
-The Git commit, a snapshot frozen in the chronicles of your project's history, is more than meets the eye. Let's dissect its anatomy, understanding the key elements that compose this fundamental building block of version control.
+The Git commit, a snapshot frozen in the chronicles of your project’s history, is more than meets the eye. Let’s explore its anatomy, understanding its elements of it.
 
 ### Anatomy of a Git Commit
 Each commit contains four main elements: Hash, author, date and time of the commit, and the message.
@@ -22,7 +22,7 @@ The commit timestamp, recording the date and time of the commit, contributes his
 
 Finally, the commit message emerges as the narrative thread tying it all together. More than just a description, a well-crafted commit message is a concise yet comprehensive summary of the changes introduced. Effective commit messages enhance collaboration by clearly communicating the purpose and impact of each commit, facilitating a smooth understanding of the project's development history.
 
-Let's see all these things in the commit below. The hash side by `commit` text, the author of the commit (Paul Ricard and his email), the date of the commit, and the message at the bottom.
+Let's see all these things in the commit below. The hash side by `commit` text, the commit's author (Paul Ricard and his email), the date of the commit, and the message at the bottom.
 
 {%- highlight diff -%}
 commit 8934fac280ff394926df4746d31da52f431d52bf
@@ -47,7 +47,7 @@ You commit your files and then notice an error in your commit message. Maybe the
 git commit --amend
 {%- endhighlight -%}
 
-This way, Git prompts you to your preferred editor, and you can fix your message commit. If you just need to update the commit message and don't see the Git prompt, you can include the message with the command.
+This way, Git prompts you to your preferred editor, and you can fix your message commit. If you need to update the commit message and don't see the Git prompt, you can include the message with the command.
 
 {%- highlight sh -%}
 git commit --amend -m "Your new title"
@@ -62,7 +62,7 @@ git commit --amend --no-edit
 Be careful with the `--amend` option because it changes the commit hash. If the commit exists only in your local machine, no problem. But if the commit already exists in the remote repository (like GitHub, GitLab, or BitBucket), maybe your colleagues have difficulty updating the project after you push the amended changes to the remote repository.
 
 ### Include files to the staging area and commit together
-If you are feeling very confident and plan to commit all the changed files without reviewing anything (please, don't do this), you can use the `-a` option. This parameter will stage the changes automatically before the commit.
+If you feel confident and plan to commit all the changed files without reviewing anything (please, don't do this), you can use the `-a` option. This parameter will stage the changes automatically before the commit.
 
 {%- highlight sh -%}
 git commit -a -m "Commit title"
@@ -74,17 +74,17 @@ If you prefer, you can join the parameters to simplify.
 git commit -am "Commit title"
 {%- endhighlight -%}
 
-I already use this a lot. Very easy, and very simple, but without any control over what you are adding to the repository. Use wisely.
+I already have used this a lot. Very easy, and simple, but without any control over what you are adding to the repository. Use wisely.
 
-### Make empty commits
-What? This does not make sense! Yes, this does not make sense, but sometimes can be useful. Imagine you are configuring your project pipeline in a CI/CD platform (like GitHub Actions, Azure DevOps, CircleCI, and so on) and you need to make a commit to test the pipeline trigger. What you will do? Do you change some files and send them to the remote repository? This will work, but you can make a commit without changing anything.
+### Empty commits
+What? This does not make sense! Yes, but sometimes this can be useful. Imagine that you are configuring your project pipeline in a CI/CD platform (like GitHub Actions, Azure DevOps, Bitrise, and so on), and you need to make some commit to test the pipeline trigger. What will you do? Do you change some files and send them to the remote repository? This will work, but you can make a commit without changing anything.
 
 {%- highlight sh -%}
 git commit --allow-empty -m "Title of your empty commit"
 {%- endhighlight -%}
 
 ### That's it
-This was one more Git command to learn how to use and practice. Remember, each commit that you make represents one more chapter of the software history that you are telling. Be generous with your colleagues and try to explain the things you are developing. They will thank you later.
+This was one more Git command to learn how to use and practice. Remember, each commit you make represents one more chapter of the software history that you are telling. Be generous with your colleagues and try to explain the things you are developing. They will thank you later.
 
 Happy coding, where each commit echoes the spirit of progress. Bye!
 
