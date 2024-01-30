@@ -9,18 +9,18 @@ social_image: "understanding-git-commit-the-heart-of-version-control.en.png"
 
 <p class="intro"><span class="dropcap">I</span>n the realm of version control, the Git commit is more than a snapshot; it's the heartbeat of your project. Each commit is a deliberate note in the symphony of development, encapsulating changes, decisions, and progress. Join me as we unravel the essence of the Git commit—understanding its components, mastering the art of concise messages, and appreciating its pivotal role in shaping a coherent version of history.</p>
 
-The Git commit, a snapshot frozen in the chronicles of your project’s history, is more than meets the eye. Let’s explore its anatomy, understanding its elements of it.
+The **Git commit**, a snapshot frozen in the chronicles of your project’s history, is more than meets the eye. Let’s explore its anatomy, understanding its elements of it.
 
 ### Anatomy of a Git Commit
 Each commit contains four main elements: Hash, author, date and time of the commit, and the message.
 
 The hash is a cryptographic fingerprint ensuring data integrity. This hash, often expressed as a series of characters, serves as a distinctive label for each commit, allowing Git to maintain a precise record of changes.
 
-The authorship of a commit is a fundamental aspect, revealing who introduced specific changes. Git captures and attributes the author's identity, fostering accountability and transparency in collaborative development. Understanding the individuals behind each commit adds a human touch to the technicalities of version control.
+The authorship of a commit is a fundamental aspect, revealing who introduced specific changes. Git captures and attributes the author's identity, fostering accountability and transparency in collaborative development. Understanding the individuals behind each commit adds a human touch to the technicalities of **version control**.
 
 The commit timestamp, recording the date and time of the commit, contributes historical context to the project's evolution. This temporal information helps developers trace the timeline of changes, providing insights into when specific modifications were integrated into the codebase.
 
-Finally, the commit message emerges as the narrative thread tying it all together. More than just a description, a well-crafted commit message is a concise yet comprehensive summary of the changes introduced. Effective commit messages enhance collaboration by clearly communicating the purpose and impact of each commit, facilitating a smooth understanding of the project's development history.
+Finally, the commit message emerges as the narrative thread tying it all together. More than just a description, a well-crafted commit message is a concise yet comprehensive summary of the changes introduced. Effective commit messages enhance **collaboration** by clearly communicating the purpose and impact of each commit, facilitating a smooth understanding of the project's development history.
 
 Let's see all these things in the commit below. The hash side by `commit` text, the commit's author (Paul Ricard and his email), the date of the commit, and the message at the bottom.
 
