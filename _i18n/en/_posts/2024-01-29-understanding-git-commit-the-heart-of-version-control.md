@@ -22,7 +22,7 @@ The commit timestamp, recording the date and time of the commit, contributes his
 
 Finally, the commit message emerges as the narrative thread tying it all together. More than just a description, a well-crafted commit message is a concise yet comprehensive summary of the changes introduced. Effective commit messages enhance collaboration by clearly communicating the purpose and impact of each commit, facilitating a smooth understanding of the project's development history.
 
-Let's see all these things in the commit message below. The hash side by `commit` text, the author of the commit (Paul Ricard and his email), the date of the commit, and the message at the bottom.
+Let's see all these things in the commit below. The hash side by `commit` text, the author of the commit (Paul Ricard and his email), the date of the commit, and the message at the bottom.
 
 {%- highlight diff -%}
 commit 8934fac280ff394926df4746d31da52f431d52bf
@@ -34,7 +34,11 @@ Date:   Sun Jan 14 18:14:34 2024 -0000
 {%- endhighlight -%}
 
 ### Basic usage
-As long as the files have been added to the staging area, you can start to use the `git commit` command. To see how to work the basics of this command, please see the [Git basics post][git_basics_post].
+As long as the files have been added to the staging area, you can start to use the `git commit` command. As I wrote in the [Git basics post][git_basics_post], you can make your commit and add a message title with the following command:
+
+{%- highlight sh -%}
+git commit -m "Your commit title"
+{%- endhighlight -%}
 
 ### Amend the last commit
 You commit your files and then notice an error in your commit message. Maybe there are typos, or you wish to include more details. But how do you address this if the commit is already completed? No need to worry! You can effortlessly amend your last commit:
