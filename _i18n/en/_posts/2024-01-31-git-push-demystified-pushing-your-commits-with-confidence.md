@@ -21,24 +21,24 @@ origin	git@github.com:ionixjunior/BookTracking.git (fetch)
 origin	git@github.com:ionixjunior/BookTracking.git (push)
 {%- endhighlight -%}
 
-I'm using the repository [Book Tracking][book_tracking_repository] for the examples. I've cloned this repository to my machine and started working on it. In the result, I have a remote name called "origin", the link of the repository, and the action that you can make - fetch and push. Each line means the action that we can make in the remote repository. Now I have only one, the origin. In Git, the "origin" is a shorthand name for the remote repository that a project was originally cloned from. You can change this name if you prefer, but it's a convention and, is better to use the default name. Suppose I'm working in a branch called "hotfix_main_screen". Let's push it to the remote repository.
+I'm using the repository [Book Tracking][book_tracking_repository] for the examples. I've cloned this repository to my machine and started working on it. In the result, I have a remote name called "origin", the link of the repository, and the action that I can make - fetch and push. Now I have only one remote repository, the origin. In Git, the "origin" is a shorthand name for the remote repository that a project was originally cloned from. You can change this name if you prefer, but it's a convention and, is better to use the default name. Suppose I'm working in a branch called "hotfix_main_screen". Let's push it to the remote repository.
 
 {%- highlight sh -%}
 git push origin hotfix_main_screen
 {%- endhighlight -%}
 
-With this, we'll be able to create a pull request, or simply save our job in the remote repository, e.g.
+With this, we sent our changes of the "hotfix_main_screen" branch to the remote repository called "origin", and now we'll be able to create a pull request, or simply save our job in the remote repository, e.g.
 
 If you're on a long work with your branch, maybe you want to make something easier. Let's talk about tracking branches.
 
-## Tracking Branches
-This is a simple way to simplify this command. Instead of specifying the entire command that I showed you previously every time you want to push your changes, you can set up the tracking using the parameter `-u` or `--set-upstream`. This will establish a tracking relationship between the remote repository and the branch you are working. 
+## Tracking branches
+This is a simple way to simplify this command. Instead of specifying the entire command that I showed you previously every time you want to push your changes, you can set up the tracking using the parameter `-u` or `--set-upstream`. This will establish a tracking relationship between the remote repository and the branch you're working on.
 
 {%- highlight sh -%}
 git push -u origin hotfix_main_screen
 {%- endhighlight -%}
 
-This is typically done the first time you push a branch. Now, you can simply do this:
+This is typically done the first time you push a branch. Now, you can simply do this when you're working on your branch:
 
 {%- highlight sh -%}
 git push
@@ -46,10 +46,10 @@ git push
 
 If you want to use this way, you need to set up the tracking in every new branch you'll working on. Everything has worked fine until now, but let's talk about a dangerous parameter, but very useful sometimes. 
 
-## Force Pushing
+## Force pushing
 The force pushing is a command that should be used with caution, as it overwrites the remote repository branch's history with the local one. While it can be a powerful tool, it also comes with potential risks, especially in collaborative settings. 
 
-Suppose you create a pull request, your colleagues review it, suggest to you some changes and you're prepared to push again. Unfortunately, since you create the pull request the code base changes a lot and this causes a merge conflict with your branch. One option you have is to rebase your branch to the main branch, solve the conflicts, and be happy. The rebase will pick up all your commits after the main branch, as you can start your change after the last commit of the main branch. This command helps to make a clean Git history, but there's a problem: All our Git commit hashes changes with this action and you can't simply push the changes now. When you try to push, you can get a message like this:
+Suppose you've created a pull request, your colleagues review it, suggest to you some changes and you're prepared to push again. Unfortunately, since you create the pull request the code base changes a lot and this causes a merge conflict with your branch. One option you have is to rebase your branch to the main branch, solve the conflicts, and be happy. The rebase will pick up all your commits after the main branch, as you can start your change after the last commit of the main branch. This command helps to make a clean Git history, but there's a problem: All our Git commit hashes changes with this action and you can't simply push the changes now. When you try to push, you can get a message like this:
 
 {%- highlight sh -%}
 git push origin hotfix_main_screen
@@ -63,7 +63,7 @@ hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 {%- endhighlight -%}
 
-To solve this, just add the parameter `-f` or `--force` to push your changes and rewrite the branch's history. 
+This happensn because the rebase action changes the hash commits. You rewrite the Git history this way. To solve this, just add the parameter `-f` or `--force` to push your changes and allow the remote repository to accept your local changes. 
 
 {%- highlight sh -%}
 git push origin hotfix_main_screen -f
@@ -73,7 +73,7 @@ This is not a problem if is only you working in a specific branch, but be carefu
 
 Very nice! Now I'll explain to you when you'll push your changes to a different repository than the origin.
 
-## Origin and Upstream
+## Origin and upstream
 We're talking about another Git convention. Suppose you find a project on GitHub and you want to contribute to it. Following the best practices to collaborate, what do you need to do? First, you need to fork the project to your GitHub account, then you clone your repository to your machine, make the changes you're proposing or fixing, and then push the changes to your repository, the origin. Now when you open the GitHub, you'll see a button to create a pull request to the forked repository. You do this, your pull request is accepted (or not) and you want to continue contributing. How can you make your repository synced with the forked repository? The response is on the remote repositories connected. 
 
 When you clone your repository to your machine, Git creates a bond with the remote repository and calls it "origin". With this you can communicate with your repository through fetch and push commands. But you can add another repository to communicate, and this is the next step to do. In this scenario, you can add another remote repository to track changes in the forked project. It's common in fork-based development workflows where developers contribute changes back to the original project. Let's do it. Suppose I've forked the Book Tracking project from another repository and I'll configure the remote bond in my machine. I'll call the remote as upstream because this is another Git convention. 
@@ -102,7 +102,7 @@ git fetch upstream
 This is a way that you can get the new changes from the forked repository to yours. This won't merge the changes to your repository. This just gets. Today we have a button on GitHub that you can make this from UI, but this is exactly some part of the action that the button does. Spoiler alert: I'll tell you about the fetch command in the next post. Because of this, I won't add more details right now.
 
 
-## Git Push: Your Key to Collaboration
+## Git push: Your key to collaboration
 In summary, mastering the `git push` command empowers developers to confidently share their work with collaborators and contribute to the project's progress. By understanding its syntax, options, and conventions, developers can ensure seamless collaboration, maintain a synchronized codebase, and drive the project forward. Embrace the power of `git push` to propel your development journey with efficiency and effectiveness.
 
 Tell me in the comments if you already faced some scenarios that I talked about in this post, or share another tip that you believe is important. 
