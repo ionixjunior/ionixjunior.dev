@@ -19,7 +19,7 @@ Nesta série, vou desmembrar cada comando do Git em postagens de fácil compreen
     * Compreensão da importância do comando "git add".
 3. [Entendendo o Git Commit: O Coração do Controle de Versão][post_3]
     * Insights profundos sobre o comando crucial "git commit".
-4. Desmistificando o Git Push: Enviando Seus Commits com Confiança
+4. [Desmistificando o Git Push: Enviando Seus Commits com Confiança][post_4]
     * Navegando pelo comando "git push" para uma colaboração sem problemas.
 5. Git Pull vs. Fetch: Desvendando as Diferenças
     * Esclarecendo as distinções entre "git pull" e "git fetch".
@@ -40,3 +40,4 @@ Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas h
 [post_1]:  /git-basics-an-in-depth-look-at-essential-commands/
 [post_2]:  /git-add-command-explained-a-step-by-step-tutorial/
 [post_3]:  /understanding-git-commit-the-heart-of-version-control/
+[post_4]:  /git-push-demystified-pushing-your-commits-with-confidence/
