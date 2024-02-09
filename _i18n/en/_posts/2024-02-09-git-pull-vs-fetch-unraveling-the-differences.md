@@ -80,7 +80,7 @@ Also, you can execute `git pull` to the entire repository.
 git pull origin
 {%- endhighlight -%}
 
-It's simple, isn't it? These commands don't have any mystery. But maybe you're thinking now: When do I use each of them? 
+It's simple, isn't it? These commands don't have any mystery. But maybe you're thinking now: When do I use each of them? There doesn't exist a rule, unfortunately. We need to think about what we want to do every time we need to update our repository. Sometimes will be safe to execute the `git pull` command if we only need to update the main branch, and at other times will be better to execute the `git fetch` to see what was changed and do the merge carefully.
 
 ## Closing Thoughts
 
