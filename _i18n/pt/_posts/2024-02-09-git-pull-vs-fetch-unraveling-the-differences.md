@@ -8,13 +8,13 @@ tags: ["git"]
 
 <p class="intro"><span class="dropcap">S</span>incronizar-se com repositórios remotos é fundamental para o desenvolvimento colaborativo e a manutenção de um código atualizado. Dois comandos essenciais, git pull e git fetch, facilitam esse processo ao recuperar alterações de repositórios remotos. Embora ambos os comandos sirvam a um propósito semelhante, diferem em seu comportamento e impacto no repositório local. Vamos desvendar as diferenças entre esses comandos, explorando suas funcionalidades e casos de uso ideais para otimizar seu fluxo de trabalho no Git.</p>
 
-## Compreendendo o Git Fetch
+## Compreendendo o git fetch
 
 O Git fetch é um comando fundamental que permite aos desenvolvedores recuperar alterações de um repositório remoto sem mesclá-las automaticamente no branch local. Quando você executa `git fetch`, o Git busca os commits mais recentes, branches e tags do repositório remoto especificado, atualizando as referências correspondentes em seu repositório local. No entanto, ele deixa seu branch local inalterado, preservando todo o trabalho em andamento e permitindo que você revise as alterações buscadas antes de incorporá-las ao seu branch.
 
 Ao contrário do `git pull`, que mescla automaticamente as alterações buscadas no branch atual, o `git fetch` adota uma abordagem mais cautelosa, dando a você controle completo sobre quando e como integrar as alterações. Essa separação entre buscar e mesclar permite uma maior flexibilidade e permite que você avalie as alterações buscadas de forma independente antes de mesclá-las em seu branch local. Ao desvincular as operações de busca e mesclagem, o `git fetch` capacita os desenvolvedores a gerenciar seu fluxo de trabalho de forma mais eficiente e tomar decisões informadas sobre a incorporação de alterações remotas em seu repositório local.
 
-## Compreendendo o Git Pull
+## Compreendendo o git pull
 
 O Git pull é um comando versátil que combina a funcionalidade de buscar alterações de um repositório remoto e mesclá-las no branch atual em uma única operação. Quando você executa o `git pull`, o Git busca automaticamente os commits mais recentes do repositório remoto especificado e os incorpora no branch atual, atualizando seu repositório local para refletir as alterações feitas por outros colaboradores.
 
@@ -24,7 +24,7 @@ Ao fornecer uma maneira conveniente de buscar e mesclar alterações simultaneam
 
 Agora que entendemos as diferenças, vamos falar sobre o uso.
 
-## Uso dos Comandos Fetch e Pull
+## Uso dos comandos fetch e pull
 
 Suponha que precisemos atualizar o branch principal do repositório em que estamos trabalhando. Vamos fazer isso usando o `git fetch`.
 
@@ -78,7 +78,7 @@ git pull origin
 
 É simples, não é? Esses comandos não têm nenhum mistério. Mas talvez você esteja pensando agora: Quando devo usar cada um deles? Infelizmente, não existe uma regra. Precisamos pensar sobre o que queremos fazer sempre que precisarmos atualizar nosso repositório. Às vezes, será seguro executar o comando `git pull` se apenas precisarmos atualizar o branch principal, e em outras vezes será melhor executar o `git fetch` para ver o que foi alterado e fazer a mesclagem com cuidado.
 
-## Considerações Finais
+## Considerações finais
 
 Dominar os comandos `git fetch` e `git pull` é essencial para uma colaboração eficiente e controle de versão no Git. Buscar atualizações de repositórios remotos com `git fetch` garante que seu repositório local permaneça atualizado com as últimas alterações, enquanto `git pull` integra essas atualizações em seu branch de trabalho de forma transparente.
 
