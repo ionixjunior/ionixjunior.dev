@@ -9,7 +9,7 @@ tags: ["git"]
 <p class="intro"><span class="dropcap">S</span>truggling to navigate code integration in Git? You're not alone. Understanding the differences between 'git merge' and 'git rebase' is crucial for maintaining a clean commit history and streamlining your workflow. In this post, I'll explore these two essential commands, their unique approaches to code integration, and best practices for leveraging them effectively.</p>
 
 ## Git merge: Bringing branches together
-To explain the examples of `git merge`, I going to use the [Book Tracking][book_tracking_repository] repository. For these examples, my target branch is the "main" and my source branch is the "library_screen". You'll see these words in the entire post. Before we start, let's see the log of Git commits for this scenario.
+To explain the examples of `git merge`, I'm going to use the [Book Tracking][book_tracking_repository] repository. For these examples, my target branch is the "main" and my source branch is the "library_screen". You'll see these words in the entire post. Before we start, let's see the log of Git commits for this scenario.
 
 {%- highlight log -%}
 * 214ae0f (HEAD -> library_screen) Integrate the new screen into tab view controller
@@ -41,7 +41,7 @@ This command preserves the commit history. Git merge retains the individual comm
 * 9060735 (origin/main) Replace ifs to switch case
 {%- endhighlight -%}
 
-This merge is called fast forward because all the commits you've applied in the source branch will go to the target branch. Not think about it: In our source branch, we're encouraged to do many commits, undo things, and create a pull request when we finish our work. But if all is integrated into the target branch without a "checkpoint", how can we know when a specific pull request was merged? We can use an option to merge using a non-fast-forward approach. Let's see it.
+This type of merge is called fast-forward because all the commits you've applied in the source branch will go to the target branch. Not think about it: In our source branch, we're encouraged to do many commits, undo things, and create a pull request when we finish our work. But if all is integrated into the target branch without a "checkpoint", how can we know when a specific pull request was merged? We can use an option to merge using a non-fast-forward approach. Let's see it.
 
 {%- highlight bash -%}
 git merge <source_branch> --no-ff
