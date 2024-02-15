@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git Merge and Git Rebase: Navigating Code Integration"
+title:  "Git Merge and Git Rebase: Working with Code Integration"
 date:   2024-02-14
 translations: ["pt"]
 tags: ["git"]
