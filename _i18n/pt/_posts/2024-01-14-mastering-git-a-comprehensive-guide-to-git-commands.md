@@ -21,7 +21,7 @@ Nesta série, vou desmembrar cada comando do Git em postagens de fácil compreen
     * Insights profundos sobre o comando crucial "git commit".
 4. [Desmistificando o Git Push: Enviando Seus Commits com Confiança][post_4]
     * Navegando pelo comando "git push" para uma colaboração sem problemas.
-5. Git Pull vs. Fetch: Desvendando as Diferenças
+5. [Git Pull vs. Fetch: Desvendando as Diferenças][post_5]
     * Esclarecendo as distinções entre "git pull" e "git fetch".
 
 ... e muitos outros estão por vir!
@@ -41,3 +41,4 @@ Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas h
 [post_2]:  /git-add-command-explained-a-step-by-step-tutorial/
 [post_3]:  /understanding-git-commit-the-heart-of-version-control/
 [post_4]:  /git-push-demystified-pushing-your-commits-with-confidence/
+[post_5]:  /git-pull-vs-fetch-unraveling-the-differences/
