@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Merge e Git Rebase: Trabalhando com Integração de Código"
-date:   2024-02-14
+date:   2024-02-23
 translations: ["en"]
 tags: ["git"]
 ---
