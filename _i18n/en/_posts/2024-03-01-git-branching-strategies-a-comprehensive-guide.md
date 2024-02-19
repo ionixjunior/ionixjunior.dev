@@ -187,6 +187,8 @@ Unlike GitHub Flow, GitLab Flow includes review apps and feature flags, enhancin
 	<figcaption>The GitLab flow for a multi-version system</figcaption>
 </figure>
 
+## What's your prefered flow?
+
 
 [book_tracking_repository]: https://github.com/ionixjunior/BookTracking
 [vincent_driessen_twitter]: https://twitter.com/nvie
