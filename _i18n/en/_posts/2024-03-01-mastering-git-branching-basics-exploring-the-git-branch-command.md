@@ -60,7 +60,7 @@ git branch
 
 Great! But this command only creates a branch but don't change the Git pointer (checkout). To this, we need to use the `git switch` to change between branches.
 
-{%- highlight jabashvascript -%}
+{%- highlight bash -%}
 git switch a_new_branch
 
 Switched to branch 'a_new_branch'
