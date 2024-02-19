@@ -58,7 +58,7 @@ git branch
 * main
 {%- endhighlight -%}
 
-Ótimo! Mas este comando apenas cria um branch, mas não altera o ponteiro do Git (checkout). Para isso, precisamos usar o `git switch` para mudar de branch.
+Ótimo! Mas este comando apenas cria um branch. Ele não altera o ponteiro do Git (checkout). Para isso, precisamos usar o `git switch` para mudar de branch.
 
 {%- highlight bash -%}
 git switch a_new_branch
@@ -128,6 +128,6 @@ Switched to branch 'main'
 Isso é muito útil quando estamos fazendo essas trocas simples de branch.
 
 ## Ainda não acabamos!
-Como você viu, dominar o comando `git branch` é um passo crucial para aproveitar todo o potencial das capacidades das branches do Git. Dotado desse conhecimento, você agora está apto a navegar entre branches com facilidade, estabelecendo a base para estratégias de branching mais avançadas. Em nosso próximo post, elevaremos ainda mais nosso entendimento enquanto exploramos estratégias abrangentes de branching do Git, revelando as diversas abordagens que as equipes utilizam para gerenciar o desenvolvimento de projetos de forma eficaz. Fique ligado para mais uma exploração aprofundada sobre o Git!
+Como você viu, dominar o comando `git branch` é um passo crucial para aproveitar todo o potencial das capacidades das branches do Git. Dotado desse conhecimento, você agora está apto a navegar entre branches com facilidade, estabelecendo a base para estratégias de branching mais avançadas. Em nosso próximo post, elevaremos ainda mais nosso entendimento enquanto exploramos estratégias de branching do Git, revelando as diversas abordagens que as equipes utilizam para gerenciar o desenvolvimento de projetos de forma eficaz. Fique ligado para mais uma exploração aprofundada sobre o Git!
 
 [book_tracking_repository]: https://github.com/ionixjunior/BookTracking/
