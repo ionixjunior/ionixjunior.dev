@@ -8,7 +8,7 @@ tags: ["git"]
 
 <p class="intro"><span class="dropcap">W</span>elcome to our comprehensive guide on Git branching strategies! If you've ever felt overwhelmed by the multitude of branching options available in Git, you're not alone. With so many strategies to choose from, ranging from simple single-branch approaches to more complex models like Git Flow and GitHub Flow, it's essential to understand the benefits and trade-offs of each. Let's dive in and unravel the intricacies of Git branching together!</p>
 
-Maybe you're thinking what's the relation about Git branching strategies and the mastering Git commands series. Well, actions in Git needs a command to execute, so I'll show you how to use some commands to work without a problem with the Git branching strategies. In this guide, we'll explore various Git branching strategies, discussing their principles, use cases, and best practices. Whether you're a solo developer working on a personal project or part of a large team collaborating on a complex software application, there's a branching strategy that's right for you. By the end of this guide, you'll have a clear understanding of the different approaches to branching and be equipped to choose the one that best suits your project's needs.
+Maybe you're thinking what's the relation about Git branching strategies and the mastering Git commands series. Well, actions in Git needs a command to execute, so I'll show you how to use some commands to work without a problem with the Git branching strategies. In the [last post][last_post] I show you how to manage branches on Git, and now we'lll explore more about it. In this guide, we'll explore various Git branching strategies, discussing their principles, use cases, and best practices. Whether you're a solo developer working on a personal project or part of a large team collaborating on a complex software application, there's a branching strategy that's right for you. By the end of this guide, you'll have a clear understanding of the different approaches to branching and be equipped to choose the one that best suits your project's needs.
 
 ## What's a branching strategy?
 Before delving into specific branching strategies, it's essential to understand the fundamental concept of branching itself. In Git, a branch is essentially a pointer to a specific commit in your project's history. Branches allow developers to work on separate features, bug fixes, or experiments without affecting the main codebase.
@@ -25,130 +25,18 @@ This isn't a common approach for Git users when work in a collaborative project.
 ## Feature branch strategy
 In the feature branch strategy, developers create a new branch for each feature they're working on, implement the changes, and then merge the feature branch back into the main branch once it's complete. This approach allows for parallel development of multiple features, keeps the main branch clean and stable, and enables easier code review and collaboration. It's a widely used strategy, particularly in larger teams or projects where multiple features are developing simultaneously. 
 
-Before we continue to talk about some Git branching strategies, lets talk about the command to create or change branches. 
-
-## The git branch command
-To start we can see all the branches we have on our local repository. Again, I'm using the [Book Tracking][book_tracking_repository] repository.
-
-{%- highlight bash -%}
-git branch
-
-  improve_highlight_cell
-  library_screen
-* main
-{%- endhighlight -%}
-
-Currently, I'm in the main branch, and we can see an astheristic on it. This command list only the local branches. If you need, you can list the remote branches with `-r` parameter.
-
-{%- highlight bash -%}
-git branch -r
-
-  origin/main
-{%- endhighlight -%}
-
-Also, you can list all the branches - local and remote - with the '-a' parameter.
-
-{%- highlight bash -%}
-git branch -a
-
-  improve_highlight_cell
-  library_screen
-* main
-  remotes/origin/main
-{%- endhighlight -%}
-
-Now you know how to list the branches, let's create one. The name of the branch is going to "a_new_branch".
-
-{%- highlight bash -%}
-git branch a_new_branch
-{%- endhighlight -%}
-
-Git won't show us anything, but we can use the branch command to list.
-
-{%- highlight bash -%}
-git branch
-
-  a_new_branch
-  improve_highlight_cell
-  library_screen
-* main
-{%- endhighlight -%}
-
-Great! But this command only create a branch but don't change the Git pointer. To this, we need to use the `git switch` to change between branches.
-
-{%- highlight jabashvascript -%}
-git switch a_new_branch
-
-Switched to branch 'a_new_branch'
-{%- endhighlight -%}
-
-Now, if we see the branch list the astheristic is on the branch we switch.
-
-{%- highlight bash -%}
-git branch
-
-* a_new_branch
-  improve_highlight_cell
-  library_screen
-  main
-{%- endhighlight -%}
-
-Suppose you create the branch and want to change his name. This is simple with `-m` parameter. I'm goint to change the branch name to "dark_mode_support".
-
-{%- highlight bash -%}
-git branch -m dark_mode_support
-{%- endhighlight -%}
-
-If we see the branch list now, we can see the changes.
-
-{%- highlight bash -%}
-git branch
-
-* dark_mode_support
-  improve_highlight_cell
-  library_screen
-  main
-{%- endhighlight -%}
-
-Very nice! But what can we do if we create a wrong branch and need to delete it? It's simple: We need to change the Git pointer to another branch and execute the command with `-D` parameter to delete. 
-
-{%- highlight bash -%}
-git branch -D dark_mode_support
-
-Deleted branch dark_mode_support (was 40650e2).
-{%- endhighlight -%}
-
-## Pro-tips
-To simplify the branch creation and change, we can use the `git switch` command with the `-c` parameter. This way the Git will create the new branch and immediatly will make the checkout to it.
-
-{%- highlight bash -%}
-git switch -c name_of_your_branch
-
-Switched to a new branch 'name_of_your_branch'
-{%- endhighlight -%}
-
-Another great tip is about changing branches. Suppose we are on the main branch and execute the `git switch` to the checkout to another branch. Now we want to go back to the main branch again. We can type the `git switch` and specify the name of branch we need to go or simple type the `-` parameter to go to the previous branch.
-
-{%- highlight bash -%}
-git switch -
-
-Switched to branch 'main'
-{%- endhighlight -%}
-
-This is very useful when we're doing this simple changes.
-
-Okay! Now you know how to list, create, delete and change between branches. Let's continue the post talking about how can we explore the Git branching strategies.
+This is the basics, but exists many ways to apply it. Let's talk about some Git workflows.
 
 ## Git flow
 The Git Flow branching model comprises several main branches and supporting branches that facilitate parallel development, release management, and hotfixing.
 
-The main branches consist of the master branch, representing the stable, production-ready version of the code, and the develop branch, serving as the main integration branch for ongoing development activities.
+The main branches consist of the main branch, representing the stable, production-ready version of the code, and the develop branch, serving as the main integration branch for ongoing development activities.
 
 Supporting branches include feature branches, release branches, and hotfix branches. Feature branches are created from the develop branch to isolate work on new features or changes. They allow developers to work independently on specific tasks without affecting the main codebase. Once a feature is complete, it is merged back into the develop branch via a pull request.
 
-Release branches are created from the develop branch when preparing for a new release version. They enable final testing, bug fixes, and last-minute changes before deployment. Once the release is ready, the changes are merged into both the master and develop branches.
+Release branches are created from the develop branch when preparing for a new release version. They enable final testing, bug fixes, and last-minute changes before deployment. Once the release is ready, the changes are merged into both the main and develop branches.
 
-Hotfix branches are emergency branches created from the master branch to address critical issues or bugs found in the production environment. They facilitate quick fixes without disrupting ongoing development. Once the fixes are verified, they are merged into both the master and develop branches.
+Hotfix branches are emergency branches created from the main branch to address critical issues or bugs found in the production environment. They facilitate quick fixes without disrupting ongoing development. Once the fixes are verified, they are merged into both the main and develop branches.
 
 The Git Flow model provides a structured approach to branching and release management, ensuring stability, reliability, and organization throughout the development lifecycle. However, it can be complex and cumbersome for smaller teams or projects with simpler workflows. Additionally, strict adherence to the model may lead to longer release cycles and potential conflicts or merge issues, particularly in larger teams with frequent parallel development efforts.
 
@@ -193,3 +81,4 @@ Unlike GitHub Flow, GitLab Flow includes review apps and feature flags, enhancin
 [book_tracking_repository]: https://github.com/ionixjunior/BookTracking
 [vincent_driessen_twitter]: https://twitter.com/nvie
 [git_flow_post]:            https://nvie.com/posts/a-successful-git-branching-model/
+[last_post]:                /{{ site.lang }}/mastering-git-branching-basics-exploring-the-git-branch-command
