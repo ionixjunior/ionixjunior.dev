@@ -17,6 +17,9 @@ In Git, developers typically name the default branch "main" or "master" to repre
 
 Branching is a powerful feature of Git that enables developers to work efficiently in teams, experiment with new ideas, and manage complex software projects with ease. By understanding the basics of branching, developers can leverage Git's branching capabilities to organize their workflow effectively and collaborate seamlessly with others. Now you already know what's a branch strategy. So lets deep dive into some strategies.
 
+## Trunk-based development
+...
+
 ## Single branch strategy
 In the single branch strategy, there's only one branch, usually named "main" or "master". All development work, including new features and bug fixes, is done directly on this branch. This approach is simple and straightforward, making it suitable for small projects or solo developers. However, it lacks the flexibility and organization needed for larger teams or complex projects where parallel development is necessary.
 
@@ -56,29 +59,46 @@ The GitHub Flow branching model is a simplified approach to version control and 
 </figure>
 
 ## GitLab flow
-The GitLab Flow branching model is similar to GitHub Flow but incorporates additional features like review apps and feature flags. In GitLab Flow, developers create feature branches off the main branch for each new feature or fix, make small, atomic commits to their feature branches, and open merge requests (MRs) to merge their changes back into the main branch. Review apps are automatically created for each MR, allowing reviewers to preview changes in a live environment. Feature flags enable developers to toggle new features on and off, facilitating gradual rollouts and experimentation. GitLab Flow offers a balance between simplicity and flexibility, providing features for continuous integration, collaboration, and controlled feature releases.
+The GitLab Flow offers a straightforward approach to collaboration, merging features and fixes directly into the main branch. It blends feature-driven development with issue tracking, allowing teams to streamline their workflow. With GitLab Flow, there's a focus on simplicity and efficiency, with clear guidelines for handling production and stable branches. It's all about ensuring a smooth process for teams to work together and deliver features effectively.
 
-Unlike GitHub Flow, GitLab Flow includes review apps and feature flags, enhancing collaboration and enabling controlled feature rollouts. Additionally, GitLab Flow offers more built-in features and integrations, such as CI/CD pipelines, issue tracking, and project management tools, making it a comprehensive solution for software development workflows. However, GitLab Flow may require more configuration and setup compared to GitHub Flow, and its feature set may be overwhelming for smaller teams or simpler projects. Overall, GitLab Flow is well-suited for teams that prioritize feature experimentation, controlled releases, and comprehensive project management.
+Git Flow starts with a 'develop' branch as the default, while GitLab Flow begins with the 'main' branch. GitLab Flow includes a pre-production branch for bug fixes before merging changes to 'main' for production. Teams can have multiple pre-production branches, such as test, acceptance, and production.
+
+In GitLab Flow, teams use feature branches alongside a separate production branch. When 'main' is ready, it's merged into the production branch for release. GitLab Flow often involves release branches, and teams needing to publish different versions of the software at the same time, allowing for separte maintenance and bug fixes.
+
+This can provide us better ways to organize the delivery workflow. I encorage you to read the [full documentation about GitLab Flow][gitlab_flow_post] and its [best practices][gitlab_flow_best_practices]. To try to explain how can we use the GitLab Flow, I'll show you some old images that I found o internet and explain them. Don't worry about it. The images are old, but the meaning continues relevant. Because the GitLab Flow is very versatible, we can adapt it to the best use. Let's talk about some different ways to deliver software and explore how can we adapt the GitLab Flow.
+
+### Single environment system
+This approach is suitable for projects with a single environment, such as small-scale applications or personal projects. It follows a simplified version of the GitLab Flow, where all development, testing, and deployment occur within a single environment, typically the main branch. Changes are continuously integrated and tested in the main branch, with releases triggered automatically based on predefined criteria like passing tests or manual approval. All work is integrated to the main branch and the team members need to decide when is safe to deliver the software making a merge to a production branch.
 
 <figure>
 	<img src="/assets/img/gitlab-flow-single-environment-system.png" alt=""> 
-	<figcaption>The GitLab flow for a single-environment system</figcaption>
+	<figcaption>The GitLab flow for a single environment system</figcaption>
 </figure>
+
+### Multi environment system
+The multi environment GitLab Flow extends the basic GitLab Flow model to support multiple environments, such as development, staging, and production. This can be customized as we need. Each environment corresponds to a separate branch (e.g., development, staging, production), with changes flowing through a series of promotion stages before reaching production. Developers work on feature branches, which are merged into the development branch for integration testing. Once validated, changes are promoted to the staging branch for user acceptance testing before finally being deployed to the production branch for release.
 
 <figure>
 	<img src="/assets/img/gitlab-flow-multi-environment-system.png" alt=""> 
-	<figcaption>The GitLab flow for a multi-environment system</figcaption>
+	<figcaption>The GitLab flow for a multi environment system</figcaption>
 </figure>
+
+### Multi version system
+The multi version GitLab Flow is designed for projects with multiple active versions or release streams running concurrently. It allows teams to manage feature development, bug fixes, and releases across multiple branches representing different versions of the software. Developers work on feature branches targeting specific version branches (e.g., v1.x, v2.x), ensuring that changes are isolated and applied to the appropriate release stream. Continuous integration and delivery pipelines are configured to build, test, and deploy each version independently, enabling teams to support multiple customer deployments or product variants simultaneously.
 
 <figure>
 	<img src="/assets/img/gitlab-flow-multi-version-system.png" alt=""> 
-	<figcaption>The GitLab flow for a multi-version system</figcaption>
+	<figcaption>The GitLab flow for a multi version system</figcaption>
 </figure>
 
-## What's your prefered flow?
+## What's the best flow?
+Sorry to say this, but there's no silver bullet, and you need to think what's the best approach for your project, team or company. Each flow has its pros and cons and have been adapted to a specific scenario. Personally, I prefer the GitHub Flow because it is very easy to use, it provides speed to the developent and delivery process, and avoid a lot of possibles merge conflicts. Of couse, you need to pay attention to not merge on the main branch a broken software, because you'll deliver it all the time. 
 
+And you? What's your throughts? What do you think is the best approach and why? Which of these flows have you used? Tell me in the comments. Let's talk about it. See you in the next post!
 
-[book_tracking_repository]: https://github.com/ionixjunior/BookTracking
-[vincent_driessen_twitter]: https://twitter.com/nvie
-[git_flow_post]:            https://nvie.com/posts/a-successful-git-branching-model/
-[last_post]:                /{{ site.lang }}/mastering-git-branching-basics-exploring-the-git-branch-command
+[book_tracking_repository]:   https://github.com/ionixjunior/BookTracking
+[vincent_driessen_twitter]:   https://twitter.com/nvie
+[git_flow_post]:              https://nvie.com/posts/a-successful-git-branching-model/
+[last_post]:                  /{{ site.lang }}/mastering-git-branching-basics-exploring-the-git-branch-command
+[gitlab_flow_post]:           https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/
+[gitlab_flow_best_practices]: https://about.gitlab.com/topics/version-control/what-are-gitlab-flow-best-practices/
