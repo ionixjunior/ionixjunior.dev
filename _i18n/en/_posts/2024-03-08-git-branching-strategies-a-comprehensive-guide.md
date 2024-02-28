@@ -15,7 +15,7 @@ Before delving into specific branching strategies, it's essential to understand 
 
 In Git, developers typically name the default branch "main" or "master" to represent the stable version of the project. When you create a new branch, you're essentially creating a new timeline of commits that diverges from the main branch. This allows you to make changes independently of the main codebase, test new features, and collaborate with others without disrupting the stable version of the project.
 
-Branching is a powerful feature of Git that enables developers to work efficiently in teams, experiment with new ideas, and manage complex software projects with ease. By understanding the basics of branching, developers can leverage Git's branching capabilities to organize their workflow effectively and collaborate seamlessly with others. Now you already know what's a branch strategy. So lets deep dive into some options.
+Branching is a powerful feature of Git that enables developers to work efficiently in teams, experiment with new ideas, and manage complex software projects with ease. By understanding the basics of branching, developers can leverage Git's branching capabilities to organize their workflow effectively and collaborate seamlessly with others. Now you already know what's a branch strategy, let's deep dive.
 
 ## Trunk-based development (TBD) and Single branch strategy:
 
@@ -89,7 +89,7 @@ The multi version GitLab flow is designed for projects with multiple active vers
 ## What's the best flow?
 Sorry to say this, but there's no silver bullet, and you need to think what's the best approach for your project, team or company. Each flow has its pros and cons and have been adapted to a specific scenario. As you can see from the table bellow, there's no single "best" flow. The right choice depends on your project scale, team size, and desired release cadence. If simplicity is paramount, consider GitHub flow or TBD. For more structured release management or multiple environments, investigate Git flow or GitLab flow.
 
-| Feature | TBD/Single Branch Strategy | Git flow | GitHub flow | GitLab flow |
+| Feature | TBD/Single branch strategy | Git flow | GitHub flow | GitLab flow |
 |---|---|---|---|---|
 | **Main Branch Usage** | All development, stable code | Stable code | Stable code | Stable code |
 | **Other Branches** | Short-lived feature branches (optional) | Develop, Feature, Release, Hotfix | Feature  | Feature, Environment (e.g., staging, production), Release (optional)  |
