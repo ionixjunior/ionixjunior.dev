@@ -39,8 +39,8 @@ As branches de hotfix são branches de emergência criadas a partir da branch ma
 A estratégia do Git flow fornece uma abordagem estruturada para branch e gerenciamento de lançamentos, garantindo estabilidade, confiabilidade e organização ao longo do ciclo de vida de desenvolvimento. No entanto, pode ser complexo e pesado para equipes menores ou projetos com fluxos de trabalho mais simples. Além disso, a adesão estrita ao modelo pode levar a ciclos de lançamento mais longos e possíveis conflitos ou problemas de mesclagem, especialmente em equipes maiores com esforços de desenvolvimento paralelo frequentes.
 
 <figure>
-	<img src="/assets/img/git-flow.png" alt="O Git flow"> 
-	<figcaption>O Git flow</figcaption>
+	<img src="/assets/img/git-flow.png" alt="A imagem mostra o diagrama do Git flow. Ele ilustra como diferentes tipos de branches, como feature, hotfix e release, são criadas e mescladas para desenvolver, testar e lançar software de forma eficiente. As setas no diagrama indicam o fluxo do código entre as diferentes branches."> 
+	<figcaption>Git flow</figcaption>
 </figure>
 
 Esta é uma imagem conhecida originalmente publicada por [Vincent Driessen][vincent_driessen_twitter] em seu post no blog em 2010. Ele criou o conceito de Git flow e seu post pode ser visto [aqui][git_flow_post]. Uma coisa interessante é que Vincent criou um utilitário via linha de comando para facilitar o uso do Git flow. Sugiro você ler sobre isso para saber mais sobre a abordagem de Vincent.
@@ -49,8 +49,8 @@ Esta é uma imagem conhecida originalmente publicada por [Vincent Driessen][vinc
 A estratégia do GitHub flow é uma abordagem simplificada para controle de versão e integração de código, enfatizando práticas de integração e implantação contínuas. No GitHub flow, os desenvolvedores criam branches de recursos a partir da branch principal para cada novo recurso ou correção, fazem commits pequenos e atômicos em seus branches de recursos e abrem pull requests (PR) para mesclar suas alterações de volta para a branch principal. As alterações de código são revisadas, discutidas e aprovadas por meio do processo de PR antes de serem mescladas na branch principal. Uma vez mescladas, as alterações acionam testes e implantações automatizados, levando a um feedback e iteração rápidos. O GitHub flow difere do Git flow em sua simplicidade, foco na implantação contínua e flexibilidade. Embora o GitHub flow não tenha um processo de lançamento formal, ele promove a integração contínua, a colaboração e a iteração rápida, tornando-o adequado para fluxos de trabalho modernos de desenvolvimento de software.
 
 <figure>
-	<img src="/assets/img/github-flow.webp" alt="O diagrama mostra o ramo principal, um novo ramo chamado feature e a jornada que o recurso faz antes de ser mesclado no principal."> 
-	<figcaption>O GitHub flow</figcaption>
+	<img src="/assets/img/github-flow.webp" alt="A imagem mostra o diagrama do GitHub flow. Ele usa apenas duas branches: main e feature. As features possuem o desenvolvimento de novas funcionalidades. Com elas criamos o pull request, é realizado discussão e sugestões de melhoria com o time e, por fim, a branch é mesclada de volta para a main."> 
+	<figcaption>GitHub flow</figcaption>
 </figure>
 
 ## GitLab flow
@@ -66,24 +66,24 @@ Isso pode nos fornecer melhores maneiras de organizar o fluxo de trabalho de ent
 Esta abordagem é adequada para projetos com um único ambiente, como aplicativos em pequena escala ou projetos pessoais. Segue uma versão simplificada do GitLab flow, onde todo o desenvolvimento, teste e implantação ocorrem dentro de um único ambiente, normalmente a branch principal. As alterações são integradas e testadas continuamente na branch principal, com lançamentos acionados automaticamente com base em critérios predefinidos, como testes aprovados ou aprovação manual. Todo o trabalho é integrado na branch principal e os membros da equipe precisam decidir quando é seguro entregar o software fazendo uma mesclagem para uma branch de produção.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-single-environment-system.png" alt=""> 
-	<figcaption>O GitLab flow para um sistema de ambiente único</figcaption>
+	<img src="/assets/img/gitlab-flow-single-environment-system.png" alt="A imagem mostra o diagrama do GitLab flow para sistema de ambiente único. Ele usa apenas duas branches: main e production. Todo o desenvolvimento é realizado na main e a pessoa desenvolvedora escolhe quando mesclar as alterações para a branch de produção."> 
+	<figcaption>GitLab flow para um sistema de ambiente único</figcaption>
 </figure>
 
 ### Sistema de ambiente múltiplo
 O GitLab flow de ambiente múltiplo estende o modelo básico de fluxo do GitLab para suportar vários ambientes, como desenvolvimento, staging e produção. Isso pode ser personalizado conforme necessário. Cada ambiente corresponde a uma branch separada (por exemplo, desenvolvimento, staging, produção), com alterações fluindo por uma série de estágios de promoção antes de chegar à produção. Os desenvolvedores trabalham em branches de recursos, que são mescladas na branch de desenvolvimento para testes de integração. Uma vez validadas, as alterações são promovidas para a branch de staging para testes de aceitação do usuário antes de serem finalmente implantadas na branch de produção para lançamento.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-multi-environment-system.png" alt=""> 
-	<figcaption>O GitLab flow para um sistema de ambiente múltiplo</figcaption>
+	<img src="/assets/img/gitlab-flow-multi-environment-system.png" alt="A imagem mostra o diagrama do GitLab flow para sistema de ambiente múltiplo. Ele usa três branches: main, pré-production e production, mas poderia usar outras branches, caso necessário. Todo o desenvolvimento é realizado na main e a pessoa desenvolvedora escolhe quando mesclar as alterações para os demais ambientes de staing e produção."> 
+	<figcaption>GitLab flow para um sistema de ambiente múltiplo</figcaption>
 </figure>
 
 ### Sistema de múltiplas versões
 O GitLab flow de sistema de múltiplas versões foi projetado para projetos com várias versões ou fluxos de lançamento ativos em execução simultânea. Isso permite que as equipes gerenciem o desenvolvimento de recursos, correções de bugs e lançamentos em várias branches que representam diferentes versões do software. Os desenvolvedores trabalham em branches de recursos direcionados para branches de versão específicos (por exemplo, v1.x, v2.x), garantindo que as alterações sejam isoladas e aplicadas ao fluxo de lançamento apropriado. Pipelines de integração e entrega contínuas são configurados para compilar, testar e implantar cada versão independentemente, permitindo que as equipes suportem várias implantações de clientes ou variantes de produtos simultaneamente.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-multi-version-system.png" alt=""> 
-	<figcaption>O GitLab flow para um sistema de múltiplas versões</figcaption>
+	<img src="/assets/img/gitlab-flow-multi-version-system.png" alt="A imagem mostra o diagrama do GitLab flow para sistema de múltiplas versões. Ele possui a branch main e pode possuir diversas branches, uma para cada versão."> 
+	<figcaption>GitLab flow para um sistema de múltiplas versões</figcaption>
 </figure>
 
 ## Qual é o melhor fluxo?
