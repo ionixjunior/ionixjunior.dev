@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Branching Strategies: A Comprehensive Guide"
-date:   2024-02-18
+date:   2024-03-08
 translations: ["pt"]
 tags: ["git"]
 ---
