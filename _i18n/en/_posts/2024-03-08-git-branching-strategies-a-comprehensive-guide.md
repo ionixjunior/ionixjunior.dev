@@ -17,7 +17,7 @@ In Git, developers typically name the default branch "main" or "master" to repre
 
 Branching is a powerful feature of Git that enables developers to work efficiently in teams, experiment with new ideas, and manage complex software projects with ease. By understanding the basics of branching, developers can leverage Git's branching capabilities to organize their workflow effectively and collaborate seamlessly with others. Now you already know what's a branch strategy, let's deep dive.
 
-## Trunk-based development (TBD) and Single branch strategy:
+## Trunk-based development (TBD) and Single branch strategy
 
 These approaches are similar and involve working directly on the main branch for all development activities, including new features and bug fixes. This simplicity makes them suitable for smaller projects or solo developers. However, with larger teams or complex projects, managing parallel development and maintaining code stability can be challenging.
 
@@ -26,7 +26,7 @@ While both strategies involve working on the main branch, some implementations o
 It's important to emphasize the importance of careful development practices like frequent small commits, code reviews, and automated testing to mitigate the risks associated with working directly on the main branch in these approaches.
 
 ## Git flow
-The Git Flow branching model comprises several main branches and supporting branches that facilitate parallel development, release management, and hotfixing.
+The Git flow branching model comprises several main branches and supporting branches that facilitate parallel development, release management, and hotfixing.
 
 The main branches consist of the main branch, representing the stable, production-ready version of the code, and the develop branch, serving as the main integration branch for ongoing development activities.
 

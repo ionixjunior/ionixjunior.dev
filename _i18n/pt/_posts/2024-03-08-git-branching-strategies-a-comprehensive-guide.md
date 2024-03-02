@@ -13,28 +13,28 @@ Talvez você esteja se perguntando qual a relação entre estratégias de branch
 ## O que é uma estratégia de branch?
 Antes de mergulhar em estratégias de branch específicas, é essencial entender o conceito fundamental da branch em si. No Git, uma branch é essencialmente um ponteiro para um commit específico no histórico do seu projeto. As branches permitem que os desenvolvedores trabalhem em recursos separados, correções de bugs ou experimentos sem afetar a base de código principal.
 
-No Git, geralmente nomeamos a branch padrão como "main" ou "master" para representar a versão estável do projeto. Quando você cria um novo branch, você está essencialmente criando uma nova linha do tempo de commits que diverge do branch principal. Isso permite que você faça alterações independentemente da base de código principal, teste novos recursos e colabore com outros sem interromper a versão estável do projeto.
+No Git, geralmente nomeamos a branch padrão como "main" ou "master" para representar a versão estável do projeto. Quando você cria uma nova branch, você está essencialmente criando uma nova linha do tempo de commits que diverge do branch principal. Isso permite que você faça alterações independentemente da base de código principal, teste novos recursos e colabore com outros sem interromper a versão estável do projeto.
 
 A branch é um recurso poderoso do Git que nos permite trabalhar de forma eficiente em equipes, experimentar novas ideias e gerenciar projetos de software complexos com facilidade. Ao entender o básico das branches, podemos aproveitar as capacidades de branch do Git para organizar nosso fluxo de trabalho de forma eficaz e colaborar perfeitamente com os colegas. Agora que você já sabe o que é uma estratégia de branch, vamos nos aprofundar.
 
-## Trunk-based development (TBD) and Single branch strategy:
+## Trunk-based development (TBD) and Single branch strategy
 
 Essas abordagens são semelhantes e envolvem trabalhar diretamente na branch principal para todas as atividades de desenvolvimento, incluindo novos recursos e correções de bugs. Essa simplicidade as torna adequadas para projetos menores ou desenvolvedores solos. No entanto, com equipes maiores ou projetos complexos, gerenciar o desenvolvimento paralelo e manter a estabilidade do código pode ser desafiador.
 
-Embora ambas as estratégias envolvam trabalhar na branch principal, algumas implementações da estratégia de um branch único podem envolver branches temporários de curta duração para tarefas específicas, mas, em última análise, todas as alterações são mescladas na branch principal.
+Embora ambas as estratégias envolvam trabalhar na branch principal, algumas implementações da estratégia de um branch único podem envolver branches temporários de curta duração para tarefas específicas, mas, no final, todas as alterações são mescladas na branch principal.
 
 É importante enfatizar a importância de práticas cuidadosas de desenvolvimento, como commits pequenos e frequentes, revisões de código e testes automatizados para mitigar os riscos associados ao trabalho direto no branch principal nessas abordagens.
 
 ## Git flow
-O estratégia do Git Flow compreende várias branches principais e branches de suporte que facilitam o desenvolvimento paralelo, o gerenciamento de lançamentos e a correção de bugs.
+O estratégia do Git flow compreende várias branches principais e branches de suporte que facilitam o desenvolvimento paralelo, o gerenciamento de lançamentos e a correção de bugs.
 
-As branches principais consistem na branch principal, representando a versão estável e pronta para produção do código, e na branch "develop", servindo como a branch de integração principal para atividades de desenvolvimento contínuas.
+As branches principais consistem na branch "main", representando a versão estável e pronta para produção do código, e na branch "develop", servindo como a branch de integração principal para atividades de desenvolvimento contínuas.
 
 As branches de suporte incluem branches de feature, branches de release e branches de hotfix. As branches de feature são criados a partir da branch develop para isolar o trabalho em novos recursos ou alterações. Eles permitem que as pessoas desenvolvedoras trabalhem independentemente em tarefas específicas sem afetar a base de código principal. Uma vez que um recurso estiver completo, ele é mesclado de volta para a branch develop por meio de um pull request.
 
-As branches de release são criados a partir da branch develop quando se prepara para uma nova versão de lançamento. Eles permitem testes finais, correções de bugs e mudanças de última hora antes do deployment. Uma vez que o lançamento estiver pronto, as alterações são mescladas nas branches principal e develop.
+As branches de release são criadas a partir da branch develop quando nos preparamos para um novo lançamento de versão. Eles permitem testes finais, correções de bugs e mudanças de última hora antes do deployment. Uma vez que o lançamento estiver pronto, as alterações são mescladas nas branches main e develop.
 
-As branches de hotfix são branches de emergência criadas a partir da branch principal para resolver problemas críticos ou bugs encontrados no ambiente de produção. Elas facilitam correções rápidas sem interromper o desenvolvimento em andamento. Uma vez que as correções são verificadas, elas são mescladas nas branches principal e develop.
+As branches de hotfix são branches de emergência criadas a partir da branch main para resolver problemas críticos ou bugs encontrados no ambiente de produção. Elas facilitam correções rápidas sem interromper o desenvolvimento em andamento. Uma vez que as correções são verificadas, elas são mescladas nas branches main e develop.
 
 A estratégia do Git flow fornece uma abordagem estruturada para branch e gerenciamento de lançamentos, garantindo estabilidade, confiabilidade e organização ao longo do ciclo de vida de desenvolvimento. No entanto, pode ser complexo e pesado para equipes menores ou projetos com fluxos de trabalho mais simples. Além disso, a adesão estrita ao modelo pode levar a ciclos de lançamento mais longos e possíveis conflitos ou problemas de mesclagem, especialmente em equipes maiores com esforços de desenvolvimento paralelo frequentes.
 
@@ -46,11 +46,11 @@ A estratégia do Git flow fornece uma abordagem estruturada para branch e gerenc
 Esta é uma imagem conhecida originalmente publicada por [Vincent Driessen][vincent_driessen_twitter] em seu post no blog em 2010. Ele criou o conceito de Git flow e seu post pode ser visto [aqui][git_flow_post]. Uma coisa interessante é que Vincent criou um utilitário via linha de comando para facilitar o uso do Git flow. Sugiro você ler sobre isso para saber mais sobre a abordagem de Vincent.
 
 ## GitHub flow
-A estratégia do GitHub Flow é uma abordagem simplificada para controle de versão e integração de código, enfatizando práticas de integração e implantação contínuas. No GitHub flow, os desenvolvedores criam branches de recursos a partir da branch principal para cada novo recurso ou correção, fazem commits pequenos e atômicos em seus branches de recursos e abrem pull requests (PR) para mesclar suas alterações de volta para a branch principal. As alterações de código são revisadas, discutidas e aprovadas por meio do processo de PR antes de serem mescladas na branch principal. Uma vez mescladas, as alterações acionam testes e implantações automatizados, levando a um feedback e iteração rápidos. O GitHub flow difere do Git flow em sua simplicidade, foco na implantação contínua e flexibilidade. Embora o GitHub flow não tenha um processo de lançamento formal, ele promove a integração contínua, a colaboração e a iteração rápida, tornando-o adequado para fluxos de trabalho modernos de desenvolvimento de software.
+A estratégia do GitHub flow é uma abordagem simplificada para controle de versão e integração de código, enfatizando práticas de integração e implantação contínuas. No GitHub flow, os desenvolvedores criam branches de recursos a partir da branch principal para cada novo recurso ou correção, fazem commits pequenos e atômicos em seus branches de recursos e abrem pull requests (PR) para mesclar suas alterações de volta para a branch principal. As alterações de código são revisadas, discutidas e aprovadas por meio do processo de PR antes de serem mescladas na branch principal. Uma vez mescladas, as alterações acionam testes e implantações automatizados, levando a um feedback e iteração rápidos. O GitHub flow difere do Git flow em sua simplicidade, foco na implantação contínua e flexibilidade. Embora o GitHub flow não tenha um processo de lançamento formal, ele promove a integração contínua, a colaboração e a iteração rápida, tornando-o adequado para fluxos de trabalho modernos de desenvolvimento de software.
 
 <figure>
 	<img src="/assets/img/github-flow.webp" alt="O diagrama mostra o ramo principal, um novo ramo chamado feature e a jornada que o recurso faz antes de ser mesclado no principal."> 
-	<figcaption>GitHub flow</figcaption>
+	<figcaption>O GitHub flow</figcaption>
 </figure>
 
 ## GitLab flow
@@ -79,7 +79,7 @@ O GitLab flow de ambiente múltiplo estende o modelo básico de fluxo do GitLab 
 </figure>
 
 ### Sistema de múltiplas versões
-O GitLab flow de sistema de múltimas versões foi projetado para projetos com várias versões ou fluxos de lançamento ativos em execução simultânea. Isso permite que as equipes gerenciem o desenvolvimento de recursos, correções de bugs e lançamentos em várias branches que representam diferentes versões do software. Os desenvolvedores trabalham em branches de recursos direcionados para branches de versão específicos (por exemplo, v1.x, v2.x), garantindo que as alterações sejam isoladas e aplicadas ao fluxo de lançamento apropriado. Pipelines de integração e entrega contínuas são configurados para compilar, testar e implantar cada versão independentemente, permitindo que as equipes suportem várias implantações de clientes ou variantes de produtos simultaneamente.
+O GitLab flow de sistema de múltiplas versões foi projetado para projetos com várias versões ou fluxos de lançamento ativos em execução simultânea. Isso permite que as equipes gerenciem o desenvolvimento de recursos, correções de bugs e lançamentos em várias branches que representam diferentes versões do software. Os desenvolvedores trabalham em branches de recursos direcionados para branches de versão específicos (por exemplo, v1.x, v2.x), garantindo que as alterações sejam isoladas e aplicadas ao fluxo de lançamento apropriado. Pipelines de integração e entrega contínuas são configurados para compilar, testar e implantar cada versão independentemente, permitindo que as equipes suportem várias implantações de clientes ou variantes de produtos simultaneamente.
 
 <figure>
 	<img src="/assets/img/gitlab-flow-multi-version-system.png" alt=""> 
@@ -89,7 +89,7 @@ O GitLab flow de sistema de múltimas versões foi projetado para projetos com v
 ## Qual é o melhor fluxo?
 Desculpe dizer isso, mas não há bala de prata, e você precisa pensar qual é a melhor abordagem para o seu projeto, equipe ou empresa. Cada fluxo tem seus prós e contras e foi adaptado a um cenário específico. Como você pode ver na tabela abaixo, não há o melhor fluxo. A escolha certa depende da escala do seu projeto, do tamanho da equipe e do ritmo desejado de lançamento de versões. Se a simplicidade for primordial, considere o GitHub flow ou o TBD. Para gerenciamento de lançamentos mais estruturados ou vários ambientes, invista no Git flow ou o GitLab flow.
 
-| Recurso | TBD/Single branch strategy | Git flow | GitHub flow | GitLab flow |
+| Característica | TBD/Single branch strategy | Git flow | GitHub flow | GitLab flow |
 |---|---|---|---|---|
 | **Uso da branch principal** | Todo desenvolvimento, código estável | Código estável | Código estável | Código estável |
 | **Outras branchs** | Branches de recursos de curta duração (opcional) | Desenvolvimento, Recurso, Lançamento, Hotfix | Recurso  | Recurso, Ambiente (por exemplo, staging, produção), Lançamento (opcional)  |
@@ -99,7 +99,7 @@ Desculpe dizer isso, mas não há bala de prata, e você precisa pensar qual é 
 | **Complexidade** | Baixa | Alta | Moderada | Moderada a Alta |
 | **Mais adequado para** | Projetos pequenos, desenvolvedores solos | Projetos grandes, complexos, com ciclos de lançamento estritos | Projetos que priorizam simplicidade, implantação rápida | Projetos com vários ambientes, necessidades de gerenciamento de lançamento |
 
-E você? O que você pensa sobre isso? Quais desses fluxos você já usou? Conte-me nos comentários. Vamos conversar sobre isso. Vejo você no próximo post!
+E você? O que você pensa sobre isso? Quais desses fluxos você já usou? Conte-me nos comentários. Vamos conversar sobre isso. Até o próximo post!
 
 [book_tracking_repository]:   https://github.com/ionixjunior/BookTracking
 [vincent_driessen_twitter]:   https://twitter.com/nvie
