@@ -5,3 +5,160 @@ date:   2024-03-04
 translations: ["pt"]
 tags: ["git"]
 ---
+
+<p class="intro"><span class="dropcap">W</span>elcome to the world of version control, where every commit tells a story about your project's journey. Understanding this narrative is key to effective collaboration, bug tracking, and project management. That's where the Git log command comes in. In this post, we'll embark on a journey through your project's history, using the Git log command as our trusty guide. We'll learn how to navigate through commits, explore changes, and uncover insights that will help you become a master of your project's story. So, buckle up as we dive into the Git log command and unlock the secrets hidden within your project's history!</p>
+
+## Understanding git log
+The `git log` command is your window into the rich tapestry of your project's history. With it, you can explore every commit, understand who made changes, when they were made, and the reasons behind them.
+
+To view the commit history of your project, simply enter git log in your terminal. This will display a chronological list of commits, starting with the most recent.
+
+{%- highlight bash -%}
+git log
+
+commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
+Author: John Doe <john@example.com>
+Date:   Tue Feb 15 10:21:37 2024 -0500
+
+    Merge pull request #123 from user/feature-branch
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
+
+commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
+Author: Jane Smith <jane@example.com>
+Date:   Mon Feb 14 16:42:19 2024 -0500
+
+    Add new feature
+
+commit a3c8f1d27c41b1d0107e163132f7eaf4eb9f3f2f
+Author: John Doe <john@example.com>
+Date:   Sun Feb 13 18:15:02 2024 -0500
+
+    Update documentation
+
+commit 7b7ae9f1f9c2e588bc1c1d101d6c1df68c2e7dd0
+Author: Jane Smith <jane@example.com>
+Date:   Sat Feb 12 09:30:51 2024 -0500
+
+    Initial commit
+
+{%- endhighlight -%}
+
+The log presents each commit with detailed information, including the commit hash, author, date, and commit message. You can scroll through the log using your preferred text editor or by pressing the spacebar to move forward and the "q" key to exit.
+
+## Filtering log
+Git log offers various options to tailor the output to your needs. For instance, you can limit the number of commits displayed, filter by author, search for specific changes, or format the output to include only essential details.
+
+Filter only post by "Jane Smith":
+{%- highlight bash -%}
+git log --author="Jane Smith"
+
+commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
+Author: Jane Smith <jane@example.com>
+Date:   Mon Feb 14 16:42:19 2024 -0500
+
+    Add new feature
+
+commit 7b7ae9f1f9c2e588bc1c1d101d6c1df68c2e7dd0
+Author: Jane Smith <jane@example.com>
+Date:   Sat Feb 12 09:30:51 2024 -0500
+
+    Initial commit
+
+{%- endhighlight -%}
+
+Filter only post since February, 14 2024:
+
+{%- highlight bash -%}
+git log --sice="Mon Feb 14 00:00:00 2024 -0500"
+
+commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
+Author: John Doe <john@example.com>
+Date:   Tue Feb 15 10:21:37 2024 -0500
+
+    Merge pull request #123 from user/feature-branch
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
+
+commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
+Author: Jane Smith <jane@example.com>
+Date:   Mon Feb 14 16:42:19 2024 -0500
+
+    Add new feature
+{%- endhighlight -%}
+
+Filter only posts how mention "authentication" on message commit:
+
+{%- highlight bash -%}
+git log --grep="authentication"
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
+{%- endhighlight -%}
+
+## Visualizing history
+For a more visual representation of your project's history, you can use tools like `git log --graph`, which displays commits as a graph, showing branching and merging.
+
+{%- highlight bash -%}
+git log --graph
+
+*   commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
+|\
+| * commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+| | Author: John Doe <john@example.com>
+| | Date:   Tue Feb 15 10:21:37 2024 -0500
+| |
+| |     Merge pull request #123 from user/feature-branch
+| |
+| * commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
+| | Author: Jane Smith <jane@example.com>
+| | Date:   Mon Feb 14 16:42:19 2024 -0500
+| |
+| |     Add new feature
+| |
+| * commit d07544e8ac8322be9e7d6b9a6e9aadbfa6bdcff7
+|/  Author: John Doe <john@example.com>
+|   Date:   Mon Feb 14 12:09:48 2024 -0500
+|
+|       Fix bug in authentication
+|
+* commit a3c8f1d27c41b1d0107e163132f7eaf4eb9f3f2f
+| Author: John Doe <john@example.com>
+| Date:   Sun Feb 13 18:15:02 2024 -0500
+|
+|     Update documentation
+|
+* commit 7b7ae9f1f9c2e588bc1c1d101d6c1df68c2e7dd0
+  Author: Jane Smith <jane@example.com>
+  Date:   Sat Feb 12 09:30:51 2024 -0500
+  
+      Initial commit
+
+{%- endhighlight -%}
+
+If you want to see a simpler way, with only one line per commit, you can specify the `--oneline` parameter:
+
+{%- highlight bash -%}
+git log --graph --oneline
+
+* e6b3812 Merge pull request #123 from user/feature-branch
+|\
+| * 9a4d8fb Fix bug in authentication
+| * 87fc9d3 Add new feature
+|/
+* a3c8f1d Update documentation
+* 7b7ae9f Initial commit
+{%- endhighlight -%}
+
+This approach is commonly used on IDEs to show the log of the repository.
