@@ -74,7 +74,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 Filter only post since February, 14 2024:
 
 {%- highlight bash -%}
-git log --sice="Mon Feb 14 00:00:00 2024 -0500"
+git log --since="2024-02-14"
 
 commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
 Author: John Doe <john@example.com>
@@ -93,6 +93,37 @@ Author: Jane Smith <jane@example.com>
 Date:   Mon Feb 14 16:42:19 2024 -0500
 
     Add new feature
+{%- endhighlight -%}
+
+Filter only posts until February, 14 2024:
+
+{%- highlight bash -%}
+git log --until="2024-02-14"
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
+
+commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
+Author: Jane Smith <jane@example.com>
+Date:   Mon Feb 14 16:42:19 2024 -0500
+
+    Add new feature
+
+commit a3c8f1d27c41b1d0107e163132f7eaf4eb9f3f2f
+Author: John Doe <john@example.com>
+Date:   Sun Feb 13 18:15:02 2024 -0500
+
+    Update documentation
+
+commit 7b7ae9f1f9c2e588bc1c1d101d6c1df68c2e7dd0
+Author: Jane Smith <jane@example.com>
+Date:   Sat Feb 12 09:30:51 2024 -0500
+
+    Initial commit
+
 {%- endhighlight -%}
 
 Filter only posts how mention "authentication" on message commit:
@@ -161,4 +192,24 @@ git log --graph --oneline
 * 7b7ae9f Initial commit
 {%- endhighlight -%}
 
-This approach is commonly used on IDEs to show the log of the repository.
+This approach is commonly used on IDEs to show the log of the repository. Also, you can specify what type of information you want to see in the log. Use the `--format` parameter to specify some data. To do this, you'll use some placeholders to select what information to show. The more common are the abbreviated commit hash (%h), the author name (%an), the author date (%aD), the commit subject (%s) and the commit message (%b). 
+
+{%- highlight bash -%}
+git log --graph --format='%h - %an - %aD - %s'
+
+* e6b3812 - John Doe - Tue, 15 Feb 2024 10:21:37 -0500 - Merge pull request #123 from user/feature-branch
+|\
+| * 9a4d8fb - John Doe - Mon, 14 Feb 2024 12:09:48 -0500 - Fix bug in authentication
+| * 87fc9d3 - Jane Smith - Mon, 14 Feb 2024 16:42:19 -0500 - Add new feature
+|/  
+* a3c8f1d - John Doe - Sun, 13 Feb 2024 18:15:02 -0500 - Update documentation
+* 7b7ae9f - Jane Smith - Sat, 12 Feb 2024 09:30:51 -0500 - Initial commit
+
+{%- endhighlight -%}
+
+You can see all the options on [Git pretty formats documentation][git_pretty_format_doc].
+
+## Wrap-Up
+The Git log command is a powerful tool for navigating and understanding your project's commit history. By mastering its various options and techniques, you can gain valuable insights into how your codebase has evolved over time, track down specific changes, and collaborate more effectively with your team. Whether you're filtering commits by author or date, searching commit messages for keywords, or visualizing commit history as a graph, Git log provides the flexibility and control you need to explore your project's history with confidence. So dive in, experiment with different options, and unlock the full potential of Git log in your development workflow. Happy coding!
+
+[git_pretty_format_doc]: https://git-scm.com/docs/pretty-formats
