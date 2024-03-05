@@ -11,7 +11,7 @@ tags: ["git"]
 ## Understanding git log
 The `git log` command is your window into the rich tapestry of your project's history. With it, you can explore every commit, understand who made changes, when they were made, and the reasons behind them.
 
-To view the commit history of your project, simply enter git log in your terminal. This will display a chronological list of commits, starting with the most recent.
+To view the commit history of your project, simply enter `git log` in your terminal. This will display a chronological list of commits, starting with the most recent.
 
 {%- highlight bash -%}
 git log
@@ -51,7 +51,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 The log presents each commit with detailed information, including the commit hash, author, date, and commit message. You can scroll through the log using your preferred text editor or by pressing the spacebar to move forward and the "q" key to exit.
 
 ## Filtering log
-Git log offers various options to tailor the output to your needs. For instance, you can limit the number of commits displayed, filter by author, search for specific changes, or format the output to include only essential details.
+Git log offers various options to tailor the output to your needs. For instance, you can filter by author, search for specific changes, or format the output to include only essential details.
 
 Filter only post by "Jane Smith":
 {%- highlight bash -%}
@@ -126,7 +126,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filter only posts how mention "authentication" on message commit:
+Filter only posts that mention "authentication" on message commit:
 
 {%- highlight bash -%}
 git log --grep="authentication"
@@ -192,7 +192,7 @@ git log --graph --oneline
 * 7b7ae9f Initial commit
 {%- endhighlight -%}
 
-This approach is commonly used on IDEs to show the log of the repository. Also, you can specify what type of information you want to see in the log. Use the `--format` parameter to specify some data. To do this, you'll use some placeholders to select what information to show. The more common are the abbreviated commit hash (%h), the author name (%an), the author date (%aD), the commit subject (%s) and the commit message (%b). 
+This approach is commonly used on IDEs to show the log of the repository. Also, you can specify what type of information you want to see in the log. Use the `--format` parameter to specify the data that you want. To do this, you'll use some placeholders to select what information to show. The more common are the abbreviated commit hash (%h), the author name (%an), the author date (%aD), and the commit title (%s).
 
 {%- highlight bash -%}
 git log --graph --format='%h - %an - %aD - %s'
