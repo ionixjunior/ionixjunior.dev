@@ -16,23 +16,23 @@ To view the commit history of your project, simply enter `git log` in your termi
 {%- highlight bash -%}
 git log
 
-commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
+commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
 Author: John Doe <john@example.com>
 Date:   Tue Feb 15 10:21:37 2024 -0500
 
     Merge pull request #123 from user/feature-branch
-
-commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
-Author: John Doe <john@example.com>
-Date:   Mon Feb 14 12:09:48 2024 -0500
-
-    Fix bug in authentication
 
 commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
 Author: Jane Smith <jane@example.com>
 Date:   Mon Feb 14 16:42:19 2024 -0500
 
     Add new feature
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
 
 commit a3c8f1d27c41b1d0107e163132f7eaf4eb9f3f2f
 Author: John Doe <john@example.com>
@@ -76,23 +76,23 @@ Filter only commits since February, 14 2024:
 {%- highlight bash -%}
 git log --since="2024-02-14"
 
-commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
+commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
 Author: John Doe <john@example.com>
 Date:   Tue Feb 15 10:21:37 2024 -0500
 
     Merge pull request #123 from user/feature-branch
-
-commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
-Author: John Doe <john@example.com>
-Date:   Mon Feb 14 12:09:48 2024 -0500
-
-    Fix bug in authentication
 
 commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
 Author: Jane Smith <jane@example.com>
 Date:   Mon Feb 14 16:42:19 2024 -0500
 
     Add new feature
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
 {%- endhighlight -%}
 
 Filter only commits until February, 14 2024:
@@ -100,17 +100,17 @@ Filter only commits until February, 14 2024:
 {%- highlight bash -%}
 git log --until="2024-02-14"
 
-commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
-Author: John Doe <john@example.com>
-Date:   Mon Feb 14 12:09:48 2024 -0500
-
-    Fix bug in authentication
-
 commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
 Author: Jane Smith <jane@example.com>
 Date:   Mon Feb 14 16:42:19 2024 -0500
 
     Add new feature
+
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
+Author: John Doe <john@example.com>
+Date:   Mon Feb 14 12:09:48 2024 -0500
+
+    Fix bug in authentication
 
 commit a3c8f1d27c41b1d0107e163132f7eaf4eb9f3f2f
 Author: John Doe <john@example.com>
@@ -131,7 +131,7 @@ Filter only commits that mention "authentication" on commit message:
 {%- highlight bash -%}
 git log --grep="authentication"
 
-commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
+commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
 Author: John Doe <john@example.com>
 Date:   Mon Feb 14 12:09:48 2024 -0500
 
@@ -144,10 +144,8 @@ For a more visual representation of your project's history, you can use tools li
 {%- highlight bash -%}
 git log --graph
 
-*   commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main)
-|\
-| * commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228 (origin/main)
-| | Author: John Doe <john@example.com>
+*   commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
+|\  Author: John Doe <john@example.com>
 | | Date:   Tue Feb 15 10:21:37 2024 -0500
 | |
 | |     Merge pull request #123 from user/feature-branch
@@ -158,7 +156,7 @@ git log --graph
 | |
 | |     Add new feature
 | |
-| * commit d07544e8ac8322be9e7d6b9a6e9aadbfa6bdcff7
+| * commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
 |/  Author: John Doe <john@example.com>
 |   Date:   Mon Feb 14 12:09:48 2024 -0500
 |
@@ -185,8 +183,8 @@ git log --graph --oneline
 
 * e6b3812 Merge pull request #123 from user/feature-branch
 |\
-| * 9a4d8fb Fix bug in authentication
 | * 87fc9d3 Add new feature
+| * 9a4d8fb Fix bug in authentication
 |/
 * a3c8f1d Update documentation
 * 7b7ae9f Initial commit
@@ -199,8 +197,8 @@ git log --graph --format='%h - %an - %aD - %s'
 
 * e6b3812 - John Doe - Tue, 15 Feb 2024 10:21:37 -0500 - Merge pull request #123 from user/feature-branch
 |\
-| * 9a4d8fb - John Doe - Mon, 14 Feb 2024 12:09:48 -0500 - Fix bug in authentication
 | * 87fc9d3 - Jane Smith - Mon, 14 Feb 2024 16:42:19 -0500 - Add new feature
+| * 9a4d8fb - John Doe - Mon, 14 Feb 2024 12:09:48 -0500 - Fix bug in authentication
 |/  
 * a3c8f1d - John Doe - Sun, 13 Feb 2024 18:15:02 -0500 - Update documentation
 * 7b7ae9f - Jane Smith - Sat, 12 Feb 2024 09:30:51 -0500 - Initial commit
