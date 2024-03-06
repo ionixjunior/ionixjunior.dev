@@ -8,7 +8,7 @@ tags: ["git"]
 
 <p class="intro"><span class="dropcap">B</span>em-vindo ao mundo do controle de versão, onde cada commit conta uma história sobre a jornada do seu projeto. Compreender essa narrativa é fundamental para colaboração eficaz, rastreamento de bugs e gerenciamento de projetos. É aí que entra o comando Git log. Neste post, embarcaremos em uma jornada pela história do seu projeto, usando o comando Git log como nosso guia confiável. Aprenderemos a navegar pelos commits, explorar alterações e descobrir insights que o ajudarão a se tornar um mestre na história do seu projeto. Portanto, prepare-se enquanto mergulhamos no comando Git log e desbloqueamos os segredos escondidos na história do seu projeto!</p>
 
-## Compreendendo git log
+## Compreendendo o git log
 O comando `git log` fornece uma visão abrangente da história do seu projeto, permitindo que você mergulhe nos detalhes de cada commit. Ele permite rastrear quem fez alterações, quando essas alterações ocorreram e as motivações por trás delas.
 
 Para visualizar o histórico de commits do seu projeto, basta digitar `git log` no seu terminal. Isso exibirá uma lista cronológica de commits, começando pelo mais recente.
@@ -124,7 +124,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filtrando apenas commits que mencionam "autenticação" na mensagem do commit:
+Filtrando apenas commits que mencionam "authentication" na mensagem do commit:
 {%- highlight bash -%}
 git log --grep="authentication"
 
@@ -136,7 +136,7 @@ Date:   Mon Feb 14 12:09:48 2024 -0500
 {%- endhighlight -%}
 
 ## Visualizando a história
-Para uma representação mais visual da história do seu projeto, você pode usar ferramentas como `git log --graph`, que exibe commits como um gráfico, mostrando ramificações e mesclagens.
+Para uma representação mais visual da história do seu projeto, você pode usar ferramentas como `git log --graph`, que exibe commits como um gráfico, mostrando branches e merges.
 
 {%- highlight bash -%}
 git log --graph
@@ -188,7 +188,7 @@ git log --graph --oneline
 * 7b7ae9f Initial commit
 {%- endhighlight -%}
 
-Esta abordagem é comumente usada em IDEs para mostrar o log do repositório. Além disso, você pode especificar que tipo de informação deseja ver no log. Use o parâmetro `--format` para especificar os dados que você deseja. Para fazer isso, você usará alguns espaços reservados para selecionar quais informações mostrar. Os mais comuns são o hash de commit abreviado (%h), o nome do autor (%an), a data do autor (%aD) e o título do commit (%s).
+Esta abordagem é comumente usada em IDEs para mostrar o log do repositório. Além disso, você pode especificar que tipo de informação deseja ver no log. Use o parâmetro `--format` para especificar os dados que você deseja. Para fazer isso, você usará algumas combinações de caracteres para selecionar quais informações mostrar. Os mais comuns são o hash de commit abreviado (%h), o nome do autor (%an), a data (%aD) e o título do commit (%s).
 
 {%- highlight bash -%}
 git log --graph --format='%h - %an - %aD - %s'
@@ -203,9 +203,9 @@ git log --graph --format='%h - %an - %aD - %s'
 
 {%- endhighlight -%}
 
-Você pode ver todas as opções na [documentação de formatos bonitos do Git][git_pretty_format_doc].
+Você pode ver todas as opções na [documentação de formatos do Git][git_pretty_format_doc].
 
 ## Conclusão
-O comando Git log é uma ferramenta poderosa para navegar e entender o histórico de commits do seu projeto. Dominando suas várias opções e técnicas, você pode obter insights valiosos sobre como sua base de código evoluiu ao longo do tempo, rastrear alterações específicas e colaborar de forma mais eficaz com sua equipe. Seja filtrando commits por autor ou data, pesquisando mensagens de commit por palavras-chave ou visualizando o histórico de commit como um gráfico, o Git log oferece a flexibilidade e o controle de que você precisa para explorar a história do seu projeto com confiança. Portanto, mergulhe, experimente diferentes opções e desbloqueie todo o potencial do Git log no seu fluxo de trabalho de desenvolvimento. Feliz codificação!
+O comando Git log é uma ferramenta poderosa para navegar e entender o histórico de commits do seu projeto. Dominando suas várias opções e técnicas, você pode obter insights valiosos sobre como sua base de código evoluiu ao longo do tempo, rastrear alterações específicas e colaborar de forma mais eficaz com sua equipe. Seja filtrando commits por autor ou data, pesquisando mensagens de commit por palavras-chave ou visualizando o histórico de commit como um gráfico, o Git log oferece a flexibilidade e o controle de que você precisa para explorar a história do seu projeto com confiança. Portanto, experimente diferentes opções e desbloqueie todo o potencial do Git log no seu fluxo de trabalho de desenvolvimento. Desejo "bons logs" a vocês!
 
 [git_pretty_format_doc]: https://git-scm.com/docs/pretty-formats
