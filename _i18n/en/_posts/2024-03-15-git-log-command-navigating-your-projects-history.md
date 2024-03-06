@@ -9,7 +9,7 @@ tags: ["git"]
 <p class="intro"><span class="dropcap">W</span>elcome to the world of version control, where every commit tells a story about your project's journey. Understanding this narrative is key to effective collaboration, bug tracking, and project management. That's where the Git log command comes in. In this post, we'll embark on a journey through your project's history, using the Git log command as our trusty guide. We'll learn how to navigate through commits, explore changes, and uncover insights that will help you become a master of your project's story. So, buckle up as we dive into the Git log command and unlock the secrets hidden within your project's history!</p>
 
 ## Understanding git log
-The `git log` command is your window into the rich tapestry of your project's history. With it, you can explore every commit, understand who made changes, when they were made, and the reasons behind them.
+The `git log` command provides a comprehensive view of your project's history, allowing you to delve into each commit's details. It enables you to track down who made changes, when those changes occurred, and the motivations behind them.
 
 To view the commit history of your project, simply enter `git log` in your terminal. This will display a chronological list of commits, starting with the most recent.
 
@@ -48,12 +48,12 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-The log presents each commit with detailed information, including the commit hash, author, date, and commit message. You can scroll through the log using your preferred text editor or by pressing the spacebar to move forward and the "q" key to exit.
+The log presents each commit with detailed information, including the commit hash, author, date, and commit message. You can scroll through the log using your preferred text editor, or by pressing the spacebar to move forward and the "q" key to exit.
 
 ## Filtering log
 Git log offers various options to tailor the output to your needs. For instance, you can filter by author, search for specific changes, or format the output to include only essential details.
 
-Filter only commits by "Jane Smith":
+Filtering only commits by "Jane Smith":
 {%- highlight bash -%}
 git log --author="Jane Smith"
 
@@ -71,8 +71,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filter only commits since February, 14 2024:
-
+Filtering only commits since February, 14 2024:
 {%- highlight bash -%}
 git log --since="2024-02-14"
 
@@ -95,8 +94,7 @@ Date:   Mon Feb 14 12:09:48 2024 -0500
     Fix bug in authentication
 {%- endhighlight -%}
 
-Filter only commits until February, 14 2024:
-
+Filtering only commits until February, 14 2024:
 {%- highlight bash -%}
 git log --until="2024-02-14"
 
@@ -126,8 +124,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filter only commits that mention "authentication" on commit message:
-
+Filtering only commits that mention "authentication" on commit message:
 {%- highlight bash -%}
 git log --grep="authentication"
 
