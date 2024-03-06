@@ -53,7 +53,7 @@ The log presents each commit with detailed information, including the commit has
 ## Filtering log
 Git log offers various options to tailor the output to your needs. For instance, you can filter by author, search for specific changes, or format the output to include only essential details.
 
-Filter only post by "Jane Smith":
+Filter only commits by "Jane Smith":
 {%- highlight bash -%}
 git log --author="Jane Smith"
 
@@ -71,7 +71,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filter only post since February, 14 2024:
+Filter only commits since February, 14 2024:
 
 {%- highlight bash -%}
 git log --since="2024-02-14"
@@ -95,7 +95,7 @@ Date:   Mon Feb 14 16:42:19 2024 -0500
     Add new feature
 {%- endhighlight -%}
 
-Filter only posts until February, 14 2024:
+Filter only commits until February, 14 2024:
 
 {%- highlight bash -%}
 git log --until="2024-02-14"
@@ -126,7 +126,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
 {%- endhighlight -%}
 
-Filter only posts that mention "authentication" on message commit:
+Filter only commits that mention "authentication" on commit message:
 
 {%- highlight bash -%}
 git log --grep="authentication"
