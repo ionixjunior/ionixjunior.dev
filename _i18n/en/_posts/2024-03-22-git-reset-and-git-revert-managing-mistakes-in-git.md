@@ -33,3 +33,58 @@ A hard reset moves the HEAD pointer to a specified commit and resets both the st
 {%- highlight bash -%}
 git reset --hard <commit-hash>
 {%- endhighlight -%}
+
+Hard reset with HEAD as the argument discards all local changes and resets the working directory to match the current commit. This is useful for reverting to a clean state without preserving any modifications.
+
+{%- highlight bash -%}
+git reset --hard HEAD
+{%- endhighlight -%}
+
+### Unstaging changes
+Suppose you already put some changes into staged area and want to move to the unstaged area. The following command unstages the specified file, removing it from the staging area while preserving the changes in the working directory.
+
+{%- highlight bash -%}
+git reset HEAD <file>
+{%- endhighlight -%}
+
+Also, you can omit the file name to apply the command for all staged files.
+
+## Understanding git revert
+While `git reset` modifies the commit history by moving the HEAD and branch references to a specified commit, `git revert` takes a different approach. Instead of altering the commit history, `git revert` creates a new commit that undoes the changes introduced by a specified commit.
+
+{%- highlight bash -%}
+git revert <commit-hash>
+{%- endhighlight -%}
+
+When you run the command above, Git will create a new commit that inversely applies the changes made by the specified commit. This effectively undoes the changes introduced by that commit without altering the commit history. It's important to note that `git revert` operates on the working directory and staging area, creating a new commit with changes that reverse those introduced by the specified commit.
+
+For example, suppose you have a commit with hash abc123 that introduced a bug, and you want to revert the changes introduced by that commit. You can use git revert abc123 to create a new commit that undoes the changes made by abc123, effectively fixing the bug without altering the commit history.
+
+Unlike git reset, which can be used to rewind the commit history, git revert is best suited for undoing specific commits while preserving the integrity of the commit history. It's a safer option when working in shared repositories or when you need to maintain a clean and linear commit history.
+
+You can revert more than one commit at a time.
+
+{%- highlight bash -%}
+git revert <commit-hash-1> <commit-hash-2>
+{%- endhighlight -%}
+
+Or a range of commits, from oldest to newest.
+
+{%- highlight bash -%}
+git revert <oldest-commit-hash> <newest-commit-hash>
+{%- endhighlight -%}
+
+## Git reset vs. git revert: choosing the right tool
+For those who prefer visual aids, here's a table highlighting key distinctions between the commands.
+
+| Feature           | git reset                                 | git revert                                      |
+|-------------------|---------------------------------------------|---------------------------------------------------|
+| Operation         | Rewrites commit history                     | Creates new commit to reverse changes              |
+| Effect on history | Rewinds to specified commit                 | Reverts specified commit's changes                |
+| Commit hash      | Moves HEAD and branch pointer                | Creates new commit with reverted changes          |
+| Collaboration     | Can be disruptive in shared repositories   | Safe for shared repositories, preserves history   |
+| Use case          | Undo local changes or prepare for recommit  | Revert changes in shared history                  |
+| Loss of history   | Can result in loss of uncommitted changes   | Preserves commit history, creates new revert commit |
+
+## Harnessing Git's Undo Powers
+In the world of software development, mistakes are inevitable, but they needn't be permanent. With Git's powerful "reset" and "revert" commands at your disposal, you hold the keys to managing mistakes and navigating through your project's history with confidence. By understanding the nuances of each command and applying best practices, you can wield Git's time-traveling capabilities to your advantage, ensuring a smoother and more efficient development process. So embrace the power of Git, learn from your mistakes, and continue your journey towards becoming a Git guru.
