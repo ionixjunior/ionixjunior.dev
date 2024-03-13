@@ -28,7 +28,7 @@ git reset --soft <commit-hash>
 {%- endhighlight -%}
 
 ### Hard reset
-A hard reset moves the HEAD pointer to a specified commit and resets both the staging area and working directory to match. Any changes made after this commit will be permanently discarded.
+A hard reset moves the HEAD pointer to the specified commit and resets both the staging area and working directory to match. Any changes made after this commit will be permanently discarded.
 
 {%- highlight bash -%}
 git reset --hard <commit-hash>
@@ -86,5 +86,5 @@ For those who prefer visual aids, here's a table highlighting key distinctions b
 | Use case          | Undo local changes or prepare for recommit  | Revert changes in shared history                  |
 | Loss of history   | Can result in loss of uncommitted changes   | Preserves commit history, creates new revert commit |
 
-## Harnessing Git's Undo Powers
+## Harnessing Git's undo powers
 In the world of software development, mistakes are inevitable, but they needn't be permanent. With Git's powerful "reset" and "revert" commands at your disposal, you hold the keys to managing mistakes and navigating through your project's history with confidence. By understanding the nuances of each command and applying best practices, you can wield Git's time-traveling capabilities to your advantage, ensuring a smoother and more efficient development process. So embrace the power of Git, learn from your mistakes, and continue your journey towards becoming a Git guru.
