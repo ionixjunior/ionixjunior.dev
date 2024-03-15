@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Cherry-Pick: Selectively Applying Commits"
-date:   2024-03-14
+date:   2024-03-29
 translations: ["pt"]
 tags: ["git"]
 ---
