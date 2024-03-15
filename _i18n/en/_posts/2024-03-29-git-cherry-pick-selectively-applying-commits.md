@@ -15,7 +15,7 @@ When you execute `git cherry-pick <commit-hash>`, Git identifies the specified c
 
 Cherry-picking is particularly useful when you need to incorporate specific changes from one branch into another without bringing along unrelated commits. This targeted approach to commit integration helps maintain a **clean and focused commit history**, making it easier to track and understand the evolution of the codebase.
 
-For example, suppose you've identified a **critical bug fix** in a feature branch that needs to be applied to the main development branch. Instead of merging the entire feature branch, which may contain additional changes that aren't ready for integration, you can cherry-pick the bug fix commit and apply it directly to the main branch. This ensures that only the necessary changes are incorporated, minimizing the risk of introducing unintended modifications.
+Suppose you've identified a **critical bug fix** in a feature branch that needs to be applied to the main development branch. Instead of merging the entire feature branch, which may contain additional changes that aren't ready for integration, you can cherry-pick the bug fix commit and apply it directly to the main branch. This ensures that only the necessary changes are incorporated, minimizing the risk of introducing unintended modifications.
 
 Similarly, cherry-picking can be used to selectively backport bug fixes or apply specific features to different branches, such as a stable release branch. By cherry-picking individual commits, you have fine-grained control over which changes are included in each branch, allowing for targeted updates and **efficient code management**.
 
