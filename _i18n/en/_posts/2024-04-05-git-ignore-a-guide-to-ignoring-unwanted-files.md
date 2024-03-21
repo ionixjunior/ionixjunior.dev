@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Ignore: A Guide to Ignoring Unwanted Files"
-date:   2024-03-20
+date:   2024-04-05
 translations: ["pt"]
 tags: ["git"]
 ---
