@@ -6,7 +6,7 @@ translations: ["pt"]
 tags: ["git"]
 ---
 
-<p class="intro"><span class="dropcap">W</span>elcome to the world of Git! In the vast landscape of version control systems, Git offers a powerful feature called "tags" that allows developers to mark significant points in their repository's history. These tags serve as immutable labels, providing a snapshot of the codebase at important milestones such as releases, major updates, or critical points in development. Tagging important points in your Git repository is essential for maintaining clarity and organization, enabling you and your team to easily navigate through the project's history and identify key changes. In this post, we'll explore the concept of Git tags, how to create and manage them, and best practices for leveraging tags effectively in your development workflow. Let's dive in and uncover the art of labeling important points in your Git repository!</p>
+<p class="intro"><span class="dropcap">I</span>n the vast landscape of version control systems, Git offers a powerful feature called "tags" that allows developers to mark significant points in their repository's history. These tags serve as immutable labels, providing a snapshot of the codebase at important milestones such as releases, major updates, or critical points in development. Tagging important points in your Git repository is essential for maintaining clarity and organization, enabling you and your team to easily navigate through the project's history and identify key changes. In this post, we'll explore the concept of Git tags, how to create and manage them, and best practices for leveraging tags effectively in your development workflow. Let's dive in and uncover the art of labeling important points in your Git repository!</p>
 
 ## Understanding Git tags
 In Git, a tag is a reference to a specific commit in the repository's history. It serves as a permanent marker, allowing developers to easily reference and identify important points in the project's timeline. Unlike branches, which are mutable and can move with new commits, tags are immutable and remain fixed to the commit they reference.
@@ -37,8 +37,10 @@ If you want to create an annotated tag, you need to specify the `-a` parameter b
 git tag -a <tag_name> -m <The message tag>
 {%- endhighlight -%}
 
+Don't forget to put quotation marks between your message tag.
+
 ## Listing and viewing git tags
-Listing and viewing Git tags is a straightforward process that allows you to quickly identify important points in your repository's history To list all tags in your repository, you can use the git tag command without any additional arguments.
+Listing and viewing Git tags is a straightforward process that allows you to quickly identify important points in your repository's history. To list all tags in your repository, you can use the `git tag` command without any additional arguments.
 
 {%- highlight sh -%}
 git tag
@@ -55,7 +57,7 @@ This command will display information about the tagged commit, including the com
 By listing and viewing Git tags, you can gain insights into important milestones and releases in your repository's history, making it easier to navigate and understand the evolution of your project.
 
 ## Checking out Git tags
-Checking out Git tags allows you to move your repository's HEAD to a specific tag, effectively setting your working directory to the state of the repository at that point in history. This is important when you need to go back to a specific version of your software and test something or apply a hotfix in this version. Here's how you can check out Git tags:
+Checking out Git tags allows you to move your repository's HEAD to a specific tag, effectively setting your working directory to the state of the repository at that point in history. This is important when you need to go back to a specific version of your software to test something or apply a hotfix in this version. Here's how you can check out Git tags:
 
 {%- highlight sh -%}
 git checkout <tag-name>
@@ -87,7 +89,7 @@ By deleting Git tags when they're no longer needed, you can keep your repository
 ## Pushing tags to remote repositories
 Pushing tags to remote repositories is an essential step in managing versioned releases and ensuring that your team members or collaborators have access to the tagged releases. Once you've created tags in your local repository, you can push them to a remote repository to share them with others.
 
-To push a single tag to a remote repository, you can use the `git push` command followed by the `--tags` option and the name of the remote repository. For example:
+To push a single tag to a remote repository, you can use the `git push` command:
 
 {%- highlight sh -%}
 git push <remote-name> <tag-name>
