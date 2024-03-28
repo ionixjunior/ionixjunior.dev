@@ -54,8 +54,6 @@ git show <tag_name>
 
 This command will display information about the tagged commit, including the commit message, author, date, and any changes associated with the commit. You can view details about every branch or commit using the same command above.
 
-By listing and viewing Git tags, you can gain insights into important milestones and releases in your repository's history, making it easier to navigate and understand the evolution of your project.
-
 ## Checking out Git tags
 Checking out Git tags allows you to move your repository's HEAD to a specific tag, effectively setting your working directory to the state of the repository at that point in history. This is important when you need to go back to a specific version of your software to test something or apply a hotfix in this version. Here's how you can check out Git tags:
 
