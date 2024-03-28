@@ -31,13 +31,13 @@ Or just the tag name.
 git tag <tag_name>
 {%- endhighlight -%}
 
-If you want to create an annotated tag, you need to specify the `-a` parameter before the tag name and the `-m` parameter with the message.
+If you want to create an annotated tag, you need to specify the `-a` parameter before the tag name and the `-m` parameter with the message. Don't forget to put quotation marks between your message tag.
 
 {%- highlight sh -%}
 git tag -a <tag_name> -m <The message tag>
 {%- endhighlight -%}
 
-Don't forget to put quotation marks between your message tag.
+Using an annotated tag is possible to know who and when created it seeing the metadata.
 
 ## Listing and viewing git tags
 Listing and viewing Git tags is a straightforward process that allows you to quickly identify important points in your repository's history. To list all tags in your repository, you can use the `git tag` command without any additional arguments.
