@@ -57,7 +57,13 @@ If you have any questions about the guidelines or need clarification, don't hesi
 By understanding and following the project's guidelines, you can ensure that your contribution aligns with the project's goals and standards, making it easier for maintainers to review and merge your changes.
 
 ## Setting up the development environment
-Once you've been assigned an issue and familiarized yourself with the project's guidelines, the next step is to set up your development environment. Having a properly configured environment will ensure that you can build, test, and debug your code effectively.
+Once you've been assigned an issue and familiarized yourself with the project's guidelines, the next step is to set up your development environment. Having a properly configured environment will ensure that you can build, test, and debug your code effectively. 
+
+Start doing this creating a fork of the project. This will copy the repository to your account and you'll work on it. Once you fork the project, you can clone it on your machine.
+
+{%- highlight sh -%}
+git clone <repository-url>
+{%- endhighlight -%}
 
 Start by following the instructions provided in the project's documentation or README file for setting up the development environment. This may involve installing dependencies, configuring development tools, and cloning the project repository to your local machine.
 
@@ -65,7 +71,38 @@ If the project uses specific development tools or frameworks, make sure to insta
 
 The Firefox iOS project was very easy to configure. They provide a clear and good documentation explanning what is the commands I need to execute to prepare all the environment and how to open the Xcode project. I felt it is a well-organized project.
 
-Once your development environment is set up and configured, you're ready to start working on your contribution! Open your favorite code editor, create a new branch for your changes, and dive into the code.
+Once your development environment is set up and configured, you're ready to start working on your contribution! Open your favorite code editor, create a new branch for your changes, and dive into the code. In my case, I've used the Xcode because I'm in a iOS project.
+
+## Testing and understanding the issue
+Before making any changes to the codebase, it's essential to thoroughly understand the issue you've been assigned and how it affects the project. Start by reading the issue description and any associated comments or discussions to gain insight into the problem and its context.
+
+The issue that I worked was described very well. You can see it [here][issue]. The main difficult was to understand what was the path I need to follow on the app to understand if my changes will be work. I put some breakpoints on the class mentioned on the issue, and after some attempts I discover what was the screen affected.
+
+By thoroughly testing and understanding the issue and what is the location you'll change, you'll be better equipped to develop a robust and effective solution that addresses the problem and aligns with the project's goals and guidelines.
+
+## Implementing the solution
+Again, the issue was described very well and was not difficult to understand what I need to do. But it depends of the project and the task you'll work. Usually, issues labeled as "Good First Issue" is issues with good descriptions, and you shouldn't have any major problemas dealing with them.
+
+The issue that I work was very easy and the author's added a code snippet with the code that I need to replace. They was very kindness.
+
+## Testing and verification
+Testing and verification are crucial steps in the contribution process to ensure that your changes meet the project's requirements and standards. Sometimes you'll need to implement some unit tests to validate the new behavior. Other times you'll just need to make some manual tests. In the issue was described that is necessary to put the screenshot before and after the changes on the PR, and this was enough in this case. 
+
+## Creating the pull request
+After implementing and testing your solution, it's time to create a pull request (PR) to submit your changes for review and integration into the project's codebase. Begin by switching to the branch where you made your changes and ensuring it's up to date with the latest changes from the main branch. Sometimes you'll need to synchronize your forked repository with the original repository and make a rebase of your branch.
+
+-- SHOW COMMAND
+
+CREATE THE PULL REQUEST...
+
+Provide a clear title and description for your pull request, summarizing the purpose of the changes and providing additional context, such as an overview of the issue or feature being addressed and the approach taken to implement the solution.
+
+If your pull request addresses a specific issue or feature request, reference the relevant issue number in the pull request description to automatically link the pull request to the issue.
+
+Review the diff of your changes one last time to ensure everything looks good and that you haven't missed anything. Double-check for any potential errors or unintended changes.
+
+Once you're satisfied with the changes and the pull request description, submit your pull request for review. Keep an eye on the pull request for comments, feedback, or requests for changes from reviewers.
 
 [career_transition_post]: /{{ site.lang }}/my-journey-in-mobile-development-from-csharp-to-swift/
 [firefox_ios]:            https://github.com/mozilla-mobile/firefox-ios
+[issue]:                  https://github.com/mozilla-mobile/firefox-ios/issues/19644
