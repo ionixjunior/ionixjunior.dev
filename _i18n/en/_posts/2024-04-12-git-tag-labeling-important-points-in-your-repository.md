@@ -31,10 +31,10 @@ Or just the tag name.
 git tag <tag_name>
 {%- endhighlight -%}
 
-If you want to create an annotated tag, you need to specify the `-a` parameter before the tag name and the `-m` parameter with the message. Don't forget to put quotation marks between your message tag.
+If you want to create an annotated tag, you need to specify the `-a` parameter before the tag name and the `-m` parameter with the message. Don't forget to put quotation marks between your tag message.
 
 {%- highlight sh -%}
-git tag -a <tag_name> -m <The message tag>
+git tag -a <tag_name> -m <The tag message>
 {%- endhighlight -%}
 
 Using an annotated tag is possible to know who and when created it seeing the metadata.
