@@ -34,16 +34,16 @@ Read through the issue descriptions carefully and choose one that aligns with yo
 
 Don't be afraid to ask questions or seek clarification if you're unsure about anything. Project maintainers and other contributors are usually happy to help newcomers get started.
 
-What's next? Make a pull request (PR)? Be kind and request the permission to you solve the issue before to start - this is going to be hilarious.
+What's next? Make a pull request (PR)? Be kind and request the permission to you solve the issue before to start - this should be interesting.
 
 ## Requesting permission
-After you've found an issue you'd like to work on, the next step is to request permission to work on it. If the issue is not assigned to anyone, you can usually volunteer to take it on.
+After you've found an issue you'd like to work on, the next step is to request permission to work on it. If the issue is not assigned to anyone, you can usually volunteer to take it.
 
 To request permission, leave a comment on the issue expressing your interest in working on it. Be polite and concise. Project maintainers or other contributors will review your request and may assign the issue to you if they agree that you're a good fit for the task. Don't be discouraged if your request is not immediately accepted – sometimes it may take time for maintainers to respond.
 
 This is not a mandatory step, but it is good to do to ensure that a specific issue is not assigned to more than one person, or you work in an issue that another person is already working on. I remembered a time that I wanted to contribute to Bitwarden project and my permissions was denied because the team had other plans for that issue. You can see it [here][bitwarden_issue]. Because of this, I believe it is good to be polite and request permission before you start to working on an issue.
 
-Once you've been assigned the issue, it's time to familiarize yourself with the project's guidelines and get started on your contribution! But let me expose to you some hilarious situation that happened to me: I ask the permission to the maintainer and a few days later I haven't received response yet and other person creates a PR and I lose the opportunity 😂. I just start over to looking for another issue and I did the same asking the permission to contribute, but I've created a PR on the same day. I was determined to not lose another opportunity.
+Once you've been assigned the issue, it's time to familiarize yourself with the project's guidelines and get started on your contribution! But let me expose to you some hilarious situation that happened to me: I asked the permission to the maintainer and a few days later I haven't received response yet and other person creates a PR and I lose the opportunity 😂. I just start over to looking for another issue and I did the same asking the permission to contribute, but I've created a PR on the same day. I was determined to not lose another opportunity.
 
 So, be polite, but be proactive too and send the PR when you finish the work, even the maintainer doesn't respond to you fast.
 
@@ -78,25 +78,25 @@ Once your development environment is set up and configured, you're ready to star
 ## Testing and understanding the issue
 Before making any changes to the codebase, it's essential to thoroughly understand the issue you've been assigned and how it affects the project. Start by reading the issue description and any associated comments or discussions to gain insight into the problem and its context.
 
-The issue that I worked was described very well. You can see it [here][issue]. The main difficult was to understand what was the path I need to follow on the app to understand if my changes will be work. I put some breakpoints on the class mentioned on the issue, and after some attempts I discovered what was the screen impacted.
+The issue that I worked was described very well. You can see it [here][issue]. The main difficult for me was to discover which screen on the app would be affected with the changes. I put some breakpoints on the class mentioned on the issue, and after some attempts I discovered what was the screen impacted.
 
 By thoroughly testing and understanding the issue and what is the location you'll change, you'll be better equipped to develop an effective solution that addresses the problem and aligns with the project's goals and guidelines.
 
 ## Implementing the solution
 Again, the issue was described very well, and I was not difficult to understand what I need to do. But it depends on the project and the task you'll work. Usually, issues labeled as "Good First Issue" are issues with good descriptions, and you shouldn't have any major problems dealing with them.
 
-The issue that I work was very easy, and the author's added a code snippet with the code that I need to replace. They were very kindness and the issue was very easy, but it was a good start for a person looking to contribute to an iOS project.
+The issue that I worked was very easy, and the author's added a code snippet with the code that I needed to replace. They were very kindness and the issue was very easy, but it was a good start for a person looking to contribute to an iOS project.
 
 ## Testing and verification
 Testing and verification are crucial steps in the contribution process to ensure that your changes meet the project's requirements and standards. Sometimes you'll need to implement some unit tests to validate the new behavior. Other times you'll just need to make some manual tests. In the issue that I worked, it was necessary to put the screenshots before and after the changes on the PR, and this was enough in this case. 
 
 ## Creating the pull request
-After implementing and testing your solution, it's time to create a PR to submit your changes for review to integrate it into the project's codebase. Begin by switching to the branch where you made your changes and ensuring it's up-to-date with the latest changes from the main branch. Large projects usually have a lot of PRs every day, and it's common to start our solutions and new code are merged into the repository when we're working on. It's a good approach to synchronize your forked repository with the base repository and make a rebase of your branch. Today, there is a button called "Sync fork" on GitHub. This is amazing and turn this process very simple, but if you use other system or prefer to do this using the command line, you can follow this:
+After implementing and testing your solution, it's time to create a PR to submit your changes for review to integrate it into the project's codebase. Begin by switching to the branch where you made your changes and ensuring it's up-to-date with the latest changes from the main branch of the base repository. Large projects usually have a lot of PRs every day, and it's common to start our solutions and new code are merged into the repository when we're working in an issue. It's a good approach to synchronize your forked repository with the base repository and make a rebase of your branch. Today, there is a button called "Sync fork" on GitHub. This is amazing and turn this process very simple, but if you use other system or prefer to do this using the command line, you can follow this:
 
 First, add the upstream link of the base repository if you haven't done this yet.
 
 {%- highlight sh -%}
-git remote add upstream <original-repository-url>
+git remote add upstream <base-repository-url>
 {%- endhighlight -%}
 
 Now fetch the changes. 
@@ -117,7 +117,7 @@ Now the main branch of your repository is totally updated with the base reposito
 git rebase main
 {%- endhighlight -%}
 
-Now you're prepared to make the PR. Usually the above steps aren't mandatory, but are good practices. If you want to understand more about the remote upstream and the rebase process, you can take a look in the [Git Push post][git_push_post] and [Git Rebase post][git_rebase_post].
+Now you're prepared to make the PR. Usually the above steps aren't mandatory, but are good practices. If you want to understand more about the remote upstream and the rebase process, you can take a look in the [Git Push][git_push_post] and [Git Rebase][git_rebase_post] posts.
 
 Now it's time to create the PR! To do this, start pushing the branch you're working to your remote repository.
 
@@ -129,14 +129,14 @@ I won't describe how to create the PR to the base repository. Instead, I'll sugg
 
 Provide a clear title and description for PR, summarizing the purpose of the changes and providing additional context, such as an overview of the issue or feature being addressed and the approach taken to implement the solution. If the PR addresses a specific issue or feature request, reference the relevant issue number in the PR description to automatically link the PR to the issue. The Firefox iOS repository contains some name conventions for issue title and references inside the description, so it's important to understand the project's rules.
 
-Review the diff of the changes one last time to ensure everything looks good and that you haven't missed anything. Double-check for any potential errors or unintended changes. Once you're satisfied with the changes and the PR description, submit the PR for review. Keep an eye on the PR for comments, feedback, or requests for changes from reviewers.
+Review your changes one last time to ensure everything looks good and that you haven't missed anything. Double-check for any potential errors or unintended changes. Once you're satisfied with the changes and the PR description, submit the PR for review. Keep an eye on the PR for comments, feedback, or requests for changes from reviewers.
 
 If you're curious, [here][pr] is the PR that I worked.
 
 ## Conclusion
 In conclusion, contributing to open-source projects is not exclusive to senior developers. With the right mindset, willingness to learn, and attention to detail, anyone can make valuable contributions to projects they're passionate about. By following the steps outlined in this guide, you can embark on your open-source journey, gain practical experience, and make a positive impact on the development community. Remember that every contribution, no matter how small, contributes to the collective growth and improvement of open-source software. So don't hesitate to get involved, share your skills, and become part of the vibrant open-source community.
 
-So, what do you waiting for? Don't be afraid. Lose fear, shame and let go of impostor syndrome. I wish this post to inspire you and, I want to see in the comments what PR you contributed.
+So, what are you waiting for? Don't be afraid. Let go of fear, shame, and the impostor syndrome. I hope this post inspires you, and I'd love to see in the comments which PR you contributed to.
 
 Happy coding!
 
