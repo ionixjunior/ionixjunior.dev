@@ -11,11 +11,11 @@ tags: ["git", "opensource", "ios"]
 [Some months ago][career_transition_post], I said about my transition to focus on Swift to be an iOS Engineer, and one of my plans is starting to contribute to iOS open-source projects. But, how can I contribute if I am learning? Well, I am learning, but I have some experience and I know how to start. So, the main challenge was discovered some cool project to contribute.
 
 ## Finding a project to contribute to
-When it comes to finding the right open-source project to contribute to, it's normal to feel a bit overwhelmed at first. However, with a bit of guidance, the process becomes much simpler.
+When it comes to finding the right open-source project to contribute to, it's normal to feel a bit lost at first. However, with a bit of guidance, the process becomes much simpler.
 
 There is a website called [Up For Grabs][up_for_grabs]. It contains a list of projects which have curated tasks specifically for new contributors. It can be a good way to start to looking for a project, but I didn't find any interesting project for me. So, I decided to looking for project at GitHub.
 
-I tried exploring GitHub and filtering projects based on your preferred programming language, such as Swift for iOS development. I made a search query for "iOS" and then filter by "Swift" language on GitHub interface to looking for projects that catch my interest and have a welcoming community.
+Try exploring GitHub and filtering projects based on your preferred programming language, such as Swift for iOS development. I made a search query for "iOS" and then filter by "Swift" language on GitHub interface to looking for projects that catch my interest and have a welcoming community.
 
 Many projects label beginner-friendly issues as "Good First Issue" or something similar. These issues are perfect for newcomers because they're often well-documented and don't require deep knowledge of the codebase.
 
@@ -32,9 +32,9 @@ Look for issues labeled as "Good First Issue" or similar. These are specifically
 
 Read through the issue descriptions carefully and choose one that aligns with your skills, interests, and availability. Consider factors such as the complexity of the task, the technologies involved, and your level of expertise.
 
-Don't be afraid to ask questions or seek clarification if you're unsure about anything. Project maintainers and other contributors are usually happy to help newcomers get started.
+Don't hesitate to ask questions or seek clarification if you're unsure about something. Project maintainers and other contributors are usually happy to help newcomers get started.
 
-What's next? Make a pull request (PR)? Be kind and request the permission to you solve the issue before to start - this should be interesting.
+What's next? Make a PR (pull request)? Be kind and request the permission to you solve the issue before to start - this should be interesting, and I'll explain why right below.
 
 ## Requesting permission
 After you've found an issue you'd like to work on, the next step is to request permission to work on it. If the issue is not assigned to anyone, you can usually volunteer to take it.
