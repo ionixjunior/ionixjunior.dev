@@ -14,13 +14,62 @@ SwiftLint is a powerful tool that brings code linting capabilities to iOS develo
 SwiftLint offers a robust set of features designed to enhance code quality and maintainability in Swift projects. With its customizable rules, developers can tailor linting configurations to suit their specific project requirements, ensuring adherence to coding standards and best practices. SwiftLint integrates seamlessly with popular development environments, providing real-time feedback and suggestions to streamline the coding process. Additionally, its support for automatic fixing simplifies the task of addressing code violations, allowing developers to focus on writing clean, efficient code. Overall, SwiftLint empowers developers to write better code by identifying potential issues early in the development cycle and promoting consistency across the codebase.
 
 ## How SwiftLint works
-SwiftLint works by analyzing Swift source code files and applying a set of predefined or custom rules to identify violations of coding standards and best practices. When run, SwiftLint scans the specified files or directories in a Swift project, parsing the code and checking it against the configured rules. If any violations are found, SwiftLint generates a report highlighting the offending lines of code along with a description of the rule that was violated. Let's talk about these rules to understand the possibilities.
+SwiftLint works by analyzing Swift source code files and applying a set of predefined or custom rules to identify violations of coding standards and best practices. When run, SwiftLint scans the specified files or directories in a Swift project, parsing the code and checking it against the configured rules. If any violations are found, SwiftLint generates a report highlighting the offending lines of code along with a description of the rule that was violated. Let's talk about some rules to understand the possibilities.
 
 ## Understanding SwiftLint rules
 SwiftLint rules define the criteria for code quality and style within a Swift project. These rules cover various aspects of coding standards, including formatting, naming conventions, and best practices. By adhering to these rules, developers can ensure consistency and readability throughout their codebase. SwiftLint provides a comprehensive list of predefined rules, but it also allows developers to customize and extend these rules to better fit their project's needs. 
 
-There are a lot of rules of different kinds. Rules about style, performance, metrics are some examples. You can check the [rules directory][rules_directory] to see.
+There are a lot of rules of different kinds. Rules about style, performance, metrics are some examples. You can check the [rules directory][rules_directory] to see. If you want to implement this on your Swift project, I recommend you to enable one rule at a time, and run the SwiftLint to check for violations. Our long time projects can be a dozen of violations, so it's important to go slowly and refactor it.
 
+Let's see how can we install and configure it.
 
+## Installing SwiftLint
+At the [SwiftLint project][swiftlint_project] you can find instructions to install it. You can install through Swift Package Manager, Homebrew, CocoaPods, Mint or Bazel. I prefer to use Homebrew because it give me more flexibility to run the SwiftLint in any project. Of course I need to configure it first, but as I like a command line, I prefer to have the SwiftLint in my command line globally. It's a preference. Choose what you're think is the best.
 
-[rules_directory]: https://realm.github.io/SwiftLint/rule-directory.html
+To do a simple test, I've used the [Book Tracking repository][book_tracking_repository]. Some of you should remember about it because I already get some examples using this repository. I just open the terminal and type `swiftlint`, and to my surprise a lot of violations were found. I'll show you only part of the report because it have more than one thousand lines. 
+
+{%- highlight sh -%}
+swiftlint 
+
+Linting Swift files in current working directory
+Linting 'ConstraintMultiplierTarget.swift' (1/79)
+Linting 'LayoutConstraintItem.swift' (2/79)
+Linting 'ConstraintAttributes.swift' (4/79)
+Linting 'ConstraintMakerPrioritizable.swift' (3/79)
+Linting 'ConstraintViewDSL.swift' (5/79)
+Linting 'ConstraintDescription.swift' (6/79)
+Linting 'ConstraintPriorityTarget.swift' (7/79)
+Linting 'ConstraintInsets.swift' (8/79)
+/Users/ionixjunior/Projects/iOS/BookTracking/Pods/SnapKit/Sources/ConstraintInsets.swift:30:1: warning: Vertical Whitespace Violation: Limit vertical whitespace to a single empty line; currently 2 (vertical_whitespace)
+/Users/ionixjunior/Projects/iOS/BookTracking/Pods/SnapKit/Sources/ConstraintPriorityTarget.swift:32:1: warning: Trailing Whitespace Violation: Lines should not have trailing whitespace (trailing_whitespace)
+Linting 'ReadingViewController.swift' (46/79)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/ViewControllers/Reading/ReadingViewController.swift:77:1: warning: Line Length Violation: Line should be 120 characters or less; currently it has 130 characters (line_length)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/ViewControllers/Reading/ReadingViewController.swift:97:1: warning: Trailing Newline Violation: Files should have a single trailing newline (trailing_newline)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/ViewControllers/Reading/ReadingViewController.swift:14:1: warning: Trailing Whitespace Violation: Lines should not have trailing whitespace (trailing_whitespace)
+Linting 'TabBarViewController.swift' (61/79)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/ViewControllers/TabBar/TabBarViewController.swift:58:71: warning: Colon Spacing Violation: Colons should be next to the identifier when specifying a type and next to the key in dictionary literals (colon)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/ViewControllers/TabBar/TabBarViewController.swift:13:9: warning: Identifier Name Violation: Variable name 'vc' should be between 3 and 40 characters long (identifier_name)
+Linting 'AppDelegate.swift' (77/79)
+/Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/AppDelegate.swift:48:1: warning: Vertical Whitespace Violation: Limit vertical whitespace to a single empty line; currently 2 (vertical_whitespace)
+Done linting! Found 929 violations, 61 serious in 79 files.
+{%- endhighlight -%}
+
+Oh god. A lot of violations! But I don't configure anything. How SwiftLint discover all of it? SwiftLint just use all the rules it have. Another interesting thing is it lint a pod called SnapKit. This is not interesting to us. We don't need to linting our dependencies. They want to define and organize how to deal with that. Because of this is important to configure our lint file. Let's do it!
+
+## Configuring SwiftLint
+First, let's create the `.swiftlint.yml` file. It need to start with dot because it's a hidden file. After this, let's configure our excluded folders and files. In my project I configured the `Pods` folder to SwiftLint don't parse my external libs.
+
+{%- highlight yml -%}
+excluded:
+  - Pods/
+{%- endhighlight -%}
+
+Running the `swiftlint` command now the result is much better, because the `Pods` directory is not reported anymore. Now I have "only" 364 violations in my project. All these violations make sence to me or for you? I don't know! It's good to analyse each one to understand how it work and how it impact in the project.
+
+- tell about the important things;
+- The kind / severity of the rules `swiftlint rules`
+- show some rules in action
+
+[rules_directory]:          https://realm.github.io/SwiftLint/rule-directory.html
+[swiftlint_project]:        https://github.com/realm/SwiftLint
+[book_tracking_repository]: https://github.com/ionixjunior/BookTracking
