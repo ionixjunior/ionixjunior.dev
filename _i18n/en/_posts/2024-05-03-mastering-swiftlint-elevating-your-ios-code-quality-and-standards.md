@@ -54,21 +54,65 @@ Linting 'AppDelegate.swift' (77/79)
 Done linting! Found 929 violations, 61 serious in 79 files.
 {%- endhighlight -%}
 
-Oh god. A lot of violations! But I don't configure anything. How SwiftLint discover all of it? SwiftLint just use all the rules it have. Another interesting thing is it lint a pod called SnapKit. This is not interesting to us. We don't need to linting our dependencies. They want to define and organize how to deal with that. Because of this is important to configure our lint file. Let's do it!
+Oh god. A lot of violations! But I don't configure anything. How SwiftLint discover all of it? SwiftLint just use all the default rules it have. Another interesting thing is it lint a pod called SnapKit. This is not interesting to us. We don't need to linting our dependencies. They want to define and organize how to deal with that. Because of this is important to configure our lint file. Let's do it!
 
 ## Configuring SwiftLint
-First, let's create the `.swiftlint.yml` file. It need to start with dot because it's a hidden file. After this, let's configure our excluded folders and files. In my project I configured the `Pods` folder to SwiftLint don't parse my external libs.
+First, let's create the `.swiftlint.yml` file. It need to start with "dot" because it's a hidden file. After this, let's configure our excluded folders and files. In my project I configured the `Pods` folder to SwiftLint don't parse my external libs, because I'm using CocoaPods dependencies.
 
 {%- highlight yml -%}
 excluded:
   - Pods/
 {%- endhighlight -%}
 
-Running the `swiftlint` command now the result is much better, because the `Pods` directory is not reported anymore. Now I have "only" 364 violations in my project. All these violations make sence to me or for you? I don't know! It's good to analyse each one to understand how it work and how it impact in the project.
+Running the `swiftlint` command now the result is much better, because the `Pods` directory is not reported anymore. Now I have "only" 364 violations in my project. All these violations make sence to me or for you? I don't know! It's good to analyse each one to understand how it work and how it impact in the project. 
 
-- tell about the important things;
-- The kind / severity of the rules `swiftlint rules`
-- show some rules in action
+You have to choose a strategy to deal with this. You can keep the swiftlint file this way and solve all the violations that it founded, or you can learn about all rules and choose what is interesting to you or to your project. I'll keep all the rules activated at this moment, and I'll try to solve the violations of my project. But I'll show you how to do some configurations. Suppose you choose to specify only some specific rules, you need to use the `only_rules` property and specify the rules:
+
+{%- highlight yml -%}
+only_rules:
+  - multiline_arguments
+  - overridden_super_call
+
+excluded:
+  - Pods/
+{%- endhighlight -%}
+
+Also, you can configure some disabled rules to avoid SwiftLint parse them. 
+
+{%- highlight yml -%}
+disabled_rules:
+  - trailing_whitespace
+
+excluded:
+  - Pods/
+{%- endhighlight -%}
+
+These are just examples. I suggest you to run `swiflint rules` command to see all rules available. In the table that will appear on the command line, you can see if the rule can be automatically corrected (is, it is possible), the kind of the rule (lint, idiomatic, style, metrics or performance), the default configuration and some other informations.
+
+We're running the SwiftLint from command line, but exists a way to integrate it into Xcode and see warnings or erros in every build. Let's learn about it!
+
+## Integrating SwiftLint into Xcode
+To do this is very simple. You need to add a "Run Script Phase" in your Xcode project. Open Xcode and follow these steps:
+1. Select your project in the Project Navigator to open the project editor;
+2. Select the target you want to add SwiftLint integration to;
+3. Go to the "Build Phases" tab;
+4. Click the "+" button and select "New Run Script Phase";
+5. In the script text field, enter the command to run SwiftLint. 
+
+<figure>
+	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_I.png" alt="Steps how to configure SwiftLint into Xcode."> 
+	<figcaption>Steps how to configure SwiftLint into Xcode.</figcaption>
+</figure>
+
+After this, move the "Run Script" phase before the "Compile Sources" phase. You just need to drag and drop on the Xcode interface.
+
+<figure>
+	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_II.gif" alt="Moving the Run Script phase before the Compile Sources phase."> 
+	<figcaption>Moving the Run Script phase before the Compile Sources phase.</figcaption>
+</figure>
+
+Then, you'll can build your project and be happy using SwiftLint directly into Xcode. In my case the project don't compile because all the violations 😅. 
+
 
 [rules_directory]:          https://realm.github.io/SwiftLint/rule-directory.html
 [swiftlint_project]:        https://github.com/realm/SwiftLint
