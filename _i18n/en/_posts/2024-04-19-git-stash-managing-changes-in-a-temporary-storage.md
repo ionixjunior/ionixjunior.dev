@@ -92,8 +92,6 @@ It's important to note that the Git stash command does not save untracked files,
 ## Managing stashes locally: important considerations
 Git stashes are local and cannot be directly pushed to remote repositories. If you need to share stashed changes, you'll have to apply them locally and then commit and push them to the remote repository separately. So if you delete your local repository, all your stashes are gone.
 
-Este recurso é algo temporário e de curta duração. Se você possui muitos stashes, pode ter algo errado aí.
-
 ## Conclusion
 The ability to stash changes in Git is a powerful feature that allows developers to temporarily store modifications and switch contexts without committing unfinished work. By understanding how to create, list, apply, and manage stashes, developers can maintain a clean working directory and streamline their development workflow. Whether you're working on multiple tasks simultaneously or need to switch focus quickly, Git stash provides a convenient solution for managing changes effectively. Remember to use it wisely and leverage its capabilities to enhance your productivity and organization.
 
