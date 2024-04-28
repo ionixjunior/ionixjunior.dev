@@ -20,10 +20,12 @@ git stash
 
 This command creates a new stash entry with a default name and description, indicating the changes that were stashed. Once stashed, the working directory and the index are reverted to the state of the last commit, allowing developers to switch branches or perform other operations without the changes they stashed.
 
-Also, you can specify a name for your stash to easily identify it on the stack. 
+Also, you can specify a name for your stash to easily identify it on the stack using `git stash save <name_of_your_stash>`.
+
+A kind reader tell me that the above approach is deprecated, and he's correct! So, instead of use `git stash save`, use `git stash push` followed by the message parameter. Thank you so much for the feedback, [Christophe Colombier][christophe_colombier_profile]! I really appreciate it!
 
 {%- highlight sh -%}
-git stash save <name_of_your_stash>
+git stash push -m "Your message"
 {%- endhighlight -%}
 
 ## Listing and applying stashes
@@ -96,3 +98,5 @@ Git stashes are local and cannot be directly pushed to remote repositories. If y
 The ability to stash changes in Git is a powerful feature that allows developers to temporarily store modifications and switch contexts without committing unfinished work. By understanding how to create, list, apply, and manage stashes, developers can maintain a clean working directory and streamline their development workflow. Whether you're working on multiple tasks simultaneously or need to switch focus quickly, Git stash provides a convenient solution for managing changes effectively. Remember to use it wisely and leverage its capabilities to enhance your productivity and organization.
 
 See you in the next post!
+
+[christophe_colombier_profile]: https://dev.to/ccoveille
