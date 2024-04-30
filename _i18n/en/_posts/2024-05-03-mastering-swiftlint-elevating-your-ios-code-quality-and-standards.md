@@ -26,6 +26,8 @@ Let's see how can we install and configure it.
 ## Installing SwiftLint
 At the [SwiftLint project][swiftlint_project] you can find instructions to install it. You can install through Swift Package Manager, Homebrew, CocoaPods, Mint or Bazel. I prefer to use Homebrew because it give me more flexibility to run the SwiftLint in any project. Of course I need to configure it first, but as I like a command line, I prefer to have the SwiftLint in my command line globally. It's a preference. Choose what you're think is the best.
 
+## Running SwiftLint
+
 To do a simple test, I've used the [Book Tracking repository][book_tracking_repository]. Some of you should remember about it because I already get some examples using this repository. I just open the terminal and type `swiftlint`, and to my surprise a lot of violations were found. I'll show you only part of the report because it have more than one thousand lines. 
 
 {%- highlight sh -%}
@@ -111,8 +113,18 @@ After this, move the "Run Script" phase before the "Compile Sources" phase. You 
 	<figcaption>Moving the Run Script phase before the Compile Sources phase.</figcaption>
 </figure>
 
-Then, you'll can build your project and be happy using SwiftLint directly into Xcode. In my case the project don't compile because all the violations 😅. 
+Then, you'll can build your project and be happy using SwiftLint directly into Xcode. In my case the project don't compile because a violation called `line_length`. Unfortunatelly, I made some bad decisions when prototype data directly into a class and it easily violete this rule. For compile my app again, I just remove this rule and focus on other problems at this moment.
 
+## Fixing the violations
+In my project I found 364 violations. I just start fixing using the easy way: with the autocorrect. SwiftLint provide a way to autocorrect some rules. To do this, run the following commnad:
+
+```
+swiftlint --autocorrect
+```
+
+In my project, the tool automatically correct simple rules, like `trailing_whitespace`, `trailing_newline`, `trailing_comma`, `unneeded_override`, `colon`, `comma`, and `opening_brace`. Again, they are very simple rules, but can keep your project standardized. Some sules like `identifier_name` and `function_body_length` I need to fix myself.
+
+After this, the work is done. But what's next? We already have the command line in our machine, we automate the linter on Xcode, what can we do more? 
 
 [rules_directory]:          https://realm.github.io/SwiftLint/rule-directory.html
 [swiftlint_project]:        https://github.com/realm/SwiftLint
