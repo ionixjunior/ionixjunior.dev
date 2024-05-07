@@ -17,7 +17,7 @@ This command show in the command line some annotations in each line of a specifi
 The `git blame` command is very versatile. Let's see some different usages.
 
 ### Basic usage
-Let's say you're working with a Swift file called `User.swift` and you want to know the history behind its lines. Open your terminal, navigate to your repository's root directory, and run the following command:
+Let's say you're working with a Swift file called `User.swift` and you want to know the history behind its lines. Open your terminal, navigate to your repository's root directory, and run the following command, referencing your project file:
 
 {%- highlight txt -%}
 git blame User.swift
@@ -35,7 +35,7 @@ This will display an output similar to this:
 
 The first column shows the abbreviated commit hash associated with the last change to each line. The second column identifies the author of the commit. Here, we see that John Doe and Mary Smith have contributed to this file. The third column shows the date and time of the commit. The final column indicates the line number in the file. Following the information above, you'll see the actual content of each line in the file.
 
-By analyzing this output, you can trace the evolution of the User struct, see who made specific changes, and understand when those changes occurred.
+By analyzing this output, you can trace the evolution of this file, see who made specific changes, and understand when those changes occurred.
 
 This analyse the file at the current state. Let's see how can we do this in a different way.
 
@@ -50,14 +50,14 @@ git blame fae4321b User.swift
 
 The output will show the file's state at that specific commit, revealing who authored each line and when it was last changed before that point in the history. 
 
-If you're not interested in older changes, you can specify a range and it can be in two ways. The first one I'll show you throught a tag. Suppose we have a tag called `v123` and we want to see the blaming after this time:
+If you're not interested in older changes, you can specify a range and it can be in two ways. The first one I'll show you throught a tag. Suppose we have a tag called `v123` and we want to see the blaming after this time, we just need to put two dots ".." after the tag:
 
 
 {%- highlight txt -%}
 git blame v123.. User.swift 
 {%- endhighlight -%}
 
-Another option is using the parameter `--since` to achieve this:
+Another option is using the `--since` flag specifying a period to achieve this:
 
 {%- highlight txt -%}
 git blame --since=2.weeks User.swift 
@@ -73,13 +73,13 @@ git blame -w User.swift
 {%- endhighlight -%}
 
 ### Custom output
-There are a lot of options in this command but I'll show you more two possibilities. Both is to talk about the `L` flag into the command. You can blaming a file specifying some numbers of lines:
+There are a lot of options in this command but I'll show you more two possibilities. Both is to talk about the `-L` flag into the command. You can blaming a file specifying some numbers of lines:
 
 {%- highlight txt -%}
 git blame -L 10,20 User.swift 
 {%- endhighlight -%}
 
-This command will blame the lines 10 to 20. But You can do specifying a function name, passing it as a regex into the command. Suppose you want to blame a function called `func configConstraints() { ... }`, you can run the command this way:
+This command will blame the lines 10 to 20, but you can specify a function name, passing it as a regex into the command. Suppose you want to blame a function called `func configConstraints() { ... }` in this file, you can run the command this way:
 
 {%- highlight txt -%}
 git blame -L /func\ configConstraints/ User.swift 
@@ -90,7 +90,7 @@ It's not common and sometimes not easy to do, but it's a possibility, right?
 ## Conclusion
 The `git blame` is an invaluable tool in any developer's arsenal. Its ability to unveil the history behind each line of code empowers us to understand how our codebase evolved, track down bugs, and appreciate the contributions of our collaborators.
 
-However, it's crucial to use this command responsibly and avoid creating a culture of blame. Remember, every change, even those that introduced issues, served a purpose at a specific point in time. Instead of pointing fingers, use "git blame" as a tool for learning, collaboration, and improving your codebase.
+However, it's crucial to use this command responsibly and avoid creating a culture of blame. Remember, every change, even those that introduced issues, served a purpose at a specific point in time. Instead of pointing fingers, use `git blame` as a tool for learning, collaboration, and improving your codebase.
 
 By understanding the context behind each modification and fostering open communication, you can harness the power of `git blame` to create a more productive and positive development environment.
 
