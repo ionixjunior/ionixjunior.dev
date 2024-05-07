@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Blame: Revelando a História do Código"
-date:   2024-05-06
+date:   2024-05-10
 translations: ["en"]
 tags: ["git"]
 ---
