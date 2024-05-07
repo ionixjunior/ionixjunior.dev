@@ -48,7 +48,7 @@ Imagine you want to see how the `User.swift` file looked in the commit with the 
 git blame fae4321b User.swift 
 {%- endhighlight -%}
 
-The output will show the file's state at that specific commit, revealing who authored each line and when it was last changed before that point in the history. If you're not interested in older changes, you can specify a range and it can be in two ways. The first one I'll show you through a tag. Suppose we have a tag called `v123` and we want to see the blaming after this time, we just need to put two dots ".." after the tag:
+The output will show the file's state at that specific commit, revealing who authored each line and when it was last changed before that point in the history. If you're not interested in older changes, you can specify a range and it can be in two ways. The first one I'll show you through a tag. Suppose we have a tag called `v123` and we want to see the changes after this time, we just need to put two dots ".." after the tag:
 
 {%- highlight txt -%}
 git blame v123.. User.swift 
@@ -63,7 +63,9 @@ git blame --since=2.weeks User.swift
 These options give you the flexibility to investigate the code at different points in its history, aiding in pinpointing the introduction of bugs or understanding the context of past changes.
 
 ### Ignoring whitespaces changes
-Sometimes, changes in a file involve only whitespace modifications, such as indentation or line breaks. While these changes may be necessary for formatting or style consistency, they can clutter the output of `git blame` and make it harder to focus on meaningful code changes. To disregard whitespace changes when blaming a file, simply include the `-w` flag in your command. For instance:
+Sometimes, changes in a file involve only whitespace modifications, such as indentation or line breaks. While these changes may be necessary for formatting or style consistency, they can clutter the output of `git blame` and make it harder to focus on meaningful code changes. 
+
+To disregard whitespace changes when analyzing a file, simply include the `-w` flag in your command. For instance:
 
 {%- highlight txt -%}
 git blame -w User.swift 
@@ -72,13 +74,13 @@ git blame -w User.swift
 ### Custom output
 There are many options available with this command, but I'll showcase two more possibilities, both related to the `-L` flag.
 
-You can blame a file by specifying a range of line numbers: 
+You can analyze a file by specifying a range of line numbers: 
 
 {%- highlight txt -%}
 git blame -L 10,20 User.swift
 {%- endhighlight -%} 
 
-This command will blame the lines 10 to 20, but you can specify a function name, passing it as a regex into the command. Suppose you want to blame a function called `func configConstraints() { ... }` in this file, you can run the command this way:
+This command will show the lines 10 to 20. Furthermore, you can specify a function name, passing it as a regex into the command. Suppose you want to analyze a function called `func configConstraints() { ... }` in this file, you can run the command this way:
 
 {%- highlight txt -%}
 git blame -L /func\ configConstraints/ User.swift
@@ -87,7 +89,7 @@ git blame -L /func\ configConstraints/ User.swift
 It's not common and sometimes not easy to do, but it's a possibility, right?
 
 ## Conclusion
-The `git blame` is an invaluable tool in any developer's arsenal. Its ability to unveil the history behind each line of code empowers us to understand how our codebase evolved, track down bugs, and appreciate the contributions of our collaborators.
+The `git blame` is an invaluable tool in any developer's arsenal. Its ability to unveil the history behind each line of code empowers us to understand how our codebase evolved, track down bugs, and appreciate the contributions of our teammates.
 
 However, it's crucial to use this command responsibly and avoid creating a culture of blame. Remember, every change, even those that introduced issues, served a purpose at a specific point in time. Instead of pointing fingers, use `git blame` as a tool for learning, collaboration, and improving your codebase. 
 
