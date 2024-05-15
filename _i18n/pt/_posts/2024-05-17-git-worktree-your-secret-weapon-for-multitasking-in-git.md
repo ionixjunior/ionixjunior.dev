@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Worktree: Sua Arma Secreta para Multitarefa no Git"
-date:   2024-05-13
+date:   2024-05-17
 translations: ["en"]
 tags: ["git"]
 ---
