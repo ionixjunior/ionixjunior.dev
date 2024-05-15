@@ -16,7 +16,7 @@ At its core, `git worktree` allows you to create multiple working trees from a s
 
 Imagine it like this: your main project folder becomes the "parent" directory, and each `git worktree` you create is a "child" directory, representing a different branch of your project. The magic is that each child directory operates as a completely independent workspace. You can edit files, commit changes, and even create new branches within a specific worktree, without affecting any of the other worktrees.
 
-This allows you to, for example, have one worktree dedicated to developing a new feature, another focused on fixing bugs on the 'main' branch, and yet another for experimenting with a risky experimental feature—all within the same project.
+This allows you to, for example, have one worktree dedicated to developing a new feature, another focused on fixing bugs on the "main" branch, and yet another for experimenting with a risky experimental feature—all within the same project.
 
 To create a new worktree is simple:
 {%- highlight sh -%}
@@ -41,19 +41,19 @@ As a result, you'll see something like this:
 /Users/ionixjunior/Projects/iOS/BookTrackingLint  bf99013 [swiftlint] 
 {%- endhighlight -%}
 
-## Use Cases and Benefits of git worktree
+## Use cases and benefits of git worktree
 
 The beauty of `git worktree` lies in its versatility. It can be applied to a variety of scenarios, significantly streamlining your development workflow. Here are a few common use cases and the benefits they bring:
 
-### Hotfix Hero
+### Hotfix hero
 
 A critical bug is discovered in your production environment, requiring immediate attention. You need to create a hotfix branch while simultaneously continuing work on your current feature branch. How to deal with this? Use `git worktree` to create a new worktree for the hotfix branch. This allows you to quickly address the critical issue without disrupting your ongoing work. Once the hotfix is complete and merged, you can simply delete the dedicated worktree.
 
-### Feature Branch Bliss
+### Feature branch bliss
 
 You're working on multiple features in parallel, each requiring its own isolated environment. Constantly switching branches and stashing changes is becoming a nightmare. How to deal with this? Create a separate worktree for each feature branch. This allows you to seamlessly switch between features, work on them independently, and easily track their progress without interrupting other branches.
 
-### Testing Made Easy
+### Testing made easy
 
 You need to test a specific feature branch in a dedicated environment without affecting your main development workspace. What to do? Use `git worktree` to create a dedicated worktree for testing purposes. You can then configure this environment specifically for testing and easily discard it once testing is complete. 
 
@@ -61,7 +61,11 @@ You need to test a specific feature branch in a dedicated environment without af
 
 With this command, you can reduce context switching. No more constantly stashing changes and checking out different branches, saving you time and mental energy. Also, you can enhance organization by keeping your project organized by separating different development tasks into dedicated worktrees. Another good thing is it can improve focus because if you work on specific features or bugs in isolation, it can minimize distractions and improve concentration. Furthermore, the command can provide faster testing and experimentation as you can easily create dedicated worktrees for testing new features or experimenting with different approaches.
 
-## Managing Your Worktree
+To IDEs that have support for multi window, you can use this resource to open an instance of the IDE using a specific worktree and use another instance to open another worktree. This can be useful in some scenarios.
+
+Other interesting thing there are projects where the setup it takes times. The compilation time is big, the files' analysis is slow, and all this needs to be performed when we change the branch. This can impact in loss performance in our job, and the `git worktree` can help us with this.
+
+## Managing your worktree
 
 You created some worktrees, right? But how can we delete them? Maybe just delete the new folder? Yes, you can do this, but you'll leave some traces in your repository. To correctly remove a worktree, you use the `remove` option followed by the worktree directory. I'll use the same example of the Book Tracking repository that I created previously. 
 {%- highlight sh -%}
