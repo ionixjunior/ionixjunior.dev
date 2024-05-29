@@ -16,7 +16,7 @@ Imagine you're working on a document with "track changes" enabled. **Git Diff** 
 
 ### How to Use It:
 
-The basic Git Diff command is: `git diff`. This command will compare the current state of your working directory to the last commit you made. Here's a simple example using a file called `Foo.swift`:
+The basic **Git Diff** command is: `git diff`. This command will compare the current state of your working directory to the last commit you made. Here's a simple example using a file called `Foo.swift`:
 
 {%- highlight swift -%}
 class Foo {
@@ -70,13 +70,15 @@ In the next section, we'll delve into some handy **Git Diff** arguments that can
 
 **Git Diff** offers a variety of arguments that can fine-tune its output and make your code comparison experience even more insightful. Here are some essential arguments to boost your **Git Diff** skills:
 
-### "staged" argument
+### "staged" or "cached" argument
 
 `git diff --staged`
 
-This command compares the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
+`git diff --cached`
 
-Let's say you've made changes to both `Foo.swift` and `AnotherClass.swift`, but you only want to commit the changes in `Foo.swift`. After staging `Foo.swift` (using `git add Foo.swift`), you can run `git diff --staged` to see only the staged changes.
+These commands compares the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
+
+This is useful to ensure you'll commit only the changes you want to add in the next commit.
 
 ### "word-diff" argument
 
@@ -101,7 +103,7 @@ index 495198a..6543e6d 100644
  }
 {%- endhighlight -%}
 
-Using this argument would clearly show you that the phrase "I've been updated." has been added, while the rest of the line remains unchanged. Maybe this was not so clearly here on the blog post, but if you're using Git on the command line, probably you'll see a colored **Git Diff** result and it turns easier to understand changes.
+Using this argument would clearly show you that phrase "I've been updated." has been added, while the rest of the line remains unchanged. Maybe this was not so clearly here on the blog post, but if you're using **Git** on the command line, probably you'll see a colored **Git Diff** result and it turns easier to understand changes.
 
 ### "color-words" argument
 
@@ -121,21 +123,13 @@ This command shows the differences between your current working directory and th
 
 This argument compares your current branch with another branch, like "feature-branch." This is invaluable for understanding the differences between branches, especially before merging or when trying to identify conflicts.
 
-### "cached" or "staged" argument
-
-`git diff --cached`
-
-`git diff --staged`
-
-These commands shows only the changes that are staged for commit. This is helpful for reviewing staged changes before committing and confirming they're all ready to go.
-
 ### Using an external diff tool
 
-Sometimes, the default **Git diff** output might not be visually appealing or provide enough context. In these cases, you can use external diff tools to enhance your code comparison experience.
+Sometimes, the default **Git diff** output might not be visually appealing or provide enough context. In these cases, you can use external **diff tools** to enhance your code comparison experience.
 
 One popular external **diff tool** is [**Difftastic**][difft], a structural **diff tool** that compares files based on their syntax.
 
-To use **Difftastic**, you need to install it. You can check out instructions in the link above. After install it, you can configure **Git** to use it as the default external diff tool:
+To use **Difftastic**, you need to install it. You can check out instructions in the link above. After install it, you can configure **Git** to use it as the default external **diff tool**:
 
 {%- highlight sh -%}
 git config --global diff.external difft
