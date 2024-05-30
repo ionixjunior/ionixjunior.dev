@@ -47,7 +47,7 @@ index 495198a..6543e6d 100644
 +++ b/Foo.swift
 @@ -3,4 +3,4 @@
  class Foo {
-     func doSomething() {
+     func bar() {
 -        print("Hello, world!")
 +        print("Hello, world! I've been updated.")
      }
@@ -78,8 +78,6 @@ In the next section, we'll delve into some handy **Git Diff** arguments that can
 
 These commands compares the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
 
-This is useful to ensure you'll commit only the changes you want to add in the next commit.
-
 ### "word-diff" argument
 
 `git diff --word-diff`
@@ -97,7 +95,7 @@ index 495198a..6543e6d 100644
 +++ b/Foo.swift
 @@ -3,4 +3,4 @@
  class Foo {
-     func doSomething() {
+     func bar() {
          print("Hello, [-world!")-]{+world! I've been updated.")+}
      }
  }
@@ -135,7 +133,7 @@ To use **Difftastic**, you need to install it. You can check out instructions in
 git config --global diff.external difft
 {%- endhighlight -%}
 
-After setting up **difft**, simply run **git diff** as usual. Git will automatically use **difft** to display the differences, providing a more visually appealing and informative output. The same diff of `Foo.swift` will appears this way:
+After setting up **difft**, simply run **git diff** as usual. **Git** will automatically use **difft** to display the differences, providing a more visually appealing and informative output. The same diff of `Foo.swift` will appears this way:
 
 {%- highlight diff -%}
 Foo.swift --- Swift
@@ -155,7 +153,7 @@ By mastering these arguments and exploring external **diff tools**, you'll be eq
 
 ## Conclusion: The Power of Git Diff
 
-From tracking code changes to pinpointing bugs and streamlining code reviews, **Git Diff** proves to be an indispensable tool in any developer's arsenal. We've explored its basic functionality, and learned essential arguments to enhance its capabilities.
+In this post, we've explored its basic functionality, and learned essential arguments to enhance its capabilities. From tracking code changes to pinpointing bugs and streamlining code reviews, **Git Diff** proves to be an indispensable tool in any developer's arsenal.
 
 Now that you've gained a better understanding of **Git Diff**, it's time to put your knowledge into practice. Experiment with different arguments, explore advanced options, and discover how **Git Diff** can transform your development workflow.
 
