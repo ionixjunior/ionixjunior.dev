@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Diff: Descubra as Diferenças no Seu Código com Facilidade"
-date:   2024-05-29
+date:   2024-05-31
 translations: ["en"]
 tags: ["git"]
 ---
