@@ -78,6 +78,12 @@ In the next section, we'll delve into some handy **Git Diff** arguments that can
 
 These commands compares the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
 
+### "w" argument
+
+`git diff -w`
+
+Only shows changes to the actual content, ignoring whitespace changes. This is useful when you're focused on the logic of the code and don't care about formatting.
+
 ### "word-diff" argument
 
 `git diff --word-diff`

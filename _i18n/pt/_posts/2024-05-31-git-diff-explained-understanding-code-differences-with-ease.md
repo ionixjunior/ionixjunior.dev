@@ -78,6 +78,12 @@ O **Git Diff** oferece uma variedade de argumentos que podem ajustar sua saída 
 
 Esses comandos comparam as alterações que você preparou para seu próximo commit (usando `git add`) com o estado atual do seu diretório de trabalho. É incrivelmente útil para revisar suas alterações preparadas antes de fazer o commit, garantindo que você está fazendo commit apenas das modificações desejadas.
 
+### Argumento "w"
+
+`git diff -w`
+
+Mostra apenas as alterações no conteúdo real, ignorando alterações de espaço em branco. Isso é útil quando você está focado na lógica do código e não se importa com a formatação.
+
 ### Argumento "word-diff"
 
 `git diff --word-diff`
