@@ -76,7 +76,7 @@ In the next section, we'll delve into some handy **Git Diff** arguments that can
 
 `git diff --cached`
 
-These commands compares the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
+These commands compare the changes you've staged for your next commit (using git add) to the current state of your working directory. It's incredibly useful for reviewing your staged changes before committing, ensuring you're only committing the intended modifications.
 
 ### "w" argument
 
