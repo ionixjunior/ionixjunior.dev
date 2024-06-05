@@ -93,15 +93,15 @@ Git Bisect will then choose another commit based on your feedback and repeat the
 
 Git Bisect will continue this process of narrowing down the search space until it finds the commit that introduced the bug. It will display a message like “bisect: commit is first bad commit” to indicate the culprit commit.
 
-### 8. Resetting to the Culprit Commit
+### 8. Leaving Git Bisect
 
 You can use `git bisect reset` to return to your original branch and review the code for the problematic commit.
 
 ### 9. Fixing the Bug
 
-You can now fix the bug in the culprit commit and test your changes. I like so much this approach, because you don't need to look a lot of code and changes. Using Git Bisect you'll find the specific commit that introduces the bug. This is smarter because the chance you solve the root of the problem increases. 
+You can now fix the bug analyzing the culprit commit and test your changes. I like so much this approach, because you don't need to look a lot of code and changes. Using Git Bisect you'll find the specific commit that introduces the bug. This is smarter because the chance you solve the root of the problem increases. 
 
-Another interesting option using Git Bisect is to automate the test run. You can create a script and use it to run in every commit that Git checkout. This way you can automate and don't need to make manual tests to do this. This is a way to use the Git Bisect “Like a Pro”, and I won't talk about it in this post. If you want to know about it, tell me in the comments.
+Another interesting option using Git Bisect is to automate the test run. You can create a script and use it to run in every commit that Git checkout. This way you can automate and don't need to make manual tests to do this. This is a way to use the Git Bisect “Like a Pro”, but I won't talk about it in this post. If you want to know about it, tell me in the comments.
 
 ## Embrace Git Bisect for Faster Debugging
 
