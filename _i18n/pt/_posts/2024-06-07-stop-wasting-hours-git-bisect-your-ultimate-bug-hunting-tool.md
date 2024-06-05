@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Pare de Perder Tempo! Git Bisect: Sua Ferramenta Definitiva para Caçar Bugs"
-date:   2024-06-04
+date:   2024-06-07
 translations: ["en"]
 tags: ["git"]
 ---
