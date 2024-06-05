@@ -99,4 +99,18 @@ You can use `git bisect reset` to return to your original branch and review the 
 
 ### 9. Fixing the Bug
 
-You can now fix the bug in the culprit commit and test your changes. I like so much this approach, because you don't need to look a lot of code and changes. Using Git Bisect you'll find the specific commit that introduces the bug. This is smarter because the chance you solve the root of the problem increases.
+You can now fix the bug in the culprit commit and test your changes. I like so much this approach, because you don't need to look a lot of code and changes. Using Git Bisect you'll find the specific commit that introduces the bug. This is smarter because the chance you solve the root of the problem increases. 
+
+Another interesting option using Git Bisect is to automate the test run. You can create a script and use it to run in every commit that Git checkout. This way you can automate and don't need to make manual tests to do this. This is a way to use the Git Bisect “Like a Pro”, and I won't talk about it in this post. If you want to know about it, tell me in the comments.
+
+## Embrace Git Bisect for Faster Debugging
+
+In this post, we've explored the power of Git Bisect, a powerful tool for tracking down pesky bugs in your codebase. We learned that Git Bisect utilizes a binary search algorithm to efficiently narrow down the search space of commits, quickly identifying the one that introduced the bug.
+
+By understanding how Git Bisect works, you can significantly streamline your debugging workflow. Git Bisect not only saves you time and frustration but also helps you develop a deeper understanding of your codebase and its evolution. Also, I believe it's a safer way to fix things, because you're focused on the root of the problem, not on side effects.
+
+So, the next time you encounter a stubborn bug, don't hesitate to reach for Git Bisect. Embrace the power of this efficient tool to quickly identify the problem and get back to building amazing software. Try using Git Bisect in your next debugging session. Share your experiences and insights in the comments below. Let's make debugging a more efficient and enjoyable process for all developers!
+
+Remember, mastering Git Bisect is an investment that will pay off for years to come. So, go forth and debug with confidence!
+
+Happy coding!
