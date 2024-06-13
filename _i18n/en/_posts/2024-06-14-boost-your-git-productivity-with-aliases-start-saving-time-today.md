@@ -6,7 +6,7 @@ translations: ["pt"]
 tags: ["git"]
 ---
 
-<p class="intro"><span class="dropcap">T</span>ired of spending precious time typing out those long, repetitive Git commands? You're not alone. Git aliases offer a powerful solution to streamline your workflow and boost your productivity. Imagine effortlessly navigating your Git repository with shortcuts for common commands, saving time and reducing the risk of errors. This blog post will introduce you to the world of Git aliases, demystifying their functionality and demonstrating their immense power. We'll guide you through creating your own custom shortcuts, showcasing practical examples for common Git tasks like pushing, fetching, merging, and more. By the end, you'll be ready to embrace the efficiency and speed that Git aliases bring to your development process. Get ready to master Git and unleash your inner coding ninja!</p>
+<p class="intro"><span class="dropcap">T</span>ired of spending precious time typing out those long, repetitive Git commands? You're not alone. Git aliases offer a powerful solution to streamline your workflow and boost your productivity. Imagine effortlessly navigating your Git repository with shortcuts for common commands, saving time and reducing the risk of errors. This blog post will introduce you to the world of Git aliases, demystifying their functionality and demonstrating their immense power. We'll guide you through creating your own custom shortcuts, showcasing practical examples for common Git tasks like log, fetch, commit, and more. By the end, you'll be ready to embrace the efficiency and speed that Git aliases bring to your development process. Get ready to master Git and unleash your inner coding ninja!</p>
 
 ## What are Git Aliases?
 
@@ -34,13 +34,13 @@ git config --global alias.st status
 
 Now, whenever you type `git st` in your terminal, Git will execute `git status` behind the scenes.
 
-This was very simple, but you can create more complex commands, with a lot of parameters. Let me show you an example about the log command. I like so much to see the log on graph and in one line, so I've created an alias for this:
+This was very simple, but you can create more complex commands, with a lot of parameters. Let me show you an example about the "log" command. I like so much to see the log on graph and in one line, so I've created an alias for this:
 
 {%- highlight sh -%}
 git config --global alias.lg "log --oneline --graph"
 {%- endhighlight -%}
 
-This command is definitely a time saver! If you prefer, you can change your alias manually editing the `~/.gitconfig` file. Also, you can type `git config --list | grep alias` to see all alias you already configure in your machine.
+This alias is definitely a time saver! If you prefer, you can change your alias manually editing the `~/.gitconfig` file. Also, you can type `git config --list | grep alias` to see all alias you already configure in your machine.
 
 ## Aliases That I Use
 
@@ -57,7 +57,7 @@ Here's a collection of my favorite Git aliases that help streamline my workflow.
 
 - `alias.ci=commit`: Short for "commit," this alias streamlines the process of creating a new commit.
 - `alias.cia=commit --amend`: Use this for amending the last commit, adding changes or modifying the commit message.
-- `alias.cian=commit --amend --no-edit`: Similar to "cia" alias, but it skips the commit message editor, allowing you to quickly amend the commit without changes.
+- `alias.cian=commit --amend --no-edit`: Similar to "cia" alias, but it skips the commit message editor, allowing you to quickly amend the commit without message changes.
 
 ### Diffing & Comparing
 
@@ -79,7 +79,7 @@ Here's a collection of my favorite Git aliases that help streamline my workflow.
 ### Cherry-Picking and Fetching
 
 - `alias.cp=cherry-pick`: A shortcut for cherry-picking specific commits from other branches.
-- `alias.ft=fetch origin -p`: This fetches changes from the "origin" remote and automatically prunes any branches that have been deleted on the remote.
+- `alias.ft=fetch origin -p`: This fetches changes from the "origin" remote.
 
 ### Finding the Parent Branch
 
