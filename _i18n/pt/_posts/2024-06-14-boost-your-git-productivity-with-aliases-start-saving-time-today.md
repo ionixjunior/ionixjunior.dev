@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Aumente sua produtividade com Git Alias: Comece a economizar tempo hoje!"
+title:  "Aumente Sua Produtividade Com Git Alias: Comece a Economizar Tempo Hoje!"
 date:   2024-06-13
 translations: ["en"]
 tags: ["git"]
