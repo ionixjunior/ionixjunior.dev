@@ -36,9 +36,7 @@ The second stage of my career that I faced a change was in 2014 when I started a
 
 In 2019, I make a new move, and start as a Mobile Engineer. Despite I continue working with mobile development, there was something different: I started to work more close to the native Android and iOS APIs. I started to work all day with Xamarin Traditional approach. This may seem like nothing, but it was a big change for me. I felt I didn't have good knowledge enough to stay there. Sincerely, I knew that I had a good knowledge about software development, but not about mobile development, because I had working with Xamarin Forms for a long time. So, I needed to start to learn again. Tiring, isn't it? Well, but this time was different to me, because I was (and continue) in a good place, and it provides me to finally enjoy my learning path.
 
-TALK ABOUT THE IOS SOFTWARE ENGINEERING POSITION TRANSITION?
-
-I was determined to try something different. I didn't want to repeat the same cycle.
+I was determined to try something different in 2019. I didn't want to repeat the same cycle.
 
 ## Calm Down And Enjoy The Learning Path
 
@@ -66,7 +64,7 @@ You need to choose what path you need to follow, and understand what knowledge y
 
 ### 2. Where and how can I get this new knowledge?
 
-Today there's a lot of resources that you can use to learn about anything. YouTube's videos, blog posts, courses at LinkedIn Learn, Pluralsight, Udemy, Alura, BackFront Plus. I think this topic a little bit interesting, because I was born in 1987, and I grew without the new technologies that we use today. My first computer I won with 15 years old, and the internet was dial-up. Today we turn on our computers and smartphones, and all the time we're connected, with a lot of content on the palm of our hands. But even with a lot of content to consume, I think sometimes we don't know where to find good contents or where to start.
+Today there's a lot of resources that you can use to learn about anything. YouTube's videos, blog posts, courses at [LinkedIn Learning][linkedin_learning], [Pluralsight][pluralsight], [Udemy][udemy], [Alura][alura], [BackFront Plus][backfrontplus], or even free content on YouTube. I think this topic a little bit interesting, because I was born in 1987, and I grew without the new technologies that we use today. My first computer I won with 15 years old, and the internet was dial-up. Today we turn on our computers and smartphones, and all the time we're connected, with a lot of content on the palm of our hands. But even with a lot of content to consume, I think sometimes we don't know where to find good contents or where to start.
 
 ### 3. How much time I'll invest to achieve this?
 
@@ -74,19 +72,110 @@ Now you already know what knowledge you'll want to develop, where is the resourc
 
 ### Things to care about
 
-Focus means when you set a target and follow it. So, if you plan to study a lot of things, maybe you're starting wrong. I am telling this because is humanly impossible start learning many things at the same time, and you be productive in all of them. 
+Focus means when you set a target and follow it. So, if you plan to study a lot of things, maybe you're starting wrong, or won't achieve your plans properly. I am telling this because is humanly impossible start learning many things at the same time, and you be productive in all of them. There are some exceptions, but focus means start something and ensure to evolve it until finish. Think about it.
 
-WHAT WORKS FOR ME
-- Understand what is more important to move on
-- Understand that take time and practice
-- Understand we want to repeat
-- Understand we want to make mistakes
+## Sharing Experiences
 
-IN PRACTICE
-- Share real use cases that I've applied, and I'm doing right now
-- Tips for getting organized
-- roadmap.sh
+I've dedicated this session to share my last experiences. Maybe something can help you to clear the learning path.
 
+### Experience 1: Start Working With iOS And Android Native APIs
 
-CONCLUSION
-- Resume of all and try to call people to share insights
+As I said previously, in 2019 I started as a Mobile Engineer to work with Xamarin Traditional, more closely to iOS and Android native APIs. This was a great challenge to me, because I was used to working only with Xamarin Forms. At that time, Xamarin Forms was very evolved, and each new application didn't need a lot of custom renderers to work property anymore. This means that the native knowledge it wasn't so necessary, and developers could focus on share code most part of time.
+
+Well, my scenario changed, and I needed a plan to study. I knew I needed to study a lot of things, but I tried to answer the three questions.
+
+#### 1. What knowledge I need to develop to make myself confident and allow me to move on?
+
+This is very strange, but for me, to feel comfortable, I didn't need much:
+
+- Master how to create screen with dynamic lists (images, text, buttons).
+- Master how to navigate between screens.
+- Master how to communicate between screens.
+
+Very simple, right? Yeah, simple, but I needed to master these things to feel more comfortable on my new job. I knew all the concepts, but I didn't work with this until that moment. There's a big difference when you only learn about something than you really understand about it. All of this knowledge I needed to evolve in both platforms, but more on iOS.
+
+#### 2. Where and how can I get this new knowledge?
+
+Well, I don't remember exactly where I study, but I remember to looking for courses at Udemy, Pluralsight and a some contents on YouTube. All very practical training. On Pluralsight I remember to do the following courses:
+
+- [Swift Fundamentals][ps_swift]
+- [iOS 11 Fundamentals][ps_ios]
+- [iOS Collection Views: Getting Started][ps_collectionview]
+- [iOS Data Persistence: The Big Picture][ps_data]
+- [iOS Networking with REST APIs][ps_netwworking]
+- [iOS Auto Layout Fundamentals][ps_autolayout] - 36%
+- [Developing Android Applications with Kotlin: Getting Started][ps_android]
+- [Android Apps with Kotlin: Tools and Testing][ps_android_tests]
+- [Android Apps with Kotlin: RecyclerView and Navigation Drawer][ps_android_rv] - 67%
+
+#### 3. How much time I'll invest to achieve this?
+
+I usually dedicate many hours to studying. This is how works to me. When I face a new challenge, I like to deep dive into it. I have the privilege of being able to find time for this. My wife support me and helps me a lot. I usually dedicate between one and two hours a day, including weekends, because my wife loves to wake up late, and I wake up early to study more time when we stay home.
+
+I hope to see progress in about a year, and this comes. Over time, the tasks became easier. This was sign to me that I am achieving my objective. I continue studying and evolving, but with less pressure on myself.
+
+These basics staff helps me to continue growing on my position. Maybe you're thinking: why do you study iOS and Android native approach with Swift and Kotlin instead of C# with Xamarin? Well, I believe if you master the native development and understand how each platform works, you will reduce the doubt when you're facing problems on mobile development with Xamarin. Something goes wrong? What's wrong? Is Xamarin or is iOS / Android? Understand the core concepts in the native language helps me a lot of times to not blame Xamarin when I face problems. I've seen it sometimes occurs with people blaming Xamarin Forms, but the real problem are on the platforms.
+
+### Experience 2: Start To Focus On Master iOS Development With Swift
+
+Last year I wrote about it, and you can find this post [here][csharp_to_swift]. So, here I am thinking about the questions again.
+
+#### 1. What knowledge I need to develop to make myself confident and allow me to move on?
+
+Over the last few years working with Xamarin Traditional, I've learned a lot about iOS, but now I have some specific necessities to feel comfortable to be an iOS Engineer in the future. For example:
+
+- Master about closures in Swift
+- Master about View Code
+- Master about SwiftUI
+- Master about memory management
+- Master about parallelism and concurrency
+
+#### 2. Where and how can I get this new knowledge?
+
+For my surprise, I found a lot of content on LinkedIn Learning, but I've started this journey using the [BackFront Plus][backfrontplus]. They have a great paid content, and the videos about iOS development are fantastic, very well explained. If you have opportunity, I really recommend it to you. 
+
+Also, I like content of [Paul Hudson][hawkingwithswift]. He has a lot of free great content. The same is for [Sean Allen][sean_allen], and [CodeWithChris][code_with_chris].
+
+Another interesting think that I'm trying now is to practice in a real project. I like so much to create a project from scratch, and test concepts on it. But there's a problem: when you're in a “hello world” project, learning tends to be somewhat limited. So I decided to practice trying to contribute in a real open-source project. I've share about it in [this post][open_source_post].
+
+#### 3. How much time I'll invest to achieve this?
+
+Today I'm investing at least one hour from Monday to Friday, and some hours on Saturday. My intention here is to study and practice until I feel confident to contribute in open-source projects. 
+
+Confident is subjective, right? Well, I like to feel that I haven't a big difficult to understand and create some solution. That's it.
+
+## Need Tips To Find Where Or What To Study?
+
+There's a site called [roadmap.sh][roadmap_sh], that is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up a path and guide their learnings. Check this out!
+
+Another great resource is [a study guide for software development with Swift][study_guide_ios]. I didn't finish it, but I found great content there.
+
+## What Will You Learn Now?
+
+The path to mastery in tech is a journey, not a destination. It's about finding the right balance between learning and practicing, focusing on what matters most to you, and understanding that you don't need to know everything to make progress.
+
+Embrace the power of patience and persistence — it's your key to conquering the ever-evolving tech landscape. Start by identifying what you want to learn, find the resources that suit your learning style, and dedicate the time you can to reach your goals. 
+
+Don't be afraid to make mistakes, learn from them, and keep moving forward. Remember, every new skill you acquire adds value to your career and empowers you to build incredible things. So, take that first step, stay curious, and enjoy the learning journey!
+
+[linkedin_learning]: https://www.linkedin.com/learning/
+[pluralsight]:       https://www.pluralsight.com
+[udemy]:             https://www.udemy.com
+[alura]:             https://www.alura.com.br
+[backfrontplus]:     https://backfront.com.br/backfront-plus
+[ps_collectionview]: https://app.pluralsight.com/library/courses/ios-collection-views-getting-started/table-of-contents
+[ps_data]:           https://app.pluralsight.com/library/courses/ios-data-persistence-big-picture/table-of-contents
+[ps_netwworking]:    https://app.pluralsight.com/library/courses/ios-networking-rest-apis/table-of-contents
+[ps_swift]:          https://app.pluralsight.com/library/courses/swift3-fundamentals/table-of-contents
+[ps_ios]:            https://app.pluralsight.com/library/courses/ios-11-fundamentals/table-of-contents
+[ps_android]:        https://app.pluralsight.com/library/courses/android-apps-kotlin-build-first-app/table-of-contents
+[ps_android_tests]:  https://app.pluralsight.com/library/courses/android-apps-kotlin-tools-testing/table-of-contents
+[ps_android_rv]:     https://app.pluralsight.com/library/courses/android-apps-kotlin-recyclerview-navigation-drawer/table-of-contents
+[ps_autolayout]:     https://app.pluralsight.com/library/courses/ios-auto-layout-fundamentals/table-of-contents
+[study_guide_ios]:   https://medium.com/@ronanrodrigo/follow-this-path-a-study-guide-for-software-development-with-swift-180ba093a752
+[roadmap_sh]:        https://roadmap.sh
+[csharp_to_swift]:   /{{ site.lang }}/my-journey-in-mobile-development-from-csharp-to-swift/
+[hawkingwithswift]:  https://www.hackingwithswift.com
+[sean_allen]:        https://www.youtube.com/@seanallen
+[code_with_chris]:   https://www.youtube.com/@CodeWithChris
+[open_source_post]:  /{{ site.lang }}/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects/
