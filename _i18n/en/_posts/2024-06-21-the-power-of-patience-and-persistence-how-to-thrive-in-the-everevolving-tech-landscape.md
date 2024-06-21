@@ -128,7 +128,7 @@ Over the last few years working with Xamarin Traditional, I've learned a lot abo
 - Master parallelism and concurrency
 - Master closures in Swift
 - Master View Code
-- Learn how to build the same things in SwiftUI that I know how to build with UIKit.
+- Learn how to build the same things in SwiftUI that I know how to build with UIKit
 
 #### 2. Where and how can I get this new knowledge?
 
