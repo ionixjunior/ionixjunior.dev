@@ -124,11 +124,11 @@ Last year I wrote about it, and you can find this post [here][csharp_to_swift]. 
 
 Over the last few years working with Xamarin Traditional, I've learned a lot about iOS, but now I have some specific necessities to feel comfortable to be an iOS Engineer in the future. For example:
 
-- Master closures in Swift
-- Master View Code
-- Master SwiftUI
 - Master memory management
 - Master parallelism and concurrency
+- Master closures in Swift
+- Master View Code
+- Learn how to build the same things in SwiftUI that I know how to build with UIKit.
 
 #### 2. Where and how can I get this new knowledge?
 

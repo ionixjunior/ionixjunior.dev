@@ -124,11 +124,11 @@ No ano passado escrevi sobre isso, e você pode encontrar essa postagem [aqui][c
 
 Nos últimos anos trabalhando com Xamarin Traditional, aprendi muito sobre iOS, mas agora tenho algumas necessidades específicas para me sentir confortável para ser um Engenheiro iOS no futuro. Por exemplo:
 
-- Dominar closures em Swift
-- Dominar View Code
-- Dominar SwiftUI
 - Dominar gerenciamento de memória
 - Dominar paralelismo e concorrência
+- Dominar closures em Swift
+- Dominar View Code
+- Replicar em SwiftUI o que já sei fazer usando UIKit
 
 #### 2. Onde e como posso obter esse novo conhecimento?
 
