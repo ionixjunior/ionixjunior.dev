@@ -22,7 +22,7 @@ I believe not, and I'll try to explain my point of view.
 
 When we want to learn something or want to achieve an objective, we create expectations. We want to change, to make a career transition, to learn a new technology or just to start in the field. Sometimes we know what we want, but we don't know how to achieve this. So, in this case, it's very common to immerse yourself in studying everything you come across. Do you want to achieve your objective, right? How much time do you believe you'll need to get it? Three or six months? One year? And what's your plan B? Do you have one? It's not difficult to start trying to learn all the things, but if you don't have a clear path, you can get only anxiety and fear. 
 
-This usually happens when you're trying to bite off more than you can chew. Learning a lot of things doesn't mean knowing these things. You need to practice, and you need time to develop the new abilities. This can cause anxiety, because if you don't have a clear path, you can see there's a lot of new things to learn. You start learning just one new thing, and you discover there are five or ten new concepts to look for. That's okay! You're not alone. If you don't have a clear path to focus on what's more important, you can feel a little anxious, because you won't stop to look for new content. All you'll see isn't enough, and you won't enjoy your journey. This is terrible.
+This usually happens when you try to learn too much at once. Learning a lot of things doesn't mean knowing these things. You need to practice, and you need time to develop the new abilities. This can cause anxiety, because if you don't have a clear path, you can see there's a lot of new things to learn. You start learning just one new thing, and you discover there are five or ten new concepts to look for. That's okay! You're not alone. If you don't have a clear path to focus on what's more important, you can feel a little anxious, because you won't stop to look for new content. All you'll see isn't enough, and you won't enjoy your journey. This is terrible.
 
 It can cause fear too. If you understand that there's always a lot of things to learn, and you don't feel confident with your knowledge, how can you work properly if you're always concerned about your own knowledge?
 
@@ -80,7 +80,7 @@ I've dedicated this session to share my last experiences. Maybe something can he
 
 ### Experience 1: Start Working With iOS And Android Native APIs
 
-As I said previously, in 2019 I started as a Mobile Engineer to work with Xamarin Traditional, more closely to iOS and Android native APIs. This was a great challenge for me, because I was used to working only with Xamarin Forms. At that time, Xamarin Forms was very evolved, and each new application didn't need a lot of custom renderers to work properly anymore. This means that native knowledge wasn't so necessary, and developers could focus on sharing code most of the time.
+As I said previously, in 2019 I started as a Mobile Engineer to work with Xamarin Traditional, more closely to iOS and Android native APIs. This was a great challenge for me, because I was used to working only with Xamarin Forms. At that time, Xamarin Forms was very evolved, and each new application didn't need a lot of custom renderers to work properly anymore.  This meant that native knowledge was less crucial, allowing developers to focus on sharing code for most of their work.
 
 Well, my scenario changed, and I needed a plan to study. I knew I needed to study a lot of things, but I tried to answer the three questions.
 
@@ -114,7 +114,7 @@ I usually dedicate many hours to studying. This is how it works for me. When I f
 
 I hoped to see progress in about a year, and it came. Over time, the tasks became easier. This was a sign to me that I was achieving my objective. I continue studying and evolving, but with less pressure on myself.
 
-This basic knowledge helps me to continue growing in my position. Maybe you're thinking: why do you study iOS and Android native approaches with Swift and Kotlin instead of C# with Xamarin? Well, I believe if you master native development and understand how each platform works, you will reduce doubt when you're facing problems on mobile development with Xamarin. Something goes wrong? What's wrong? Is it Xamarin or is it iOS / Android? Understanding the core concepts in the native language helps me many times to not blame Xamarin when I face problems. I've seen it sometimes occur with people blaming Xamarin Forms, but the real problem is on the platforms.
+This basic knowledge helps me to continue growing in my position. Maybe you're thinking: why do you study iOS and Android native approaches with Swift and Kotlin instead of C# with Xamarin? Well, I believe if you master native development and understand how each platform works, you will reduce doubt when you're facing problems on mobile development with Xamarin. Something goes wrong? What's wrong? Is it Xamarin or is it iOS / Android? Understanding the core concepts in the native language helps me many times to not blame Xamarin when I face problems. I've seen this happen when people blame Xamarin Forms, but the real problem lies within the platforms themselves.
 
 ### Experience 2: Start To Focus On Mastering iOS Development With Swift
 
@@ -142,7 +142,7 @@ Another interesting thing that I'm trying now is to practice in a real project. 
 
 Today, I'm investing at least one hour from Monday to Friday, and some hours on Saturday. My intention here is to study and practice until I feel confident to contribute to open-source projects. 
 
-Confident is subjective, right? Well, I like to feel that I don't have a big difficulty understanding and creating some solutions. That's it.
+Confident is subjective, right? Well, I like to feel confident that I can understand and create solutions without too much difficulty. That's it.
 
 ## Need Tips To Find Where Or What To Study?
 
