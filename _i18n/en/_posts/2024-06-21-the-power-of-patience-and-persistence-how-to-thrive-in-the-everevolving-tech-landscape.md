@@ -24,8 +24,6 @@ This usually happens when you try to learn too much at once. Learning a lot of t
 
 It can cause fear too. If you understand that there's always a lot of things to learn, and you don't feel confident with your knowledge, how can you work properly if you're always concerned about your own knowledge?
 
-So, “learn fast and all the things, but understand nothing”. That's a common behavior that I can see in many people. If you're facing this, don't worry. Let's talk about it and help each other.
-
 ## You Can Learn With Your Mistakes
 
 I've already faced this situation in different stages of my career. The first one in 2008 when I started in the field as a Web Developer. In that year, I was almost a Webmaster, because I needed to learn about web applications, databases, manage Linux servers, and all the things that an IT guy does — including fixing printers. At the beginning of my career, I didn't have a clear path to follow, I just learned a lot of things, fast, and practiced a lot. I learned a lot practicing, and I worked all the time. It was very tiring, but I evolved a lot.
@@ -62,7 +60,9 @@ You need to choose what path you want to follow, and understand what knowledge y
 
 ### 2. Where and how can I get this new knowledge?
 
-Today there are a lot of resources that you can use to learn about anything. YouTube videos, blog posts, courses at [LinkedIn Learning][linkedin_learning], [Pluralsight][pluralsight], [Udemy][udemy], [Alura][alura], [BackFront Plus][backfrontplus], or even free content on YouTube. I think this topic is a little bit interesting, because I was born in 1987, and I grew up without the new technologies that we use today. My first computer I won when I was 15 years old, and the internet was dial-up. Today, we turn on our computers and smartphones, and all the time we're connected, with a lot of content on the palm of our hands. But even with a lot of content to consume, I think sometimes we don't know where to find good content or where to start. So, the most important is: just start. It's better than do nothing.
+Today there are a lot of resources that you can use to learn about anything. YouTube videos, blog posts, courses at [LinkedIn Learning][linkedin_learning], [Pluralsight][pluralsight], [Udemy][udemy], [Alura][alura], [BackFront Plus][backfrontplus], or even free content on YouTube. 
+
+I think this topic is a little bit interesting, because I was born in 1987, and I grew up without the new technologies that we use today. My first computer I won when I was 15 years old, and the internet was dial-up. Today, we turn on our computers and smartphones, and all the time we're connected, with a lot of content on the palm of our hands. But even with a lot of content to consume, I think sometimes we don't know where to find good content or where to start. So, the most important is: just start. It's better than do nothing.
 
 ### 3. How much time will I invest to achieve this?
 
@@ -80,7 +80,7 @@ I've dedicated this session to share my last experiences. Maybe something can he
 
 ### Experience 1: Start Working With iOS And Android Native APIs
 
-As I said previously, in 2019 I started as a Mobile Engineer to work with Xamarin Traditional, more closely to iOS and Android native APIs. This was a great challenge for me, because I was used to working only with Xamarin Forms. At that time, Xamarin Forms was very evolved, and each new application didn't need a lot of custom renderers to work properly anymore.  This meant that native knowledge was less crucial, allowing developers to focus on sharing code for most of their work.
+As I said previously, in 2019 I started as a Mobile Engineer to work with Xamarin Traditional, more closely to iOS and Android native APIs. This was a great challenge for me, because I was used to working only with Xamarin Forms. At that time, Xamarin Forms was very evolved, and each new application didn't need a lot of custom renderers to work properly anymore.  This meant that native knowledge was less crucial, allowing developers to focus on the shared code for most of their work.
 
 Well, my scenario changed, and I needed a plan to study. I knew I needed to study a lot of things, and I tried to answer the three questions.
 
@@ -114,7 +114,7 @@ I usually dedicate many hours to studying. This is how it works for me. When I f
 
 I hoped to see progress in about a year, and it came. Over time, the tasks became easier. This was a sign to me that I was achieving my objective. I continue studying and evolving, but with less pressure on myself.
 
-This basic knowledge helps me to continue growing in my position. Maybe you're thinking: why do you study iOS and Android native approaches with Swift and Kotlin instead of C# with Xamarin? Well, I believe if you master native development and understand how each platform works, you will reduce doubt when you're facing problems on mobile development with Xamarin. Something goes wrong? What's wrong? Is it Xamarin or is it iOS / Android? Understanding the core concepts in the native language helps me many times to not blame Xamarin when I faced problems. I've seen this sometimes happen when people blamed Xamarin Forms, but the real problem lied within the platforms themselves.
+This basic knowledge helped me to continue growing in my position. Maybe you're thinking: why did you study iOS and Android native approaches with Swift and Kotlin instead of C# with Xamarin? Well, I believe if you master native development and understand how each platform works, you will reduce doubt when you're facing problems on mobile development with Xamarin. Something goes wrong? What's wrong? Is it Xamarin or is it iOS / Android? Understanding the core concepts in the native language helps me many times to not blame Xamarin when I faced problems. I've seen this sometimes happen when people blamed Xamarin Forms, but the real problem lied within the platforms themselves.
 
 ### Experience 2: Start To Focus On Mastering iOS Development With Swift
 
@@ -142,7 +142,7 @@ Another interesting thing that I'm trying now is to practice in a real project. 
 
 Today, I'm investing at least one hour from Monday to Friday, and some hours on Saturday. My intention here is to study and practice until I feel confident to contribute to open-source projects. 
 
-Confident is subjective, right? Well, I like to feel confident that I can understand and create solutions without too much difficulty. That's it.
+To be confident is subjective, right? Well, in my context, feel confident means contribute and create solutions without too much difficulty. That's it.
 
 ## Need Tips To Find Where Or What To Study?
 
