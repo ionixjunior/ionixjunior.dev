@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Meus 100 Dias de Swift: Projetos Incríveis e o que Aprendi"
-date:   2024-06-26
+date:   2024-06-28
 translations: ["en"]
 tags: ["swift"]
 ---
