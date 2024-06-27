@@ -48,7 +48,7 @@ After mastering Swift basics, I began working on iOS projects, which opened a wo
 
 ### Environment Overrides
 
-Xcode provides an option called "environment overrides." Basically, you can change configuration settings like appearance, text, and accessibility to test your app in different scenarios. It's incredibly easy to check your app in various environments.
+Xcode provides an option called "environment overrides." Basically, you can change settings like appearance, text, and accessibility to test your app in different scenarios. It's incredibly easy to check your app in various environments.
 
 <video controls aria-labelledby="Xcode Environment Overrides" aria-describedby="The video shows Xcode and iOS Simulator side by side. The app is running, and there is a button at the bottom of Xcode's toolbar that reveals the environment overrides tool. When you change the configuration, you see the changes directly in the running app.">
     <source src="/assets/videos/xcode_environment_overrides.mp4" type="video/mp4">
@@ -91,7 +91,7 @@ I also created a simple memory game. To test it, I developed UI tests to verify 
     Your browser does not support video playback.
 </video>
 
-## 100 Days of Practice - A Great Evolution
+## 100 Days of Practice == A Great Evolution
 
 Some chapters of this training were repetitive, but they served a purpose: solidifying knowledge. Before embarking on this journey, I felt the need to continuously develop something every day, to learn and practice consistently. The 100 Days of Swift challenge provided the perfect framework for this goal and introduced me to excellent content.
 
