@@ -73,11 +73,11 @@ This is a very helpful feature. Xcode alerted me when I performed expensive oper
 	<figcaption>Xcode showing an unresponsiveness UI warning in a content loaded from a URL.</figcaption>
 </figure>
 
-### River Ride - A Tiny Version
+### River Raid - A Tiny Version
 
-In addition to UIKit, I also explored a bit of SpriteKit. This was not a challenge from Paul Hudson training, but some lessons that I've developed helped me to built it. I've made just for fun. I had an Atari, so I've played River Ride a lot!
+In addition to UIKit, I also explored a bit of SpriteKit. This was not a challenge from Paul Hudson training, but some lessons that I've developed helped me to built it. I've made just for fun. I had an Atari, so I've played River Raid a lot!
 
-<video controls aria-labelledby="River Ride Little made with SpriteKit" aria-describedby="The video shows Xcode and iOS Simulator side by side. The app was made using SpriteKit and is a small version of the River Ride game.">
+<video controls aria-labelledby="River Raid Little made with SpriteKit" aria-describedby="The video shows Xcode and iOS Simulator side by side. The app was made using SpriteKit and is a small version of the River Raid game.">
     <source src="/assets/videos/river_rider_little_made_by_spritekit.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>

@@ -73,11 +73,11 @@ Esta é uma funcionalidade muito útil. O Xcode me alertou quando executei opera
 	<figcaption>Xcode mostrando um aviso de UI sem resposta em um conteúdo carregado de uma URL.</figcaption>
 </figure>
 
-### River Ride - Uma Versão Bem Simples
+### River Raid - Uma Versão Bem Simples
 
-Além do UIKit, também explorei um pouco do SpriteKit. Este não foi um desafio do treinamento do Paul Hudson, mas algumas lições que desenvolvi me ajudaram a construí-lo. Fiz apenas por diversão. Quando criança, eu tinha um Atari, então, joguei muito River Ride. Bateu uma saudade!
+Além do UIKit, também explorei um pouco do SpriteKit. Este não foi um desafio do treinamento do Paul Hudson, mas algumas lições que desenvolvi me ajudaram a construí-lo. Fiz apenas por diversão. Quando criança, eu tinha um Atari, então, joguei muito River Raid. Bateu uma saudade!
 
-<video controls aria-labelledby="River Ride versão simples, feito com SpriteKit" aria-describedby="O vídeo mostra o Xcode e o Simulador iOS lado a lado. O aplicativo foi feito usando SpriteKit e é uma versão simples do jogo River Ride do Atari.">
+<video controls aria-labelledby="River Raid versão simples, feito com SpriteKit" aria-describedby="O vídeo mostra o Xcode e o Simulador iOS lado a lado. O aplicativo foi feito usando SpriteKit e é uma versão simples do jogo River Raid do Atari.">
     <source src="/assets/videos/river_rider_little_made_by_spritekit.mp4" type="video/mp4">
     Seu navegador não suporta reprodução de vídeo.
 </video>
