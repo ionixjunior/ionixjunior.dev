@@ -2,7 +2,7 @@
 layout: post
 title:  "Swift Essentials: Variables, Data Types, and More (Part 1)"
 date:   2024-07-04
-translations: ["en"]
+translations: ["pt"]
 tags: ["100DaysOfSwiftUI"]
 ---
 
@@ -122,9 +122,9 @@ So far, we've explored data types for individual values: strings, numbers, boole
 Arrays are ordered lists of elements of the same data type. Think of them as numbered boxes where you can store a collection of related items. You access elements in an array by their index, starting from zero.
 
 {%- highlight swift -%}
-let cities = ["Barcelona", "London", "Brazil"]
+let cities = ["Barcelona", "London", "São Paulo"]
 print(cities[0]) // Output: Barcelona (first element)
-print(cities[2]) // Output: Brazil (third element)
+print(cities[2]) // Output: São Paulo (third element)
 {%- endhighlight -%}
 
 Arrays are useful when you need an ordered list of elements of the same type.
@@ -215,7 +215,7 @@ print(isAdmin) // Output: true
 
 ### Dictionary Default
 
-As you can see in the dictionary example, when we access the key, we get an optional. This occurs because Swift can't ensure that there is a value in that key. Because of this, Swift gives us an optional. You can handle this using a property called `default`. This way you don't get an optional, and your code won't break if you handle the optional properly.
+As you can see in the dictionary example, when we access the key, we get an optional. This occurs because Swift can't ensure that there is a value in that key. Because of this, Swift gives us an optional. You can handle this using a property called `default`. This way you don't get an optional, and your code won't break if you handle the optional without careful.
 
 {%- highlight swift -%}
 let userData = ["name": "Laura", "surname": "Smith", "city": "London"]
@@ -226,7 +226,7 @@ print(userData["nickname", default: "Unknown"]) // Output: Unknown
 
 ## Conclusion
 
-We've covered a lot of ground in this first part of "100DaysOfSwiftUI"! We've explored variables, constants, data types, string interpolation, and enums. These concepts are essential for understanding how data is stored, manipulated, and used in your code.
+We've covered a lot of ground in this first part of "100DaysOfSwiftUI"! We've explored variables, constants, data types, string interpolation, enums, and some collection types. These concepts are essential for understanding how data is stored, manipulated, and used in your code.
 
 Understanding these fundamentals is like having a solid foundation upon which you can build more complex structures in your SwiftUI journey. Imagine them as the bricks and mortar that make up the walls of your iOS apps.
 
