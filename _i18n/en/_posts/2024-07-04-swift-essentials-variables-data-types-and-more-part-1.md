@@ -6,7 +6,7 @@ translations: ["en"]
 tags: ["100DaysOfSwiftUI"]
 ---
 
-<p class="intro"><span class="dropcap">I</span>'m diving headfirst into the "100 Days of SwiftUI" challenge by Paul Hudson, and I'm thrilled to be on this journey of discovery. But before I can create dazzling iOS apps, I know that building a strong foundation in Swift is crucial. This blog series that I'm calling it "100DaysOfSwiftUI," is my way of sharing my learning journey with you, especially those who are new to Swift. We'll explore the fundamental building blocks of this powerful language together. In this first part, we'll tackle the core concepts of variables, data types, string interpolation, and enums. These seemingly simple elements are the pillars upon which we'll build more complex and powerful applications in SwiftUI. So buckle up, grab your coffee or prefered drink, and let's embark on this journey together! We'll cover the basics in a clear and engaging way, and by the end, you'll have a solid grasp of the foundational concepts that will empower you to start crafting your own iOS apps.</p>
+<p class="intro"><span class="dropcap">I</span>'m diving headfirst into the "100 Days of SwiftUI" challenge by Paul Hudson, and I'm thrilled to be on this journey of discovery. But before I can create dazzling iOS apps, I know that building a strong foundation in Swift is crucial. This blog series, which I'm calling "100DaysOfSwiftUI," is my way of sharing my learning journey with you, especially those who are new to Swift. We'll explore the fundamental building blocks of this powerful language together. In this first part, we'll tackle the core concepts of variables, data types, string interpolation, and enums. These seemingly simple elements are the pillars upon which we'll build more complex and powerful applications in SwiftUI. So buckle up, grab your coffee (or your preferred drink!), and let's embark on this journey together! We'll cover the basics in a clear and engaging way, and by the end, you'll have a solid grasp of the foundational concepts that will empower you to start crafting your own iOS apps.</p>
 
 If you don't know about the [100 Days of SwiftUI][100_days_of_swiftui], please check out this link.
 
@@ -38,17 +38,17 @@ Constants are like sealed containers. Once you define a constant, its value cann
 let name = "Laura"
 {%- endhighlight -%}
 
-This sets `name` to the value `Laura`, and we cannot assign a different value to it later.
+This sets `name` to the value "Laura", and we cannot assign a different value to it later.
 
-Constants are good to prevent accidental changes to important values, ensuring data integrity. Also, constants make your code cleaver and more predictable, as the values they hold are fixed. 
+Constants are good for preventing accidental changes to important values, ensuring data integrity. They also make your code clearer and more predictable, as the values they hold are fixed.
 
-So, consider this to know how to use in your code.
+So, consider this when deciding how to use variables and constants in your code.
 
 ## Data Types: Defining the Nature of Data
 
 In programming, we need a way to categorize the kinds of data our variables and constants can hold. These categories are called **data types**.
 
-Think of data types as defining the "nature" or "essence" of the data. It tells Swift how to interpret and manipulate the information. Here are some essential data types in Swift:
+Think of data types as defining the "nature" or "essence" of the data. They tell Swift how to interpret and manipulate the information. Here are some essential data types in Swift:
 
 ### String: For Textual Data
 
@@ -74,7 +74,7 @@ In Swift, we have three primary data types for representing numbers with decimal
 
 #### Float: Lower Precision, Smaller Range
 
-`Float` uses 32 bits of memory to store its value, offering a smaller range of values and less precision than Double. It's generally used when memory efficiency is a priority and lower precision is acceptable.
+`Float` uses 32 bits of memory to store its value, offering a smaller range of values and less precision than `Double`. It's generally used when memory efficiency is a priority and lower precision is acceptable.
 
 {%- highlight swift -%}
 let floatNumber: Float = 0.00001 
@@ -82,7 +82,7 @@ let floatNumber: Float = 0.00001
 
 #### Double: High Precision, Large Range
 
-`Double` is the most common choice for representing floating-point numbers in Swift. It provides a high degree of precision, making it suitable for calculations requiring a wide range of values. `Double` uses 64 bits of memory to store its value, the "Double" of the `Float`.
+`Double` is the most common choice for representing floating-point numbers in Swift. It provides a high degree of precision, making it suitable for calculations requiring a wide range of values. `Double` uses 64 bits of memory to store its value, which is twice the size of `Float`.
 
 {%- highlight swift -%}
 let doubleNumber: Double = 0.00001
@@ -90,17 +90,19 @@ let doubleNumber: Double = 0.00001
 
 #### Decimal: High Precision, Financial Calculations
 
-`Decimal` is specialized for handling financial calculations where accuracy is paramount. It offers a high degree of precision, especially for numbers with a large number of decimal places. However, it is less computationally efficient than `Double` or `Float  due to its focus on accuracy. `Decimal` is a base-10 number representation that provides high precision, so you can store a lot of numbers.
+`Decimal` is specialized for handling financial calculations where accuracy is paramount. It offers a high degree of precision, especially for numbers with a large number of decimal places. However, it is less computationally efficient than `Double` or `Float` due to its focus on accuracy. `Decimal` is a base-10 number representation that provides high precision, allowing you to store a lot of numbers.
+
+To create a `Decimal` value, you can use the following syntax:
 
 {%- highlight swift -%}
 let decimalNumber: Decimal = 0.00001
 {%- endhighlight -%}
 
-#### The assigned numbers are the same, what changed?
+#### Type Annotations
 
-As you can see in the samples above, there is only one keyword that changed in these examples: the type. Here the type define what kind of numeric value you'll store. This is called "type annotations", and you can do it for all data types or structures. 
+As you can see in the samples above, there's only one keyword that changed in these examples: the type. Here, the type defines what kind of numeric value you'll store. This is called "type annotations," and you can use it for all data types or structures. 
 
-You can just create a numeric value just create a variable and assign a value, but it will be created as a `Double` type.
+You can create a numeric value simply by creating a variable and assigning a value, but it will be created as a `Double` type by default.
 
 ### Bool: For Logical Values
 
@@ -173,13 +175,13 @@ var orderStatus = OrderStatus.pending
 print(orderStatus) // Output: OrderStatus.pending
 {%- endhighlight -%}
 
-Enums improve readability. They make your code more self-documenting and easier to understand. Also, they are type safety, because they preventing you from accidentally assigning incorrect values.
+Enums improve readability. They make your code more self-documenting and easier to understand. They also enforce type safety, preventing you from accidentally assigning incorrect values.
 
-## Cools things
+## Cool Things
 
-### String interpolation
+### String Interpolation
 
-An easy way to concatenate strings without to use "+" is using interpolation:
+An easy way to concatenate strings without using "+" is using interpolation:
 
 {%- highlight swift -%}
 let name = "Laura"
@@ -187,9 +189,9 @@ let surname = "Smith"
 print("The name of the winner is \(name) \(surname)!")
 {%- endhighlight -%}
 
-### Multi-line strings
+### Multi-line Strings
 
-Sometimes we need to create a multi-line string, and this is very easy in Swift. You just to use triple quotes and write your string inside it. You just need to ensure that triple quotes is declared in a different line from the string.
+Sometimes we need to create a multi-line string, and this is very easy in Swift. You just use triple quotes and write your string inside them. Just ensure that the triple quotes are declared on a different line from the string.
 
 {%- highlight swift -%}
 var multilineMessage = """
@@ -199,9 +201,9 @@ Don't worry about it!
 """
 {%- endhighlight -%}
 
-### Bools and toggle function
+### Bools and the Toggle Function
 
-When you create a variable, you can change it value later. So, we can create a bool value and change it using the `toggle` function.
+When you create a variable, you can change its value later. So, we can create a bool value and change it using the `toggle` function.
 
 {%- highlight swift -%}
 var isAdmin = false
@@ -211,9 +213,9 @@ isAdmin.toggle()
 print(isAdmin) // Output: true
 {%- endhighlight -%}
 
-### Dictionary default
+### Dictionary Default
 
-As you can see in the dictionary example, when we access the key, we get an optional. This occurs because Swift can't ensure that there is a value in that key. Because of this, Swift give us an optional. You can handle this using a property called `default`. This way you don't get an optional and your code won't break if you care about the optional properly.
+As you can see in the dictionary example, when we access the key, we get an optional. This occurs because Swift can't ensure that there is a value in that key. Because of this, Swift gives us an optional. You can handle this using a property called `default`. This way you don't get an optional, and your code won't break if you handle the optional properly.
 
 {%- highlight swift -%}
 let userData = ["name": "Laura", "surname": "Smith", "city": "London"]
