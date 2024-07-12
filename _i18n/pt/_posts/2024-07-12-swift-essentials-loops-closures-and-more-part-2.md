@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Swift Essentials: Loops, Closures e Mais (Parte 2)"
-date:   2024-07-11
+date:   2024-07-12
 translations: ["en"]
 tags: ["100DaysOfSwiftUI"]
 ---
