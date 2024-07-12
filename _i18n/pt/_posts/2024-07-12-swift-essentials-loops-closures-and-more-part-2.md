@@ -347,7 +347,17 @@ let greet = {
 greet() // Output: Olá, mundo!
 ```
 
-Atribuímos esse closure a uma constante chamada `greet`. Para executar o closure, chamamos ele como uma função.
+Atribuímos esse closure a uma constante chamada `greet`. Para executar o closure, chamamos ele como uma função. Se você pensar sobre o tipo desse closure, ele pode ser representado com `() -> Void`, pois a função não possui parâmetros e também não retorna nada. Isso pode ser representado desta forma:
+
+```swift
+let greet: () -> Void = {
+    print("Olá, mundo!")
+}
+
+greet() // Output: Olá, mundo!
+```
+
+No fim das contas, é a mesma coisa.
 
 ### Closures com Parâmetros e a Palavra-Chave "in"
 
@@ -363,6 +373,18 @@ greet("Laura")
 // Output: Olá, Laura!
 ```
 
+Esse closure tem um parâmetro do tipo `String` e não tem retorno. O tipo deste closure pode ser representado como `(String) -> Void`, e você pode escrever esse mesmo closure desta forma:
+
+```swift
+let greet: (String) -> Void = { name in
+    print("Olá, \(name)!")
+}
+
+greet("Laura")
+
+// Output: Olá, Laura!
+```
+
 Além disso, seu closure pode retornar um valor.
 
 ```swift
@@ -371,6 +393,17 @@ let greet = { (name: String) -> String in
 }
 
 let result = greet("Laura") 
+print(result) // Output: Olá, Laura!
+```
+
+Agora o tipo do closure é `(String) -> String`. Você pode escrever esse mesmo closure acima desta forma:
+
+```swift
+let greet: (String) -> String = { name in
+    return "Olá, \(name)!"
+}
+
+let result = greet("Laura")
 print(result) // Output: Olá, Laura!
 ```
 
