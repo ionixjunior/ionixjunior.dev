@@ -126,7 +126,7 @@ Control flow statements are fundamental building blocks of any programming langu
 ## Loops: Repeating Actions
 Loops are powerful tools in Swift that allow us to repeat blocks of code multiple times. They're essential for automating tasks, iterating over collections, and handling repetitive operations. Let's explore two common types of loops: `for` loops and while loops.
 
-### For Loops and Ranges
+### For Loops
 `for` loops are used to iterate over a sequence of values, such as a range of numbers or elements in an array.
 
 Here's an example iterating over an array:
@@ -225,7 +225,7 @@ Loops are powerful tools for repeating code efficiently, and `break` and `contin
 ## Functions: Reusable Code Blocks
 Functions are like mini-programs within your Swift code. They allow you to encapsulate a block of code that performs a specific task, making your code more organized, reusable, and easier to maintain.
 
-Let's break down the fundamentals of functions in Swift:
+Let's break down the fundamentals of functions in Swift.
 
 ### Basic Function Definition
 To define a function, we use the `func` keyword followed by the function's name and parentheses `()`. You can optionally add parameters within the parentheses. The code block that executes when the function is called is enclosed in curly braces `{}`.
@@ -297,7 +297,7 @@ func divide(number1: Int, number2: Int) throws -> Int {
 }
 ```
 
-To use functions with `throws` keyword you need to use this syntax to ensure you'll capture the exception error.
+To use functions with `throws` keyword you need to use the following syntax to ensure you'll capture the exception error:
 
 ```swift
 do {
@@ -374,7 +374,7 @@ registerNewUser(name: "Laura", completionHandler: greet)
 We create a function called `registerNewUser` with two parameters. The first one is the `name` and the second one is a `closure` that expect a parameter of type `String` and without return represented with `Void` keyword.
 
 ### Shorthand Syntax for Trailing Closures
-Swift provides a shorthand syntax for trailing closures when the closure is the last argument and it has only a single expression. We can omit the `return` keyword and the `in` keyword. I'll consider the same `registerNewUser` function showed previously, and I'll embed the `greet` closure using the shorthand syntax.
+Swift provides a shorthand syntax for trailing closures when the closure is the last argument and it has only a single expression. We can just omit the closure parameter declaration and embed it at the trailing. I'll consider the same `registerNewUser` function showed previously, and I'll embed the `greet` closure using the shorthand syntax.
 
 
 ```swift
@@ -392,6 +392,6 @@ Mastering these concepts is like unlocking a new level of proficiency in Swift p
 
 As we continue our journey through the "100 Days of SwiftUI" challenge, remember that practice is key. Experiment with these concepts, try out different examples, and don't hesitate to ask questions. The more you practice, the more comfortable you'll become with these essential tools.
 
-I encourage you to explore further, and remember, every line of code you write brings you closer to mastering Swift and SwiftUI!
+I encourage you to explore further, and remember, every line of code you write brings you closer to mastering Swift!
 
 Stay tuned for the next part of the "100DaysOfSwiftUI" series, where we'll delve into structs and access control, expanding our knowledge of Swift programming even more.
