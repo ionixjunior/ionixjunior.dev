@@ -10,9 +10,9 @@ tags: ["100DaysOfSwiftUI"]
 
 ## Structs: Tipos de Valor
 
-Structs em Swift são tipos de valor que permitem que você crie estruturas de dados personalizadas. Imagine-as como blueprints para criar seus próprios contêineres de dados exclusivos, semelhante a como você projetaria um blueprint para uma casa.
+Structs em Swift são tipos de valor que permitem que você crie estruturas de dados personalizadas. Imagine-as como blueprints para criar seus próprios contêineres de dados exclusivos, semelhante a como você projetaria um blueprint para uma casa. Blueprint para uma casa seria como uma planta baixa, onde você discrimina todas as características estruturais que ela vai ter.
 
-Pense em structs como "caixas" que armazenam informações relacionadas. Cada caixa possui compartimentos específicos (propriedades) para armazenar diferentes tipos de dados, e você pode definir ações (métodos) que podem ser executadas nos dados dentro da caixa. Aqui está uma análise de structs.
+Pense em structs como "caixas" que armazenam informações relacionadas. Cada caixa possui compartimentos específicos (propriedades) para armazenar diferentes tipos de dados, e você pode definir ações (métodos) que podem ser executadas nos dados dentro da caixa. Agora vamos entender como criar structs.
 
 ### Definição Básica de Struct
 
@@ -20,7 +20,7 @@ Para definir uma struct, usamos a palavra-chave `struct` seguida do nome da stru
 
 {%- highlight swift -%}
 struct User {
-    // Propriedades e métodos irão aqui
+    // Propriedades e métodos aqui
 }
 {%- endhighlight -%}
 
@@ -43,9 +43,9 @@ Propriedades armazenadas armazenam dados dentro de uma struct. Elas funcionam co
 let userLaura = User(firstName: "Laura", lastName: "Campbell")
 {%- endhighlight -%}
 
-### Propriedades Calculadas
+### Propriedades Computadas
 
-Propriedades calculadas não armazenam valores diretamente. Em vez disso, elas calculam e retornam um valor com base em outras propriedades.
+Propriedades computadas ou calculadas não armazenam valores diretamente. Em vez disso, elas calculam e retornam um valor com base em outras propriedades.
 
 {%- highlight swift -%}
 struct User {
@@ -61,9 +61,9 @@ let userLaura = User(firstName: "Laura", lastName: "Campbell")
 print(userLaura.fullName) // Output: Laura Campbell
 {%- endhighlight -%}
 
-Esta struct `User` agora possui uma propriedade calculada `fullName` que retorna a concatenação de `firstName` e `lastName`.
+Esta struct `User` agora possui uma propriedade computada `fullName` que retorna a concatenação de `firstName` e `lastName`.
 
-Propriedades calculadas são muito usadas no SwiftUI, principalmente em views.
+Propriedades computadas são muito usadas no SwiftUI, principalmente em views.
 
 ### Observadores de Propriedade (didSet, willSet)
 
@@ -98,7 +98,7 @@ userLaura.lastName = "Johnson"
 
 ### Inicializadores Membro a Membro (Construtor Padrão)
 
-Structs recebem automaticamente um inicializador membro a membro, que é um inicializador padrão que permite que você crie instâncias fornecendo valores para todas as propriedades. Como mostrado anteriormente, não criamos nenhum construtor para a struct, mas fomos capazes de inicializar o objeto e colocar valores dentro.
+Structs recebem automaticamente um inicializador membro a membro. Em português esse nome é meio estranho, mas em inglês é chamado de "memberwise initializer". Isso é um inicializador padrão que permite que você crie instâncias fornecendo valores para todas as propriedades. Como mostrado anteriormente, não criamos nenhum construtor para a struct, mas fomos capazes de inicializar o objeto e colocar valores dentro.
 
 ### Inicializadores Personalizados
 
@@ -316,11 +316,11 @@ Já vimos bastante sobre structs e classes, certo? Vamos ver a próxima seção 
 
 O controle de acesso em Swift é um mecanismo que permite que você restrinja o acesso a entidades dentro do seu código, como propriedades, métodos e até mesmo tipos inteiros. Isso ajuda a garantir a integridade dos dados, evitar modificações acidentais e melhorar a organização do código.
 
-Swift fornece vários modificadores de acesso para controlar a visibilidade e acessibilidade de entidades:
+Swift fornece alguns modificadores de acesso para controlar a visibilidade e acessibilidade de entidades:
 
 - `public`: Acessível de qualquer lugar, incluindo outros módulos ou frameworks.
-- `private`: Acessível apenas dentro do mesmo arquivo-fonte onde a entidade é definida.
-- `fileprivate`: Acessível apenas dentro do mesmo arquivo-fonte ou dentro do mesmo arquivo no mesmo módulo.
+- `private`: Acessível apenas dentro do mesmo escopo onde a entidade é definida (como uma classe ou uma extensão).
+- `fileprivate`: Acessível apenas dentro do mesmo arquivo-fonte onde a entidade é definida.
 
 Além disso, para propriedades, podemos usar o modificador `private (set)` para criar propriedades apenas para leitura pública com um setter privado.
 
@@ -347,11 +347,9 @@ class User {
 }
 {%- endhighlight -%}
 
-Se você não fornecer nenhum modificador de acesso, a propriedade, método, classe ou struct será `public` por padrão.
+O controle de acesso é particularmente importante no SwiftUI porque ajuda a controlar os dados e o comportamento de suas views. Ao usar modificadores de acesso com cuidado, você pode criar componentes de UI mais robustos e bem estruturados.
 
-O controle de acesso é particularmente importante no SwiftUI porque ajuda a controlar os dados e o comportamento de suas views. Ao usar modificadores de acesso com cuidado, você pode criar componentes de IU mais robustos e bem estruturados.
-
-Este exemplo é muito simples, apenas para você entender o que é possível. Por favor, crie um novo projeto de playground e explore-o.
+Este exemplo é muito simples, apenas para você entender o que é possível. Experimente criar um novo projeto de playground e explore essas possibilidades.
 
 ## Propriedades e Métodos Estáticos
 
@@ -407,6 +405,6 @@ Ao dominar structs e classes, desbloqueamos novos níveis de poder e flexibilida
 
 À medida que você continua sua jornada SwiftUI, lembre-se de que structs e classes são ferramentas essenciais para construir aplicativos poderosos e fáceis de manter. Elas fornecem uma abordagem estruturada para organizar seu código, tornando mais fácil gerenciar, estender e modificar seus projetos. Structs são muito importantes para SwiftUI, pois são usadas maciçamente para criar views.
 
-Agora é sua vez. Reserve um tempo para praticar e explorar tudo o que foi descrito aqui usando o playground e pratique-os em seus próprios projetos. Quanto mais você praticar, mais confiante você se tornará em dominar seu poder.
+Agora é sua vez. Reserve um tempo para praticar e explorar tudo o que foi descrito aqui usando o playground e pratique em seus próprios projetos. Quanto mais você praticar, mais confiante você se tornará.
 
-Fique ligado para a próxima parte da série "100DaysOfSwiftUI", onde exploraremos tópicos mais avançados, construindo sobre a base que estabelecemos juntos. Até a próxima!
+Fique ligado para a próxima parte da série "100DaysOfSwiftUI". Até a próxima!

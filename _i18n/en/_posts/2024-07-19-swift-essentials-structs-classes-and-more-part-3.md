@@ -319,8 +319,8 @@ Access control in Swift is a mechanism that allows you to restrict access to ent
 Swift provides several access modifiers to control the visibility and accessibility of entities:
 
 - `public`: Accessible from anywhere, including other modules or frameworks.
-- `private`: Accessible only from within the same source file where the entity is defined.
-- `fileprivate`: Accessible only from within the same source file or within the same file in the same module.
+- `private`: Accessible only in the same scope where the entity is defined (like a class or an extensino).
+- `fileprivate`: Accessible only from within the same source file wher the entity is defined.
 
 Also, for properties we can use the `private (set)` modifier to create properties only for public reading with private setter.
 
@@ -346,8 +346,6 @@ class User {
     }
 }
 {%- endhighlight -%}
-
-If you don't provide any access modifier, the property, method, class, or struct will be `public` by default.
 
 Access control is particularly important in SwiftUI because it helps you control the data and behavior of your views. By carefully using access modifiers, you can create more robust and well-structured UI components.
 
