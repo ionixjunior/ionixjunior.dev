@@ -12,9 +12,7 @@ tags: ["100DaysOfSwiftUI"]
 
 Structs in Swift are value types that allow you to create custom data structures. Imagine them as blueprints for creating your own unique data containers, similar to how you might design a blueprint for a house.
 
-Think of structs as "boxes" that hold related information. Each box has specific compartments (properties) to store different types of data, and you can define actions (methods) that can be performed on the data within the box.
-
-Here's a breakdown of structs.
+Think of structs as "boxes" that hold related information. Each box has specific compartments (properties) to store different types of data, and you can define actions (methods) that can be performed on the data within the box. Here's a breakdown of structs.
 
 ### Basic Struct Definition
 
@@ -96,7 +94,7 @@ userLaura.lastName = "Johnson"
 // The old value is Campbell
 {%- endhighlight -%}
 
-The `newValue` and `oldValue` are automatically powered by Swift when using these property observers.
+The `newValue` and `oldValue` are automatically powered by Swift when using these property observers. You can use this to develop something reactive. But be careful, because your code can be slow with a lot of actions in a simple property called many times.
 
 ### Memberwise Initializers (Default Constructor)
 
@@ -122,7 +120,7 @@ Here, we create a custom initializer that takes the same parameters as the membe
 
 ### Mutating Methods
 
-Methods that modify the properties of a struct need the `mutating` keyword.
+Methods that modify the properties of a struct needs the `mutating` keyword.
 
 {%- highlight swift -%}
 struct User {
@@ -173,7 +171,7 @@ class User {
 }
 {%- endhighlight -%}
 
-Notice now we need to specify the initializer method. Different from struct, Swift don't create memberwise initialize for classes.
+Notice now we need to specify the initializer method. Different from struct, Swift doesn't create memberwise initialize for classes.
 
 ### Inheritance
 
@@ -196,7 +194,7 @@ Note we're using an initializer for inheritance class with `super.init`.
 
 ### Methods
 
-Different from structs, classes don't need to be marked with the `mutating` keyword to change some property.
+Different from structs, classes doesn't need to be marked with the `mutating` keyword to change some property.
 
 {%- highlight swift -%}
 class User {
@@ -238,7 +236,7 @@ class User {
 }
 {%- endhighlight -%}
 
-To see it in action, try to use the playground and put this object in a loop. You'll see when the context of class finished, the `deinit` will be called.
+To see it in action, try to use the playground and create this object in a loop. You'll see when the context of class finishes, the `deinit` will be called.
 
 {%- highlight swift -%}
 for index in 1...3 {
@@ -312,7 +310,7 @@ print(user2.firstName) // Output: Samantha
 
 This occurs because the differences between these two kinds of type. When you're using a class and pass a reference of it, any changes affect the original object, but this is not the same for structs.
 
-We already see a lot about structs and classes, right? Let's see the next section and delve into access control, which helps protect your code and ensure data integrity.
+We already see a lot about structs and classes, right? Let's see the next section to understand about the access control, which helps protect your code and ensure data integrity.
 
 ## Access Control: Protecting Your Code
 
@@ -349,6 +347,8 @@ class User {
 }
 {%- endhighlight -%}
 
+If you don't provide any access modifier, the property, method, class, or struct will be `public` by default.
+
 Access control is particularly important in SwiftUI because it helps you control the data and behavior of your views. By carefully using access modifiers, you can create more robust and well-structured UI components.
 
 This example is very simple, only to you understand what's possible. Please, create a new playground project and explore it.
@@ -372,6 +372,8 @@ struct User {
 print(User.totalOfUsers) // Output: 0
 var user1 = User(firstName: "Laura")
 print(User.totalOfUsers) // Output: 1
+var user2 = User(firstName: "Samantha")
+print(User.totalOfUsers) // Output: 2
 {%- endhighlight -%}
 
 Static properties hold data that is shared among all instances of a class or struct. So, be careful. Also, methods can be static too.
@@ -403,7 +405,7 @@ In this third installment of "100DaysOfSwiftUI," we've delved into the world of 
 
 By mastering structs and classes, we unlock new levels of power and flexibility in Swift programming. We can now model complex objects, create reusable code through inheritance, and control data access for better code organization and security. 
 
-As you continue your SwiftUI journey, remember that structs and classes are essential tools for building powerful and maintainable applications. They provide a structured approach to organizing your code, making it easier to manage, extend, and modify your projects. Structs are very important for SwiftUI, because they're using massively to construct views.
+As you continue your SwiftUI journey, remember that structs and classes are essential tools for building powerful and maintainable applications. They provide a structured approach to organizing your code, making it easier to manage, extend, and modify your projects. Structs are very important for SwiftUI, because they're using massively to create views.
 
 Now it's your time. Take a time to practice and explore all described here using the playground, and practice using them in your own projects. The more you practice, the more confident you'll become in harnessing their power.
 
