@@ -188,7 +188,7 @@ Seeing the log, we will see the branches synched.
 * 9d3fa32 Creating initial repository structure
 {%- endhighlight -%}
 
-It works like a charm 😎.
+Works like a charm 😎.
 
 ## The Impact
 
