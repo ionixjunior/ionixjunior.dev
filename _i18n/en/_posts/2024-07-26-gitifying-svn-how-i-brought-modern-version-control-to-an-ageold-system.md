@@ -2,7 +2,7 @@
 layout: post
 title:  "Git-ifying SVN: How I Brought Modern Version Control to an Age-Old System"
 date:   2024-07-25
-translations: ["en"]
+translations: ["pt"]
 tags: ["git"]
 ---
 
@@ -16,9 +16,9 @@ The branching and merging process was the stuff of nightmares. Each branch felt 
 
 Collaboration wasn't much better. SVN’s centralized nature meant we were tethered to a constant internet connection. Want to commit a small change? Make sure you’re online! Working remotely? Better hope your VPN is cooperating. This lack of offline access was a major productivity killer.
 
-And let's not forget about the limited visibility into our project's history. SVN's linear approach made it difficult to track down the source of bugs or understand how different parts of the codebase had evolved over time.
+And let's not forget that code review didn't exist. You just made a commit and done. We lived this way. It was funny when you and your colleague were working on the same file and whoever commit last without updating the repository ended up removing the implementation of the colleague who commit first.
 
-The impact of these SVN struggles was undeniable. Deadlines slipped, frustration mounted, and our once-efficient team started to feel the strain. Something had to give. A full switch to Git seemed ideal, but migrating our entire codebase and getting everyone on board felt like a Herculean task we weren't prepared for.
+The impact of these SVN struggles was undeniable. As I was used to working with good tools, it was a bit difficult to work with SVN. Something had to give. A full switch to Git seemed ideal, but migrating our entire codebase and getting everyone on board felt like a Herculean task we weren't prepared for.
 
 ## Discovering git svn
 
@@ -192,7 +192,7 @@ It works like a charm 😎.
 
 ## The Impact
 
-The introduction of `git svn` wasn’t just a technological shift; it was a breath of fresh air for me. I went from battling our version control system to embracing it as a valuable ally in our quest to build great software. Unfortunately, I've tried to evangelize my teammates to work this way, but I felt from them some fear and disturb.
+The introduction of `git svn` wasn’t just a technological shift; it was a breath of fresh air for me. I went from battling our version control system to embracing it as a valuable ally in our quest to build great software. Unfortunately, I've tried to evangelize my teammates to work this way, but I felt from them some fear and disturb. Even though it was cool, it was something very "new", and we know that changes take time to be introduced.
 
 The most noticeable change was the boost in productivity. Branching and merging, once dreaded tasks, became routine operations. The fear of merge conflicts subsided, replaced by the confidence that Git’s powerful algorithms had our back. I was finally free to experiment, iterate, and collaborate with ease, and the way that I love: commit a lot, every piece of code, and I finally can use Git as a strategic tool in development, not just for versioning code.
 
