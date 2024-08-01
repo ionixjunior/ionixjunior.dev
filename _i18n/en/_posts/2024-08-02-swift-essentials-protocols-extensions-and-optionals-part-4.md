@@ -14,7 +14,7 @@ To simplify things: protocols are like interfaces. I'm not sure why Apple change
 
 ### How to Create a Protocol
 
-Creating a protocol is very simple. Just use the `protocol` keyword and choose a name. By convention, I've chosen to suffix it with `Protocol`.
+Creating a protocol is very simple. Just use the `protocol` keyword and choose a name. By convention, I've chosen to suffix it with `Protocol`. Thinking about it, I believe I'm influenced by some DotNet conventions, because put "Protocol" at the end is redundant. Anyway, let's see:
 
 {%- highlight swift -%}
 protocol SearchProtocol {
@@ -36,7 +36,9 @@ struct YourStruct: SearchProtocol {
 }
 {%- endhighlight -%}
 
-`YourStruct` conforms to `SearchProtocol` and provides its own implementation for the `search(text:)` function. As mentioned earlier, it's the same concept as interfaces. But this is very important in iOS, so let's explore a slightly different example. Suppose we need to create a small component to represent some type of search UI element, like this:
+`YourStruct` conforms to `SearchProtocol` and provides its own implementation for the `search(text:)` function. As mentioned earlier, it's the same concept as interfaces. 
+
+This is very important in iOS, so let's explore a slightly different example. Suppose we need to create a small component to represent some type of search UI element, like this:
 
 {%- highlight swift -%}
 import SwiftUI
@@ -147,11 +149,11 @@ extension String {
 }
 {%- endhighlight -%}
 
-Now you can use `yourStringVariable.isNotEmpty`. This is an extension property, but you can create extension functions too. It works the same way, even for primitive values, as you can see above.
+Now you can use `yourStringVariable.isNotEmpty`. This is an extension property, but you can create extension functions too. It works the same way, even for primitive types, as you can see above.
 
 ## What Is an Optional?
 
-In Swift, optionals are a powerful safeguard against a notorious coding issue: the dreaded "unexpectedly found nil" error. But what are optionals, and why are they so important?
+In Swift, optionals are a powerful safeguard against a notorious coding issue: the dreaded "unexpectedly found nil" error or something like this. But what are optionals, and why are they so important?
 
 Imagine a variable as a container. A regular variable must always hold a value of its declared type. An optional, however, introduces the possibility of emptiness. It's like a container that can either hold a value or be explicitly marked as empty, a state represented by the keyword `nil`.
 
@@ -167,7 +169,7 @@ func convertToInt(from text: String) -> Int? {
 
 The `Int?` return type signifies that this function might return an integer, or it might return `nil` if the conversion fails (for example, trying to convert "hello" to an integer). Let's explore how to safely access an optional value.
 
-### `if let`
+### if let
 
 To safely access the potential value inside an optional, you use "unwrapping" mechanisms. One common way is using `if let`:
 
@@ -182,7 +184,7 @@ if let number = convertToInt(from: userInput) {
 
 Here, `number` is only assigned a value if `convertToInt` succeeds. Otherwise, the `else` block executes, preventing crashes from trying to use a non-existent value.
 
-### `guard let`
+### guard let
 
 You can check for "nullability" in different ways. For instance, you can use `guard let`. This approach is better to use when you need to create an early return statement.
 
