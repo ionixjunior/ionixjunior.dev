@@ -6,7 +6,7 @@ translations: ["pt"]
 tags: ["100DaysOfSwiftUI"]
 ---
 
-<p class="intro"><span class="dropcap">W</span>elcome back to the "100 Days of SwiftUI" series! In today's post we'll embark on a fundamental journey: understanding the core structure of a SwiftUI app.We'll demystify the Xcode project setup and explore the essential building blocks of every SwiftUI masterpiece. Let's get started!</p>
+<p class="intro"><span class="dropcap">W</span>elcome back to the "100 Days of SwiftUI" series! In today's post we'll embark on a fundamental journey: understanding the core structure of a SwiftUI app. We'll demystify the Xcode project setup and explore the essential building blocks of every SwiftUI masterpiece. Let's get started!</p>
 
 ## Creating a New SwiftUI Project
 
@@ -39,7 +39,7 @@ The Xcode project will open, and we'll talk about it now.
 
 ## Exploring the Xcode Workspace
 
-When a SwiftUI new project open, we can split the Xcode Workspace in three different areas: Navigator Area, Editor Area, and Preview Canvas. Let's talk about each one.
+When a SwiftUI new project open, we can split the Xcode Workspace in five different main areas: Navigator Area, Editor Area, Preview Canvas, Inspector Area, and Debug Area. Let's talk about each one.
 
 ### Navigator Area
 
@@ -53,17 +53,17 @@ Note we have a lot of tabs located in this area - nine in total, but the first o
 
 A quick overview about these tabs and shortcuts: 
 
--- MAYBE I SHOULD ADD IT IN A TABLE FOR BETTER READABILITY
-
-- **Project navigator** - `CMD + 1`: is where the files of the project are located.
-- **Source control navigator** - `CMD + 2`: is where you can see information about the source control.
-- **Bookmark navigator** - `CMD + 3`: is where you can see your code bookmarks. You can add / remove them to easily find some code. Very useful when you're investigating something.
-- **Find navigator** - `CMD + 4`: is where you can make a search query on your project files.
-- **Issue navigator** - `CMD + 5`: is where you can see the project warnings.
-- **Test navigator** - `CMD + 6`: is where you can see the unit and ui tests of your project.
-- **Debug navigator** - `CMD + 7`: is where you can see debug information when you run your app and stop at a breakpoint.
-- **Breakpoint navigator** - `CMD + 8`: is where you can see all of your project breakpoints.
-- **Report navigator** - `CMD + 9`: is where you can see reports about the app compilation, like warnings, time compilation, and test coverage.
+| Tab | Shortcut | Functionality |
+|---|---|---|
+| Project navigator  | `CMD + 1` | Is where the files of the project are located  |
+| Source control navigator  | `CMD + 2`  | Is where you can see information about the source control  |
+| Bookmark navigator  | `CMD + 3`  | Is where you can see your code bookmarks<br> You can add / remove them to easily find some code<br> Very useful when you're investigating something  |
+| Find navigator  | `CMD + 4`  | Is where you can make a search query on your project files  |
+| Issue navigator  | `CMD + 5`  | Is where you can see the project warnings  |
+| Test navigator  | `CMD + 6`  | Is where you can see the unit and UI tests of your project  |
+| Debug navigator  | `CMD + 7`  | Is where you can see debug information when you run your app and stop at a breakpoint  |
+| Breakpoint navigator  | `CMD + 8`  | Is where you can see all of your project breakpoints  |
+| Report navigator  | `CMD + 9`  | Is where you can see reports about the app compilation, like warnings, time compilation, and test coverage |
 
 ### Editor Area
 
@@ -88,3 +88,109 @@ This preview is very interesting. As you can see on the image above, it appears 
 {%- endhighlight -%}
 
 This code won't ship when you publish your app on Apple Store, it's only works under development. A nice think that I discovered recently is it works with UIKit too. It helps a lot to prototype some screen or UI component. Try it!
+
+### Inspector Area
+
+This is a hidden area when you create a new project, but you can show it hitting a top right button from Xcode toolbar. When you open it, you'll see a contextualized area based on selected view elements.
+
+-- IMAGE08
+
+This area contains 5 tabs
+
+| Tab | Shortcut | Functionality |
+|---|---|---|
+| File inspector          | `CMD + OPTION + 1` | Show information about the selected file |
+| History inspector       | `CMD + OPTION + 2` | Show information about project history |
+| Help inspector          | `CMD + OPTION + 3` | Show technical information about selected elements in the file |
+| Accessibility inspector | `CMD + OPTION + 5` | Show information about screen accessibility <br> (I didn't see this tab working until now, so please let me know if you know how to do it) |
+| Attributes inspector    | `CMD + OPTION + 4` | Show information about the selected element on screen |
+
+-- VIDEO02
+
+### Debug Area
+
+This is a dedicated area to use when you're running your app. In this area you can interact when you create a break point on your app and need to see values on variables, objects or even change something at runtime. To see it, click on the button located at bottom right side, and you'll see a spliced area that will can contain values when you're running your app.
+
+-- IMAGEM09
+
+Now you know about the Xcode workspace, let's explore about the SwiftUI code.
+
+## Exploring the SwiftUI Code
+
+Now that you've set up your SwiftUI project and understand the basics of Xcode, let's explore the core code that brings your app to life. Let's see the main file.
+
+### "YourAppName.swift" file
+
+Now I'm seeing that "Sample App" isn't a good name for the app, because SwiftUI create a file called "your app name" + "App". So, my file is called `Sample_AppApp.swift` 😂. But that's okay, no problem.
+
+{%- highlight swift -%}
+import SwiftUI
+
+@main
+struct Sample_AppApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+{%- endhighlight -%}
+
+The `@main` attribute above the struct declaration might seem subtle, but it's crucial. It signals to Xcode that this structure, `Sample_AppApp`, serves as the entry point of your application. Think of it as the "front door" where execution begins.
+
+The struct `Sample_AppApp: App` line defines your app's overall structure and behavior. This means `Sample_AppApp` conforms to the `App` protocol. By conforming to `App`, you're telling SwiftUI that this structure knows how to assemble and manage the different parts of your application.
+
+Inside the body property of your app structure, you'll find the `WindowGroup`. This powerful element determines what users see on their screens. 
+
+Within the `WindowGroup`, you'll usually see `ContentView()`, witch creates an instance of another SwiftUI view called `ContentView`. Your `ContentView.swift` file (created automatically by Xcode) is where you'll start building the actual user interface of your app.
+
+In Essence, the code in the `Sample_AppApp.swift` sets the stage by defining the entry point, app structure, and the initial view (`ContentView`) that users will see when they launch your app.
+
+In the next section, we'll dive into `ContentView.swift` and start crafting the visual elements of your SwiftUI masterpiece!
+
+### ContentView.swift file
+
+Let's dive into `ContentView.swift`, the heart of your SwiftUI app. Open it up, and you'll see a structure similar to this:
+
+{%- highlight swift -%}
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+                .accessibilityLabel("hello")
+                .accessibilityAction {
+                    print("teste")
+                }
+                .accessibilityHint("Hellou")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+{%- endhighlight -%}
+
+The line `struct ContentView: View` declares a structure named `ContentView` that conforms to the `View` protocol. This is how you create all visual elements in SwiftUI.
+
+The `body` is where the magic happens. This computed property is responsible for defining the appearance and layout of your view.
+
+Inside the `body`, you'll find SwiftUI views that make up your UI. The default code includes a simple `Image` and `Text` views.
+
+Below `ContentView`, you'll notice `#Preview` block. This enables SwiftUI's incredible live previews using the Preview Canvas.
+
+With this foundation, you're well on your way to crafting beautiful and interactive user interfaces in SwiftUI. The possibilities are limitless, and we explore some of them in the next blog posts.
+
+## Wrap up
+
+You've taken your first steps into the world of SwiftUI, and you've already got a good grasp of the basics. You know how to set up a new Xcode project, know about the Xcode workspace, and understand the roles of key elements like `@main`, `App`, `WindowGroup`, and `ContentView`. Plus, you've experienced the magic of SwiftUI Previews, which give you instant feedback as you code.
+
+But this is just the beginning! There's so much more to learn and explore in SwiftUI. Get ready to master layout techniques, create dynamic user interfaces with data, and build smooth navigation between different parts of your app.
+
+Keep experimenting, have fun, and never stop learning. The possibilities with SwiftUI are limitless, and you're well on your way to creating incredible apps.
