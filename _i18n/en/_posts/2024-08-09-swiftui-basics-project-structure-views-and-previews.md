@@ -28,7 +28,7 @@ You'll see a screen to choose some options for your new project. Let's see about
 
 - **Product Name**: This is the name of your project. Think about it, because it will be used on bundle identifier too.
 - **Team**: This is your Apple developer account team. For a new "hello world" app, just keep it as "None".
-- **Organization Identifier**: Here is the prefix of your app bundle. On my machine, the default bundle is "dev.ionixjunior", and you change it for your apps.
+- **Organization Identifier**: Here is the prefix of your app bundle. On my machine, the default bundle is "dev.ionixjunior", and you can change it for your apps.
 - **Bundle Identifier**: This is the result of your organization identifier and the product name.
 - **Storage**: In this option you can select if you want to use Core Data or SwiftData. Just keep it as "None".
 
@@ -73,8 +73,8 @@ A quick overview about these tabs and shortcuts:
 | Tab | Shortcut | Functionality |
 |---|---|---|
 | Project navigator  | `CMD + 1` | Is where the files of the project are located  |
-| Source control navigator  | `CMD + 2`  | Is where you can see information about the source control  |
-| Bookmark navigator  | `CMD + 3`  | Is where you can see your code bookmarks<br> You can add / remove them to easily find some code<br> Very useful when you're investigating something  |
+| Source control navigator  | `CMD + 2`  | Is where you can see information about the source control changes |
+| Bookmark navigator  | `CMD + 3`  | Is where you can see your code bookmarks<br> You can add / remove them to easily find some code  |
 | Find navigator  | `CMD + 4`  | Is where you can make a search query on your project files  |
 | Issue navigator  | `CMD + 5`  | Is where you can see the project warnings  |
 | Test navigator  | `CMD + 6`  | Is where you can see the unit and UI tests of your project  |
@@ -126,7 +126,7 @@ This area contains 5 tabs
 | Tab | Shortcut | Functionality |
 |---|---|---|
 | File inspector          | `CMD + OPTION + 1` | Show information about the selected file |
-| History inspector       | `CMD + OPTION + 2` | Show information about project history |
+| History inspector       | `CMD + OPTION + 2` | Show information about project history (Git commits) |
 | Help inspector          | `CMD + OPTION + 3` | Show technical information about selected elements in the file |
 | Accessibility inspector | `CMD + OPTION + 5` | Show information about screen accessibility <br> (I didn't see this tab working until now, so please let me know if you know how to do it) |
 | Attributes inspector    | `CMD + OPTION + 4` | Show information about the selected element on screen |
@@ -138,7 +138,7 @@ This area contains 5 tabs
 
 ### Debug Area
 
-This is a dedicated area to use when you're running your app. In this area you can interact when you create a break point on your app and need to see values on variables, objects or even change something at runtime. To see it, click on the button located at bottom right side, and you'll see a spliced area that will can contain values when you're running your app.
+This is a dedicated area to use when you're running your app. In this area you can interact when you create a breakpoint on your app and need to see values on variables or objects. To see it, click on the button located at bottom right side, and you'll see a spliced area that will can contain values when you're running your app.
 
 <figure>
 	<img src="/assets/img/xcode-debug-area.webp" alt="Xcode Debug Area that shows app information when it's running."> 
@@ -176,7 +176,7 @@ Inside the body property of your app structure, you'll find the `WindowGroup`. T
 
 Within the `WindowGroup`, you'll usually see `ContentView()`, witch creates an instance of another SwiftUI view called `ContentView`. Your `ContentView.swift` file (created automatically by Xcode) is where you'll start building the actual user interface of your app.
 
-In Essence, the code in the `Sample_AppApp.swift` sets the stage by defining the entry point, app structure, and the initial view (`ContentView`) that users will see when they launch your app.
+In essence, the code in the `Sample_AppApp.swift` sets the stage by defining the entry point, app structure, and the initial view (`ContentView`) that users will see when they launch your app.
 
 In the next section, we'll dive into `ContentView.swift` and start crafting the visual elements of your SwiftUI masterpiece!
 
