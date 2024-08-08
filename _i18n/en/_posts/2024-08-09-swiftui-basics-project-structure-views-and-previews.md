@@ -39,7 +39,7 @@ Also, there's another two checkboxes: "Host in CloudKit" and "Include Tests". En
 	<figcaption>Give your project a name.</figcaption>
 </figure>
 
-Now, you want to choose the location where you want to save your new project. If you want to create a local Git repository on your machine, select the option "Create Git repository on my Mac". Press "Create".
+Now, you need to choose the location where you want to save your new project. If you want to create a local Git repository on your machine, select the option "Create Git repository on my Mac". Press "Create".
 
 <figure>
 	<img src="/assets/img/xcode-create-git-repository.webp" alt="Xcode project creation with “Create Git repository on my Mac” option checked."> 
@@ -226,3 +226,5 @@ You've taken your first steps into the world of SwiftUI, and you've already got 
 But this is just the beginning! There's so much more to learn and explore in SwiftUI. Get ready to master layout techniques, create dynamic user interfaces with data, and build smooth navigation between different parts of your app.
 
 Keep experimenting, have fun, and never stop learning. The possibilities with SwiftUI are limitless, and you're well on your way to creating incredible apps.
+
+See you in the next post!
