@@ -6,7 +6,7 @@ translations: ["en"]
 tags: ["100DaysOfSwiftUI"]
 ---
 
-<p class="intro"><span class="dropcap">B</span>em-vindo de volta à série "100 Dias de SwiftUI"! No post de hoje, vamos embarcar em uma jornada básica, mas importante: entender a estrutura central de um aplicativo SwiftUI. Vamos desmistificar a configuração do projeto Xcode e explorar os blocos de construção essenciais de toda obra-prima SwiftUI. Vamos começar!</p>
+<p class="intro"><span class="dropcap">E</span>ste é mais um artigo da série "100 Dias de SwiftUI". No post de hoje, vamos embarcar em uma jornada básica, mas importante: entender a estrutura central de um aplicativo SwiftUI. Vamos desmistificar a configuração do projeto Xcode e explorar os blocos de construção essenciais de toda obra-prima SwiftUI. Vamos começar!</p>
 
 ## Criando um Novo Projeto SwiftUI
 
