@@ -18,7 +18,9 @@ But how to have a routine if you're moving or if you have a lot of new daily tas
 
 ## Understand the changes
 
-As I said previously, I put all my task on an agenda. This is what works for me. Some people prefer reminders, take some notes on a notebook, or just to keep it in memory. I'm not trust in my memory. I need to write down in some place. In my case, I move to another city. It's just 62 miles (ca. 100 km) from the previous city that I lived. It's nearby, but I needed to be away sometimes to deal new apartment things. This means maybe I haven't time to focus on study and write properly and keep consistent my blog post routine. Definitely, I haven't time, but I need to understand this to avoid frustration.
+As I said previously, I put all my task on an agenda. This is what works for me. Some people prefer reminders, take some notes on a notebook, or just to keep it in memory. I'm not trust in my memory. I need to write down in some place. 
+
+In my case, I moved to another city. It's just 62 miles (ca. 100 km) from the previous city that I lived. It's nearby, but I needed to be away sometimes to deal new apartment things. This means maybe I haven't time to focus on study and write properly and keep consistent my blog post routine. Definitely, I haven't time, and I needed to understand this to avoid frustration.
 
 I'm a very pragmatic person, so, I like the things planned, organized, and under control. Most part of the things I've faced in the last weeks didn't have these characteristics, so it was very important to prepare myself to deal with these situations before they happen.
 
@@ -30,7 +32,7 @@ All of these things are very simple, but important to talk about. If you don't u
 
 Short breaks are good to take a look what you're doing from another perspective. When we're on the flow, sometimes can be difficult to pay attention on details, and these times are good for this.
 
-When you pay attention on what you're doing, you can have a chance to fix directions and ensure you'll continue on the right path. I have a career path planned, and in every three months I have a meeting with myself to think about my evolution. I planned a “checkpoint day” on my calendar to do this, but short breaks can be good times to make this reflection too.
+When you pay attention on what you're doing, you can have a chance to fix the direction and ensure you'll continue on the right path. I have a career path planned, and in every three months I have a meeting with myself to think about my evolution. I planned a “checkpoint day” on my calendar to do this, but short breaks can be good times to make this reflection too.
 
 Anyway, independent if you prepare some checkpoints or make a short break to think about how your planning is going, this moment is important to you understand if the thinks are happening as planned.
 
@@ -40,19 +42,19 @@ When we can't achieve all we planned in a specific period of time, it's common t
 
 This is not a good way to think about our evolution. Also, this can disturb us to keep going. I'm working to improve this on myself, and I'm trying to always see what goes correct and what goes wrong. Basically, what goes correct I try to keep and what goes wrong I think why and try to find an alternative. 
 
-This reflection is important, because if you don't think about it, probably you'll keep continue doing the same, even the things are going bad.
+This reflection is important, because if you don't think about it, probably you'll keep continue doing the same, even the things are going bad. And believe me: this is a very difficult task to do. Make reflections about ourselves isn't an easy thing, mainly for a Software Engineer. So, if you don't have this ability, start think about it, because it's a very important ability to develop. Even if you're a software developer, you need to develop some soft skills too.
 
 ### Thinking about what changed
 
 When we make a plan, is totally desirable to keep the plan until the end. But, what happens if something change or needs to change? Will you continue on the main plan or will rethink your plan to ensure the success of your journey? 
 
-Understand the changes is crucial to ensure you keep motivated and in the right path. Changes can be from our results or from external events, so these short breaks can be useful to refresh your mind and see things more clearly.
+Understand the changes is crucial to ensure you keep motivated and in the right path. Changes can be from our results or from external events, so a short break can be useful to refresh your mind and see things more clearly.
 
 When you understand what changed and why, you can make new deal with yourself and continue on your evolution's path.
 
-### Thinking about what motivate us
+### Thinking about what motivate you
 
-It's not a problem after a period of time if you understand what you're doing is not what is making sense to you right now. The things change. Our perception and wishes changes. So, keep in mind what motive you and ensure you'll continue what makes you happy and engaged on your journey.
+It's not a problem after a period of time if you understand what you're doing is not what is making sense to you right now. The things change. Our perception and wishes changes. So, keep in mind what motive you and ensure you'll continue doing what makes you happy and engaged on your journey.
 
 ## Remembering your goals
 - have a good plan and good goals is important
@@ -64,9 +66,13 @@ For me, it's a lazy time. When I pause a frantic routine, It's easy to get used 
 
 I need only a couple of times keeping the routine, and them everything happen normally after a few times. The difficult part is start or go back doing some activity.
 
+So, don't be discouraged. The first step is always the most difficult, but once you do, is easier to just continue.
+
 ## Stay focus
 
+It may not seem like it, but I try to sabotage myself many times. I have a heavy routine, so it's easy to get tired and do nothing at end of the day. And here is the tricky part, because if you haven't disciplined, will be easy to take lost and not continue your plan.
 
 ## Distraction matters
 
+???
 
