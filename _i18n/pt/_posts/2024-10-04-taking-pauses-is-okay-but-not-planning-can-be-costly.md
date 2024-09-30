@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fazer Pausas é Importante, Mas Não Se Planejar Pode Sair Caro"
-date:   2024-09-23
+date:   2024-10-04
 translations: ["en"]
 tags: ["carreira"]
 ---
