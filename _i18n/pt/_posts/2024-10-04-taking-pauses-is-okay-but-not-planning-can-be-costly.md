@@ -6,9 +6,9 @@ translations: ["en"]
 tags: ["carreira"]
 ---
 
-<p class="intro"><span class="dropcap">O</span>lá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Este último mês me deu muito o que pensar, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.</p>
+<p class="intro"><span class="dropcap">O</span>lá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Nesse último mês tive bastante tempo para pensar sobre minha carreira, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.</p>
 
-No mês passado, minha esposa e eu nos mudamos para uma nova cidade. Não era nossa primeira mudança - já nos mudamos várias vezes em nosso relacionamento (cinco, se não me falha a memória!). Mudar é sempre algo que consome muito tempo, então tirei uma breve pausa para me instalar em nosso novo apartamento, escritório e rotinas. 
+No mês passado, minha esposa e eu nos mudamos para uma nova cidade. Não foi nossa primeira mudança - já nos mudamos várias vezes em nosso relacionamento (cinco, se não me falha a memória!). Mudar é sempre algo que consome muito tempo, então tirei uma breve pausa para me instalar em nosso novo apartamento, escritório e rotinas. 
 
 Pessoalmente, não sou muito fã de pausas. É fácil se acostumar a não fazer nada, especialmente quando você está cansado. No entanto, às vezes as pausas são essenciais para recarregar as energias e seguir em frente.  É sobre isso que quero falar hoje.
 
@@ -62,9 +62,7 @@ Tudo bem perceber que o que você está fazendo não ressoa mais com você. Noss
 
 Voltar à rotina após uma pausa pode ser desafiador. Para mim, é uma batalha contra a inércia. É tão fácil ficar confortável não fazendo nada. Mas a inação leva à estagnação e eu sei que, em última análise, depende de mim fazer as coisas acontecerem.
 
-Descobri que, depois que venço a resistência inicial e me apego à minha rotina por alguns dias, as coisas começam a fluir naturalmente novamente.
-
-Então, não desanime! O primeiro passo é sempre o mais difícil. Depois de dado, o resto se torna mais fácil.
+Descobri que, depois que venço a resistência inicial e me apego à minha rotina por alguns dias, as coisas começam a fluir naturalmente novamente. Então, não desanime! O primeiro passo é sempre o mais difícil. Depois de dado, o resto se torna mais fácil.
 
 ## A Importância do Foco
 

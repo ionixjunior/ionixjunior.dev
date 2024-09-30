@@ -62,9 +62,7 @@ It's okay to realize that what you're doing no longer resonates with you.  Our p
 
 Getting back into a routine after a break can be challenging. For me, it's a battle against inertia. It's so easy to get comfortable doing nothing.  But inaction leads to stagnation, and I know that ultimately, it's up to me to make things happen. 
 
-I find that once I push through the initial resistance and stick to my routine for a few days, things start to flow naturally again.
-
-So, don't be discouraged!  The first step is always the hardest. Once you take it, the rest becomes easier.
+I find that once I push through the initial resistance and stick to my routine for a few days, things start to flow naturally again. So, don't be discouraged!  The first step is always the hardest. Once you take it, the rest becomes easier.
 
 ## The Importance of Focus
 
