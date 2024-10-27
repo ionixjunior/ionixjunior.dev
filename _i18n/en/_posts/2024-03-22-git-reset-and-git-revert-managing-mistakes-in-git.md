@@ -4,6 +4,7 @@ title:  "Git Reset and Git Revert: Managing Mistakes in Git"
 date:   2024-03-22
 translations: ["pt"]
 tags: ["git"]
+social_image: "git-reset-and-git-revert-managing-mistakes-in-git.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">I</span>n the software development process, mistakes are inevitable. Whether it's a misplaced line of code or a misguided commit, every developer has encountered the sinking feeling that accompanies an error in their work. Yet, in the realm of version control systems, such as Git, these missteps need not spell disaster. Git reset and Git revert serve as beacons of hope amidst the tumultuous sea of code changes, offering developers the means to rectify errors, backtrack on misguided decisions, and steer their projects back on course. In this post, we'll embark on a journey into the heart of Git, exploring the nuances of Git reset and Git revert, uncovering their capabilities, and arming ourselves with the knowledge needed to navigate the choppy waters of version control with confidence. So, let's dive in and discover how Git reset and Git revert can be our steadfast companions in the pursuit of flawless code and seamless collaboration.</p>

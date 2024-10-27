@@ -4,6 +4,7 @@ title:  "Git Worktree: Sua Arma Secreta para Multitarefa no Git"
 date:   2024-05-17
 translations: ["en"]
 tags: ["git"]
+social_image: "git-worktree-your-secret-weapon-for-multitasking-in-git.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">C</span>omo uma pessoa desenvolvedora, você está acostumado a lidar com múltiplas tarefas. Você pode estar corrigindo bugs em uma versão de produção enquanto desenvolve novos recursos para a próxima versão. Isso geralmente significa alternar entre diferentes branches do seu projeto, o que pode ser um processo desajeitado e demorado. Armazenar mudanças constantemente, alternar branches e esperar que sua IDE se atualize pode interromper significativamente seu fluxo de trabalho. E se houvesse uma maneira de trabalhar em vários branches simultaneamente, sem a constante mudança de contexto? Para isso, existe o git worktree: um comando poderoso, mas frequentemente negligenciado, que pode revolucionar a maneira como você realiza multitarefas no Git. Vamos vê-lo em ação neste post.</p>

@@ -4,7 +4,7 @@ title:  "Git Basics: An In-Depth Look at Essential Commands"
 date:   2024-01-19
 translations: ["pt"]
 tags: ["git"]
-social_image: "git-basics-an-in-depth-look-at-essential-commands.en.png"
+social_image: "git-basics-an-in-depth-look-at-essential-commands.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">W</span>hen I started using Git, no GUI tool existed to manage a repository. Everything had to be done via the command line. After a few years, some good tools were introduced, and turns more productive the developer lifecycle with some Git GUIs and Git tools integrated into IDEs. In this series of posts, I won't talk about Git GUIs. I will talk about Git in the command line, and we will start right now.</p>

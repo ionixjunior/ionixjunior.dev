@@ -4,6 +4,7 @@ title:  "Swift Essentials: Variables, Data Types, and More (Part 1)"
 date:   2024-07-05
 translations: ["pt"]
 tags: ["100DaysOfSwiftUI"]
+social_image: "swift-essentials-variables-data-types-and-more-part-1.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">I</span>'m diving headfirst into the "100 Days of SwiftUI" challenge by Paul Hudson, and I'm thrilled to be on this journey of discovery. But before I can create dazzling iOS apps, I know that building a strong foundation in Swift is crucial. This blog series, which I'm calling "100DaysOfSwiftUI," is my way of sharing my learning journey with you, especially those who are new to Swift. We'll explore the fundamental building blocks of this powerful language together. In this first part, we'll tackle the core concepts of variables, data types, string interpolation, and enums. These seemingly simple elements are the pillars upon which we'll build more complex and powerful applications in SwiftUI. So buckle up, grab your coffee (or your preferred drink!), and let's embark on this journey together! We'll cover the basics in a clear and engaging way, and by the end, you'll have a solid grasp of the foundational concepts that will empower you to start crafting your own iOS apps.</p>
