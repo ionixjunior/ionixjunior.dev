@@ -4,7 +4,6 @@ title:  "Git Add Command Explained: A Step-by-Step Tutorial"
 date:   2024-01-26
 translations: ["pt"]
 tags: ["git"]
-social_image: "git-add-command-explained-a-step-by-step-tutorial.en.png"
 ---
 
 <p class="intro"><span class="dropcap">T</span>o add files to a Git repository, they must be included in a specific area to commit. But why is this step necessary? If I make changes, don't I want to add them to the repository? Yes, indeed, but I'll show you some benefits of this approach and explain more details about the command. Let's get started!</p>
