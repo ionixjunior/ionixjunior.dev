@@ -4,6 +4,7 @@ title:  "Git Diff: Descubra as Diferenças no Seu Código com Facilidade"
 date:   2024-05-31
 translations: ["en"]
 tags: ["git"]
+social_image: "git-diff-explained-understanding-code-differences-with-ease.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">J</span>á teve dificuldades para lembrar quais alterações você fez no seu código? Ou talvez você tenha apagado acidentalmente uma linha importante e passou horas tentando descobrir como recuperá-la? Ou talvez você apenas fez algumas alterações e quer revisá-las antes de fazer o commit? Todos já passamos por isso. Mas não se preocupe! Existe uma ferramenta poderosa no arsenal do Git que pode facilitar muito a sua vida: o Git Diff. Neste post, vamos aprender sobre ele.</p>

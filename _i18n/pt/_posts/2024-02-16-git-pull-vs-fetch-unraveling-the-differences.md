@@ -4,6 +4,7 @@ title:  "Git Pull vs. Fetch: Desvendando as Diferenças"
 date:   2024-02-16
 translations: ["en"]
 tags: ["git"]
+social_image: "git-pull-vs-fetch-unraveling-the-differences.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">S</span>incronizar-se com repositórios remotos é fundamental para o desenvolvimento colaborativo e a manutenção de um código atualizado. Dois comandos essenciais, git pull e git fetch, facilitam esse processo ao recuperar alterações de repositórios remotos. Embora ambos os comandos sirvam a um propósito semelhante, diferem em seu comportamento e impacto no repositório local. Vamos desvendar as diferenças entre esses comandos, explorando suas funcionalidades e casos de uso ideais para otimizar seu fluxo de trabalho no Git.</p>

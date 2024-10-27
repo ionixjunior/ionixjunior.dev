@@ -4,6 +4,7 @@ title:  "Git Blame: Revelando a História do Código"
 date:   2024-05-10
 translations: ["en"]
 tags: ["git"]
+social_image: "git-blame-unveiling-the-codes-history.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">J</span>á se deparou com um trecho de código e se perguntou: "Quem escreveu isso?" ou "Quando isso foi alterado?". Não tema, querido(a) desenvolvedor(a), pois o "git blame" está aqui para o resgate! Este poderoso comando age como um detetive, revelando a história por trás de cada linha de código em seu repositório Git. Vamos mergulhar nisso no post de hoje.</p>

@@ -4,6 +4,7 @@ title:  "Entendendo o SwiftLint: Elevando a Qualidade e Padrões do seu Código 
 date:   2024-05-03
 translations: ["en"]
 tags: ["iOS"]
+social_image: "understanding-swiftlint-elevating-your-ios-code-quality-and-standards.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">F</span>azer lint no código é uma prática crucial no desenvolvimento de software, com o objetivo de manter a qualidade do código identificando erros, bugs e inconsistências estilísticas no início do processo de desenvolvimento. No desenvolvimento iOS, o SwiftLint se destaca como uma ferramenta valiosa para impor padrões de codificação e garantir consistência em projetos. Este post explora o papel do SwiftLint em elevar a qualidade do código iOS e otimizar os fluxos de trabalho de desenvolvimento. Vamos mergulhar no mundo do lint de código com o SwiftLint e descobrir seus benefícios para pessoas desenvolvedoras iOS.</p>

@@ -4,6 +4,7 @@ title:  "Git Básico: Uma Análise Profunda nos Comandos Essenciais"
 date:   2024-01-19
 translations: ["en"]
 tags: ["git"]
+social_image: "git-basics-an-in-depth-look-at-essential-commands.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">Q</span>uando comecei a usar o Git, não existia nenhuma ferramenta GUI para gerenciar um repositório. Tudo tinha que ser feito via linha de comando. Após alguns anos, algumas boas ferramentas foram introduzidas, tornando o ciclo de vida do desenvolvedor mais produtivo com algumas GUIs do Git e ferramentas Git integradas a IDEs. Nesta série de posts, não falarei sobre GUIs do Git. Vou falar sobre o Git na linha de comando, e começaremos agora.</p>
