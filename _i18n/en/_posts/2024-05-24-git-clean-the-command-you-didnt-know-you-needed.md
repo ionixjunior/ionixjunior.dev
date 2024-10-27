@@ -4,6 +4,7 @@ title:  "Git Clean: The Command You Didn't Know You Needed"
 date:   2024-05-24
 translations: ["pt"]
 tags: ["git"]
+social_image: "git-clean-the-command-you-didnt-know-you-needed.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">I</span>magine a messy Git repository, full of untracked files, build artifacts, and temporary files. What's the best way to remove all this unwanted content and keep the repository clean, freeing up space from your computer? Git offers a command called git clean and we'll learn about it in this post. Let's discover the command you didn't know you needed!</p>

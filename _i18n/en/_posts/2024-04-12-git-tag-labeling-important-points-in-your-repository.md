@@ -4,6 +4,7 @@ title:  "Git Tag: Labeling Important Points in Your Repository"
 date:   2024-04-12
 translations: ["pt"]
 tags: ["git"]
+social_image: "git-tag-labeling-important-points-in-your-repository.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">I</span>n the vast landscape of version control systems, Git offers a powerful feature called "tags" that allows developers to mark significant points in their repository's history. These tags serve as immutable labels, providing a snapshot of the codebase at important milestones such as releases, major updates, or critical points in development. Tagging important points in your Git repository is essential for maintaining clarity and organization, enabling you and your team to easily navigate through the project's history and identify key changes. In this post, we'll explore the concept of Git tags, how to create and manage them, and best practices for leveraging tags effectively in your development workflow. Let's dive in and uncover the art of labeling important points in your Git repository!</p>

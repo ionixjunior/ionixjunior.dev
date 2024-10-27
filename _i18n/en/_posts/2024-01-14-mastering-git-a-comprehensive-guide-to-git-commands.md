@@ -4,6 +4,7 @@ title:  "Mastering Git: A Comprehensive Guide to Git Commands"
 date:   2024-01-14
 translations: ["pt"]
 tags: ["git"]
+social_image: "mastering-git-a-comprehensive-guide-to-git-commands.en.webp"
 ---
 
 <p class="intro"><span class="dropcap">W</span>elcome to the "Mastering Git" series – your ultimate guide to mastering the essential commands of Git, the widely-used version control system that supports developers across the globe. Whether you're a beginner looking to get started or an experienced developer aiming to deepen your understanding, this series is designed to provide clear and comprehensive insights into Git commands.</p>
