@@ -6,7 +6,7 @@ translations: ["pt"]
 tags: ["career"]
 ---
 
-<p class="intro"><span class="dropcap">I</span> believe it's not so difficult to understand what makes us successful in our careers, but sometimes we need guidance to move forward. So, I dedicated time to read "The Software Engineer's Guidebook," and I'll share a short review and some of my thoughts about it, based on my perspective and experience as a Software Engineer and Team Lead.</p>
+<p class="intro"><span class="dropcap">I</span> believe it's not so difficult to understand what makes us successful in our careers, but sometimes we need guidance to move forward. So, I dedicated time to read "The Software Engineer's Guidebook," and I'll share some of my thoughts about it, based on my perspective and experience as a Software Engineer and Team Lead.</p>
 
 ## About the Book
 
