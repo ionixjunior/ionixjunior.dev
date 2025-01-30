@@ -64,7 +64,7 @@ Não desista. Querer crescer não garante o sucesso. **Você precisa garantir qu
 
 **Certifique-se de que tudo esteja claro** fazendo perguntas, discutindo casos extremos e efeitos colaterais. Não se esqueça de que, quando se trata de código, você é a pessoa especialista. Somente você pode revelar certos detalhes que as pessoas de Produto, Designers ou Stakeholders podem não ver.
 
-Antes do desenvolvimento, é importante ver o cenário geral. Isso torna mais provável que você atinja o objetivo esperado, permitindo que você o divida em partes menores, entenda as principais dificuldades ou desafios e os estime com precisão.
+Antes do desenvolvimento, é importante enxergar o "todo". Isso torna mais provável que você atinja o objetivo esperado, permitindo que você o divida em partes menores, entenda as principais dificuldades ou desafios e os estime com precisão.
 
 ### Esclareça para Desempacar
 
@@ -84,7 +84,7 @@ O nível de senioridade é outro tópico importante. Quais são as principais di
 
 Um Desenvolvedor de Software pode escrever código, depurar e entregar tarefas, mas um Engenheiro de Software vai mais fundo. Ele pode planejar um recurso, descobrir e discutir requisitos, estimar esforço, construir uma solução, publicá-la e mantê-la. Essa pessoa pode lidar com todo o processo.
 
-Um Engenheiro de Software entrega valor para a equipe, não apenas para si mesmo. Eles fornecem orientação, tomam iniciativa, ajudam a equipe a entender os desafios de software, colaboram efetivamente, orientam outros e aprendem continuamente. Eles também entendem os desafios da equipe, o cenário geral, os objetivos trimestrais e podem dividir grandes tarefas em tarefas menores.
+Um Engenheiro de Software entrega valor para a equipe, não apenas para si mesmo. Eles fornecem orientação, tomam iniciativa, ajudam a equipe a entender os desafios de software, colaboram efetivamente, orientam outros e aprendem continuamente. Eles também entendem os desafios da equipe e da empresa, os objetivos trimestrais e podem dividir grandes tarefas em tarefas menores.
 
 Acredito que isso seja um tanto controverso e, às vezes, subjetivo. Pode afetar nossos egos, mas acredite em mim, há uma grande diferença entre alguém que sabe escrever código e alguém que entende por que escrever código e como ele atinge um objetivo.
 
@@ -111,7 +111,7 @@ Não é apenas você e a máquina. Há uma equipe com você. Não se esqueça di
 
 Outro tópico controverso. Conforme você cresce em sua carreira como Engenheiro de Software, seu impacto aumenta. Você provavelmente fará mais contribuições que afetarão toda a equipe, departamento ou até mesmo a empresa, impactando mais pessoas com seu trabalho. É comum usar essa experiência para trabalhar mais próximo das pessoas de Produto, Designers, Stakeholders e outros Gerentes para entender o que é realmente necessário para causar um impacto real na empresa.
 
-Por causa disso, as habilidades básicas são cruciais para progredir além de uma carreira de Engenheiro de Software Sênior, como para um cargo de Engenheiro de Equipe. Eu acho a tradução um pouco estranha, então, em inglês é comum ver o termo Staff Engineer. 
+Por causa disso, as habilidades básicas são cruciais para progredir além de uma carreira de Engenheiro de Software Sênior, como para um cargo de Engenheiro de Equipe. Eu acho a tradução um pouco estranha, então, em inglês é comum ver o termo Staff Engineer. Poderíamos chamar também de Engenheiro Sênior de alto impacto, mas vou continuar usando o nome Staff Engineer para simplificar. 
 
 Não negligencie as habilidades humanas. Inclua o desenvolvimento de áreas como comunicação, gerenciamento de tempo, gerenciamento de reuniões, gerenciamento de estresse, colaboração, inteligência emocional, escuta ativa, empatia e resolução de conflitos em seu roteiro. Aqui está a dica:
 

@@ -83,7 +83,7 @@ Seniority level is another important topic. What are the main differences betwee
 
 A Software Developer can write code, debug, and deliver tasks, but a Software Engineer goes deeper. They can plan a feature, discover and discuss requirements, estimate effort, build a solution, ship it, and maintain it.  They can handle the entire process.
 
-A Software Engineer delivers value for the team, not just for themselves.  They provide guidance, take initiative, help the team understand software challenges, collaborate effectively, mentor others, and continuously learn. They also understand team challenges, the big picture, quarterly objectives, and can break down large tasks into smaller ones.
+A Software Engineer delivers value for the team, not just for themselves.  They provide guidance, take initiative, help the team understand software challenges, collaborate effectively, mentor others, and continuously learn. They also understand team and company challenges, quarterly objectives, and can break down large tasks into smaller ones.
 
 I believe this is somewhat controversial and sometimes subjective. It can affect our egos, but believe me, there's a big difference between someone who knows how to write code and someone who understands why to write code and how it achieves an objective. 
 
@@ -126,7 +126,7 @@ Every company is different, and you need to understand the rules and expectation
 
 As I mentioned, I didn't find any groundbreaking revelations in this book, but I wish someone had told me these things when I started in IT.
 
-So, if you're new to this career, I highly recommend this book.  If you're already a Senior or Staff Engineer, this is an excellent resource to remind yourself how you achieved your current role and how to continue growing.
+So, if you're new to this career, I highly recommend this book. If you're already a Senior or Staff Engineer, this is an excellent resource to remind yourself how you achieved your current role and how to continue growing.
 
 I hope you enjoyed this post and consider reading the book.  Remember that I've shared my thoughts based on my experience as a Software Engineer and Team Lead.  If you have a different point of view, please share it in the comments. I'd love to discuss it.
 
