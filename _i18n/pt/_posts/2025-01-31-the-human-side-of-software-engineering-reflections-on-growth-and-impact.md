@@ -4,6 +4,7 @@ title:  "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e
 date:   2025-01-18
 translations: ["en"]
 tags: ["carreira"]
+social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"
 ---
 
 <p class="intro"><span class="dropcap">A</span>credito que não seja tão difícil entender o que nos torna bem-sucedidos em nossas carreiras, mas às vezes precisamos de um guia para seguir em frente. Então, dediquei um tempo para ler "The Software Engineer's Guidebook" e compartilharei algumas das minhas reflexões sobre o livro, com base na minha perspectiva e experiência como Engenheiro de Software e Líder de Equipe.</p>
