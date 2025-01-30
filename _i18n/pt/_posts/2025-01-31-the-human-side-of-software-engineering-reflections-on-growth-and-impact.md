@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e Impacto"
-date:   2025-01-18
+date:   2025-01-31
 translations: ["en"]
 tags: ["carreira"]
 social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"
