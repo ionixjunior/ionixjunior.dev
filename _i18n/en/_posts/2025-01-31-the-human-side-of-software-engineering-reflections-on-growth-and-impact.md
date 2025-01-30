@@ -32,7 +32,7 @@ Don't worry, because you can and will get there! But here's my first thought:
 
 > This book explained many things I know today, but I wish someone had told me when I started as a developer.
 
-This is a good book for people starting as Software Developers who need to understand how professional growth works in a company.  It's also a good book for experienced developers who want to ensure they continue growing and stay on the right track.
+This is a good book for people starting as Software Developers who need to understand how professional growth works in a company. It's also a good book for experienced developers who want to ensure they continue growing and stay on the right track.
 
 ### Take Charge of Your Career
 
@@ -40,7 +40,7 @@ Simply wanting to grow isn't enough. You need to be in charge of your career. Th
 
 > Think about your career growth and try to answer where you want to be in the next few years. Don't leave this decision to your leader.
 
-When you know where you want to go, it's easier to choose the correct path. I know this can be a challenging and stressful exercise, but only *you* can do it. Not your colleagues, not your leader, not your company. **You need to be in charge of your career**. 
+When you know where you want to go, it's easier to choose the correct path. I know this can be a challenging and stressful exercise, but only you can do it. Not your colleagues, not your leader, not your company. **You need to be in charge of your career**. 
 
 Of course, you can ask for help from an experienced person to clarify paths, understand challenges, or discuss experiences, but only you can decide where to go and how to invest your time.
 
@@ -90,25 +90,27 @@ Ask your leader and teammates about your deliveries. Seek feedback on your work 
 
 ### It Isn't All About Code
 
-We often think the fastest way to grow is by learning new technologies, frameworks, or design patterns.  But we forget that we work with people on a team, so we also need to improve our soft skills, such as communication (asynchronous and synchronous), time management, and collaboration.  Keep this in mind:
+We often think the fastest way to grow is by learning new technologies, frameworks, or design patterns. But we forget that we work with people on a team, so we also need to improve our soft skills, such as communication (asynchronous and synchronous), time management, and collaboration.  Keep this in mind:
 
 > Even if you're working as a developer, you'll deal with people, and human skills are crucial for growth and making yourself understood.
 
-It's not just you and the machine.  There's a team with you. Don't forget it. Always communicate well, providing updates on your issues, meetings, and documenting decisions.
+It's not just you and the machine. There's a team with you. Don't forget it. Always communicate well, providing updates on your issues, meetings, and documenting decisions.
 
 ### Understand When a Task Is Done
 
-Finishing tasks is great, but understanding when a task is truly done is even better. It's amazing to finish an issue and close it, but is that the end? What's next?  Should you follow up to ensure your task or bug fix was applied correctly or solved the main problem? The answer is yes.  So, one more thing to keep in mind:
+It's amazing to finish an issue and close it, but is that the end? What's next?  Should you follow up to ensure your task or bug fix was applied correctly or solved the main problem? The answer is yes.  So, one more thing to keep in mind:
 
 > Your task is done when the objective is completed—that is, when your customer confirms everything is okay through feedback.
 
-**We always develop a product for a customer,** so we need to develop what they need.  It's that simple.
+**We always develop a product for a customer,** so we need to develop what they need. It's that simple.
 
 ### Soft Skills Are Crucial (Sometimes More Than Hard Skills)
 
 Another controversial topic. As you grow in your Software Engineering career, your impact increases. You'll likely make more contributions that affect the whole team, department, or even company, impacting more people with your work. It's common to use this expertise to work more closely with Product folks, Designers, Stakeholders, and other Managers to understand what's truly necessary to make a real impact on the company.
 
-Because of this, foundational abilities are crucial to progressing beyond a Senior Software Engineer career, such as into a Staff Engineer role. Don't neglect human skills. Include developing areas like communication, time management, meeting management, stress management, collaboration, emotional intelligence, active listening, empathy, and conflict resolution in your roadmap. Here's the tip:
+Because of this, foundational abilities are crucial to progressing beyond a Senior Software Engineer career, such as into a Staff Engineer role. 
+
+Don't neglect human skills. Include developing areas like communication, time management, meeting management, stress management, collaboration, emotional intelligence, active listening, empathy, and conflict resolution in your roadmap. Here's the tip:
 
 > As much as you might like to just develop, building relationships with others is inevitable for growth and creating a greater impact.
 
