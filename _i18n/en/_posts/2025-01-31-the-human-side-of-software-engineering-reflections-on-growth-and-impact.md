@@ -18,7 +18,7 @@ I'll be careful not to reveal too many spoilers, but some might be inevitable. I
 
 ## My Thoughts
 
-Here are some of my thoughts:
+Along this reading, I thought about many situations that happened in my career, and I'll share below the most important insights.
 
 ### Good Advice for Growth
 
@@ -26,17 +26,17 @@ I didn't feel this book revealed any big surprises.  Most of what I read, I unde
 
 I believe the last five years acting as a Team Lead changed my perspective, allowing me to understand this book very well. Leading a team helped me see the big picture and understand how to proceed in many situations. Also, this experience allowed me to understand how a company approaches an engineer's career progression.
 
-Some things we read don't make sense until we have experience. I'm assuming the reader of this book is not an entry-level Software Engineer, so some examples might be difficult to understand if you're in an initial position. 
+Some things we read don't make sense until we have experience. I believe some examples might be difficult to understand if you're in an initial position. 
 
-Don't worry, you can and will get there! But here's my first thought:
+Don't worry, because you can and will get there! But here's my first thought:
 
-> This book articulated many things I know today, but I wish someone had told me when I started as a developer.
+> This book explained many things I know today, but I wish someone had told me when I started as a developer.
 
 This is a good book for people starting as Software Developers who need to understand how professional growth works in a company.  It's also a good book for experienced developers who want to ensure they continue growing and stay on the right track.
 
 ### Take Charge of Your Career
 
-Simply *wanting* to grow isn't enough. You need to be in charge of your career. This isn't your leader's responsibility; it's yours.  Here's my second thought:
+Simply wanting to grow isn't enough. You need to be in charge of your career. This isn't your leader's responsibility; it's yours.  Here's my second thought:
 
 > Think about your career growth and try to answer where you want to be in the next few years. Don't leave this decision to your leader.
 
@@ -46,7 +46,7 @@ Of course, you can ask for help from an experienced person to clarify paths, und
 
 ### Deliver Value
 
-Sometimes we work hard and don't feel recognized. This causes a bad feeling and demotivation. The best way to avoid this is to stay aligned with your leader to understand what's most important for delivering value.
+Sometimes we work hard and don't feel recognized. This causes a bad feeling and demotivation. The best way to avoid this is to stay aligned with your leader to understand what's most important for delivering value. So:
 
 > Talk with your leader to understand how you can deliver value for the team, project, other engineers, or the company.
 
@@ -56,9 +56,9 @@ Don't give up. Wanting to grow doesn't guarantee success. **You need to ensure y
 
 ### Understand Why
 
-It's detrimental to start developing a new feature or bug fix without fully understanding it. We might *think* we're being productive by making things faster, but that's often not the case.  Sometimes, we fail. To avoid this, keep this in mind:
+It's detrimental to start developing a new feature or bug fix without fully understanding it. We might think we're being productive by making things faster, but that's often not the case.  Sometimes, we fail. To avoid this, keep this in mind:
 
-> Ensure you know *why* you need to achieve an objective. This way, you'll understand why, how, and *when* you need to do something because you'll see the big picture.
+> Ensure you know why you need to achieve an objective. This way, you'll understand why, how, and when you need to do something because you'll see the big picture.
 
 **Make sure everything is clear** by asking questions, discussing edge cases and side effects.  Don't forget that when it comes to the code, you're the expert. Only you can reveal certain details that Product folks, Designers, or Stakeholders might not see.
 
@@ -72,7 +72,7 @@ I've seen many great developers get stuck on issues, struggling to understand wh
 
 When you break a large task into smaller parts, you tend to isolate problems when they occur.  Because you're not focused on solving the entire task at once, but on a specific part, it's easier to understand the real problem.  This prevents you from feeling desperate in daily meetings (or any other meeting) because you're making progress on a specific piece of the larger puzzle.
 
-Remember: **you don't need to have all the answers**, not even as a highly experienced developer. But **you *do* need to be able to break problems down into smaller parts to create a concise plan.**
+Remember: **you don't need to have all the answers**, not even as a highly experienced developer. But **you do need to be able to break problems down into smaller parts to create a concise plan.**
 
 ### Be Aware of Your Level
 
@@ -84,7 +84,9 @@ A Software Developer can write code, debug, and deliver tasks, but a Software En
 
 A Software Engineer delivers value for the team, not just for themselves.  They provide guidance, take initiative, help the team understand software challenges, collaborate effectively, mentor others, and continuously learn. They also understand team challenges, the big picture, quarterly objectives, and can break down large tasks into smaller ones.
 
-I believe this is somewhat controversial and sometimes subjective. It can affect our egos, but believe me, there's a big difference between someone who knows how to write code and someone who understands *why* to write code and how it achieves an objective.  Ask your leader and teammates about your deliveries. Seek feedback on your work and performance. Ask your colleagues about their perception of your work.
+I believe this is somewhat controversial and sometimes subjective. It can affect our egos, but believe me, there's a big difference between someone who knows how to write code and someone who understands why to write code and how it achieves an objective. 
+
+Ask your leader and teammates about your deliveries. Seek feedback on your work and performance. Ask your colleagues about their perception of your work. Only this way you'll really understand where you are and what is the best way to proceed. Think about it!
 
 ### It Isn't All About Code
 
@@ -96,7 +98,7 @@ It's not just you and the machine.  There's a team with you. Don't forget it. Al
 
 ### Understand When a Task Is Done
 
-Finishing tasks is great, but understanding when a task is truly *done* is even better. It's amazing to finish an issue and close it, but is that the end? What's next?  Should you follow up to ensure your task or bug fix was applied correctly or solved the main problem? The answer is yes.  So, one more thing to keep in mind:
+Finishing tasks is great, but understanding when a task is truly done is even better. It's amazing to finish an issue and close it, but is that the end? What's next?  Should you follow up to ensure your task or bug fix was applied correctly or solved the main problem? The answer is yes.  So, one more thing to keep in mind:
 
 > Your task is done when the objective is completed—that is, when your customer confirms everything is okay through feedback.
 
@@ -106,11 +108,11 @@ Finishing tasks is great, but understanding when a task is truly *done* is even 
 
 Another controversial topic. As you grow in your Software Engineering career, your impact increases. You'll likely make more contributions that affect the whole team, department, or even company, impacting more people with your work. It's common to use this expertise to work more closely with Product folks, Designers, Stakeholders, and other Managers to understand what's truly necessary to make a real impact on the company.
 
-Because of this, foundational abilities are crucial to progressing beyond a Senior Software Engineer career, such as into a Staff Engineer role. Don't neglect human skills. Include developing areas like communication, time management, meeting management, stress management, collaboration, emotional intelligence, active listening, empathy, and conflict resolution in your roadmap.
+Because of this, foundational abilities are crucial to progressing beyond a Senior Software Engineer career, such as into a Staff Engineer role. Don't neglect human skills. Include developing areas like communication, time management, meeting management, stress management, collaboration, emotional intelligence, active listening, empathy, and conflict resolution in your roadmap. Here's the tip:
 
 > As much as you might like to just develop, building relationships with others is inevitable for growth and creating a greater impact.
 
-This usually leads to developing leadership skills, and sometimes you might face decisions about which direction to take.  But don't be afraid. This will make you stronger and more capable of facing challenges.
+This usually leads to developing leadership skills, and sometimes you might face decisions about which direction to take - just like it happened to me. But don't be afraid. This will make you stronger and more capable of facing challenges.
 
 
 ## Conclusion
