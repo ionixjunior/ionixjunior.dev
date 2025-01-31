@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ${{ steps.pages.outputs.base_path }}
+          path: _site
           overwrite: true
 
   # Deployment job
