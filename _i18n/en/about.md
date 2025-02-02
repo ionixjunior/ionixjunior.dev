@@ -3,5 +3,5 @@
 	<figure>
 		<img src="{{ '/assets/img/ione-souza-junior.png' }}" width="200" alt="Photo of Ione Souza Junior"> 
 	</figure>
-	<p>Mobile Engineer, Team Leader, iOS Enthusiast, and former Microsoft MVP, motivated by challenges, coffee, and contributing to the community.</p>
+	<p>Mobile Engineer, iOS Enthusiast, and former Microsoft MVP, motivated by challenges, coffee, and contributing to the community.</p>
 </div>
