@@ -92,3 +92,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # PR deployment simulation job
+  pr_deploy_simulation:
+    runs-on: ubuntu-20.04
+    needs: pr_build
+    # Only run on pull requests
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Simulate deployment to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # This parameter prevents actual deployment
+          preview: true
