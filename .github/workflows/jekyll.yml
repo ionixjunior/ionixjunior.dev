@@ -52,6 +52,32 @@ jobs:
           JEKYLL_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        # Only run this step on main branch pushes
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+
+  # PR validation build job
+  pr_build:
+    runs-on: ubuntu-20.04
+    # Only run on pull requests
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@354a1ad156761f5ee2b7b13fa8e09943a5e8d252 # v1.229.0
+        with:
+          ruby-version: '3.1' 
+          bundler-cache: true
+          cache-version: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      - name: Upload artifact (test)
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
