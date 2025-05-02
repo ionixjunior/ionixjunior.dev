@@ -8,8 +8,8 @@ tags: ["career"]
 
 <p class="intro"><span class="dropcap">I</span>n the last few weeks, everybody has been talking about vibe coding and how easily you can develop an entire system, from zero to hero. This is blowing the minds of most people, and I'll talk about it in today's post. But, before talking about vibe coding, I'll talk about "normal coding" 🤔. Let's do it!</p>
 
-## Normal Coding? WTF??
-Calm down, guys. I'm a Senior Software Engineer who develops mobile applications, but I've been learning Python and Django since February, and I'm using the expression "normal coding" to refer to the default process to learn how to develop software: learn, practice, develop, and repeat it over and over again.
+## Normal coding? WTF??
+Calm down, guys. I'm a Senior Software Engineer who develops mobile applications, but I've been learning Python and Django since February, and I'm using the expression "normal coding" to refer to the default process to develop software: learn, practice, develop, and repeat it over and over again.
 
 ### Learning
 
@@ -39,9 +39,11 @@ During the development time, I learned a lot about the Python way to develop and
 - The importance of avoiding using `datetime.now()` and replacing it with `timezone.now()` to avoid naive datetime.
 - And so much more!
 
-I know, actually, you already know all of these things, and that's okay, but for me, a newbie in Python and Django, all of it was new.
+I know you, Python developer, already know all of these things, but for me, a newbie in Python and Django, all of it was new.
 
 I spent two days making this small app, and it was really fun for me. I didn't use AI for coding, but I used AI just as a senior consultant, where I validated my plan about how to develop my flash cards app, and asked questions about the Python way to develop software.
+
+Maybe you think this funny. but during development, I through to create some "interfaces" and make an abstraction until I discover the duck type.
 
 If you're feeling curious, [here is the repository][django-flash-cards] with the source code.
 
@@ -93,7 +95,7 @@ You’re seeing this error because you have DEBUG = True in your Django settings
 
 Looking at the message, it's easy to understand, but I did vibe coding here, and I delegated this fix to the AI.
 
-After this, the project worked very well and I could see my new "great" new flash cards app. But there's a problem: when I open a deck, I see all my cards, with the front and back text appearing together. My app wasn't finished properly, because I didn't provide enough context.
+After this, the project worked very well and I could see my new flash cards app. But there was a problem: when I opened a deck, I saw all my cards, with the front and back text appearing together. My app wasn't finished properly, because I didn't provide enough context.
 
 I thought about continuing talking with the chat to improve this code, but I had another idea: create a detailed prompt.
 
@@ -120,7 +122,7 @@ Another fun fact: I told the prompt to install the pytest dependency, so should 
 
 The best answer I could provide is: it depends! If you just want a simple and fast solution, and don't care about the artifacts that AI will generate, vibe coding could work using an advanced model and a good tool like Cline. But if you really want or need to understand what is happening, delegating the entire development to an AI tool can be tricky.
 
-The point is, it isn't a problem to create a fast solution using some AI tool, but think about: are you learning something or are you just seeing the code generated and understanding nothing? If you're doing your job, maybe you should care about the final solution, because when you commit these files into the version control in the project of your company, it's your name that appears there as an author, so the responsibility is yours.
+The point is, it isn't a problem to create a fast solution using some AI tool, but think about: are you learning something or are you just seeing the code generated and understanding nothing? If you're delegating all this work to the AI in your company, maybe you should care about the final solution, because when you commit these files into the version control in the project of your company, it's your name that appears there as an author, so the responsibility is yours.
 
 ## Polemic: vibe coding can be good for experienced developers and harmful for newbies
 
