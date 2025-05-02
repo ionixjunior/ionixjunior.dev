@@ -114,7 +114,13 @@ Okay, maybe I exaggerated a little, but it worked too. I won't detail all the ex
 
 Initially, the app didn't work. There were problems of syntax in some files, but after some prompts, everything was fine and I had my new flash cards app working as expected. The result was very interesting here.
 
-TALK ABOUT THE TWO SEARCH QUERY ONLY TO USE PLURALS
+An interesting think that I found looking at the Python Debug Toolbar, was a bottleneck on the main screen. Looking at the SQL queries, I saw two queries executing a count to get the total of cards in a deck. When I saw the source code into the HTML file, I found the following code:
+
+```html
+{ { deck.card_count } } card{ { deck.card_count|pluralize } }
+```
+
+Do you see the problem here? When we use the `card_count` we're making a new SQL query on the database. But wait, there are two `card_count` references in this line. One for print the result, and another to properly print the "card" word using plural or no, depending of the total of cards. Now, imagine this in a big system. Are prepared to solve all this unwanted issues? Are you prepared to solve all these bottlenecks?
 
 Another fun fact: I told the prompt to install the pytest dependency, so should the AI create some tests too? Unfortunately, no tests were created. Maybe I should make this request explicit.
 

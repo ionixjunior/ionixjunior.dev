@@ -116,7 +116,13 @@ Talvez eu tenha exagerado um pouco, mas funcionou também. Não vou detalhar tod
 
 Inicialmente, o aplicativo não funcionou. Houve problemas de sintaxe em alguns arquivos, mas depois de alguns prompts evidenciando o problema, tudo ficou bem e eu tive meu novo aplicativo de flash cards funcionando como esperado. O resultado foi muito interessante aqui.
 
-FALAR SOBRE AS DUAS CONSULTAS DE PESQUISA APENAS PARA USAR PLURAIS
+Uma coisa interessante que encontrei olhando para o Python Debug Toolbar, foi um gargalo na tela inicial. Olhando para as consultas SQL, vi duas queries sendo executadas para carregar o total de cards em um deck. Quando eu vi o código do HTML, encontrei o seguinte:
+
+```html
+{ { deck.card_count } } card{ { deck.card_count|pluralize } }
+```
+
+Você consegue ver o problema aqui? Quando usamos `card_count`, estamos fazendo uma nova consulta no banco de dados. Mas veja que existem duas referências para `card_count` nessa linha. Uma para exibir o total de cards e outra para exibir corretamente a palavra "card" usando plural ou não, dependendo do total de cards que existem. Agora, imagine isso em um sistema grande. Você está preparado para resovler todas esses problemas inesperados? Está preparado para entender de onde vêm estes gargalos?
 
 Outro fato engraçado: eu disse no prompt para instalar a dependência pytest, então a IA deveria criar alguns testes também? Infelizmente, nenhum teste foi criado. Talvez eu devesse tornar esta solicitação explícita.
 
