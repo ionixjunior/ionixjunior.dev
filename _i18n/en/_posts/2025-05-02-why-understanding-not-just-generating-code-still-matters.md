@@ -145,7 +145,7 @@ I highly recommend you check these contents out, because they provide excellent 
 
 To be clear: I like AI tools, and I'm using them a lot day-to-day. But also, I'm continuing to prepare myself, evolving in my career, and learning how to use these tools to boost my work, not replace my job. 
 
-With more ability, maybe I could solve, in the future, issues created today by AI tools, because all of us well need to be better Software Engineers to keep in our jobs.
+With more ability, maybe I could solve, in the future, issues created today by AI tools, because all of us will need to be better Software Engineers to keep in our jobs.
 
 [python_3_path]: https://app.pluralsight.com/paths/skills/python-3
 [django_path]: https://app.pluralsight.com/paths/skills/building-web-applications-with-django
