@@ -122,7 +122,7 @@ An interesting think that I found looking at the Python Debug Toolbar, was a bot
 
 Do you see the problem here? When we use the `card_count` we're making a new SQL query on the database. But wait, there are two `card_count` references in this line. One for print the result, and another to properly print the "card" word using plural or no, depending of the total of cards. Now, imagine this in a big system. Are prepared to solve all this unwanted issues? Are you prepared to solve all these bottlenecks?
 
-Another fun fact: I told the prompt to install the pytest dependency, so should the AI create some tests too? Unfortunately, no tests were created. Maybe I should make this request explicit.
+Another fun fact: I told the prompt to install the pytest dependency, so the AI should create some tests too, right? Unfortunately, no tests were created. Maybe I should make this request explicit.
 
 ## Normal coding or just vibe coding?
 
@@ -142,7 +142,9 @@ Do you think I'm wrong or have bad feelings about it? It's not a problem. This p
 
 I highly recommend you check these contents out, because they provide excellent insights about this reflection.
 
-To be clear: I like AI tools, and I'm using them a lot day-to-day. But also, I'm continuing to prepare myself, evolving in my career, and learning how to use these tools to boost my work, not replace my job. With more ability, maybe I could solve problems created today by AI tools in the future 😂.
+To be clear: I like AI tools, and I'm using them a lot day-to-day. But also, I'm continuing to prepare myself, evolving in my career, and learning how to use these tools to boost my work, not replace my job. 
+
+With more ability, maybe I could solve, in the future, issues created today by AI tools, because all of us well need to be better Software Engineers to keep in our jobs.
 
 [python_3_path]: https://app.pluralsight.com/paths/skills/python-3
 [django_path]: https://app.pluralsight.com/paths/skills/building-web-applications-with-django

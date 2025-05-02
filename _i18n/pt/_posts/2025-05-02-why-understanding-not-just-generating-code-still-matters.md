@@ -6,14 +6,14 @@ translations: ["en"]
 tags: ["carreira"]
 ---
 
-<p class="intro"><span class="dropcap">N</span>as últimas semanas, todo mundo tem falado sobre "vibe coding" e como é fácil desenvolver um sistema inteiro usando boas ferramentas de IA. Isso está deixando a maioria das pessoas impressionadas, e falarei sobre isso no post de hoje. Mas, antes de falar sobre "vibe coding", falarei sobre "normal coding" 🤔. Vamos nessa!</p>
+<p class="intro"><span class="dropcap">N</span>as últimas semanas, todo mundo tem falado sobre vibe coding e como é fácil desenvolver um sistema inteiro usando boas ferramentas de IA. Isso está deixando a maioria das pessoas impressionadas, e falarei sobre isso no post de hoje. Mas, antes de falar sobre vibe coding, falarei sobre "normal coding" 🤔. Vamos nessa!</p>
 
 ## Normal coding? Que p*rra é essa??
 Calma, pessoal. Sou um Engenheiro de Software Sênior que desenvolve aplicações mobile, mas estou aprendendo Python e Django desde fevereiro, e estou usando a expressão "normal coding" para me referir ao processo padrão para desenvolver software: aprender, praticar, desenvolver e repetir isso várias e várias vezes.
 
 ### Aprendizagem
 
-Fiz ótimos cursos na Pluralsight. Na verdade, completei duas trilhas da Pluralsight com muitos cursos em cada uma. A primeira foi [Python 3 Path][python_3_path], e a segunda foi [Building Web Applications with Django Path][django_path]. Ambas são excelentes recursos para aprender e relembrar como a web funciona e como aplicar esses conceitos usando Python. Talvez você não saiba, mas eu já trabalhei com desenvolvimento web em tempo integral até 2014. Então, para mim, aprender Python e Django foi como relembrar como desenvolver para a web.
+Fiz ótimos cursos na Pluralsight. Na verdade, completei duas trilhas da Pluralsight com muitos cursos em cada uma. A primeira foi [Python 3 Path][python_3_path], e a segunda foi [Building Web Applications with Django Path][django_path]. Ambas as trilhas são excelentes recursos para aprender e relembrar como a web funciona e como aplicar esses conceitos usando Python. Talvez você não saiba, mas eu já trabalhei com desenvolvimento web em tempo integral até 2014. Então, para mim, aprender Python e Django foi como relembrar como desenvolver para a web.
 
 ### Prática
 
@@ -53,9 +53,9 @@ Após a versão 1.0 ser finalizada, conversei com alguns colegas para buscar fee
 
 Mas a principal sacada é aqui: eu pude aprender e entender muitos conceitos apenas praticando, desenvolvendo e buscando feedback de outros engenheiros experientes. Agora me sinto capaz de continuar meu projeto e minha jornada através do Python.
 
-## A ideia do "vibe coding"
+## A ideia do vibe coding
 
-Depois disso, fiz um experimento: tentar reproduzir o mesmo aplicativo Python apenas usando "vibe coding", e o resultado realmente me surpreendeu.
+Depois disso, fiz um experimento: tentar reproduzir o mesmo aplicativo Python apenas usando vibe coding, e o resultado realmente me surpreendeu.
 
 Para fazer isso, usei [VS Code][vs-code], uma extensão chamada [Cline][cline] configurada no modo Act, e o Gemini 2.5 Pro Preview 03-25, que é incrível. Fiz duas tentativas. A primeira usando um prompt simples e muito genérico, e a segunda usando um prompt mais detalhado. Vamos falar sobre elas.
 
@@ -83,7 +83,7 @@ Depois disso, o Cline fez o seguinte:
 - A criação do super usuário no banco de dados.
 - A inicialização do servidor pela linha de comando.
 
-Tudo isso levou apenas alguns minutos (ou segundos), e eu tive o projeto inteiro criado. Tentei abrir o navegador, mas vi um erro 404. Seguindo o "vibe coding", apenas procurei ajuda usando um novo prompt:
+Tudo isso levou apenas alguns minutos (ou segundos), e eu tive o projeto inteiro criado. Tentei abrir o navegador, mas vi um erro 404. Seguindo o vibe coding, apenas procurei ajuda usando um novo prompt:
 
 > I can't see the first screen because I get a 404 error. Here is the message:
 Page not found (404)
@@ -95,7 +95,7 @@ cards/
 The empty path didn’t match any of these.
 You’re seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
 
-Olhando a mensagem, é fácil entender, mas fiz "vibe coding" aqui, e deleguei essa correção para a IA.
+Olhando a mensagem, é fácil entender, mas fiz vibe coding aqui, e deleguei essa correção para a IA.
 
 Depois disso, o projeto funcionou bem e pude ver meu novo aplicativo de flash cards. Mas havia um problema: quando abri um deck, vi todos os meus cards, com o texto da frente e de trás aparecendo juntos. Meu aplicativo não foi finalizado corretamente, porque não forneci contexto suficiente.
 
@@ -122,21 +122,21 @@ Uma coisa interessante que encontrei olhando para o Python Debug Toolbar, foi um
 { { deck.card_count } } card{ { deck.card_count|pluralize } }
 ```
 
-Você consegue ver o problema aqui? Quando usamos `card_count`, estamos fazendo uma nova consulta no banco de dados. Mas veja que existem duas referências para `card_count` nessa linha. Uma para exibir o total de cards e outra para exibir corretamente a palavra "card" usando plural ou não, dependendo do total de cards que existem. Agora, imagine isso em um sistema grande. Você está preparado para resovler todas esses problemas inesperados? Está preparado para entender de onde vêm estes gargalos?
+Você consegue ver o problema aqui? Quando usamos `card_count`, estamos fazendo uma nova consulta no banco de dados. Mas veja que existem duas referências para `card_count` nessa linha. Uma para exibir o total de cards e outra para exibir corretamente a palavra "card" usando plural ou não, dependendo do total de cards que existem. Agora, imagine isso em um sistema grande. Você está preparado para resolver todos esses problemas inesperados? Está preparado para entender de onde vêm estes gargalos?
 
-Outro fato engraçado: eu disse no prompt para instalar a dependência pytest, então a IA deveria criar alguns testes também? Infelizmente, nenhum teste foi criado. Talvez eu devesse tornar esta solicitação explícita.
+Outro fato engraçado: eu disse no prompt para instalar a dependência pytest, então a IA deveria criar alguns testes também, certo? Infelizmente, nenhum teste foi criado. Talvez eu devesse tornar esta solicitação explícita.
 
-## Normal coding ou apenas "vibe coding"?
+## Normal coding ou apenas vibe coding?
 
-A melhor resposta que posso dar é: depende! Se você apenas quer uma solução simples e rápida, e não se importa com os artefatos que a IA irá gerar, o "vibe coding" pode funcionar usando um modelo avançado e uma boa ferramenta como o Cline. Mas se você realmente quer ou precisa entender o que está acontecendo, delegar todo o desenvolvimento para uma ferramenta de IA pode ser complicado.
+A melhor resposta que posso dar é: depende! Se você apenas quer uma solução simples e rápida, e não se importa com os artefatos que a IA irá gerar, o vibe coding pode funcionar usando um modelo avançado e uma boa ferramenta como o Cline. Mas se você realmente quer ou precisa entender o que está acontecendo, delegar todo o desenvolvimento para uma ferramenta de IA pode ser complicado.
 
 O ponto é, não é um problema criar uma solução rápida usando alguma ferramenta de IA, mas pense sobre: você está aprendendo algo ou está apenas vendo o código gerado e não entendendo nada? Se você está delegando todo esse trabalho para a IA na sua empresa, talvez deva se preocupar com a solução final, porque quando você comita esses arquivos no controle de versão no projeto da sua empresa, é o seu nome que aparece lá como autor, então a responsabilidade é sua.
 
-## Polêmica: "vibe coding" pode ser bom para desenvolvedores experientes e prejudicial para novatos
+## Polêmica: vibe coding pode ser bom para desenvolvedores experientes e prejudicial para novatos
 
 Este tópico pode ser polêmico, mas reflete meu ponto de vista sobre isso. Desde que comecei a trabalhar com desenvolvimento de software em 2008, os momentos em que realmente aprendi muito foram momentos em que me concentrei nos três pilares principais: aprender, praticar e desenvolver. Às vezes pegamos atalhos para evoluir mais rápido, ou apenas para terminar uma tarefa, ou um trabalho, e não há problema nisso. O problema é quando começamos a fazer as coisas sem entendê-las. Isso pode ser muito ruim, principalmente se você não tem experiência desenvolvendo.
 
-Você acha que estou errado ou tem sentimentos diferentes sobre isso? Não é um problema. Este post apenas reflete meu viés. Diga-me nos comentários o que você pensa. Mas apenas para registro: existem outras pessoas com pontos de vista interessantes também:
+Você acha que estou errado ou tem impressões diferentes sobre isso? Não tem problema. Este post apenas reflete meu viés. Diga-me nos comentários o que você pensa. Mas apenas para registro: existem outras pessoas com pontos de vista interessantes também:
 
 - [AI escreve código melhor que Humanos? - de Lucas Montano][video-does-ai-write-better-code-than-humans]
 - [Vibe Coding is not an excuse for low-quality work - de Addy Osmani][post-vibe-coding-is-not-an-excuse-for-low-quality-work]
@@ -144,7 +144,9 @@ Você acha que estou errado ou tem sentimentos diferentes sobre isso? Não é um
 
 Eu recomendo fortemente que você confira esses conteúdos, porque eles fornecem excelentes insights sobre esta reflexão.
 
-Que fique claro: gosto de ferramentas de IA, e as estou usando muito no dia a dia. Mas também, continuo me preparando, evoluindo na minha carreira, e aprendendo a usar essas ferramentas para impulsionar meu trabalho, não substituí-lo. Com mais habilidade, talvez eu possa resolver problemas criados hoje por ferramentas de IA no futuro 😂.
+Que fique claro: gosto de ferramentas de IA, e as estou usando muito no dia a dia. Mas também, continuo me preparando, evoluindo na minha carreira, e aprendendo a usar essas ferramentas para impulsionar meu trabalho, não substituí-lo. 
+
+Com mais habilidade, talvez eu possa resolver, no futuro, os problemas criados hoje por ferramentas de IA, pois, com certeza, precisaremos ser melhores Engenheiros de Software para continuar na profissão.
 
 [python_3_path]: https://app.pluralsight.com/paths/skills/python-3
 [django_path]: https://app.pluralsight.com/paths/skills/building-web-applications-with-django
