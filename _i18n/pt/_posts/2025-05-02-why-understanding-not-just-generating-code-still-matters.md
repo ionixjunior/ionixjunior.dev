@@ -42,7 +42,7 @@ Durante o desenvolvimento deste app, quebrei a cabeça para sair do mundo orient
 
 Eu sei que você, pessoa desenvolvedora Python, já sabe todas essas coisas, mas para mim, um novato em Python e Django, tudo isso foi novo.
 
-Passei dois dias fazendo este pequeno aplicativo, e foi realmente divertido para mim. Não usei IA para codificar, mas usei IA apenas como um consultor sênior, onde validei meu plano sobre como desenvolver meu aplicativo de flash cards, e fiz perguntas sobre como desenvolver do jeito que um dev Python desenvolve. 
+Passei dois dias fazendo este pequeno aplicativo, e foi realmente divertido para mim. Não usei IA para codificar, mas usei IA apenas como um consultor, onde validei meu plano sobre como desenvolver meu aplicativo de flash cards, e fiz perguntas sobre como desenvolver do jeito que um dev Python desenvolve. 
 
 Pode parecer engraçado, mas várias vezes pensei em criar interfaces para desenvolver abstrações, até descobrir o tal duck type.
 
@@ -131,7 +131,7 @@ Outro fato engraçado: eu disse no prompt para instalar a dependência pytest, e
 
 A melhor resposta que posso dar é: depende! Se você apenas quer uma solução simples e rápida, e não se importa com os artefatos que a IA irá gerar, o vibe coding pode funcionar usando um modelo avançado e uma boa ferramenta como o Cline. Mas se você realmente quer ou precisa entender o que está acontecendo, delegar todo o desenvolvimento para uma ferramenta de IA pode ser complicado.
 
-O ponto é, não é um problema criar uma solução rápida usando alguma ferramenta de IA, mas pense sobre: você está aprendendo algo ou está apenas vendo o código gerado e não entendendo nada? Se você está delegando todo esse trabalho para a IA na sua empresa, talvez deva se preocupar com a solução final, porque quando você comita esses arquivos no controle de versão no projeto da sua empresa, é o seu nome que aparece lá como autor, então a responsabilidade é sua.
+O ponto é, não é um problema criar uma solução rápida usando alguma ferramenta de IA, mas pense sobre: você está aprendendo algo ou está apenas vendo o código gerado e não entendendo nada? Você está aceitando todo o código gerado sem revisar e sem ajustá-lo aos padrões do seu projeto? Se você está delegando todo esse trabalho para a IA na sua empresa, talvez deva se preocupar com a solução final, porque quando você comita esses arquivos no controle de versão no projeto da sua empresa, é o seu nome que aparece lá como autor, então a responsabilidade é sua.
 
 ## Polêmica: vibe coding pode ser bom para desenvolvedores experientes e prejudicial para novatos
 
