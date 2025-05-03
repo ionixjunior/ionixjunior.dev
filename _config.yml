@@ -36,5 +36,19 @@ google_analytics: "G-G7JHVXT0LV"
 
 languages: ["pt", "en"]
 
+exclude:
+  - script.sh
+  - cards_downloader.sh
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE
+  - preview.jpg
+  - preview-dark.png
+  - preview-large.png
+
 # disqus:
 #     shortname: brianmaierjr
