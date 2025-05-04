@@ -1,11 +1,29 @@
-@import "_normalize";
+@import "normalize";
+
+// Import fonts from Google
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+
+// Site configuration
 @import "config";
-@import "partials/mixins";
+
+// Import Partials
 @import "partials/typography";
-@import "breakpoints/1200up";
-@import "breakpoints/800up";
-@import "breakpoints/mobileup";
+@import "partials/mixins";
+
+// Modules
 @import "modules/buttons";
 @import "modules/forms";
-@import "modules/syntax";
 @import "modules/tables";
+@import "modules/syntax";
+
+// Mobile up base styles
+@import "breakpoints/mobileup";
+
+// Import media queries add more as you desire
+@media only screen and (min-width: 800px) {
+	@import "breakpoints/800up";
+}
+@media only screen and (min-width: 1200px) {
+	@import "breakpoints/1200up";
+}
