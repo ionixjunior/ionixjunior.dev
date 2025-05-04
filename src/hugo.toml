@@ -6,7 +6,6 @@ defaultContentLanguageInSubdir = true
 
 [params]
   role = "Mobile Engineer"
-  header = "large"
 
 [languages]
   [languages.en]
