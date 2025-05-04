@@ -15,7 +15,7 @@
     <nav class="nav-collapse">
       <ul class="noList">
         {{ range $i, $link := .Site.Menus.main }}
-          <li class="element{{ if eq $i 0 }} first{{ end }}{{ if $.IsMenuCurrent "main" $link }} current{{ end }}{{ if eq (add $i 1) (len $.Site.Menus.main) }} last{{ end }}">
+          <li class="element{{ if eq $i 0 }}first{{ end }}{{ if $.IsMenuCurrent "main" $link }} current{{ end }}{{ if eq (add $i 1) (len $.Site.Menus.main) }} last{{ end }}">
             <a href="{{ $link.URL }}">{{ i18n $link.Name }}</a>
           </li>
         {{ end }}
