@@ -1,0 +1,9 @@
+<ul>
+  {{ $lang := .Get "lang" | default "en" }}
+  {{ range first 5 (where .Site.RegularPages "Lang" $lang) }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+    </li>
+  {{ end }}
+</ul>
