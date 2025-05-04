@@ -5,4 +5,5 @@
 {{ if .IsHome }}
   <meta name="description" content="{{ .Site.Params.description }}">
 {{ end }}
-<link rel="stylesheet" href="/css/main.css">
+{{ $styles := resources.Get "main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
