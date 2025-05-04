@@ -1,0 +1,8 @@
+<!-- Head partial: add meta, title, styles, etc. -->
+<title>{{ .Title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if .IsHome }}
+  <meta name="description" content="{{ .Site.Params.description }}">
+{{ end }}
+<link rel="stylesheet" href="/css/main.css">
