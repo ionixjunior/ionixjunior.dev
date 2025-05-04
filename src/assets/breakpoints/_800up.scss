@@ -58,7 +58,7 @@ HOMEPAGE STYLING
 HEADER STYLING
 ***************/
 
-.header {
+header {
 	height: 15em;
 	position: relative;
 	padding-bottom: 2em;
@@ -122,7 +122,7 @@ HEADER STYLING
 
 // Large Header Size
 
-.header--large {
+header.header--large {
 	height: 50vh;
 
 	.container {
