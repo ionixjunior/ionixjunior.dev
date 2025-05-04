@@ -1,8 +1,12 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ione Souza Junior"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
+[params]
+  role = "Mobile Engineer"
+  header = "large"
 
 [languages]
   [languages.en]
@@ -16,3 +20,13 @@ defaultContentLanguageInSubdir = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "about"
+  url = "/about/"
+  weight = 2
