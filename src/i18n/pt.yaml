@@ -12,3 +12,5 @@
 
 - id: date_format
   translation: "02/01/2006"
+- id: category
+  translation: "Categoria"

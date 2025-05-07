@@ -13,6 +13,9 @@
               <a href="{{ .RelPermalink }}">{{ .Lang | upper }}</a>
             {{ end }}
           {{ end }}
+          {{ with .Params.category }}
+          | {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
           {{ with .Params.tags }}
           |
             {{ range . }}
