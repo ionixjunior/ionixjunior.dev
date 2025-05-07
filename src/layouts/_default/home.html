@@ -33,10 +33,10 @@
         {{ end }}
         <div class="pagination">
           {{ if $paginator.HasPrev }}
-            <a class="previous" href="{{ $paginator.Prev.URL }}">&laquo; Previous</a>
+            <a class="previous button__outline" href="{{ $paginator.Prev.URL }}">&laquo; Previous</a>
           {{ end }}
           {{ if $paginator.HasNext }}
-            <a class="next" href="{{ $paginator.Next.URL }}">Next &raquo;</a>
+            <a class="next button__outline" href="{{ $paginator.Next.URL }}">Next &raquo;</a>
           {{ end }}
         </div>
       </div>
