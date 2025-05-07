@@ -326,15 +326,6 @@ POST STYLING
 		gap: 0.25em 1em;
 	}
 
-	.meta-small {
-		font-size: 0.85em;
-		color: lighten($black, 30%);
-		margin-bottom: 0.5em;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5em 1em;
-	}
-
 	figure {
 		margin: 3rem 0;
 
@@ -579,12 +570,14 @@ POST LIST STYLING
 	}
 
 	.meta-small {
-		font-size: 0.85em;
-		color: lighten($black, 30%);
+		font-size: 0.8em;
+		font-weight: 300;
+		color: lighten(black, 50%);
+		margin-top: 0em;
 		margin-bottom: 0.5em;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.5em 1em;
+		gap: 0.5em 0.5em;
 	}
 }
 
@@ -599,7 +592,7 @@ DARK THEME STYLING
 	}
 
 	.posts article .date {
-		color: white;
+		color: lighten(black, 50%);;
 	}
 
 	.postNav {
