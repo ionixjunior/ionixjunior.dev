@@ -353,9 +353,15 @@ POST STYLING
 		margin-bottom: 2rem;
 	}
 
-	.dropcap {
+	> p:first-of-type::first-letter {
 		color: $primary-color;
-		margin-right: 0.45rem;
+		float: left;
+		padding: 0px;
+		font-size: 84px;
+		line-height: 46px;
+		margin-top: 15.4px;
+		height: 54px;
+		margin-right: .45rem;
 	}
 
 	.featuredImage {
