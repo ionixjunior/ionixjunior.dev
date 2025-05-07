@@ -2,7 +2,7 @@
 title = "Sobre mim"
 layout = "about"
 +++
-<div class="post">
+<div>
 	<figure>
 		<img src="/img/ione-souza-junior.png" width="200" alt="Foto de Ione Souza Junior"> 
 	</figure>
