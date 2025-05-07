@@ -16,3 +16,10 @@
   translation: "Category"
 - id: tags
   translation: "Tags"
+
+- id: copy_theme_by
+  translation: "Theme originally by"
+- id: copy_adapted_by
+  translation: "Adapted for"
+- id: by
+  translation: "by"
