@@ -321,6 +321,11 @@ POST STYLING
 		color: lighten(black, 50%);
 		font-family: $sans-serif;
 		font-weight: 300;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25em 1em;
+		align-items: center;
+		justify-content: center;
 	}
 
 	figure {
