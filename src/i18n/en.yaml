@@ -2,3 +2,10 @@
   translation: Home
 - id: about
   translation: About
+
+- id: minute_read_singular
+  translation: "minute read"
+- id: minute_read_plural
+  translation: "minute read"
+- id: translations
+  translation: "Translations"

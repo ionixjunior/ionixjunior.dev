@@ -2,3 +2,10 @@
   translation: Início
 - id: about
   translation: Sobre
+
+- id: minute_read_singular
+  translation: "minuto de leitura"
+- id: minute_read_plural
+  translation: "minutos de leitura"
+- id: translations
+  translation: "Traduções"
