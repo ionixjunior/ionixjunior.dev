@@ -8,7 +8,7 @@
         {{ $dateFormat := i18n "date_format" }}
         {{ $posts := where .Site.RegularPages "Type" "post" }}
         {{ $posts := where $posts "Lang" $lang }}
-        {{ $paginator := .Paginate $posts 2 }}
+        {{ $paginator := .Paginate $posts 5 }}
         {{ range $paginator.Pages }}
           <article>
             <span class="date">{{ .Date.Format $dateFormat }}</span>
@@ -34,10 +34,10 @@
       </div>
       <div class="pagination">
         {{ if $paginator.HasPrev }}
-          <a class="previous button__outline" href="{{ $paginator.Prev.URL }}">&laquo; Previous</a>
+          <a class="previous button__outline" href="{{ $paginator.Prev.URL }}">{{ i18n "pagination_prev" }}</a>
         {{ end }}
         {{ if $paginator.HasNext }}
-          <a class="next button__outline" href="{{ $paginator.Next.URL }}">Next &raquo;</a>
+          <a class="next button__outline" href="{{ $paginator.Next.URL }}">{{ i18n "pagination_next" }}</a>
         {{ end }}
       </div>
     </div>
