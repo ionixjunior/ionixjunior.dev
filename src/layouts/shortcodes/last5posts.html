@@ -1,9 +1,35 @@
-<ul>
-  {{ $lang := .Get "lang" | default "en" }}
-  {{ range first 5 (where .Site.RegularPages "Lang" $lang) }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-    </li>
-  {{ end }}
-</ul>
+<div class="content">
+  <div class="container">
+    <div id="home" class="home">
+      <div class="posts noList">
+        <h1 class="pageTitle">{{ .Page.Title }}</h1>
+        {{ $lang := .Page.Lang }}
+        {{ $dateFormat := i18n "date_format" }}
+        {{ $posts := where .Site.RegularPages "Type" "post" }}
+        {{ $posts := where $posts "Lang" $lang }}
+        {{ range first 5 $posts }}
+          <article>
+            <span class="date">{{ .Date.Format $dateFormat }}</span>
+            <h3>
+              <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h3>
+            <span>
+              {{ with .Params.tags }}
+                {{ range . }}
+                  <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+                {{ end }}
+              {{ end }}
+            </span>
+            <p>
+              {{ with .Params.description }}
+                {{ . }}
+              {{ else }}
+                {{ .Summary | plainify }}
+              {{ end }}
+            </p>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
