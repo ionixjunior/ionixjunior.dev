@@ -7,6 +7,11 @@ defaultContentLanguageInSubdir = true
 [params]
   role = "Mobile Engineer"
 
+[params.social]
+  twitter = "ionixjunior"
+  linkedin = "ionixjunior"
+  github = "ionixjunior"
+
 [languages]
   [languages.en]
     languageName = "English"
