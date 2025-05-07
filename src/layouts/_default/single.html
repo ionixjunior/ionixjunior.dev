@@ -17,7 +17,7 @@
           | {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
           {{ end }}
           {{ with .Params.tags }}
-          |
+          | {{ i18n "tags" }}:
             {{ range . }}
               <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
             {{ end }}

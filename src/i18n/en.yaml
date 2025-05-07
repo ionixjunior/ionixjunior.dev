@@ -14,3 +14,5 @@
   translation: "Jan 02, 2006"
 - id: category
   translation: "Category"
+- id: tags
+  translation: "Tags"
