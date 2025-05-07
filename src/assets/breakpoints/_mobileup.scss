@@ -224,7 +224,7 @@ PAGE STYLES
 HEADER STYLING
 ***************/
 
-header {
+.site-header {
 	background-color: $background-color;
 	background-image: url("/img/cover.jpg");
 	background-size: cover;
@@ -269,6 +269,10 @@ header {
 			text-decoration: none;
 		}
 	}
+}
+
+.site-header.header--large {
+	// ...all previous header--large styles here...
 }
 
 /***************

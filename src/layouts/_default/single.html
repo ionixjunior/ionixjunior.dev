@@ -2,7 +2,7 @@
 <main class="content">
   <div class="container">
     <article class="post">
-      <div>
+      <header>
         <h1 class="postTitle">{{ .Title }}</h1>
         <p class="meta">
           {{ .Date.Format (i18n "date_format") }}
@@ -20,7 +20,7 @@
             {{ end }}
           {{ end }}
         </p>
-      </div>
+      </header>
       {{ .Content }}
     </article>
   </div>
