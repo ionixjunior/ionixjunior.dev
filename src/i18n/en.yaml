@@ -23,3 +23,8 @@
   translation: "Adapted for"
 - id: by
   translation: "by"
+
+- id: pagination_prev
+  translation: "New posts"
+- id: pagination_next
+  translation: "Old posts"
