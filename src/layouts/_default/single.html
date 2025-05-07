@@ -5,7 +5,7 @@
       <div>
         <h1 class="postTitle">{{ .Title }}</h1>
         <p class="meta">
-          {{ .Date.Format "Jan 2, 2006" }}
+          {{ .Date.Format (i18n "date_format") }}
           | <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}
           {{ with .Translations }}
           | {{ i18n "translations" }}:

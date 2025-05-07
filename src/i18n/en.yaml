@@ -9,3 +9,6 @@
   translation: "minute read"
 - id: translations
   translation: "Translations"
+
+- id: date_format
+  translation: "Jan 02, 2006"
