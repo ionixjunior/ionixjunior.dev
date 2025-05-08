@@ -35,3 +35,6 @@
   translation: "Ione Souza Junior photo"
 - id: about_description
   translation: "Mobile Engineer, iOS Enthusiast, and former Microsoft MVP, motivated by challenges, coffee, and contributing to the community."
+
+- id: posts
+  translation: "Posts"

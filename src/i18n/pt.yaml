@@ -35,3 +35,6 @@
   translation: "Foto de Ione Souza Junior"
 - id: about_description
   translation: "Mobile Engineer, Entusiasta em Desenvolvimento iOS e ex-Microsoft MVP, movido por desafios, café e por contribuir com a comunidade. Pai de um cachorro que se considera CEO do meu escritório. 📱☕🐶"
+
+- id: posts
+  translation: "Posts"

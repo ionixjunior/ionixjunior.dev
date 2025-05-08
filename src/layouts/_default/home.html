@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1 class="pageTitle">{{ .Title }}</h1>
+<h1 class="pageTitle">{{ i18n "posts" }}</h1>
 {{ $lang := .Lang }}
 {{ $posts := where .Site.RegularPages "Type" "post" }}
 {{ $posts := where $posts "Lang" $lang }}
