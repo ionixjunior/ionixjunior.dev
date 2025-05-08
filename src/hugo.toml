@@ -6,6 +6,7 @@ defaultContentLanguageInSubdir = true
 
 [params]
   role = "Mobile Engineer"
+  postsPerPage = 5
 
 [params.social]
   twitter = "ionixjunior"
