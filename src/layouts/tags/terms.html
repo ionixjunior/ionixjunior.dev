@@ -1,18 +1,12 @@
 {{ define "main" }}
-<div class="content">
-    <div class="container">
-        <div id="home">
-            <h1 class="pageTitle">{{ i18n "tags" }}</h1>
-            <div class="posts noList">
-                <ul class="tags-list">
-                {{ range .Data.Terms.Alphabetical }}
-                    <li>
-                    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-                    </li>
-                {{ end }}
-                </ul>
-            </div>
-        </div>
-    </div>
+<h1 class="pageTitle">{{ i18n "tags" }}</h1>
+<div class="posts noList">
+    <ul class="tags-list">
+    {{ range .Data.Terms.Alphabetical }}
+        <li>
+        <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+        </li>
+    {{ end }}
+    </ul>
 </div>
 {{ end }}
