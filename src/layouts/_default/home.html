@@ -15,12 +15,12 @@
         <span>{{ .Date.Format (i18n "date_format") }}</span>
         <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
         {{ with .Params.category }}
-        <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
+        <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize .)) | relLangURL }}">{{ . }}</a></span>
         {{ end }}
         {{ with .Params.tags }}
         <span>| {{ i18n "tags" }}:
           {{ range . }}
-            <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+            <a href="{{ (print "/tags/" (urlize .)) | relLangURL }}">#{{ . }}</a>
           {{ end }}
         </span>
         {{ end }}
