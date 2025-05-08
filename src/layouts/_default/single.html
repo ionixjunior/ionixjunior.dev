@@ -13,12 +13,12 @@
       </span>
       {{ end }}
       {{ with .Params.category }}
-      <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
+      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize .)) | relLangURL }}">{{ . }}</a></span>
       {{ end }}
       {{ with .Params.tags }}
       <span>| {{ i18n "tags" }}:
         {{ range . }}
-          <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+          <a href="{{ (print "/tags/" (urlize .)) | relLangURL }}">#{{ . }}</a>
         {{ end }}
       </span>
       {{ end }}
