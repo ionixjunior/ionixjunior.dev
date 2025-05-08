@@ -1,33 +1,29 @@
 {{ define "main" }}
-<main class="content">
-  <div class="container">
-    <article class="post">
-      <header>
-        <h1 class="postTitle">{{ .Title }}</h1>
-        <p class="meta">
-          <span>{{ .Date.Format (i18n "date_format") }}</span>
-          <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
-          {{ with .Translations }}
-          <span>| {{ i18n "translations" }}:
-            {{ range . }}
-              <a href="{{ .RelPermalink }}">{{ .Lang | upper }}</a>
-            {{ end }}
-          </span>
-          {{ end }}
-          {{ with .Params.category }}
-          <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
-          {{ end }}
-          {{ with .Params.tags }}
-          <span>| {{ i18n "tags" }}:
-            {{ range . }}
-              <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
-            {{ end }}
-          </span>
-          {{ end }}
-        </p>
-      </header>
-      {{ .Content }}
-    </article>
-  </div>
-</main>
+<article class="post">
+  <header>
+    <h1 class="postTitle">{{ .Title }}</h1>
+    <p class="meta">
+      <span>{{ .Date.Format (i18n "date_format") }}</span>
+      <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
+      {{ with .Translations }}
+      <span>| {{ i18n "translations" }}:
+        {{ range . }}
+          <a href="{{ .RelPermalink }}">{{ .Lang | upper }}</a>
+        {{ end }}
+      </span>
+      {{ end }}
+      {{ with .Params.category }}
+      <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
+      {{ end }}
+      {{ with .Params.tags }}
+      <span>| {{ i18n "tags" }}:
+        {{ range . }}
+          <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+        {{ end }}
+      </span>
+      {{ end }}
+    </p>
+  </header>
+  {{ .Content }}
+</article>
 {{ end }}

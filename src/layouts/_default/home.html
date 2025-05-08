@@ -1,52 +1,46 @@
 {{ define "main" }}
-<div class="content">
-  <div class="container">
-    <div id="home" class="home">
-      <h1 class="pageTitle">{{ .Title }}</h1>
-      <div class="posts noList">
-        {{ $lang := .Lang }}
-        {{ $dateFormat := i18n "date_format" }}
-        {{ $posts := where .Site.RegularPages "Type" "post" }}
-        {{ $posts := where $posts "Lang" $lang }}
-        {{ $paginator := .Paginate $posts 5 }}
-        {{ range $paginator.Pages }}
-          <article>
-            <h3>
-              <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h3>
-            <p class="meta-small">
-              <span>{{ .Date.Format (i18n "date_format") }}</span>
-              <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
-              {{ with .Params.category }}
-              <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
-              {{ end }}
-              {{ with .Params.tags }}
-              <span>| {{ i18n "tags" }}:
-                {{ range . }}
-                  <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
-                {{ end }}
-              </span>
-              {{ end }}
-            </p>
-            <p>
-              {{ with .Params.description }}
-                {{ . }}
-              {{ else }}
-                {{ .Summary | plainify }}
-              {{ end }}
-            </p>
-          </article>
+<h1 class="pageTitle">{{ .Title }}</h1>
+<div class="posts noList">
+  {{ $lang := .Lang }}
+  {{ $dateFormat := i18n "date_format" }}
+  {{ $posts := where .Site.RegularPages "Type" "post" }}
+  {{ $posts := where $posts "Lang" $lang }}
+  {{ $paginator := .Paginate $posts 5 }}
+  {{ range $paginator.Pages }}
+    <article>
+      <h3>
+        <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+      <p class="meta-small">
+        <span>{{ .Date.Format (i18n "date_format") }}</span>
+        <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
+        {{ with .Params.category }}
+        <span>| {{ i18n "category" }}: <a href="/categories/{{ . | urlize }}/">{{ . }}</a></span>
         {{ end }}
-      </div>
-      <div class="pagination">
-        {{ if $paginator.HasPrev }}
-          <a class="previous button__outline" href="{{ $paginator.Prev.URL }}">{{ i18n "pagination_prev" }}</a>
+        {{ with .Params.tags }}
+        <span>| {{ i18n "tags" }}:
+          {{ range . }}
+            <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+          {{ end }}
+        </span>
         {{ end }}
-        {{ if $paginator.HasNext }}
-          <a class="next button__outline" href="{{ $paginator.Next.URL }}">{{ i18n "pagination_next" }}</a>
+      </p>
+      <p>
+        {{ with .Params.description }}
+          {{ . }}
+        {{ else }}
+          {{ .Summary | plainify }}
         {{ end }}
-      </div>
-    </div>
+      </p>
+    </article>
+  {{ end }}
+  <div class="pagination">
+    {{ if $paginator.HasPrev }}
+      <a class="previous button__outline" href="{{ $paginator.Prev.URL }}">{{ i18n "pagination_prev" }}</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+      <a class="next button__outline" href="{{ $paginator.Next.URL }}">{{ i18n "pagination_next" }}</a>
+    {{ end }}
   </div>
 </div>
 {{ end }}
