@@ -36,3 +36,7 @@ defaultContentLanguageInSubdir = true
   name = "about"
   url = "about/"
   weight = 2
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
