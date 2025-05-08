@@ -1,10 +1,7 @@
 {{ define "main" }}
-<main class="content">
-    <div class="container">
-        <div class="post">
-            <h1 class="pageTitle">{{ .Title }}</h1>
-            {{ .Content }}
-        </div>
-    </div>
-</main>
+<div class="post">
+    <h1 class="pageTitle">{{ i18n "about" }}</h1>
+    <img src="/img/ione-souza-junior.png" alt="{{ i18n "about_photo_alt" }}" class="about-photo" />
+    <p>{{ i18n "about_description" }}</p>
+</div>
 {{ end }}
