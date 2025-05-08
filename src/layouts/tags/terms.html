@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ i18n "tags" }}</h1>
+<ul class="tags-list">
+  {{ range .Data.Terms.Alphabetical }}
+    <li>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+      <ul class="posts-list">
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="date">{{ .Date.Format (i18n "date_format") }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
