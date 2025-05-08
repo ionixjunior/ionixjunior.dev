@@ -30,3 +30,8 @@
   translation: "New posts"
 - id: pagination_next
   translation: "Old posts"
+
+- id: about_photo_alt
+  translation: "Ione Souza Junior photo"
+- id: about_description
+  translation: "Mobile Engineer, iOS Enthusiast, and former Microsoft MVP, motivated by challenges, coffee, and contributing to the community."
