@@ -12,8 +12,8 @@
         {{ end }}
       </span>
       {{ end }}
-      {{ with .Params.category }}
-      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize .)) | relLangURL }}">{{ . }}</a></span>
+      {{ with .Params.categories }}
+      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize (index . 0))) | relLangURL }}">{{ index . 0 }}</a></span>
       {{ end }}
       {{ with .Params.tags }}
       <span>| {{ i18n "tags" }}:

@@ -4,8 +4,8 @@
   </h3>
   <p class="meta-small">
     <span>{{ .Date.Format (i18n "date_format") }}</span>
-    {{ with .Params.category }}
-      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize .)) | relLangURL }}">{{ . }}</a></span>
+    {{ with .Params.categories }}
+      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize (index . 0))) | relLangURL }}">{{ index . 0 }}</a></span>
     {{ end }}
     {{ with .Params.tags }}
       <span>| {{ i18n "tags" }}:
