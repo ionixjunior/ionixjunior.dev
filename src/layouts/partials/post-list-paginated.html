@@ -2,12 +2,13 @@
   {{ range .Pages }}
     {{ partial "post-article.html" . }}
   {{ end }}
-  <div class="pagination">
-    {{ if .HasPrev }}
-      <a class="previous button__outline" href="{{ .Prev.URL }}">{{ i18n "pagination_prev" }}</a>
-    {{ end }}
-    {{ if .HasNext }}
-      <a class="next button__outline" href="{{ .Next.URL }}">{{ i18n "pagination_next" }}</a>
-    {{ end }}
-  </div>
+</div>
+
+<div class="pagination">
+  {{ if .HasPrev }}
+    <a class="previous button__outline" href="{{ .Prev.URL }}">{{ i18n "pagination_prev" }}</a>
+  {{ end }}
+  {{ if .HasNext }}
+    <a class="next button__outline" href="{{ .Next.URL }}">{{ i18n "pagination_next" }}</a>
+  {{ end }}
 </div>
