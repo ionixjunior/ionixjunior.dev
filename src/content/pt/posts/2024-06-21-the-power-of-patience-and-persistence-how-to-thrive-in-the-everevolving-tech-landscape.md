@@ -6,7 +6,7 @@ slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-
 translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 categories = ["TODO"]
 tags = ["carreira"]
-image = "img/cards/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.pt.webp"
+image = "/img/cards/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.pt.webp"
 +++
 
 Existem muitas coisas para estudar se você escolher qualquer posição de Engenharia de Software. Você pode desenvolver aplicativos para desktop, web, mobile, IoT, e cada uma dessas opções tem imensas possibilidades para você escolher ou se especializar. Uma pergunta comum, principalmente para um iniciante é: quando eu vou dominar essa tecnologia? Essa é uma pergunta difícil de responder, não é? A tecnologia evolui rápido e o tempo todo as coisas mudam. Isso pode causar um pouco de nervosismo e estresse, porque é um pouco difícil manter as coisas sob controle. Então, no post de hoje, vou compartilhar alguns dos meus pensamentos sobre isso. Pegue um café ou qualquer bebida que você preferir, sente-se e vamos começar.

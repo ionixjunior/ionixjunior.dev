@@ -6,7 +6,7 @@ slug = "git-stash-managing-changes-in-a-temporary-storage"
 translationKey = "git-stash-managing-changes-in-a-temporary-storage"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-stash-managing-changes-in-a-temporary-storage.en.webp"
+image = "/img/cards/git-stash-managing-changes-in-a-temporary-storage.en.webp"
 +++
 
 Git offers a powerful feature called "stash" that allows developers to temporarily store changes without committing them to the repository. This tool comes in handy when you need to switch branches, but you're not ready to commit your changes or when you want to store unfinished work to come back to later. In this guide, we'll delve into the concept of Git Stash, its significance in managing changes effectively, and how it streamlines your development workflow. Let's explore the art of managing changes in a temporary storage with Git Stash!

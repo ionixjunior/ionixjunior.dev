@@ -6,7 +6,7 @@ slug = "my-100-days-of-swift-cool-projects-and-what-i-learned"
 translationKey = "my-100-days-of-swift-cool-projects-and-what-i-learned"
 categories = ["TODO"]
 tags = ["swift"]
-image = "img/cards/my-100-days-of-swift-cool-projects-and-what-i-learned.en.webp"
+image = "/img/cards/my-100-days-of-swift-cool-projects-and-what-i-learned.en.webp"
 +++
 
 A while ago I completed the 100 Days of Swift challenge by Paul Hudson. It was an amazing experience where I learned a lot about Swift and iOS development. In today's post, I'll share my thoughts about this journey and highlight some of the most interesting things I encountered. Let's dive in!

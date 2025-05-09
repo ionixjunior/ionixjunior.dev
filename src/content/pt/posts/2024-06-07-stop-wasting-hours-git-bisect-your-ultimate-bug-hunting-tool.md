@@ -6,7 +6,7 @@ slug = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 translationKey = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.pt.webp"
+image = "/img/cards/stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.pt.webp"
 +++
 
 Já passou horas vasculhando linhas de código, desesperadamente tentando encontrar a origem de um bug irritante? Você não está sozinho(a). Depurar pode parecer um labirinto frustrante, especialmente quando você está lidando com projetos complexos e um histórico de inúmeros commits. Mas e se eu dissesse que existe uma ferramenta poderosa que pode ajudar você a encontrar o commit culpado em minutos, não em horas? Apresento-lhe o Git Bisect, a arma secreta para depuração eficiente. Vamos aprender sobre ele agora!

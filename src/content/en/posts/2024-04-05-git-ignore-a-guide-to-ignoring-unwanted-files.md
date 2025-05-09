@@ -6,7 +6,7 @@ slug = "git-ignore-a-guide-to-ignoring-unwanted-files"
 translationKey = "git-ignore-a-guide-to-ignoring-unwanted-files"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-ignore-a-guide-to-ignoring-unwanted-files.en.webp"
+image = "/img/cards/git-ignore-a-guide-to-ignoring-unwanted-files.en.webp"
 +++
 
 While Git ignore isn't a command, it's an essential tool for keeping your projects organized. By specifying files and directories to ignore, you can prevent clutter and ensure only relevant files are tracked in your repository. In this guide, we'll explore Git ignore and how it streamlines your workflow by excluding unwanted files.

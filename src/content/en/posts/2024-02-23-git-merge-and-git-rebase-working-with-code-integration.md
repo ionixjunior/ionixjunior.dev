@@ -6,7 +6,7 @@ slug = "git-merge-and-git-rebase-working-with-code-integration"
 translationKey = "git-merge-and-git-rebase-working-with-code-integration"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-merge-and-git-rebase-working-with-code-integration.en.webp"
+image = "/img/cards/git-merge-and-git-rebase-working-with-code-integration.en.webp"
 +++
 
 Struggling to work with code integration in Git? You're not alone. Understanding the differences between 'git merge' and 'git rebase' is crucial for maintaining a clean commit history and streamlining your workflow. In this post, I'll explore these two essential commands, their unique approaches to code integration, and best practices for leveraging them effectively.

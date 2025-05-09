@@ -6,7 +6,7 @@ slug = "taking-pauses-is-okay-but-not-planning-can-be-costly"
 translationKey = "taking-pauses-is-okay-but-not-planning-can-be-costly"
 categories = ["TODO"]
 tags = ["carreira"]
-image = "img/cards/taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
+image = "/img/cards/taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
 +++
 
 Olá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Nesse último mês tive bastante tempo para pensar sobre minha carreira, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.

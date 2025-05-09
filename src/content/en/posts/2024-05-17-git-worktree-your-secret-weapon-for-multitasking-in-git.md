@@ -6,7 +6,7 @@ slug = "git-worktree-your-secret-weapon-for-multitasking-in-git"
 translationKey = "git-worktree-your-secret-weapon-for-multitasking-in-git"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-worktree-your-secret-weapon-for-multitasking-in-git.en.webp"
+image = "/img/cards/git-worktree-your-secret-weapon-for-multitasking-in-git.en.webp"
 +++
 
 As a developer, you're no stranger to juggling multiple tasks. You might be fixing bugs in a production release, while simultaneously developing new features for the next version. This often means switching between different branches of your project, which can be a clunky and time-consuming process. Constantly stashing changes, checking out branches, and waiting for your IDE to catch up can significantly disrupt your workflow. But what if there was a way to work on multiple branches simultaneously, without the constant context switching? Enter git worktree: a powerful yet often overlooked command that can revolutionize the way you multitask in Git. Let's see it in action in this post.

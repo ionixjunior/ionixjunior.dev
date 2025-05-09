@@ -6,7 +6,7 @@ slug = "swift-essentials-loops-closures-and-more-part-2"
 translationKey = "swift-essentials-loops-closures-and-more-part-2"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
-image = "img/cards/swift-essentials-loops-closures-and-more-part-2.en.webp"
+image = "/img/cards/swift-essentials-loops-closures-and-more-part-2.en.webp"
 +++
 
 In the first part of "100DaysOfSwiftUI," we explored the foundational building blocks of Swift — variables, data types, and more. Now, let's dive deeper into the control flow, loops, functions, and closures. These are essential concepts for building dynamic and interactive apps in SwiftUI, and they'll help us write more powerful and flexible code. Get ready to unleash the true potential of Swift and unlock new possibilities for your iOS development journey!

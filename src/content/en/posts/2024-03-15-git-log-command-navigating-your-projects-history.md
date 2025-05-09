@@ -6,7 +6,7 @@ slug = "git-log-command-navigating-your-projects-history"
 translationKey = "git-log-command-navigating-your-projects-history"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-log-command-navigating-your-projects-history.en.webp"
+image = "/img/cards/git-log-command-navigating-your-projects-history.en.webp"
 +++
 
 Welcome to the world of version control, where every commit tells a story about your project's journey. Understanding this narrative is key to effective collaboration, bug tracking, and project management. That's where the Git log command comes in. In this post, we'll embark on a journey through your project's history, using the Git log command as our trusty guide. We'll learn how to navigate through commits, explore changes, and uncover insights that will help you become a master of your project's story. So, buckle up as we dive into the Git log command and unlock the secrets hidden within your project's history!

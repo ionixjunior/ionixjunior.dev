@@ -6,7 +6,7 @@ slug = "git-branching-strategies-a-comprehensive-guide"
 translationKey = "git-branching-strategies-a-comprehensive-guide"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/git-branching-strategies-a-comprehensive-guide.en.webp"
+image = "/img/cards/git-branching-strategies-a-comprehensive-guide.en.webp"
 +++
 
 Welcome to our comprehensive guide on Git branching strategies! If you've ever felt overwhelmed by the multitude of branching options available in Git, you're not alone. With so many strategies to choose from, ranging from simple single-branch approaches to more complex models like Git Flow, it's essential to understand the benefits and trade-offs of each. Let's dive in and unravel the intricacies of Git branching together!

@@ -6,7 +6,7 @@ slug = "mastering-git-branching-basics-exploring-the-git-branch-command"
 translationKey = "mastering-git-branching-basics-exploring-the-git-branch-command"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/mastering-git-branching-basics-exploring-the-git-branch-command.pt.webp"
+image = "/img/cards/mastering-git-branching-basics-exploring-the-git-branch-command.pt.webp"
 +++
 
 Embarcar em sua jornada com o Git envolve dominar seus comandos fundamentais, e entre eles, o git branch se destaca como uma ferramenta fundamental para gerenciar branches. Neste guia, vamos mergulhar fundo no comando git branch, explorando suas várias funcionalidades, desde listar branches existentes até criá-los e excluí-los. Ao final, você estará apto a utilizar este comando com segurança, estabelecendo uma base sólida para o seu fluxo de trabalho com o Git.

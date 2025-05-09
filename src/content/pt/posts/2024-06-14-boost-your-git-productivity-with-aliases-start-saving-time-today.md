@@ -6,7 +6,7 @@ slug = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 translationKey = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.pt.webp"
+image = "/img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.pt.webp"
 +++
 
 Cansado de gastar tempo precioso digitando aqueles comandos longos e repetitivos do Git? Você não está sozinho. Os atalhos (alias) do Git oferecem uma solução poderosa para otimizar seu fluxo de trabalho e aumentar sua produtividade. Imagine navegar facilmente em seu repositório Git com atalhos para comandos comuns, economizando tempo e reduzindo o risco de erros. Este artigo irá apresentá-lo ao mundo dos atalhos do Git, desmistificando sua funcionalidade e demonstrando seu imenso poder. Vou lhe ajudar na criação de seus próprios atalhos personalizados, mostrando exemplos práticos para tarefas comuns do Git, como log, fetch, commit e muito mais. Ao final, você estará pronto para abraçar a eficiência e velocidade que os atalhos do Git trazem para seu processo de desenvolvimento. Prepare-se para dominar o Git e liberar o ninja do código que existe em você!

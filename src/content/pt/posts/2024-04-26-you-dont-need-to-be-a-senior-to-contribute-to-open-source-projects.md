@@ -6,7 +6,7 @@ slug = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
 translationKey = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
 categories = ["TODO"]
 tags = ["git", "opensource"]
-image = "img/cards/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
+image = "/img/cards/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
 +++
 
 Quer contribuir para projetos open-source, mas se sente intimidado(a) pela ideia? Não se preocupe! Contrariando a crença popular, você não precisa ser uma pessoa desenvolvedora sênior para fazer contribuições significativas. Na verdade, começar pode ser mais fácil do que você pensa. Neste post, compartilharei minha experiência e mostrarei como pode ser simples contribuir para projetos open-source, independentemente do seu nível de experiência. Vamos mergulhar e descobrir como você pode começar a fazer a diferença hoje!

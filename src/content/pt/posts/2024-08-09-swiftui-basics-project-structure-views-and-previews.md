@@ -6,7 +6,7 @@ slug = "swiftui-basics-project-structure-views-and-previews"
 translationKey = "swiftui-basics-project-structure-views-and-previews"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
-image = "img/cards/swiftui-basics-project-structure-views-and-previews.pt.webp"
+image = "/img/cards/swiftui-basics-project-structure-views-and-previews.pt.webp"
 +++
 
 Este é mais um artigo da série "100 Dias de SwiftUI". No post de hoje, vamos embarcar em uma jornada básica, mas importante: entender a estrutura central de um aplicativo SwiftUI. Vamos desmistificar a configuração do projeto Xcode e explorar os blocos de construção essenciais de toda obra-prima SwiftUI. Vamos começar!

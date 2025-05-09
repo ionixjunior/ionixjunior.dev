@@ -6,7 +6,7 @@ slug = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 translationKey = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 categories = ["TODO"]
 tags = ["git"]
-image = "img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.en.webp"
+image = "/img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.en.webp"
 +++
 
 Tired of spending precious time typing out those long, repetitive Git commands? You're not alone. Git aliases offer a powerful solution to streamline your workflow and boost your productivity. Imagine effortlessly navigating your Git repository with shortcuts for common commands, saving time and reducing the risk of errors. This blog post will introduce you to the world of Git aliases, demystifying their functionality and demonstrating their immense power. We'll guide you through creating your own custom shortcuts, showcasing practical examples for common Git tasks like log, fetch, commit, and more. By the end, you'll be ready to embrace the efficiency and speed that Git aliases bring to your development process. Get ready to master Git and unleash your inner coding ninja!

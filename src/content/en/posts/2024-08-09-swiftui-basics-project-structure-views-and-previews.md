@@ -6,7 +6,7 @@ slug = "swiftui-basics-project-structure-views-and-previews"
 translationKey = "swiftui-basics-project-structure-views-and-previews"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
-image = "img/cards/swiftui-basics-project-structure-views-and-previews.en.webp"
+image = "/img/cards/swiftui-basics-project-structure-views-and-previews.en.webp"
 +++
 
 This is a new post of the "100 Days of SwiftUI" series. In today's post we'll embark on a fundamental journey: understanding the core structure of a SwiftUI app. We'll demystify the Xcode project setup and explore the essential building blocks of every SwiftUI masterpiece. Let's get started!

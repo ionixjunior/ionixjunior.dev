@@ -6,7 +6,7 @@ slug = "why-understanding-not-just-generating-code-still-matters"
 translationKey = "why-understanding-not-just-generating-code-still-matters"
 categories = ["TODO"]
 tags = ["career"]
-image = "img/cards/why-understanding-not-just-generating-code-still-matters.en.webp"
+image = "/img/cards/why-understanding-not-just-generating-code-still-matters.en.webp"
 +++
 
 In the last few weeks, everybody has been talking about vibe coding and how easily you can develop an entire system, from zero to hero. This is blowing the minds of most people, and I'll talk about it in today's post. But, before talking about vibe coding, I'll talk about "normal coding" 🤔. Let's do it!
