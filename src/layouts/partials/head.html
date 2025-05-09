@@ -8,7 +8,7 @@
 <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}img/ione-souza-junior.png" />
+<meta property="og:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.BaseURL }}img/ione-souza-junior.png{{ end }}" />
 {{ if and (eq .Kind "page") (eq .Type "post") }}
   {{ $firstParagraph := findRE "<p>(.*?)</p>" .Content }}
   {{ if gt (len $firstParagraph) 0 }}
@@ -33,7 +33,7 @@
 {{ else }}
   <meta name="twitter:description" content="{{ .Site.Params.description }}" />
 {{ end }}
-<meta name="twitter:image" content="{{ .Site.BaseURL }}img/ione-souza-junior.png">
+<meta name="twitter:image" content="{{ with .Params.image }}{{ . | absURL }}{{ else }}{{ .Site.BaseURL }}img/ione-souza-junior.png{{ end }}">
 <!-- Optionally add your Twitter handle below -->
 <!-- <meta name="twitter:site" content="@your_twitter_handle"> -->
 {{ $styles := resources.Get "main.scss" | toCSS | minify | fingerprint }}
