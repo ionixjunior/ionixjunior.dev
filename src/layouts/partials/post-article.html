@@ -19,7 +19,8 @@
     {{ with .Params.description }}
       {{ . }}
     {{ else }}
-      {{ .Summary | plainify }}
+      {{ $firstParagraph := findRE "<p>.*?</p>" .Content 1 }}
+      {{ index $firstParagraph 0 | safeHTML }}
     {{ end }}
   </p>
 </article>
