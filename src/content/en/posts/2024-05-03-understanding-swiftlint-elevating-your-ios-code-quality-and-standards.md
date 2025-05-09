@@ -104,14 +104,14 @@ To do this is very simple. You need to add a "Run Script Phase" on the Xcode pro
 5. In the script text field, enter the command to run SwiftLint. In my case, I added the swiftlint path from Homebrew: `/opt/homebrew/bin/swiftlint`.
 
 <figure>
-	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_I.png" alt="Steps how to configure SwiftLint into Xcode."> 
+	<img src="/img/steps_how_to_configure_swiftlint_into_xcode_part_I.png" alt="Steps how to configure SwiftLint into Xcode."> 
 	<figcaption>Steps how to configure SwiftLint into Xcode.</figcaption>
 </figure>
 
 After this, move the "Run Script" phase before the "Compile Sources" phase. You just need to drag and drop on the Xcode interface.
 
 <figure>
-	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_II.gif" alt="Moving the Run Script phase before the Compile Sources phase."> 
+	<img src="/img/steps_how_to_configure_swiftlint_into_xcode_part_II.gif" alt="Moving the Run Script phase before the Compile Sources phase."> 
 	<figcaption>Moving the Run Script phase before the Compile Sources phase.</figcaption>
 </figure>
 

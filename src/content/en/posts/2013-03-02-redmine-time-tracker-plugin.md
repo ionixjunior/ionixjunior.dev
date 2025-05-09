@@ -23,7 +23,7 @@ The plugin can be found [in this repository][redmine-time-tracker] on GitHub.
 As you can see below, the only implementation was adding the "Activity" field to the form.
 
 <figure>
-	<img src="/assets/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Image of the Redmine screen with the added Activity field."> 
+	<img src="/img/redmine-time-tracker-plugin-custom-by-ionixjunior.png" alt="Image of the Redmine screen with the added Activity field."> 
 	<figcaption>Image of the Redmine screen with the added Activity field.</figcaption>
 </figure>
 

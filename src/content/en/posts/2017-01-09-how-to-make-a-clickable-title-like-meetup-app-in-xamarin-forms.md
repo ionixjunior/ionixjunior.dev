@@ -13,7 +13,7 @@ Do you know the Meetup app? Meetup is a social network designed to facilitate of
 One of the things that caught my attention in [this app][meetup] is the home screen, which displays the name of the configured city and an arrow icon next to it. In reality, these two elements form a button that allows you to click and go to another screen, where you can reset the selected city.
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Meetup home page"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Meetup home page"> 
     <figcaption>Meetup home page</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Let's see how it looks:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="App's navigation bar with a clickable button"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="App's navigation bar with a clickable button"> 
     <figcaption>App's navigation bar with a clickable button</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Let's check it out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="App's navigation bar with a clickable button and the icon displayed"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="App's navigation bar with a clickable button and the icon displayed"> 
     <figcaption>App's navigation bar with a clickable button and the icon displayed</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Look how it turns out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="App's navigation bar with a clickable button and inverted text and icon"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="App's navigation bar with a clickable button and inverted text and icon"> 
     <figcaption>App's navigation bar with a clickable button and inverted text and icon</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 See how it looks now:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="App's navigation bar with a clickable button and corrected text and icon"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="App's navigation bar with a clickable button and corrected text and icon"> 
     <figcaption>App's navigation bar with a clickable button and corrected text and icon</figcaption>
 </figure>
 
@@ -180,7 +180,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Let's check it out:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="App's navigation bar with a clickable button and spacing between text and icon"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="App's navigation bar with a clickable button and spacing between text and icon"> 
     <figcaption>App's navigation bar with a clickable button and spacing between text and icon</figcaption>
 </figure>
 
@@ -205,7 +205,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Let's see the result:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="App's navigation bar with a clickable button and custom font"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="App's navigation bar with a clickable button and custom font"> 
     <figcaption>App's navigation bar with a clickable button and custom font</figcaption>
 </figure>
 
@@ -362,7 +362,7 @@ public override void WillMoveToParentViewController(UIViewController parent)
 Done! And what's the result of this?
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Example of the implemented screen"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Example of the implemented screen"> 
     <figcaption>Example of the implemented screen</figcaption>
 </figure>
 

@@ -63,7 +63,7 @@ Xcode provides an option called "environment overrides." Basically, you can chan
 When running UI tests, you can set a breakpoint and type `po app.debugDescription` in the output window. This will show a "REPL" (Read-Eval-Print Loop) that helps you understand the UI elements you can interact with on the screen. This is incredibly useful for analyzing UI elements during testing.
 
 <figure>
-	<img src="/assets/img/xcode_uitests_debug.webp" alt="Xcode showing the UI elements on the screen in the output window."> 
+	<img src="/img/xcode_uitests_debug.webp" alt="Xcode showing the UI elements on the screen in the output window."> 
 	<figcaption>Xcode showing the UI elements on the screen in the output window.</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ When running UI tests, you can set a breakpoint and type `po app.debugDescriptio
 This is a very helpful feature. Xcode alerted me when I performed expensive operations on the UI thread, such as loading a URL from the internet. These types of issues are easy to fix, and I appreciated Xcode's warnings that helped me improve my implementation.
 
 <figure>
-	<img src="/assets/img/xcode_unresponsiveness_ui_warning.webp" alt="Xcode showing an unresponsiveness UI warning in a content loaded from a URL."> 
+	<img src="/img/xcode_unresponsiveness_ui_warning.webp" alt="Xcode showing an unresponsiveness UI warning in a content loaded from a URL."> 
 	<figcaption>Xcode showing an unresponsiveness UI warning in a content loaded from a URL.</figcaption>
 </figure>
 

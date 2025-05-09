@@ -16,7 +16,7 @@ Uma das coisas que me chamou atenção [nesse app][meetup] é a tela inicial, on
 
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Página inicial do Meetup"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-577x1024.png" width="300" alt="Página inicial do Meetup"> 
     <figcaption>Página inicial do Meetup</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Pronto, vamos ver o que dá isso:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="Navigation bar do app com botão clicável"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-01.png" width="300" alt="Navigation bar do app com botão clicável"> 
     <figcaption>Navigation bar do app com botão clicável</figcaption>
 </figure>
 
@@ -118,7 +118,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Vamos conferir:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="Navigation bar do app com botão clicável e ícone aparecendo"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-02.png" width="300" alt="Navigation bar do app com botão clicável e ícone aparecendo"> 
     <figcaption>Navigation bar do app com botão clicável e ícone aparecendo</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Olha só como fica:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos aparecendo invertidos"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-03-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos aparecendo invertidos"> 
     <figcaption>Navigation bar do app com botão clicável e ícone e textos aparecendo invertidos</figcaption>
 </figure>
 
@@ -160,7 +160,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Olha como ficou:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos corrigidos"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-04-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e ícone e textos corrigidos"> 
     <figcaption>Navigation bar do app com botão clicável e ícone e textos corrigidos</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Conferindo:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e espaçamento entre texto e ícone"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-05-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e espaçamento entre texto e ícone"> 
     <figcaption>Navigation bar do app com botão clicável e espaçamento entre texto e ícone</figcaption>
 </figure>
 
@@ -208,7 +208,7 @@ parent.NavigationItem.TitleView = buttonTitle;
 Vamos conferir:
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e fonte customizada"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-imagem-06-577x1024.png" width="300" alt="Navigation bar do app com botão clicável e fonte customizada"> 
     <figcaption>Navigation bar do app com botão clicável e fonte customizada</figcaption>
 </figure>
 
@@ -365,7 +365,7 @@ public override void WillMoveToParentViewController(UIViewController parent)
 Pronto! E qual é o resultado disso?
 
 <figure>
-    <img src="/assets/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Exemplo da tela implementada"> 
+    <img src="/img/como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarinforms-gif-exemplo.gif" width="300" alt="Exemplo da tela implementada"> 
     <figcaption>Exemplo da tela implementada</figcaption>
 </figure>
 

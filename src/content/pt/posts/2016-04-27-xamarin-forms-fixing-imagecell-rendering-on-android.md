@@ -32,7 +32,7 @@ Com ImageCell, podemos facilmente adicionar uma imagem e textos. Vejamos uma sim
 Existe algumas diferenças na renderização deste componente entre as plataformas Android e iOS. No Android, quando utilizamos uma imagem muito pequena no ImageCell, esta imagem fica esticada, ocupando todo o container da imagem, que é de 60×60, confira:
 
 <figure>
-	<img src="/assets/img/default-imagecell-ios-and-android.png" alt="Exibição padrão do ImageCell no iOS e Android."> 
+	<img src="/img/default-imagecell-ios-and-android.png" alt="Exibição padrão do ImageCell no iOS e Android."> 
 	<figcaption>Exibição padrão do ImageCell no iOS e Android.</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ Uma das maneiras mais fáceis é não utilizar o ImageCell e customizar a célul
 Desta forma, conseguimos obter um resultado satisfatório, vejamos:
 
 <figure>
-	<img src="/assets/img/viewcell-ios-and-android.png" alt="Exibição com ViewCell no iOS e Android."> 
+	<img src="/img/viewcell-ios-and-android.png" alt="Exibição com ViewCell no iOS e Android."> 
 	<figcaption>Exibição com ViewCell no iOS e Android.</figcaption>
 </figure>
 
@@ -87,7 +87,7 @@ Funcionou para o Android, porém, acredito que essa solução ainda não seja a 
 Note que na imagem da esquerda ( renderizado com ImageCell ) a linha que delimita as células começa a partir do texto, enquanto na imagem da direita ( renderizado com ViewCell customizado ) essa linha começa juntamente com a imagem.
 
 <figure>
-	<img src="/assets/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparação do ImageCell com o ViewCell no iOS."> 
+	<img src="/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparação do ImageCell com o ViewCell no iOS."> 
 	<figcaption>Comparação do ImageCell com o ViewCell no iOS.</figcaption>
 </figure>
 
@@ -165,7 +165,7 @@ namespace Core.Droid.Renders
 O mais importante aqui é a configuração que estamos aplicando para a imagem, onde configuramos o ScaleType Center. Com isso, já conseguimos realizar a renderização mais adequada no Android:
 
 <figure>
-	<img src="/assets/img/imagecell-ios-and-android.png" alt="Exibição padrão no iOS e custom renderer no Android."> 
+	<img src="/img/imagecell-ios-and-android.png" alt="Exibição padrão no iOS e custom renderer no Android."> 
 	<figcaption>Exibição padrão no iOS e custom renderer no Android.</figcaption>
 </figure>
 

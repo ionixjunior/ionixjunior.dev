@@ -20,7 +20,7 @@ O principal objetivo é desenvolver com **Xamarin.Forms**, um aplicativo conheci
 Até a data de publicação deste post já existem sete partes destas lives. Estou fazendo transmissões simultâneas no [Twitch][twitch] e [Youtube][youtube] (escolha sua rede social favorita e me acompanha lá). Para quem gosta mais de Youtube, [criei uma playlist com as lives][playlist] do **Duolingo**, assim fica mais fácil acompanhar a evolução delas.
 
 <figure>
-	<img src="/assets/img/live_do_duolingo_com_xamarin_forms-1024x594.png" alt="Parte VII da live do clone do Duolingo com Xamarin.Forms. Na imagem o resultado parcial obtido da implementação do Android e iOS e um print do app original para comparar."> 
+	<img src="/img/live_do_duolingo_com_xamarin_forms-1024x594.png" alt="Parte VII da live do clone do Duolingo com Xamarin.Forms. Na imagem o resultado parcial obtido da implementação do Android e iOS e um print do app original para comparar."> 
 	<figcaption>Parte VII da live do clone do Duolingo com Xamarin.Forms. Na imagem o resultado parcial obtido da implementação do Android e iOS e um print do app original para comparar.</figcaption>
 </figure>
 

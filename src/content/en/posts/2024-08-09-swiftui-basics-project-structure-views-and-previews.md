@@ -16,14 +16,14 @@ This is a new post of the "100 Days of SwiftUI" series. In today's post we'll em
 To create a new SwiftUI project is very simple. Just open Xcode and click on "Create New Project" option. Another way is pressing the shortcut `CMD + SHIFT + N`.
 
 <figure>
-	<img src="/assets/img/xcode-create-new-project.webp" alt="Xcode welcome screen with “Create New Project…” highlighted."> 
+	<img src="/img/xcode-create-new-project.webp" alt="Xcode welcome screen with “Create New Project…” highlighted."> 
 	<figcaption>Launch Xcode and start a new project.</figcaption>
 </figure>
 
 You'll see a screen to choose a template to you new project. Select "Multiplatform" menu, and them the "App" option on "Application" section. The multiplatform option will ensure you'll create a new SwiftUI app, compatible with other platforms. Press "Next".
 
 <figure>
-	<img src="/assets/img/xcode-select-multiplatform-app-template.webp" alt="Xcode project template selection window with “App” template selected."> 
+	<img src="/img/xcode-select-multiplatform-app-template.webp" alt="Xcode project template selection window with “App” template selected."> 
 	<figcaption>Choose the "App" template under the multiplatform tab.</figcaption>
 </figure>
 
@@ -38,14 +38,14 @@ You'll see a screen to choose some options for your new project. Let's see about
 Also, there's another two checkboxes: "Host in CloudKit" and "Include Tests". Ensure they're unselected and click "Next". I've defined the product name of my app as "Sample App".
 
 <figure>
-	<img src="/assets/img/xcode-set-project-name-swiftui.webp" alt="Xcode project options with “Product Name” field highlighted."> 
+	<img src="/img/xcode-set-project-name-swiftui.webp" alt="Xcode project options with “Product Name” field highlighted."> 
 	<figcaption>Give your project a name.</figcaption>
 </figure>
 
 Now, you need to choose the location where you want to save your new project. If you want to create a local Git repository on your machine, select the option "Create Git repository on my Mac". Press "Create".
 
 <figure>
-	<img src="/assets/img/xcode-create-git-repository.webp" alt="Xcode project creation with “Create Git repository on my Mac” option checked."> 
+	<img src="/img/xcode-create-git-repository.webp" alt="Xcode project creation with “Create Git repository on my Mac” option checked."> 
 	<figcaption>Optionally, initialize a Git repository for version control.</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ When a SwiftUI new project open, we can split the Xcode Workspace in five differ
 Maybe this is the most important area of the project, because we can find our core files there. He's located on the left side of Xcode workspace, as you can see below.
 
 <figure>
-	<img src="/assets/img/xcode-navigator-area.webp" alt="Xcode workspace with Project Navigator, ContentView.swift, and the Preview Canvas visible."> 
+	<img src="/img/xcode-navigator-area.webp" alt="Xcode workspace with Project Navigator, ContentView.swift, and the Preview Canvas visible."> 
 	<figcaption>The Navigator Area (highlighted) is where you find the files of your project.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ A quick overview about these tabs and shortcuts:
 The heart of your coding. Here is the location where your code is written and edited.
 
 <figure>
-	<img src="/assets/img/xcode-editor-area-swiftui-code.webp" alt="Xcode Editor Area highlighted, showing ContentView.swift code."> 
+	<img src="/img/xcode-editor-area-swiftui-code.webp" alt="Xcode Editor Area highlighted, showing ContentView.swift code."> 
 	<figcaption>The Editor Area (highlighted) is where you write and edit your SwiftUI code.</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ To show a file here, you just go to project navigator, choose a file, and it wil
 Here we can show the real-time magic of SwiftUI previews. This definitely a killer feature of SwiftUI, because it helps a lot the development workflow providing real-time preview of the screen developed.
 
 <figure>
-	<img src="/assets/img/xcode-preview-canvas-swiftui.webp" alt="Xcode Preview Canvas highlighted, displaying a preview of the ContentView."> 
+	<img src="/img/xcode-preview-canvas-swiftui.webp" alt="Xcode Preview Canvas highlighted, displaying a preview of the ContentView."> 
 	<figcaption>The Preview Canvas (highlighted) gives you an instant view of your UI.</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ This code won't ship when you publish your app on Apple Store, it's only works u
 This is a hidden area when you create a new project, but you can show it hitting a top right button from Xcode toolbar. When you open it, you'll see a contextualized area based on selected view elements.
 
 <figure>
-	<img src="/assets/img/xcode-inspector-area.webp" alt="Xcode Inspector Area with ContentView settings displayed."> 
+	<img src="/img/xcode-inspector-area.webp" alt="Xcode Inspector Area with ContentView settings displayed."> 
 	<figcaption>Use the Inspector to adjust view properties and settings without coding.</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ This area contains 5 tabs
 This is a dedicated area to use when you're running your app. In this area you can interact when you create a breakpoint on your app and need to see values on variables or objects. To see it, click on the button located at bottom right side, and you'll see a spliced area that will can contain values when you're running your app.
 
 <figure>
-	<img src="/assets/img/xcode-debug-area.webp" alt="Xcode Debug Area that shows app information when it's running."> 
+	<img src="/img/xcode-debug-area.webp" alt="Xcode Debug Area that shows app information when it's running."> 
 	<figcaption>Use the Debug Area to see information when your app is running.</figcaption>
 </figure>
 

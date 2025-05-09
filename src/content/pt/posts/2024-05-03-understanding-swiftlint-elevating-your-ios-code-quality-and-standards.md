@@ -104,14 +104,14 @@ Fazer isso é muito simples. Você precisa adicionar uma "Run Script Phase" no p
 5. No campo de texto do script, insira o comando para executar o SwiftLint. No meu caso, adicionei o swiftlint que instalei com o Homebrew: `/opt/homebrew/bin/swiftlint`.
 
 <figure>
-	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_I.png" alt="Passos de como configurar o SwiftLint no Xcode."> 
+	<img src="/img/steps_how_to_configure_swiftlint_into_xcode_part_I.png" alt="Passos de como configurar o SwiftLint no Xcode."> 
 	<figcaption>Passos de como configurar o SwiftLint no Xcode.</figcaption>
 </figure>
 
 Depois disso, mova a fase "Run Script" antes da fase "Compile Sources". Basta arrastar e soltar na interface do Xcode.
 
 <figure>
-	<img src="/assets/img/steps_how_to_configure_swiftlint_into_xcode_part_II.gif" alt="Movendo a fase Run Script antes da fase Compile Sources."> 
+	<img src="/img/steps_how_to_configure_swiftlint_into_xcode_part_II.gif" alt="Movendo a fase Run Script antes da fase Compile Sources."> 
 	<figcaption>Movendo a fase Run Script antes da fase Compile Sources.</figcaption>
 </figure>
 

@@ -13,7 +13,7 @@ Hey, folks! How's it going? It's been a while since I wanted to write here on th
 To illustrate, I created a new app with **Xamarin.Forms**. In it, I added a home page with a navigation bar and placed two buttons in the body of the page and another button on the navigation bar. After compiling on **iOS**, I got this marvelous result:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar with default color"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar with default color"> 
 	<figcaption>Navigation bar with default color</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ The simplest and fastest way is to add a style to the resources of our shared pr
 The result is:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar with custom color"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar with custom color"> 
 	<figcaption>Navigation bar with custom color</figcaption>
 </figure>
 
@@ -71,14 +71,14 @@ However, there are still those buttons that remain with the default **iOS** styl
 Now it looks much better...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Screen buttons with custom color"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Screen buttons with custom color"> 
 	<figcaption>Screen buttons with custom color</figcaption>
 </figure>
 
 You feel proud of your "all styled" app and decide to implement a button that should ask the user a question. After implementing it, you test it and...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog displayed with default colored buttons"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog displayed with default colored buttons"> 
 	<figcaption>Dialog displayed with default colored buttons</figcaption>
 </figure>
 
@@ -146,14 +146,14 @@ Now the programmer is excited and says:
 <blockquote>I told you I did it...</blockquote>
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog displayed with custom colored buttons"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog displayed with custom colored buttons"> 
 	<figcaption>Dialog displayed with custom colored buttons</figcaption>
 </figure>
 
 Finally, let's do one more implementation, which consists of displaying an image using the default file viewer of each platform. In this example, we will use **DependencyService** to invoke **iOS**'s **QuickLookPreview** to display an image that is in the **Resources** folder of the platform. Let's see how it looks:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview with custom colored buttons"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview with custom colored buttons"> 
 	<figcaption>QuickLookPreview with custom colored buttons</figcaption>
 </figure>
 
@@ -206,7 +206,7 @@ First, we set the color in the navigation bar (line 28). Then we define the colo
 Now, look what we have...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview with navigation bar in custom color"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview with navigation bar in custom color"> 
 	<figcaption>QuickLookPreview with navigation bar in custom color</figcaption>
 </figure>
 

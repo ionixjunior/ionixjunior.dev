@@ -42,7 +42,7 @@ Hotfix branches are emergency branches created from the main branch to address c
 The Git Flow model provides a structured approach to branching and release management, ensuring stability, reliability, and organization throughout the development lifecycle. However, it can be complex and cumbersome for smaller teams or projects with simpler workflows. Additionally, strict adherence to the model may lead to longer release cycles and potential conflicts or merge issues, particularly in larger teams with frequent parallel development efforts.
 
 <figure>
-	<img src="/assets/img/git-flow.webp" alt="The image shows the GitHub flow diagram. It uses only two branches: main and feature. The features include the development of new functionalities. With them we create the pull request, discussion and improvement suggestions are carried out with the team and, finally, the branch is merged back into main."> 
+	<img src="/img/git-flow.webp" alt="The image shows the GitHub flow diagram. It uses only two branches: main and feature. The features include the development of new functionalities. With them we create the pull request, discussion and improvement suggestions are carried out with the team and, finally, the branch is merged back into main."> 
 	<figcaption>Git flow</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ This is a known image originally posted by [Vincent Driessen][vincent_driessen_t
 The GitHub flow branching model is a simplified approach to version control and code integration, emphasizing continuous integration and deployment practices. In GitHub flow, developers create feature branches off the main branch for each new feature or fix, make small, atomic commits to their feature branches, and open pull requests (PRs) to merge their changes back into the main branch. Code changes are reviewed, discussed, and approved through the pull request process before being merged into the main branch. Once merged, changes trigger automated tests and deployments, leading to rapid feedback and iteration. GitHub flow differs from Git flow in its simplicity, continuous deployment focus, and flexibility. While GitHub flow lacks a formal release process, it promotes continuous integration, collaboration, and rapid iteration, making it well-suited for modern software development workflows.
 
 <figure>
-	<img src="/assets/img/github-flow.webp" alt="The diagram shows the main branch, a new branch called feature and the journey that feature takes before it's merged into main."> 
+	<img src="/img/github-flow.webp" alt="The diagram shows the main branch, a new branch called feature and the journey that feature takes before it's merged into main."> 
 	<figcaption>GitHub flow</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ This can provide us better ways to organize the delivery workflow. I encorage yo
 This approach is suitable for projects with a single environment, such as small-scale applications or personal projects. It follows a simplified version of the GitLab flow, where all development, testing, and deployment occur within a single environment, typically the main branch. Changes are continuously integrated and tested in the main branch, with releases triggered automatically based on predefined criteria like passing tests or manual approval. All work is integrated to the main branch and the team members need to decide when is safe to deliver the software making a merge to a production branch.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-single-environment-system.webp" alt="The image shows the GitLab flow diagram for single environment system. It uses only two branches: main and production. All development is carried out on main and the developer chooses when to merge changes to the production branch."> 
+	<img src="/img/gitlab-flow-single-environment-system.webp" alt="The image shows the GitLab flow diagram for single environment system. It uses only two branches: main and production. All development is carried out on main and the developer chooses when to merge changes to the production branch."> 
 	<figcaption>GitLab flow for a single environment system</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ This approach is suitable for projects with a single environment, such as small-
 The multi environment GitLab flow extends the basic GitLab flow model to support multiple environments, such as development, staging, and production. This can be customized as we need. Each environment corresponds to a separate branch (e.g., development, staging, production), with changes flowing through a series of promotion stages before reaching production. Developers work on feature branches, which are merged into the development branch for integration testing. Once validated, changes are promoted to the staging branch for user acceptance testing before finally being deployed to the production branch for release.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-multi-environment-system.webp" alt="The image shows the GitLab flow diagram for multi environment system. It uses three branches: main, pre-production and production, but could use other branches if necessary. All development is carried out on main and the developer chooses when to merge the changes to the other staging and production environments."> 
+	<img src="/img/gitlab-flow-multi-environment-system.webp" alt="The image shows the GitLab flow diagram for multi environment system. It uses three branches: main, pre-production and production, but could use other branches if necessary. All development is carried out on main and the developer chooses when to merge the changes to the other staging and production environments."> 
 	<figcaption>GitLab flow for a multi environment system</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ The multi environment GitLab flow extends the basic GitLab flow model to support
 The multi version GitLab flow is designed for projects with multiple active versions or release streams running concurrently. It allows teams to manage feature development, bug fixes, and releases across multiple branches representing different versions of the software. Developers work on feature branches targeting specific version branches (e.g., v1.x, v2.x), ensuring that changes are isolated and applied to the appropriate release stream. Continuous integration and delivery pipelines are configured to build, test, and deploy each version independently, enabling teams to support multiple customer deployments or product variants simultaneously.
 
 <figure>
-	<img src="/assets/img/gitlab-flow-multi-version-system.webp" alt="The image shows the GitLab flow diagram for multiple version system. It has the main branch and can have several branches, one for each version."> 
+	<img src="/img/gitlab-flow-multi-version-system.webp" alt="The image shows the GitLab flow diagram for multiple version system. It has the main branch and can have several branches, one for each version."> 
 	<figcaption>GitLab flow for a multi version system</figcaption>
 </figure>
 

@@ -30,7 +30,7 @@ With ImageCell, we can easily add an image and texts. Let's see a simple usage:
 There are some differences in rendering this component between Android and iOS platforms. On Android, when we use a very small image in ImageCell, it gets stretched and occupies the entire image container, which is 60x60 pixels, as shown below:
 
 <figure>
-	<img src="/assets/img/default-imagecell-ios-and-android.png" alt="Default ImageCell rendering on iOS and Android."> 
+	<img src="/img/default-imagecell-ios-and-android.png" alt="Default ImageCell rendering on iOS and Android."> 
 	<figcaption>Default ImageCell rendering on iOS and Android.</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ One of the easiest ways is not to use ImageCell and customize the cell to be ren
 This way, we obtain a satisfactory result, as shown below:
 
 <figure>
-	<img src="/assets/img/viewcell-ios-and-android.png" alt="ViewCell rendering on iOS and Android."> 
+	<img src="/img/viewcell-ios-and-android.png" alt="ViewCell rendering on iOS and Android."> 
 	<figcaption>ViewCell rendering on iOS and Android.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ It worked for Android, but I believe this solution is still not ideal. If we pay
 Notice that in the left image (rendered with ImageCell), the line that delimits the cells starts from the text, while in the right image (rendered with custom ViewCell), this line starts together with the image.
 
 <figure>
-	<img src="/assets/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparison of ImageCell with ViewCell on iOS."> 
+	<img src="/img/comparacao-imagecell-e-viewcell-no-ios.jpg" alt="Comparison of ImageCell with ViewCell on iOS."> 
 	<figcaption>Comparison of ImageCell with ViewCell on iOS.</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ namespace Core.Droid.Renders
 The most important part here is the configuration we are applying to the image, where we set the ScaleType to Center. With this, we achieve a more appropriate rendering on Android:
 
 <figure>
-	<img src="/assets/img/imagecell-ios-and-android.png" alt="Default rendering on iOS and custom renderer on Android."> 
+	<img src="/img/imagecell-ios-and-android.png" alt="Default rendering on iOS and custom renderer on Android."> 
 	<figcaption>Default rendering on iOS and custom renderer on Android.</figcaption>
 </figure>
 

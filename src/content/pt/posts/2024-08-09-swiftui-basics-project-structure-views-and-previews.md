@@ -16,14 +16,14 @@ Este é mais um artigo da série "100 Dias de SwiftUI". No post de hoje, vamos e
 Criar um novo projeto SwiftUI é muito simples. Basta abrir o Xcode e clicar na opção "Criar Novo Projeto". Outra maneira é pressionar o atalho `CMD + SHIFT + N`.
 
 <figure>
-	<img src="/assets/img/xcode-create-new-project.webp" alt="Tela de boas-vindas do Xcode com “Criar Novo Projeto…” destacado."> 
+	<img src="/img/xcode-create-new-project.webp" alt="Tela de boas-vindas do Xcode com “Criar Novo Projeto…” destacado."> 
 	<figcaption>Abra o Xcode e inicie um novo projeto.</figcaption>
 </figure>
 
 Você verá uma tela para escolher um modelo para seu novo projeto. Selecione o menu "Multiplataforma" e, em seguida, a opção "App" na seção "Aplicativo". A opção multiplataforma garantirá que você crie um novo aplicativo SwiftUI compatível com outras plataformas. Pressione "Próximo".
 
 <figure>
-	<img src="/assets/img/xcode-select-multiplatform-app-template.webp" alt="Janela de seleção de modelo de projeto Xcode com o modelo “App” selecionado."> 
+	<img src="/img/xcode-select-multiplatform-app-template.webp" alt="Janela de seleção de modelo de projeto Xcode com o modelo “App” selecionado."> 
 	<figcaption>Escolha o modelo "App" na guia multiplataforma.</figcaption>
 </figure>
 
@@ -38,14 +38,14 @@ Você verá uma tela para escolher algumas opções para seu novo projeto. Vamos
 Além disso, existem mais duas caixas de seleção: "Hospedar no CloudKit" e "Incluir Testes". Certifique-se de que estejam desmarcados e clique em "Próximo". Eu defini o nome do produto do meu aplicativo como "Sample App".
 
 <figure>
-	<img src="/assets/img/xcode-set-project-name-swiftui.webp" alt="Opções do projeto Xcode com o campo “Nome do Produto” destacado."> 
+	<img src="/img/xcode-set-project-name-swiftui.webp" alt="Opções do projeto Xcode com o campo “Nome do Produto” destacado."> 
 	<figcaption>Dê um nome ao seu projeto.</figcaption>
 </figure>
 
 Agora, você precisa escolher o local onde salvar seu novo projeto. Se você deseja criar um repositório Git local em sua máquina, selecione a opção "Criar repositório Git no meu Mac". Pressione "Criar".
 
 <figure>
-	<img src="/assets/img/xcode-create-git-repository.webp" alt="Criação do projeto Xcode com a opção “Criar repositório Git no meu Mac” marcada."> 
+	<img src="/img/xcode-create-git-repository.webp" alt="Criação do projeto Xcode com a opção “Criar repositório Git no meu Mac” marcada."> 
 	<figcaption>Opcionalmente, inicialize um repositório Git para controle de versão.</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Quando um novo projeto SwiftUI é aberto, podemos dividir o espaço de trabalho 
 Talvez esta seja a área mais importante do projeto, porque podemos encontrar nossos arquivos principais lá. Ele está localizado no lado esquerdo do espaço de trabalho do Xcode, como você pode ver abaixo.
 
 <figure>
-	<img src="/assets/img/xcode-navigator-area.webp" alt="Espaço de trabalho do Xcode com o Navegador de Projetos, ContentView.swift e a Tela de Pré-visualização visíveis."> 
+	<img src="/img/xcode-navigator-area.webp" alt="Espaço de trabalho do Xcode com o Navegador de Projetos, ContentView.swift e a Tela de Pré-visualização visíveis."> 
 	<figcaption>A Área do Navegador (destacada) é onde você encontra os arquivos do seu projeto.</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ Uma visão geral rápida sobre essas guias e atalhos:
 O coração da sua codificação. Aqui é o local onde seu código é escrito e editado.
 
 <figure>
-	<img src="/assets/img/xcode-editor-area-swiftui-code.webp" alt="Área do Editor do Xcode destacada, mostrando o código ContentView.swift."> 
+	<img src="/img/xcode-editor-area-swiftui-code.webp" alt="Área do Editor do Xcode destacada, mostrando o código ContentView.swift."> 
 	<figcaption>A Área do Editor (destacada) é onde você escreve e edita seu código SwiftUI.</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ Para visualizar um arquivo aqui, basta ir ao navegador do projeto, escolher um a
 Aqui podemos mostrar a mágica em tempo real das pré-visualizações do SwiftUI. Este é definitivamente um recurso matador do SwiftUI, porque ajuda muito o fluxo de trabalho de desenvolvimento, fornecendo uma prévia em tempo real da tela desenvolvida.
 
 <figure>
-	<img src="/assets/img/xcode-preview-canvas-swiftui.webp" alt="Tela de Pré-visualização do Xcode destacada, exibindo uma prévia do ContentView."> 
+	<img src="/img/xcode-preview-canvas-swiftui.webp" alt="Tela de Pré-visualização do Xcode destacada, exibindo uma prévia do ContentView."> 
 	<figcaption>A Tela de Pré-visualização (destacada) fornece uma visualização instantânea da sua interface do usuário.</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ Este código não será enviado quando você publicar seu aplicativo na Apple St
 Esta é uma área oculta quando você cria um novo projeto, mas você pode exibi-la clicando em um botão no canto superior direito da barra de ferramentas do Xcode. Ao abri-lo, você verá uma área contextualizada com base nos elementos de visualização selecionados.
 
 <figure>
-	<img src="/assets/img/xcode-inspector-area.webp" alt="Área do Inspetor do Xcode com as configurações do ContentView exibidas."> 
+	<img src="/img/xcode-inspector-area.webp" alt="Área do Inspetor do Xcode com as configurações do ContentView exibidas."> 
 	<figcaption>Use o Inspetor para ajustar as propriedades e configurações da visualização sem codificação.</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ Esta área contém 5 guias
 Esta é uma área dedicada para usar quando você está executando seu aplicativo. Nesta área, você pode interagir quando cria um ponto de interrupção em seu aplicativo e precisa ver valores em variáveis ou objetos. Para vê-la, clique no botão localizado no canto inferior direito e você irá visualizar uma área dividida que pode conter valores de objetos e variáveis quando você estiver executando seu aplicativo.
 
 <figure>
-	<img src="/assets/img/xcode-debug-area.webp" alt="Área de Depuração do Xcode que mostra informações do aplicativo quando ele está em execução."> 
+	<img src="/img/xcode-debug-area.webp" alt="Área de Depuração do Xcode que mostra informações do aplicativo quando ele está em execução."> 
 	<figcaption>Use a Área de Depuração para ver informações quando seu aplicativo está em execução.</figcaption>
 </figure>
 

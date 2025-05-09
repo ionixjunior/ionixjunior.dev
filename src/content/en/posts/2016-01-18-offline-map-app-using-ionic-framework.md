@@ -88,14 +88,14 @@ When you open MOBAC, click on `Atlas` -> `Convert Atlas Format`, and select the 
 Next, in the `Map Source` tab, select `OpenStreetMap MapQuest` (1); then, you will see the map (2). You can control the zoom of the map (3) to visualize the globe's regions.
 
 <figure>
-	<img src="/assets/img/mobac-tela1.jpg" alt="MOBAC Screen."> 
+	<img src="/img/mobac-tela1.jpg" alt="MOBAC Screen."> 
 	<figcaption>MOBAC Screen.</figcaption>
 </figure>
 
 In the illustrated example, I selected an area of São Paulo city for demonstrative purposes. To download a map area, simply use the cursor to select the desired area. You will see the selected area hashed in red (4). After selecting an area, you must inform in the `Zoom Levels` tab which zoom levels you want to download the map tiles (5). Note that the larger the selected area and the higher the zoom, the more images will be downloaded. After selecting the desired zooms, click `Add selection` (6) in the `Zoom Levels` tab.
 
 <figure>
-	<img src="/assets/img/mobac-tela2.jpg" alt="MOBAC Screen."> 
+	<img src="/img/mobac-tela2.jpg" alt="MOBAC Screen."> 
 	<figcaption>MOBAC Screen.</figcaption>
 </figure>
 

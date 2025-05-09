@@ -15,7 +15,7 @@ Fala galera, beleza? Já faz um tempo que queria escrever aqui no blog. Felizmen
 Para exemplificar, criei um novo app com **Xamarin.Forms**. Nele, adicionei uma página de início com uma barra de navegação e inseri dois botões no corpo da página e mais um botão na barra de navegação, e obti este maravilhoso resultado compilando no **iOS**:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar com cor padrão"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-01-577x1024.png" width="300" alt="Navigation bar com cor padrão"> 
 	<figcaption>Navigation bar com cor padrão</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ A maneira mais simples e mais rápida é adicionar um style nos resources do nos
 Como resultado, temos:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar com cor customizada"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-02-577x1024.png" width="300" alt="Navigation bar com cor customizada"> 
 	<figcaption>Navigation bar com cor customizada</figcaption>
 </figure>
 
@@ -73,14 +73,14 @@ Porém, ainda existem aqueles botões que continuam com o estilo padrão do **iO
 Agora sim, bem melhor...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Botões da tela com cor customizada"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-03-577x1024.png" width="300" alt="Botões da tela com cor customizada"> 
 	<figcaption>Botões da tela com cor customizada</figcaption>
 </figure>
 
 Agora você sai animado com seu app "todo estilizado" e vai implementar um botão que deve fazer uma pergunta ao usuário. Então, após implementar vamos testar e...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog exibido com botões na cor padrão"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-04-577x1024.png" width="300" alt="Dialog exibido com botões na cor padrão"> 
 	<figcaption>Dialog exibido com botões na cor padrão</figcaption>
 </figure>
 
@@ -148,14 +148,14 @@ Agora sim a pessoa programadora vibra e diz:
 <blockquote>eu te disse que tinha feito...</blockquote>
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog exibido com botões em cor customizada"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-05-577x1024.png" width="300" alt="Dialog exibido com botões em cor customizada"> 
 	<figcaption>Dialog exibido com botões em cor customizada</figcaption>
 </figure>
 
 Por fim, faremos mais uma implementação, que consiste em exibir uma imagem utilizando o visualizador de arquivos padrão de cada plataforma. Neste exemplo, utilizaremos o **DependencyService** para invocar o **QuickLookPreview** do **iOS** para chamar uma imagem que está na pasta **Resources** da plataforma. Vamos ver como fica:
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview com botões em cor customizada"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-06-577x1024.png" width="300" alt="QuickLookPreview com botões em cor customizada"> 
 	<figcaption>QuickLookPreview com botões em cor customizada</figcaption>
 </figure>
 
@@ -208,7 +208,7 @@ Primeiro, definimos a cor na barra de navegação (linha 28). Depois definimos a
 Olha o que temos agora...
 
 <figure>
-	<img src="/assets/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview com navigation bar em cor customizada"> 
+	<img src="/img/como-customizar-cor-do-uinavigationbar-e-uialertcontroller-no-xamarin-ios-exemplo-07-577x1024.png" width="300" alt="QuickLookPreview com navigation bar em cor customizada"> 
 	<figcaption>QuickLookPreview com navigation bar em cor customizada</figcaption>
 </figure>
 

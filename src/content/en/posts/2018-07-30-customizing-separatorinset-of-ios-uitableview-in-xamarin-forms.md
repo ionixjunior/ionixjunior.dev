@@ -17,14 +17,14 @@ Talking about developing a screen with a **ListView**, we can build its items us
 Looking at a **ListView** populated with a **TextCell** in its items, we get the following result:
 
 <figure>
-	<img src="/assets/img/text-cell-577x1024.png" width="300" alt="ListView using TextCell in each item"> 
+	<img src="/img/text-cell-577x1024.png" width="300" alt="ListView using TextCell in each item"> 
 	<figcaption>ListView using TextCell in each item</figcaption>
 </figure>
 
 Now, let's populate the same list using an **ImageCell**, and we get the following result:
 
 <figure>
-	<img src="/assets/img/image-cell-577x1024.png" width="300" alt="ListView using ImageCell in each item"> 
+	<img src="/img/image-cell-577x1024.png" width="300" alt="ListView using ImageCell in each item"> 
 	<figcaption>ListView using ImageCell in each item</figcaption>
 </figure>
 
@@ -33,14 +33,14 @@ Comparing the two images, we can see that the separator line of each item has a 
 You probably had noticed that already. Now, let's get to the part that maybe you never paid attention to or didn't give importance to: Let's customize the same **ListView** using **ViewCell** for its items:
 
 <figure>
-	<img src="/assets/img/view-cell-577x1024.png" width="300" alt="ListView using ViewCell in each item"> 
+	<img src="/img/view-cell-577x1024.png" width="300" alt="ListView using ViewCell in each item"> 
 	<figcaption>ListView using ViewCell in each item</figcaption>
 </figure>
 
 Notice what happened: The margin of the item separators now doesn't respect the inserted image and has the same spacing as the **TextCell** example. Below is the comparison of the shown examples:
 
 <figure>
-	<img src="/assets/img/comparacao-cells.png" width="600" alt="Comparison between TextCell, ImageCell, and ViewCell"> 
+	<img src="/img/comparacao-cells.png" width="600" alt="Comparison between TextCell, ImageCell, and ViewCell"> 
 	<figcaption>Comparison between TextCell, ImageCell, and ViewCell</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ Below is the screen:
 Now, the final result looks much better:
 
 <figure>
-	<img src="/assets/img/custom-view-cell-577x1024.png" width="300" alt="ListView using CustomViewCell in each item"> 
+	<img src="/img/custom-view-cell-577x1024.png" width="300" alt="ListView using CustomViewCell in each item"> 
 	<figcaption>ListView using CustomViewCell in each item</figcaption>
 </figure>
 
