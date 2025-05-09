@@ -9,7 +9,7 @@ tags = ["swift"]
 social_image: "my-100-days-of-swift-cool-projects-and-what-i-learned.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">H</span>á algum tempo, completei o desafio 100 Days of Swift de Paul Hudson. Foi uma experiência incrível onde aprendi muito sobre Swift e desenvolvimento iOS. No post de hoje, vou compartilhar meus pensamentos sobre essa jornada e destacar as coisas mais interessantes que encontrei e desenvolvi. Vamos lá!</p>
+Há algum tempo, completei o desafio 100 Days of Swift de Paul Hudson. Foi uma experiência incrível onde aprendi muito sobre Swift e desenvolvimento iOS. No post de hoje, vou compartilhar meus pensamentos sobre essa jornada e destacar as coisas mais interessantes que encontrei e desenvolvi. Vamos lá!
 
 Se você pesquisar por "100 days of Swift", encontrará vários materiais. Quando comecei minha pesquisa, escolhi o treinamento do Paul Hudson. Você pode encontrá-lo [aqui][100_days_of_swift]. Algumas pessoas me perguntaram por que comecei com UIKit em vez de SwiftUI. Bem, acredito que ambos são importantes, então decidi começar com UIKit.
 

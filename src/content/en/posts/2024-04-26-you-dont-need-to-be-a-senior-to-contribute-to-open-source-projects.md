@@ -9,7 +9,7 @@ tags = ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">W</span>ant to contribute to open-source projects but feel intimidated by the idea? Don't worry! Contrary to popular belief, you don't need to be a senior developer to make meaningful contributions. In fact, getting started can be easier than you think. In this post, I'll share my experience and show you how simple it can be to contribute to open-source projects, regardless of your level of experience. Let's dive in and discover how you can start making a difference today!</p>
+Want to contribute to open-source projects but feel intimidated by the idea? Don't worry! Contrary to popular belief, you don't need to be a senior developer to make meaningful contributions. In fact, getting started can be easier than you think. In this post, I'll share my experience and show you how simple it can be to contribute to open-source projects, regardless of your level of experience. Let's dive in and discover how you can start making a difference today!
 
 [Some months ago][career_transition_post], I said about my career transition to focus on Swift to be an iOS Engineer, and one of my plans is starting to contribute to iOS open-source projects. But, how can I contribute if I am learning? Well, I am learning, but I have some experience and I know how to start. So, the main challenge was discovered some cool project to contribute.
 

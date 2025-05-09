@@ -9,7 +9,7 @@ tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-structs-classes-and-more-part-3.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">N</span>as duas primeiras partes do "100DaysOfSwiftUI", exploramos os blocos de construção fundamentais do Swift - variáveis, tipos de dados, fluxo de controle, loops, funções e closures. Agora, estamos prontos para mergulhar em um aspecto crucial da programação Swift: structs e classes. Essas ferramentas poderosas permitem que criemos estruturas de dados personalizadas que organizam e representam objetos do mundo real em nosso código. Entender structs e classes é essencial para construir aplicativos complexos e modulares em SwiftUI, e elas o capacitarão a criar aplicativos iOS mais poderosos e robustos. Vamos aprender sobre isso!</p>
+Nas duas primeiras partes do "100DaysOfSwiftUI", exploramos os blocos de construção fundamentais do Swift - variáveis, tipos de dados, fluxo de controle, loops, funções e closures. Agora, estamos prontos para mergulhar em um aspecto crucial da programação Swift: structs e classes. Essas ferramentas poderosas permitem que criemos estruturas de dados personalizadas que organizam e representam objetos do mundo real em nosso código. Entender structs e classes é essencial para construir aplicativos complexos e modulares em SwiftUI, e elas o capacitarão a criar aplicativos iOS mais poderosos e robustos. Vamos aprender sobre isso!
 
 ## Structs: Tipos de Valor
 

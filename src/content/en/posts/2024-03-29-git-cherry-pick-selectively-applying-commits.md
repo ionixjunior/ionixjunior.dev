@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-cherry-pick-selectively-applying-commits.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">C</span>herry-picking in Git is a powerful technique that allows you to choose specific commits from one branch and apply them to another. This can be particularly useful when you want to bring in individual changes from one branch to another without merging the entire branch. In this post we'll see how this command works!</p>
+Cherry-picking in Git is a powerful technique that allows you to choose specific commits from one branch and apply them to another. This can be particularly useful when you want to bring in individual changes from one branch to another without merging the entire branch. In this post we'll see how this command works!
 
 ## Understanding git cherry-pick
 The `git cherry-pick` command is a powerful tool in Git that allows you to select **specific commits** from one branch and apply them to another branch. This **selective approach** to integrating commits enables developers to incorporate individual changesets into their codebase without merging entire branches.

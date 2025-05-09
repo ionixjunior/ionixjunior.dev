@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["zend"]
 +++
 
-<p class="intro"><span class="dropcap">M</span>any Web Developers who work with websites or systems development use MySQL or PostgreSQL as their database, and in a project I developed, it was no different - I opted for MySQL.</p>
+Many Web Developers who work with websites or systems development use MySQL or PostgreSQL as their database, and in a project I developed, it was no different - I opted for MySQL.
 
 However, during the project, the need arose to switch to using SQL Server. That's when I was delighted to take advantage of the facilities that an ORM provides in terms of abstraction, in this case, I was using Doctrine 1.
 

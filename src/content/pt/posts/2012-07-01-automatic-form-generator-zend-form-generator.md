@@ -10,7 +10,7 @@ redirect_from:
     - /gerador-automatico-de-formularios-zend-form-generator/
 +++
 
-<p class="intro"><span class="dropcap">C</span>riar formulários, na maioria das vezes, torna-se uma atividade muito repetitiva e também cansativa, principalmente se em sua aplicação existem muitos formulários a serem criados.</p>
+Criar formulários, na maioria das vezes, torna-se uma atividade muito repetitiva e também cansativa, principalmente se em sua aplicação existem muitos formulários a serem criados.
 
 Pensando nisso, desenvolvi uma maneira mais fácil para criar estes formulários, se chama Zend Form Generator, e beneficia os utilizadores do Zend Form.
 

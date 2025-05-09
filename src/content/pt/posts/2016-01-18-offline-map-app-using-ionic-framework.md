@@ -10,7 +10,7 @@ redirect_from:
     - /aplicativo-com-mapa-offline-usando-ionic-framework/
 +++
 
-<p class="intro"><span class="dropcap">V</span>amos lá, esse post foi inspirado em uma dúvida postada no Slack do Ionic Brazil. A pergunta foi mais ou menos assim: “Alguém já fez algo relacionado a mapas, como baixar o mapa pro celular do cara, sem precisar ficar carregando o mapa online?”</p>
+Vamos lá, esse post foi inspirado em uma dúvida postada no Slack do Ionic Brazil. A pergunta foi mais ou menos assim: “Alguém já fez algo relacionado a mapas, como baixar o mapa pro celular do cara, sem precisar ficar carregando o mapa online?”
 
 Tendo em vista que isso também pode ser dúvida de outros desenvolvedores, aqui vai um breve post que tem como objetivo deixar as coisas um pouco mais claras em relação ao assunto.
 

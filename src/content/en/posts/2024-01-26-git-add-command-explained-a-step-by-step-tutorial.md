@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">T</span>o add files to a Git repository, they must be included in a specific area to commit. But why is this step necessary? If I make changes, don't I want to add them to the repository? Yes, indeed, but I'll show you some benefits of this approach and explain more details about the command. Let's get started!</p>
+To add files to a Git repository, they must be included in a specific area to commit. But why is this step necessary? If I make changes, don't I want to add them to the repository? Yes, indeed, but I'll show you some benefits of this approach and explain more details about the command. Let's get started!
 
 ### Understanding the staging area
 In a Git repository, the staging area is the crucial intermediary step between modifying your files and permanently saving those changes in a commit. Staging allows you to carefully curate which modifications you want to include in your next commit, providing granular control over your project's development and aiding in articulating your thought process more effectively through commits.

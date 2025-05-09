@@ -10,7 +10,7 @@ redirect_from:
     - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms/
 +++
 
-<p class="intro"><span class="dropcap">E</span>m maio de 2020 fiz uma live perguntando "o que você gostaria de ver em vídeo aulas sobre desenvolvimento de interfaces com Xamarin.Forms". Afinal de contas, que fim teve essa iniciativa? É isso o que você vai saber neste post.</p>
+Em maio de 2020 fiz uma live perguntando "o que você gostaria de ver em vídeo aulas sobre desenvolvimento de interfaces com Xamarin.Forms". Afinal de contas, que fim teve essa iniciativa? É isso o que você vai saber neste post.
 
 [Durante e após a live][live], anotei todas as ideias sugeridas e as organizei em um [board no GitHub][board]. Foram diversas sugestões enviadas, e gostaria de agradecer a todos pela participação. Após organizar tudo, dei início a produção do conteúdo, mas ainda não tinha divulgado publicamente o resultado do trabalho.
 

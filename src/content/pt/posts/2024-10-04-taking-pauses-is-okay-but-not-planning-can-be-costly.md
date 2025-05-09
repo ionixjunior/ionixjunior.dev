@@ -9,7 +9,7 @@ tags = ["carreira"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">O</span>lá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Nesse último mês tive bastante tempo para pensar sobre minha carreira, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.</p>
+Olá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Nesse último mês tive bastante tempo para pensar sobre minha carreira, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.
 
 No mês passado, minha esposa e eu nos mudamos para uma nova cidade. Não foi nossa primeira mudança - já nos mudamos várias vezes em nosso relacionamento (cinco, se não me falha a memória!). Mudar é sempre algo que consome muito tempo, então tirei uma breve pausa para me instalar em nosso novo apartamento, escritório e rotinas. 
 

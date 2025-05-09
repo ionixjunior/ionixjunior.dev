@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">N</span>os primeiros testes que fiz com Redmine, percebi que a maneira que ele disponibiliza para fazer apontamento de horas é um pouco precária, e até onde vi, não existe um client estilo o Worklog, e principalmente, open source, para realizar essa tarefa de maneira sutil.</p>
+Nos primeiros testes que fiz com Redmine, percebi que a maneira que ele disponibiliza para fazer apontamento de horas é um pouco precária, e até onde vi, não existe um client estilo o Worklog, e principalmente, open source, para realizar essa tarefa de maneira sutil.
 
 Foi então que achei o plugin Redmine Time Tracker. Com ele você consegue ter uma interface mais agradável para realizar apontamento de horas. Não tem toda a praticidade de um client, mas é possível escolher uma issue e em seguida iniciar o apontamento de horas.
 

@@ -9,7 +9,7 @@ tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-loops-closures-and-more-part-2.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">N</span>a primeira parte do "100DaysOfSwiftUI", exploramos os blocos de construção fundamentais do Swift - variáveis, tipos de dados e muito mais. Agora, vamos mergulhar mais fundo no fluxo de controle, loops, funções e closures. Esses são conceitos essenciais para construir aplicativos dinâmicos e interativos em SwiftUI, e eles nos ajudarão a escrever código mais poderoso e flexível. Prepare-se para liberar o verdadeiro potencial do Swift e desbloquear novas possibilidades para sua jornada de desenvolvimento iOS!</p>
+Na primeira parte do "100DaysOfSwiftUI", exploramos os blocos de construção fundamentais do Swift - variáveis, tipos de dados e muito mais. Agora, vamos mergulhar mais fundo no fluxo de controle, loops, funções e closures. Esses são conceitos essenciais para construir aplicativos dinâmicos e interativos em SwiftUI, e eles nos ajudarão a escrever código mais poderoso e flexível. Prepare-se para liberar o verdadeiro potencial do Swift e desbloquear novas possibilidades para sua jornada de desenvolvimento iOS!
 
 ## Fluxo de Controle: Tomando Decisões e Repetindo Ações
 

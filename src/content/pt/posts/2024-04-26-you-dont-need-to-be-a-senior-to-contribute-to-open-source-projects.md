@@ -9,7 +9,7 @@ tags = ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">Q</span>uer contribuir para projetos open-source, mas se sente intimidado(a) pela ideia? Não se preocupe! Contrariando a crença popular, você não precisa ser uma pessoa desenvolvedora sênior para fazer contribuições significativas. Na verdade, começar pode ser mais fácil do que você pensa. Neste post, compartilharei minha experiência e mostrarei como pode ser simples contribuir para projetos open-source, independentemente do seu nível de experiência. Vamos mergulhar e descobrir como você pode começar a fazer a diferença hoje!</p>
+Quer contribuir para projetos open-source, mas se sente intimidado(a) pela ideia? Não se preocupe! Contrariando a crença popular, você não precisa ser uma pessoa desenvolvedora sênior para fazer contribuições significativas. Na verdade, começar pode ser mais fácil do que você pensa. Neste post, compartilharei minha experiência e mostrarei como pode ser simples contribuir para projetos open-source, independentemente do seu nível de experiência. Vamos mergulhar e descobrir como você pode começar a fazer a diferença hoje!
 
 [Alguns meses atrás][carreira_transicao_post], falei sobre minha transição de carreira para me concentrar em Swift para ser um Engenheiro iOS, e um dos meus planos é começar a contribuir para projetos iOS open-source. Mas, como posso contribuir se estou aprendendo? Bem, estou aprendendo, mas tenho alguma experiência e sei como começar. Então, o principal desafio foi descobrir alguns projetos interessantes para contribuir.
 

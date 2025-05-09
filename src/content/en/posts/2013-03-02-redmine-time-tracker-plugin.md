@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">I</span>n the initial tests I performed with Redmine, I noticed that the time tracking feature it provides is somewhat limited, and as far as I could see, there isn't a client similar to Worklog, especially an open-source one, for seamless time tracking.</p>
+In the initial tests I performed with Redmine, I noticed that the time tracking feature it provides is somewhat limited, and as far as I could see, there isn't a client similar to Worklog, especially an open-source one, for seamless time tracking.
 
 That's when I found the Redmine Time Tracker plugin. With it, you can have a more user-friendly interface for time tracking. It doesn't have all the convenience of a client, but you can choose an issue and then start tracking time on it.
 

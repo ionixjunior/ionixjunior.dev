@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">L</span>et's go! This post was inspired by a question posted in the Ionic Brazil Slack. The question was something like: "Has anyone done anything related to maps, like downloading the map to the user's phone, without needing to load it online?"</p>
+Let's go! This post was inspired by a question posted in the Ionic Brazil Slack. The question was something like: "Has anyone done anything related to maps, like downloading the map to the user's phone, without needing to load it online?"
 
 Considering that this might be a doubt for other developers as well, here's a brief post aimed to clarify things on this subject.
 

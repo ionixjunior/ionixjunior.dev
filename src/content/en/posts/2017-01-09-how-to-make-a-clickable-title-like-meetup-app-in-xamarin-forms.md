@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin", "ios"]
 +++
 
-<p class="intro"><span class="dropcap">D</span>o you know the Meetup app? Meetup is a social network designed to facilitate offline group meetings. Why am I talking about it? Just to introduce the subject. What I want to talk about today is how to create a clickable title like the Meetup app for iOS in an app developed with Xamarin.Forms.</p>
+Do you know the Meetup app? Meetup is a social network designed to facilitate offline group meetings. Why am I talking about it? Just to introduce the subject. What I want to talk about today is how to create a clickable title like the Meetup app for iOS in an app developed with Xamarin.Forms.
 
 One of the things that caught my attention in [this app][meetup] is the home screen, which displays the name of the configured city and an arrow icon next to it. In reality, these two elements form a button that allows you to click and go to another screen, where you can reset the selected city.
 

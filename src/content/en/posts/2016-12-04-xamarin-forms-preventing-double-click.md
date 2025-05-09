@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">H</span>i, I'm back! Today I'm going to talk about a situation I faced this week and had to come up with a solution. I'm going to talk about double clicking on mobile navigation (if we can call it that).</p>
+Hi, I'm back! Today I'm going to talk about a situation I faced this week and had to come up with a solution. I'm going to talk about double clicking on mobile navigation (if we can call it that).
 
 When releasing an app for testing, some users said "look what I managed to do...". So, I made that face of "what did you guys do this time..." and went to check. I identified that the user had clicked 2x on a certain button, causing the requested page to open 2x. In this reported case, the user was not even at fault or malicious. Unintentionally (I prefer to believe that!), he clicked quickly more than once on the button and the problem happened. It is worth mentioning that the app did not crash, it just opened the same page more than once, something similar to this:
 

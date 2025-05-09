@@ -9,7 +9,7 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">R</span>ecently, Microsoft announced that the Xamarin platform is available for free to developers.</p>
+Recently, Microsoft announced that the Xamarin platform is available for free to developers.
 
 If you already had your Xamarin trial license, you can now convert it to the community edition and develop your applications without the previous restrictions.
 

@@ -10,7 +10,7 @@ redirect_from:
     - /mantendo-seu-software-sob-controle/
 +++
 
-<p class="intro"><span class="dropcap">N</span>a última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.</p>
+Na última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.
 
 Por tratar-se de uma palestra rápida, a apresentação aborda apenas algumas das principais ferramentas para controle de qualidade de software.
 

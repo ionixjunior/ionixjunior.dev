@@ -8,8 +8,8 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">H</span>ey folks! How are you doing?
-After a while, here I am writing again! But today, there won't be any technical article. Instead, I'll share with you a series of live streams I'm doing to develop a Duolingo app clone with Xamarin.Forms. Do you interested? Then read on to find out more.</p>
+Hey folks! How are you doing?
+After a while, here I am writing again! But today, there won't be any technical article. Instead, I'll share with you a series of live streams I'm doing to develop a Duolingo app clone with Xamarin.Forms. Do you interested? Then read on to find out more.
 
 Why did I start these live streams? Well, recently, I had the opportunity to participate in some live streams on the [Maratona Xamarin do Monkey Nights][maratona-xamarin] (live [developing screens with XAML][live-dev-telas]) and on [Canal dotNET][canal-dotnet] ([Yellow app clone Part I][live-clone-I] and [Part II][live-clone-II]). I enjoyed this experience so much that I decided to do my own live streams.
 

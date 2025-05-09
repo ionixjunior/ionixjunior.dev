@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin", "ios"]
 +++
 
-<p class="intro"><span class="dropcap">I</span>mportant notice: this post is intended for perfectionist developers. Hello, folks! Today, I bring a small tip on how to customize the SeparatorInset of a UITableView in iOS in a Xamarin.Forms application. But what is that? What are we talking about? Let's find out in this post!</p>
+Important notice: this post is intended for perfectionist developers. Hello, folks! Today, I bring a small tip on how to customize the SeparatorInset of a UITableView in iOS in a Xamarin.Forms application. But what is that? What are we talking about? Let's find out in this post!
 
 As I mentioned at the beginning of the post, only those who are truly perfectionists will notice this detail. So, let's show a few things that happen in **iOS** development with **Xamarin.Forms** before we get to the main topic of the post.
 

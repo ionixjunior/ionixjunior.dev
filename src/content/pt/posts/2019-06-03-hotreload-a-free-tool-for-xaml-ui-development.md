@@ -10,7 +10,7 @@ redirect_from:
     - /hotreload-uma-ferramenta-gratuita-para-desenvolvimento-de-ui-em-xaml/
 +++
 
-<p class="intro"><span class="dropcap">H</span>á um tempo escrevi um post chamado Xamarin.Forms e UI – Qual ferramenta é mais produtiva?. Neste post, criei um comparativo entre as principais ferramentas existentes naquele momento para facilitar o desenvolvimento de apps com Xamarin.Forms usando XAML. Agora surgiu uma nova ferramenta chamada HotReload. Vamos dar uma conferida nela e compará-la junto com as demais ferramentas?</p>
+Há um tempo escrevi um post chamado Xamarin.Forms e UI – Qual ferramenta é mais produtiva?. Neste post, criei um comparativo entre as principais ferramentas existentes naquele momento para facilitar o desenvolvimento de apps com Xamarin.Forms usando XAML. Agora surgiu uma nova ferramenta chamada HotReload. Vamos dar uma conferida nela e compará-la junto com as demais ferramentas?
 
 Aqui está o [link do post][post-primeiro-comparativo] que comentei acima. 
 

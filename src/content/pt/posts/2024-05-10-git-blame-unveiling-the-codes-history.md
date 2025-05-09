@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-blame-unveiling-the-codes-history.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">J</span>á se deparou com um trecho de código e se perguntou: "Quem escreveu isso?" ou "Quando isso foi alterado?". Não tema, querido(a) desenvolvedor(a), pois o "git blame" está aqui para o resgate! Este poderoso comando age como um detetive, revelando a história por trás de cada linha de código em seu repositório Git. Vamos mergulhar nisso no post de hoje.</p>
+Já se deparou com um trecho de código e se perguntou: "Quem escreveu isso?" ou "Quando isso foi alterado?". Não tema, querido(a) desenvolvedor(a), pois o "git blame" está aqui para o resgate! Este poderoso comando age como um detetive, revelando a história por trás de cada linha de código em seu repositório Git. Vamos mergulhar nisso no post de hoje.
 
 O comando `git blame` é sua ferramenta ideal para entender a evolução de sua base de código. Ele permite que você identifique o autor, a data/hora e o commit associado à última modificação em cada linha de um arquivo específico. Essas informações são inestimáveis para diversos propósitos, desde rastrear a origem de bugs até atribuir responsabilidades e obter insights sobre o processo de desenvolvimento. Vamos ver como funciona.
 

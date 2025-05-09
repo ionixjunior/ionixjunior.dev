@@ -10,8 +10,8 @@ redirect_from:
     - /duolingo-app-clone-com-xamarin-forms/
 +++
 
-<p class="intro"><span class="dropcap">F</span>ala galera! Tudo bem com vocês?
-Depois de um tempo, aqui estou escrevendo novamente! Mas hoje não vai ter nenhum artigo técnico, apenas vou compartilhar com vocês uma série de live streams que estou fazendo para desenvolver um clone do app do Duolingo com Xamarin.Forms. Se interessou? Então acompanha aí esse post para saber mais informações.</p>
+Fala galera! Tudo bem com vocês?
+Depois de um tempo, aqui estou escrevendo novamente! Mas hoje não vai ter nenhum artigo técnico, apenas vou compartilhar com vocês uma série de live streams que estou fazendo para desenvolver um clone do app do Duolingo com Xamarin.Forms. Se interessou? Então acompanha aí esse post para saber mais informações.
 
 Por que iniciei estas lives? Bom, recentemente tive a oportunidade de participar de algumas lives na [Maratona Xamarin do Monkey Nights][maratona-xamarin] (live [desenvolvimento de telas com XAML][live-dev-telas]) e no [Canal dotNET][canal-dotnet] ([clone do app Yellow parte I][live-clone-I] e [parte II][live-clone-II]). Gostei tanto dessa experiência que resolvi fazer minhas próprias lives.
 

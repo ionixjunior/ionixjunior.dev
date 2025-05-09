@@ -10,7 +10,7 @@ redirect_from:
     - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework/
 +++
 
-<p class="intro"><span class="dropcap">G</span>rande parte dos Desenvolvedores Web que trabalham com sites ou desenvolvimento de sistemas utilizam MySQL ou PostgreSQL como banco de dados, e em um projeto que desenvolvi não foi diferente, optei por utilizar o MySQL.</p>
+Grande parte dos Desenvolvedores Web que trabalham com sites ou desenvolvimento de sistemas utilizam MySQL ou PostgreSQL como banco de dados, e em um projeto que desenvolvi não foi diferente, optei por utilizar o MySQL.
 
 Mas no decorrer do projeto, surgiu a necessidade de portá-lo para ser utilizado em SQL Server. Foi então que dei pulos de alegria por poder usufruir das facilidades que um ORM fornece em relação à abstração, neste caso, eu estava usando Doctrine 1.
 

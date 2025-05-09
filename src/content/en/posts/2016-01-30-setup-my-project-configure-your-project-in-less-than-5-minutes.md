@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">T</span>his tip is intended for Java developers and it's called SetupMyProject.</p>
+This tip is intended for Java developers and it's called SetupMyProject.
 
 Imagine a web application that streamlines project setup based on the options selected in a configuration wizard. Well, [SetupMyProject][project] does exactly that.
 

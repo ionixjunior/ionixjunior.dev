@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-merge-and-git-rebase-working-with-code-integration.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">S</span>truggling to work with code integration in Git? You're not alone. Understanding the differences between 'git merge' and 'git rebase' is crucial for maintaining a clean commit history and streamlining your workflow. In this post, I'll explore these two essential commands, their unique approaches to code integration, and best practices for leveraging them effectively.</p>
+Struggling to work with code integration in Git? You're not alone. Understanding the differences between 'git merge' and 'git rebase' is crucial for maintaining a clean commit history and streamlining your workflow. In this post, I'll explore these two essential commands, their unique approaches to code integration, and best practices for leveraging them effectively.
 
 ## Git merge: Bringing branches together
 To explain the examples of `git merge`, I'll use the [Book Tracking][book_tracking_repository] repository. For these examples, my target branch is the "main", and my source branch is the "library_screen". You'll see these words in the entire post. Before we start, let's see the log of Git commits for this scenario.

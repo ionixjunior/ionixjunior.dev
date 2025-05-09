@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">W</span>hen we start developing software, it's normal to draw inspiration from an existing idea. It could be a well-designed screen, a great user experience, or a successful case study.</p>
+When we start developing software, it's normal to draw inspiration from an existing idea. It could be a well-designed screen, a great user experience, or a successful case study.
 
 I believe this is a common characteristic when it comes to desktop, web, or mobile development. After all, who hasn't heard something like this:
 

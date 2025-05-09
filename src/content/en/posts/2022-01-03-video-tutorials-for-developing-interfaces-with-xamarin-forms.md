@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">I</span>n May 2020, I hosted a live session asking, "What would you like to see in video tutorials about developing interfaces with Xamarin.Forms?" So, what happened to that initiative? That's what you'll find out in this post.</p>
+In May 2020, I hosted a live session asking, "What would you like to see in video tutorials about developing interfaces with Xamarin.Forms?" So, what happened to that initiative? That's what you'll find out in this post.
 
 [During and after the live session][live], I took note of all the suggested ideas and organized them on a [GitHub board][board]. Many ideas were submitted, and I want to thank everyone for their participation. After organizing everything, I started producing the content, but I had not yet publicly shared the results of the work.
 

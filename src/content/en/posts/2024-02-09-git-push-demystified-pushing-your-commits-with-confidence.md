@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-push-demystified-pushing-your-commits-with-confidence.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">I</span>n Git, git push is the command that moves your local commits to a remote repository. It's the action you do when you want to share your work with others or update a shared codebase. Think of it as a way to publish your local changes and keep everyone on the same page. In a nutshell, git push is about taking your local progress and making it visible and accessible to the development team or collaborators. It's a fundamental command in Git that is crucial in collaborative coding. In this post, I'll show you this command in action!</p>
+In Git, git push is the command that moves your local commits to a remote repository. It's the action you do when you want to share your work with others or update a shared codebase. Think of it as a way to publish your local changes and keep everyone on the same page. In a nutshell, git push is about taking your local progress and making it visible and accessible to the development team or collaborators. It's a fundamental command in Git that is crucial in collaborative coding. In this post, I'll show you this command in action!
 
 Imagine you are developing a new feature or fixing something, and you are doing this in your local branch. Now you have finished your work and need to send your changes to the remote repository to create a pull or merge request if you use GitLab. How to do this? Let's see the simple way to run the `git push` command.
 

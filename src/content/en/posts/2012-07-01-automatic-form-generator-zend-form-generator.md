@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["zend"]
 +++
 
-<p class="intro"><span class="dropcap">C</span>reating forms often becomes a very repetitive and tiring task, especially if your application requires the creation of many forms.</p>
+Creating forms often becomes a very repetitive and tiring task, especially if your application requires the creation of many forms.
 
 To address this, I developed an easier way to create forms called Zend Form Generator, which benefits Zend Form users.
 

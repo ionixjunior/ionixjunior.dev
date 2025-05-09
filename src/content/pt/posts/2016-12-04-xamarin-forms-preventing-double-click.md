@@ -10,7 +10,7 @@ redirect_from:
     - /xamarin-forms-prevenindo-duplo-clique/
 +++
 
-<p class="intro"><span class="dropcap">O</span>lá, estou de volta! Hoje vou falar sobre uma situação que enfrentei essa semana e precisei bolar uma solução. Vou falar sobre duplo clique na navegação do mobile ( se é que podemos chamar assim ).</p>
+Olá, estou de volta! Hoje vou falar sobre uma situação que enfrentei essa semana e precisei bolar uma solução. Vou falar sobre duplo clique na navegação do mobile ( se é que podemos chamar assim ).
 
 Ao liberar um aplicativo para testes, alguns usuários disseram “olha aqui o que consegui fazer…”. Então, eu fiz aquela cara de “o que vocês fizeram dessa vez…” e fui verificar. Identifiquei que o usuário havia clicado 2x em um determinado botão, fazendo com que abrisse 2x a página solicitada. Neste caso relatado, o usuário nem teve culpa ou maldade. Sem querer ( eu prefiro acreditar nisso! ), ele clicou rapidamente mais de uma vez no botão e o problema aconteceu. Vale mencionar que o app não travou, ele apenas abriu a mesma página mais de uma vez, algo similar a isso:
 

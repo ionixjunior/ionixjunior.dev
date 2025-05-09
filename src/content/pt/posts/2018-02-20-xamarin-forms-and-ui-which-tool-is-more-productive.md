@@ -10,7 +10,7 @@ redirect_from:
     - /xamarin-forms-e-ui-qual-ferramenta-e-mais-produtiva/
 +++
 
-<p class="intro"><span class="dropcap">Q</span>uando comecei a trabalhar com Xamarin.Forms era muito difícil construir interfaces, pois não haviam ferramentas gráficas para tal, era tudo "na mão". Este post compara algumas ferramentas que podemos utilizar para tornar esse trabalho um pouco mais fácil.</p>
+Quando comecei a trabalhar com Xamarin.Forms era muito difícil construir interfaces, pois não haviam ferramentas gráficas para tal, era tudo "na mão". Este post compara algumas ferramentas que podemos utilizar para tornar esse trabalho um pouco mais fácil.
 
 Passou um tempo e... Tudo continua praticamente a mesma coisa. Ainda é trabalhoso desenvolver interfaces apenas utilizando as ferramentas padrões, mas não dei muita importância a isso, pois me acostumei a trabalhar desta forma. Adquirir algumas habilidades também me ajudou bastante neste conformismo. Até que um dia descobri uma nova ferramenta e, desde então, não consigo mais trabalhar sem ela.
 

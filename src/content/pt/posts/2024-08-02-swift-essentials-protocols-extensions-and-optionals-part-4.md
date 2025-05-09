@@ -9,7 +9,7 @@ tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-protocols-extensions-and-optionals-part-4.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">V</span>oltamos com os posts da série "100 Dias De SwiftUI"! No post de hoje, continuaremos a saga dos Fundamentos do Swift, explorando protocolos, extensões e opcionais. Esta será a parte final sobre os Fundamentos do Swift. Vamos começar.</p>
+Voltamos com os posts da série "100 Dias De SwiftUI"! No post de hoje, continuaremos a saga dos Fundamentos do Swift, explorando protocolos, extensões e opcionais. Esta será a parte final sobre os Fundamentos do Swift. Vamos começar.
 
 ## O que é um Protocolo?
 

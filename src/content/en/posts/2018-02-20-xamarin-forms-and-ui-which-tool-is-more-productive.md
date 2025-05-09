@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
-<p class="intro"><span class="dropcap">W</span>hen I started working with Xamarin.Forms, building interfaces was very difficult as there were no graphical tools for it; everything was done "manually". This post compares some tools that we can use to make this work a little easier.</p>
+When I started working with Xamarin.Forms, building interfaces was very difficult as there were no graphical tools for it; everything was done "manually". This post compares some tools that we can use to make this work a little easier.
 
 Time went by, and things remained pretty much the same. It is still laborious to develop interfaces using only the standard tools, but I didn't pay much attention to it because I got used to working this way. Acquiring some skills also helped me a lot with this acceptance. Until one day, I discovered a new tool, and since then, I can't work without it anymore.
 

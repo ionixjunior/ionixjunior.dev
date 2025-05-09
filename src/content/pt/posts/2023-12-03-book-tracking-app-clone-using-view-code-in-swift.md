@@ -9,7 +9,7 @@ tags = ["swift", "view-code"]
 social_image: "book-tracking-app-clone-using-view-code-in-swift.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">H</span>á alguns dias, publiquei um post falando sobre minha jornada como desenvolvedor mobile e porque eu decidi focar no desenvolvimento nativo com iOS. Hoje, vou compartilhar minhas primeiras impressões usando View Code no iOS. Para praticar, escolhi um design the um aplicativo que encontrei no Dribbble e iniciei um clone do aplicativo. Então, vamos conferir o resultado!</p>
+Há alguns dias, publiquei um post falando sobre minha jornada como desenvolvedor mobile e porque eu decidi focar no desenvolvimento nativo com iOS. Hoje, vou compartilhar minhas primeiras impressões usando View Code no iOS. Para praticar, escolhi um design the um aplicativo que encontrei no Dribbble e iniciei um clone do aplicativo. Então, vamos conferir o resultado!
 
 Eu iniciei a estudar iOS de forma um pouco mais focada, e acredito que esse é o momento perfeito para iniciar um projeto e praticar algumas novas coisas que estou aprendendo. Eu não tinha ideia do que desenvolver, então, procurei por algumas inspirações no Dribbble, e achei o [Book Tracking App][dribbble] feito pelo [Kyler Phillips][twitter-kyler]. O design de Kyler é um trabalho em andamento, mas as três primeiras telas que ele compartilhou são incríveis, e eu iniciei o clone do aplicativo baseado em seu design.
 

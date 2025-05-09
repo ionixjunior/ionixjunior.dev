@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-log-command-navigating-your-projects-history.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">B</span>em-vindo ao mundo do controle de versão, onde cada commit conta uma história sobre a jornada do seu projeto. Compreender essa narrativa é fundamental para colaboração eficaz, rastreamento de bugs e gerenciamento de projetos. É aí que entra o comando Git log. Neste post, embarcaremos em uma jornada pela história do seu projeto, usando o comando Git log como nosso guia confiável. Aprenderemos a navegar pelos commits, explorar alterações e descobrir insights que o ajudarão a se tornar um mestre na história do seu projeto. Portanto, prepare-se enquanto mergulhamos no comando Git log e desbloqueamos os segredos escondidos na história do seu projeto!</p>
+Bem-vindo ao mundo do controle de versão, onde cada commit conta uma história sobre a jornada do seu projeto. Compreender essa narrativa é fundamental para colaboração eficaz, rastreamento de bugs e gerenciamento de projetos. É aí que entra o comando Git log. Neste post, embarcaremos em uma jornada pela história do seu projeto, usando o comando Git log como nosso guia confiável. Aprenderemos a navegar pelos commits, explorar alterações e descobrir insights que o ajudarão a se tornar um mestre na história do seu projeto. Portanto, prepare-se enquanto mergulhamos no comando Git log e desbloqueamos os segredos escondidos na história do seu projeto!
 
 ## Compreendendo o git log
 O comando `git log` fornece uma visão abrangente da história do seu projeto, permitindo que você mergulhe nos detalhes de cada commit. Ele permite rastrear quem fez alterações, quando essas alterações ocorreram e as motivações por trás delas.

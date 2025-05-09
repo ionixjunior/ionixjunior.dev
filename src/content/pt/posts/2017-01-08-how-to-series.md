@@ -10,7 +10,7 @@ redirect_from:
     - /serie-como-fazer/
 +++
 
-<p class="intro"><span class="dropcap">Q</span>uando iniciamos o desenvolvimento de um software é normal nos inspirarmos em uma ideia já existente. Isso pode ser uma tela bem feita, uma experiência boa para o usuário, um case de sucesso.</p>
+Quando iniciamos o desenvolvimento de um software é normal nos inspirarmos em uma ideia já existente. Isso pode ser uma tela bem feita, uma experiência boa para o usuário, um case de sucesso.
 
 Acredito que isso seja uma característica em comum quando falamos de desenvolvimento desktop, web ou mobile, afinal de contas, quem nunca escutou isso:
 

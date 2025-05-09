@@ -9,7 +9,7 @@ categories = ["TODO"]
 tags = ["xamarin", "android"]
 +++
 
-<p class="intro"><span class="dropcap">W</span>hen using TableView in Xamarin Forms, we have some options for elements, such as TextCell, ImageCell, SwitchCell, EntryCell. These elements are referred to as built-in cells. In this article, we'll talk a bit about ImageCell.</p>
+When using TableView in Xamarin Forms, we have some options for elements, such as TextCell, ImageCell, SwitchCell, EntryCell. These elements are referred to as built-in cells. In this article, we'll talk a bit about ImageCell.
 
 With ImageCell, we can easily add an image and texts. Let's see a simple usage:
 

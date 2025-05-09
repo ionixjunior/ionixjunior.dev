@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">L</span>ast Wednesday, October 15, 2014, I was at Católica SC for the GDG Academic Week BSI 2014 event, where I gave a presentation on software quality tools.</p>
+Last Wednesday, October 15, 2014, I was at Católica SC for the GDG Academic Week BSI 2014 event, where I gave a presentation on software quality tools.
 
 As it was a quick talk, the presentation covers only some of the main tools for software quality control.
 

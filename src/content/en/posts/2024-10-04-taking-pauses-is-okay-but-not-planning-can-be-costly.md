@@ -9,7 +9,7 @@ tags = ["career"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">H</span>ello, everyone! I'm back after a short break.  Recently, I changed my routine and it became challenging to write every week.  Since I love sharing knowledge, I'm excited to be back.  This past month has given me a lot to think about, so I want to share some thoughts with you. I hope you enjoy today's post. </p>
+Hello, everyone! I'm back after a short break.  Recently, I changed my routine and it became challenging to write every week.  Since I love sharing knowledge, I'm excited to be back.  This past month has given me a lot to think about, so I want to share some thoughts with you. I hope you enjoy today's post. 
 
 Last month, my wife and I moved to a new city. This wasn't our first rodeo – we've moved several times in our relationship (five by my count!).  Moving is always time-consuming, so I took a short break to get settled into our new apartment, office, and routines. 
 

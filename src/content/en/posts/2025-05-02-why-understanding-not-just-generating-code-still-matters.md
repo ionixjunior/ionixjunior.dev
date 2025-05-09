@@ -9,7 +9,7 @@ tags = ["career"]
 social_image: "why-understanding-not-just-generating-code-still-matters.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">I</span>n the last few weeks, everybody has been talking about vibe coding and how easily you can develop an entire system, from zero to hero. This is blowing the minds of most people, and I'll talk about it in today's post. But, before talking about vibe coding, I'll talk about "normal coding" 🤔. Let's do it!</p>
+In the last few weeks, everybody has been talking about vibe coding and how easily you can develop an entire system, from zero to hero. This is blowing the minds of most people, and I'll talk about it in today's post. But, before talking about vibe coding, I'll talk about "normal coding" 🤔. Let's do it!
 
 ## Normal coding? WTF??
 Calm down, guys. I'm a Senior Software Engineer who develops mobile applications, but I've been learning Python and Django since February, and I'm using the expression "normal coding" to refer to the default process to develop software: learn, practice, develop, and repeat it over and over again.

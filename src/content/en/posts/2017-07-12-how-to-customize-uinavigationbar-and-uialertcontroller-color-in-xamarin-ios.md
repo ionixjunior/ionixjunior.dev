@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["xamarin", "ios"]
 +++
 
-<p class="intro"><span class="dropcap">H</span>ey, folks! How's it going? It's been a while since I wanted to write here on the blog. Fortunately, today I have the opportunity to share with you something I learned in the last few days. This post talks about customizing the styles of some UI elements in Xamarin.iOS in apps developed with Xamarin.Forms. Let's get started!</p>
+Hey, folks! How's it going? It's been a while since I wanted to write here on the blog. Fortunately, today I have the opportunity to share with you something I learned in the last few days. This post talks about customizing the styles of some UI elements in Xamarin.iOS in apps developed with Xamarin.Forms. Let's get started!
 
 To illustrate, I created a new app with **Xamarin.Forms**. In it, I added a home page with a navigation bar and placed two buttons in the body of the page and another button on the navigation bar. After compiling on **iOS**, I got this marvelous result:
 

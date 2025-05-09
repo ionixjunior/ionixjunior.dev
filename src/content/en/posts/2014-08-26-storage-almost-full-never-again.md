@@ -8,7 +8,7 @@ categories = ["TODO"]
 tags = ["misc"]
 +++
 
-<p class="intro"><span class="dropcap">Y</span>ou buy a brand new smartphone and start filling it with photos, videos, and apps. After some time, you see that dreaded message saying there's no more space on your device to store information. Now, what do you do?</p>
+You buy a brand new smartphone and start filling it with photos, videos, and apps. After some time, you see that dreaded message saying there's no more space on your device to store information. Now, what do you do?
 
 This is a perfect moment to clear out all the "junk" from your phone to make space for new "junk." But where do you store the old "junk"?
 

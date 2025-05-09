@@ -10,7 +10,7 @@ redirect_from:
     - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos/
 +++
 
-<p class="intro"><span class="dropcap">E</span>ssa dica é destinada a desenvolvedores Java e se chama SetupMyProject.</p>
+Essa dica é destinada a desenvolvedores Java e se chama SetupMyProject.
 
 Imagine uma aplicação web que agiliza o setup de um projeto baseando-se nas opções selecionadas em um assistente de configuração. Pois é, [SetupMyProject][projeto] faz isso.
 

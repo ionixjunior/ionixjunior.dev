@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "understanding-git-commit-the-heart-of-version-control.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">I</span>n the realm of version control, the Git commit is more than a snapshot; it's the heartbeat of your project. Each commit is a deliberate note in the symphony of development, encapsulating changes, decisions, and progress. Join me as we unravel the essence of the Git commit—understanding its components, mastering the art of concise messages, and appreciating its pivotal role in shaping a coherent version of history.</p>
+In the realm of version control, the Git commit is more than a snapshot; it's the heartbeat of your project. Each commit is a deliberate note in the symphony of development, encapsulating changes, decisions, and progress. Join me as we unravel the essence of the Git commit—understanding its components, mastering the art of concise messages, and appreciating its pivotal role in shaping a coherent version of history.
 
 The **Git commit**, a snapshot frozen in the chronicles of your project’s history, is more than meets the eye. Let’s explore its anatomy, understanding its elements of it.
 

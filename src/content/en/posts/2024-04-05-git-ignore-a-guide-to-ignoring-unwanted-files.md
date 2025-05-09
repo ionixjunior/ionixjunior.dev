@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-ignore-a-guide-to-ignoring-unwanted-files.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">W</span>hile Git ignore isn't a command, it's an essential tool for keeping your projects organized. By specifying files and directories to ignore, you can prevent clutter and ensure only relevant files are tracked in your repository. In this guide, we'll explore Git ignore and how it streamlines your workflow by excluding unwanted files.</p>
+While Git ignore isn't a command, it's an essential tool for keeping your projects organized. By specifying files and directories to ignore, you can prevent clutter and ensure only relevant files are tracked in your repository. In this guide, we'll explore Git ignore and how it streamlines your workflow by excluding unwanted files.
 
 ## Understanding git ignore
 Git ignore is a feature in Git that allows you to specify files and directories that should be ignored by Git. These ignored files won't be tracked or staged, making it easier to focus on the files that matter most in your project.

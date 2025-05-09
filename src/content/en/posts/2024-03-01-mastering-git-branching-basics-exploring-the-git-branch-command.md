@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "mastering-git-branching-basics-exploring-the-git-branch-command.en.webp"
 +++
 
-<p class="intro"><span class="dropcap">E</span>mbarking on your journey with Git involves mastering its fundamental commands, and among them, git branch stands out as a pivotal tool for managing branches. In this guide, we'll delve deep into the git branch command, exploring its various functionalities, from listing existing branches to creating and deleting them. By the end, you'll wield the power of branching with confidence, laying a solid foundation for your Git workflow.</p>
+Embarking on your journey with Git involves mastering its fundamental commands, and among them, git branch stands out as a pivotal tool for managing branches. In this guide, we'll delve deep into the git branch command, exploring its various functionalities, from listing existing branches to creating and deleting them. By the end, you'll wield the power of branching with confidence, laying a solid foundation for your Git workflow.
 
 ## Listing branches
 To start, we can see all the branches we have on our local repository. Again, I'm using the [Book Tracking][book_tracking_repository] repository.

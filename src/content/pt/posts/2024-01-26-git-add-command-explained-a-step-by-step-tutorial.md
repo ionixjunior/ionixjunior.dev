@@ -9,7 +9,7 @@ tags = ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.pt.webp"
 +++
 
-<p class="intro"><span class="dropcap">P</span>ara adicionar arquivos a um repositório Git, é necessário incluí-los em uma área específica para commit. Mas por que esse passo é necessário? Se eu fizer alterações, não quero adicioná-las ao repositório? Sim, de fato, mas vou mostrar a você alguns benefícios dessa abordagem e explicar mais detalhes sobre o comando. Vamos começar!</p>
+Para adicionar arquivos a um repositório Git, é necessário incluí-los em uma área específica para commit. Mas por que esse passo é necessário? Se eu fizer alterações, não quero adicioná-las ao repositório? Sim, de fato, mas vou mostrar a você alguns benefícios dessa abordagem e explicar mais detalhes sobre o comando. Vamos começar!
 
 ### Compreendendo a área de preparação (staging)
 Em um repositório Git, a área de preparação é a etapa intermediária crucial entre modificar seus arquivos e salvar permanentemente essas alterações em um commit. A preparação permite que você escolha cuidadosamente quais modificações deseja incluir em seu próximo commit, oferecendo controle granular sobre o desenvolvimento do seu projeto e ajudando a articular seu processo de pensamento de maneira mais eficaz por meio dos commits.
