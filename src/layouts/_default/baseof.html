@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     {{ partial "head.html" . }}
-    {{ partial "google_analytics.html" . }}
+    {{ if not hugo.IsServer }}
+      {{ partial "google_analytics.html" . }}
+    {{ end }}
   </head>
   <body>
     {{ partial "header.html" . }}
