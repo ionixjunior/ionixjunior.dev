@@ -21,5 +21,20 @@
 {{ end }}
 <meta property="og:locale" content="{{ .Site.Language.Lang | default "en_US" }}" />
 <meta property="og:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+{{ if and (eq .Kind "page") (eq .Type "post") }}
+  {{ $firstParagraph := findRE "<p>(.*?)</p>" .Content }}
+  {{ if gt (len $firstParagraph) 0 }}
+    <meta name="twitter:description" content="{{ (index $firstParagraph 0) | plainify }}" />
+  {{ else }}
+    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+  {{ end }}
+{{ else }}
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+{{ end }}
+<meta name="twitter:image" content="{{ .Site.BaseURL }}img/ione-souza-junior.png">
+<!-- Optionally add your Twitter handle below -->
+<!-- <meta name="twitter:site" content="@your_twitter_handle"> -->
 {{ $styles := resources.Get "main.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
