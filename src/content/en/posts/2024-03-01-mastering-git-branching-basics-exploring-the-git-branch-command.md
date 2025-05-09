@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Mastering Git Branching Basics: Exploring the git branch Command"
+title = "Mastering Git Branching Basics: Exploring the git branch Command"
 date:   2024-03-01
 translations: ["pt"]
 tags: ["git"]

@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Minha jornada no desenvolvimento mobile: Do C# ao Swift"
+title = "Minha jornada no desenvolvimento mobile: Do C# ao Swift"
 date:   2023-08-20
 translations: ["en"]
 tags: ["xamarin", "swift"]

@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Duolingo app clone with Xamarin.Forms"
+title = "Duolingo app clone with Xamarin.Forms"
 date: 2019-10-12
 translations: ["pt"]
 tags: ["xamarin"]

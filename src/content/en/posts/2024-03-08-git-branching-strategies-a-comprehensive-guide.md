@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Git Branching Strategies: A Comprehensive Guide"
+title = "Git Branching Strategies: A Comprehensive Guide"
 date:   2024-03-08
 translations: ["pt"]
 tags: ["git"]

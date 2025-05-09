@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Swift Essentials: Structs, Classes e Mais (Parte 3)"
+title = "Swift Essentials: Structs, Classes e Mais (Parte 3)"
 date:   2024-07-19
 translations: ["en"]
 tags: ["100DaysOfSwiftUI"]

@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Desmistificando o Git Push: Enviando Seus Commits com Confiança"
+title = "Desmistificando o Git Push: Enviando Seus Commits com Confiança"
 date:   2024-02-09
 translations: ["en"]
 tags: ["git"]

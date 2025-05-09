@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Xamarin.Forms – Fixing ImageCell rendering on Android"
+title = "Xamarin.Forms – Fixing ImageCell rendering on Android"
 date: 2016-04-27
 translations: ["pt"]
 image: imagecell-ios-and-android.png

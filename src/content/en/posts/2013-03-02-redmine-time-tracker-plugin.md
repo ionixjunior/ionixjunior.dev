@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Redmine Time Tracker plugin"
+title = "Redmine Time Tracker plugin"
 date: 2013-03-02
 translations: ["pt"]
 tags: ["misc"]

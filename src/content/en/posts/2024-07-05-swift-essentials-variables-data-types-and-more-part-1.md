@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Swift Essentials: Variables, Data Types, and More (Part 1)"
+title = "Swift Essentials: Variables, Data Types, and More (Part 1)"
 date:   2024-07-05
 translations: ["pt"]
 tags: ["100DaysOfSwiftUI"]

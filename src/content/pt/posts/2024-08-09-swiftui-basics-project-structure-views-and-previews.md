@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Fundamentos do SwiftUI: Estrutura do Projeto, Views e Previews"
+title = "Fundamentos do SwiftUI: Estrutura do Projeto, Views e Previews"
 date:   2024-08-09
 translations: ["en"]
 tags: ["100DaysOfSwiftUI"]

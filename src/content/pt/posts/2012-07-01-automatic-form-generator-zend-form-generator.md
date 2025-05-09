@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Gerador automático de formulários – Zend Form Generator"
+title = "Gerador automático de formulários – Zend Form Generator"
 date:   2012-07-01
 translations: ["en"]
 tags: ["zend"]

@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Por que Entender, e Não Apenas Gerar Código, Ainda Importa"
+title = "Por que Entender, e Não Apenas Gerar Código, Ainda Importa"
 date:   2025-05-02
 translations: ["en"]
 tags: ["carreira"]

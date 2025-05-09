@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Swift Essentials: Protocolos, Extensões e Opcionais (Parte 4)"
+title = "Swift Essentials: Protocolos, Extensões e Opcionais (Parte 4)"
 date:  2024-08-02
 translations: ["en"]
 tags: ["100DaysOfSwiftUI"]

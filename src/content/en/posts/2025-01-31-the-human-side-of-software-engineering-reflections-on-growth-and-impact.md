@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "The Human Side of Software Engineering: Reflections on Growth and Impact"
+title = "The Human Side of Software Engineering: Reflections on Growth and Impact"
 date:   2025-01-31
 translations: ["pt"]
 tags: ["career"]

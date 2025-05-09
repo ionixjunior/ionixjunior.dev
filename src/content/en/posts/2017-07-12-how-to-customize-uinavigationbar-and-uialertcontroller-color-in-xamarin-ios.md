@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "How to customize UINavigationBar and UIAlertController color in Xamarin.iOS"
+title = "How to customize UINavigationBar and UIAlertController color in Xamarin.iOS"
 date: 2017-07-12
 translations: ["pt"]
 tags: ["xamarin", "ios"]

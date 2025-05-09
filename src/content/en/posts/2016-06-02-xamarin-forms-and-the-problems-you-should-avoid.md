@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Xamarin.Forms and the problems you should avoid"
+title = "Xamarin.Forms and the problems you should avoid"
 date:   2016-06-02
 translations: ["pt"]
 tags: ["xamarin"]

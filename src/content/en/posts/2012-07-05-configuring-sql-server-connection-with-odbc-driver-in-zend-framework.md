@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Configuring SQL Server connection with ODBC driver in Zend Framework"
+title = "Configuring SQL Server connection with ODBC driver in Zend Framework"
 date: 2012-07-05
 translations: ["pt"]
 tags: ["zend"]

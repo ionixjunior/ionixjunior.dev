@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Como fazer o título clicável similar ao app Meetup no Xamarin.Forms"
+title = "Como fazer o título clicável similar ao app Meetup no Xamarin.Forms"
 date:   2017-01-09
 translations: ["en"]
 tags: ["xamarin", "ios"]

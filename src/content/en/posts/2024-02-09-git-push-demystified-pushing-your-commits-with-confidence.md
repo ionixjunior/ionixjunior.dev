@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Git Push Demystified: Pushing Your Commits with Confidence"
+title = "Git Push Demystified: Pushing Your Commits with Confidence"
 date:   2024-02-09
 translations: ["pt"]
 tags: ["git"]

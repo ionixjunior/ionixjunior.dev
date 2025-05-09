@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "HotReload: A free tool for XAML UI development"
+title = "HotReload: A free tool for XAML UI development"
 date: 2019-06-03
 translations: ["pt"]
 tags: ["xamarin"]

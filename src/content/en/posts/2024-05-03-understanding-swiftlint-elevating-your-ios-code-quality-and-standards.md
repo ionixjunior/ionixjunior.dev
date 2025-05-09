@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Understanding SwiftLint: Elevating Your iOS Code Quality and Standards"
+title = "Understanding SwiftLint: Elevating Your iOS Code Quality and Standards"
 date:   2024-05-03
 translations: ["pt"]
 tags: ["iOS"]

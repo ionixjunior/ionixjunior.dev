@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Keeping your software under control"
+title = "Keeping your software under control"
 date: 2014-10-19
 translations: ["pt"]
 tags: ["misc"]

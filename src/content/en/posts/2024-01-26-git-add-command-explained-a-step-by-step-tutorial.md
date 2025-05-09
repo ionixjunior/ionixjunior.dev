@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Git Add Command Explained: A Step-by-Step Tutorial"
+title = "Git Add Command Explained: A Step-by-Step Tutorial"
 date:   2024-01-26
 translations: ["pt"]
 tags: ["git"]

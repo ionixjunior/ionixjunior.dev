@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "Xamarin.Forms and UI – Which tool is more productive?"
+title = "Xamarin.Forms and UI – Which tool is more productive?"
 date: 2018-02-20
 translations: ["pt"]
 tags: ["xamarin"]

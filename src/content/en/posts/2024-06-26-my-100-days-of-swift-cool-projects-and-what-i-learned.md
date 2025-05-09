@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "My 100 Days of Swift: Cool Projects & What I Learned"
+title = "My 100 Days of Swift: Cool Projects & What I Learned"
 date:   2024-06-28
 translations: ["pt"]
 tags: ["swift"]

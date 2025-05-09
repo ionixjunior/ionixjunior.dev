@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "O Poder da Paciência e da Persistência: Como Evoluir no Ambiente Tecnológico em Constante Evolução"
+title = "O Poder da Paciência e da Persistência: Como Evoluir no Ambiente Tecnológico em Constante Evolução"
 date:   2024-06-21
 translations: ["en"]
 tags: ["carreira"]

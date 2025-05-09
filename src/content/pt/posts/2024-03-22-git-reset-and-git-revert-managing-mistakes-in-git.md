@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Git Reset e Git Revert: Gerenciando Erros no Git"
+title = "Git Reset e Git Revert: Gerenciando Erros no Git"
 date:   2024-03-22
 translations: ["en"]
 tags: ["git"]

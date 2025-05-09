@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e Impacto"
+title = "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e Impacto"
 date:   2025-01-31
 translations: ["en"]
 tags: ["carreira"]

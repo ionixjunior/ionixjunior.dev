@@ -1,6 +1,6 @@
 +++
 layout: post
-title: "SetupMyProject – Configure your project in less than 5 minutes"
+title = "SetupMyProject – Configure your project in less than 5 minutes"
 date: 2016-01-30
 translations: ["pt"]
 tags: ["misc"]

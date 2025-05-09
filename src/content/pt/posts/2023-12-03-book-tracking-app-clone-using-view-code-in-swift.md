@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Book Tracking app clone usando View Code em Swift"
+title = "Book Tracking app clone usando View Code em Swift"
 date:   2023-12-03
 translations: ["en"]
 tags: ["swift", "view-code"]

@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Aplicativo com mapa offline usando Ionic Framework"
+title = "Aplicativo com mapa offline usando Ionic Framework"
 date:   2016-01-18
 translations: ["en"]
 tags: ["misc"]

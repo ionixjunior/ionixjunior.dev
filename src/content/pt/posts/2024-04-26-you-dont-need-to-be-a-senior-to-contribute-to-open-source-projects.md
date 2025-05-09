@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Você não precisa ser sênior para contribuir para projetos open-source"
+title = "Você não precisa ser sênior para contribuir para projetos open-source"
 date:   2024-04-26
 translations: ["en"]
 tags: ["git", "opensource"]

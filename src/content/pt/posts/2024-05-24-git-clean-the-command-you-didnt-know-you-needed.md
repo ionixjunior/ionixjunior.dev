@@ -1,6 +1,6 @@
 +++
 layout: post
-title:  "Git Clean: O Comando Que Você Não Sabia Que Precisava"
+title = "Git Clean: O Comando Que Você Não Sabia Que Precisava"
 date:   2024-05-24
 translations: ["en"]
 tags: ["git"]
