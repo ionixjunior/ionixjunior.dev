@@ -8,6 +8,7 @@ defaultContentLanguageInSubdir = true
   role = "Mobile Engineer"
   postsPerPage = 5
   google_analytics = "G-G7JHVXT0LV"
+  description = "Ione Souza Junior - Mobile Engineer"
 
 [params.social]
   twitter = "ionixjunior"
