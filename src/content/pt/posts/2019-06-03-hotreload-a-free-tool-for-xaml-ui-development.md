@@ -3,6 +3,7 @@ title = "HotReload: uma ferramenta gratuita para desenvolvimento de UI em XAML"
 date = 2019-06-03
 type = "post"
 slug = "hotreload-a-free-tool-for-xaml-ui-development"
+aliases = ["/hotreload-a-free-tool-for-xaml-ui-development"]
 translationKey = "hotreload-a-free-tool-for-xaml-ui-development"
 categories = ["TODO"]
 tags = ["xamarin"]

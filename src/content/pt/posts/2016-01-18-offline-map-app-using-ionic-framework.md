@@ -3,6 +3,7 @@ title = "Aplicativo com mapa offline usando Ionic Framework"
 date = 2016-01-18
 type = "post"
 slug = "offline-map-app-using-ionic-framework"
+aliases = ["/offline-map-app-using-ionic-framework"]
 translationKey = "offline-map-app-using-ionic-framework"
 categories = ["TODO"]
 tags = ["misc"]

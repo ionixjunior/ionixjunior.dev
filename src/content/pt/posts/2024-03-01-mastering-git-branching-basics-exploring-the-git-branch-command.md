@@ -3,6 +3,7 @@ title = "Dominando os Conceitos Básicos de Branches do Git: Explorando o Comand
 date = 2024-03-01
 type = "post"
 slug = "mastering-git-branching-basics-exploring-the-git-branch-command"
+aliases = ["/mastering-git-branching-basics-exploring-the-git-branch-command"]
 translationKey = "mastering-git-branching-basics-exploring-the-git-branch-command"
 categories = ["TODO"]
 tags = ["git"]

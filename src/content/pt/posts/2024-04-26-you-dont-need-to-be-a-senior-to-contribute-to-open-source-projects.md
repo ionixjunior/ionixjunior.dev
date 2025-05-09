@@ -3,6 +3,7 @@ title = "Você não precisa ser sênior para contribuir para projetos open-sourc
 date = 2024-04-26
 type = "post"
 slug = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
+aliases = ["/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"]
 translationKey = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
 categories = ["TODO"]
 tags = ["git", "opensource"]

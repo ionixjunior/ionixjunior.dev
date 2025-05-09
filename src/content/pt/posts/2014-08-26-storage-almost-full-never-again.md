@@ -3,6 +3,7 @@ title = "“Storage almost full”, nunca mais!"
 date = 2014-08-26
 type = "post"
 slug = "storage-almost-full-never-again"
+aliases = ["/storage-almost-full-never-again"]
 translationKey = "storage-almost-full-never-again"
 categories = ["TODO"]
 tags = ["misc"]

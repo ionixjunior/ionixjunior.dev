@@ -3,6 +3,7 @@ title = "Dominando o Git: Um Guia Abrangente para Comandos do Git"
 date = 2024-01-14
 type = "post"
 slug = "mastering-git-a-comprehensive-guide-to-git-commands"
+aliases = ["/mastering-git-a-comprehensive-guide-to-git-commands"]
 translationKey = "mastering-git-a-comprehensive-guide-to-git-commands"
 categories = ["TODO"]
 tags = ["git"]

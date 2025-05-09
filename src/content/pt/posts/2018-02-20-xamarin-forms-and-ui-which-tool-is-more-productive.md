@@ -3,6 +3,7 @@ title = "Xamarin.Forms e UI – Qual ferramenta é mais produtiva?"
 date = 2018-02-20
 type = "post"
 slug = "xamarin-forms-and-ui-which-tool-is-more-productive"
+aliases = ["/xamarin-forms-and-ui-which-tool-is-more-productive"]
 translationKey = "xamarin-forms-and-ui-which-tool-is-more-productive"
 categories = ["TODO"]
 tags = ["xamarin"]

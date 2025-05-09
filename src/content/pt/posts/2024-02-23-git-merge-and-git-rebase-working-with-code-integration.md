@@ -3,6 +3,7 @@ title = "Git Merge e Git Rebase: Trabalhando com Integração de Código"
 date = 2024-02-23
 type = "post"
 slug = "git-merge-and-git-rebase-working-with-code-integration"
+aliases = ["/git-merge-and-git-rebase-working-with-code-integration"]
 translationKey = "git-merge-and-git-rebase-working-with-code-integration"
 categories = ["TODO"]
 tags = ["git"]

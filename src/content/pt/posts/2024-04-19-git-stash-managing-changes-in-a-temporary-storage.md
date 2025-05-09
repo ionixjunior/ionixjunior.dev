@@ -3,6 +3,7 @@ title = "Git Stash: Gerenciando Mudanças em um Armazenamento Temporário"
 date = 2024-04-19
 type = "post"
 slug = "git-stash-managing-changes-in-a-temporary-storage"
+aliases = ["/git-stash-managing-changes-in-a-temporary-storage"]
 translationKey = "git-stash-managing-changes-in-a-temporary-storage"
 categories = ["TODO"]
 tags = ["git"]

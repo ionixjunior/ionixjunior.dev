@@ -3,6 +3,7 @@ title = "Git Clean: O Comando Que Você Não Sabia Que Precisava"
 date = 2024-05-24
 type = "post"
 slug = "git-clean-the-command-you-didnt-know-you-needed"
+aliases = ["/git-clean-the-command-you-didnt-know-you-needed"]
 translationKey = "git-clean-the-command-you-didnt-know-you-needed"
 categories = ["TODO"]
 tags = ["git"]

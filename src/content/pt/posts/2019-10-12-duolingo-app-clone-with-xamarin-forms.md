@@ -3,6 +3,7 @@ title = "Duolingo app clone com Xamarin.Forms"
 date = 2019-10-12
 type = "post"
 slug = "duolingo-app-clone-with-xamarin-forms"
+aliases = ["/duolingo-app-clone-with-xamarin-forms"]
 translationKey = "duolingo-app-clone-with-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin"]

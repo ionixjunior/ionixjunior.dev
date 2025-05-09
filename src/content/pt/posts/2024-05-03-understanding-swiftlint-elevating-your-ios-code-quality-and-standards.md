@@ -3,6 +3,7 @@ title = "Entendendo o SwiftLint: Elevando a Qualidade e Padrões do seu Código 
 date = 2024-05-03
 type = "post"
 slug = "understanding-swiftlint-elevating-your-ios-code-quality-and-standards"
+aliases = ["/understanding-swiftlint-elevating-your-ios-code-quality-and-standards"]
 translationKey = "understanding-swiftlint-elevating-your-ios-code-quality-and-standards"
 categories = ["TODO"]
 tags = ["iOS"]

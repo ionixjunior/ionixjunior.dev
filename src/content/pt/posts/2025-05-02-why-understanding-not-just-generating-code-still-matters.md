@@ -3,6 +3,7 @@ title = "Por que Entender, e Não Apenas Gerar Código, Ainda Importa"
 date = 2025-05-02
 type = "post"
 slug = "why-understanding-not-just-generating-code-still-matters"
+aliases = ["/why-understanding-not-just-generating-code-still-matters"]
 translationKey = "why-understanding-not-just-generating-code-still-matters"
 categories = ["TODO"]
 tags = ["carreira"]

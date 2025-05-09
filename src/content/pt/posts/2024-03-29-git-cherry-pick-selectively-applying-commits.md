@@ -3,6 +3,7 @@ title = "Git Cherry-Pick: Aplicando Commits de Forma Seletiva"
 date = 2024-03-29
 type = "post"
 slug = "git-cherry-pick-selectively-applying-commits"
+aliases = ["/git-cherry-pick-selectively-applying-commits"]
 translationKey = "git-cherry-pick-selectively-applying-commits"
 categories = ["TODO"]
 tags = ["git"]

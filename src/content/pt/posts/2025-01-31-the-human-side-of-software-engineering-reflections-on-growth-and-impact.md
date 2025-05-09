@@ -3,6 +3,7 @@ title = "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e
 date = 2025-01-31
 type = "post"
 slug = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
+aliases = ["/the-human-side-of-software-engineering-reflections-on-growth-and-impact"]
 translationKey = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 categories = ["TODO"]
 tags = ["carreira"]

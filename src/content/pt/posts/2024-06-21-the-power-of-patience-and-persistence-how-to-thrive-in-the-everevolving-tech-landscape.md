@@ -3,6 +3,7 @@ title = "O Poder da Paciência e da Persistência: Como Evoluir no Ambiente Tecn
 date = 2024-06-21
 type = "post"
 slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
+aliases = ["/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"]
 translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 categories = ["TODO"]
 tags = ["carreira"]

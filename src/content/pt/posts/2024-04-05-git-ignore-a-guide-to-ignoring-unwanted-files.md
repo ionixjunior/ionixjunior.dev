@@ -3,6 +3,7 @@ title = "Git Ignore: Um Guia para Ignorar Arquivos Indesejados"
 date = 2024-04-05
 type = "post"
 slug = "git-ignore-a-guide-to-ignoring-unwanted-files"
+aliases = ["/git-ignore-a-guide-to-ignoring-unwanted-files"]
 translationKey = "git-ignore-a-guide-to-ignoring-unwanted-files"
 categories = ["TODO"]
 tags = ["git"]
