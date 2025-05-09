@@ -3,6 +3,7 @@ title = "Offline map app using Ionic Framework"
 date = 2016-01-18
 type = "post"
 slug = "offline-map-app-using-ionic-framework"
+translationKey = "offline-map-app-using-ionic-framework"
 categories = ["TODO"]
 tags = ["misc"]
 +++

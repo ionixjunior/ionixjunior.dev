@@ -3,6 +3,7 @@ title = "Swift Essentials: Protocolos, Extensões e Opcionais (Parte 4)"
 date = 2024-08-02
 type = "post"
 slug = "swift-essentials-protocols-extensions-and-optionals-part-4"
+translationKey = "swift-essentials-protocols-extensions-and-optionals-part-4"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-protocols-extensions-and-optionals-part-4.pt.webp"

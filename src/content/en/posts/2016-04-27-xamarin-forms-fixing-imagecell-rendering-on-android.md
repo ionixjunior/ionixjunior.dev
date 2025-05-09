@@ -3,6 +3,7 @@ title = "Xamarin.Forms – Fixing ImageCell rendering on Android"
 date = 2016-04-27
 type = "post"
 slug = "xamarin-forms-fixing-imagecell-rendering-on-android"
+translationKey = "xamarin-forms-fixing-imagecell-rendering-on-android"
 image: imagecell-ios-and-android.png
 categories = ["TODO"]
 tags = ["xamarin", "android"]

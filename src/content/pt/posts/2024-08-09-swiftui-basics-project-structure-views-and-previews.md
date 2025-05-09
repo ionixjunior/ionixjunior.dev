@@ -3,6 +3,7 @@ title = "Fundamentos do SwiftUI: Estrutura do Projeto, Views e Previews"
 date = 2024-08-09
 type = "post"
 slug = "swiftui-basics-project-structure-views-and-previews"
+translationKey = "swiftui-basics-project-structure-views-and-previews"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
 social_image: "swiftui-basics-project-structure-views-and-previews.pt.webp"

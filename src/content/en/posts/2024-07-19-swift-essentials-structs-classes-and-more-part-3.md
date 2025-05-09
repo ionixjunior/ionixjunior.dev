@@ -3,6 +3,7 @@ title = "Swift Essentials: Structs, Classes, and More (Part 3)"
 date = 2024-07-19
 type = "post"
 slug = "swift-essentials-structs-classes-and-more-part-3"
+translationKey = "swift-essentials-structs-classes-and-more-part-3"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-structs-classes-and-more-part-3.en.webp"

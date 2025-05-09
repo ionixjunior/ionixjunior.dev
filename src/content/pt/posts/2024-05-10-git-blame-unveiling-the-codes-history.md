@@ -3,6 +3,7 @@ title = "Git Blame: Revelando a História do Código"
 date = 2024-05-10
 type = "post"
 slug = "git-blame-unveiling-the-codes-history"
+translationKey = "git-blame-unveiling-the-codes-history"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-blame-unveiling-the-codes-history.pt.webp"

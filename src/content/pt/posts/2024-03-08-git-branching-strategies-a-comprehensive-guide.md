@@ -3,6 +3,7 @@ title = "Estratégias de Branch do Git: Um Guia Abrangente"
 date = 2024-03-08
 type = "post"
 slug = "git-branching-strategies-a-comprehensive-guide"
+translationKey = "git-branching-strategies-a-comprehensive-guide"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-branching-strategies-a-comprehensive-guide.pt.webp"

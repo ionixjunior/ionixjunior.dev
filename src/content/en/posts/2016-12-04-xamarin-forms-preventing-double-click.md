@@ -3,6 +3,7 @@ title = "Xamarin.Forms - Preventing double click"
 date = 2016-12-04
 type = "post"
 slug = "xamarin-forms-preventing-double-click"
+translationKey = "xamarin-forms-preventing-double-click"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++

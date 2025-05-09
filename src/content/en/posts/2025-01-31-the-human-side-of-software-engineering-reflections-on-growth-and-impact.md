@@ -3,6 +3,7 @@ title = "The Human Side of Software Engineering: Reflections on Growth and Impac
 date = 2025-01-31
 type = "post"
 slug = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
+translationKey = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 categories = ["TODO"]
 tags = ["career"]
 social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.en.webp"

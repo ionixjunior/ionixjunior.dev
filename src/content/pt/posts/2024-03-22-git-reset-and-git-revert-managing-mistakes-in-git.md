@@ -3,6 +3,7 @@ title = "Git Reset e Git Revert: Gerenciando Erros no Git"
 date = 2024-03-22
 type = "post"
 slug = "git-reset-and-git-revert-managing-mistakes-in-git"
+translationKey = "git-reset-and-git-revert-managing-mistakes-in-git"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-reset-and-git-revert-managing-mistakes-in-git.pt.webp"

@@ -3,6 +3,7 @@ title = "How to create a clickable title similar to the Meetup app in Xamarin.Fo
 date = 2017-01-09
 type = "post"
 slug = "how-to-make-a-clickable-title-like-meetup-app-in-xamarin-forms"
+translationKey = "how-to-make-a-clickable-title-like-meetup-app-in-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin", "ios"]
 +++

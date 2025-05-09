@@ -3,6 +3,7 @@ title = "Pare de Perder Tempo! Git Bisect: Sua Ferramenta Definitiva para Caçar
 date = 2024-06-07
 type = "post"
 slug = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
+translationKey = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.pt.webp"

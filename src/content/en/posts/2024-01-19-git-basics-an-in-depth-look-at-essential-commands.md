@@ -3,6 +3,7 @@ title = "Git Basics: An In-Depth Look at Essential Commands"
 date = 2024-01-19
 type = "post"
 slug = "git-basics-an-in-depth-look-at-essential-commands"
+translationKey = "git-basics-an-in-depth-look-at-essential-commands"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-basics-an-in-depth-look-at-essential-commands.en.webp"

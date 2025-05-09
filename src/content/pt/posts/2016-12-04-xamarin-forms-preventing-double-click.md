@@ -3,6 +3,7 @@ title = "Xamarin.Forms – Prevenindo duplo clique"
 date = 2016-12-04
 type = "post"
 slug = "xamarin-forms-preventing-double-click"
+translationKey = "xamarin-forms-preventing-double-click"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

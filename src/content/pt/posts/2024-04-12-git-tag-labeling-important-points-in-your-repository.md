@@ -3,6 +3,7 @@ title = "Git Tag: Marcando Pontos Importantes no Seu Repositório"
 date = 2024-04-12
 type = "post"
 slug = "git-tag-labeling-important-points-in-your-repository"
+translationKey = "git-tag-labeling-important-points-in-your-repository"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-tag-labeling-important-points-in-your-repository.pt.webp"

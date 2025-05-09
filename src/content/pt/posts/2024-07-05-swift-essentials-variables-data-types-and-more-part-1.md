@@ -3,6 +3,7 @@ title = "Swift Essentials: Variáveis, Tipos de Dados e Mais (Parte 1)"
 date = 2024-07-05
 type = "post"
 slug = "swift-essentials-variables-data-types-and-more-part-1"
+translationKey = "swift-essentials-variables-data-types-and-more-part-1"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-variables-data-types-and-more-part-1.pt.webp"

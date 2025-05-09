@@ -3,6 +3,7 @@ title = "Taking Pauses is Okay, But Not Planning Can Be Costly"
 date = 2024-10-04
 type = "post"
 slug = "taking-pauses-is-okay-but-not-planning-can-be-costly"
+translationKey = "taking-pauses-is-okay-but-not-planning-can-be-costly"
 categories = ["TODO"]
 tags = ["career"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.en.webp"

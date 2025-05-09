@@ -3,6 +3,7 @@ title = "SetupMyProject – Configure seu projeto em menos de 5 minutos"
 date = 2016-01-30
 type = "post"
 slug = "setup-my-project-configure-your-project-in-less-than-5-minutes"
+translationKey = "setup-my-project-configure-your-project-in-less-than-5-minutes"
 categories = ["TODO"]
 tags = ["misc"]
 redirect_from:

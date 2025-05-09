@@ -3,6 +3,7 @@ title = "The Power of Patience and Persistence: How to Thrive in the Ever-Evolvi
 date = 2024-06-21
 type = "post"
 slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
+translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 categories = ["TODO"]
 tags = ["career"]
 social_image: "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.en.webp"

@@ -3,6 +3,7 @@ title = "Configurando conexão SQL Server com driver ODBC no Zend Framework"
 date = 2012-07-05
 type = "post"
 slug = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
+translationKey = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
 categories = ["TODO"]
 tags = ["zend"]
 redirect_from:
