@@ -1,6 +1,7 @@
 +++
 title = "Mantendo seu software sob controle"
 date = 2014-10-19
+categories = ["TODO"]
 tags = ["misc"]
 redirect_from:
     - /mantendo-seu-software-sob-controle/

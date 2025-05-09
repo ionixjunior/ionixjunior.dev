@@ -1,6 +1,7 @@
 +++
 title = "Git Diff Explained: Understanding Code Differences with Ease"
 date = 2024-05-31
+categories = ["TODO"]
 tags = ["git"]
 social_image: "git-diff-explained-understanding-code-differences-with-ease.en.webp"
 +++

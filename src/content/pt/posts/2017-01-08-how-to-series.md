@@ -1,6 +1,7 @@
 +++
 title = "Série “como fazer”"
 date = 2017-01-08
+categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:
     - /serie-como-fazer/

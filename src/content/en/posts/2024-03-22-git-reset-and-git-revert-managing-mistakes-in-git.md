@@ -1,6 +1,7 @@
 +++
 title = "Git Reset and Git Revert: Managing Mistakes in Git"
 date = 2024-03-22
+categories = ["TODO"]
 tags = ["git"]
 social_image: "git-reset-and-git-revert-managing-mistakes-in-git.en.webp"
 +++

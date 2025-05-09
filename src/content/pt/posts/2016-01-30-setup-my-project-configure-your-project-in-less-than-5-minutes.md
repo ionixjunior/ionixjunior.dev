@@ -1,6 +1,7 @@
 +++
 title = "SetupMyProject – Configure seu projeto em menos de 5 minutos"
 date = 2016-01-30
+categories = ["TODO"]
 tags = ["misc"]
 redirect_from:
     - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos/

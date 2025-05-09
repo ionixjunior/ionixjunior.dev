@@ -1,6 +1,7 @@
 +++
 title = "Git Blame: Revelando a História do Código"
 date = 2024-05-10
+categories = ["TODO"]
 tags = ["git"]
 social_image: "git-blame-unveiling-the-codes-history.pt.webp"
 +++

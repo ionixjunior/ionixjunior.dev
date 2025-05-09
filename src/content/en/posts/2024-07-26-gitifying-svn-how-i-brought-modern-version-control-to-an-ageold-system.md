@@ -1,6 +1,7 @@
 +++
 title = "Git-ifying SVN: How I Brought Modern Version Control to an Age-Old System"
 date = 2024-07-26
+categories = ["TODO"]
 tags = ["git"]
 social_image: "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system.en.webp"
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Como fazer o título clicável similar ao app Meetup no Xamarin.Forms"
 date = 2017-01-09
+categories = ["TODO"]
 tags = ["xamarin", "ios"]
 redirect_from:
     - /como-fazer-o-titulo-clicavel-similar-ao-app-meetup-no-xamarin-forms/

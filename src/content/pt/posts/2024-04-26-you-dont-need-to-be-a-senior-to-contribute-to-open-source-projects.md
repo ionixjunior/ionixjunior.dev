@@ -1,6 +1,7 @@
 +++
 title = "Você não precisa ser sênior para contribuir para projetos open-source"
 date = 2024-04-26
+categories = ["TODO"]
 tags = ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
 +++

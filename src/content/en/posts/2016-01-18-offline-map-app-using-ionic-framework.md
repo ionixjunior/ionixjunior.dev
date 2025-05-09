@@ -1,6 +1,7 @@
 +++
 title = "Offline map app using Ionic Framework"
 date = 2016-01-18
+categories = ["TODO"]
 tags = ["misc"]
 +++
 

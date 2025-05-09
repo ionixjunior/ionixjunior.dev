@@ -1,6 +1,7 @@
 +++
 title = "Vídeo aulas de desenvolvimento de interfaces com Xamarin.Forms"
 date = 2022-01-03
+categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:
     - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms/

@@ -1,6 +1,7 @@
 +++
 title = "Dominando o Git: Um Guia Abrangente para Comandos do Git"
 date = 2024-01-14
+categories = ["TODO"]
 tags = ["git"]
 social_image: "mastering-git-a-comprehensive-guide-to-git-commands.pt.webp"
 +++

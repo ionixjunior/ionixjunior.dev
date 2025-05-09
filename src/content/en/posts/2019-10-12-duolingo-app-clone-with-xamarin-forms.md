@@ -1,6 +1,7 @@
 +++
 title = "Duolingo app clone with Xamarin.Forms"
 date = 2019-10-12
+categories = ["TODO"]
 tags = ["xamarin"]
 +++
 

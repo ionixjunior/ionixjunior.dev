@@ -2,6 +2,7 @@
 title = "Xamarin disponível gratuitamente para desenvolvedores"
 date = 2016-04-06
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
+categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:
     - /xamarin-disponivel-gratuitamente-para-desenvolvedores/

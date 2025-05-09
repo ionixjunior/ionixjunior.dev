@@ -1,6 +1,7 @@
 +++
 title = "Aumente Sua Produtividade Com Git Alias: Comece a Economizar Tempo Hoje!"
 date = 2024-06-14
+categories = ["TODO"]
 tags = ["git"]
 social_image: "boost-your-git-productivity-with-aliases-start-saving-time-today.pt.webp"
 +++

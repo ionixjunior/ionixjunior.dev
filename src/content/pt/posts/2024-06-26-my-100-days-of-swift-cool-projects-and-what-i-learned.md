@@ -1,6 +1,7 @@
 +++
 title = "Meus 100 Dias de Swift: Projetos Incríveis e o que Aprendi"
 date = 2024-06-28
+categories = ["TODO"]
 tags = ["swift"]
 social_image: "my-100-days-of-swift-cool-projects-and-what-i-learned.pt.webp"
 +++

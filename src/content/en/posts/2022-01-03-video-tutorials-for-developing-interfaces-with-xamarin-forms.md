@@ -1,6 +1,7 @@
 +++
 title = "Video tutorials for developing interfaces with Xamarin.Forms"
 date = 2022-01-03
+categories = ["TODO"]
 tags = ["xamarin"]
 +++
 
