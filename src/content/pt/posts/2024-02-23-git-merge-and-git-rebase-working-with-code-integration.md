@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Git Merge e Git Rebase: Trabalhando com Integração de Código"
 date:   2024-02-23
 translations: ["en"]
 tags: ["git"]
 social_image: "git-merge-and-git-rebase-working-with-code-integration.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">E</span>stá com dificuldades para trabalhar com a integração de código no Git? Você não está sozinho. Compreender as diferenças entre 'git merge' e 'git rebase' é crucial para manter um histórico de commits limpo e otimizar seu fluxo de trabalho. Neste post, explorarei esses dois comandos essenciais, suas abordagens únicas para a integração de código e as melhores práticas para utilizá-los de forma eficaz.</p>
 

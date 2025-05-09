@@ -1,4 +1,4 @@
----
++++
 layout: post
 title:  "Duolingo app clone com Xamarin.Forms"
 date:   2019-10-12
@@ -6,7 +6,7 @@ translations: ["en"]
 tags: ["xamarin"]
 redirect_from:
     - /duolingo-app-clone-com-xamarin-forms/
----
++++
 
 <p class="intro"><span class="dropcap">F</span>ala galera! Tudo bem com vocês?
 Depois de um tempo, aqui estou escrevendo novamente! Mas hoje não vai ter nenhum artigo técnico, apenas vou compartilhar com vocês uma série de live streams que estou fazendo para desenvolver um clone do app do Duolingo com Xamarin.Forms. Se interessou? Então acompanha aí esse post para saber mais informações.</p>

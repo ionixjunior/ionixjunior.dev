@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Git Clean: O Comando Que Você Não Sabia Que Precisava"
 date:   2024-05-24
 translations: ["en"]
 tags: ["git"]
 social_image: "git-clean-the-command-you-didnt-know-you-needed.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">I</span>magine um repositório Git bagunçado, cheio de arquivos não rastreados, artefatos de compilação e arquivos temporários. Qual a melhor maneira de remover todo esse conteúdo indesejado e manter o repositório limpo, liberando espaço do seu computador? O Git oferece um comando chamado git clean e aprenderemos sobre ele neste post. Vamos descobrir o comando que você não sabia que precisava!</p>
 

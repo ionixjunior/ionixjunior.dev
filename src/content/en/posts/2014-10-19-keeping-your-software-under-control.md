@@ -1,10 +1,10 @@
----
++++
 layout: post
 title: "Keeping your software under control"
 date: 2014-10-19
 translations: ["pt"]
 tags: ["misc"]
----
++++
 
 <p class="intro"><span class="dropcap">L</span>ast Wednesday, October 15, 2014, I was at Católica SC for the GDG Academic Week BSI 2014 event, where I gave a presentation on software quality tools.</p>
 

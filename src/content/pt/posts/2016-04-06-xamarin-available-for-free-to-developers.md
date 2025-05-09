@@ -1,4 +1,4 @@
----
++++
 layout: post
 title:  "Xamarin disponível gratuitamente para desenvolvedores"
 date:   2016-04-06
@@ -7,7 +7,7 @@ image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
 tags: ["xamarin"]
 redirect_from:
     - /xamarin-disponivel-gratuitamente-para-desenvolvedores/
----
++++
 
 <p class="intro"><span class="dropcap">R</span>ecentemente foi noticiado pela Microsoft que a plataforma Xamarin está disponível gratuitamente para os desenvolvedores.</p>
 

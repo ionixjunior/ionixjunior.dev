@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Mastering Git Branching Basics: Exploring the git branch Command"
 date:   2024-03-01
 translations: ["pt"]
 tags: ["git"]
 social_image: "mastering-git-branching-basics-exploring-the-git-branch-command.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">E</span>mbarking on your journey with Git involves mastering its fundamental commands, and among them, git branch stands out as a pivotal tool for managing branches. In this guide, we'll delve deep into the git branch command, exploring its various functionalities, from listing existing branches to creating and deleting them. By the end, you'll wield the power of branching with confidence, laying a solid foundation for your Git workflow.</p>
 

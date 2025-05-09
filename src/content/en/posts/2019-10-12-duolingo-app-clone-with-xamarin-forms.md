@@ -1,10 +1,10 @@
----
++++
 layout: post
 title: "Duolingo app clone with Xamarin.Forms"
 date: 2019-10-12
 translations: ["pt"]
 tags: ["xamarin"]
----
++++
 
 <p class="intro"><span class="dropcap">H</span>ey folks! How are you doing?
 After a while, here I am writing again! But today, there won't be any technical article. Instead, I'll share with you a series of live streams I'm doing to develop a Duolingo app clone with Xamarin.Forms. Do you interested? Then read on to find out more.</p>

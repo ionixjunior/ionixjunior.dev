@@ -1,10 +1,10 @@
----
++++
 layout: post
 title: "Xamarin.Forms and UI – Which tool is more productive?"
 date: 2018-02-20
 translations: ["pt"]
 tags: ["xamarin"]
----
++++
 
 <p class="intro"><span class="dropcap">W</span>hen I started working with Xamarin.Forms, building interfaces was very difficult as there were no graphical tools for it; everything was done "manually". This post compares some tools that we can use to make this work a little easier.</p>
 

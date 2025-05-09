@@ -1,10 +1,10 @@
----
++++
 layout: post
 title: "“Storage almost full,” No more!"
 date: 2014-08-26
 translations: ["pt"]
 tags: ["misc"]
----
++++
 
 <p class="intro"><span class="dropcap">Y</span>ou buy a brand new smartphone and start filling it with photos, videos, and apps. After some time, you see that dreaded message saying there's no more space on your device to store information. Now, what do you do?</p>
 

@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Git Cherry-Pick: Aplicando Commits de Forma Seletiva"
 date:   2024-03-29
 translations: ["en"]
 tags: ["git"]
 social_image: "git-cherry-pick-selectively-applying-commits.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">C</span>herry-picking no Git é uma técnica poderosa que permite escolher commits específicos de um branch e aplicá-los a outro. Isso pode ser particularmente útil quando você deseja trazer mudanças individuais de um branch para outro sem mesclar o branch inteiro. Neste post, veremos como esse comando funciona!</p>
 

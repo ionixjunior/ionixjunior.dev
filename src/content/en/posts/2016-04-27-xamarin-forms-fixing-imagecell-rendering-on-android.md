@@ -1,11 +1,11 @@
----
++++
 layout: post
 title: "Xamarin.Forms – Fixing ImageCell rendering on Android"
 date: 2016-04-27
 translations: ["pt"]
 image: imagecell-ios-and-android.png
 tags: ["xamarin", "android"]
----
++++
 
 <p class="intro"><span class="dropcap">W</span>hen using TableView in Xamarin Forms, we have some options for elements, such as TextCell, ImageCell, SwitchCell, EntryCell. These elements are referred to as built-in cells. In this article, we'll talk a bit about ImageCell.</p>
 

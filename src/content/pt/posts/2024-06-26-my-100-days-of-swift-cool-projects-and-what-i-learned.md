@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Meus 100 Dias de Swift: Projetos Incríveis e o que Aprendi"
 date:   2024-06-28
 translations: ["en"]
 tags: ["swift"]
 social_image: "my-100-days-of-swift-cool-projects-and-what-i-learned.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">H</span>á algum tempo, completei o desafio 100 Days of Swift de Paul Hudson. Foi uma experiência incrível onde aprendi muito sobre Swift e desenvolvimento iOS. No post de hoje, vou compartilhar meus pensamentos sobre essa jornada e destacar as coisas mais interessantes que encontrei e desenvolvi. Vamos lá!</p>
 

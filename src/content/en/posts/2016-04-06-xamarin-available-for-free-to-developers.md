@@ -1,11 +1,11 @@
----
++++
 layout: post
 title: "Xamarin available for free for developers"
 date: 2016-04-06
 translations: ["pt"]
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
 tags: ["xamarin"]
----
++++
 
 <p class="intro"><span class="dropcap">R</span>ecently, Microsoft announced that the Xamarin platform is available for free to developers.</p>
 

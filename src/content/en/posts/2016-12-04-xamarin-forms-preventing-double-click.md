@@ -1,10 +1,10 @@
----
++++
 layout: post
 title:  "Xamarin.Forms - Preventing double click"
 date:   2016-12-04
 translations: ["pt"]
 tags: ["xamarin"]
----
++++
 
 <p class="intro"><span class="dropcap">H</span>i, I'm back! Today I'm going to talk about a situation I faced this week and had to come up with a solution. I'm going to talk about double clicking on mobile navigation (if we can call it that).</p>
 

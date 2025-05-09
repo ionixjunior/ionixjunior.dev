@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Comando Git Add Explorado: Um Tutorial Passo a Passo"
 date:   2024-01-26
 translations: ["en"]
 tags: ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">P</span>ara adicionar arquivos a um repositório Git, é necessário incluí-los em uma área específica para commit. Mas por que esse passo é necessário? Se eu fizer alterações, não quero adicioná-las ao repositório? Sim, de fato, mas vou mostrar a você alguns benefícios dessa abordagem e explicar mais detalhes sobre o comando. Vamos começar!</p>
 

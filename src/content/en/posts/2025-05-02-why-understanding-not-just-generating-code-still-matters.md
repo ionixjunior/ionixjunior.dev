@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Why Understanding, Not Just Generating Code, Still Matters"
 date:   2025-05-02
 translations: ["pt"]
 tags: ["career"]
 social_image: "why-understanding-not-just-generating-code-still-matters.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">I</span>n the last few weeks, everybody has been talking about vibe coding and how easily you can develop an entire system, from zero to hero. This is blowing the minds of most people, and I'll talk about it in today's post. But, before talking about vibe coding, I'll talk about "normal coding" 🤔. Let's do it!</p>
 

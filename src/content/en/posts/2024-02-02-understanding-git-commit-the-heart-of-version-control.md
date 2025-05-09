@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Understanding Git Commit: The Heart of Version Control"
 date:   2024-02-02
 translations: ["pt"]
 tags: ["git"]
 social_image: "understanding-git-commit-the-heart-of-version-control.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">I</span>n the realm of version control, the Git commit is more than a snapshot; it's the heartbeat of your project. Each commit is a deliberate note in the symphony of development, encapsulating changes, decisions, and progress. Join me as we unravel the essence of the Git commit—understanding its components, mastering the art of concise messages, and appreciating its pivotal role in shaping a coherent version of history.</p>
 

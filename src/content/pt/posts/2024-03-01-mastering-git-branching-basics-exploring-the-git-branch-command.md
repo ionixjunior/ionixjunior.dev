@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Dominando os Conceitos Básicos de Branches do Git: Explorando o Comando git branch"
 date:   2024-03-01
 translations: ["en"]
 tags: ["git"]
 social_image: "mastering-git-branching-basics-exploring-the-git-branch-command.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">E</span>mbarcar em sua jornada com o Git envolve dominar seus comandos fundamentais, e entre eles, o git branch se destaca como uma ferramenta fundamental para gerenciar branches. Neste guia, vamos mergulhar fundo no comando git branch, explorando suas várias funcionalidades, desde listar branches existentes até criá-los e excluí-los. Ao final, você estará apto a utilizar este comando com segurança, estabelecendo uma base sólida para o seu fluxo de trabalho com o Git.</p>
 

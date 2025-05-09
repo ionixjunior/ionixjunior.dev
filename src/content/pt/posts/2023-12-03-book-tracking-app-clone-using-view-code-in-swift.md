@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Book Tracking app clone usando View Code em Swift"
 date:   2023-12-03
 translations: ["en"]
 tags: ["swift", "view-code"]
 social_image: "book-tracking-app-clone-using-view-code-in-swift.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">H</span>á alguns dias, publiquei um post falando sobre minha jornada como desenvolvedor mobile e porque eu decidi focar no desenvolvimento nativo com iOS. Hoje, vou compartilhar minhas primeiras impressões usando View Code no iOS. Para praticar, escolhi um design the um aplicativo que encontrei no Dribbble e iniciei um clone do aplicativo. Então, vamos conferir o resultado!</p>
 

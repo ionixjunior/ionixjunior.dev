@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Fazer Pausas é Importante, Mas Não Se Planejar Pode Sair Caro"
 date:   2024-10-04
 translations: ["en"]
 tags: ["carreira"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">O</span>lá, pessoal! Estou de volta depois de uma breve pausa.  Recentemente, mudei minha rotina e ficou difícil escrever toda semana.  Como adoro compartilhar conhecimento, estou animado por estar de volta. Nesse último mês tive bastante tempo para pensar sobre minha carreira, então quero compartilhar algumas ideias com vocês. Espero que gostem do post de hoje.</p>
 

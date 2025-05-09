@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Taking Pauses is Okay, But Not Planning Can Be Costly"
 date:   2024-10-04
 translations: ["pt"]
 tags: ["career"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">H</span>ello, everyone! I'm back after a short break.  Recently, I changed my routine and it became challenging to write every week.  Since I love sharing knowledge, I'm excited to be back.  This past month has given me a lot to think about, so I want to share some thoughts with you. I hope you enjoy today's post. </p>
 

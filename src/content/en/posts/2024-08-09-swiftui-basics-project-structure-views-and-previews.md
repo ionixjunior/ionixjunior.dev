@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "SwiftUI Basics: Project Structure, Views, and Previews"
 date:   2024-08-09
 translations: ["pt"]
 tags: ["100DaysOfSwiftUI"]
 social_image: "swiftui-basics-project-structure-views-and-previews.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">T</span>his is a new post of the "100 Days of SwiftUI" series. In today's post we'll embark on a fundamental journey: understanding the core structure of a SwiftUI app. We'll demystify the Xcode project setup and explore the essential building blocks of every SwiftUI masterpiece. Let's get started!</p>
 

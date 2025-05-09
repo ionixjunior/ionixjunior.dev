@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "The Human Side of Software Engineering: Reflections on Growth and Impact"
 date:   2025-01-31
 translations: ["pt"]
 tags: ["career"]
 social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">I</span> believe it's not so difficult to understand what makes us successful in our careers, but sometimes we need guidance to move forward. So, I dedicated time to read "The Software Engineer's Guidebook," and I'll share some of my thoughts about it, based on my perspective and experience as a Software Engineer and Team Lead.</p>
 

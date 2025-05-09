@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Você não precisa ser sênior para contribuir para projetos open-source"
 date:   2024-04-26
 translations: ["en"]
 tags: ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">Q</span>uer contribuir para projetos open-source, mas se sente intimidado(a) pela ideia? Não se preocupe! Contrariando a crença popular, você não precisa ser uma pessoa desenvolvedora sênior para fazer contribuições significativas. Na verdade, começar pode ser mais fácil do que você pensa. Neste post, compartilharei minha experiência e mostrarei como pode ser simples contribuir para projetos open-source, independentemente do seu nível de experiência. Vamos mergulhar e descobrir como você pode começar a fazer a diferença hoje!</p>
 

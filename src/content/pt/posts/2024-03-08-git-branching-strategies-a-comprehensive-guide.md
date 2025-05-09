@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Estratégias de Branch do Git: Um Guia Abrangente"
 date:   2024-03-08
 translations: ["en"]
 tags: ["git"]
 social_image: "git-branching-strategies-a-comprehensive-guide.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">B</span>em-vindo ao nosso guia abrangente sobre estratégias de branch do Git! Se você já se sentiu sobrecarregado pela variedade de estratégias de branch disponíveis no Git, você não está sozinho. Com tantas estratégias para escolher, que vão desde abordagens simples de um único branch até modelos mais complexos como o Git Flow, é essencial entender os benefícios e as compensações de cada uma. Vamos mergulhar e desvendar as complexidades das estratégias de branch do Git juntos!</p>
 

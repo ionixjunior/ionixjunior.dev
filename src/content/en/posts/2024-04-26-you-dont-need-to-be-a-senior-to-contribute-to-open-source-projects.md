@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "You don't need to be a senior to contribute to open-source projects"
 date:   2024-04-26
 translations: ["pt"]
 tags: ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.en.webp"
----
++++
 
 <p class="intro"><span class="dropcap">W</span>ant to contribute to open-source projects but feel intimidated by the idea? Don't worry! Contrary to popular belief, you don't need to be a senior developer to make meaningful contributions. In fact, getting started can be easier than you think. In this post, I'll share my experience and show you how simple it can be to contribute to open-source projects, regardless of your level of experience. Let's dive in and discover how you can start making a difference today!</p>
 

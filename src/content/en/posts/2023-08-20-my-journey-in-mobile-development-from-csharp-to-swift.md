@@ -1,10 +1,10 @@
----
++++
 layout: post
 title:  "My journey in mobile development: From C# to Swift"
 date:   2023-08-20
 translations: ["pt"]
 tags: ["xamarin", "swift"]
----
++++
 
 <p class="intro"><span class="dropcap">I</span>n mid-2014, when I began my journey into mobile development, there were few options for cross-platform approaches. My journey started with Xamarin, a powerful technology that allowed me to create native applications for multiple platforms using C#. Over the years, I focused on mobile development, leaving backend development behind to dedicate myself solely to Android and iOS development. In this post, I share some of my experiences and explain why I am increasingly drawn to iOS development with Swift.</p>
 

@@ -1,4 +1,4 @@
----
++++
 layout: post
 title:  "Configurando conexão SQL Server com driver ODBC no Zend Framework"
 date:   2012-07-05
@@ -6,7 +6,7 @@ translations: ["en"]
 tags: ["zend"]
 redirect_from:
     - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework/
----
++++
 
 <p class="intro"><span class="dropcap">G</span>rande parte dos Desenvolvedores Web que trabalham com sites ou desenvolvimento de sistemas utilizam MySQL ou PostgreSQL como banco de dados, e em um projeto que desenvolvi não foi diferente, optei por utilizar o MySQL.</p>
 

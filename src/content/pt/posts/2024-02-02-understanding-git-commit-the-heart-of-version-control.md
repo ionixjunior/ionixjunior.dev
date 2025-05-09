@@ -1,11 +1,11 @@
----
++++
 layout: post
 title:  "Entendendo o Git Commit: O Coração do Controle de Versão"
 date:   2024-02-02
 translations: ["en"]
 tags: ["git"]
 social_image: "understanding-git-commit-the-heart-of-version-control.pt.webp"
----
++++
 
 <p class="intro"><span class="dropcap">N</span>o mundo do controle de versão, o Git commit é mais do que um simples registro de alteração; é a evolução do seu projeto. Cada commit é uma nota deliberada na sinfonia do desenvolvimento, encapsulando mudanças, decisões e progresso. Texto bonito, né? rsrs. Te garanto que o texto também tá bem legal e pode te dar algumas dicas para o dia a dia. Junte-se a mim enquanto desvendamos a essência do Git commit — compreendendo seus componentes, dominando a arte de mensagens concisas e apreciando seu papel fundamental na formação de uma versão coerente na história do projeto.</p>
 

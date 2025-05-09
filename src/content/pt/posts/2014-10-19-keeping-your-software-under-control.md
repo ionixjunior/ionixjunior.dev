@@ -1,4 +1,4 @@
----
++++
 layout: post
 title:  "Mantendo seu software sob controle"
 date:   2014-10-19
@@ -6,7 +6,7 @@ translations: ["en"]
 tags: ["misc"]
 redirect_from:
     - /mantendo-seu-software-sob-controle/
----
++++
 
 <p class="intro"><span class="dropcap">N</span>a última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.</p>
 
