@@ -1,7 +1,6 @@
 +++
 title = "Git Worktree: Your Secret Weapon for Multitasking in Git"
 date = 2024-05-17
-translations: ["pt"]
 tags: ["git"]
 social_image: "git-worktree-your-secret-weapon-for-multitasking-in-git.en.webp"
 +++

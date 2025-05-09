@@ -1,7 +1,6 @@
 +++
 title = "Redmine Time Tracker plugin"
 date = 2013-03-02
-translations: ["en"]
 tags: ["misc"]
 +++
 

@@ -1,7 +1,6 @@
 +++
 title = "Xamarin.Forms e os problemas que você deve evitar"
 date = 2016-06-02
-translations: ["en"]
 tags: ["xamarin"]
 redirect_from:
     - /xamarin-forms-e-os-problemas-que-voce-deve-evitar/

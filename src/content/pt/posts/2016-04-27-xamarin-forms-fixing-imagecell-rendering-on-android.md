@@ -1,7 +1,6 @@
 +++
 title = "Xamarin.Forms – Corrigindo a renderização do ImageCell no Android"
 date = 2016-04-27
-translations: ["en"]
 image: imagecell-ios-and-android.png
 tags: ["xamarin", "android"]
 redirect_from:

@@ -1,7 +1,6 @@
 +++
 title = "Git Tag: Marcando Pontos Importantes no Seu Repositório"
 date = 2024-04-12
-translations: ["en"]
 tags: ["git"]
 social_image: "git-tag-labeling-important-points-in-your-repository.pt.webp"
 +++

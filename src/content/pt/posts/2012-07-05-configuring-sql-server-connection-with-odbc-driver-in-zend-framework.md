@@ -1,7 +1,6 @@
 +++
 title = "Configurando conexão SQL Server com driver ODBC no Zend Framework"
 date = 2012-07-05
-translations: ["en"]
 tags: ["zend"]
 redirect_from:
     - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework/

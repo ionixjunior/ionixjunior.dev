@@ -1,7 +1,6 @@
 +++
 title = "Book Tracking app clone usando View Code em Swift"
 date = 2023-12-03
-translations: ["en"]
 tags: ["swift", "view-code"]
 social_image: "book-tracking-app-clone-using-view-code-in-swift.pt.webp"
 +++

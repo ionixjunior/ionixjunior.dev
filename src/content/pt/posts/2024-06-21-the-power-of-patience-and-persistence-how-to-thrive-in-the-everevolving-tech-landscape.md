@@ -1,7 +1,6 @@
 +++
 title = "O Poder da Paciência e da Persistência: Como Evoluir no Ambiente Tecnológico em Constante Evolução"
 date = 2024-06-21
-translations: ["en"]
 tags: ["carreira"]
 social_image: "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.pt.webp"
 +++
