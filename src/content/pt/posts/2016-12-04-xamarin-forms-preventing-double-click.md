@@ -1,6 +1,7 @@
 +++
 title = "Xamarin.Forms – Prevenindo duplo clique"
 date = 2016-12-04
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

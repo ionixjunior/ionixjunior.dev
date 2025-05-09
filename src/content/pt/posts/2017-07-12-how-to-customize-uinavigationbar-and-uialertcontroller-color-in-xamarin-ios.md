@@ -1,6 +1,7 @@
 +++
 title = "Como customizar cor do UINavigationBar e UIAlertController no Xamarin.iOS"
 date = 2017-07-12
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin", "ios"]
 redirect_from:

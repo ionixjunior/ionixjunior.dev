@@ -1,6 +1,7 @@
 +++
 title = "Comando Git Log: Navegando pela História do Seu Projeto"
 date = 2024-03-15
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-log-command-navigating-your-projects-history.pt.webp"

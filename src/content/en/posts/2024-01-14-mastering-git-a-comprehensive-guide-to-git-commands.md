@@ -1,6 +1,7 @@
 +++
 title = "Mastering Git: A Comprehensive Guide to Git Commands"
 date = 2024-01-14
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "mastering-git-a-comprehensive-guide-to-git-commands.en.webp"

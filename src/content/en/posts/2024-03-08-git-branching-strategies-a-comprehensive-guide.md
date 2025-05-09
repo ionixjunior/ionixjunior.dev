@@ -1,6 +1,7 @@
 +++
 title = "Git Branching Strategies: A Comprehensive Guide"
 date = 2024-03-08
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-branching-strategies-a-comprehensive-guide.en.webp"

@@ -1,6 +1,7 @@
 +++
 title = "Duolingo app clone com Xamarin.Forms"
 date = 2019-10-12
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

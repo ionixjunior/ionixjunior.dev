@@ -1,6 +1,7 @@
 +++
 title = "O Lado Humano da Engenharia de Software: Reflexões sobre Crescimento e Impacto"
 date = 2025-01-31
+type = "post"
 categories = ["TODO"]
 tags = ["carreira"]
 social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"

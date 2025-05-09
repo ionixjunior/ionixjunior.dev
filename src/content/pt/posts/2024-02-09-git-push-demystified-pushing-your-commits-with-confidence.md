@@ -1,6 +1,7 @@
 +++
 title = "Desmistificando o Git Push: Enviando Seus Commits com Confiança"
 date = 2024-02-09
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-push-demystified-pushing-your-commits-with-confidence.pt.webp"

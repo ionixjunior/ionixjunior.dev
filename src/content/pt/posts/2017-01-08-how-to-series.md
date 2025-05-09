@@ -1,6 +1,7 @@
 +++
 title = "Série “como fazer”"
 date = 2017-01-08
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

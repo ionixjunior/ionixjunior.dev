@@ -1,6 +1,7 @@
 +++
 title = "HotReload: uma ferramenta gratuita para desenvolvimento de UI em XAML"
 date = 2019-06-03
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

@@ -1,6 +1,7 @@
 +++
 title = "Minha jornada no desenvolvimento mobile: Do C# ao Swift"
 date = 2023-08-20
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin", "swift"]
 +++

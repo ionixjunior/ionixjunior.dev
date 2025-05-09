@@ -1,6 +1,7 @@
 +++
 title = "You don't need to be a senior to contribute to open-source projects"
 date = 2024-04-26
+type = "post"
 categories = ["TODO"]
 tags = ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.en.webp"

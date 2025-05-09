@@ -1,6 +1,7 @@
 +++
 title = "Por que Entender, e Não Apenas Gerar Código, Ainda Importa"
 date = 2025-05-02
+type = "post"
 categories = ["TODO"]
 tags = ["carreira"]
 social_image: "why-understanding-not-just-generating-code-still-matters.pt.webp"

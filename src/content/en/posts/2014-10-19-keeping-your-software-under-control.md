@@ -1,6 +1,7 @@
 +++
 title = "Keeping your software under control"
 date = 2014-10-19
+type = "post"
 categories = ["TODO"]
 tags = ["misc"]
 +++

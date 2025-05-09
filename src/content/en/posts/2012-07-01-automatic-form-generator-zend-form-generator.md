@@ -1,6 +1,7 @@
 +++
 title = "Automatic form generator - Zend Form Generator"
 date = 2012-07-01
+type = "post"
 categories = ["TODO"]
 tags = ["zend"]
 +++

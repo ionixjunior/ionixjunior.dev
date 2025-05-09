@@ -1,6 +1,7 @@
 +++
 title = "Xamarin available for free for developers"
 date = 2016-04-06
+type = "post"
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
 categories = ["TODO"]
 tags = ["xamarin"]

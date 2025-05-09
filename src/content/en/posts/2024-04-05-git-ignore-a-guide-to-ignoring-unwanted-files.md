@@ -1,6 +1,7 @@
 +++
 title = "Git Ignore: A Guide to Ignoring Unwanted Files"
 date = 2024-04-05
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-ignore-a-guide-to-ignoring-unwanted-files.en.webp"

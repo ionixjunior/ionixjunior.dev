@@ -1,6 +1,7 @@
 +++
 title = "Configuring SQL Server connection with ODBC driver in Zend Framework"
 date = 2012-07-05
+type = "post"
 categories = ["TODO"]
 tags = ["zend"]
 +++

@@ -1,6 +1,7 @@
 +++
 title = "Git Clean: The Command You Didn't Know You Needed"
 date = 2024-05-24
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-clean-the-command-you-didnt-know-you-needed.en.webp"

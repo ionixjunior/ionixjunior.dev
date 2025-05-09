@@ -1,6 +1,7 @@
 +++
 title = "Series 'how to do'"
 date = 2017-01-08
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++

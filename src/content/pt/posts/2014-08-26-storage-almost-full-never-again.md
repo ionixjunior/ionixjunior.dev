@@ -1,6 +1,7 @@
 +++
 title = "“Storage almost full”, nunca mais!"
 date = 2014-08-26
+type = "post"
 categories = ["TODO"]
 tags = ["misc"]
 redirect_from:

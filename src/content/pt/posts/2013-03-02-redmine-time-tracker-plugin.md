@@ -1,6 +1,7 @@
 +++
 title = "Redmine Time Tracker plugin"
 date = 2013-03-02
+type = "post"
 categories = ["TODO"]
 tags = ["misc"]
 +++

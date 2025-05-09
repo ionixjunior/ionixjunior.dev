@@ -1,6 +1,7 @@
 +++
 title = "Customizing SeparatorInset of UITableView in iOS – Xamarin.Forms"
 date = 2018-07-30
+type = "post"
 categories = ["TODO"]
 tags = ["xamarin", "ios"]
 +++

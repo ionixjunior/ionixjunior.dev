@@ -1,6 +1,7 @@
 +++
 title = "Git Add Command Explained: A Step-by-Step Tutorial"
 date = 2024-01-26
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.en.webp"

@@ -1,6 +1,7 @@
 +++
 title = "Stop Wasting Hours! Git Bisect: Your Ultimate Bug Hunting Tool"
 date = 2024-06-07
+type = "post"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.en.webp"
