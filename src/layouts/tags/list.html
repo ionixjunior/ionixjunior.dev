@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1 class="pageTitle">{{ .Title }}</h1>
+<h1 class="pageTitle">{{ i18n "tags" }} > {{ .Title }}</h1>
 {{ $perPage := .Site.Params.postsPerPage | default 5 }}
 {{ $paginator := .Paginate .Pages $perPage }}
 {{ partial "post-list-paginated.html" $paginator }}
