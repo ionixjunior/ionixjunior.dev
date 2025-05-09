@@ -2,6 +2,7 @@
 title = "Comando Git Add Explorado: Um Tutorial Passo a Passo"
 date = 2024-01-26
 type = "post"
+slug = "git-add-command-explained-a-step-by-step-tutorial"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-add-command-explained-a-step-by-step-tutorial.pt.webp"

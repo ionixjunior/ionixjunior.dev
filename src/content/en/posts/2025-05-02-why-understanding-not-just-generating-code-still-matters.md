@@ -2,6 +2,7 @@
 title = "Why Understanding, Not Just Generating Code, Still Matters"
 date = 2025-05-02
 type = "post"
+slug = "why-understanding-not-just-generating-code-still-matters"
 categories = ["TODO"]
 tags = ["career"]
 social_image: "why-understanding-not-just-generating-code-still-matters.en.webp"

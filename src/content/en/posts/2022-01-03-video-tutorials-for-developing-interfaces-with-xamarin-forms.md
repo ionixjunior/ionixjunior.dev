@@ -2,6 +2,7 @@
 title = "Video tutorials for developing interfaces with Xamarin.Forms"
 date = 2022-01-03
 type = "post"
+slug = "video-tutorials-for-developing-interfaces-with-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++

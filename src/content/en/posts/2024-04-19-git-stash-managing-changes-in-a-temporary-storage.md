@@ -2,6 +2,7 @@
 title = "Git Stash: Managing Changes in a Temporary Storage"
 date = 2024-04-19
 type = "post"
+slug = "git-stash-managing-changes-in-a-temporary-storage"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-stash-managing-changes-in-a-temporary-storage.en.webp"

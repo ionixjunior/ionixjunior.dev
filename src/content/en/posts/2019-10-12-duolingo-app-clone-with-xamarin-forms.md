@@ -2,6 +2,7 @@
 title = "Duolingo app clone with Xamarin.Forms"
 date = 2019-10-12
 type = "post"
+slug = "duolingo-app-clone-with-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++

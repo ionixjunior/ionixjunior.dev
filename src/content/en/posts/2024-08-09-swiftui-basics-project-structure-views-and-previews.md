@@ -2,6 +2,7 @@
 title = "SwiftUI Basics: Project Structure, Views, and Previews"
 date = 2024-08-09
 type = "post"
+slug = "swiftui-basics-project-structure-views-and-previews"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
 social_image: "swiftui-basics-project-structure-views-and-previews.en.webp"

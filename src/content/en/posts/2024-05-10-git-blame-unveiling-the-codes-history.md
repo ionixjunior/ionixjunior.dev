@@ -2,6 +2,7 @@
 title = "Git Blame: Unveiling the Code's History"
 date = 2024-05-10
 type = "post"
+slug = "git-blame-unveiling-the-codes-history"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-blame-unveiling-the-codes-history.en.webp"

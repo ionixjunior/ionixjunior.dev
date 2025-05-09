@@ -2,6 +2,7 @@
 title = "Mantendo seu software sob controle"
 date = 2014-10-19
 type = "post"
+slug = "keeping-your-software-under-control"
 categories = ["TODO"]
 tags = ["misc"]
 redirect_from:

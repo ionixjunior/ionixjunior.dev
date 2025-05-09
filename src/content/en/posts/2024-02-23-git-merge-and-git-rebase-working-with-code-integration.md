@@ -2,6 +2,7 @@
 title = "Git Merge and Git Rebase: Working with Code Integration"
 date = 2024-02-23
 type = "post"
+slug = "git-merge-and-git-rebase-working-with-code-integration"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-merge-and-git-rebase-working-with-code-integration.en.webp"

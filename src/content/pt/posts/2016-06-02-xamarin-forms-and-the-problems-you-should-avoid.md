@@ -2,6 +2,7 @@
 title = "Xamarin.Forms e os problemas que você deve evitar"
 date = 2016-06-02
 type = "post"
+slug = "xamarin-forms-and-the-problems-you-should-avoid"
 categories = ["TODO"]
 tags = ["xamarin"]
 redirect_from:

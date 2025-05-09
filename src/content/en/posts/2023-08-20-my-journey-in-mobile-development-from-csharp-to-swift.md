@@ -2,6 +2,7 @@
 title = "My journey in mobile development: From C# to Swift"
 date = 2023-08-20
 type = "post"
+slug = "my-journey-in-mobile-development-from-csharp-to-swift"
 categories = ["TODO"]
 tags = ["xamarin", "swift"]
 +++

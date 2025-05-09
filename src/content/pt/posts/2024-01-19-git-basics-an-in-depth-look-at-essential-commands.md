@@ -2,6 +2,7 @@
 title = "Git Básico: Uma Análise Profunda nos Comandos Essenciais"
 date = 2024-01-19
 type = "post"
+slug = "git-basics-an-in-depth-look-at-essential-commands"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-basics-an-in-depth-look-at-essential-commands.pt.webp"

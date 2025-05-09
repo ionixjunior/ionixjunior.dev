@@ -2,6 +2,7 @@
 title = "Xamarin.Forms and UI – Which tool is more productive?"
 date = 2018-02-20
 type = "post"
+slug = "xamarin-forms-and-ui-which-tool-is-more-productive"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++

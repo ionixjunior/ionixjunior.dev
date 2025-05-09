@@ -2,6 +2,7 @@
 title = "Git Pull vs. Fetch: Desvendando as Diferenças"
 date = 2024-02-16
 type = "post"
+slug = "git-pull-vs-fetch-unraveling-the-differences"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-pull-vs-fetch-unraveling-the-differences.pt.webp"

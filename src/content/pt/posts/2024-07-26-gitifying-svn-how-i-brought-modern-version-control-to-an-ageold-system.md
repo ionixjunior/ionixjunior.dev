@@ -2,6 +2,7 @@
 title = "Git-ificando o SVN: Como Eu Trouxe o Controle de Versão Moderno para um Sistema Antigo"
 date = 2024-07-26
 type = "post"
+slug = "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system.pt.webp"

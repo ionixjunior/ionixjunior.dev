@@ -2,6 +2,7 @@
 title = "“Storage almost full,” No more!"
 date = 2014-08-26
 type = "post"
+slug = "storage-almost-full-never-again"
 categories = ["TODO"]
 tags = ["misc"]
 +++

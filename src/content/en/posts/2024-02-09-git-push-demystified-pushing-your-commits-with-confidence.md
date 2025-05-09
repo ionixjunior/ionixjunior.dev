@@ -2,6 +2,7 @@
 title = "Git Push Demystified: Pushing Your Commits with Confidence"
 date = 2024-02-09
 type = "post"
+slug = "git-push-demystified-pushing-your-commits-with-confidence"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-push-demystified-pushing-your-commits-with-confidence.en.webp"

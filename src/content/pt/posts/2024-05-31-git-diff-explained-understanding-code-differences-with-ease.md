@@ -2,6 +2,7 @@
 title = "Git Diff: Descubra as Diferenças no Seu Código com Facilidade"
 date = 2024-05-31
 type = "post"
+slug = "git-diff-explained-understanding-code-differences-with-ease"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-diff-explained-understanding-code-differences-with-ease.pt.webp"

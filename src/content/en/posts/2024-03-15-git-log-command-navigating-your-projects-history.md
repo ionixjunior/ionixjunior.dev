@@ -2,6 +2,7 @@
 title = "Git Log Command: Navigating Your Project's History"
 date = 2024-03-15
 type = "post"
+slug = "git-log-command-navigating-your-projects-history"
 categories = ["TODO"]
 tags = ["git"]
 social_image: "git-log-command-navigating-your-projects-history.en.webp"

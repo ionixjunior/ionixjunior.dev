@@ -2,6 +2,7 @@
 title = "Gerador automático de formulários – Zend Form Generator"
 date = 2012-07-01
 type = "post"
+slug = "automatic-form-generator-zend-form-generator"
 categories = ["TODO"]
 tags = ["zend"]
 redirect_from:
