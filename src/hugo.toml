@@ -42,3 +42,6 @@ defaultContentLanguageInSubdir = true
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[permalinks]
+  posts = "/:slug/"
