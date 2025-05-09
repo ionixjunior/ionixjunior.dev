@@ -6,7 +6,7 @@ slug = "git-push-demystified-pushing-your-commits-with-confidence"
 translationKey = "git-push-demystified-pushing-your-commits-with-confidence"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-push-demystified-pushing-your-commits-with-confidence.pt.webp"
+image = "img/cards/git-push-demystified-pushing-your-commits-with-confidence.pt.webp"
 +++
 
 No Git, git push é o comando que move seus commits locais para um repositório remoto. É a ação que você faz quando quer compartilhar seu trabalho com outros ou atualizar uma base de código compartilhada. Pense nisso como uma forma de publicar suas alterações locais e manter todos com o código atualizado. Em suma, git push trata de levar seu progresso local e torná-lo visível e acessível para a equipe de desenvolvimento ou colaboradores. É um comando fundamental no Git que é crucial na codificação colaborativa. Neste post, vou mostrar este comando em ação!

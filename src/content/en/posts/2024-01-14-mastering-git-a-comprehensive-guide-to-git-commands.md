@@ -6,7 +6,7 @@ slug = "mastering-git-a-comprehensive-guide-to-git-commands"
 translationKey = "mastering-git-a-comprehensive-guide-to-git-commands"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "mastering-git-a-comprehensive-guide-to-git-commands.en.webp"
+image = "img/cards/mastering-git-a-comprehensive-guide-to-git-commands.en.webp"
 +++
 
 Welcome to the "Mastering Git" series – your ultimate guide to mastering the essential commands of Git, the widely-used version control system that supports developers across the globe. Whether you're a beginner looking to get started or an experienced developer aiming to deepen your understanding, this series is designed to provide clear and comprehensive insights into Git commands.

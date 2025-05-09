@@ -6,7 +6,7 @@ slug = "book-tracking-app-clone-using-view-code-in-swift"
 translationKey = "book-tracking-app-clone-using-view-code-in-swift"
 categories = ["TODO"]
 tags = ["swift", "view-code"]
-social_image: "book-tracking-app-clone-using-view-code-in-swift.pt.webp"
+image = "img/cards/book-tracking-app-clone-using-view-code-in-swift.pt.webp"
 +++
 
 Há alguns dias, publiquei um post falando sobre minha jornada como desenvolvedor mobile e porque eu decidi focar no desenvolvimento nativo com iOS. Hoje, vou compartilhar minhas primeiras impressões usando View Code no iOS. Para praticar, escolhi um design the um aplicativo que encontrei no Dribbble e iniciei um clone do aplicativo. Então, vamos conferir o resultado!

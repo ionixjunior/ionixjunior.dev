@@ -6,7 +6,7 @@ slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-
 translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 categories = ["TODO"]
 tags = ["career"]
-social_image: "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.en.webp"
+image = "img/cards/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.en.webp"
 +++
 
 There's a lot to study if you choose any Software Engineering position. You can develop desktop, web, mobile, IoT applications, and each of these options have huge possibilities for you to choose or specialize in. A common question, mainly for a newbie is: when will I be a master in this technology? This is a difficult question to answer, isn't it? Technology evolves fast and all the time we face things changing. This can cause some nervousness and stress, because it's a little bit difficult to not get things under control. So, in today's post, I'll share some of my thoughts about it. Take a coffee or any drink you prefer, have a seat, and let's get started.

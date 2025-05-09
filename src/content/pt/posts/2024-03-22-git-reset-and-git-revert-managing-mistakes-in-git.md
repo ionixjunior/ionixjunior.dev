@@ -6,7 +6,7 @@ slug = "git-reset-and-git-revert-managing-mistakes-in-git"
 translationKey = "git-reset-and-git-revert-managing-mistakes-in-git"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-reset-and-git-revert-managing-mistakes-in-git.pt.webp"
+image = "img/cards/git-reset-and-git-revert-managing-mistakes-in-git.pt.webp"
 +++
 
 Na jornada do desenvolvimento de software, os erros são inevitáveis. Seja uma linha de código mal posicionada ou um commit equivocado, todo desenvolvedor já enfrentou a sensação angustiante que acompanha um erro em seu trabalho. No entanto, no mundo dos sistemas de controle de versão, como o Git, esses passos em falso não precisam significar um desastre. Git reset e Git revert servem como faróis de esperança em meio ao mar tumultuado de mudanças de código, oferecendo aos desenvolvedores os meios para corrigir erros, retroceder em decisões equivocadas e direcionar seus projetos de volta ao curso correto. Neste post, vamos explorar as nuances do Git reset e Git revert, descobrindo suas capacidades e nos armando com o conhecimento necessário para navegar pelas águas agitadas do controle de versão com confiança. Então, vamos mergulhar e descobrir como Git reset e Git revert podem ser nossos companheiros firmes na busca por código impecável e colaboração perfeita.

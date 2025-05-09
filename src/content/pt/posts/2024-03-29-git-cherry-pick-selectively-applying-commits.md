@@ -6,7 +6,7 @@ slug = "git-cherry-pick-selectively-applying-commits"
 translationKey = "git-cherry-pick-selectively-applying-commits"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-cherry-pick-selectively-applying-commits.pt.webp"
+image = "img/cards/git-cherry-pick-selectively-applying-commits.pt.webp"
 +++
 
 Cherry-picking no Git é uma técnica poderosa que permite escolher commits específicos de um branch e aplicá-los a outro. Isso pode ser particularmente útil quando você deseja trazer mudanças individuais de um branch para outro sem mesclar o branch inteiro. Neste post, veremos como esse comando funciona!

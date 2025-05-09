@@ -6,7 +6,7 @@ slug = "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system"
 translationKey = "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system.en.webp"
+image = "img/cards/gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system.en.webp"
 +++
 
 Rewind the clock ten years. The year was 2014, smartphones were still finding their feet, and I was a bright-eyed developer, eager to conquer the world, one line of code at a time. But a formidable foe stood in my path – our company’s steadfast reliance on Subversion (SVN) for version control. Don't get me wrong, SVN had served us well for a time. But as our projects grew in complexity and our team expanded, its limitations became increasingly apparent. Branching and merging were exercises in frustration, collaboration felt clunky, and don't even get me started on trying to work offline! The very tool that was meant to streamline our development process was slowing us down. A solution was needed, but a full-blown migration to a new system (Git was beckoning) felt like a distant dream. Then, I stumbled upon something that promised the best of both worlds... a way to "Git-ify" our SVN workflow. Let me tell you how git svn changed everything.

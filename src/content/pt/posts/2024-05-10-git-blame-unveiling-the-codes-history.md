@@ -6,7 +6,7 @@ slug = "git-blame-unveiling-the-codes-history"
 translationKey = "git-blame-unveiling-the-codes-history"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-blame-unveiling-the-codes-history.pt.webp"
+image = "img/cards/git-blame-unveiling-the-codes-history.pt.webp"
 +++
 
 Já se deparou com um trecho de código e se perguntou: "Quem escreveu isso?" ou "Quando isso foi alterado?". Não tema, querido(a) desenvolvedor(a), pois o "git blame" está aqui para o resgate! Este poderoso comando age como um detetive, revelando a história por trás de cada linha de código em seu repositório Git. Vamos mergulhar nisso no post de hoje.

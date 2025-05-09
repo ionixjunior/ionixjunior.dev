@@ -6,7 +6,7 @@ slug = "why-understanding-not-just-generating-code-still-matters"
 translationKey = "why-understanding-not-just-generating-code-still-matters"
 categories = ["TODO"]
 tags = ["carreira"]
-social_image: "why-understanding-not-just-generating-code-still-matters.pt.webp"
+image = "img/cards/why-understanding-not-just-generating-code-still-matters.pt.webp"
 +++
 
 Nas últimas semanas, todo mundo tem falado sobre vibe coding e como é fácil desenvolver um sistema inteiro usando boas ferramentas de IA. Isso está deixando a maioria das pessoas impressionadas, e falarei sobre isso no post de hoje. Mas, antes de falar sobre vibe coding, falarei sobre "normal coding" 🤔. Vamos nessa!

@@ -6,7 +6,7 @@ slug = "git-pull-vs-fetch-unraveling-the-differences"
 translationKey = "git-pull-vs-fetch-unraveling-the-differences"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-pull-vs-fetch-unraveling-the-differences.en.webp"
+image = "img/cards/git-pull-vs-fetch-unraveling-the-differences.en.webp"
 +++
 
 Staying synchronized with remote repositories is paramount for collaborative development and maintaining an up-to-date codebase. Two essential commands, git pull and, git fetch, facilitate this process by retrieving changes from remote repositories. While both commands serve a similar purpose, they differ in their behavior and impact on the local repository. Let's unravel the differences between these commands, exploring their functionalities and optimal use cases to streamline your Git workflow.

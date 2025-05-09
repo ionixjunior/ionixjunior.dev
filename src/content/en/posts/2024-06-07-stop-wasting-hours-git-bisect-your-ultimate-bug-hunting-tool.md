@@ -6,7 +6,7 @@ slug = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 translationKey = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.en.webp"
+image = "img/cards/stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.en.webp"
 +++
 
 Ever spent hours sifting through lines of code, desperately trying to pinpoint the source of a pesky bug? You're not alone. Debugging can feel like a frustrating maze, especially when you're dealing with complex projects and a history of numerous commits. But what if I told you there's a powerful tool that can help you track down the culprit commit in minutes, not hours? Enter Git Bisect, the secret weapon for efficient debugging. Let's learn about it now!

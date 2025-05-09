@@ -6,7 +6,7 @@ slug = "git-add-command-explained-a-step-by-step-tutorial"
 translationKey = "git-add-command-explained-a-step-by-step-tutorial"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-add-command-explained-a-step-by-step-tutorial.en.webp"
+image = "img/cards/git-add-command-explained-a-step-by-step-tutorial.en.webp"
 +++
 
 To add files to a Git repository, they must be included in a specific area to commit. But why is this step necessary? If I make changes, don't I want to add them to the repository? Yes, indeed, but I'll show you some benefits of this approach and explain more details about the command. Let's get started!

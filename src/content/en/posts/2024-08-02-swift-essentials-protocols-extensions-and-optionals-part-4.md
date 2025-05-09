@@ -6,7 +6,7 @@ slug = "swift-essentials-protocols-extensions-and-optionals-part-4"
 translationKey = "swift-essentials-protocols-extensions-and-optionals-part-4"
 categories = ["TODO"]
 tags = ["100DaysOfSwiftUI"]
-social_image: "swift-essentials-protocols-extensions-and-optionals-part-4.en.webp"
+image = "img/cards/swift-essentials-protocols-extensions-and-optionals-part-4.en.webp"
 +++
 
 We're back with the "100 Days Of SwiftUI" posts! In today's post, we'll continue the Swift Essentials series, exploring protocols, extensions, and optionals. This will be the final installment on Swift Essentials. Let's get started.

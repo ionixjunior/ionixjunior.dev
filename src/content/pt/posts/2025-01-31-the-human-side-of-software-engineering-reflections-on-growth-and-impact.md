@@ -6,7 +6,7 @@ slug = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 translationKey = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 categories = ["TODO"]
 tags = ["carreira"]
-social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"
+image = "img/cards/the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"
 +++
 
 Acredito que não seja tão difícil entender o que nos torna bem-sucedidos em nossas carreiras, mas às vezes precisamos de um guia para seguir em frente. Então, dediquei um tempo para ler "The Software Engineer's Guidebook" e compartilharei algumas das minhas reflexões sobre o livro, com base na minha perspectiva e experiência como Engenheiro de Software e Líder de Equipe.

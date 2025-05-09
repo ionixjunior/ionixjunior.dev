@@ -6,7 +6,7 @@ slug = "git-basics-an-in-depth-look-at-essential-commands"
 translationKey = "git-basics-an-in-depth-look-at-essential-commands"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-basics-an-in-depth-look-at-essential-commands.pt.webp"
+image = "img/cards/git-basics-an-in-depth-look-at-essential-commands.pt.webp"
 +++
 
 Quando comecei a usar o Git, não existia nenhuma ferramenta GUI para gerenciar um repositório. Tudo tinha que ser feito via linha de comando. Após alguns anos, algumas boas ferramentas foram introduzidas, tornando o ciclo de vida do desenvolvedor mais produtivo com algumas GUIs do Git e ferramentas Git integradas a IDEs. Nesta série de posts, não falarei sobre GUIs do Git. Vou falar sobre o Git na linha de comando, e começaremos agora.

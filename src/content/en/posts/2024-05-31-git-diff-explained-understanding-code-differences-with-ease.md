@@ -6,7 +6,7 @@ slug = "git-diff-explained-understanding-code-differences-with-ease"
 translationKey = "git-diff-explained-understanding-code-differences-with-ease"
 categories = ["TODO"]
 tags = ["git"]
-social_image: "git-diff-explained-understanding-code-differences-with-ease.en.webp"
+image = "img/cards/git-diff-explained-understanding-code-differences-with-ease.en.webp"
 +++
 
 Ever struggled to remember what changes you made in your code? Or maybe you've accidentally deleted a vital line and spent hours trying to figure out how to recover it? Or just you make some changes and want to review it before to commit? We've all been there. But fear not, dear coder! There's a powerful tool in Git's arsenal that can make your life significantly easier: Git Diff. In this post we'll learn about it.
