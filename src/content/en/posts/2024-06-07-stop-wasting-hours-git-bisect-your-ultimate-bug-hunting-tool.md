@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Stop Wasting Hours! Git Bisect: Your Ultimate Bug Hunting Tool"
 date:   2024-06-07
 translations: ["pt"]

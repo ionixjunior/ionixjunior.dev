@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Swift Essentials: Protocols, Extensions, and Optionals (Part 4)"
 date:  2024-08-02
 translations: ["pt"]

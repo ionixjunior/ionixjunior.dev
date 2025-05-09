@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Cherry-Pick: Aplicando Commits de Forma Seletiva"
 date:   2024-03-29
 translations: ["en"]

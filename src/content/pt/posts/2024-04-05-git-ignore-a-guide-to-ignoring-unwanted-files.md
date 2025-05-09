@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Ignore: Um Guia para Ignorar Arquivos Indesejados"
 date:   2024-04-05
 translations: ["en"]

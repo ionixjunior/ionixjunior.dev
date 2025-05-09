@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Series 'how to do'"
 date: 2017-01-08
 translations: ["pt"]

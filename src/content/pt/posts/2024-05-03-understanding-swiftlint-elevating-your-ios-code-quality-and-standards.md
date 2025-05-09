@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Entendendo o SwiftLint: Elevando a Qualidade e Padrões do seu Código iOS"
 date:   2024-05-03
 translations: ["en"]

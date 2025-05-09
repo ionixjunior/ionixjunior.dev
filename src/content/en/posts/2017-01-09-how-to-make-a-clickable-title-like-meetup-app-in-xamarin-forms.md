@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "How to create a clickable title similar to the Meetup app in Xamarin.Forms"
 date: 2017-01-09
 translations: ["pt"]

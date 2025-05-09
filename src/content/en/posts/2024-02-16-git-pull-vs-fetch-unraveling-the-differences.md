@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Pull vs. Fetch: Unraveling the Differences"
 date:   2024-02-16
 translations: ["pt"]

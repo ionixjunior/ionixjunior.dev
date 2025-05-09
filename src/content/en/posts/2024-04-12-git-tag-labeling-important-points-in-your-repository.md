@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Tag: Labeling Important Points in Your Repository"
 date:   2024-04-12
 translations: ["pt"]

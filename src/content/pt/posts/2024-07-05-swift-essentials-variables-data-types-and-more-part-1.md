@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Swift Essentials: Variáveis, Tipos de Dados e Mais (Parte 1)"
 date:   2024-07-05
 translations: ["en"]

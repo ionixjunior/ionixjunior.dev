@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Basics: An In-Depth Look at Essential Commands"
 date:   2024-01-19
 translations: ["pt"]

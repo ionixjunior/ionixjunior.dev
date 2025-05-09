@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Vídeo aulas de desenvolvimento de interfaces com Xamarin.Forms"
 date:   2022-01-03
 translations: ["en"]

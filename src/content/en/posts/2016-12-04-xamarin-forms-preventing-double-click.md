@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Xamarin.Forms - Preventing double click"
 date:   2016-12-04
 translations: ["pt"]

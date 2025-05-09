@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Xamarin.Forms e os problemas que você deve evitar"
 date:   2016-06-02
 translations: ["en"]

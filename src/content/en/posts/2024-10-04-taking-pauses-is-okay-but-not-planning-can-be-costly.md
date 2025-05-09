@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Taking Pauses is Okay, But Not Planning Can Be Costly"
 date:   2024-10-04
 translations: ["pt"]

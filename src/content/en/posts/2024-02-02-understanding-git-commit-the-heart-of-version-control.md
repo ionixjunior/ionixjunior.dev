@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Understanding Git Commit: The Heart of Version Control"
 date:   2024-02-02
 translations: ["pt"]

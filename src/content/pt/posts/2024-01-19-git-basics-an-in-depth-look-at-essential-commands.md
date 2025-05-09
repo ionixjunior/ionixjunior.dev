@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Básico: Uma Análise Profunda nos Comandos Essenciais"
 date:   2024-01-19
 translations: ["en"]

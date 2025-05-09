@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Book Tracking app clone using View Code in Swift"
 date:   2023-12-03
 translations: ["pt"]

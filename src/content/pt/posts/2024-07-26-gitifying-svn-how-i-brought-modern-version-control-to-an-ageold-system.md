@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git-ificando o SVN: Como Eu Trouxe o Controle de Versão Moderno para um Sistema Antigo"
 date:   2024-07-26
 translations: ["en"]

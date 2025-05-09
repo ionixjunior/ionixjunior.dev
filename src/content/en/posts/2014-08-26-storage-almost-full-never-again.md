@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "“Storage almost full,” No more!"
 date: 2014-08-26
 translations: ["pt"]

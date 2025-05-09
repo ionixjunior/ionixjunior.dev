@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Comando Git Log: Navegando pela História do Seu Projeto"
 date:   2024-03-15
 translations: ["en"]

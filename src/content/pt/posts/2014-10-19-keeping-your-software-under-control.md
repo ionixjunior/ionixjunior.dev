@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Mantendo seu software sob controle"
 date:   2014-10-19
 translations: ["en"]

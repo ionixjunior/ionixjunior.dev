@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Why Understanding, Not Just Generating Code, Still Matters"
 date:   2025-05-02
 translations: ["pt"]

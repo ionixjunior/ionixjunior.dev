@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Git Blame: Unveiling the Code's History"
 date:   2024-05-10
 translations: ["pt"]

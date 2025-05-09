@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "SetupMyProject – Configure seu projeto em menos de 5 minutos"
 date:   2016-01-30
 translations: ["en"]

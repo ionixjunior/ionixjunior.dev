@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Automatic form generator - Zend Form Generator"
 date: 2012-07-01
 translations: ["pt"]

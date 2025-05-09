@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "Xamarin disponível gratuitamente para desenvolvedores"
 date:   2016-04-06
 translations: ["en"]

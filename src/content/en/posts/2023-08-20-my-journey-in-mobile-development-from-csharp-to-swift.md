@@ -1,5 +1,4 @@
 +++
-layout: post
 title = "My journey in mobile development: From C# to Swift"
 date:   2023-08-20
 translations: ["pt"]
