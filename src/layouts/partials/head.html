@@ -9,7 +9,16 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:image" content="{{ .Site.BaseURL }}img/ione-souza-junior.png" />
-<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+{{ if and (eq .Kind "page") (eq .Type "post") }}
+  {{ $firstParagraph := findRE "<p>(.*?)</p>" .Content }}
+  {{ if gt (len $firstParagraph) 0 }}
+    <meta property="og:description" content="{{ (index $firstParagraph 0) | plainify }}" />
+  {{ else }}
+    <meta property="og:description" content="{{ .Summary | plainify }}" />
+  {{ end }}
+{{ else }}
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+{{ end }}
 <meta property="og:locale" content="{{ .Site.Language.Lang | default "en_US" }}" />
 <meta property="og:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
 {{ $styles := resources.Get "main.scss" | toCSS | minify | fingerprint }}
