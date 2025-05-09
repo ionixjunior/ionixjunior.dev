@@ -7,8 +7,6 @@ translationKey = "xamarin-available-for-free-to-developers"
 image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /xamarin-disponivel-gratuitamente-para-desenvolvedores/
 +++
 
 Recentemente foi noticiado pela Microsoft que a plataforma Xamarin está disponível gratuitamente para os desenvolvedores.

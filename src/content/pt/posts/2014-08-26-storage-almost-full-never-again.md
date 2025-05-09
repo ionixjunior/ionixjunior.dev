@@ -6,8 +6,6 @@ slug = "storage-almost-full-never-again"
 translationKey = "storage-almost-full-never-again"
 categories = ["TODO"]
 tags = ["misc"]
-redirect_from:
-    - /storage-almost-full-nunca-mais/
 +++
 
 Você compra um celular novinho em folha e vai enchendo de fotos, vídeos, aplicativos e depois de um tempo você vê aquela mensagem de que não tem mais espaço no dispositivo para armazenar informações. E agora, como faz?

@@ -6,8 +6,6 @@ slug = "how-to-series"
 translationKey = "how-to-series"
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /serie-como-fazer/
 +++
 
 Quando iniciamos o desenvolvimento de um software é normal nos inspirarmos em uma ideia já existente. Isso pode ser uma tela bem feita, uma experiência boa para o usuário, um case de sucesso.

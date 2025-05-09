@@ -6,8 +6,6 @@ slug = "xamarin-forms-and-ui-which-tool-is-more-productive"
 translationKey = "xamarin-forms-and-ui-which-tool-is-more-productive"
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /xamarin-forms-e-ui-qual-ferramenta-e-mais-produtiva/
 +++
 
 Quando comecei a trabalhar com Xamarin.Forms era muito difícil construir interfaces, pois não haviam ferramentas gráficas para tal, era tudo "na mão". Este post compara algumas ferramentas que podemos utilizar para tornar esse trabalho um pouco mais fácil.

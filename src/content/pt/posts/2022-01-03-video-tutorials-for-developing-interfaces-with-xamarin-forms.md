@@ -6,8 +6,6 @@ slug = "video-tutorials-for-developing-interfaces-with-xamarin-forms"
 translationKey = "video-tutorials-for-developing-interfaces-with-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /video-aulas-sobre-desenvolvimento-de-interfaces-com-xamarin-forms/
 +++
 
 Em maio de 2020 fiz uma live perguntando "o que você gostaria de ver em vídeo aulas sobre desenvolvimento de interfaces com Xamarin.Forms". Afinal de contas, que fim teve essa iniciativa? É isso o que você vai saber neste post.

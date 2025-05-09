@@ -6,8 +6,6 @@ slug = "setup-my-project-configure-your-project-in-less-than-5-minutes"
 translationKey = "setup-my-project-configure-your-project-in-less-than-5-minutes"
 categories = ["TODO"]
 tags = ["misc"]
-redirect_from:
-    - /setupmyproject-configure-seu-projeto-em-menos-de-5-minutos/
 +++
 
 Essa dica é destinada a desenvolvedores Java e se chama SetupMyProject.

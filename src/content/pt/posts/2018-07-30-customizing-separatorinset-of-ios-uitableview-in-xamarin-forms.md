@@ -6,8 +6,6 @@ slug = "customizing-separatorinset-of-ios-uitableview-in-xamarin-forms"
 translationKey = "customizing-separatorinset-of-ios-uitableview-in-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin", "ios"]
-redirect_from:
-    - /customizando-separatorinset-do-uitableview-do-ios-xamarin-forms/
 +++
 
 Aviso importante: este é um post destinado para pessoas desenvolvedoras perfeccionistas. Olá, pessoal! Hoje trouxe uma pequena dica de como customizar o SeparatorInset de um UITableView do iOS em uma aplicação com Xamarin.Forms. Mas afinal, o que é isso? Do que estamos falando? Vamos conferir neste post!

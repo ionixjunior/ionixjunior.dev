@@ -6,8 +6,6 @@ slug = "duolingo-app-clone-with-xamarin-forms"
 translationKey = "duolingo-app-clone-with-xamarin-forms"
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /duolingo-app-clone-com-xamarin-forms/
 +++
 
 Fala galera! Tudo bem com vocês?

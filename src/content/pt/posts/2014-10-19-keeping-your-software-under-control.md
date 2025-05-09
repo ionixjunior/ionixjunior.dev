@@ -6,8 +6,6 @@ slug = "keeping-your-software-under-control"
 translationKey = "keeping-your-software-under-control"
 categories = ["TODO"]
 tags = ["misc"]
-redirect_from:
-    - /mantendo-seu-software-sob-controle/
 +++
 
 Na última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.

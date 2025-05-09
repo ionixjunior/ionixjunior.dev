@@ -6,8 +6,6 @@ slug = "xamarin-forms-preventing-double-click"
 translationKey = "xamarin-forms-preventing-double-click"
 categories = ["TODO"]
 tags = ["xamarin"]
-redirect_from:
-    - /xamarin-forms-prevenindo-duplo-clique/
 +++
 
 Olá, estou de volta! Hoje vou falar sobre uma situação que enfrentei essa semana e precisei bolar uma solução. Vou falar sobre duplo clique na navegação do mobile ( se é que podemos chamar assim ).

@@ -6,8 +6,6 @@ slug = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
 translationKey = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
 categories = ["TODO"]
 tags = ["zend"]
-redirect_from:
-    - /configurando-conexao-sql-server-com-driver-odbc-no-zend-framework/
 +++
 
 Grande parte dos Desenvolvedores Web que trabalham com sites ou desenvolvimento de sistemas utilizam MySQL ou PostgreSQL como banco de dados, e em um projeto que desenvolvi não foi diferente, optei por utilizar o MySQL.
