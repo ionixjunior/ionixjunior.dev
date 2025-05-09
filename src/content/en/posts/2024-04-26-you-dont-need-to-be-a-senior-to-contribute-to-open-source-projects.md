@@ -1,6 +1,6 @@
 +++
 title = "You don't need to be a senior to contribute to open-source projects"
-date:   2024-04-26
+date = 2024-04-26
 translations: ["pt"]
 tags: ["git", "opensource"]
 social_image: "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.en.webp"

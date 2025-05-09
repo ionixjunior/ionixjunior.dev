@@ -1,6 +1,6 @@
 +++
 title = "My 100 Days of Swift: Cool Projects & What I Learned"
-date:   2024-06-28
+date = 2024-06-28
 translations: ["pt"]
 tags: ["swift"]
 social_image: "my-100-days-of-swift-cool-projects-and-what-i-learned.en.webp"

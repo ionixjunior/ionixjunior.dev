@@ -1,6 +1,6 @@
 +++
 title = "Comando Git Log: Navegando pela História do Seu Projeto"
-date:   2024-03-15
+date = 2024-03-15
 translations: ["en"]
 tags: ["git"]
 social_image: "git-log-command-navigating-your-projects-history.pt.webp"

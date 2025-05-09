@@ -1,6 +1,6 @@
 +++
 title = "Git Ignore: Um Guia para Ignorar Arquivos Indesejados"
-date:   2024-04-05
+date = 2024-04-05
 translations: ["en"]
 tags: ["git"]
 social_image: "git-ignore-a-guide-to-ignoring-unwanted-files.pt.webp"

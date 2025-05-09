@@ -1,6 +1,6 @@
 +++
 title = "Série “como fazer”"
-date:   2017-01-08
+date = 2017-01-08
 translations: ["en"]
 tags: ["xamarin"]
 redirect_from:

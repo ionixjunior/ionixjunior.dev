@@ -1,6 +1,6 @@
 +++
 title = "Git Diff Explained: Understanding Code Differences with Ease"
-date:   2024-05-31
+date = 2024-05-31
 translations: ["pt"]
 tags: ["git"]
 social_image: "git-diff-explained-understanding-code-differences-with-ease.en.webp"

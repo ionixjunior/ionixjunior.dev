@@ -1,6 +1,6 @@
 +++
 title = "“Storage almost full,” No more!"
-date: 2014-08-26
+date = 2014-08-26
 translations: ["pt"]
 tags: ["misc"]
 +++

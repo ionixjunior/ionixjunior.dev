@@ -1,6 +1,6 @@
 +++
 title = "Git Branching Strategies: A Comprehensive Guide"
-date:   2024-03-08
+date = 2024-03-08
 translations: ["pt"]
 tags: ["git"]
 social_image: "git-branching-strategies-a-comprehensive-guide.en.webp"

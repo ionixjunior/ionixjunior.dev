@@ -1,6 +1,6 @@
 +++
 title = "Taking Pauses is Okay, But Not Planning Can Be Costly"
-date:   2024-10-04
+date = 2024-10-04
 translations: ["pt"]
 tags: ["career"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.en.webp"

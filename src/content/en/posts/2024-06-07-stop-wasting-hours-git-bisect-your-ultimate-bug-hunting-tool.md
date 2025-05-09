@@ -1,6 +1,6 @@
 +++
 title = "Stop Wasting Hours! Git Bisect: Your Ultimate Bug Hunting Tool"
-date:   2024-06-07
+date = 2024-06-07
 translations: ["pt"]
 tags: ["git"]
 social_image: "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.en.webp"

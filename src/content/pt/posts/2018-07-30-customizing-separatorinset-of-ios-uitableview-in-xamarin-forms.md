@@ -1,6 +1,6 @@
 +++
 title = "Customizando SeparatorInset do UITableView do iOS – Xamarin.Forms"
-date:   2018-07-30
+date = 2018-07-30
 translations: ["en"]
 tags: ["xamarin", "ios"]
 redirect_from:

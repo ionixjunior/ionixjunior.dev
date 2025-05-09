@@ -1,6 +1,6 @@
 +++
 title = "Keeping your software under control"
-date: 2014-10-19
+date = 2014-10-19
 translations: ["pt"]
 tags: ["misc"]
 +++

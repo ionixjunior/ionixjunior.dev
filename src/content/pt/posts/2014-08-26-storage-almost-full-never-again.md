@@ -1,6 +1,6 @@
 +++
 title = "“Storage almost full”, nunca mais!"
-date:   2014-08-26
+date = 2014-08-26
 translations: ["en"]
 tags: ["misc"]
 redirect_from:

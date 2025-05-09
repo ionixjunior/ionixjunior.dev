@@ -1,6 +1,6 @@
 +++
 title = "Git Stash: Gerenciando Mudanças em um Armazenamento Temporário"
-date:   2024-04-19
+date = 2024-04-19
 translations: ["en"]
 tags: ["git"]
 social_image: "git-stash-managing-changes-in-a-temporary-storage.pt.webp"

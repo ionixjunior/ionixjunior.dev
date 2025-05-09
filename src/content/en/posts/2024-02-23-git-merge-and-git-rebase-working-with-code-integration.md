@@ -1,6 +1,6 @@
 +++
 title = "Git Merge and Git Rebase: Working with Code Integration"
-date:   2024-02-23
+date = 2024-02-23
 translations: ["pt"]
 tags: ["git"]
 social_image: "git-merge-and-git-rebase-working-with-code-integration.en.webp"

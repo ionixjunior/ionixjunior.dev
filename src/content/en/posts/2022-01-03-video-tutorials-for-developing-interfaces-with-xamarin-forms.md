@@ -1,6 +1,6 @@
 +++
 title = "Video tutorials for developing interfaces with Xamarin.Forms"
-date: 2022-01-03
+date = 2022-01-03
 translations: ["pt"]
 tags: ["xamarin"]
 +++

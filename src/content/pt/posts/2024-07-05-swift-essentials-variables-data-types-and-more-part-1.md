@@ -1,6 +1,6 @@
 +++
 title = "Swift Essentials: Variáveis, Tipos de Dados e Mais (Parte 1)"
-date:   2024-07-05
+date = 2024-07-05
 translations: ["en"]
 tags: ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-variables-data-types-and-more-part-1.pt.webp"

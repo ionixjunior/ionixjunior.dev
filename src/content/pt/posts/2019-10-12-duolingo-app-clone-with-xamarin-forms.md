@@ -1,6 +1,6 @@
 +++
 title = "Duolingo app clone com Xamarin.Forms"
-date:   2019-10-12
+date = 2019-10-12
 translations: ["en"]
 tags: ["xamarin"]
 redirect_from:

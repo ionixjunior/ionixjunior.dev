@@ -1,6 +1,6 @@
 +++
 title = "My journey in mobile development: From C# to Swift"
-date:   2023-08-20
+date = 2023-08-20
 translations: ["pt"]
 tags: ["xamarin", "swift"]
 +++

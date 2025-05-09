@@ -1,6 +1,6 @@
 +++
 title = "Mastering Git: A Comprehensive Guide to Git Commands"
-date:   2024-01-14
+date = 2024-01-14
 translations: ["pt"]
 tags: ["git"]
 social_image: "mastering-git-a-comprehensive-guide-to-git-commands.en.webp"

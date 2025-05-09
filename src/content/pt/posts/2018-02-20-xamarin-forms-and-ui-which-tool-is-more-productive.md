@@ -1,6 +1,6 @@
 +++
 title = "Xamarin.Forms e UI – Qual ferramenta é mais produtiva?"
-date:   2018-02-20
+date = 2018-02-20
 translations: ["en"]
 tags: ["xamarin"]
 redirect_from:

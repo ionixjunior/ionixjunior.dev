@@ -1,6 +1,6 @@
 +++
 title = "Mantendo seu software sob controle"
-date:   2014-10-19
+date = 2014-10-19
 translations: ["en"]
 tags: ["misc"]
 redirect_from:

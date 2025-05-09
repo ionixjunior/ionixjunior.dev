@@ -1,6 +1,6 @@
 +++
 title = "Git Reset and Git Revert: Managing Mistakes in Git"
-date:   2024-03-22
+date = 2024-03-22
 translations: ["pt"]
 tags: ["git"]
 social_image: "git-reset-and-git-revert-managing-mistakes-in-git.en.webp"
