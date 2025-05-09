@@ -54,7 +54,7 @@ After mastering Swift basics, I began working on iOS projects, which opened a wo
 Xcode provides an option called "environment overrides." Basically, you can change settings like appearance, text, and accessibility to test your app in different scenarios. It's incredibly easy to check your app in various environments.
 
 <video controls aria-labelledby="Xcode Environment Overrides" aria-describedby="The video shows Xcode and iOS Simulator side by side. The app is running, and there is a button at the bottom of Xcode's toolbar that reveals the environment overrides tool. When you change the configuration, you see the changes directly in the running app.">
-    <source src="/assets/videos/xcode_environment_overrides.mp4" type="video/mp4">
+    <source src="/videos/xcode_environment_overrides.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>
 
@@ -81,7 +81,7 @@ This is a very helpful feature. Xcode alerted me when I performed expensive oper
 In addition to UIKit, I also explored a bit of SpriteKit. This was not a challenge from Paul Hudson training, but some lessons that I've developed helped me to built it. I've made just for fun. I had an Atari, so I've played River Raid a lot!
 
 <video controls aria-labelledby="River Raid Little made with SpriteKit" aria-describedby="The video shows Xcode and iOS Simulator side by side. The app was made using SpriteKit and is a small version of the River Raid game.">
-    <source src="/assets/videos/river_raid_little_made_by_spritekit.mp4" type="video/mp4">
+    <source src="/videos/river_raid_little_made_by_spritekit.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>
 
@@ -90,7 +90,7 @@ In addition to UIKit, I also explored a bit of SpriteKit. This was not a challen
 I also created a simple memory game. To test it, I developed UI tests to verify that all cards could be flipped and that the game could be completed successfully. It was a rewarding project.
 
 <video controls aria-labelledby="A memory game tested with UI Tests" aria-describedby="The video shows Xcode and iPad Simulator. The app was made using UIKit and is a memory game. The UI tests open all pairs until the game is finished.">
-    <source src="/assets/videos/test_memory_game_using_uitests.mp4" type="video/mp4">
+    <source src="/videos/test_memory_game_using_uitests.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>
 

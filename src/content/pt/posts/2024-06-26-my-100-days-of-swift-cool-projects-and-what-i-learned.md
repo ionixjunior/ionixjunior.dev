@@ -54,7 +54,7 @@ Depois de dominar os fundamentos do Swift, comecei a trabalhar em projetos iOS, 
 O Xcode fornece uma opção chamada "Environment Overrides". Basicamente, você pode alterar configurações como aparência, texto e acessibilidade, para testar seu aplicativo em diferentes cenários. É incrivelmente fácil verificar seu aplicativo em várias características diferentes.
 
 <video controls aria-labelledby="Environment Overrides do Xcode" aria-describedby="O vídeo mostra o Xcode e o Simulador iOS lado a lado. O aplicativo está em execução e há um botão na parte inferior da barra de ferramentas do Xcode que revela a ferramenta de Environment Overrides. Ao alterar as configurações disponíveis de aparência, texto e acessibilidade, você vê as alterações diretamente no aplicativo em execução.">
-    <source src="/assets/videos/xcode_environment_overrides.mp4" type="video/mp4">
+    <source src="/videos/xcode_environment_overrides.mp4" type="video/mp4">
     Seu navegador não suporta reprodução de vídeo.
 </video>
 
@@ -81,7 +81,7 @@ Esta é uma funcionalidade muito útil. O Xcode me alertou quando executei opera
 Além do UIKit, também explorei um pouco do SpriteKit. Este não foi um desafio do treinamento do Paul Hudson, mas algumas lições que desenvolvi me ajudaram a construí-lo. Fiz apenas por diversão. Quando criança, eu tinha um Atari, então, joguei muito River Raid. Bateu uma saudade!
 
 <video controls aria-labelledby="River Raid versão simples, feito com SpriteKit" aria-describedby="O vídeo mostra o Xcode e o Simulador iOS lado a lado. O aplicativo foi feito usando SpriteKit e é uma versão simples do jogo River Raid do Atari.">
-    <source src="/assets/videos/river_raid_little_made_by_spritekit.mp4" type="video/mp4">
+    <source src="/videos/river_raid_little_made_by_spritekit.mp4" type="video/mp4">
     Seu navegador não suporta reprodução de vídeo.
 </video>
 
@@ -90,7 +90,7 @@ Além do UIKit, também explorei um pouco do SpriteKit. Este não foi um desafio
 Também criei um jogo da memória simples. Para testá-lo, desenvolvi testes de UI para verificar se todas as cartas podiam ser viradas e se o jogo podia ser concluído com sucesso. Foi outro projeto legal de desenvolver, pois explorei um pouco dos testes de UI.
 
 <video controls aria-labelledby="Um jogo da memória testado com testes de UI" aria-describedby="O vídeo mostra o Xcode e o iPad Simulator. O aplicativo foi feito usando UIKit e é um jogo da memória. Os testes de UI abrem todos os pares até que o jogo termine.">
-    <source src="/assets/videos/test_memory_game_using_uitests.mp4" type="video/mp4">
+    <source src="/videos/test_memory_game_using_uitests.mp4" type="video/mp4">
     Seu navegador não suporta reprodução de vídeo.
 </video>
 

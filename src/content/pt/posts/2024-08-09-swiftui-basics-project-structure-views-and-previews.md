@@ -67,7 +67,7 @@ Talvez esta seja a área mais importante do projeto, porque podemos encontrar no
 Observe que temos muitas guias localizadas nesta área - nove no total, mas a primeira está selecionada e mostra os arquivos principais do nosso novo projeto. Esta primeira guia é chamada de "Navegador de projetos" e você pode visualizar facilmente o conteúdo dela pressionando o atalho `CMD + 1`. Todas as outras guias também têm um atalho, de `CMD + 1` a `CMD + 9`, como você pode ver abaixo.
 
 <video controls aria-labelledby="Demonstração de Atalhos da Área do Navegador do Xcode" aria-describedby="Este vídeo demonstra atalhos de teclado para alternar rapidamente entre as guias na Área do Navegador do Xcode, melhorando seu fluxo de trabalho de desenvolvimento.">
-    <source src="/assets/videos/xcode-navigator-area-shortcuts.mp4" type="video/mp4">
+    <source src="/videos/xcode-navigator-area-shortcuts.mp4" type="video/mp4">
     Seu navegador não suporta a reprodução de vídeo.
 </video>
 
@@ -135,7 +135,7 @@ Esta área contém 5 guias
 | Inspetor de atributos    | `CMD + OPTION + 4` | Mostrar informações sobre o elemento selecionado na tela |
 
 <video controls aria-labelledby="Demonstração de Atalhos da Área do Inspetor do Xcode" aria-describedby="Este vídeo demonstra atalhos de teclado para alternar rapidamente entre as guias na Área do Inspetor do Xcode, melhorando seu fluxo de trabalho de desenvolvimento.">
-    <source src="/assets/videos/xcode-inspector-area-shortcuts.mp4" type="video/mp4">
+    <source src="/videos/xcode-inspector-area-shortcuts.mp4" type="video/mp4">
     Seu navegador não suporta a reprodução de vídeo.
 </video>
 

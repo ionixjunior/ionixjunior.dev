@@ -67,7 +67,7 @@ Maybe this is the most important area of the project, because we can find our co
 Note we have a lot of tabs located in this area - nine in total, but the first one is selected, and it is showing the core files of our new project. This first tab is called "Project navigator", and you can easily show the content from it hitting the shortcut `CMD + 1`. All other tabs has a shortcut too, from `CMD + 1` to `CMD + 9`, as you can see below.
 
 <video controls aria-labelledby="Xcode Navigator Area Shortcuts Demo" aria-describedby="This video demonstrates keyboard shortcuts to quickly switch between tabs in the Xcode Navigator Area, improving your development workflow.">
-    <source src="/assets/videos/xcode-navigator-area-shortcuts.mp4" type="video/mp4">
+    <source src="/videos/xcode-navigator-area-shortcuts.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>
 
@@ -135,7 +135,7 @@ This area contains 5 tabs
 | Attributes inspector    | `CMD + OPTION + 4` | Show information about the selected element on screen |
 
 <video controls aria-labelledby="Xcode Inspector Area Shortcuts Demo" aria-describedby="This video demonstrates keyboard shortcuts to quickly switch between tabs in the Xcode Inspector Area, improving your development workflow.">
-    <source src="/assets/videos/xcode-inspector-area-shortcuts.mp4" type="video/mp4">
+    <source src="/videos/xcode-inspector-area-shortcuts.mp4" type="video/mp4">
     Your browser does not support video playback.
 </video>
 
