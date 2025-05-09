@@ -4,7 +4,7 @@ date = 2016-04-06
 type = "post"
 slug = "xamarin-available-for-free-to-developers"
 translationKey = "xamarin-available-for-free-to-developers"
-image: xamarin-disponivel-gratuitamente-para-desenvolvedores.png
+image = "/img/xamarin-disponivel-gratuitamente-para-desenvolvedores.png"
 categories = ["TODO"]
 tags = ["xamarin"]
 +++
