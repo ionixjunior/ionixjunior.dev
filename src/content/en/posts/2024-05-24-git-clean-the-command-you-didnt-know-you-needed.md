@@ -1,7 +1,7 @@
 +++
 title = "Git Clean: The Command You Didn't Know You Needed"
 date = 2024-05-24
-tags: ["git"]
+tags = ["git"]
 social_image: "git-clean-the-command-you-didnt-know-you-needed.en.webp"
 +++
 

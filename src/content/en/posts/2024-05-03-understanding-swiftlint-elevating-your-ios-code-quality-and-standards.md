@@ -1,7 +1,7 @@
 +++
 title = "Understanding SwiftLint: Elevating Your iOS Code Quality and Standards"
 date = 2024-05-03
-tags: ["iOS"]
+tags = ["iOS"]
 social_image: "understanding-swiftlint-elevating-your-ios-code-quality-and-standards.en.webp"
 +++
 

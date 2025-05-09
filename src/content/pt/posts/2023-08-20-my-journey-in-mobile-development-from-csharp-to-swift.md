@@ -1,7 +1,7 @@
 +++
 title = "Minha jornada no desenvolvimento mobile: Do C# ao Swift"
 date = 2023-08-20
-tags: ["xamarin", "swift"]
+tags = ["xamarin", "swift"]
 +++
 
 <p class="intro"><span class="dropcap">E</span>m meados de 2014, quando iniciei minha jornada no desenvolvimento mobile, havia poucas opções de abordagens multiplataforma. Minha trajetória teve início com o Xamarin, uma poderosa tecnologia que me permitiu criar aplicativos nativos para múltiplas plataformas usando C#. Ao longo dos anos, foquei no desenvolvimento de aplicativos, deixando de lado o desenvolvimento backend para me dedicar apenas ao desenvolvimentos de apps para Android e iOS. Neste post, compartilho um pouco da minha experiência, e também conto o motivo de eu me sentir cada vez mais atraído pelo desenvolvimento iOS com Swift.</p>

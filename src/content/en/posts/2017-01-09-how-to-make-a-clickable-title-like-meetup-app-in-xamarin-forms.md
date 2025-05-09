@@ -1,7 +1,7 @@
 +++
 title = "How to create a clickable title similar to the Meetup app in Xamarin.Forms"
 date = 2017-01-09
-tags: ["xamarin", "ios"]
+tags = ["xamarin", "ios"]
 +++
 
 <p class="intro"><span class="dropcap">D</span>o you know the Meetup app? Meetup is a social network designed to facilitate offline group meetings. Why am I talking about it? Just to introduce the subject. What I want to talk about today is how to create a clickable title like the Meetup app for iOS in an app developed with Xamarin.Forms.</p>

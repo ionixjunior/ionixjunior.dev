@@ -1,7 +1,7 @@
 +++
 title = "SwiftUI Basics: Project Structure, Views, and Previews"
 date = 2024-08-09
-tags: ["100DaysOfSwiftUI"]
+tags = ["100DaysOfSwiftUI"]
 social_image: "swiftui-basics-project-structure-views-and-previews.en.webp"
 +++
 

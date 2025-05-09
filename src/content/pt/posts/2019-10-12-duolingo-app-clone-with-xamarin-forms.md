@@ -1,7 +1,7 @@
 +++
 title = "Duolingo app clone com Xamarin.Forms"
 date = 2019-10-12
-tags: ["xamarin"]
+tags = ["xamarin"]
 redirect_from:
     - /duolingo-app-clone-com-xamarin-forms/
 +++

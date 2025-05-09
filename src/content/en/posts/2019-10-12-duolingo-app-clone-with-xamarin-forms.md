@@ -1,7 +1,7 @@
 +++
 title = "Duolingo app clone with Xamarin.Forms"
 date = 2019-10-12
-tags: ["xamarin"]
+tags = ["xamarin"]
 +++
 
 <p class="intro"><span class="dropcap">H</span>ey folks! How are you doing?

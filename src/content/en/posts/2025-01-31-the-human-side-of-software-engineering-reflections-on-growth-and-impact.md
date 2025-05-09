@@ -1,7 +1,7 @@
 +++
 title = "The Human Side of Software Engineering: Reflections on Growth and Impact"
 date = 2025-01-31
-tags: ["career"]
+tags = ["career"]
 social_image: "the-human-side-of-software-engineering-reflections-on-growth-and-impact.en.webp"
 +++
 

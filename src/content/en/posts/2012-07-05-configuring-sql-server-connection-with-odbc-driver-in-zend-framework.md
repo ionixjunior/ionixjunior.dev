@@ -1,7 +1,7 @@
 +++
 title = "Configuring SQL Server connection with ODBC driver in Zend Framework"
 date = 2012-07-05
-tags: ["zend"]
+tags = ["zend"]
 +++
 
 <p class="intro"><span class="dropcap">M</span>any Web Developers who work with websites or systems development use MySQL or PostgreSQL as their database, and in a project I developed, it was no different - I opted for MySQL.</p>

@@ -1,7 +1,7 @@
 +++
 title = "Git Cherry-Pick: Selectively Applying Commits"
 date = 2024-03-29
-tags: ["git"]
+tags = ["git"]
 social_image: "git-cherry-pick-selectively-applying-commits.en.webp"
 +++
 

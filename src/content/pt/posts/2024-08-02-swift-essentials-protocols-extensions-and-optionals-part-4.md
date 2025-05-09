@@ -1,7 +1,7 @@
 +++
 title = "Swift Essentials: Protocolos, Extensões e Opcionais (Parte 4)"
 date = 2024-08-02
-tags: ["100DaysOfSwiftUI"]
+tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-protocols-extensions-and-optionals-part-4.pt.webp"
 +++
 

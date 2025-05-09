@@ -1,7 +1,7 @@
 +++
 title = "Understanding Git Commit: The Heart of Version Control"
 date = 2024-02-02
-tags: ["git"]
+tags = ["git"]
 social_image: "understanding-git-commit-the-heart-of-version-control.en.webp"
 +++
 

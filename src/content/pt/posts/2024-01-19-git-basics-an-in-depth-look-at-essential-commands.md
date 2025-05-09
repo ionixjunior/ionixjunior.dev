@@ -1,7 +1,7 @@
 +++
 title = "Git Básico: Uma Análise Profunda nos Comandos Essenciais"
 date = 2024-01-19
-tags: ["git"]
+tags = ["git"]
 social_image: "git-basics-an-in-depth-look-at-essential-commands.pt.webp"
 +++
 

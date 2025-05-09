@@ -1,7 +1,7 @@
 +++
 title = "Customizando SeparatorInset do UITableView do iOS – Xamarin.Forms"
 date = 2018-07-30
-tags: ["xamarin", "ios"]
+tags = ["xamarin", "ios"]
 redirect_from:
     - /customizando-separatorinset-do-uitableview-do-ios-xamarin-forms/
 +++

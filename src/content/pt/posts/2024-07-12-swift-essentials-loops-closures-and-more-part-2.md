@@ -1,7 +1,7 @@
 +++
 title = "Swift Essentials: Loops, Closures e Mais (Parte 2)"
 date = 2024-07-12
-tags: ["100DaysOfSwiftUI"]
+tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-loops-closures-and-more-part-2.pt.webp"
 +++
 

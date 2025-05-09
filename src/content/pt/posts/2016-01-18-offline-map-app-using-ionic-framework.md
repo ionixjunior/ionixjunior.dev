@@ -1,7 +1,7 @@
 +++
 title = "Aplicativo com mapa offline usando Ionic Framework"
 date = 2016-01-18
-tags: ["misc"]
+tags = ["misc"]
 redirect_from:
     - /aplicativo-com-mapa-offline-usando-ionic-framework/
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Swift Essentials: Structs, Classes e Mais (Parte 3)"
 date = 2024-07-19
-tags: ["100DaysOfSwiftUI"]
+tags = ["100DaysOfSwiftUI"]
 social_image: "swift-essentials-structs-classes-and-more-part-3.pt.webp"
 +++
 

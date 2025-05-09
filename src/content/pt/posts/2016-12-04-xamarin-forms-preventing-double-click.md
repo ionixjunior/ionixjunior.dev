@@ -1,7 +1,7 @@
 +++
 title = "Xamarin.Forms – Prevenindo duplo clique"
 date = 2016-12-04
-tags: ["xamarin"]
+tags = ["xamarin"]
 redirect_from:
     - /xamarin-forms-prevenindo-duplo-clique/
 +++

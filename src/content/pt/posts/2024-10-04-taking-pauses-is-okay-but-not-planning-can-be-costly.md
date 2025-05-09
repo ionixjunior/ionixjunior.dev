@@ -1,7 +1,7 @@
 +++
 title = "Fazer Pausas é Importante, Mas Não Se Planejar Pode Sair Caro"
 date = 2024-10-04
-tags: ["carreira"]
+tags = ["carreira"]
 social_image: "taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
 +++
 

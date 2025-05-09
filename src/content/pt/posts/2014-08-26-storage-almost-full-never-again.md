@@ -1,7 +1,7 @@
 +++
 title = "“Storage almost full”, nunca mais!"
 date = 2014-08-26
-tags: ["misc"]
+tags = ["misc"]
 redirect_from:
     - /storage-almost-full-nunca-mais/
 +++

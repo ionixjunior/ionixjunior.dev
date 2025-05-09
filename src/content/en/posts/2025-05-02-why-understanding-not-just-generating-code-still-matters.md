@@ -1,7 +1,7 @@
 +++
 title = "Why Understanding, Not Just Generating Code, Still Matters"
 date = 2025-05-02
-tags: ["career"]
+tags = ["career"]
 social_image: "why-understanding-not-just-generating-code-still-matters.en.webp"
 +++
 

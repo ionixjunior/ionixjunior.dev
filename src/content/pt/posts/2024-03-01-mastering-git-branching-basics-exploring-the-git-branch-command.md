@@ -1,7 +1,7 @@
 +++
 title = "Dominando os Conceitos Básicos de Branches do Git: Explorando o Comando git branch"
 date = 2024-03-01
-tags: ["git"]
+tags = ["git"]
 social_image: "mastering-git-branching-basics-exploring-the-git-branch-command.pt.webp"
 +++
 
