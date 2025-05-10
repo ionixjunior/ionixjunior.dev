@@ -1,0 +1,40 @@
+- id: home
+  translation: Home
+- id: about
+  translation: About
+
+- id: minute_read_singular
+  translation: "minute read"
+- id: minute_read_plural
+  translation: "minute read"
+- id: translations
+  translation: "Translations"
+
+- id: date_format
+  translation: "Jan 02, 2006"
+- id: category
+  translation: "Category"
+- id: categories
+  translation: "Categories"
+- id: tags
+  translation: "Tags"
+
+- id: copy_theme_by
+  translation: "Theme originally by"
+- id: copy_adapted_by
+  translation: "Adapted for"
+- id: by
+  translation: "by"
+
+- id: pagination_prev
+  translation: "New posts"
+- id: pagination_next
+  translation: "Old posts"
+
+- id: about_photo_alt
+  translation: "Ione Souza Junior photo"
+- id: about_description
+  translation: "Mobile Engineer, iOS Enthusiast, and former Microsoft MVP, motivated by challenges, coffee, and contributing to the community."
+
+- id: posts
+  translation: "Posts"

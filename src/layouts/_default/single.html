@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="post">
+  <header>
+    <h1 class="postTitle">{{ .Title }}</h1>
+    <p class="meta">
+      <span>{{ .Date.Format (i18n "date_format") }}</span>
+      <span>| <span class="time">{{ math.Ceil (div (countwords .Content) 180.0) }}</span> {{ i18n (cond (eq (math.Ceil (div (countwords .Content) 180.0)) 1) "minute_read_singular" "minute_read_plural") }}</span>
+      {{ with .Translations }}
+      <span>| {{ i18n "translations" }}:
+        {{ range . }}
+          <a href="{{ .RelPermalink }}">{{ .Lang | upper }}</a>
+        {{ end }}
+      </span>
+      {{ end }}
+      {{ with .Params.categories }}
+      <span>| {{ i18n "category" }}: <a href="{{ (print "/categories/" (urlize (index . 0))) | relLangURL }}">{{ index . 0 }}</a></span>
+      {{ end }}
+      {{ with .Params.tags }}
+      <span>| {{ i18n "tags" }}:
+        {{ range . }}
+          <a href="{{ (print "/tags/" (urlize .)) | relLangURL }}">#{{ . }}</a>
+        {{ end }}
+      </span>
+      {{ end }}
+    </p>
+  </header>
+  {{ .Content }}
+</article>
+
+<script src="https://giscus.app/client.js"
+        data-repo="ionixjunior/ionixjunior.dev"
+        data-repo-id="R_kgDOJ8BIbA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJ8BIbM4Cp2bq"
+        data-mapping="specific"
+        data-term="{{ .Slug }}"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}

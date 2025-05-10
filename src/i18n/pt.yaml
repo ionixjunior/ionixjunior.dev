@@ -1,0 +1,40 @@
+- id: home
+  translation: Início
+- id: about
+  translation: Sobre
+
+- id: minute_read_singular
+  translation: "minuto de leitura"
+- id: minute_read_plural
+  translation: "minutos de leitura"
+- id: translations
+  translation: "Traduções"
+
+- id: date_format
+  translation: "02/01/2006"
+- id: category
+  translation: "Categoria"
+- id: categories
+  translation: "Categorias"
+- id: tags
+  translation: "Tags"
+
+- id: copy_theme_by
+  translation: "Tema originalmente por"
+- id: copy_adapted_by
+  translation: "Adaptado para"
+- id: by
+  translation: "por"
+
+- id: pagination_prev
+  translation: "Posts novos"
+- id: pagination_next
+  translation: "Posts antigos"
+
+- id: about_photo_alt
+  translation: "Foto de Ione Souza Junior"
+- id: about_description
+  translation: "Mobile Engineer, Entusiasta em Desenvolvimento iOS e ex-Microsoft MVP, movido por desafios, café e por contribuir com a comunidade. Pai de um cachorro que se considera CEO do meu escritório. 📱☕🐶"
+
+- id: posts
+  translation: "Posts"

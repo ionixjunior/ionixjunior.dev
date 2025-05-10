@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+    {{ if not hugo.IsServer }}
+      {{ partial "google_analytics.html" . }}
+    {{ end }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="content">
+      <div class="container">
+        <div id="home">
+          {{ block "main" . }}{{ end }}
+        </div>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

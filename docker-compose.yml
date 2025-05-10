@@ -1,7 +1,9 @@
 services:
-  jekyll:
-    image: bretfisher/jekyll-serve
+  hugo:
+    image: hugomods/hugo:latest
+    container_name: ionixjunior_dev
     ports:
-      - "4000:4000"
+      - "1313:1313"
     volumes:
-      - .:/site
+      - ./src:/src
+    command: server --bind 0.0.0.0 --baseURL=http://localhost:1313

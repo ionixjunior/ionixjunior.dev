@@ -1,0 +1,25 @@
+<!-- Header partial: site header/navigation for Hugo -->
+<header class="site-header header{{ if eq .Site.Params.header "large" }} header--large{{ end }}">
+  <div class="container">
+    <h1 class="logo"><a href="/">{{ .Site.Title }}</a></h1>
+    {{ if eq .Site.Language.Lang "en" }}
+      <a href="/pt/" class="lang-button" aria-label="Change language">
+        <span aria-hidden="true">🇧🇷</span>
+      </a>
+    {{ else }}
+      <a href="/en/" class="lang-button" aria-label="Change language">
+        <span aria-hidden="true">🇺🇸</span>
+      </a>
+    {{ end }}
+    <h2 class="logo"><a href="/">{{ .Site.Params.role }}</a></h2>
+    <nav class="nav-collapse">
+      <ul class="noList">
+        {{ range $i, $link := .Site.Menus.main }}
+          <li class="element{{ if eq $i 0 }}first{{ end }}{{ if $.IsMenuCurrent "main" $link }} current{{ end }}{{ if eq (add $i 1) (len $.Site.Menus.main) }} last{{ end }}">
+            <a href="{{ $link.URL | relLangURL }}">{{ i18n $link.Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

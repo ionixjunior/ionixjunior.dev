@@ -1,0 +1,48 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Ione Souza Junior"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[params]
+  role = "Mobile Engineer"
+  postsPerPage = 5
+  google_analytics = "G-G7JHVXT0LV"
+  description = "Ione Souza Junior - Mobile Engineer"
+
+[params.social]
+  twitter = "ionixjunior"
+  linkedin = "ionixjunior"
+  github = "ionixjunior"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+  [languages.pt]
+    languageName = "Português"
+    weight = 2
+    contentDir = "content/pt"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  name = "home"
+  url = ""
+  weight = 1
+
+[[menu.main]]
+  name = "about"
+  url = "about/"
+  weight = 2
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  posts = "/:slug/"

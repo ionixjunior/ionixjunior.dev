@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1 class="pageTitle">{{ i18n "posts" }}</h1>
+{{ $lang := .Lang }}
+{{ $posts := where .Site.RegularPages "Type" "post" }}
+{{ $posts := where $posts "Lang" $lang }}
+{{ $perPage := .Site.Params.postsPerPage | default 5 }}
+{{ $paginator := .Paginate $posts $perPage }}
+{{ partial "post-list-paginated.html" $paginator }}
+{{ end }}
