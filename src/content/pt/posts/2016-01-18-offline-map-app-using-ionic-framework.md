@@ -27,7 +27,7 @@ Após baixar, você pode mover o conteúdo para a pasta www/lib do projeto e em 
 
 Neste projeto, o elemento que está renderizando o mapa é a diretiva map, localizada no arquivo index.html. O que precisamos fazer é alterar a engine de criação do mapa para o Leaflet ao invés do Google Maps. Começamos alterando a diretiva no arquivo directives.js:
 
-{%- highlight js -%}
+```js
 link: function ($scope, $element, $attr) {
     function initialize() {
         var mapOptions = {
@@ -48,11 +48,11 @@ link: function ($scope, $element, $attr) {
         window.addEventListener('load', initialize);
     }
 }
-{%- endhighlight -%}
+```
 
 Mas apenas isso não basta, no controller MapCtrl também precisamos alterar o método que centraliza o mapa em uma determinada latitude e longitude, pois como trocamos a engine para o Leaflet, agora não iremos mais usar os objetos do Google Maps para interagir com o mapa. Alterei o arquivo controllers.js na linha destacada:
 
-{%- highlight js -%}
+```js
 $scope.centerOnMe = function () {
     console.log("Centering");
     if (!$scope.map) {
@@ -72,7 +72,7 @@ $scope.centerOnMe = function () {
         alert('Unable to get location: ' + error.message);
     });
 };
-{%- endhighlight -%}
+```
 
 Por fim, excluí a inserção da biblioteca do Google Maps, presente no arquivo www/index.html. Com isso, já temos o aplicativo funcionando com o mapa utilizando a engine do Leaflet.
 
@@ -112,7 +112,7 @@ Agora a parte mais esperada do tutorial. Vamos adicionar a pasta MapQuest extra�
 
 O próximo passo é voltar na diretiva map e alterar o tile layer para não carregar da referência online, e sim da offline. Também vamos alterar a latitude e longitude inicial para carregamento do mapa, fazendo o ajuste para carregar de acordo com o lugar que baixamos o mapa:
 
-{%- highlight js -%}
+```js
 link: function ($scope, $element, $attr) {
     function initialize() {
         var mapOptions = {
@@ -133,7 +133,7 @@ link: function ($scope, $element, $attr) {
         window.addEventListener('load', initialize);
     }
 }
-{%- endhighlight -%}
+```
 
 Perceba que configuramos uma URL relativa na configuração do tile layer para carregar os mapas. Essa referência relativa aponta para a pasta www. Como a pasta MapQuest já está em www, basta apenas referenciar a pasta e o Leaflet irá carregar as imagens corretamente a partir do endereço local. Note que, como modificamos o tile layer para carregar os mapas localmente, quaisquer outras partes do mapa que tentarmos consumir não poderão ser visualizadas.
 

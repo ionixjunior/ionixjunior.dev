@@ -51,7 +51,7 @@ Antes de falar em "como resolver isso", apenas gostaria de deixar claro que isso
 
 Legal, mas como "resolver"? Simples, basta criar um render para o **ViewCell** e fazer a sobrecarga do **GetCell** para customizar manualmente o atributo **SeparatorInset** do **UITableView**, como pode ser visto abaixo:
 
-{%- highlight cs -%}
+```cs
 using Core.Controls;
 using Core.iOS.Renderers;
 using UIKit;
@@ -71,7 +71,7 @@ namespace Core.iOS.Renderers
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Note que o valor inserido para a margem foi manual e dependerá do tamanho da imagem contida no item.
 
@@ -79,7 +79,7 @@ Por tratar-se de um render do **ViewCell**, provavelmente, você não desejará 
 
 Abaixo o custom control:
 
-{%- highlight cs -%}
+```cs
 using Xamarin.Forms;
 
 namespace Core.Controls
@@ -88,11 +88,11 @@ namespace Core.Controls
     {
     }
 }
-{%- endhighlight -%}
+```
 
 Abaixo a tela:
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     ...
@@ -117,7 +117,7 @@ Abaixo a tela:
         </ListView>
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
 Agora sim, o resultado final ficou mais agradável:
 

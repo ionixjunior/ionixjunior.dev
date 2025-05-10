@@ -18,9 +18,9 @@ O Git stash é um recurso que permite armazenar temporariamente alterações mod
 ## Armazenando mudanças
 Para armazenar alterações no Git, podemos usar o comando `git stash`. Este comando tira uma foto do estado atual do diretório de trabalho e do índice e a salva na pilha de stash.
 
-{%- highlight sh -%}
+```sh
 git stash
-{%- endhighlight -%}
+```
 
 Este comando cria uma nova entrada de stash com um nome e descrição padrão, indicando as alterações que foram armazenadas. Uma vez armazenado, o diretório de trabalho e o índice são revertidos para o estado do último commit, permitindo trocar de branch ou realizar outras operações sem as alterações que foram armazenadas.
 
@@ -28,67 +28,67 @@ Também é possível especificar um nome para o seu stash para identificá-lo fa
 
 Um leitor me disse que o comando acima está depreciado, e ele está correto! Então, ao invés de usar `git stash save`, use `git stash push` seguido do parâmetro da mensagem. Muito obrigado pelo feedback, [Christophe Colombier][christophe_colombier_profile]! Eu curti muito isso!
 
-{%- highlight sh -%}
+```sh
 git stash push -m "Sua mensagem"
-{%- endhighlight -%}
+```
 
 ## Listando e aplicando stashes
 Para listar todos os stashes armazenados atualmente, podemos usar o comando `git stash list`. Este comando exibe uma lista de todas as alterações armazenadas junto com seus respectivos IDs de stash e descrições. Veja como listar os stashes:
 
-{%- highlight sh -%}
+```sh
 git stash list
-{%- endhighlight -%}
+```
 
 Uma vez identificado o stash que queremos aplicar, podemos usar o comando `git stash apply` seguido do ID do stash. Alternativamente, se desejarem aplicar o stash mais recente, podem usar `git stash apply` sem especificar um ID de stash. Aqui estão os comandos para aplicar os stashes:
 
-{%- highlight sh -%}
+```sh
 git stash apply <id_do_stash>
-{%- endhighlight -%}
+```
 
 Ou, aplicar o stash mais recente:
 
-{%- highlight sh -%}
+```sh
 git stash apply
-{%- endhighlight -%}
+```
 
 Aplicar um stash reaplica as alterações armazenadas no stash para o diretório de trabalho e índice atual, permitindo continuarmos trabalhando nas alterações que foram armazenadas.
 
 Também existe um parâmetro chamado `pop` e você pode usá-lo para aplicar o stash mais recente e removê-lo da pilha.
 
-{%- highlight sh -%}
+```sh
 git stash pop
-{%- endhighlight -%}
+```
 
 ## Visualizando e gerenciando as mudanças armazenadas
 É possível visualizar as alterações armazenadas em um stash sem aplicá-las usando o comando `git stash show`. Este comando exibe um resumo das alterações no stash mais recente. Para visualizar as alterações em um stash específico, podemos fornecer o ID do stash como argumento. Veja como visualizar as alterações armazenadas:
 
-{%- highlight sh -%}
+```sh
 git stash show
-{%- endhighlight -%}
+```
 
 Ou, visualizar as alterações em um stash específico:
 
-{%- highlight sh -%}
+```sh
 git stash show <id_do_stash>
-{%- endhighlight -%}
+```
 
 Além disso, podemos excluir stashes da lista de stash usando o comando `git stash drop` seguido do ID do stash. Se nenhum ID de stash for fornecido, o stash mais recente será excluído.
 
-{%- highlight sh -%}
+```sh
 git stash drop
-{%- endhighlight -%}
+```
 
 Ou, excluir um stash específico:
 
-{%- highlight sh -%}
+```sh
 git stash drop <id_do_stash>
-{%- endhighlight -%}
+```
 
 Excluir um stash remove-o da lista de stash, liberando espaço e garantindo que ele não afete mais o estado do repositório. Alternativamente, podemos limpar todas as alterações armazenadas da lista de stash usando o comando `git stash clear`. Este comando remove todos os stashes, resetando a lista de stash para um estado vazio.
 
-{%- highlight sh -%}
+```sh
 git stash clear
-{%- endhighlight -%}
+```
 
 ## Quando usar o comando Git stash
 O comando Git stash é incrivelmente versátil e pode ser útil em vários cenários ao longo do seu processo de desenvolvimento. Use-o quando precisar temporariamente deixar de lado alterações para se concentrar em uma tarefa diferente ou resolver um problema urgente. Por exemplo, imagine que você está trabalhando em um novo branch de recurso, mas de repente precisa corrigir um bug crítico no branch principal. Em vez de realizar commit das suas alterações incompletas ou criar um branch separado, você pode armazená-las temporariamente, alternar para o branch principal, fazer as correções necessárias e depois retornar ao branch de recurso, onde pode aplicar as alterações armazenadas e continuar de onde parou. Da mesma forma, se estiver no meio da implementação de um recurso complexo e precisar alternar rapidamente para uma tarefa diferente, armazenar suas alterações permite salvar seu progresso sem poluir seu histórico de commits. 

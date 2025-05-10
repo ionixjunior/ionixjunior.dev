@@ -19,11 +19,11 @@ To simplify things: protocols are like interfaces. I'm not sure why Apple change
 
 Creating a protocol is very simple. Just use the `protocol` keyword and choose a name. By convention, I've chosen to suffix it with `Protocol`. Thinking about it, I believe I'm influenced by some DotNet conventions, because put "Protocol" at the end is redundant. Anyway, let's see:
 
-{%- highlight swift -%}
+```swift
 protocol SearchProtocol {
     func search(text: String)
 }
-{%- endhighlight -%}
+```
 
 This code defines a protocol named `SearchProtocol`. This protocol requires conforming types to implement a `search(text:)` function, which would presumably perform some kind of search operation using the provided text as input. So, how do we use it?
 
@@ -31,19 +31,19 @@ This code defines a protocol named `SearchProtocol`. This protocol requires conf
 
 Here's how you could use this protocol:
 
-{%- highlight swift -%}
+```swift
 struct YourStruct: SearchProtocol {
     func search(text: String) {
         print("Searching for: \(text)")
     }
 }
-{%- endhighlight -%}
+```
 
 `YourStruct` conforms to `SearchProtocol` and provides its own implementation for the `search(text:)` function. As mentioned earlier, it's the same concept as interfaces. 
 
 This is very important in iOS, so let's explore a slightly different example. Suppose we need to create a small component to represent some type of search UI element, like this:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchComponent: View {
@@ -60,11 +60,11 @@ struct SearchComponent: View {
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Here we have a view with a `TextField`, and we're monitoring changes using the `onChange` event and capturing the text typed inside it using the `print` function. It works. Now we can use it in a screen, like this:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchView: View {
@@ -75,13 +75,13 @@ struct SearchView: View {
         }
     }
 }
-{%- endhighlight -%}
+```
 
 The component is displayed correctly, but how can we get the value typed inside the `TextField`? We can use protocols and delegates. It's very common in iOS to use this approach to achieve a decoupled implementation. Instead of the view knowing all the details about the component, we just make it conform to the `SearchComponent` protocol and use it. Let's see how.
 
 I've placed the protocol near the component, created an optional property on the component, and replaced the `print` function call with the protocol function call through the delegate.
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 protocol SearchProtocol {
@@ -104,11 +104,11 @@ struct SearchComponent: View {
         // rest of the code
     }
 }
-{%- endhighlight -%}
+```
 
 Now I can go back to the view, make it conform to the protocol, and pass the delegate parameter when creating the instance of the component.
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchView: View, SearchProtocol {
@@ -124,7 +124,7 @@ struct SearchView: View, SearchProtocol {
         print(text)
     }
 }
-{%- endhighlight -%}
+```
 
 Now we can get the values typed in the component right here on the screen, maintaining low coupling between them.
 
@@ -144,13 +144,13 @@ In Swift, it's very simple to create one. You just use the `extension` keyword f
 2. Use `!yourStringVariable.isEmpty`.
 3. Create an extension, choosing one of the options above.
 
-{%- highlight swift -%}
+```swift
 extension String {
     var isNotEmpty: Bool {
         return self.isEmpty == false
     }
 }
-{%- endhighlight -%}
+```
 
 Now you can use `yourStringVariable.isNotEmpty`. This is an extension property, but you can create extension functions too. It works the same way, even for primitive types, as you can see above.
 
@@ -164,11 +164,11 @@ This "nullability" is incredibly valuable. For instance, when fetching data from
 
 Consider a function that tries to convert a string to an integer:
 
-{%- highlight swift -%}
+```swift
 func convertToInt(from text: String) -> Int? {
     return Int(text)
 }
-{%- endhighlight -%}
+```
 
 The `Int?` return type signifies that this function might return an integer, or it might return `nil` if the conversion fails (for example, trying to convert "hello" to an integer). Let's explore how to safely access an optional value.
 
@@ -176,14 +176,14 @@ The `Int?` return type signifies that this function might return an integer, or 
 
 To safely access the potential value inside an optional, you use "unwrapping" mechanisms. One common way is using `if let`:
 
-{%- highlight swift -%}
+```swift
 let userInput = "123"
 if let number = convertToInt(from: userInput) {
     print("The number is \(number)")
 } else {
     print("Invalid input")
 }
-{%- endhighlight -%}
+```
 
 Here, `number` is only assigned a value if `convertToInt` succeeds. Otherwise, the `else` block executes, preventing crashes from trying to use a non-existent value.
 
@@ -191,7 +191,7 @@ Here, `number` is only assigned a value if `convertToInt` succeeds. Otherwise, t
 
 You can check for "nullability" in different ways. For instance, you can use `guard let`. This approach is better to use when you need to create an early return statement.
 
-{%- highlight swift -%}
+```swift
 let userInput = "123"
 
 func yourFunction() {
@@ -204,7 +204,7 @@ func yourFunction() {
 }
 
 yourFunction()
-{%- endhighlight -%}
+```
 
 ### Nil Coalescing
 
@@ -212,11 +212,11 @@ Nil coalescing provides a concise and elegant way to handle optional values by p
 
 Here's a simple example:
 
-{%- highlight swift -%}
+```swift
 let userInput = "hello"
 let convertedValue = convertToInt(from: userInput)
 print(convertedValue ?? "empty value")
-{%- endhighlight -%}
+```
 
 As a result, the `print` function will display "empty value" because `convertedValue` is an optional without a value.
 
@@ -224,7 +224,7 @@ As a result, the `print` function will display "empty value" because `convertedV
 
 Optional chaining acts like a careful safeguard when you're accessing data that might be missing in your Swift code. Imagine you're following a treasure map with instructions like "Go to the old oak tree, then check under the loose rock, and you'll find the prize!" But what if the tree is gone, the rock is missing, or the prize was already taken? In code, when we try to access something that doesn't exist, we get a fatal error, but using optional chaining prevents this from happening. Let's look at the previous example where I showed you about protocols:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 protocol SearchProtocol {
@@ -247,7 +247,7 @@ struct SearchComponent: View {
         // rest of the code
     }
 }
-{%- endhighlight -%}
+```
 
 In the line `delegate?.search(text: newValue)`, we're accessing the `search` method of the `delegate` property, but it will only be called if the property actually contains a value.
 

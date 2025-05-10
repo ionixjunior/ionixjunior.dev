@@ -25,23 +25,23 @@ Creating Git aliases is very simple. You can set them up globally, making them a
 
 The core command for creating Git aliases is:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.ALIAS_NAME COMMAND
-{%- endhighlight -%}
+```
 
 Replace `ALIAS_NAME` by the alias you want and the `COMMAND` by the command. Let's create an alias named "st" that will represent `git status`:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.st status
-{%- endhighlight -%}
+```
 
 Now, whenever you type `git st` in your terminal, Git will execute `git status` behind the scenes.
 
 This was very simple, but you can create more complex commands, with a lot of parameters. Let me show you an example about the "log" command. I like so much to see the log on graph and in one line, so I've created an alias for this:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.lg "log --oneline --graph"
-{%- endhighlight -%}
+```
 
 This alias is definitely a time saver! If you prefer, you can change your alias manually editing the `~/.gitconfig` file. Also, you can type `git config --list | grep alias` to see all alias you already configure in your machine.
 
@@ -90,7 +90,7 @@ Here's a collection of my favorite Git aliases that help streamline my workflow.
 
 Believe me: this simple alias help me a lot every day to working with Git. Here is the alias part of my `.gitconfig` file:
 
-{%- highlight gitconfig -%}
+```gitconfig
 
 [alias]
 	st = status
@@ -112,7 +112,7 @@ Believe me: this simple alias help me a lot every day to working with Git. Here 
 	lgd = log --pretty=format:'%h %ad | %s%d [%an]' --date=short
 	sh = "!f() { GIT_EXTERNAL_DIFF=difft git show -p --ext-diff $@; }; f"
 
-{%- endhighlight -%}
+```
 
 ## Conclusion
 

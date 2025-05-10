@@ -24,15 +24,15 @@ Os primeiros 12 dias foram dedicados aos fundamentos do Swift, mas mesmo com con
 
 Ao trabalhar com números grandes, você pode usar sublinhados como separadores de milhares. Isso não altera o valor do número; apenas o torna mais fácil de ler.
 
-{%- highlight swift -%}
+```swift
 var balance = 10_000_000
-{%- endhighlight -%}
+```
 
 ### Saindo de Múltiplos Loops
 
 Se você tiver vários loops aninhados, pode nomear cada loop para criar uma condição `break` para sair. É uma boa alternativa ao uso de `goto` (lembra deles? 😅).
 
-{%- highlight swift -%}
+```swift
 outerLoop: for i in 1...5 {
     for j in 1...5 {
         print ("\ (i) - \(j)")
@@ -42,7 +42,7 @@ outerLoop: for i in 1...5 {
         }
     }
 }        
-{%- endhighlight -%}
+```
 
 Esses podem parecer pequenos detalhes, mas os achei bastante úteis.
 

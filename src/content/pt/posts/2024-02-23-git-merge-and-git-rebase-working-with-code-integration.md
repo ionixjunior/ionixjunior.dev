@@ -15,14 +15,14 @@ Está com dificuldades para trabalhar com a integração de código no Git? Voc�
 ## Git merge: Unindo branches
 Para explicar os exemplos do `git merge`, usarei o repositório [Book Tracking][book_tracking_repository]. Para esses exemplos, meu branch de destino é o "main", e meu branch de origem é o "library_screen". Você verá essas palavras em todo o post. Antes de começarmos, vamos ver o log de commits do Git para esse cenário.
 
-{%- highlight log -%}
+```log
 * 214ae0f (HEAD -> library_screen) Integrate the new screen into tab view controller
 * 058a356 Add screen icon
 * 38867bd Create empty state
 * a282019 Load data into library screen
 * d076946 Add new screen
 * 9060735 (origin/main, main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Recentemente, iniciei uma nova tarefa, e o branch de origem está atualizado com o branch de destino. Posso ver isso porque os commits do branch de origem estão no topo do branch de destino. Vamos começar a explorar o comando.
 
@@ -30,30 +30,30 @@ O `git merge` é um comando fundamental para integrar alterações de um branch 
 
 Para realizar um merge, navegue até o branch de destino e use o seguinte comando:
 
-{%- highlight bash -%}
+```bash
 git merge <branch_de_origem>
-{%- endhighlight -%}
+```
 
 Este comando preserva o histórico de commits. O `git merge` mantém os commits individuais do branch de origem, preservando o histórico de alterações. Além disso, as operações de merge são simples e intuitivas, tornando-as adequadas para a maioria dos cenários de colaboração. Se verificarmos o log agora, podemos ver que o branch de destino local está lado a lado com o branch de origem. Além disso, o hash dos commits não mudaram.
 
-{%- highlight log -%}
+```log
 * 214ae0f (HEAD -> main, library_screen) Integrate the new screen into tab view controller
 * 058a356 Add screen icon
 * 38867bd Create empty state
 * a282019 Load data into library screen
 * d076946 Add new screen
 * 9060735 (origin/main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Esse tipo de merge é chamado de fast-forward porque todos os commits aplicados no branch de origem irão para o branch de destino. Agora pense sobre isso: em nosso branch de origem, somos encorajados a fazer muitos commits e criar um pull request quando terminarmos nosso trabalho. Mas se tudo for integrado no branch de destino sem um checkpoint, como saber quando um pull request específico foi integrado no branch de destino? Podemos usar uma opção para mesclar os branches usando uma abordagem non-fast-forward. Vamos ver.
 
-{%- highlight bash -%}
+```bash
 git merge <branch_de_origem> --no-ff
-{%- endhighlight -%}
+```
 
 Agora, o Git solicitará uma mensagem de commit para fazer um commit de merge. Ele sugerirá automaticamente uma mensagem para você. Apenas aceite-a e vejamos o log.
 
-{%- highlight log -%}
+```log
 *   1d5bf70 (HEAD -> main) Merge branch 'library_screen'
 |\  
 | * 214ae0f (library_screen) Integrate the new screen into tab view controller
@@ -63,7 +63,7 @@ Agora, o Git solicitará uma mensagem de commit para fazer um commit de merge. E
 | * d076946 Add new screen
 |/  
 * 9060735 (origin/main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Note que o branch de destino local não está ao lado do branch de origem. Está no topo! O Git cria um novo commit que reflete o estado após o merge. Desta forma, é mais fácil entender quando algum trabalho foi concluído. Isso é comumente usado quando mesclamos um pull request e facilita se precisarmos revertê-lo.
 
@@ -72,7 +72,7 @@ O `git rebase` oferece uma abordagem alternativa para integrar alterações, ree
 
 Isso é mais comum quando iniciamos uma tarefa, trabalhamos nela por um tempo e precisamos atualizar nosso branch de origem com o novo trabalho que nossos colegas já mesclaram depois que nossa tarefa começou. Para esse cenário, considere o seguinte log. Veja que o branch de origem começou antes do estado atual do branch de destino.
 
-{%- highlight bash -%}
+```bash
 *   40650e2 (origin/main, main) Merge branch 'settings_screen'
 |\  
 | * 4744194 Adjust dark mode
@@ -89,36 +89,36 @@ Isso é mais comum quando iniciamos uma tarefa, trabalhamos nela por um tempo e 
 | * d076946 Add new screen
 |/  
 * 9060735 Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Observe que o branch de origem está dois commits de merge atrás do branch de destino. Talvez não seja um problema criar um pull request e integrar o código dessa forma. Mas se você tiver problemas para mesclá-lo, precisará atualizar seu código com as alterações mais recentes antes de fazer o merge. Uma maneira de fazer isso é usando o comando rebase. Para fazer o rebase do branch de origem no branch de destino, navegue até o branch de origem e use o seguinte comando:
 
-{%- highlight bash -%}
+```bash
 git rebase <branch_de_destino>
-{%- endhighlight -%}
+```
 
 O `git rebase` produz um histórico de commits linear incorporando alterações do branch de origem sem commits de merge adicionais. Vendo o log, o branch de origem estará no topo do branch de destino.
 
-{%- highlight bash -%}
+```bash
 * 88dda8b (HEAD -> library_screen) Integrate the new screen into tab view controller
 * 6e96461 Add screen icon
 * 21d55c8 Create empty state
 * 4b4e82d Load data into library screen
 * 0a3073f Add new screen
 *   40650e2 (origin/main, main) Merge branch 'settings_screen'
-{%- endhighlight -%}
+```
 
 O rebase modifica o histórico de commits do branch de origem, potencialmente alterando a ordem cronológica dos commits e causando problemas, principalmente se o branch de origem já estiver no repositório remoto. Após o rebase, as alterações no branch de origem parecem começar após a última alteração do branch de destino. 
 
 Esse é o rebase simples, mas você pode fazê-lo usando o modo interativo. Tenha cuidado ao realizar rebases interativos, pois eles envolvem a reescrita de mensagens de commit e podem introduzir alterações não intencionais. Vamos explorar um pouco sobre o rebase interativo para entender como o rebase funciona. Para isso, use o parâmetro `-i`.
 
-{%- highlight bash -%}
+```bash
 git rebase -i <branch_de_destino>
-{%- endhighlight -%}
+```
 
 Agora, o Git mostrará um prompt e perguntará o que fazer. Vamos verificar para entender.
 
-{%- highlight bash -%}
+```bash
 pick d076946 Add new screen
 pick a282019 Load data into library screen
 pick 38867bd Create empty state
@@ -155,7 +155,7 @@ pick 214ae0f Integrate the new screen into tab view controller
 #
 # However, if you remove everything, the rebase will be aborted.
 #
-{%- endhighlight -%}
+```
 
 Que mensagem grande, né? Não se preocupe com isso. Primeiro, vamos focar no topo. O Git mostra uma lista com um comando chamado "pick", o hash do commit e a mensagem do commit. Isso significa que ele tentará executar o comando "pick" para cada commit listado nessa ordem. O comando "pick" significa "cherry-pick", e não vimos sobre ele até agora. O `git cherry-pick` aplicará o commit no branch de destino. O comando aplica um commit específico em outro branch, alterando o hash do commit, mas mantendo o autor, a mensagem e o horário.
 
@@ -170,13 +170,13 @@ O `git rebase` é usado para obter um histórico limpo. Opte por este comando pa
 
 No [último artigo][last_post] quando falei sobre force pushing, comentei que o rebase pode trazer problemas se você não estiver trabalhando sozinho em um branch. Por causa disso, acredito que algumas pessoas preferem a estratégia de back merge em vez do rebase. Vamos tentar a estratégia de back merge e ver os resultados. O objetivo é atualizar nosso branch de origem com alterações mais recentes para o branch de destino. Supondo que o repositório esteja completamente atualizado, vamos permanecer em nosso branch de origem e executar o back merge.
 
-{%- highlight bash -%}
+```bash
 git merge <branch_de_destino>
-{%- endhighlight -%}
+```
 
 O Git solicitará uma mensagem de commit de merge. Ele irá sugerir uma mensagem, e você pode aceitá-la. Este será um commit de merge. Vendo o log, podemos ver o seguinte resultado:
 
-{%- highlight bash -%}
+```bash
 *   190f6b6 (HEAD -> library_screen) Merge branch 'main' into library_screen
 |\  
 | *   40650e2 (origin/main, main) Merge branch 'settings_screen'
@@ -195,7 +195,7 @@ O Git solicitará uma mensagem de commit de merge. Ele irá sugerir uma mensagem
 * | d076946 Add new screen
 |/  
 * 9060735 Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 O resultado é semelhante ao comando rebase, mas sem reescrever o histórico de commits. No gráfico dos commits, podemos ver todas as alterações do branch de destino sendo mescladas no branch de origem. Na minha opinião, isso causa um pouco de confusão ao analisar o histórico de commits. Fico um pouco desconfortável vendo isso, e por isso prefiro usar o rebase nesse caso.
 

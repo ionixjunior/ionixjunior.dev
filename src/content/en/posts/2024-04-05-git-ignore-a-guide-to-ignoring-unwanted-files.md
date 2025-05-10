@@ -27,10 +27,10 @@ In the `.gitignore` file, you can add patterns for files or directories that you
 
 For example, to ignore all `.xcuserstate` files and the directory `Pods`, you can add the following lines to your `.gitignore` file:
 
-{%- highlight txt -%}
+```txt
 *.xcuserstate
 Pods/
-{%- endhighlight -%}
+```
 
 These patterns will tell Git to ignore any file with the `.xcuserstate` extension and the entire `Pods` directory. On iOS development, this files are unecessary to add to the version control because it store the user's state information for Xcode and the dependencies managed by CocoaPods.
 
@@ -40,10 +40,10 @@ Creating a `.gitignore` file early in your project's development can help preven
 
 An interesting thing is you can make a negation to discard some file to be ignore. For example, you can configure your `.gitignore` file to ignore all the `.txt` discarding some specific file with the same extension.
 
-{%- highlight txt -%}
+```txt
 *.txt
 !important_file.txt
-{%- endhighlight -%}
+```
 
 By leveraging these pattern-matching techniques, you can create precise `.gitignore` rules to exclude unwanted files and directories from your Git repository, ensuring a cleaner and more manageable version control history. 
 
@@ -56,9 +56,9 @@ Using a global `.gitignore` file is a convenient way to ignore certain files and
 2. Define ignore patterns: Add the patterns for files or directories that you want to ignore globally to the `.gitignore_global` file. You can use the same pattern-matching techniques described earlier.
 3. Configure Git to use the global ignore file: Tell Git to use the `.gitignore_global` file by setting the `core.excludesFile` configuration option. Run the following command in your terminal:
 
-{%- highlight bash -%}
+```bash
 git config --global core.excludesFile ~/.gitignore_global
-{%- endhighlight -%}
+```
 
 Replace `~/.gitignore_global` with the path to your global ignore file if it's located in a different directory.
 

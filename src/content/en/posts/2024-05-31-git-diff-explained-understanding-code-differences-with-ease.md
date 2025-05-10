@@ -21,27 +21,27 @@ Imagine you're working on a document with "track changes" enabled. **Git Diff** 
 
 The basic **Git Diff** command is: `git diff`. This command will compare the current state of your working directory to the last commit you made. Here's a simple example using a file called `Foo.swift`:
 
-{%- highlight swift -%}
+```swift
 class Foo {
     func bar() {
         print("Hello, world!")
     }
 }
-{%- endhighlight -%}
+```
 
 Let's say you make a change to `Foo.swift`:
 
-{%- highlight swift -%}
+```swift
 class Foo {
     func bar() {
         print("Hello, world! I've been updated.")
     }
 }
-{%- endhighlight -%}
+```
 
 Now, if you run `git diff` in your terminal, you'll see the following output:
 
-{%- highlight diff -%}
+```diff
 git diff
 
 diff --git a/Foo.swift b/Foo.swift
@@ -55,7 +55,7 @@ index 495198a..6543e6d 100644
 +        print("Hello, world! I've been updated.")
      }
  }
-{%- endhighlight -%}
+```
 
 This output shows:
 
@@ -95,7 +95,7 @@ This is an amazing option to see text differences. This argument displays word-l
 
 Consider the last change in `Foo.swift`. If we use the `git diff --word-diff`, we'll see the following result:
 
-{%- highlight diff -%}
+```diff
 git diff --word-diff
 
 diff --git a/Foo.swift b/Foo.swift
@@ -108,7 +108,7 @@ index 495198a..6543e6d 100644
          print("Hello, [-world!")-]{+world! I've been updated.")+}
      }
  }
-{%- endhighlight -%}
+```
 
 Using this argument would clearly show you that phrase "I've been updated." has been added, while the rest of the line remains unchanged. Maybe this was not so clearly here on the blog post, but if you're using **Git** on the command line, probably you'll see a colored **Git Diff** result and it turns easier to understand changes.
 
@@ -138,13 +138,13 @@ One popular external **diff tool** is [**Difftastic**][difft], a structural **di
 
 To use **Difftastic**, you need to install it. You can check out instructions in the link above. After install it, you can configure **Git** to use it as the default external **diff tool**:
 
-{%- highlight sh -%}
+```sh
 git config --global diff.external difft
-{%- endhighlight -%}
+```
 
 After setting up **difft**, simply run **git diff** as usual. **Git** will automatically use **difft** to display the differences, providing a more visually appealing and informative output. The same diff of `Foo.swift` will appears this way:
 
-{%- highlight diff -%}
+```diff
 Foo.swift --- Swift
 File permissions changed from 100600 to 100644.
 1 class Foo {                         1 class Foo {
@@ -152,7 +152,7 @@ File permissions changed from 100600 to 100644.
 3         print("Hello, world!")      3         print("Hello, world! I've been updated.")
 4     }                               4     }
 5 }                                   5 }
-{%- endhighlight -%}
+```
 
 This is similar a side-by-side option that we can see on GitHub or GitLab. I like so much this tool.
 

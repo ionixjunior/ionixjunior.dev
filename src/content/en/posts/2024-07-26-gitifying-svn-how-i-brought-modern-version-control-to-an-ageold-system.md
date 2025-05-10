@@ -37,44 +37,44 @@ The possibilities were exhilarating: I could finally branch and merge with ease,
 
 Armed with newfound hope and a healthy dose of developer enthusiasm, I dove headfirst into the world of `git svn`. My first order of business? Cloning our SVN repository into a local Git repository using the magic command:
 
-{%- highlight sh -%}
+```sh
 git svn clone --stdlayout SVN_REPOSITORY_URL  
-{%- endhighlight -%}
+```
 
 It felt like opening a portal to a parallel universe – a universe where I could branch and merge without breaking a sweat. Once the clone was complete, I was greeted by a familiar sight: my very own Git repository, complete with the entire project history.
 
 To show you, I'm using a free SVN repo from [RiouxSVN][free_svn_repo], create a project, make some commits and clone it. When I typed the command above, I can see the following where I typed `git log`:
 
-{%- highlight sh -%}
+```sh
 * 899c967 (origin/trunk, main) Replace age by birthDate
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Note that the main branch of Git is synched with the trunk branch of SVN. Now, you can imagine that we're in the Git world and can create new branches, make merges, updates, and so on. I've created a new branch called "new_feature", and make a small implementation. Seeing the log, we have the following:
 
-{%- highlight sh -%}
+```sh
 * 9ec48e4 (HEAD -> new_feature) Change to a computed property
 * 9a03f1b Add fullName method
 * 899c967 (origin/trunk, main) Replace age by birthDate
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Now we have the "new_feature" branch ahead of the trunk. Suppose we finish our development and needs merge. But first, let's do another think: let's make another commit into SVN repo (simulation a teammate work), and keep our new branch updated before merge and send changed to SVN. How can we do this? Well, we can simple use the `fetch` command to get the newest updates from SVN, and them merge it if our local repository. Let's see it.
 
-{%- highlight sh -%}
+```sh
 git svn fetch   
  
         M       User.swift
 r5 = 8bfc98b61c4e4c0eaf4062d5dacdaeb634b97cc7 (refs/remotes/origin/trunk)
-{%- endhighlight -%}
+```
 
 Seeing the log, we get the following:
 
-{%- highlight sh -%}
+```sh
 * 8bfc98b (origin/trunk) Add id property
 | * 9ec48e4 (HEAD -> new_feature) Change to a computed property
 | * 9a03f1b Add fullName method
@@ -83,11 +83,11 @@ Seeing the log, we get the following:
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Now we see the trunk branch is one commit ahead of our main branch. Let's update it and them make a rebase of our feature branch.
 
-{%- highlight sh -%}
+```sh
 git checkout main
 git merge origin/trunk
 
@@ -95,11 +95,11 @@ Updating 899c967..8bfc98b
 Fast-forward
  User.swift | 1 +
  1 file changed, 1 insertion(+)
-{%- endhighlight -%}
+```
 
 Now the trunk and main branches are synched.
 
-{%- highlight sh -%}
+```sh
 * 8bfc98b (HEAD -> main, origin/trunk) Add id property
 | * 9ec48e4 (new_feature) Change to a computed property
 | * 9a03f1b Add fullName method
@@ -108,25 +108,25 @@ Now the trunk and main branches are synched.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Let's go back to our feature branch, make a rebase and prepare to commit into SVN.
 
 Checkout to the "new_feature" branch.
 
-{%- highlight sh -%}
+```sh
 git checkout new_feature
-{%- endhighlight -%}
+```
 
 Make the rebase.
 
-{%- highlight sh -%}
+```sh
 git rebase main
-{%- endhighlight -%}
+```
 
 After it, everything is okay again and all synched. 
 
-{%- highlight sh -%}
+```sh
 * 6e1f665 (HEAD -> new_feature) Change to a computed property
 * e171831 Add fullName method
 * 8bfc98b (origin/trunk, main) Add id property
@@ -134,23 +134,23 @@ After it, everything is okay again and all synched.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 We're prepared to make our commit to SVN. First, let's checkout to the main branch.
 
-{%- highlight sh -%}
+```sh
 git checkout main
-{%- endhighlight -%}
+```
 
 Merge the feature branch using the `--no-ff` (no-fast-forward) option. This will create a merge commit into main branch, and this will be good to the SVN because won't mess with a lot of commits.
 
-{%- highlight sh -%}
+```sh
 git merge --no-ff new_feature
-{%- endhighlight -%}
+```
 
 Git will ask you a commit message. Type the message and finish the merge. Seeing the log, everything is okay.
 
-{%- highlight sh -%}
+```sh
 *   3c13eb4 (HEAD -> main) Implement the fullName computed property
 |\  
 | * 6e1f665 (new_feature) Change to a computed property
@@ -161,11 +161,11 @@ Git will ask you a commit message. Type the message and finish the merge. Seeing
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Now comes the best part: push changes to SVN. To do it, we just type the `git svn dcommit` command to push our local changes on main branch to the trunk branch on SVN server.
 
-{%- highlight sh -%}
+```sh
 git svn dcommit
 Committing to https://svn.riouxsvn.com/ionixjunior-prj/trunk ...
         M       User.swift
@@ -174,11 +174,11 @@ Committed r6
 r6 = 42e0f095ec453b6416f954958479f39842028f58 (refs/remotes/origin/trunk)
 No changes between 3c13eb4501d858e7b7c225fa687b08667d97bcb4 and refs/remotes/origin/trunk
 Resetting to the latest refs/remotes/origin/trunk
-{%- endhighlight -%}
+```
 
 Seeing the log, we will see the branches synched.
 
-{%- highlight sh -%}
+```sh
 *   42e0f09 (HEAD -> main, origin/trunk) Implement the fullName computed property
 |\  
 | * 6e1f665 (new_feature) Change to a computed property
@@ -189,7 +189,7 @@ Seeing the log, we will see the branches synched.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Works like a charm 😎.
 

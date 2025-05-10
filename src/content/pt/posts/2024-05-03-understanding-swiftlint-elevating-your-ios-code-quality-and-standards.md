@@ -33,7 +33,7 @@ No [projeto SwiftLint][swiftlint_project], você pode encontrar instruções par
 ## Executando o SwiftLint
 Para fazer um teste simples, usei o [repositório BookTracking][book_tracking_repository]. Alguns de vocês devem se lembrar dele porque já usei ele em alguns exemplos. Basta abrir o terminal e digitar `swiftlint`, e para minha surpresa, muitas violações foram encontradas. Vou mostrar apenas parte do relatório porque tem mais de mil linhas.
 
-{%- highlight sh -%}
+```sh
 swiftlint 
 
 Linting Swift files in current working directory
@@ -57,40 +57,40 @@ Linting 'TabBarViewController.swift' (61/79)
 Linting 'AppDelegate.swift' (77/79)
 /Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/AppDelegate.swift:48:1: warning: Vertical Whitespace Violation: Limit vertical whitespace to a single empty line; currently 2 (vertical_whitespace)
 Done linting! Found 929 violations, 61 serious in 79 files.
-{%- endhighlight -%}
+```
 
 Caramba, muitas violações! Mas eu não configurei nada. Como o SwiftLint descobriu tudo isso? O SwiftLint apenas usa todas as regras padrão que possui. Outra coisa interessante é que ele fez o lint de um pod chamado SnapKit. Isso não é interessante para nós. Não precisamos fazer o lint das dependências. Precisamos definir e organizar como lidar com isso. Por isso é importante configurar nosso arquivo de lint. Vamos fazer isso!
 
 ## Configurando o SwiftLint
 Primeiro, vamos criar o arquivo `.swiftlint.yml`. Ele precisa começar com "ponto" porque é um arquivo oculto. Depois disso, vamos configurar nossas pastas e arquivos excluídos. No meu projeto, configurei a pasta `Pods` para que o SwiftLint não analise minhas bibliotecas externas, porque estou usando dependências do CocoaPods.
 
-{%- highlight yml -%}
+```yml
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 Executando o comando `swiftlint` agora o resultado é muito melhor, porque o diretório `Pods` não é mais analisado. Agora tenho "apenas" 364 violações no meu projeto.
 
 Você tem que escolher uma estratégia para lidar com isso. Você pode manter o arquivo swiftlint desta forma e resolver todas as violações que ele encontrou, ou pode aprender sobre todas as regras e escolher o que é interessante para você ou para seu projeto. Vou manter todas as regras ativadas neste momento e tentarei resolver as violações do meu projeto. Mas vou te mostrar como fazer algumas configurações. Suponha que você escolha especificar apenas algumas regras específicas, você precisa usar a propriedade `only_rules` e especificar as regras:
 
-{%- highlight yml -%}
+```yml
 only_rules:
   - multiline_arguments
   - overridden_super_call
 
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 Além disso, você pode configurar algumas regras desabilitadas para evitar que o SwiftLint as analise. 
 
-{%- highlight yml -%}
+```yml
 disabled_rules:
   - trailing_whitespace
 
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 Esses são apenas exemplos. Sugiro que você execute o comando `swiflint rules` para ver todas as regras disponíveis. Na tabela que aparecerá na linha de comando, você pode ver se a regra pode ser corrigida automaticamente (é possível), o tipo da regra (lint, idiomático, estilo, métricas ou desempenho), a configuração padrão e algumas outras informações.
 
@@ -121,9 +121,9 @@ Então, você poderá compilar seu projeto e ficar feliz usando o SwiftLint dire
 ## Corrigindo as violações
 Em meu projeto, encontrei 364 violações. Comecei apenas corrigindo da maneira mais fácil: usando a autocorreção. O SwiftLint fornece uma maneira de corrigir automaticamente algumas regras. Para fazer isso, execute o seguinte comando:
 
-{%- highlight sh -%}
+```sh
 swiftlint --autocorrect
-{%- endhighlight -%}
+```
 
 No meu projeto, a ferramenta corrigiu automaticamente regras simples, como `trailing_whitespace`, `trailing_newline`, `trailing_comma`, `unneeded_override`, `colon`, `comma` e `opening_brace`. Novamente, são regras muito simples, mas podem manter seu projeto padronizado. Algumas regras como `identifier_name` e `function_body_length` eu precisei corrigir manualmente.
 

@@ -17,19 +17,19 @@ Mas quem disse que foi fácil ou rápido? Apesar de simples, demorei um pouco pa
 
 Junto com o Doctrine 1, foi utilizado Zend Framework no projeto, então, a configuração dos dados de conexão com o banco estavam no application.ini da aplicação. Neste arquivo constava o DSN de configuração da conexão, que no MySQL, é assim:
 
-{%- highlight ini -%}
+```ini
 doctrine.dsn = "mysql://USERNAME:PASSWORD@HOSTNAME/DATABASE"
-{%- endhighlight -%}
+```
 
 Para configurar o SQL Server aqui, a sintaxe é um pouco diferente, neste caso, utilizei o driver ODBC para conexão:
 
-{%- highlight ini -%}
+```ini
 doctrine.dsn = "odbc:Driver={SQL Server};Server=HOSTNAME;Database=DATABASE;Uid=USERNAME;Pwd=PASSWORD"
-{%- endhighlight -%}
+```
 
 É só isso?? NÃO, falta a parte de inicialização do Doctrine, que foi definida do arquivo Bootstrap da aplicação. Vejamos abaixo o exemplo do MySQL:
 
-{%- highlight php -%}
+```php
 protected function _initDoctrine()
 {
     require_once 'Doctrine.php';
@@ -45,13 +45,13 @@ protected function _initDoctrine()
     $manager->openConnection($doctrineConfig['dsn']);
     return $manager;
 }
-{%- endhighlight -%}
+```
 
 Até aqui você já deve estar familiarizado, certo? Isto funciona no MySQL perfeitamente, porém, no SQL Server é necessário fazer um ajuste na linha 13, pois precisamos passar o DSN da conexão em um array:
 
-{%- highlight php -%}
+```php
 $manager->openConnection( array($doctrineConfig['dsn']) );
-{%- endhighlight -%}
+```
 
 Simples né?
 

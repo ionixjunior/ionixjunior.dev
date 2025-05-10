@@ -25,21 +25,21 @@ Para usar é fácil, configure o seu banco de dados no arquivo zend-form-generat
 
 Em seguida basta você executar o script na linha de comando e passar o parâmetro “generate-forms” seguido do nome da pasta onde deseja criar seus formulários, em nosso exemplo, chamamos de “Forms”:
 
-{%- highlight php -%}
+```php
 php zend-form-generator.php generate-forms Forms
-{%- endhighlight -%}
+```
 
 Por padrão, os formulários serão gerados com a nomenclatura padrão das aplicações Zend “Application_Form_XXXX”. Caso você deseje utilizar namespaces ao invés deste padrão, basta apenas especificar o nome do namespace após o nome da pasta onde irá gerar os formulários:
 
-{%- highlight php -%}
+```php
 php zend-form-generator.php generate-forms Forms Name\Your\Namespace
-{%- endhighlight -%}
+```
 
 Você vai notar que todos os formulários gerados, não irão ser criados com as chaves primárias das tabelas, pois geralmente, estas chaves primárias serão geradas automaticamente no banco de dados. Caso você precise criar os formulários com estes campos de chave primária, basta inserir o parâmetro “–primary-keys” antes do nome da pasta de destino. Esta dica também vale para a geração de formulários com namespaces:
 
-{%- highlight php -%}
+```php
 php zend-form-generator.php generate-forms --primary-keys Forms
-{%- endhighlight -%}
+```
 
 Dúvidas? Sugestões? Deixe seu comentário abaixo.
 

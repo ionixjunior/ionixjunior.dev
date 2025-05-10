@@ -25,66 +25,66 @@ As tags podem ser úteis para diversos propósitos, incluindo marcação de vers
 ## Criando tags do Git
 Para criar uma tag no Git, você pode usar o comando `git tag` seguido do nome da tag desejada e do hash do commit que deseja referenciar. O hash do commit é opcional se você estiver no commit que deseja criar a tag. Aqui está a sintaxe básica para criar uma tag leve:
 
-{%- highlight sh -%}
+```sh
 git tag <nome_da_tag> <hash_do_commit>
-{%- endhighlight -%}
+```
 
 Ou apenas o nome da tag.
 
-{%- highlight sh -%}
+```sh
 git tag <nome_da_tag>
-{%- endhighlight -%}
+```
 
 Se você deseja criar uma tag anotada, precisa especificar o parâmetro `-a` antes do nome da tag e o parâmetro `-m` com a mensagem. Não se esqueça de colocar aspas entre sua mensagem de tag.
 
-{%- highlight sh -%}
+```sh
 git tag -a <nome_da_tag> -m <A mensagem da tag>
-{%- endhighlight -%}
+```
 
 Usando uma tag anotada, é possível saber quem e quando a criou vendo os metadados.
 
 ## Listando e visualizando tags do git
 Listar e visualizar tags do Git é um processo direto que permite identificar rapidamente pontos importantes na história do seu repositório. Para listar todas as tags do seu repositório, você pode usar o comando `git tag` sem argumentos adicionais.
 
-{%- highlight sh -%}
+```sh
 git tag
-{%- endhighlight -%}
+```
 
 Este comando exibirá uma lista de todas as tags em ordem alfabética. Para ver detalhes sobre uma tag específica, você pode usar o comando `git show` seguido do nome da tag.
 
-{%- highlight sh -%}
+```sh
 git show <nome_da_tag>
-{%- endhighlight -%}
+```
 
 Este comando exibirá informações sobre o commit marcado, incluindo a mensagem do commit, autor, data e quaisquer alterações associadas ao commit. Você pode ver detalhes sobre cada branch ou commit usando o mesmo comando acima.
 
 ## Fazendo checkout de tags do Git
 Fazer checkout de tags do Git permite mover o HEAD do seu repositório para uma tag específica, configurando efetivamente seu diretório de trabalho para o estado do repositório naquele ponto da história. Isso é importante quando você precisa voltar para uma versão específica do seu software para testar algo ou aplicar um hotfix nesta versão. Veja como você pode fazer checkout de tags do Git:
 
-{%- highlight sh -%}
+```sh
 git checkout <nome-da-tag>
-{%- endhighlight -%}
+```
 
 Este é um comando antigo e bom para fazer isso, mas você pode fazer a mesma ação usando o comando `git switch` com o parâmetro `--detach`.
 
-{%- highlight sh -%}
+```sh
 git switch <nome-da-tag> --detach
-{%- endhighlight -%}
+```
 
 Esses comandos moverão o HEAD para o commit associado à tag especificada, efetivamente alternando seu diretório de trabalho para o estado do repositório no momento em que a tag foi criada. Observe que, ao fazer checkout de uma tag, você entra em um estado de "detached HEAD", o que significa que você não está mais em um branch. Quaisquer alterações feitas neste estado não serão associadas a um branch, portanto, é recomendável criar um novo branch se você pretende fazer alterações.
 
 ## Excluindo tags do Git
 Excluir tags do Git pode ser necessário para remover tags desatualizadas ou desnecessárias do seu repositório. Veja como você pode excluir tags do Git:
 
-{%- highlight sh -%}
+```sh
 git tag -d <nome-da-tag>
-{%- endhighlight -%}
+```
 
 Este comando excluirá a tag especificada do seu repositório local. Se você precisar excluir uma tag remota, aqui está o comando, onde o "nome-remoto" geralmente é "origin":
 
-{%- highlight sh -%}
+```sh
 git push --delete <nome-remoto> <nome-da-tag>
-{%- endhighlight -%}
+```
 
 Ao excluir tags do Git quando elas não são mais necessárias, você pode manter seu repositório limpo e organizado, garantindo que apenas as tags relevantes sejam retidas. É importante ter cuidado ao excluir tags, especialmente se elas já foram compartilhadas com colaboradores, para evitar interrupções em seu fluxo de trabalho.
 
@@ -93,15 +93,15 @@ Enviar tags para repositórios remotos é uma etapa essencial na gestão de lan�
 
 Para enviar uma única tag para um repositório remoto, você pode usar o comando `git push`:
 
-{%- highlight sh -%}
+```sh
 git push <nome-remoto> <nome-da-tag>
-{%- endhighlight -%}
+```
 
 Este comando envia a tag especificada para o repositório remoto. Se você tiver várias tags que deseja enviar de uma vez, pode usar a opção `--tags` sem especificar um nome de tag específico:
 
-{%- highlight sh -%}
+```sh
 git push <nome-remoto> --tags
-{%- endhighlight -%}
+```
 
 Este comando envia todas as tags que existem no seu repositório local para o repositório remoto. Depois que as tags forem enviadas, elas estarão disponíveis para outros membros da equipe que clonarem ou baixarem as modificações do repositório remoto.
 

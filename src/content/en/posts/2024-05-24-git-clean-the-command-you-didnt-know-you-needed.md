@@ -28,7 +28,7 @@ The command is very simple to use. Just type `git clean` on the command line fol
 
 You can combine these parameters to perform different clean operations. After execution, you'll see a list of deleted files.
 
-{%- highlight txt -%}
+```txt
 git clean -dfX
 
 Removing .DS_Store
@@ -36,7 +36,7 @@ Removing BookTracking.xcodeproj/xcuserdata/ionixjunior.xcuserdatad/xcschemes/
 Removing BookTracking.xcworkspace/xcshareddata/
 Removing BookTracking.xcworkspace/xcuserdata/ionixjunior.xcuserdatad/UserInterfaceState.xcuserstate
 Removing Pods/
-{%- endhighlight -%}
+```
 
 The `git clean` is very simple to use and extremely useful for freeing up space, especially in older projects that you aren't actively working on.
 

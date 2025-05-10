@@ -31,7 +31,7 @@ Now we understand the differences, let's talk about the usage.
 
 Suppose we need to update the repository main branch we're working on. Let's do it using the `git fetch`.
 
-{%- highlight sh -%}
+```sh
 git fetch origin main
 
 remote: Enumerating objects: 220, done.
@@ -43,11 +43,11 @@ Resolving deltas: 100% (128/128), completed with 53 local objects.
 From github.com:ionixjunior/BookTracking
  * branch                main     -> FETCH_HEAD
    0904a0ab2..fe8a56b4e  main     -> origin/main
-{%- endhighlight -%}
+```
 
 This command will fetch all the changes of the main branch. But if you prefer, you can fetch all the changes in the entire repository. This can be helpful to get new branches or tags. To do this, remove the branch name.
 
-{%- highlight sh -%}
+```sh
 git fetch origin
 
 remote: Enumerating objects: 202, done.
@@ -63,25 +63,25 @@ From github.com:ionixjunior/BookTracking
  * [new tag]             2024.02.03.4   -> 2024.02.03.4
  * branch                main           -> FETCH_HEAD
    0904a0ab2..fe8a56b4e  main           -> origin/main
-{%- endhighlight -%}
+```
 
 Remember that this does not merge the changes into the local repository. To merge the changes, we can use the merge command to sync the local changes with the remote changes we already fetched. Cross your fingers to don't see a merge conflict message 😅
 
-{%- highlight sh -%}
+```sh
 git merge origin/main
-{%- endhighlight -%}
+```
 
 The `git pull` command goes beyond. It makes the fetch and the merge operations.
 
-{%- highlight sh -%}
+```sh
 git pull origin main
-{%- endhighlight -%}
+```
 
 Also, you can execute `git pull` to the entire repository.
 
-{%- highlight sh -%}
+```sh
 git pull origin
-{%- endhighlight -%}
+```
 
 It's simple, isn't it? These commands don't have any mystery. But maybe you're thinking now: When do I use each of them? There doesn't exist a rule, unfortunately. We need to think about what we want to do every time we need to update our repository. Sometimes will be safe to execute the `git pull` command if we only need to update the main branch, and at other times will be better to execute the `git fetch` to see what was changed and do the merge carefully.
 

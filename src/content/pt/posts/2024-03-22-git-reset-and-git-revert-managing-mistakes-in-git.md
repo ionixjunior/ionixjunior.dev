@@ -20,45 +20,45 @@ Uma das funções principais do Git reset é mover o ponteiro HEAD para um commi
 ### Movendo HEAD para um commit específico
 Git reset move o ponteiro HEAD para o commit especificado, redefinindo a área de preparação e o diretório de trabalho para corresponder ao estado desse commit. As alterações feitas após este commit serão removidas da área de preparação. Todos os arquivos que você alterou entre o ponteiro que você move e o ponteiro que estava antes sairão da área de preparação.
 
-{%- highlight bash -%}
+```bash
 git reset <commit-hash>
-{%- endhighlight -%}
+```
 
 ### Soft reset
 Soft reset move o ponteiro HEAD para o commit especificado enquanto preserva as alterações na área de preparação. Isso permite que você faça novamente o commit das alterações ou faça modificações adicionais antes de realizar o commit.
 
-{%- highlight bash -%}
+```bash
 git reset --soft <commit-hash>
-{%- endhighlight -%}
+```
 
 ### Hard reset
 Um hard reset move o ponteiro HEAD para o commit especificado e redefine tanto a área de preparação quanto o diretório de trabalho para corresponder ao commit. Todas as alterações feitas após este commit serão descartadas permanentemente.
 
-{%- highlight bash -%}
+```bash
 git reset --hard <commit-hash>
-{%- endhighlight -%}
+```
 
 Hard reset com HEAD como argumento descarta todas as alterações locais e redefine o diretório de trabalho para corresponder ao commit atual. Isso é útil para reverter para um estado limpo sem preservar quaisquer modificações.
 
-{%- highlight bash -%}
+```bash
 git reset --hard HEAD
-{%- endhighlight -%}
+```
 
 ### Removendo alterações da área de preparação
 Suponha que você já colocou algumas alterações na área de preparação e deseja movê-las para a área de trabalho. O seguinte comando remove o arquivo especificado da área de preparação enquanto preserva as alterações no diretório de trabalho.
 
-{%- highlight bash -%}
+```bash
 git reset HEAD <arquivo>
-{%- endhighlight -%}
+```
 
 Também é possível omitir o nome do arquivo para aplicar o comando a todos os arquivos na área de preparação.
 
 ## Compreendendo o git revert
 Enquanto `git reset` modifica o histórico de commits movendo o HEAD e as referências de branch para um commit específico, `git revert` adota uma abordagem diferente. Em vez de alterar o histórico de commit, `git revert` cria um novo commit que desfaz as alterações introduzidas por um commit especificado.
 
-{%- highlight bash -%}
+```bash
 git revert <commit-hash>
-{%- endhighlight -%}
+```
 
 Quando você executa o comando acima, o Git criará um novo commit que aplica inversamente as alterações feitas por um commit especificado. Isso efetivamente desfaz as alterações introduzidas por esse commit sem alterar o histórico de commits. É importante observar que `git revert` opera no diretório de trabalho e na área de preparação, criando um novo commit com alterações que revertem aquelas introduzidas por um commit especificado.
 
@@ -68,15 +68,15 @@ Ao contrário de `git reset`, que pode ser usado para retroceder o histórico de
 
 Você pode reverter mais de um commit por vez.
 
-{%- highlight bash -%}
+```bash
 git revert <commit-hash-1> <commit-hash-2>
-{%- endhighlight -%}
+```
 
 Ou reverter um intervalo de commits, do mais antigo para o mais recente.
 
-{%- highlight bash -%}
+```bash
 git revert <oldest-commit-hash> <newest-commit-hash>
-{%- endhighlight -%}
+```
 
 ## Git reset vs. git revert: escolhendo a ferramenta certa
 Para aqueles que preferem recursos visuais, aqui está uma tabela destacando as principais distinções entre os comandos.

@@ -38,44 +38,44 @@ As possibilidades eram emocionantes: eu poderia finalmente criar e mesclar branc
 
 Armado com uma nova esperança e uma dose saudável de entusiasmo de desenvolvedor, mergulhei de cabeça no mundo do `git svn`. Minha primeira tarefa? Clonar nosso repositório SVN em um repositório Git local usando o comando mágico:
 
-{%- highlight sh -%}
+```sh
 git svn clone --stdlayout URL_DO_REPOSITORIO_SVN  
-{%- endhighlight -%}
+```
 
 Parecia que estava abrindo um portal para um universo paralelo - um universo onde eu poderia criar e mesclar branches sem suar a camisa. Assim que a clonagem foi concluída, fui saudado por uma visão familiar: meu próprio repositório Git, completo com todo o histórico do projeto.
 
 Para mostrar a vocês, estou usando um repositório SVN gratuito do [RiouxSVN][free_svn_repo], criei um projeto, fiz alguns commits e o clonei. Quando digitei o comando acima, pude ver o seguinte ao visualizar o log:
 
-{%- highlight sh -%}
+```sh
 * 899c967 (origin/trunk, main) Replace age by birthDate
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Observe que o branch principal do Git está sincronizado com o branch trunk do SVN. Agora, você pode imaginar que estamos no mundo Git e podemos criar novos branches, fazer merges, atualizações e assim por diante. Criei um novo branch chamado "new_feature" e fiz uma pequena implementação. Observando o log, temos o seguinte:
 
-{%- highlight sh -%}
+```sh
 * 9ec48e4 (HEAD -> new_feature) Change to a computed property
 * 9a03f1b Add fullName method
 * 899c967 (origin/trunk, main) Replace age by birthDate
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Agora temos o branch "new_feature" à frente do trunk. Suponha que terminamos nosso desenvolvimento e precisamos mesclar. Mas primeiro, vamos fazer outra coisa: vamos fazer outro commit no repositório SVN (simulando o trabalho de um colega de equipe) e manter nosso novo branch atualizado antes de mesclar e enviar as alterações para o SVN. Como podemos fazer isso? Bem, podemos simplesmente usar o comando `fetch` para obter as atualizações mais recentes do SVN e, em seguida, mesclá-las em nosso repositório local. Vamos ver como funciona.
 
-{%- highlight sh -%}
+```sh
 git svn fetch   
  
         M       User.swift
 r5 = 8bfc98b61c4e4c0eaf4062d5dacdaeb634b97cc7 (refs/remotes/origin/trunk)
-{%- endhighlight -%}
+```
 
 Observando o log, temos o seguinte:
 
-{%- highlight sh -%}
+```sh
 * 8bfc98b (origin/trunk) Add id property
 | * 9ec48e4 (HEAD -> new_feature) Change to a computed property
 | * 9a03f1b Add fullName method
@@ -84,11 +84,11 @@ Observando o log, temos o seguinte:
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Agora vemos que o branch trunk está um commit à frente do nosso branch principal. Vamos atualizá-lo e, em seguida, fazer um rebase do nosso branch de recurso.
 
-{%- highlight sh -%}
+```sh
 git checkout main
 git merge origin/trunk
 
@@ -96,11 +96,11 @@ Updating 899c967..8bfc98b
 Fast-forward
  User.swift | 1 +
  1 file changed, 1 insertion(+)
-{%- endhighlight -%}
+```
 
 Agora, os branches trunk e main estão sincronizados.
 
-{%- highlight sh -%}
+```sh
 * 8bfc98b (HEAD -> main, origin/trunk) Add id property
 | * 9ec48e4 (new_feature) Change to a computed property
 | * 9a03f1b Add fullName method
@@ -109,25 +109,25 @@ Agora, os branches trunk e main estão sincronizados.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Vamos voltar ao nosso branch de recurso, fazer um rebase e nos preparar para fazer o commit no SVN.
 
 Fazer checkout para o branch "new_feature".
 
-{%- highlight sh -%}
+```sh
 git checkout new_feature
-{%- endhighlight -%}
+```
 
 Fazer o rebase.
 
-{%- highlight sh -%}
+```sh
 git rebase main
-{%- endhighlight -%}
+```
 
 Depois disso, tudo estará ok novamente e sincronizado. 
 
-{%- highlight sh -%}
+```sh
 * 6e1f665 (HEAD -> new_feature) Change to a computed property
 * e171831 Add fullName method
 * 8bfc98b (origin/trunk, main) Add id property
@@ -135,23 +135,23 @@ Depois disso, tudo estará ok novamente e sincronizado.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Estamos prontos para fazer nosso commit no SVN. Primeiro, vamos fazer o checkout para o branch principal.
 
-{%- highlight sh -%}
+```sh
 git checkout main
-{%- endhighlight -%}
+```
 
 Mesclar o branch de recurso usando a opção `--no-ff` (sem fast-forward). Isso criará um commit de mesclagem no branch principal, e isso será bom para o SVN porque não bagunçará com muitos commits.
 
-{%- highlight sh -%}
+```sh
 git merge --no-ff new_feature
-{%- endhighlight -%}
+```
 
 O Git solicitará uma mensagem de commit. Digite a mensagem e conclua a mesclagem. Observando o log, tudo estará ok.
 
-{%- highlight sh -%}
+```sh
 *   3c13eb4 (HEAD -> main) Implement the fullName computed property
 |\  
 | * 6e1f665 (new_feature) Change to a computed property
@@ -162,11 +162,11 @@ O Git solicitará uma mensagem de commit. Digite a mensagem e conclua a mesclage
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Agora vem a melhor parte: enviar as alterações para o SVN. Para fazer isso, basta digitar o comando `git svn dcommit` para enviar nossas alterações locais no branch principal para o branch trunk no servidor SVN.
 
-{%- highlight sh -%}
+```sh
 git svn dcommit
 Committing to https://svn.riouxsvn.com/ionixjunior-prj/trunk ...
         M       User.swift
@@ -175,11 +175,11 @@ Committed r6
 r6 = 42e0f095ec453b6416f954958479f39842028f58 (refs/remotes/origin/trunk)
 No changes between 3c13eb4501d858e7b7c225fa687b08667d97bcb4 and refs/remotes/origin/trunk
 Resetting to the latest refs/remotes/origin/trunk
-{%- endhighlight -%}
+```
 
 Observando o log, veremos os branches sincronizados.
 
-{%- highlight sh -%}
+```sh
 *   42e0f09 (HEAD -> main, origin/trunk) Implement the fullName computed property
 |\  
 | * 6e1f665 (new_feature) Change to a computed property
@@ -190,7 +190,7 @@ Observando o log, veremos os branches sincronizados.
 * c6e470f Replace name by first and last name properties
 * 0645868 Add User struct
 * 9d3fa32 Creating initial repository structure
-{%- endhighlight -%}
+```
 
 Funciona que é uma beleza 😎!
 

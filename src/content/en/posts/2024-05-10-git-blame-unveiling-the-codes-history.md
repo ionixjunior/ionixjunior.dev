@@ -22,19 +22,19 @@ The `git blame` command is very versatile. Let's explore some different usages.
 ### Basic usage
 Let's say you're working with a Swift file called `User.swift` and you want to know the history behind its lines. Open your terminal, navigate to your repository's root directory, and run the following command, referencing your project file:
 
-{%- highlight txt -%}
+```txt
 git blame User.swift
-{%- endhighlight -%}
+```
 
 This will display an output similar to this:
 
-{%- highlight txt -%}
+```txt
 96d864ac (John Doe   2023-08-15 10:30:01 -0400 1) struct User {
 96d864ac (John Doe   2023-08-15 10:30:01 -0400 2)     let id: Int
 96d864ac (John Doe   2023-08-15 10:30:01 -0400 3)     let name: String
 2b8f7a4c (Mary Smith 2023-08-08 16:22:10 -0400 4)     let email: String?
 96d864ac (John Doe   2023-08-15 10:30:01 -0400 5) }
-{%- endhighlight -%}
+```
 
 The first column shows the abbreviated commit hash associated with the last change to each line. The second column identifies the author of the commit. Here, we see that John Doe and Mary Smith have contributed to this file. The third column shows the date and time of the commit. The final column indicates the line number in the file. Following the information above, you'll see the actual content of each line in the file.
 
@@ -47,21 +47,21 @@ This command allows you to delve into the history of a file at a particular poin
 
 Imagine you want to see how the `User.swift` file looked in the commit with the hash `fae4321b`. You would use the following command:
 
-{%- highlight txt -%}
+```txt
 git blame fae4321b User.swift 
-{%- endhighlight -%}
+```
 
 The output will show the file's state at that specific commit, revealing who authored each line and when it was last changed before that point in the history. If you're not interested in older changes, you can specify a range and it can be in two ways. The first one I'll show you through a tag. Suppose we have a tag called `v123` and we want to see the changes after this time, we just need to put two dots ".." after the tag:
 
-{%- highlight txt -%}
+```txt
 git blame v123.. User.swift 
-{%- endhighlight -%}
+```
 
 Another option is using the `--since` flag specifying a period to achieve this:
 
-{%- highlight txt -%}
+```txt
 git blame --since=2.weeks User.swift 
-{%- endhighlight -%}
+```
 
 These options give you the flexibility to investigate the code at different points in its history, aiding in pinpointing the introduction of bugs or understanding the context of past changes.
 
@@ -70,24 +70,24 @@ Sometimes, changes in a file involve only whitespace modifications, such as inde
 
 To disregard whitespace changes when analyzing a file, simply include the `-w` flag in your command. For instance:
 
-{%- highlight txt -%}
+```txt
 git blame -w User.swift 
-{%- endhighlight -%}
+```
 
 ### Custom output
 There are many options available with this command, but I'll showcase two more possibilities, both related to the `-L` flag.
 
 You can analyze a file by specifying a range of line numbers: 
 
-{%- highlight txt -%}
+```txt
 git blame -L 10,20 User.swift
-{%- endhighlight -%} 
+``` 
 
 This command will show the lines 10 to 20. Furthermore, you can specify a function name, passing it as a regex into the command. Suppose you want to analyze a function called `func configConstraints() { ... }` in this file, you can run the command this way:
 
-{%- highlight txt -%}
+```txt
 git blame -L /func\ configConstraints/ User.swift
-{%- endhighlight -%}
+```
 
 It's not common and sometimes not easy to do, but it's a possibility, right?
 

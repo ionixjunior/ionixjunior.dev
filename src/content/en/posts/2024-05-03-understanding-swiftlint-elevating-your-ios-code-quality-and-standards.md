@@ -32,7 +32,7 @@ At the [SwiftLint project][swiftlint_project] you can find instructions to insta
 ## Running SwiftLint
 To do a simple test, I've used the [Book Tracking repository][book_tracking_repository]. Some of you should remember about it because I already did some examples using this repository. I just open the terminal and type `swiftlint`, and for my surprise a lot of violations were found. I'll show you only part of the report because it have more than one thousand lines. 
 
-{%- highlight sh -%}
+```sh
 swiftlint 
 
 Linting Swift files in current working directory
@@ -56,40 +56,40 @@ Linting 'TabBarViewController.swift' (61/79)
 Linting 'AppDelegate.swift' (77/79)
 /Users/ionixjunior/Projects/iOS/BookTracking/BookTracking/AppDelegate.swift:48:1: warning: Vertical Whitespace Violation: Limit vertical whitespace to a single empty line; currently 2 (vertical_whitespace)
 Done linting! Found 929 violations, 61 serious in 79 files.
-{%- endhighlight -%}
+```
 
 Oh god. A lot of violations! But I don't configure anything. How SwiftLint discover all of it? SwiftLint just use all the default rules it have. Another interesting thing is it lint a pod called SnapKit. This is not interesting to us. We don't need to linting the dependencies. We need to define and organize how to deal with this. Because of this is important to configure our lint file. Let's do it!
 
 ## Configuring SwiftLint
 First, let's create the `.swiftlint.yml` file. It needs to start with "dot" because it's a hidden file. After this, let's configure our excluded folders and files. In my project I configured the `Pods` folder to SwiftLint don't parse my external libs, because I'm using CocoaPods dependencies.
 
-{%- highlight yml -%}
+```yml
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 Running the `swiftlint` command now the result is much better, because the `Pods` directory is not reported anymore. Now I have "only" 364 violations in my project.
 
 You have to choose a strategy to deal with this. You can keep the swiftlint file this way and solve all the violations that it founded, or you can learn about all rules and choose what is interesting to you or to your project. I'll keep all the rules activated at this moment, and I'll try to solve the violations of my project. But I'll show you how to do some configurations. Suppose you choose to specify only some specific rules, you need to use the `only_rules` property and specify the rules:
 
-{%- highlight yml -%}
+```yml
 only_rules:
   - multiline_arguments
   - overridden_super_call
 
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 Also, you can configure some disabled rules to avoid SwiftLint parse them. 
 
-{%- highlight yml -%}
+```yml
 disabled_rules:
   - trailing_whitespace
 
 excluded:
   - Pods/
-{%- endhighlight -%}
+```
 
 These are just examples. I suggest you to run `swiflint rules` command to see all rules available. In the table that will appear on the command line, you can see if the rule can be automatically corrected (is, it is possible), the kind of the rule (lint, idiomatic, style, metrics or performance), the default configuration and some other informations.
 
@@ -120,9 +120,9 @@ Then, you'll can build your project and be happy using SwiftLint directly into X
 ## Fixing the violations
 In my project I found 364 violations. I just start fixing using the easy way: using the autocorrect. SwiftLint provide a way to autocorrect some rules. To do this, run the following commnad:
 
-{%- highlight sh -%}
+```sh
 swiftlint --autocorrect
-{%- endhighlight -%}
+```
 
 In my project, the tool automatically correct simple rules, like `trailing_whitespace`, `trailing_newline`, `trailing_comma`, `unneeded_override`, `colon`, `comma`, and `opening_brace`. Again, they are very simple rules, but can keep your project standardized. Some sules like `identifier_name` and `function_body_length` I needed to fix myself.
 

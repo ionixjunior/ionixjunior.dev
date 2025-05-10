@@ -23,15 +23,15 @@ The first 12 days were dedicated to Swift basics, but even with seemingly simple
 
 When working with large numbers, you can use underscores as thousands separators. This doesn't change the number's value; it just makes it easier to read.
 
-{%- highlight swift -%}
+```swift
 var balance = 10_000_000
-{%- endhighlight -%}
+```
 
 ### Exiting Multiple Loops
 
 If you have multiple nested loops, you can name each loop to create a `break` condition for exiting. It's a good alternative to using `goto` (remember those? 😅).
 
-{%- highlight swift -%}
+```swift
 outerLoop: for i in 1...5 {
     for j in 1...5 {
         print ("\ (i) - \(j)")
@@ -41,7 +41,7 @@ outerLoop: for i in 1...5 {
         }
     }
 }        
-{%- endhighlight -%}
+```
 
 These might seem like small details, but I found them quite useful.
 

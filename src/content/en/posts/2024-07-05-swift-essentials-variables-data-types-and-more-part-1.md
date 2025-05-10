@@ -21,15 +21,15 @@ In the world of programming, we often need to store data. We have two primary to
 
 Variables are like labeled boxes in our code that hold data that can be modified. We use the `var` keyword to declare a variable:
 
-{%- highlight swift -%}
+```swift
 var name = "Laura"
-{%- endhighlight -%}
+```
 
 We can change the value of `name` at any point in our code:
 
-{%- highlight swift -%}
+```swift
 name = "Laura Smith"
-{%- endhighlight -%}
+```
 
 Now, `name` holds the value "Laura Smith".
 
@@ -37,9 +37,9 @@ Now, `name` holds the value "Laura Smith".
 
 Constants are like sealed containers. Once you define a constant, its value cannot be changed. We use the `let` keyword to declare a constant:
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
-{%- endhighlight -%}
+```
 
 This sets `name` to the value "Laura", and we cannot assign a different value to it later.
 
@@ -57,19 +57,19 @@ Think of data types as defining the "nature" or "essence" of the data. They tell
 
 The `String` data type represents textual information. It's used to store anything that can be written or displayed, such as names, addresses, sentences, and even code.
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
 var message = "Hello!"
-{%- endhighlight -%}
+```
 
 ### Int: For Whole Numbers
 
 The `Int` data type represents whole numbers (integers), such as 1, 10, 25, 1000, and so on. Integers are commonly used in counters, calculations, and for representing quantities.
 
-{%- highlight swift -%}
+```swift
 let age = 30
 var numberOfItems = 5
-{%- endhighlight -%}
+```
 
 ### Float, Double and Decimal: Representing Numbers with Precision
 
@@ -79,17 +79,17 @@ In Swift, we have three primary data types for representing numbers with decimal
 
 `Float` uses 32 bits of memory to store its value, offering a smaller range of values and less precision than `Double`. It's generally used when memory efficiency is a priority and lower precision is acceptable.
 
-{%- highlight swift -%}
+```swift
 let floatNumber: Float = 0.00001 
-{%- endhighlight -%}
+```
 
 #### Double: High Precision, Large Range
 
 `Double` is the most common choice for representing floating-point numbers in Swift. It provides a high degree of precision, making it suitable for calculations requiring a wide range of values. `Double` uses 64 bits of memory to store its value, which is twice the size of `Float`.
 
-{%- highlight swift -%}
+```swift
 let doubleNumber: Double = 0.00001
-{%- endhighlight -%}
+```
 
 #### Decimal: High Precision, Financial Calculations
 
@@ -97,9 +97,9 @@ let doubleNumber: Double = 0.00001
 
 To create a `Decimal` value, you can use the following syntax:
 
-{%- highlight swift -%}
+```swift
 let decimalNumber: Decimal = 0.00001
-{%- endhighlight -%}
+```
 
 #### Type Annotations
 
@@ -111,10 +111,10 @@ You can create a numeric value simply by creating a variable and assigning a val
 
 The `Bool` data type represents boolean values, which can be either `true` or `false`. Bools are fundamental for decision-making in your code, helping you create conditional statements and logical expressions.
 
-{%- highlight swift -%}
+```swift
 let isAdmin = true
 var hasError = false
-{%- endhighlight -%}
+```
 
 ## Arrays, Dictionaries, and Sets
 
@@ -124,11 +124,11 @@ So far, we've explored data types for individual values: strings, numbers, boole
 
 Arrays are ordered lists of elements of the same data type. Think of them as numbered boxes where you can store a collection of related items. You access elements in an array by their index, starting from zero.
 
-{%- highlight swift -%}
+```swift
 let cities = ["Barcelona", "London", "São Paulo"]
 print(cities[0]) // Output: Barcelona (first element)
 print(cities[2]) // Output: São Paulo (third element)
-{%- endhighlight -%}
+```
 
 Arrays are useful when you need an ordered list of elements of the same type.
 
@@ -136,11 +136,11 @@ Arrays are useful when you need an ordered list of elements of the same type.
 
 Dictionaries are unordered collections of key-value pairs. Each key is unique and maps to a corresponding value. Think of dictionaries like a real-world dictionary, where each word (key) has a definition (value).
 
-{%- highlight swift -%}
+```swift
 let userData = ["name": "Laura", "surname": "Smith", "city": "London"]
 print(userData["name"]) // Output: Optional("Laura")
 print(userData["city"]) // Output: Optional("London")
-{%- endhighlight -%}
+```
 
 Dictionaries are useful when you need to store and retrieve data based on unique keys.
 
@@ -148,10 +148,10 @@ Dictionaries are useful when you need to store and retrieve data based on unique
 
 Sets are unordered collections of unique elements. They don't allow duplicates, making them useful for checking membership and removing duplicates from a collection.
 
-{%- highlight swift -%}
+```swift
 let uniqueNames = Set(["Laura", "Josh", "Laura", "Marie", "Josh"])
 print(uniqueNames.count) // Output: 3 (duplicates removed)
-{%- endhighlight -%}
+```
 
 Sets are useful when you need to work with unique values or when you want to check for membership quickly - this structure is very fast.
 
@@ -161,7 +161,7 @@ Enums, short for enumerations, are a powerful way to define a custom type that r
 
 Think of enums as creating a vocabulary of specific terms related to a particular concept. For example, imagine you're building an app that handles order status. Instead of using raw integers like 0, 1, and 2, you can create an enum to represent the order states:
 
-{%- highlight swift -%}
+```swift
 enum OrderStatus {
     case pending
     case processing
@@ -169,14 +169,14 @@ enum OrderStatus {
     case delivered 
     case cancelled
 }
-{%- endhighlight -%}
+```
 
 Now, instead of using numbers, you can directly use the enum values:
 
-{%- highlight swift -%}
+```swift
 var orderStatus = OrderStatus.pending 
 print(orderStatus) // Output: OrderStatus.pending
-{%- endhighlight -%}
+```
 
 Enums improve readability. They make your code more self-documenting and easier to understand. They also enforce type safety, preventing you from accidentally assigning incorrect values.
 
@@ -186,46 +186,46 @@ Enums improve readability. They make your code more self-documenting and easier 
 
 An easy way to concatenate strings without using "+" is using interpolation:
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
 let surname = "Smith"
 print("The name of the winner is \(name) \(surname)!")
-{%- endhighlight -%}
+```
 
 ### Multi-line Strings
 
 Sometimes we need to create a multi-line string, and this is very easy in Swift. You just use triple quotes and write your string inside them. Just ensure that the triple quotes are declared on a different line from the string.
 
-{%- highlight swift -%}
+```swift
 var multilineMessage = """
 This is the multi-line message.
 You can add a lot of lines.
 Don't worry about it!
 """
-{%- endhighlight -%}
+```
 
 ### Bools and the Toggle Function
 
 When you create a variable, you can change its value later. So, we can create a bool value and change it using the `toggle` function.
 
-{%- highlight swift -%}
+```swift
 var isAdmin = false
 print(isAdmin) // Output: false
 
 isAdmin.toggle()
 print(isAdmin) // Output: true
-{%- endhighlight -%}
+```
 
 ### Dictionary Default
 
 As you can see in the dictionary example, when we access the key, we get an optional. This occurs because Swift can't ensure that there is a value in that key. Because of this, Swift gives us an optional. You can handle this using a property called `default`. This way you don't get an optional, and your code won't break if you handle the optional without careful.
 
-{%- highlight swift -%}
+```swift
 let userData = ["name": "Laura", "surname": "Smith", "city": "London"]
 print(userData["name"]) // Output: Optional("Laura")
 print(userData["name", default: "Unknown"]) // Output: Laura
 print(userData["nickname", default: "Unknown"]) // Output: Unknown
-{%- endhighlight -%}
+```
 
 ## Conclusion
 

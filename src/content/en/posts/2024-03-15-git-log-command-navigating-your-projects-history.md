@@ -16,7 +16,7 @@ The `git log` command provides a comprehensive view of your project's history, a
 
 To view the commit history of your project, simply enter `git log` in your terminal. This will display a chronological list of commits, starting with the most recent.
 
-{%- highlight bash -%}
+```bash
 git log
 
 commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
@@ -49,7 +49,7 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
     Initial commit
 
-{%- endhighlight -%}
+```
 
 The log presents each commit with detailed information, including the commit hash, author, date, and commit message. You can scroll through the log using your preferred text editor, or by pressing the spacebar to move forward and the "q" key to exit.
 
@@ -57,7 +57,7 @@ The log presents each commit with detailed information, including the commit has
 Git log offers various options to tailor the output to your needs. For instance, you can filter by author, search for specific changes, or format the output to include only essential details.
 
 Filtering only commits by "Jane Smith":
-{%- highlight bash -%}
+```bash
 git log --author="Jane Smith"
 
 commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
@@ -72,10 +72,10 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
     Initial commit
 
-{%- endhighlight -%}
+```
 
 Filtering only commits since February, 14 2024:
-{%- highlight bash -%}
+```bash
 git log --since="2024-02-14"
 
 commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
@@ -95,10 +95,10 @@ Author: John Doe <john@example.com>
 Date:   Mon Feb 14 12:09:48 2024 -0500
 
     Fix bug in authentication
-{%- endhighlight -%}
+```
 
 Filtering only commits until February, 14 2024:
-{%- highlight bash -%}
+```bash
 git log --until="2024-02-14"
 
 commit 87fc9d3e493e5f342e1a8d1a3b0ec110d57e0512
@@ -125,10 +125,10 @@ Date:   Sat Feb 12 09:30:51 2024 -0500
 
     Initial commit
 
-{%- endhighlight -%}
+```
 
 Filtering only commits that mention "authentication" on commit message:
-{%- highlight bash -%}
+```bash
 git log --grep="authentication"
 
 commit 9a4d8fbf9c0e190e7f142bc9c48a6b91575ab228
@@ -136,12 +136,12 @@ Author: John Doe <john@example.com>
 Date:   Mon Feb 14 12:09:48 2024 -0500
 
     Fix bug in authentication
-{%- endhighlight -%}
+```
 
 ## Visualizing history
 For a more visual representation of your project's history, you can use tools like `git log --graph`, which displays commits as a graph, showing branching and merging.
 
-{%- highlight bash -%}
+```bash
 git log --graph
 
 *   commit e6b3812b55d039f525f7d2fc07ae22f3c0260c7e (HEAD -> main, origin/main)
@@ -174,11 +174,11 @@ git log --graph
   
       Initial commit
 
-{%- endhighlight -%}
+```
 
 If you want to see a simpler way, with only one line per commit, you can specify the `--oneline` parameter:
 
-{%- highlight bash -%}
+```bash
 git log --graph --oneline
 
 * e6b3812 Merge pull request #123 from user/feature-branch
@@ -188,11 +188,11 @@ git log --graph --oneline
 |/
 * a3c8f1d Update documentation
 * 7b7ae9f Initial commit
-{%- endhighlight -%}
+```
 
 This approach is commonly used on IDEs to show the log of the repository. Also, you can specify what type of information you want to see in the log. Use the `--format` parameter to specify the data that you want. To do this, you'll use some placeholders to select what information to show. The more common are the abbreviated commit hash (%h), the author name (%an), the author date (%aD), and the commit title (%s).
 
-{%- highlight bash -%}
+```bash
 git log --graph --format='%h - %an - %aD - %s'
 
 * e6b3812 - John Doe - Tue, 15 Feb 2024 10:21:37 -0500 - Merge pull request #123 from user/feature-branch
@@ -203,7 +203,7 @@ git log --graph --format='%h - %an - %aD - %s'
 * a3c8f1d - John Doe - Sun, 13 Feb 2024 18:15:02 -0500 - Update documentation
 * 7b7ae9f - Jane Smith - Sat, 12 Feb 2024 09:30:51 -0500 - Initial commit
 
-{%- endhighlight -%}
+```
 
 You can see all the options on [Git pretty formats documentation][git_pretty_format_doc].
 

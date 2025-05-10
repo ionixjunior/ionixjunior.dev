@@ -108,11 +108,11 @@ Aqui podemos mostrar a mágica em tempo real das pré-visualizações do SwiftUI
 
 Esta prévia é muito interessante. Como você pode ver na imagem acima, ela aparece quando você digita o código `#Preview`, assim:
 
-{%- highlight swift -%}
+```swift
 #Preview {
     ContentView()
 }
-{%- endhighlight -%}
+```
 
 Este código não será enviado quando você publicar seu aplicativo na Apple Store, ele só funciona em desenvolvimento. Uma coisa legal que descobri recentemente é que ele também funciona com UIKit. Ajuda muito a prototipar alguma tela ou componente de interface do usuário. Experimente!
 
@@ -159,7 +159,7 @@ Agora que você configurou seu projeto SwiftUI e entende o básico do Xcode, vam
 
 Agora estou vendo que "Sample App" não foi um bom nome para o aplicativo, porque o SwiftUI cria um arquivo chamado "nome do seu aplicativo" + "App". Então, meu arquivo ficou `Sample_AppApp.swift` 😂. Mas tudo bem, sem problemas.
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 @main
@@ -170,7 +170,7 @@ struct Sample_AppApp: App {
         }
     }
 }
-{%- endhighlight -%}
+```
 
 O atributo `@main` acima da declaração da estrutura pode parecer sutil, mas é crucial. Ele sinaliza ao Xcode que essa estrutura, `Sample_AppApp`, serve como o ponto de entrada do seu aplicativo. Pense nisso como a "porta da frente" onde a execução começa.
 
@@ -188,7 +188,7 @@ Na próxima seção, vamos nos aprofundar no `ContentView.swift` e entender como
 
 Vamos nos aprofundar no `ContentView.swift`. Abra-o e você verá uma estrutura semelhante a esta:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct ContentView: View {
@@ -211,7 +211,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-{%- endhighlight -%}
+```
 
 A linha `struct ContentView: View` declara um struct chamado `ContentView` que está em conformidade com o protocolo `View`. É assim que você cria todos os elementos visuais no SwiftUI.
 

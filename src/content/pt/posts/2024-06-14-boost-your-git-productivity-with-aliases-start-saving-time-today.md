@@ -26,23 +26,23 @@ Criar atalhos é muito simples. Você pode configurá-los globalmente, tornando-
 
 O comando principal para criar atalhos é:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.ATALHO COMANDO
-{%- endhighlight -%}
+```
 
 Substitua `ATALHO` pelo atalho que você deseja e `COMANDO` pelo comando Git que você irá utilizar. Vamos criar um atalho chamado "st" que representará `git status`:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.st status
-{%- endhighlight -%}
+```
 
 Agora, sempre que você digitar `git st` no seu terminal, o Git executará `git status` por debaixo dos panos.
 
 Isso foi muito simples, mas você pode criar comandos mais complexos, com muitos parâmetros. Deixe-me mostrar um exemplo sobre o comando "log". Gosto muito de ver o log no gráfico e em apenas uma linha, então criei um atalho para isso:
 
-{%- highlight sh -%}
+```sh
 git config --global alias.lg "log --oneline --graph"
-{%- endhighlight -%}
+```
 
 Este atalho definitivamente economiza bastante tempo! Se você preferir, pode alterar seu atalho manualmente editando o arquivo `~/.gitconfig`. Além disso, você pode digitar `git config --list | grep alias` para ver todos os atalhos que você já configurou em sua máquina.
 
@@ -91,7 +91,7 @@ Aqui estão meus atalhos favoritos que ajudam a otimizar meu fluxo de trabalho. 
 
 Acredite em mim: estes simples atalhos me ajudam muito diariamente a trabalhar com o Git. Deixo aqui o conteúdo do meu arquivo `~/.gitconfig` referente a configuração dos atalhos:
 
-{%- highlight gitconfig -%}
+```gitconfig
 
 [alias]
 	st = status
@@ -113,7 +113,7 @@ Acredite em mim: estes simples atalhos me ajudam muito diariamente a trabalhar c
 	lgd = log --pretty=format:'%h %ad | %s%d [%an]' --date=short
 	sh = "!f() { GIT_EXTERNAL_DIFF=difft git show -p --ext-diff $@; }; f"
 
-{%- endhighlight -%}
+```
 
 ## Conclusão
 

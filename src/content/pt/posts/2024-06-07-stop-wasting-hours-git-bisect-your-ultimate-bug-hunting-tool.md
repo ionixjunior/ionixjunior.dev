@@ -57,19 +57,19 @@ Agora, identifique o commit em que o bug está presente. Pode ser seu último co
 
 Abra seu terminal e navegue até seu repositório Git. Execute o seguinte comando:
 
-{%- highlight sh -%}
+```sh
 git bisect start
-{%- endhighlight -%}
+```
 
 ### 4. Informe o Git Bisect Sobre os Commits “Bom” e “Ruim”
 
 Execute esses comandos para marcar seus commits "bom" e "ruim":
 
-{%- highlight sh -%}
+```sh
 git bisect good hash-do-commit-bom
 
 git bisect bad hash-do-commit-ruim
-{%- endhighlight -%}
+```
 
 Substitua `hash-do-commit-bom` e `hash-do-commit-ruim` pelos hashes de commit reais que você identificou nas etapas 1 e 2.
 
@@ -81,15 +81,15 @@ O Git Bisect agora escolherá um commit em algum lugar entre seus commits "bom" 
 
 Se o bug estiver presente no commit sugerido, execute:
 
-{%- highlight sh -%}
+```sh
 git bisect bad
-{%- endhighlight -%}
+```
 
 Se o bug não estiver presente no commit sugerido, execute:
 
-{%- highlight sh -%}
+```sh
 git bisect good
-{%- endhighlight -%}
+```
 
 O Git Bisect então escolherá outro commit com base em seu feedback e repetirá o processo.
 

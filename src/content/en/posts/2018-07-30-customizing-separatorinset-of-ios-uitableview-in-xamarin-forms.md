@@ -50,7 +50,7 @@ Before discussing "how to solve this," I just want to make it clear that this is
 
 Alright, so how do we "solve" it? Simple, just create a renderer for the **ViewCell** and override the **GetCell** method to manually customize the **SeparatorInset** attribute of the **UITableView**, as seen below:
 
-{%- highlight cs -%}
+```cs
 using Core.Controls;
 using Core.iOS.Renderers;
 using UIKit;
@@ -70,7 +70,7 @@ namespace Core.iOS.Renderers
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Note that the value inserted for the margin was set manually and will depend on the size of the image contained in the item.
 
@@ -78,7 +78,7 @@ Since it's a **ViewCell** renderer, you probably won't want to configure this va
 
 Below is the custom control:
 
-{%- highlight cs -%}
+```cs
 using Xamarin.Forms;
 
 namespace Core.Controls
@@ -87,11 +87,11 @@ namespace Core.Controls
     {
     }
 }
-{%- endhighlight -%}
+```
 
 Below is the screen:
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     ...
@@ -116,7 +116,7 @@ Below is the screen:
         </ListView>
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
 Now, the final result looks much better:
 

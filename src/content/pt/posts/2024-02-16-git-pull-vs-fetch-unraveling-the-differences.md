@@ -32,7 +32,7 @@ Agora que entendemos as diferenças, vamos falar sobre o uso.
 
 Suponha que precisemos atualizar o branch principal do repositório em que estamos trabalhando. Vamos fazer isso usando o `git fetch`.
 
-{%- highlight sh -%}
+```sh
 git fetch origin main
 
 remote: Enumerating objects: 220, done.
@@ -44,11 +44,11 @@ Resolving deltas: 100% (128/128), completed with 53 local objects.
 From github.com:ionixjunior/BookTracking
  * branch                main     -> FETCH_HEAD
    0904a0ab2..fe8a56b4e  main     -> origin/main
-{%- endhighlight -%}
+```
 
 Este comando buscará todas as alterações do branch principal. Mas, se preferir, você pode buscar todas as alterações no repositório inteiro. Isso pode ser útil para obter novos branches ou tags. Para fazer isso, remova o nome da branch.
 
-{%- highlight sh -%}
+```sh
 git fetch origin
 
 remote: Enumerating objects: 202, done.
@@ -64,21 +64,21 @@ From github.com:ionixjunior/BookTracking
  * [new tag]             2024.02.03.4   -> 2024.02.03.4
  * branch                main           -> FETCH_HEAD
    0904a0ab2..fe8a56b4e  main           -> origin/main
-{%- endhighlight -%}
+```
 
 Lembre-se de que isso não mescla as alterações no repositório local. Para mesclar as alterações, podemos usar o comando de mesclagem para sincronizar as alterações locais com as alterações remotas que já buscamos. Cruze os dedos para não ver uma mensagem de conflito ao fazer merge 😅
 
 O comando `git pull` vai além. Ele faz as operações de busca e mesclagem, conforme já foi dito.
 
-{%- highlight sh -%}
+```sh
 git pull origin main
-{%- endhighlight -%}
+```
 
 Além disso, você pode executar `git pull` para todo o repositório.
 
-{%- highlight sh -%}
+```sh
 git pull origin
-{%- endhighlight -%}
+```
 
 É simples, não é? Esses comandos não têm nenhum mistério. Mas talvez você esteja pensando agora: Quando devo usar cada um deles? Infelizmente, não existe uma regra. Precisamos pensar sobre o que queremos fazer sempre que precisarmos atualizar nosso repositório. Às vezes, será seguro executar o comando `git pull` se apenas precisarmos atualizar o branch principal, e em outras vezes será melhor executar o `git fetch` para ver o que foi alterado e fazer a mesclagem com cuidado.
 

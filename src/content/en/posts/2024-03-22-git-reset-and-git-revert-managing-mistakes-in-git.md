@@ -19,45 +19,45 @@ One of the primary functions of Git reset is to move the HEAD pointer to a diffe
 ### Moving HEAD to a specific commit
 Git reset moves the HEAD pointer to the specified commit, resetting the staging area and working directory to match the state of that commit. Changes made after this commit will be unstaged. All the files that you have changed between the pointer you move and the pointer you were before will be unstaged.
 
-{%- highlight bash -%}
+```bash
 git reset <commit-hash>
-{%- endhighlight -%}
+```
 
 ### Soft reset
 Soft reset moves the HEAD pointer to the specified commit while preserving changes in the staging area. This allows you to recommit the changes or make further modifications before committing.
 
-{%- highlight bash -%}
+```bash
 git reset --soft <commit-hash>
-{%- endhighlight -%}
+```
 
 ### Hard reset
 A hard reset moves the HEAD pointer to the specified commit and resets both the staging area and working directory to match. Any changes made after this commit will be permanently discarded.
 
-{%- highlight bash -%}
+```bash
 git reset --hard <commit-hash>
-{%- endhighlight -%}
+```
 
 Hard reset with HEAD as the argument discards all local changes and resets the working directory to match the current commit. This is useful for reverting to a clean state without preserving any modifications.
 
-{%- highlight bash -%}
+```bash
 git reset --hard HEAD
-{%- endhighlight -%}
+```
 
 ### Unstaging changes
 Suppose you already put some changes into staged area and want to move to the unstaged area. The following command unstages a specified file, removing it from the staging area while preserving the changes in the working directory.
 
-{%- highlight bash -%}
+```bash
 git reset HEAD <file>
-{%- endhighlight -%}
+```
 
 Also, you can omit the file name to apply the command for all staged files.
 
 ## Understanding git revert
 While `git reset` modifies the commit history by moving the HEAD and branch references to a specified commit, `git revert` takes a different approach. Instead of altering the commit history, `git revert` creates a new commit that undoes the changes introduced by a specified commit.
 
-{%- highlight bash -%}
+```bash
 git revert <commit-hash>
-{%- endhighlight -%}
+```
 
 When you run the command above, Git will create a new commit that inversely applies the changes made by a specified commit. This effectively undoes the changes introduced by that commit without altering the commit history. It's important to note that `git revert` operates on the working directory and staging area, creating a new commit with changes that reverse those introduced by a specified commit.
 
@@ -67,15 +67,15 @@ Unlike `git reset`, which can be used to rewind the commit history, `git revert`
 
 You can revert more than one commit at a time.
 
-{%- highlight bash -%}
+```bash
 git revert <commit-hash-1> <commit-hash-2>
-{%- endhighlight -%}
+```
 
 Or a range of commits, from oldest to newest.
 
-{%- highlight bash -%}
+```bash
 git revert <oldest-commit-hash> <newest-commit-hash>
-{%- endhighlight -%}
+```
 
 ## Git reset vs. git revert: choosing the right tool
 For those who prefer visual aids, here's a table highlighting key distinctions between the commands.

@@ -20,11 +20,11 @@ Para simplificar: protocolos são como interfaces. Não tenho certeza porque a A
 
 Criar um protocolo é muito simples. Basta usar a palavra-chave `protocol` e escolher um nome. Por convenção, escolhi adicionar o sufixo `Protocol`. Pensando agora, é meio redundante. Acho que ainda estou um pouco contagiado com as convenções do DotNet. Enfim, vamos ver:
 
-{%- highlight swift -%}
+```swift
 protocol SearchProtocol {
     func search(text: String)
 }
-{%- endhighlight -%}
+```
 
 Este código define um protocolo chamado `SearchProtocol`. Este protocolo exige que quem o implementar, implemente uma função `search(text:)`, que presumivelmente executaria algum tipo de operação de pesquisa usando o texto fornecido como entrada. Então, como o usamos?
 
@@ -32,19 +32,19 @@ Este código define um protocolo chamado `SearchProtocol`. Este protocolo exige 
 
 Aqui está como você pode usar este protocolo:
 
-{%- highlight swift -%}
+```swift
 struct YourStruct: SearchProtocol {
     func search(text: String) {
         print("Pesquisando por: \(text)")
     }
 }
-{%- endhighlight -%}
+```
 
 `YourStruct` está em conformidade com `SearchProtocol` e fornece sua própria implementação para a função `search(text:)`. Como mencionado anteriormente, é o mesmo conceito de interfaces. 
 
 Isso é muito importante no iOS, então vamos explorar um exemplo um pouco diferente. Suponha que precisemos criar um pequeno componente para representar algum tipo de elemento de interface de usuário de pesquisa, como este:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchComponent: View {
@@ -61,11 +61,11 @@ struct SearchComponent: View {
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Aqui temos uma visualização com um `TextField` e estamos monitorando as alterações usando o evento `onChange` e capturando o texto digitado dentro dele usando a função `print`. Funciona. Agora podemos usá-lo em uma tela, assim:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchView: View {
@@ -76,13 +76,13 @@ struct SearchView: View {
         }
     }
 }
-{%- endhighlight -%}
+```
 
 O componente é exibido corretamente, mas como podemos obter o valor digitado dentro do `TextField`? Podemos usar protocolos e delegates. É muito comum no iOS usarmos essa abordagem para obter uma implementação desacoplada. Em vez da visualização conhecer todos os detalhes sobre o componente, nós apenas o tornamos compatível com o protocolo `SearchComponent` e o usamos. Vamos ver como.
 
 Coloquei o protocolo próximo ao componente, criei uma propriedade opcional no componente e substituí a chamada da função `print` pela chamada da função de protocolo por meio do delegate.
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 protocol SearchProtocol {
@@ -105,11 +105,11 @@ struct SearchComponent: View {
         // restante do código
     }
 }
-{%- endhighlight -%}
+```
 
 Agora posso voltar para a visualização, torná-la compatível com o protocolo e passar o parâmetro delegate ao criar a instância do componente.
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 struct SearchView: View, SearchProtocol {
@@ -125,7 +125,7 @@ struct SearchView: View, SearchProtocol {
         print(text)
     }
 }
-{%- endhighlight -%}
+```
 
 Agora podemos obter os valores digitados no componente aqui na tela, mantendo baixo acoplamento entre eles.
 
@@ -145,13 +145,13 @@ Em Swift, é muito simples criar uma. Você usa a palavra-chave `extension` segu
 2. Usar `!suaVariavelString.isEmpty`.
 3. Criar uma extensão, escolhendo uma das opções acima.
 
-{%- highlight swift -%}
+```swift
 extension String {
     var isNotEmpty: Bool {
         return self.isEmpty == false
     }
 }
-{%- endhighlight -%}
+```
 
 Agora você pode usar `suaVariavelString.isNotEmpty`. Esta é uma propriedade de extensão, mas você também pode criar funções de extensão. Funciona da mesma forma, mesmo para tipos primitivos, como você pode ver acima.
 
@@ -165,11 +165,11 @@ Essa "nulabilidade" é incrivelmente valiosa. Por exemplo, ao buscar dados de um
 
 Considere uma função que tenta converter uma string em um inteiro:
 
-{%- highlight swift -%}
+```swift
 func convertToInt(from text: String) -> Int? {
     return Int(text)
 }
-{%- endhighlight -%}
+```
 
 O tipo de retorno `Int?` significa que esta função pode retornar um inteiro ou pode retornar `nil` se a conversão falhar (por exemplo, ao tentar converter "hello" em um inteiro). Vamos explorar como acessar com segurança um valor opcional.
 
@@ -177,14 +177,14 @@ O tipo de retorno `Int?` significa que esta função pode retornar um inteiro ou
 
 Para acessar com segurança o valor potencial dentro de um opcional, você usa mecanismos de "desempacotamento". Uma maneira comum é usar `if let`:
 
-{%- highlight swift -%}
+```swift
 let userInput = "123"
 if let number = convertToInt(from: userInput) {
     print("O número é \(number)")
 } else {
     print("Entrada inválida")
 }
-{%- endhighlight -%}
+```
 
 Aqui, `number` só recebe um valor se `convertToInt` for bem-sucedido. Caso contrário, o bloco `else` é executado, evitando falhas ao tentar usar um valor inexistente.
 
@@ -192,7 +192,7 @@ Aqui, `number` só recebe um valor se `convertToInt` for bem-sucedido. Caso cont
 
 Você pode verificar a "nulabilidade" de diferentes maneiras. Por exemplo, você pode usar `guard let`. Essa abordagem é melhor de usar quando você precisa criar uma instrução de retorno antecipado.
 
-{%- highlight swift -%}
+```swift
 let userInput = "123"
 
 func yourFunction() {
@@ -205,7 +205,7 @@ func yourFunction() {
 }
 
 yourFunction()
-{%- endhighlight -%}
+```
 
 ### Nil Coalescing
 
@@ -213,11 +213,11 @@ Nil Coalescing fornece uma maneira concisa e elegante de lidar com valores opcio
 
 Aqui está um exemplo simples:
 
-{%- highlight swift -%}
+```swift
 let userInput = "hello"
 let convertedValue = convertToInt(from: userInput)
 print(convertedValue ?? "valor vazio")
-{%- endhighlight -%}
+```
 
 Como resultado, a função `print` exibirá "valor vazio" porque `convertedValue` é um opcional sem valor.
 
@@ -225,7 +225,7 @@ Como resultado, a função `print` exibirá "valor vazio" porque `convertedValue
 
 O encadeamento opcional, ou "optional chaining", atua como uma proteção cuidadosa quando você está acessando dados que podem estar ausentes no seu código Swift. Imagine que você está seguindo um mapa do tesouro com instruções como "Vá até o carvalho velho, verifique embaixo da pedra solta e você encontrará o prêmio!" Mas e se a árvore não estiver lá, a pedra estiver faltando ou o prêmio já tiver sido levado? No código, quando tentamos acessar algo que não existe, recebemos um erro fatal, mas usar o encadeamento opcional impede que isso aconteça. Vejamos o exemplo anterior, onde mostrei os protocolos:
 
-{%- highlight swift -%}
+```swift
 import SwiftUI
 
 protocol SearchProtocol {
@@ -248,7 +248,7 @@ struct SearchComponent: View {
         // restante do código
     }
 }
-{%- endhighlight -%}
+```
 
 Na linha `delegate?.search(text: newValue)`, estamos acessando o método `search` da propriedade `delegate`, mas ele só será chamado se a propriedade realmente contiver um valor.
 

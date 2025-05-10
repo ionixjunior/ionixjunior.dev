@@ -33,13 +33,13 @@ Por que é importante pensar sobre isso? Tecnicamente, agrupar todas as alteraç
 
 Suponha que eu precise alterar o nome de uma fonte em um arquivo específico do projeto. Enquanto faço isso, encontro alguns comentários dentro do arquivo que decido remover. Agora, o que devo escrever no título do commit? "Alterar estilo da fonte e remover comentários desnecessários"? Errado. Combinar todas essas alterações em um commit pode levar à confusão, pois pode obscurecer a distinção entre as mudanças primárias e secundárias. Vamos explorar como podemos separar essas alterações em dois commits distintos.
 
-{%- highlight bash -%}
+```bash
 git add -p
-{%- endhighlight -%}
+```
 
 Quando você faz isso, o Git mostrará cada alteração separadamente em trechos:
 
-{%- highlight diff -%}
+```diff
 diff --git a/BookTracking/AppDelegate.swift b/BookTracking/AppDelegate.swift
 index 920883f..f174577 100644
 --- a/BookTracking/AppDelegate.swift
@@ -54,11 +54,11 @@ index 920883f..f174577 100644
          UILabel.appearance().font = UIFont(name: fontName, size: 12)
          
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
-{%- endhighlight -%}
+```
 
 O Git está nos informando que encontrou dois trechos, e este é o primeiro. Eu apenas mudei o nome da fonte "Geordia-Bold" para "Geordia". Este é o primeiro commit que quero fazer. Mas como faço isso? Observe que na última linha existem muitas opções (y,n,q,a,d,j,J,g,/,e,?). Cada uma delas é responsável por realizar alguma ação. Escolhi a última para ver a ajuda do Git com esses comandos. Basta digitar `?`:
 
-{%- highlight diff -%}
+```diff
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? ?
 y - stage this hunk
 n - do not stage this hunk
@@ -81,7 +81,7 @@ e - manually edit the current hunk
          UILabel.appearance().font = UIFont(name: fontName, size: 12)
          
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]?
-{%- endhighlight -%}
+```
 
 Agora podemos ver o que cada opção faz:
 
@@ -99,7 +99,7 @@ Agora podemos ver o que cada opção faz:
 
 Há muitas opções. O que preciso fazer? Neste caso, estou focando na alteração do nome da fonte. Então vou aceitar este trecho apenas digitando `y`. Agora, o Git nos mostra o segundo trecho. Este é o trecho de código que removi dos comentários. Vou deixar isso para outro commit. Vou descartá-lo digitando `n`.
 
-{%- highlight diff -%}
+```diff
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
 @@ -34,15 +34,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      // MARK: UISceneSession Lifecycle
@@ -118,11 +118,11 @@ Há muitas opções. O que preciso fazer? Neste caso, estou focando na alteraç�
  
  
 (2/2) Stage this hunk [y,n,q,a,d,K,g,/,s,e,?]? n
-{%- endhighlight -%}
+```
 
 Agora terminamos! Vamos verificar o status do repositório para ver o que está acontecendo:
 
-{%- highlight bash -%}
+```bash
 git status
 
 On branch main
@@ -134,7 +134,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   BookTracking/AppDelegate.swift
-{%- endhighlight -%}
+```
 
 Observe que o arquivo `AppDelegate.swift` está localizado tanto na área de preparação quanto fora da área de preparação. Isso é possível porque selecionamos apenas um trecho do arquivo para realizar o commit.
 
@@ -145,7 +145,7 @@ Vamos explorar uma abordagem alternativa, utilizando um comando mais robusto.
 ### Preparação usando o modo interativo
 O modo interativo é mais poderoso porque fornece um controle mais granular sobre a preparação. Adicionei um novo arquivo ao projeto, e agora vou mostrar o `git status`.
 
-{%- highlight bash -%}
+```bash
 git status
 
 On branch main
@@ -160,11 +160,11 @@ Untracked files:
 	BookTracking/Components/IconViewComponent.swift
 
 no changes added to commit (use "git add" and/or "git commit -a")
-{%- endhighlight -%}
+```
 
 Observe o arquivo não rastreado no final da mensagem do Git. Se eu executar `git add -p`, este arquivo não será mostrado. Mas usando o modo interativo, teremos a possibilidade de trabalhar com ele. Isso ocorre porque `git add -p` só funciona analisando as alterações nos arquivos do repositório, não em novos arquivos ainda não adicionados. No entanto, usar o modo interativo não é um problema porque nos permite adicionar este arquivo ao repositório.
 
-{%- highlight diff -%}
+```diff
 git add -i
 
            staged     unstaged path
@@ -176,7 +176,7 @@ git add -i
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
 
-{%- endhighlight -%}
+```
 
 No início da mensagem, o "status" é visível. Abaixo, você encontrará comandos disponíveis, cada um associado a um número. Você pode então executar o comando desejado digitando seu número no diálogo "What now" na parte inferior. Agora, vamos aprofundar nas opções:
 
@@ -191,27 +191,27 @@ No início da mensagem, o "status" é visível. Abaixo, você encontrará comand
 
 O status (opção 1) é o que estamos vendo agora. Vamos explorar a opção 2 para adicionar as alterações à área de preparação. Em "What now" eu digitei 2.
 
-{%- highlight diff -%}
+```diff
 What now> 2
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
   2:    unchanged        +1/-6 BookTracking/AppDelegate.swift
 Update>> 
-{%- endhighlight -%}
+```
 
 Agora o Git mostra dois arquivos que eu alterei e pergunta qual deles eu quero fazer a ação. Observe que os arquivos são enumerados, e precisamos usar isso para informar no diálogo "Update". Vou escolher o arquivo `AppDelegate.swift`, enumerado como o número 2.
 
-{%- highlight diff -%}
+```diff
 Update>> 2   
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
 * 2:    unchanged        +1/-6 BookTracking/AppDelegate.swift
 Update>> 
-{%- endhighlight -%}
+```
 
 O Git exibe o mesmo conteúdo e repete a pergunta, mas observe que o arquivo selecionado tem um asterisco. Você pode adicionar mais arquivos, mas por enquanto, vou apenas pressionar "enter" para concluir o processo.
 
-{%- highlight diff -%}
+```diff
 Update>> 
 updated 1 path
 
@@ -219,11 +219,11 @@ updated 1 path
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 O Git nos informou que atualizou um caminho e forneceu os comandos mais uma vez. Verificar o status atual revelará alterações na tabela.
 
-{%- highlight diff -%}
+```diff
 What now> 1
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
@@ -233,20 +233,20 @@ What now> 1
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 Observe que na coluna "staged", o arquivo `AppDelegate.swift` contém a discriminação das alterações: uma linha adicionada ou alterada e seis removidas. Você pode ver o que está na área de preparação usando a opção 6 (diff).
 
-{%- highlight diff -%}
+```diff
 What now> 6
            staged     unstaged path
   1:        +1/-6      nothing BookTracking/AppDelegate.swift
 Review diff>>
-{%- endhighlight -%}
+```
 
 Novamente, o Git nos mostrará os arquivos preparados, e precisamos escolher um deles para ver a diferença. Vamos escolher o arquivo número 1 no diálogo "Review diff".
 
-{%- highlight diff -%}
+```diff
 Review diff>> 1
 diff --git a/BookTracking/AppDelegate.swift b/BookTracking/AppDelegate.swift
 index 920883f..f174577 100644
@@ -282,29 +282,29 @@ index 920883f..f174577 100644
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 O Git nos mostra todas as alterações que estão na área de preparação. Vamos explorar outra opção. Se você quiser descartar essas alterações para a área de preparação, pode usar a ação de reverter, que é a opção 3.
 
-{%- highlight diff -%}
+```diff
 What now> 3
            staged     unstaged path
   1:        +1/-6      nothing BookTracking/AppDelegate.swift
 Revert>> 
-{%- endhighlight -%}
+```
 
 Novamente, o Git nos perguntará quais arquivos queremos reverter. Vou selecionar o arquivo número 1 para continuar.
 
-{%- highlight diff -%}
+```diff
 Revert>> 1
            staged     unstaged path
 * 1:        +1/-6      nothing BookTracking/AppDelegate.swift
 Revert>> 
-{%- endhighlight -%}
+```
 
 Verifique se o arquivo que você escolheu contém o asterisco, e se não houver outro arquivo para reverter, basta pressionar "enter".
 
-{%- highlight diff -%}
+```diff
 Revert>> 
 reverted 1 path
 
@@ -312,11 +312,11 @@ reverted 1 path
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 O Git nos disse que reverteu um arquivo. Vamos verificar o status para ver o que está acontecendo.
 
-{%- highlight diff -%}
+```diff
 What now> 1
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
@@ -326,31 +326,31 @@ What now> 1
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 Agora tudo está como era antes!
 
 Eu falei sobre arquivos não rastreados, certo? Vamos explorar a opção 4 para vê-la em ação.
 
-{%- highlight diff -%}
+```diff
 What now> 4
            staged     unstaged path
   1: BookTracking/Components/IconViewComponent.swift
 Add untracked>> 
-{%- endhighlight -%}
+```
 
 O modo interativo exibe os arquivos não rastreados. Eu tenho apenas um novo arquivo neste projeto, mas seu projeto pode ter vários arquivos. Escolha os arquivos que você deseja adicionar à área de preparação. No meu caso, é o arquivo 1.
 
-{%- highlight diff -%}
+```diff
 Add untracked>> 1   
            staged     unstaged path
 * 1: BookTracking/Components/IconViewComponent.swift
 Add untracked>> 
-{%- endhighlight -%}
+```
 
 Verifique se seus arquivos foram selecionados corretamente e pressione "enter".
 
-{%- highlight diff -%}
+```diff
 Add untracked>> 
 added 1 path
 
@@ -358,11 +358,11 @@ added 1 path
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 O Git nos disse que um arquivo foi adicionado. Vamos verificar o status para ver o que está acontecendo.
 
-{%- highlight diff -%}
+```diff
 What now> 1
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
@@ -373,33 +373,33 @@ What now> 1
   1: status	  2: update	  3: revert	  4: add untracked
   5: patch	  6: diff	  7: quit	  8: help
 What now> 
-{%- endhighlight -%}
+```
 
 Agora temos o novo arquivo na área de preparação. Funciona!
 
 Vamos explorar mais uma opção: O patch. Esta é a opção 5 e é o mesmo que `git add -p`. Vamos ver:
 
-{%- highlight diff -%}
+```diff
 What now> 5
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
   2:    unchanged        +1/-6 BookTracking/AppDelegate.swift
 Patch update>> 
-{%- endhighlight -%}
+```
 
 Primeiro, selecione seus arquivos para aplicar o patch. Vou escolher o arquivo 2.
 
-{%- highlight diff -%}
+```diff
 Patch update>> 2
            staged     unstaged path
   1:    unchanged        +4/-0 BookTracking.xcodeproj/project.pbxproj
 * 2:    unchanged        +1/-6 BookTracking/AppDelegate.swift
 Patch update>> 
-{%- endhighlight -%}
+```
 
 Verifique se o arquivo foi selecionado e pressione "enter" para confirmar.
 
-{%- highlight diff -%}
+```diff
 Patch update>>     
 diff --git a/BookTracking/AppDelegate.swift b/BookTracking/AppDelegate.swift
 index 920883f..f174577 100644
@@ -415,7 +415,7 @@ index 920883f..f174577 100644
          UILabel.appearance().font = UIFont(name: fontName, size: 12)
          
 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
-{%- endhighlight -%}
+```
 
 Agora, observe o mesmo processo da seção anterior deste post. Nada muda. Aceite ou negue os trechos conforme necessidade. No final, você será redirecionado para os comandos do modo interativo.
 
@@ -427,7 +427,7 @@ Usando o modo interativo, podemos reverter alguns arquivos da área de preparaç
 
 Assim como posso adicionar arquivos à area de preparação, também posso removê-los. Se você digitar `git status`, poderá ver a dica do Git sobre como fazer isso. Vamos conferir.
 
-{%- highlight diff -%}
+```diff
 git status      
 
 On branch main
@@ -441,17 +441,17 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   BookTracking.xcodeproj/project.pbxproj
 	modified:   BookTracking/AppDelegate.swift
-{%- endhighlight -%}
+```
 
 Veja as dicas do Git acima dos nomes dos arquivos. Vamos remover da área de preparação as alterações no arquivo `AppDelegate.swift`.
 
-{%- highlight diff -%}
+```diff
 git restore --staged BookTracking/AppDelegate.swift
-{%- endhighlight -%}
+```
 
 O Git não mostra nada para nós. Vamos verificar o status para ver o que está acontecendo.
 
-{%- highlight diff -%}
+```diff
 git status                                         
 On branch main
 Changes to be committed:
@@ -463,17 +463,17 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   BookTracking.xcodeproj/project.pbxproj
 	modified:   BookTracking/AppDelegate.swift
-{%- endhighlight -%}
+```
 
 Agora podemos ver que o arquivo `AppDelegate.swift` voltou para os arquivos não confirmados. Ótimo! Mas o que acontece se usarmos o mesmo comando sem o parâmetro `--staged`? Vamos ver.
 
-{%- highlight diff -%}
+```diff
 git restore BookTracking/AppDelegate.swift
-{%- endhighlight -%}
+```
 
 E então o status:
 
-{%- highlight diff -%}
+```diff
 git status                                
 On branch main
 Changes to be committed:
@@ -484,7 +484,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
 	modified:   BookTracking.xcodeproj/project.pbxproj
-{%- endhighlight -%}
+```
 
 Oh não! Perdi minhas alterações! Sem o parâmetro `--staged`, o Git descartará as alterações na área não preparada e será impossível recuperar qualquer coisa. Tenha cuidado com esses comandos para não perder seu trabalho árduo.
 

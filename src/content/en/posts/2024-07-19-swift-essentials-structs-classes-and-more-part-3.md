@@ -21,20 +21,20 @@ Think of structs as "boxes" that hold related information. Each box has specific
 
 To define a struct, we use the `struct` keyword followed by the struct's name:
 
-{%- highlight swift -%}
+```swift
 struct User {
     // Properties and methods will go here
 }
-{%- endhighlight -%}
+```
 
 Let's create a `User` struct to represent a user profile:
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
     var lastName: String
 }
-{%- endhighlight -%}
+```
 
 This defines a `User` struct with two properties: `firstName` and `lastName`.
 
@@ -42,15 +42,15 @@ This defines a `User` struct with two properties: `firstName` and `lastName`.
 
 Stored properties hold data within a struct. They act like variables inside the struct. The properties showed above are stored properties.
 
-{%- highlight swift -%}
+```swift
 let userLaura = User(firstName: "Laura", lastName: "Campbell")
-{%- endhighlight -%}
+```
 
 ### Computed Properties
 
 Computed properties don't store values directly. Instead, they calculate and return a value based on other properties.
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
     var lastName: String
@@ -62,7 +62,7 @@ struct User {
 
 let userLaura = User(firstName: "Laura", lastName: "Campbell")
 print(userLaura.fullName) // Output: Laura Campbell
-{%- endhighlight -%}
+```
 
 This `User` struct now has a `fullName` computed property that returns the concatenation of `firstName` and `lastName`. 
 
@@ -75,7 +75,7 @@ Property observers allow you to perform actions whenever a property's value chan
 - `didSet`: This observer is called after a property's value changes.
 - `willSet`: This observer is called before a property's value changes.
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
     var lastName: String {
@@ -95,7 +95,7 @@ userLaura.lastName = "Johnson"
 // Output:
 // The new value is Johnson
 // The old value is Campbell
-{%- endhighlight -%}
+```
 
 The `newValue` and `oldValue` are automatically powered by Swift when using these property observers. You can use this to develop something reactive. But be careful, because your code can be slow with a lot of actions in a simple property called many times.
 
@@ -107,7 +107,7 @@ Structs automatically get a memberwise initializer, which is a default initializ
 
 We can create our own custom initializers for structs to control instance creation based on specific parameters.
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
     var lastName: String
@@ -117,7 +117,7 @@ struct User {
         self.lastName = lastName.uppercased()
     }
 }
-{%- endhighlight -%}
+```
 
 Here, we create a custom initializer that takes the same parameters as the memberwise initializer. However, we can add additional logic or validation within the initializer before assigning values to the properties. If you create a custom initializer, you need to ensure that all property will be initialized with a value.
 
@@ -125,7 +125,7 @@ Here, we create a custom initializer that takes the same parameters as the membe
 
 Methods that modify the properties of a struct needs the `mutating` keyword.
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
     var lastName: String
@@ -138,7 +138,7 @@ struct User {
 var userLaura = User(firstName: "Laura", lastName: "Campbell")
 userLaura.changeLastName(to: "Johnson")
 print(userLaura.lastName) // Output: Johnson
-{%- endhighlight -%}
+```
 
 Here, `changeLastName` modifies the `lastName` property, so it needs to be marked as `mutating`.
 
@@ -154,15 +154,15 @@ Let's explore classes in more detail to understand some differences.
 
 To define a class, we use the `class` keyword followed by the class name. I'll use the same example of `User` struct that I showed previously.
 
-{%- highlight swift -%}
+```swift
 class User {
 
 }
-{%- endhighlight -%}
+```
 
 Let's add some properties.
 
-{%- highlight swift -%}
+```swift
 class User {
     var firstName: String
     var lastName: String
@@ -172,7 +172,7 @@ class User {
         self.lastName = lastName.uppercased()
     }
 }
-{%- endhighlight -%}
+```
 
 Notice now we need to specify the initializer method. Different from struct, Swift doesn't create memberwise initialize for classes.
 
@@ -180,7 +180,7 @@ Notice now we need to specify the initializer method. Different from struct, Swi
 
 Inheritance allows us to create subclasses that inherit properties and methods from superclasses. This promotes code reusability and reduces redundancy.
 
-{%- highlight swift -%}
+```swift
 class AdminUser: User {
     var canDeleteAccount: Bool
 
@@ -189,7 +189,7 @@ class AdminUser: User {
         super.init(firstName: firstName, lastName: lastName)
     }
 }
-{%- endhighlight -%}
+```
 
 In this example, `AdminUser` inherits from `User`. It has its own property (canDeleteAccount) and overrides the initializer to take an additional `canDeleteAccount` parameter.
 
@@ -199,7 +199,7 @@ Note we're using an initializer for inheritance class with `super.init`.
 
 Different from structs, classes doesn't need to be marked with the `mutating` keyword to change some property.
 
-{%- highlight swift -%}
+```swift
 class User {
     var firstName: String
     var lastName: String
@@ -217,13 +217,13 @@ class User {
 var userLaura = User(firstName: "Laura", lastName: "Campbell")
 userLaura.changeLastName(to: "Johnson")
 print(userLaura.lastName) // Output: Johnson
-{%- endhighlight -%}
+```
 
 ### Deinitializers
 
 Deinitializers (`deinit`) are called when an instance of a class is about to be deallocated from memory. Some languages calling it as desctructors.
 
-{%- highlight swift -%}
+```swift
 class User {
     var firstName: String
     var lastName: String
@@ -237,11 +237,11 @@ class User {
         print("\(firstName) is being deallocated.")
     }
 }
-{%- endhighlight -%}
+```
 
 To see it in action, try to use the playground and create this object in a loop. You'll see when the context of class finishes, the `deinit` will be called.
 
-{%- highlight swift -%}
+```swift
 for index in 1...3 {
     var userLaura = User(firstName: "Laura \(index)", lastName: "Campbell")
     print(userLaura.lastName)
@@ -254,7 +254,7 @@ for index in 1...3 {
 // Laura 2 is being deallocated.
 // Campbell
 // Laura 3 is being deallocated.
-{%- endhighlight -%}
+```
 
 Classes are powerful tools for building complex and object-oriented applications in Swift. They allow you to model real-world entities, promote code reusability through inheritance, and manage object lifecycle. But I believe you thinking now: when I need to use a struct or a class?
 
@@ -275,7 +275,7 @@ In the table above I show you the main differences for each one. One thing that 
 
 In the following code, I've created a `user1` and copy it to a `user2`. I've changed the `user1` property and print both. Note that the name are different for each one because we're using a `struct`.
 
-{%- highlight swift -%}
+```swift
 struct User {
     var firstName: String
 
@@ -290,11 +290,11 @@ user1.firstName = "Samantha"
 
 print(user1.firstName) // Output: Samantha
 print(user2.firstName) // Output: Laura
-{%- endhighlight -%}
+```
 
 Now I just changed one keyword: I replaced the `struct` for a `class` and the result is different now.
 
-{%- highlight swift -%}
+```swift
 class User {
     var firstName: String
 
@@ -309,7 +309,7 @@ user1.firstName = "Samantha"
 
 print(user1.firstName) // Output: Samantha
 print(user2.firstName) // Output: Samantha
-{%- endhighlight -%}
+```
 
 This occurs because the differences between these two kinds of type. When you're using a class and pass a reference of it, any changes affect the original object, but this is not the same for structs.
 
@@ -327,7 +327,7 @@ Swift provides several access modifiers to control the visibility and accessibil
 
 Also, for properties we can use the `private (set)` modifier to create properties only for public reading with private setter.
 
-{%- highlight swift -%}
+```swift
 class User {
     private (set) var firstName: String
 
@@ -348,7 +348,7 @@ class User {
 
     }
 }
-{%- endhighlight -%}
+```
 
 Access control is particularly important in SwiftUI because it helps you control the data and behavior of your views. By carefully using access modifiers, you can create more robust and well-structured UI components.
 
@@ -358,7 +358,7 @@ This example is very simple, only to you understand what's possible. Please, cre
 
 Static properties and methods are associated with the struct or class itself, rather than individual instances of the struct or class. This means that they can be accessed directly on the type without needing to create an instance.
 
-{%- highlight swift -%}
+```swift
 struct User {
     static var totalOfUsers = 0
 
@@ -375,11 +375,11 @@ var user1 = User(firstName: "Laura")
 print(User.totalOfUsers) // Output: 1
 var user2 = User(firstName: "Samantha")
 print(User.totalOfUsers) // Output: 2
-{%- endhighlight -%}
+```
 
 Static properties hold data that is shared among all instances of a class or struct. So, be careful. Also, methods can be static too.
 
-{%- highlight swift -%}
+```swift
 struct User {
     static var totalOfUsers = 0
 
@@ -398,7 +398,7 @@ struct User {
 User.describeTotalOfUsers() // Output: There are 0 users created.
 var user1 = User(firstName: "Laura")
 User.describeTotalOfUsers() // Output: There are 1 users created.
-{%- endhighlight -%}
+```
 
 ## Wrap up
 

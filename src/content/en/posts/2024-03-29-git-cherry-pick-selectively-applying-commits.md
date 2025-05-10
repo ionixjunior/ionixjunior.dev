@@ -25,9 +25,9 @@ Similarly, cherry-picking can be used to selectively backport bug fixes or apply
 ## Example usage
 Suppose you have a feature branch where you've made some changes and committed them. Now, you want to bring in just one of those commits into your main branch:
 
-{%- highlight bash -%}
+```bash
 git cherry-pick <commit-hash>
-{%- endhighlight -%}
+```
 
 This command will take the commit from your feature branch and apply it to your current branch. Sometimes, when cherry-picking a commit, Git may encounter conflicts if the changes in the commit conflict with changes in the current branch. In such cases, Git will pause the cherry-pick process and ask you to resolve the conflicts manually.
 

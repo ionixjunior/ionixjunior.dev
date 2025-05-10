@@ -56,19 +56,19 @@ Now, pinpoint the commit where the bug is present. This could be your latest com
 
 Open your terminal and navigate to your Git repository. Run the following command:
 
-{%- highlight sh -%}
+```sh
 git bisect start
-{%- endhighlight -%}
+```
 
 ### 4. Tell Git Bisect About “Good” and “Bad” Commits
 
 Run these commands to mark your “good” and “bad” commits:
 
-{%- highlight sh -%}
+```sh
 git bisect good commit-hash-of-good-commit
 
 git bisect bad commit-hash-of-bad-commit
-{%- endhighlight -%}
+```
 
 Replace `commit-hash-of-good-commit` and `commit-hash-of-bad-commit` with the actual commit hashes you identified in steps 1 and 2.
 
@@ -80,15 +80,15 @@ Git Bisect will now choose a commit somewhere between your “good” and “bad
 
 If the bug is present in the suggested commit, run:
 
-{%- highlight sh -%}
+```sh
 git bisect bad
-{%- endhighlight -%}
+```
 
 If the bug is not present in the suggested commit, run:
 
-{%- highlight sh -%}
+```sh
 git bisect good
-{%- endhighlight -%}
+```
 
 Git Bisect will then choose another commit based on your feedback and repeat the process.
 

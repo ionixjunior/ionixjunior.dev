@@ -14,7 +14,7 @@ Ao utilizar TableView no Xamarin Forms temos algumas opções de elementos para 
 
 Com ImageCell, podemos facilmente adicionar uma imagem e textos. Vejamos uma simples utilização.
 
-{%- highlight xml -%}
+```xml
 <TableView Intent="Menu">
     <TableRoot>
         <TableSection>
@@ -24,7 +24,7 @@ Com ImageCell, podemos facilmente adicionar uma imagem e textos. Vejamos uma sim
         </TableSection>
     </TableRoot>
 </TableView>
-{%- endhighlight -%}
+```
 
 ### O problema
 
@@ -45,7 +45,7 @@ Para os exemplos que serão mostrados, foi adicionado uma página contendo um Ta
 
 Uma das maneiras mais fáceis é não utilizar o ImageCell e customizar a célula a ser renderizada, tendo assim flexibilidade para manipular cada elemento adicionado.
 
-{%- highlight xml -%}
+```xml
 <TableView Intent="Menu">
     <TableRoot>
         <TableSection>
@@ -72,7 +72,7 @@ Uma das maneiras mais fáceis é não utilizar o ImageCell e customizar a célul
         </TableSection>
     </TableRoot>
 </TableView>
-{%- endhighlight -%}
+```
 
 Desta forma, conseguimos obter um resultado satisfatório, vejamos:
 
@@ -100,7 +100,7 @@ Vamos ter um pouco mais de trabalho para essa implementação, mas iremos garant
 
 Primeiro, vamos criar nosso próprio custom control do ImageCell:
 
-{%- highlight cs -%}
+```cs
 using System;
 using Xamarin.Forms;
 
@@ -110,11 +110,11 @@ namespace Core.Controls
     {
     }
 }
-{%- endhighlight -%}
+```
 
 Em seguida, vamos atualizar o XAML para referenciar o custom control recém criado:
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -133,11 +133,11 @@ Em seguida, vamos atualizar o XAML para referenciar o custom control recém cria
         </TableView>
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
 Agora, basta personalizarmos a aparência do nosso custom control na plataforma Android.
 
-{%- highlight cs -%}
+```cs
 using System;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
@@ -159,7 +159,7 @@ namespace Core.Droid.Renders
         }
     }
 }
-{%- endhighlight -%}
+```
 
 O mais importante aqui é a configuração que estamos aplicando para a imagem, onde configuramos o ScaleType Center. Com isso, já conseguimos realizar a renderização mais adequada no Android:
 

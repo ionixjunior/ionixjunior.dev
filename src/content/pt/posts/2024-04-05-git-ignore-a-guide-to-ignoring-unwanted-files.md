@@ -28,10 +28,10 @@ No arquivo `.gitignore`, você pode adicionar padrões para arquivos ou diretór
 
 Por exemplo, para ignorar todos os arquivos `.xcuserstate` e o diretório `Pods`, você pode adicionar as seguintes linhas ao seu arquivo `.gitignore`:
 
-{%- highlight txt -%}
+```txt
 *.xcuserstate
 Pods/
-{%- endhighlight -%}
+```
 
 Esses padrões dirão ao Git para ignorar qualquer arquivo com a extensão `.xcuserstate` e todo o diretório `Pods`. Na desenvolvimento iOS, esses arquivos são desnecessários para adicionar ao controle de versão porque armazenam as informações de estado do usuário para o Xcode e as dependências gerenciadas pelo CocoaPods.
 
@@ -41,10 +41,10 @@ Criar um arquivo `.gitignore` cedo no desenvolvimento do seu projeto pode ajudar
 
 Uma coisa interessante é que você pode fazer uma negação para evitar que algum arquivo seja ignorado. Por exemplo, você pode configurar seu arquivo `.gitignore` para ignorar todos os arquivos `.txt` mas descartar algum arquivo específico com a mesma extensão.
 
-{%- highlight txt -%}
+```txt
 *.txt
 !important_file.txt
-{%- endhighlight -%}
+```
 
 Ao aproveitar essas técnicas de correspondência de padrões, você pode criar regras `.gitignore` precisas para excluir arquivos e diretórios indesejados de seu repositório Git, garantindo um histórico de controle de versão mais limpo e gerenciável. 
 
@@ -57,9 +57,9 @@ Usar um arquivo `.gitignore` global é uma maneira conveniente de ignorar certos
 2. Defina os padrões de ignore: Adicione os padrões para arquivos ou diretórios que você deseja ignorar globalmente ao arquivo `.gitignore_global`. Você pode usar as mesmas técnicas de correspondência de padrões descritas anteriormente.
 3. Configure o Git para usar o arquivo de ignore global: Diga ao Git para usar o arquivo `.gitignore_global` configurando a opção de configuração `core.excludesFile`. Execute o seguinte comando em seu terminal:
 
-{%- highlight bash -%}
+```bash
 git config --global core.excludesFile ~/.gitignore_global
-{%- endhighlight -%}
+```
 
 Substitua `~/.gitignore_global` pelo caminho para o seu arquivo de ignore global se estiver localizado em um diretório diferente.
 

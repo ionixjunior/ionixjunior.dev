@@ -31,7 +31,7 @@ The solution I will mention takes into account that we have a centralized naviga
 
 The scenario is as follows: we have 2 pages, Page1View and Page2View. On Page1View, we have a button. This button has a command, which when clicked, will call Page2View, as can be seen below in the view (xaml and code behind):
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
@@ -48,9 +48,9 @@ The scenario is as follows: we have 2 pages, Page1View and Page2View. On Page1Vi
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
-{%- highlight cs -%}
+```cs
 using Core.ViewModels;
 using Xamarin.Forms;
 
@@ -65,11 +65,11 @@ namespace Core.Views
         }
     }
 }
-{%- endhighlight -%}
+```
 
 And below is the implementation of this page's view model:
 
-{%- highlight cs -%}
+```cs
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Core.Interfaces;
@@ -87,11 +87,11 @@ namespace Core.ViewModels
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Notice that in the execution of the command, the algorithm uses DependencyService to load the implementation of INavigationHelper, and thus consume the GotoPage2 method to navigate to the next page. In this interface are all navigations that the app will have, in this case we have only 1 page:
 
-{%- highlight cs -%}
+```cs
 using System.Threading.Tasks;
 
 namespace Core.Interfaces
@@ -101,11 +101,11 @@ namespace Core.Interfaces
         Task GotoPage2();
     }
 }
-{%- endhighlight -%}
+```
 
 In App.xaml.cs, I registered the dependency, informing DependencyService that to resolve INavigationHelper interface it should use NavigationHelper implementation.
 
-{%- highlight cs -%}
+```cs
 using Core.Helpers;
 using Core.Interfaces;
 using Core.Views;
@@ -125,11 +125,11 @@ namespace Core
         }
     }
 }
-{%- endhighlight -%}
+```
 
 And here is the implementation of NavigationHelper:
 
-{%- highlight cs -%}
+```cs
 using System;
 using System.Threading.Tasks;
 using Core.Interfaces;
@@ -162,7 +162,7 @@ namespace Core.Helpers
         }
     }
 }
-{%- endhighlight -%}
+```
 
 In the implementation of NavigationHelper, there is a private method called Navigate, and the goal here is that all page calls are executed by this method, because the "trick" is in the validation that exists in it, where it is checked if it is already being navigated. If so, the operation is aborted. Otherwise, the _isNavigating attribute is changed to true, the operation is executed and after 500 milliseconds the original state of the attribute is returned, _isNavigating = false.
 

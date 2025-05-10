@@ -22,27 +22,27 @@ Imagine it like this: your main project folder becomes the "parent" directory, a
 This allows you to, for example, have one worktree dedicated to developing a new feature, another focused on fixing bugs on the "main" branch, and yet another for experimenting with a risky experimental feature—all within the same project.
 
 To create a new worktree is simple:
-{%- highlight sh -%}
+```sh
 git worktree add <path/to/new/worktree> <branch-name>
-{%- endhighlight -%}
+```
 
 The `<path/to/new/worktree>` is the directory where your new worktree will be created. You can name this whatever makes sense for the task you're working on. The `<branch-name>` is the branch that you want to check out into the new worktree. For example, to create a worktree named "BookTrackingLint" for developing a new feature on the "swiftlint" branch, you'd run:
-{%- highlight sh -%}
+```sh
 git worktree add ../BookTrackingLint swiftlint
-{%- endhighlight -%}
+```
 
 This will create a new directory named "BookTrackingLint" at the same level as your main project folder, and check out the "swiftlint" branch within it. Now you can work on this branch completely independently from your other worktrees.
 
 You can list all worktrees already created with the following command:
-{%- highlight sh -%}
+```sh
 git worktree list
-{%- endhighlight -%}
+```
 
 As a result, you'll see something like this:
-{%- highlight sh -%}
+```sh
 /Users/ionixjunior/Projects/iOS/BookTracking      9060735 [main]
 /Users/ionixjunior/Projects/iOS/BookTrackingLint  bf99013 [swiftlint] 
-{%- endhighlight -%}
+```
 
 ## Use cases and benefits of git worktree
 
@@ -71,33 +71,33 @@ Other interesting thing there are projects where the setup it takes times. The c
 ## Managing your worktree
 
 You created some worktrees, right? But how can we delete them? Maybe just delete the new folder? Yes, you can do this, but you'll leave some traces in your repository. To correctly remove a worktree, you use the `remove` option followed by the worktree directory. I'll use the same example of the Book Tracking repository that I created previously. 
-{%- highlight sh -%}
+```sh
 git worktree remove ../BookTrackingLint
-{%- endhighlight -%}
+```
 
 Now, if we run the list command, the worktree isn't there anymore.
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking  9060735 [main]
-{%- endhighlight -%}
+```
 
 But as I said to you, you can delete the folder, but let's see what happens. I created the same worktree again, deleted the worktree folder, and ran the list command:
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking      9060735 [main]
 /Users/ionixjunior/Projects/iOS/BookTrackingLint  bf99013 [swiftlint] prunable
-{%- endhighlight -%}
+```
 
 Now you can see the word "prunable" in the folder that I deleted manually. This means that Git doesn't find this worktree, but the relationship still exists in the repository. We can clean this up using the "prune" command:
-{%- highlight sh -%}
+```sh
 git worktree prune
-{%- endhighlight -%}
+```
 
 Now when we run the list command, everything is okay.
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking  9060735 [main]
-{%- endhighlight -%}
+```
 
 ## Conclusion
 

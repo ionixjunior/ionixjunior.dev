@@ -22,15 +22,15 @@ No mundo da programação, muitas vezes precisamos armazenar dados. Temos duas f
 
 Variáveis são como caixas rotuladas em nosso código que armazenam dados que podem ser modificados. Usamos a palavra-chave `var` para declarar uma variável:
 
-{%- highlight swift -%}
+```swift
 var name = "Laura"
-{%- endhighlight -%}
+```
 
 Podemos mudar o valor de `name` em qualquer ponto do nosso código:
 
-{%- highlight swift -%}
+```swift
 name = "Laura Smith"
-{%- endhighlight -%}
+```
 
 Agora, `name` contém o valor "Laura Smith".
 
@@ -38,9 +38,9 @@ Agora, `name` contém o valor "Laura Smith".
 
 Constantes são como recipientes selados. Depois de definir uma constante, seu valor não pode ser alterado. Usamos a palavra-chave `let` para declarar uma constante:
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
-{%- endhighlight -%}
+```
 
 Isso define `name` para o valor "Laura", e não podemos atribuir um valor diferente a ele posteriormente.
 
@@ -58,19 +58,19 @@ Pense nos tipos de dados como definindo a "natureza" ou "essência" dos dados. E
 
 O tipo de dados `String` representa informações textuais. Ele é usado para armazenar qualquer coisa que possa ser escrita ou exibida, como nomes, endereços, frases e até mesmo código.
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
 var message = "Olá!"
-{%- endhighlight -%}
+```
 
 ### Int: Para Números Inteiros
 
 O tipo de dados `Int` representa números inteiros, como 1, 10, 25, 1000 e assim por diante. Inteiros são comumente usados em contadores, cálculos e para representar quantidades.
 
-{%- highlight swift -%}
+```swift
 let age = 30
 var numberOfItems = 5
-{%- endhighlight -%}
+```
 
 ### Float, Double e Decimal: Representando Números com Precisão
 
@@ -80,17 +80,17 @@ Em Swift, temos três tipos de dados principais para representar números com ca
 
 `Float` usa 32 bits de memória para armazenar seu valor, oferecendo uma faixa menor de valores e menos precisão do que `Double`. É geralmente usado quando a eficiência de memória é uma prioridade e uma precisão mais baixa é aceitável.
 
-{%- highlight swift -%}
+```swift
 let floatNumber: Float = 0.00001 
-{%- endhighlight -%}
+```
 
 #### Double: Alta Precisão, Faixa Grande
 
 `Double` é a escolha mais comum para representar números de ponto flutuante em Swift. Ele fornece alta precisão, tornando-o adequado para cálculos que exigem uma ampla gama de valores. `Double` usa 64 bits de memória para armazenar seu valor, o dobro do tamanho do `Float`.
 
-{%- highlight swift -%}
+```swift
 let doubleNumber: Double = 0.00001
-{%- endhighlight -%}
+```
 
 #### Decimal: Alta Precisão, Cálculos Financeiros
 
@@ -98,9 +98,9 @@ let doubleNumber: Double = 0.00001
 
 Para criar um valor `Decimal`, você pode usar a seguinte sintaxe:
 
-{%- highlight swift -%}
+```swift
 let decimalNumber: Decimal = 0.00001
-{%- endhighlight -%}
+```
 
 #### Anotações de Tipo
 
@@ -112,10 +112,10 @@ Você pode criar um valor numérico simplesmente criando uma variável e atribui
 
 O tipo de dados `Bool` representa valores booleanos, que podem ser `true` ou `false`. Bools são fundamentais para a tomada de decisões em seu código, ajudando você a criar instruções condicionais e expressões lógicas.
 
-{%- highlight swift -%}
+```swift
 let isAdmin = true
 var hasError = false
-{%- endhighlight -%}
+```
 
 ## Arrays, Dicionários e Sets
 
@@ -125,11 +125,11 @@ Até agora, exploramos tipos de dados para valores individuais: strings, número
 
 Arrays são listas ordenadas de elementos do mesmo tipo de dados. Pense nelas como caixas numeradas onde você pode armazenar uma coleção de itens relacionados. Você acessa elementos em uma array pelo seu índice, começando do zero.
 
-{%- highlight swift -%}
+```swift
 let cities = ["Barcelona", "Londres", "São Paulo"]
 print(cities[0]) // Output: Barcelona (primeiro elemento)
 print(cities[2]) // Output: São Paulo (terceiro elemento)
-{%- endhighlight -%}
+```
 
 Arrays são úteis quando você precisa de uma lista ordenada de elementos do mesmo tipo.
 
@@ -137,11 +137,11 @@ Arrays são úteis quando você precisa de uma lista ordenada de elementos do me
 
 Dicionários são coleções não ordenadas de pares chave-valor. Cada chave é única e mapeia para um valor correspondente. Pense em dicionários como um dicionário do mundo real, onde cada palavra (chave) tem uma definição (valor).
 
-{%- highlight swift -%}
+```swift
 let userData = ["name": "Laura", "surname": "Smith", "city": "Londres"]
 print(userData["name"]) // Output: Optional("Laura")
 print(userData["city"]) // Output: Optional("Londres")
-{%- endhighlight -%}
+```
 
 Dicionários são úteis quando você precisa armazenar e recuperar dados com base em chaves exclusivas.
 
@@ -149,10 +149,10 @@ Dicionários são úteis quando você precisa armazenar e recuperar dados com ba
 
 Sets são coleções não ordenadas de elementos únicos. Eles não permitem duplicatas, tornando-os úteis para verificar a associação e remover duplicatas de uma coleção.
 
-{%- highlight swift -%}
+```swift
 let uniqueNames = Set(["Laura", "Josh", "Laura", "Marie", "Josh"])
 print(uniqueNames.count) // Output: 3 (removido os duplicados)
-{%- endhighlight -%}
+```
 
 Sets são úteis quando você precisa trabalhar com valores únicos ou quando deseja verificar a associação rapidamente - essa estrutura é muito rápida.
 
@@ -162,7 +162,7 @@ Enums, abreviação de enumerações, são uma maneira poderosa de definir um ti
 
 Pense em enums como a criação de um vocabulário de termos específicos relacionados a um conceito particular. Por exemplo, imagine que você está construindo um aplicativo que lida com o status do pedido. Em vez de usar inteiros brutos como 0, 1 e 2, você pode criar um enum para representar os estados do pedido:
 
-{%- highlight swift -%}
+```swift
 enum OrderStatus {
     case pending
     case processing
@@ -170,14 +170,14 @@ enum OrderStatus {
     case delivered 
     case cancelled
 }
-{%- endhighlight -%}
+```
 
 Agora, em vez de usar números, você pode usar diretamente os valores do enum:
 
-{%- highlight swift -%}
+```swift
 var orderStatus = OrderStatus.pending 
 print(orderStatus) // Output: OrderStatus.pending
-{%- endhighlight -%}
+```
 
 Enums melhoram a legibilidade. Eles tornam seu código mais autodocumentado e mais fácil de entender. Eles também impõem segurança de tipo, evitando que você atribua acidentalmente valores incorretos.
 
@@ -187,46 +187,46 @@ Enums melhoram a legibilidade. Eles tornam seu código mais autodocumentado e ma
 
 Uma maneira fácil de concatenar strings sem usar "+" é usar a interpolação:
 
-{%- highlight swift -%}
+```swift
 let name = "Laura"
 let surname = "Smith"
 print("A pessoa vencedora é \(name) \(surname)!")
-{%- endhighlight -%}
+```
 
 ### Strings de Múltiplas Linhas
 
 Às vezes, precisamos criar uma string de várias linhas, e isso é muito fácil em Swift. Você apenas usa aspas triplas e escreve sua string dentro delas. Apenas certifique-se de que as aspas triplas sejam declaradas em uma linha diferente da string.
 
-{%- highlight swift -%}
+```swift
 var multilineMessage = """
 Esta é a mensagem de várias linhas.
 Você pode adicionar muitas linhas.
 Não se preocupe com isso!
 """
-{%- endhighlight -%}
+```
 
 ### Bools e a Função Toggle
 
 Quando você cria uma variável, pode mudar seu valor depois. Então, podemos criar um valor booleano e alterá-lo usando a função `toggle`.
 
-{%- highlight swift -%}
+```swift
 var isAdmin = false
 print(isAdmin) // Output: false
 
 isAdmin.toggle()
 print(isAdmin) // Output: true
-{%- endhighlight -%}
+```
 
 ### Dicionário e a propriedade default
 
 Como você pode ver no exemplo de dicionário, quando acessamos a chave, obtemos um opcional. Isso ocorre porque Swift não pode garantir que haja um valor nessa chave. Por causa disso, Swift nos fornece um opcional. Você pode lidar com isso usando uma propriedade chamada `default`. Dessa forma, você não recebe um opcional, e seu código não será interrompido se você lidar com o opcional de forma inadequada.
 
-{%- highlight swift -%}
+```swift
 let userData = ["name": "Laura", "surname": "Smith", "city": "Londres"]
 print(userData["name"]) // Output: Optional("Laura")
 print(userData["name", default: "Unknown"]) // Output: Laura
 print(userData["nickname", default: "Unknown"]) // Output: Unknown
-{%- endhighlight -%}
+```
 
 ## Conclusão
 

@@ -26,9 +26,9 @@ Da mesma forma, o cherry-picking pode ser usado para retroportar correções de 
 ## Exemplo de uso
 Suponha que você tenha um branch de recurso onde fez algumas mudanças e commits. Agora, você deseja trazer apenas um desses commits para o seu branch principal:
 
-{%- highlight bash -%}
+```bash
 git cherry-pick <hash-do-commit>
-{%- endhighlight -%}
+```
 
 Este comando levará o commit do seu branch de recurso e o aplicará ao seu branch atual. Às vezes, ao fazer cherry-pick de um commit, o Git pode encontrar conflitos se as alterações no commit entrarem em conflito com as alterações no branch atual. Nesses casos, o Git pausará o processo de cherry-pick e pedirá que você resolva os conflitos manualmente.
 

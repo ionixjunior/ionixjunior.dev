@@ -21,7 +21,7 @@ Para exemplificar, criei um novo app com **Xamarin.Forms**. Nele, adicionei uma 
 Lindo né? Então experimente mostrar isso para alguém que espera que o aplicativo seja bonito. Provavelmente será um desastre! Qual será o próximo passo então? Acertou quem disse customizar as cores. Mas como fazer?
 A maneira mais simples e mais rápida é adicionar um style nos resources do nosso projeto compartilhado e customizar a cor de fundo da barra de navegação e a cor da letra da mesma. O arquivo que estamos falando é o **App.xaml**. Customizamos da seguinte maneira:
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Core.App">
     <Application.Resources>
@@ -36,7 +36,7 @@ A maneira mais simples e mais rápida é adicionar um style nos resources do nos
         </ResourceDictionary>
     </Application.Resources>
 </Application>
-{%- endhighlight -%}
+```
 
 Como resultado, temos:
 
@@ -48,7 +48,7 @@ Como resultado, temos:
 Nossa! Já sou designer! rsrs
 Porém, ainda existem aqueles botões que continuam com o estilo padrão do **iOS**, em azul. Vamos customiza-los também, apenas adicionando mais um estilo aos resources:
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Core.App">
     <Application.Resources>
@@ -67,7 +67,7 @@ Porém, ainda existem aqueles botões que continuam com o estilo padrão do **iO
         </ResourceDictionary>
     </Application.Resources>
 </Application>
-{%- endhighlight -%}
+```
 
 Agora sim, bem melhor...
 
@@ -93,7 +93,7 @@ No **AppDelegate.css** iremos criar um novo método para definir nossos estilos 
 
 Como o componente que queremos estilizar é o **UIAlertController**, inicialmente procurei a propriedade **Appearance** neste objeto, mas sem sucesso. Só depois descobri que o objeto **UIView** seria o responsável por fazer essa estilização, não somente no **UIAlertController**, mas também em outros elementos de UI do **iOS**. No final, chamei o método para carregar os estilos no **FinishedLaunching** após a chamada do **Xamarin.Forms**, pois o método de estilos chama os resources do **Xamarin.Forms**, fique ligado nisso.
 
-{%- highlight cs -%}
+```cs
 using Foundation;
 using UIKit;
 using System;
@@ -140,7 +140,7 @@ public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsAppli
         UIView.Appearance.TintColor = uiMainColor;
     }
 }
-{%- endhighlight -%}
+```
 
 Agora sim a pessoa programadora vibra e diz:
 
@@ -165,7 +165,7 @@ Pelo menos o botão **Done** e o de compartilhamento já estão verdes, mas isso
 
 E agora, como resolver? Vamos voltar no **AppDelegate.cs** no método de estilo que criamos, e vamos adicionar o estilo ao **UINavigationBar**.
 
-{%- highlight cs -%}
+```cs
 private void BuildStyles()
 {
     var xfResources = Xamarin.Forms.Application.Current.Resources;
@@ -200,7 +200,7 @@ private void BuildStyles()
     );
     UIView.Appearance.TintColor = uiMainColor;
 }
-{%- endhighlight -%}
+```
 
 Primeiro, definimos a cor na barra de navegação (linha 28). Depois definimos a cor do texto dos botões presentes na navegação (linha 29). Por último, modificamos a cor do texto presente na barra de navegação (linhas 30, 31 e 32).
 

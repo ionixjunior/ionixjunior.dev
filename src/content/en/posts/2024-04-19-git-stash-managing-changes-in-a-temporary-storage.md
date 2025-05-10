@@ -17,9 +17,9 @@ Git stash is a feature that enables to temporarily store modified, but not yet c
 ## Stashing changes
 To stash changes in Git, we can use the `git stash` command. This command takes a snapshot of the current state of the working directory and the index and saves it on the stash stack.
 
-{%- highlight sh -%}
+```sh
 git stash
-{%- endhighlight -%}
+```
 
 This command creates a new stash entry with a default name and description, indicating the changes that were stashed. Once stashed, the working directory and the index are reverted to the state of the last commit, allowing developers to switch branches or perform other operations without the changes they stashed.
 
@@ -27,67 +27,67 @@ Also, you can specify a name for your stash to easily identify it on the stack u
 
 A kind reader tell me that the above approach is deprecated, and he's correct! So, instead of use `git stash save`, use `git stash push` followed by the message parameter. Thank you so much for the feedback, [Christophe Colombier][christophe_colombier_profile]! I really appreciate it!
 
-{%- highlight sh -%}
+```sh
 git stash push -m "Your message"
-{%- endhighlight -%}
+```
 
 ## Listing and applying stashes
 To list all stashes that are currently stored, we can use the `git stash list` command. This command displays a list of all stashed changes along with their respective stash IDs and descriptions. Here's how to list stashes:
 
-{%- highlight sh -%}
+```sh
 git stash list
-{%- endhighlight -%}
+```
 
 Once we identify the stash we want to apply, we can use the `git stash apply` command followed by the stash ID. Alternatively, if they want to apply the most recent stash, they can use `git stash apply` without specifying a stash ID. Here are the commands to apply stashes:
 
-{%- highlight sh -%}
+```sh
 git stash apply <stash_id>
-{%- endhighlight -%}
+```
 
 Or, apply the most recent stash:
 
-{%- highlight sh -%}
+```sh
 git stash apply
-{%- endhighlight -%}
+```
 
 Applying a stash reapplies the changes stored in the stash to the current working directory and index, allowing developers to continue working on the changes they stashed.
 
 Also, there is a parameter called `pop` and you can use it to apply the most recent stash and remove it from stack.
 
-{%- highlight sh -%}
+```sh
 git stash pop
-{%- endhighlight -%}
+```
 
 ## Viewing and managing stashed changes
 It is possible to view the changes stored in a stash without applying them using the `git stash show` command. This command displays a summary of the changes in the most recent stash. To view the changes in a specific stash, we can provide the stash ID as an argument. Here's how to view stashed changes:
 
-{%- highlight sh -%}
+```sh
 git stash show
-{%- endhighlight -%}
+```
 
 Or, view the changes in a specific stash:
 
-{%- highlight sh -%}
+```sh
 git stash show <stash_id>
-{%- endhighlight -%}
+```
 
 Additionally, we can delete stashes from the stash list using the `git stash drop` command followed by the stash ID. If no stash ID is provided, the most recent stash is dropped.
 
-{%- highlight sh -%}
+```sh
 git stash drop
-{%- endhighlight -%}
+```
 
 Or, delete a specific stash:
 
-{%- highlight sh -%}
+```sh
 git stash drop <stash_id>
-{%- endhighlight -%}
+```
 
 Deleting a stash removes it from the stash list, freeing up space and ensuring that it no longer affects the repository's state. Alternatively, we can clear all stashed changes from the stash list using the `git stash clear` command. This command removes all stashes, resetting the stash list to an empty state.
 
-{%- highlight sh -%}
+```sh
 git stash clear
-{%- endhighlight -%}
+```
 
 ## When to use the Git stash command
 The Git stash command is incredibly versatile and can be useful in various scenarios throughout your development process. Use it when you need to temporarily set aside changes to focus on a different task or address an urgent issue. For instance, imagine you're working on a new feature branch, but suddenly need to fix a critical bug in the main branch. Instead of committing your incomplete changes or creating a separate branch, you can stash them away, switch to the main branch, make the necessary fixes, and then return to your feature branch, where you can apply the stashed changes and continue where you left off. Similarly, if you're in the middle of implementing a complex feature and need to quickly switch to a different task, stashing your changes allows you to save your progress without cluttering your commit history. 

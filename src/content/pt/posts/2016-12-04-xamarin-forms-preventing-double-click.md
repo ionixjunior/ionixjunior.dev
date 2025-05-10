@@ -32,7 +32,7 @@ A solução que vou citar leva em consideração que temos um sistema de navega�
 
 O cenário é o seguinte: temos 2 páginas, Page1View e Page2View. Na Page1View, temos um botão. Este botão tem um comando, que ao clicar, irá chamar a Page2View, como pode ser visto abaixo na view ( xaml e code behind ):
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
@@ -49,9 +49,9 @@ O cenário é o seguinte: temos 2 páginas, Page1View e Page2View. Na Page1View,
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
-{%- highlight cs -%}
+```cs
 using Core.ViewModels;
 using Xamarin.Forms;
 
@@ -66,11 +66,11 @@ namespace Core.Views
         }
     }
 }
-{%- endhighlight -%}
+```
 
 E abaixo, a implementação do view model desta página:
 
-{%- highlight cs -%}
+```cs
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Core.Interfaces;
@@ -88,11 +88,11 @@ namespace Core.ViewModels
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Vejam que na execução do comando, o algoritmo utiliza DependencyService para carregar a implementação de INavigationHelper, e assim, consumir o método GotoPage2 para navegar para próxima página. Neste interface, consta todos as navegações que o app irá ter, neste caso, temos apenas 1 página:
 
-{%- highlight cs -%}
+```cs
 using System.Threading.Tasks;
 
 namespace Core.Interfaces
@@ -102,11 +102,11 @@ namespace Core.Interfaces
         Task GotoPage2();
     }
 }
-{%- endhighlight -%}
+```
 
 No App.xaml.cs, registrei a dependência, informando ao DependencyService que para resolver a interface INavigationHelper deve utilizar a implementação NavigationHelper.
 
-{%- highlight cs -%}
+```cs
 using Core.Helpers;
 using Core.Interfaces;
 using Core.Views;
@@ -126,11 +126,11 @@ namespace Core
         }
     }
 }
-{%- endhighlight -%}
+```
 
 E aqui temos a implementação do NavigationHelper:
 
-{%- highlight cs -%}
+```cs
 using System;
 using System.Threading.Tasks;
 using Core.Interfaces;
@@ -163,7 +163,7 @@ namespace Core.Helpers
         }
     }
 }
-{%- endhighlight -%}
+```
 
 Na implementação do NavigationHelper, existe um método privado chamado Navigate, e o objetivo aqui é que todas as chamadas de páginas sejam executadas por este método, pois o “pulo do gato” esta na validação existente nele, onde é verificado se já está sendo navegado. Caso sim, a operação é abortada. Caso contrário, o atributo _isNavigating é alterado para true, executado a operação e após 500 milissegundos é retornado o estado original do atributo, _isNavigating = false.
 

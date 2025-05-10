@@ -29,7 +29,7 @@ O comando é muito simples de usar. Basta digitar `git clean` na linha de comand
 
 Você pode combinar esses parâmetros para realizar diferentes operações de limpeza. Após a execução, você verá uma lista de arquivos excluídos.
 
-{%- highlight txt -%}
+```txt
 git clean -dfX
 
 Removing .DS_Store
@@ -37,7 +37,7 @@ Removing BookTracking.xcodeproj/xcuserdata/ionixjunior.xcuserdatad/xcschemes/
 Removing BookTracking.xcworkspace/xcshareddata/
 Removing BookTracking.xcworkspace/xcuserdata/ionixjunior.xcuserdatad/UserInterfaceState.xcuserstate
 Removing Pods/
-{%- endhighlight -%}
+```
 
 O `git clean` é muito simples de usar e extremamente útil para liberar espaço, especialmente em projetos mais antigos nos quais você não está trabalhando ativamente.
 

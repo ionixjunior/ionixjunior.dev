@@ -14,14 +14,14 @@ Struggling to work with code integration in Git? You're not alone. Understanding
 ## Git merge: Bringing branches together
 To explain the examples of `git merge`, I'll use the [Book Tracking][book_tracking_repository] repository. For these examples, my target branch is the "main", and my source branch is the "library_screen". You'll see these words in the entire post. Before we start, let's see the log of Git commits for this scenario.
 
-{%- highlight log -%}
+```log
 * 214ae0f (HEAD -> library_screen) Integrate the new screen into tab view controller
 * 058a356 Add screen icon
 * 38867bd Create empty state
 * a282019 Load data into library screen
 * d076946 Add new screen
 * 9060735 (origin/main, main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 I recently started a new task, and the source branch is updated with the target branch. I can see this because the commits of the source branch are at the top of the target branch. Let's get started to explore the command.
 
@@ -29,30 +29,30 @@ The `git merge` is a fundamental command for integrating changes from one branch
 
 To perform a merge, navigate to the target branch and use the following command:
 
-{%- highlight bash -%}
+```bash
 git merge <source_branch>
-{%- endhighlight -%}
+```
 
 This command preserves the commit history. Git merge retains the individual commits from the source branch, preserving the history of changes. Also, merge operations are simple and intuitive, making them suitable for most collaborative scenarios. If we see the log now, we can verify that the local target branch is side-by-side with the source branch. Also, the hash of the commits doesn't change.
 
-{%- highlight log -%}
+```log
 * 214ae0f (HEAD -> main, library_screen) Integrate the new screen into tab view controller
 * 058a356 Add screen icon
 * 38867bd Create empty state
 * a282019 Load data into library screen
 * d076946 Add new screen
 * 9060735 (origin/main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 This type of merge is called fast-forward because all the commits you've applied in the source branch will go to the target branch. Now think about it: In our source branch, we're encouraged to do many commits and, create a pull request when we finish our work. But if all is integrated into the target branch without a checkpoint, how can we know when a specific pull request was merged? We can use an option to merge using a non-fast-forward approach. Let's see it.
 
-{%- highlight bash -%}
+```bash
 git merge <source_branch> --no-ff
-{%- endhighlight -%}
+```
 
 Now, Git will ask you for a commit message to make a merge commit. It will automatically suggest a message to you. Just accept it, and let's see the log.
 
-{%- highlight log -%}
+```log
 *   1d5bf70 (HEAD -> main) Merge branch 'library_screen'
 |\  
 | * 214ae0f (library_screen) Integrate the new screen into tab view controller
@@ -62,7 +62,7 @@ Now, Git will ask you for a commit message to make a merge commit. It will autom
 | * d076946 Add new screen
 |/  
 * 9060735 (origin/main) Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Note that the local target branch is not alongside the source branch. It is at the top! Git creates a new commit that reflects the merged state. This way, it is easier to understand when some work has been finished. This is commonly used when we merge a pull request and facilitates if we need to revert some merge commit.
 
@@ -71,7 +71,7 @@ Git rebase offers an alternative approach to integrating changes by rewriting th
 
 This is more common when we start a task, working on it for a time, and we need to update our source branch with the new work that our teammates already merged after our task started. For this scenario, consider the following log. See the source branch began before the current state of the target branch.
 
-{%- highlight bash -%}
+```bash
 *   40650e2 (origin/main, main) Merge branch 'settings_screen'
 |\  
 | * 4744194 Adjust dark mode
@@ -88,36 +88,36 @@ This is more common when we start a task, working on it for a time, and we need 
 | * d076946 Add new screen
 |/  
 * 9060735 Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 Note the source branch is two merge commits behind the target branch. Maybe it's not a problem to create a pull request and integrate the code this way. But if you have trouble merging it, you'll need to update your code with the newer changes before merging it. One way to do this is by using the rebase command. To rebase the source branch onto the target branch, navigate to the source branch and use the following command:
 
-{%- highlight bash -%}
+```bash
 git rebase <target_branch>
-{%- endhighlight -%}
+```
 
 Git rebase produces a linear commit history by incorporating changes from the source branch without additional merge commits. Seeing the log, the source branch will be at the top of the target branch.
 
-{%- highlight bash -%}
+```bash
 * 88dda8b (HEAD -> library_screen) Integrate the new screen into tab view controller
 * 6e96461 Add screen icon
 * 21d55c8 Create empty state
 * 4b4e82d Load data into library screen
 * 0a3073f Add new screen
 *   40650e2 (origin/main, main) Merge branch 'settings_screen'
-{%- endhighlight -%}
+```
 
 Rebasing modifies the commit history of the source branch, potentially altering the chronological order of commits and causing problems, mainly if the source branch is already on the remote repository. After the rebase, the changes in the source branch appear to start after the last change of the target branch. 
 
 This is a simple rebase, but you can do it using the interactive mode. Use caution when performing interactive rebases, as they involve rewriting commit messages and may introduce unintended changes. Let's explore a little bit about the interactive rebase to understand how the rebase works. For this, use the `-i` parameter.
 
-{%- highlight bash -%}
+```bash
 git rebase -i <target_branch>
-{%- endhighlight -%}
+```
 
 Now, Git will show you a prompt and ask you what to do. Let's check to understand.
 
-{%- highlight bash -%}
+```bash
 pick d076946 Add new screen
 pick a282019 Load data into library screen
 pick 38867bd Create empty state
@@ -154,7 +154,7 @@ pick 214ae0f Integrate the new screen into tab view controller
 #
 # However, if you remove everything, the rebase will be aborted.
 #
-{%- endhighlight -%}
+```
 
 A big message, right? Don't worry about it. First, let's focus at the top. Git shows a list with a command called "pick", the commit hash, and the commit message. This means it will try to execute the "pick" command for each listed commit in this order. The "pick" command means "cherry-pick", and we haven't seen about it until now. The `git cherry-pick` will apply the commit in the target branch. The command applies a specific commit into another branch, changing the commit hash but keeping the author, the message, and the timestamp.
 
@@ -169,13 +169,13 @@ The `git rebase` is used for clean history. Opt for this command to maintain a l
 
 As I posted about force pushing in the [last article][last_post], the rebase can bring problems if you aren't working alone in a branch. Because of this, I believe some people prefer the back merge strategy instead of the rebase. Let's try the back merge strategy and see the results. The objective is to update our source branch with newer changes to the target branch. Assuming the repository is completely updated, let's stay in our source branch and execute the back merge.
 
-{%- highlight bash -%}
+```bash
 git merge <target_branch>
-{%- endhighlight -%}
+```
 
 Git will prompt you with a merge commit message. It will suggest a message, and you can accept it. This will be a merge commit. Seeing the log, we can get the following result:
 
-{%- highlight bash -%}
+```bash
 *   190f6b6 (HEAD -> library_screen) Merge branch 'main' into library_screen
 |\  
 | *   40650e2 (origin/main, main) Merge branch 'settings_screen'
@@ -194,7 +194,7 @@ Git will prompt you with a merge commit message. It will suggest a message, and 
 * | d076946 Add new screen
 |/  
 * 9060735 Replace ifs to switch case
-{%- endhighlight -%}
+```
 
 The result is similar to the rebase command but without rewriting the commit history. In the graph, we can see all the target branch changes merging into the source branch. In my opinion, it causes a little mess if you analyze the commit history. I feel a little confused seeing this, and because of this, I prefer to use rebase in this case.
 

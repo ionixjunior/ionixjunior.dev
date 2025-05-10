@@ -25,7 +25,7 @@ Shall we proceed?
 
 To start, I created a **ContentPage** for the home page and specified the two configurable attributes for text and icon. Without the custom renderer, you won't see both the text and the image side by side; only one of them will appear.
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -42,7 +42,7 @@ To start, I created a **ContentPage** for the home page and specified the two co
         />
     </ContentPage.Content>
 </ContentPage>
-{%- endhighlight -%}
+```
 
 Now, to start the customizations, I began implementing the custom renderer.
 
@@ -50,7 +50,7 @@ My initial attempt was to create a renderer for the **NavigationRenderer**, but 
 
 Thus, I created a custom renderer for the **PageRenderer**, overriding the **WillMoveToParentViewController** method.
 
-{%- highlight cs -%}
+```cs
 using Core.iOS.Renderers;
 using UIKit;
 using Xamarin.Forms;
@@ -67,7 +67,7 @@ namespace Core.iOS.Renderers
         }
     }
 }
-{%- endhighlight -%}
+```
 
 With this, we can start modifying the renderer of our Xamarin.Forms **ContentPage**. So, let's code in this method...
 
@@ -75,23 +75,23 @@ In this renderer, the logic is as follows: Load the instance of the **ContentPag
 
 To load the instance of the **ContentPage**, we'll use the **Element** attribute, which is defined in the **PageRenderer** class. Through it, we can access the **Title** and **Icon** properties defined in the **XAML**.
 
-{%- highlight cs -%}
+```cs
 if (Element == null)
     return;
 
 var page = Element as ContentPage;
-{%- endhighlight -%}
+```
 
 Now, let's create a button using **UIButton**, add the title and icon located in the **ContentPage**, and set the text color. We'll also add this new object to be rendered in place of the default render, using the reference of the **UIViewController** to access the **NavigationItem**.
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
 buttonTitle.SetImage(new UIImage(page.Icon), UIControlState.Normal);
 
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 Let's see how it looks:
 
@@ -102,7 +102,7 @@ Let's see how it looks:
 
 Oops, something seems wrong; the icon didn't appear. But it's not wrong; we just forgot to call the method responsible for arranging the content on the screen. So, let's call **SizeToFit** on the button:
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
@@ -110,7 +110,7 @@ buttonTitle.SetImage(new UIImage(page.Icon), UIControlState.Normal);
 buttonTitle.SizeToFit();
  
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 Let's check it out:
 
@@ -121,7 +121,7 @@ Let's check it out:
 
 Much better! But the image is on the left, not the right. We can invert it. To do this, let's specify the **Transform** attribute of the **UIButton**.
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
@@ -130,7 +130,7 @@ buttonTitle.Transform = CGAffineTransform.MakeScale(-1.0f, 1.0f);
 buttonTitle.SizeToFit();
  
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 Look how it turns out:
 
@@ -141,7 +141,7 @@ Look how it turns out:
 
 Hey, am I reading Arabic?? No, we just inverted the button's position. It's like flipping it horizontally by 180 degrees. So how do we fix this? We can apply the **Transform** property to both the title and the icon, and then we'll get the expected result. Note that for this icon, you don't even need to apply the property, but if you have an image that doesn't have equal sides, in that case, you'll need to apply it.
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
@@ -152,7 +152,7 @@ buttonTitle.ImageView.Transform = CGAffineTransform.MakeScale(-1.0f, 1.0f);
 buttonTitle.SizeToFit();
  
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 See how it looks now:
 
@@ -163,7 +163,7 @@ See how it looks now:
 
 Much better! It's more similar now, but there are still some things missing. Note that the title and icon are very close together. We can apply a little "hack" by adding some spaces at the end of the title, or we can use the **ImageEdgeInsets** property to adjust the spacing, which is more recommended:
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
@@ -175,7 +175,7 @@ buttonTitle.ImageEdgeInsets = new UIEdgeInsets(0, -20, 0, 0);
 buttonTitle.SizeToFit();
  
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 Let's check it out:
 
@@ -186,7 +186,7 @@ Let's check it out:
 
 We're almost there! What's missing? A few finishing touches... If you check the Meetup app, there are two more characteristics in that title. One is that the title appears in bold, and the other is that when we click on it, it turns gray. We can easily achieve this by adjusting the font and setting the color to gray when the button's state is highlighted.
 
-{%- highlight cs -%}
+```cs
 UIButton buttonTitle = new UIButton(UIButtonType.Custom);
 buttonTitle.SetTitle(page.Title, UIControlState.Normal);
 buttonTitle.SetTitleColor(UIColor.Black, UIControlState.Normal);
@@ -200,7 +200,7 @@ buttonTitle.TitleLabel.Font = UIFont.BoldSystemFontOfSize(14);
 buttonTitle.SizeToFit();
  
 parent.NavigationItem.TitleView = buttonTitle;
-{%- endhighlight -%}
+```
 
 Let's see the result:
 
@@ -219,7 +219,7 @@ I think it would be best to extend the **ContentPage** and implement a command s
 
 First, let's extend the **ContentPage**; I created a class called **CustomContentPage**. In it, I implemented a bindable property called **Command**.
 
-{%- highlight cs -%}
+```cs
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -242,11 +242,11 @@ namespace Core.Controls
         }
     }
 }
-{%- endhighlight -%}
+```
 
 In the page's code-behind, I needed to change the inheritance from **ContentPage** to the new page we created. You'll also have to do this.
 
-{%- highlight cs -%}
+```cs
 using Core.Controls;
 using Core.ViewModels;
 
@@ -261,11 +261,11 @@ namespace Core.Views
         }
     }
 }
-{%- endhighlight -%}
+```
 
 The **XAML** also needed changes since the page now inherits from **CustomContentPage**, so we need to change that reference there as well. Notice that we also had to declare the namespace where the page I created is located.
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <controls:CustomContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -283,11 +283,11 @@ The **XAML** also needed changes since the page now inherits from **CustomConten
         />
     </ContentPage.Content>
 </controls:CustomContentPage>
-{%- endhighlight -%}
+```
 
 Now, we can add a command to the **Command** property of the **CustomContentPage**.
 
-{%- highlight xml -%}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <controls:CustomContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -306,13 +306,13 @@ Now, we can add a command to the **Command** property of the **CustomContentPage
         />
     </ContentPage.Content>
 </controls:CustomContentPage>
-{%- endhighlight -%}
+```
 
 OMG! This is getting crazy! Don't worry; it gets worse. Now let's go back to our custom renderer and make some customizations.
 
 First, we'll change the **ExportRenderer** declaration to connect it with **CustomContentPage**, not **ContentPage**.
 
-{%- highlight cs -%}
+```cs
 [assembly: ExportRenderer(typeof(CustomContentPage), typeof(CustomContentPageRenderer))]
 namespace Core.iOS.Renderers
 {
@@ -321,11 +321,11 @@ namespace Core.iOS.Renderers
         ...
     }
 }
-{%- endhighlight -%}
+```
 
 Then, let's customize the **WillMoveToParentViewController** implementation, casting the **Element** to the **CustomContentPage** class and implementing the **TouchUpInside** event.
 
-{%- highlight cs -%}
+```cs
 public override void WillMoveToParentViewController(UIViewController parent)
 {
     base.WillMoveToParentViewController(parent);
@@ -357,7 +357,7 @@ public override void WillMoveToParentViewController(UIViewController parent)
 
     parent.NavigationItem.TitleView = buttonTitle;
 }
-{%- endhighlight -%}
+```
 
 Done! And what's the result of this?
 

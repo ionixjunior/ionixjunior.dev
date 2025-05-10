@@ -27,66 +27,66 @@ Finalmente, a mensagem do commit surge como o fio narrativo que une tudo. Mais d
 
 Vamos ver todos esses elementos no commit abaixo. O hash ao lado do texto `commit`, o autor do commit (Paulo Ricardo e seu e-mail), a data do commit e a mensagem na parte inferior.
 
-{%- highlight diff -%}
+```diff
 commit 8934fac280ff394926df4746d31da52f431d52bf
 Author: Paulo Ricardo <paulo@ricardo.dev>
 Date: Sun Jan 14 18:14:34 2024 -0000
 
     Corrigir erro de digitação
 
-{%- endhighlight -%}
+```
 
 ### Uso Básico
 Desde que os arquivos tenham sido adicionados à área de preparação, você pode começar a usar o comando `git commit`. Como escrevi no [post básico][git_basics_post], você pode fazer seu commit e adicionar um título à mensagem com o seguinte comando:
 
-{%- highlight sh -%}
+```sh
 git commit -m "Título do seu commit"
-{%- endhighlight -%}
+```
 
 Vamos explorar outras possibilidades.
 
 ### Alterar o Último Commit
 Você faz commit dos seus arquivos e depois percebe um erro em sua mensagem de commit. Talvez haja erros de digitação, ou você deseja incluir mais detalhes. Mas como fazer isso se você já fez o commit? Não se preocupe! Você pode alterar facilmente seu último commit:
 
-{%- highlight sh -%}
+```sh
 git commit --amend
-{%- endhighlight -%}
+```
 
 Dessa forma, o Git abrirá o editor de texto padrão e você pode corrigir a mensagem do commit. Se quiser atualizar a mensagem sem usar o editor, você pode incluir a mensagem com o comando.
 
-{%- highlight sh -%}
+```sh
 git commit --amend -m "Seu novo título"
-{%- endhighlight -%}
+```
 
 Agora, pense na seguinte situação: você termina o commit e esquece de adicionar alguns arquivos. Precisa fazer outro commit? Não! Você pode adicionar esse arquivo à área de preparação usando `git add` e, em seguida, alterar seu último commit incluindo os novos arquivos. Mais uma coisa: se você não quiser alterar sua mensagem, pode especificar o parâmetro `--no-edit`, e o Git não solicitará nada.
 
-{%- highlight sh -%}
+```sh
 git commit --amend --no-edit
-{%- endhighlight -%}
+```
 
 Cuidado com a opção `--amend`, pois ela altera o hash do commit. Se o commit existir apenas em sua máquina, sem problemas. Mas se o commit já existir no repositório remoto (como GitHub, GitLab ou BitBucket), talvez seus colegas tenham dificuldade em atualizar o projeto depois de você enviar as alterações corrigidas para o repositório remoto.
 
 ### Incluir arquivos na área de preparação e realizar commit ao mesmo tempo
 Se você se sentir confiante e planeja fazer commit de todos os arquivos alterados sem revisar nada (por favor, não faça isso), pode usar a opção `-a`. Esse parâmetro irá adicionar as alterações à área de preparação automaticamente antes do commit.
 
-{%- highlight sh -%}
+```sh
 git commit -a -m "Título do commit"
-{%- endhighlight -%}
+```
 
 Se preferir, pode juntar os parâmetros para simplificar.
 
-{%- highlight sh -%}
+```sh
 git commit -am "Título do commit"
-{%- endhighlight -%}
+```
 
 Já usei isso bastante. Muito fácil e simples, mas sem controle sobre o que está sendo adicionado ao repositório. Use com sabedoria.
 
 ### Commits Vazios
 O quê? Isso não faz sentido! Sim, mas às vezes isso pode ser útil. Imagine que você está configurando o pipeline do seu projeto em uma plataforma CI/CD (como GitHub Actions, Azure DevOps, Bitrise, etc.), e precisa fazer algum commit para testar a trigger de execução do pipeline. O que você faria? Alteraria alguns arquivos e os enviaria para o repositório remoto? Isso vai funcionar, mas você pode fazer um commit sem alterar nada para não "sujar" o seu repositório.
 
-{%- highlight sh -%}
+```sh
 git commit --allow-empty -m "Título do seu commit vazio"
-{%- endhighlight -%}
+```
 
 ### É Isso
 Este foi mais um comando do Git para aprender como usar e praticar. Lembre-se, cada commit que você faz representa mais um capítulo da história do software que você está contando. 

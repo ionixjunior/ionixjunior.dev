@@ -23,30 +23,30 @@ Imagine assim: sua pasta principal do projeto se torna o diretório "pai", e cad
 Isso permite, por exemplo, ter um worktree dedicado ao desenvolvimento de um novo recurso, outro focado em corrigir bugs no branch "main" e ainda outro para experimentar um recurso experimental arriscado - tudo dentro do mesmo projeto.
 
 Para criar um novo worktree é simples:
-{%- highlight sh -%}
+```sh
 git worktree add <caminho/para/novo/worktree> <nome-do-branch>
-{%- endhighlight -%}
+```
 
 O `<caminho/para/novo/worktree>` é o diretório onde seu novo worktree será criado. Você pode nomeá-lo como fizer sentido para a tarefa em que está trabalhando. O `<nome-do-branch>` é o branch que você deseja baixar no novo worktree. Por exemplo, para criar um worktree chamado "BookTrackingLint" para desenvolver um novo recurso no branch "swiftlint", você executaria:
 
-{%- highlight sh -%}
+```sh
 git worktree add ../BookTrackingLint swiftlint
-{%- endhighlight -%}
+```
 
 Isso criará um novo diretório chamado "BookTrackingLint" no mesmo nível da pasta principal do seu projeto e baixará o branch "swiftlint" dentro dele. Agora você pode trabalhar neste branch de forma totalmente independente de seus outros worktrees.
 
 Você pode listar todos os worktrees já criados com o seguinte comando:
 
-{%- highlight sh -%}
+```sh
 git worktree list
-{%- endhighlight -%}
+```
 
 Como resultado, você verá algo como isto:
 
-{%- highlight sh -%}
+```sh
 /Users/ionixjunior/Projects/iOS/BookTracking      9060735 [main]
 /Users/ionixjunior/Projects/iOS/BookTrackingLint  bf99013 [swiftlint] 
-{%- endhighlight -%}
+```
 
 ## Casos de uso e benefícios do git worktree
 
@@ -76,37 +76,37 @@ Outro ponto que vale ressaltar é que existem projetos onde o setup é um pouco 
 
 Você criou alguns worktrees, certo? Mas como podemos excluí-los? Talvez apenas excluindo a nova pasta? Sim, você pode fazer isso, mas deixará alguns rastros em seu repositório. Para remover corretamente um worktree, você usa a opção `remove` seguida pelo diretório do worktree. Usarei o mesmo exemplo do repositório BookTracking que criei anteriormente. 
 
-{%- highlight sh -%}
+```sh
 git worktree remove ../BookTrackingLint
-{%- endhighlight -%}
+```
 
 Agora, se executarmos o comando list, o worktree não estará mais lá.
 
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking  9060735 [main]
-{%- endhighlight -%}
+```
 
 Mas, como eu disse, você pode excluir a pasta, mas vamos ver o que acontece. Criei o mesmo worktree novamente, excluí a pasta do worktree e executei o comando list:
 
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking      9060735 [main]
 /Users/ionixjunior/Projects/iOS/BookTrackingLint  bf99013 [swiftlint] prunable
-{%- endhighlight -%}
+```
 
 Agora você pode ver a palavra "prunable" na pasta que excluí manualmente. Isso significa que o Git não encontra esse worktree, mas o relacionamento ainda existe no repositório. Podemos limpar isso usando o comando "prune":
 
-{%- highlight sh -%}
+```sh
 git worktree prune
-{%- endhighlight -%}
+```
 
 Agora, quando executarmos o comando list, tudo estará ok.
 
-{%- highlight sh -%}
+```sh
 git worktree list
 /Users/ionixjunior/Projects/iOS/BookTracking  9060735 [main]
-{%- endhighlight -%}
+```
 
 ## Conclusão
 

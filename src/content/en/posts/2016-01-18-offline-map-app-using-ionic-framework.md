@@ -26,7 +26,7 @@ After downloading, move the contents to the `www/lib` folder of the project, and
 
 In this project, the element rendering the map is the `map` directive, located in the `index.html` file. What we need to do is change the map creation engine to Leaflet instead of Google Maps. We'll start by modifying the directive in the `directives.js` file:
 
-{%- highlight js -%}
+```js
 link: function ($scope, $element, $attr) {
     function initialize() {
         var mapOptions = {
@@ -47,11 +47,11 @@ link: function ($scope, $element, $attr) {
         window.addEventListener('load', initialize);
     }
 }
-{%- endhighlight -%}
+```
 
 But that's not enough; in the `MapCtrl` controller, we also need to change the method that centers the map at a certain latitude and longitude. As we switched to the Leaflet engine, we won't use the Google Maps objects to interact with the map anymore. I modified the `controllers.js` file on the highlighted line:
 
-{%- highlight js -%}
+```js
 $scope.centerOnMe = function () {
     console.log("Centering");
     if (!$scope.map) {
@@ -71,7 +71,7 @@ $scope.centerOnMe = function () {
         alert('Unable to get location: ' + error.message);
     });
 };
-{%- endhighlight -%}
+```
 
 Finally, I removed the insertion of the Google Maps library from the `www/index.html` file. With this, we have the app working with the map using the Leaflet engine.
 
@@ -111,7 +111,7 @@ Now, the most awaited part of the tutorial. Let's add the `MapQuest` folder extr
 
 The next step is to go back to the `map` directive and change the tile layer not to load from the online reference, but from the offline reference. We'll also change the initial latitude and longitude for map loading, making adjustments to load according to the place where we downloaded the map:
 
-{%- highlight js -%}
+```js
 link: function ($scope, $element, $attr) {
     function initialize() {
         var mapOptions = {
@@ -132,7 +132,7 @@ link: function ($scope, $element, $attr) {
         window.addEventListener('load', initialize);
     }
 }
-{%- endhighlight -%}
+```
 
 Notice that we configured a relative URL in the tile layer's configuration to load the maps. This relative reference points to the `www` folder. As the `MapQuest` folder is already in `www`, we only need to reference the folder, and Leaflet will correctly load the images from the local address. Note that, as we modified the tile layer to load the maps locally, any other parts of the map that we try to consume will not be visible.
 

@@ -65,9 +65,9 @@ Depois de atribuído um issue e se familiarizar com as diretrizes do projeto, o 
 
 Comece criando um fork do projeto. Isso copiará o repositório base para sua conta do GitHub, e você trabalhará nele. Uma vez que você cria um fork do projeto, você pode cloná-lo em sua máquina. Mas lembre-se: você precisa clonar o repositório que fez fork. Não clone o repositório base porque você não terá permissão para fazer nada dessa maneira. Isso é uma boa prática em contribuições open-source.
 
-{%- highlight sh -%}
+```sh
 git clone <url-do-repositorio>
-{%- endhighlight -%}
+```
 
 Comece seguindo as instruções fornecidas na documentação do projeto ou arquivo README para configurar o ambiente de desenvolvimento. Isso pode envolver instalar dependências, configurar ferramentas de desenvolvimento e qualquer um dos passos para garantir que você configure corretamente seu ambiente.
 
@@ -97,35 +97,35 @@ Depois de implementar e testar sua solução, é hora de criar um PR para enviar
 
 Primeiro, adicione o link de upstream do repositório base se ainda não o fez.
 
-{%- highlight sh -%}
+```sh
 git remote add upstream <url-do-repositorio-base>
-{%- endhighlight -%}
+```
 
 Agora, obtenha as alterações.
 
-{%- highlight sh -%}
+```sh
 git fetch upstream main
-{%- endhighlight -%}
+```
 
 Depois disso, você precisa mesclar as alterações de upstream para o seu repositório. Mude para o branch principal e faça a mesclagem.
 
-{%- highlight sh -%}
+```sh
 git merge origin upstream/main
-{%- endhighlight -%}
+```
 
 Agora, o branch principal do seu repositório está totalmente atualizado com o repositório base. Mude para o branch em que está trabalhando e faça um rebase com o branch principal.
 
-{%- highlight javascript -%}
+```javascript
 git rebase main
-{%- endhighlight -%}
+```
 
 Agora você está preparado para fazer o PR. Normalmente, as etapas acima não são obrigatórias, mas são boas práticas. Se quiser entender mais sobre o `remote upstream` e o processo de `rebase`, pode dar uma olhada nos posts [Git Push][git_push_post] e [Git Rebase][git_rebase_post].
 
 Agora é hora de criar o PR! Para fazer isso, comece enviando o branch em que está trabalhando para seu repositório remoto.
 
-{%- highlight sh -%}
+```sh
 git push origin <nome-do-branch>
-{%- endhighlight -%}
+```
 
 Não vou descrever como criar o PR para o repositório base. Em vez disso, sugiro que você leia a documentação do GitHub explicando [como criar um PR de um fork][github_create_pr_from_fork]. É uma documentação incrível.
 
