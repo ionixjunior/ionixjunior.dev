@@ -5,7 +5,7 @@ type = "post"
 slug = "video-tutorials-for-developing-interfaces-with-xamarin-forms"
 aliases = ["/video-tutorials-for-developing-interfaces-with-xamarin-forms"]
 translationKey = "video-tutorials-for-developing-interfaces-with-xamarin-forms"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

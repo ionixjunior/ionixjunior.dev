@@ -5,8 +5,8 @@ type = "post"
 slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 aliases = ["/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"]
 translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
-categories = ["TODO"]
-tags = ["carreira"]
+categories = ["carreira"]
+tags = ["dicas", "mentoria"]
 image = "/img/cards/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.pt.webp"
 +++
 

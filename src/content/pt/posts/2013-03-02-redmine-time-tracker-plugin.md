@@ -5,8 +5,8 @@ type = "post"
 slug = "redmine-time-tracker-plugin"
 aliases = ["/redmine-time-tracker-plugin"]
 translationKey = "redmine-time-tracker-plugin"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["insights"]
+tags = ["open-source"]
 +++
 
 Nos primeiros testes que fiz com Redmine, percebi que a maneira que ele disponibiliza para fazer apontamento de horas é um pouco precária, e até onde vi, não existe um client estilo o Worklog, e principalmente, open source, para realizar essa tarefa de maneira sutil.

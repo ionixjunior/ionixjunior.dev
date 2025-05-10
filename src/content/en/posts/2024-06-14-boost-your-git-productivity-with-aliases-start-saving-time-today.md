@@ -4,7 +4,7 @@ date = 2024-06-14
 type = "post"
 slug = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 translationKey = "boost-your-git-productivity-with-aliases-start-saving-time-today"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.en.webp"
 +++

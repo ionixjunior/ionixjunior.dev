@@ -5,7 +5,7 @@ type = "post"
 slug = "git-pull-vs-fetch-unraveling-the-differences"
 aliases = ["/git-pull-vs-fetch-unraveling-the-differences"]
 translationKey = "git-pull-vs-fetch-unraveling-the-differences"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-pull-vs-fetch-unraveling-the-differences.pt.webp"
 +++

@@ -5,8 +5,8 @@ type = "post"
 slug = "swift-essentials-structs-classes-and-more-part-3"
 aliases = ["/swift-essentials-structs-classes-and-more-part-3"]
 translationKey = "swift-essentials-structs-classes-and-more-part-3"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift ui"]
 image = "/img/cards/swift-essentials-structs-classes-and-more-part-3.pt.webp"
 +++
 

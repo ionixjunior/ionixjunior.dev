@@ -4,7 +4,7 @@ date = 2024-05-10
 type = "post"
 slug = "git-blame-unveiling-the-codes-history"
 translationKey = "git-blame-unveiling-the-codes-history"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-blame-unveiling-the-codes-history.en.webp"
 +++

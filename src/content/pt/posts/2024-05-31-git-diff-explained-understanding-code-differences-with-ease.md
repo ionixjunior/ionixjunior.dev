@@ -5,7 +5,7 @@ type = "post"
 slug = "git-diff-explained-understanding-code-differences-with-ease"
 aliases = ["/git-diff-explained-understanding-code-differences-with-ease"]
 translationKey = "git-diff-explained-understanding-code-differences-with-ease"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-diff-explained-understanding-code-differences-with-ease.pt.webp"
 +++

@@ -5,8 +5,8 @@ type = "post"
 slug = "keeping-your-software-under-control"
 aliases = ["/keeping-your-software-under-control"]
 translationKey = "keeping-your-software-under-control"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["software engineering"]
+tags = ["palestras"]
 +++
 
 Na última quarta-feira, 15/10/2014, estive na Católica SC no evento GDG Semana Acadêmica BSI 2014, onde realizei uma palestra sobre ferramentas para qualidade de software.

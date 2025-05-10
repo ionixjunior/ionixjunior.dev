@@ -4,7 +4,7 @@ date = 2018-07-30
 type = "post"
 slug = "customizing-separatorinset-of-ios-uitableview-in-xamarin-forms"
 translationKey = "customizing-separatorinset-of-ios-uitableview-in-xamarin-forms"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin", "ios"]
 +++
 

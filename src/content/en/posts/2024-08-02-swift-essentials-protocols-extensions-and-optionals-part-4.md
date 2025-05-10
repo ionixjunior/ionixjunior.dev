@@ -4,8 +4,8 @@ date = 2024-08-02
 type = "post"
 slug = "swift-essentials-protocols-extensions-and-optionals-part-4"
 translationKey = "swift-essentials-protocols-extensions-and-optionals-part-4"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift ui"]
 image = "/img/cards/swift-essentials-protocols-extensions-and-optionals-part-4.en.webp"
 +++
 

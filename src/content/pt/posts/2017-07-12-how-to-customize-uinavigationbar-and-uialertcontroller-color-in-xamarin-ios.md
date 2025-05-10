@@ -5,7 +5,7 @@ type = "post"
 slug = "how-to-customize-uinavigationbar-and-uialertcontroller-color-in-xamarin-ios"
 aliases = ["/how-to-customize-uinavigationbar-and-uialertcontroller-color-in-xamarin-ios"]
 translationKey = "how-to-customize-uinavigationbar-and-uialertcontroller-color-in-xamarin-ios"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin", "ios"]
 +++
 

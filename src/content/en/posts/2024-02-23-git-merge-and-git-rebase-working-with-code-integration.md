@@ -4,7 +4,7 @@ date = 2024-02-23
 type = "post"
 slug = "git-merge-and-git-rebase-working-with-code-integration"
 translationKey = "git-merge-and-git-rebase-working-with-code-integration"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-merge-and-git-rebase-working-with-code-integration.en.webp"
 +++

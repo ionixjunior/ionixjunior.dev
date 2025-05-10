@@ -5,8 +5,8 @@ type = "post"
 slug = "swift-essentials-variables-data-types-and-more-part-1"
 aliases = ["/swift-essentials-variables-data-types-and-more-part-1"]
 translationKey = "swift-essentials-variables-data-types-and-more-part-1"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift ui"]
 image = "/img/cards/swift-essentials-variables-data-types-and-more-part-1.pt.webp"
 +++
 

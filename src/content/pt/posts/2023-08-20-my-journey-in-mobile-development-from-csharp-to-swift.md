@@ -5,7 +5,7 @@ type = "post"
 slug = "my-journey-in-mobile-development-from-csharp-to-swift"
 aliases = ["/my-journey-in-mobile-development-from-csharp-to-swift"]
 translationKey = "my-journey-in-mobile-development-from-csharp-to-swift"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin", "swift"]
 +++
 

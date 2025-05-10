@@ -4,7 +4,7 @@ date = 2024-04-12
 type = "post"
 slug = "git-tag-labeling-important-points-in-your-repository"
 translationKey = "git-tag-labeling-important-points-in-your-repository"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-tag-labeling-important-points-in-your-repository.en.webp"
 +++

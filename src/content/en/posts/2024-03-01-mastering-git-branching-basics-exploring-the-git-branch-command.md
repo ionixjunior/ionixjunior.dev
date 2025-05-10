@@ -4,7 +4,7 @@ date = 2024-03-01
 type = "post"
 slug = "mastering-git-branching-basics-exploring-the-git-branch-command"
 translationKey = "mastering-git-branching-basics-exploring-the-git-branch-command"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/mastering-git-branching-basics-exploring-the-git-branch-command.en.webp"
 +++

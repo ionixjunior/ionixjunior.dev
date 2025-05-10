@@ -5,8 +5,8 @@ type = "post"
 slug = "offline-map-app-using-ionic-framework"
 aliases = ["/offline-map-app-using-ionic-framework"]
 translationKey = "offline-map-app-using-ionic-framework"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["mobile"]
+tags = ["ionic"]
 +++
 
 Vamos lá, esse post foi inspirado em uma dúvida postada no Slack do Ionic Brazil. A pergunta foi mais ou menos assim: “Alguém já fez algo relacionado a mapas, como baixar o mapa pro celular do cara, sem precisar ficar carregando o mapa online?”

@@ -5,8 +5,8 @@ type = "post"
 slug = "swiftui-basics-project-structure-views-and-previews"
 aliases = ["/swiftui-basics-project-structure-views-and-previews"]
 translationKey = "swiftui-basics-project-structure-views-and-previews"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["iOS", "swift", "100 days of swift ui"]
 image = "/img/cards/swiftui-basics-project-structure-views-and-previews.pt.webp"
 +++
 

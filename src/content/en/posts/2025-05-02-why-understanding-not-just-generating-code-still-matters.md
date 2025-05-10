@@ -4,8 +4,8 @@ date = 2025-05-02
 type = "post"
 slug = "why-understanding-not-just-generating-code-still-matters"
 translationKey = "why-understanding-not-just-generating-code-still-matters"
-categories = ["TODO"]
-tags = ["career"]
+categories = ["career"]
+tags = ["tips", "mentorship", "AI"]
 image = "/img/cards/why-understanding-not-just-generating-code-still-matters.en.webp"
 +++
 

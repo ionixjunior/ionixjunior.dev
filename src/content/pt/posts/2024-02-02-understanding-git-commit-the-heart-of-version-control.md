@@ -5,7 +5,7 @@ type = "post"
 slug = "understanding-git-commit-the-heart-of-version-control"
 aliases = ["/understanding-git-commit-the-heart-of-version-control"]
 translationKey = "understanding-git-commit-the-heart-of-version-control"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/understanding-git-commit-the-heart-of-version-control.pt.webp"
 +++

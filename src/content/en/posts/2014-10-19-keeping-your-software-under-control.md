@@ -4,8 +4,8 @@ date = 2014-10-19
 type = "post"
 slug = "keeping-your-software-under-control"
 translationKey = "keeping-your-software-under-control"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["software engineering"]
+tags = ["talks"]
 +++
 
 Last Wednesday, October 15, 2014, I was at Católica SC for the GDG Academic Week BSI 2014 event, where I gave a presentation on software quality tools.

@@ -5,7 +5,7 @@ type = "post"
 slug = "git-basics-an-in-depth-look-at-essential-commands"
 aliases = ["/git-basics-an-in-depth-look-at-essential-commands"]
 translationKey = "git-basics-an-in-depth-look-at-essential-commands"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-basics-an-in-depth-look-at-essential-commands.pt.webp"
 +++

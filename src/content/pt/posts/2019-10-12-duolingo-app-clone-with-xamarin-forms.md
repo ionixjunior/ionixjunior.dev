@@ -5,7 +5,7 @@ type = "post"
 slug = "duolingo-app-clone-with-xamarin-forms"
 aliases = ["/duolingo-app-clone-with-xamarin-forms"]
 translationKey = "duolingo-app-clone-with-xamarin-forms"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

@@ -5,7 +5,7 @@ type = "post"
 slug = "boost-your-git-productivity-with-aliases-start-saving-time-today"
 aliases = ["/boost-your-git-productivity-with-aliases-start-saving-time-today"]
 translationKey = "boost-your-git-productivity-with-aliases-start-saving-time-today"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/boost-your-git-productivity-with-aliases-start-saving-time-today.pt.webp"
 +++

@@ -4,7 +4,7 @@ date = 2024-02-09
 type = "post"
 slug = "git-push-demystified-pushing-your-commits-with-confidence"
 translationKey = "git-push-demystified-pushing-your-commits-with-confidence"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-push-demystified-pushing-your-commits-with-confidence.en.webp"
 +++

@@ -5,7 +5,7 @@ type = "post"
 slug = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
 aliases = ["/configuring-sql-server-connection-with-odbc-driver-in-zend-framework"]
 translationKey = "configuring-sql-server-connection-with-odbc-driver-in-zend-framework"
-categories = ["TODO"]
+categories = ["web"]
 tags = ["zend"]
 +++
 

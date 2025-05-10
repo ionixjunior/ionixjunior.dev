@@ -5,7 +5,7 @@ type = "post"
 slug = "git-ignore-a-guide-to-ignoring-unwanted-files"
 aliases = ["/git-ignore-a-guide-to-ignoring-unwanted-files"]
 translationKey = "git-ignore-a-guide-to-ignoring-unwanted-files"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-ignore-a-guide-to-ignoring-unwanted-files.pt.webp"
 +++

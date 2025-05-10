@@ -5,7 +5,7 @@ type = "post"
 slug = "git-log-command-navigating-your-projects-history"
 aliases = ["/git-log-command-navigating-your-projects-history"]
 translationKey = "git-log-command-navigating-your-projects-history"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-log-command-navigating-your-projects-history.pt.webp"
 +++

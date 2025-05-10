@@ -4,7 +4,7 @@ date = 2024-07-26
 type = "post"
 slug = "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system"
 translationKey = "gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/gitifying-svn-how-i-brought-modern-version-control-to-an-ageold-system.en.webp"
 +++

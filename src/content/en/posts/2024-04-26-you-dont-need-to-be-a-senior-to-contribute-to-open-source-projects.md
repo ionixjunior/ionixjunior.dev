@@ -4,8 +4,8 @@ date = 2024-04-26
 type = "post"
 slug = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
 translationKey = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
-categories = ["TODO"]
-tags = ["git", "opensource"]
+categories = ["career"]
+tags = ["git", "open-source"]
 image = "/img/cards/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.en.webp"
 +++
 

@@ -4,7 +4,7 @@ date = 2024-03-08
 type = "post"
 slug = "git-branching-strategies-a-comprehensive-guide"
 translationKey = "git-branching-strategies-a-comprehensive-guide"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-branching-strategies-a-comprehensive-guide.en.webp"
 +++

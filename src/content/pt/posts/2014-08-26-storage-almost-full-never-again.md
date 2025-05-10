@@ -5,8 +5,8 @@ type = "post"
 slug = "storage-almost-full-never-again"
 aliases = ["/storage-almost-full-never-again"]
 translationKey = "storage-almost-full-never-again"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["insights"]
+tags = ["dicas"]
 +++
 
 Você compra um celular novinho em folha e vai enchendo de fotos, vídeos, aplicativos e depois de um tempo você vê aquela mensagem de que não tem mais espaço no dispositivo para armazenar informações. E agora, como faz?

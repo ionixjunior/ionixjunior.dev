@@ -5,8 +5,8 @@ type = "post"
 slug = "understanding-swiftlint-elevating-your-ios-code-quality-and-standards"
 aliases = ["/understanding-swiftlint-elevating-your-ios-code-quality-and-standards"]
 translationKey = "understanding-swiftlint-elevating-your-ios-code-quality-and-standards"
-categories = ["TODO"]
-tags = ["iOS"]
+categories = ["tools"]
+tags = ["swift", "linter"]
 image = "/img/cards/understanding-swiftlint-elevating-your-ios-code-quality-and-standards.pt.webp"
 +++
 

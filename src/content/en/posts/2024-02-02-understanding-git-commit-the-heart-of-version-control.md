@@ -4,7 +4,7 @@ date = 2024-02-02
 type = "post"
 slug = "understanding-git-commit-the-heart-of-version-control"
 translationKey = "understanding-git-commit-the-heart-of-version-control"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/understanding-git-commit-the-heart-of-version-control.en.webp"
 +++

@@ -5,7 +5,7 @@ type = "post"
 slug = "git-add-command-explained-a-step-by-step-tutorial"
 aliases = ["/git-add-command-explained-a-step-by-step-tutorial"]
 translationKey = "git-add-command-explained-a-step-by-step-tutorial"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-add-command-explained-a-step-by-step-tutorial.pt.webp"
 +++

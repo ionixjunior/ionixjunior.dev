@@ -5,7 +5,7 @@ type = "post"
 slug = "git-push-demystified-pushing-your-commits-with-confidence"
 aliases = ["/git-push-demystified-pushing-your-commits-with-confidence"]
 translationKey = "git-push-demystified-pushing-your-commits-with-confidence"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-push-demystified-pushing-your-commits-with-confidence.pt.webp"
 +++

@@ -5,8 +5,8 @@ type = "post"
 slug = "why-understanding-not-just-generating-code-still-matters"
 aliases = ["/why-understanding-not-just-generating-code-still-matters"]
 translationKey = "why-understanding-not-just-generating-code-still-matters"
-categories = ["TODO"]
-tags = ["carreira"]
+categories = ["carreira"]
+tags = ["dicas", "mentoria", "IA"]
 image = "/img/cards/why-understanding-not-just-generating-code-still-matters.pt.webp"
 +++
 

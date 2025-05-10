@@ -4,7 +4,7 @@ date = 2024-01-14
 type = "post"
 slug = "mastering-git-a-comprehensive-guide-to-git-commands"
 translationKey = "mastering-git-a-comprehensive-guide-to-git-commands"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/mastering-git-a-comprehensive-guide-to-git-commands.en.webp"
 +++

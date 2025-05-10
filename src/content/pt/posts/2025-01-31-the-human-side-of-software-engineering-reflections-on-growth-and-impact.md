@@ -5,8 +5,8 @@ type = "post"
 slug = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 aliases = ["/the-human-side-of-software-engineering-reflections-on-growth-and-impact"]
 translationKey = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
-categories = ["TODO"]
-tags = ["carreira"]
+categories = ["carreira"]
+tags = ["dicas", "mentoria"]
 image = "/img/cards/the-human-side-of-software-engineering-reflections-on-growth-and-impact.pt.webp"
 +++
 

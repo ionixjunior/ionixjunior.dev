@@ -5,7 +5,7 @@ type = "post"
 slug = "xamarin-available-for-free-to-developers"
 translationKey = "xamarin-available-for-free-to-developers"
 image = "/img/xamarin-disponivel-gratuitamente-para-desenvolvedores.png"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

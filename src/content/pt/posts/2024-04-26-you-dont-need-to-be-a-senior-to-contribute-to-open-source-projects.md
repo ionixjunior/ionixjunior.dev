@@ -5,8 +5,8 @@ type = "post"
 slug = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
 aliases = ["/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"]
 translationKey = "you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects"
-categories = ["TODO"]
-tags = ["git", "opensource"]
+categories = ["carreira"]
+tags = ["git", "open-source"]
 image = "/img/cards/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects.pt.webp"
 +++
 

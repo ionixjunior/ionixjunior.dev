@@ -5,7 +5,7 @@ type = "post"
 slug = "mastering-git-a-comprehensive-guide-to-git-commands"
 aliases = ["/mastering-git-a-comprehensive-guide-to-git-commands"]
 translationKey = "mastering-git-a-comprehensive-guide-to-git-commands"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/mastering-git-a-comprehensive-guide-to-git-commands.pt.webp"
 +++

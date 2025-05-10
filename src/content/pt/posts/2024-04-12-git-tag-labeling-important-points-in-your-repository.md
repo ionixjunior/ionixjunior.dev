@@ -5,7 +5,7 @@ type = "post"
 slug = "git-tag-labeling-important-points-in-your-repository"
 aliases = ["/git-tag-labeling-important-points-in-your-repository"]
 translationKey = "git-tag-labeling-important-points-in-your-repository"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-tag-labeling-important-points-in-your-repository.pt.webp"
 +++

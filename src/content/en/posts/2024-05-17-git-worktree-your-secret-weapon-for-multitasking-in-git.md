@@ -4,7 +4,7 @@ date = 2024-05-17
 type = "post"
 slug = "git-worktree-your-secret-weapon-for-multitasking-in-git"
 translationKey = "git-worktree-your-secret-weapon-for-multitasking-in-git"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-worktree-your-secret-weapon-for-multitasking-in-git.en.webp"
 +++

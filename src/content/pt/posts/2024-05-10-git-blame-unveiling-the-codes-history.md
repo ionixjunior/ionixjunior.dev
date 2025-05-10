@@ -5,7 +5,7 @@ type = "post"
 slug = "git-blame-unveiling-the-codes-history"
 aliases = ["/git-blame-unveiling-the-codes-history"]
 translationKey = "git-blame-unveiling-the-codes-history"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-blame-unveiling-the-codes-history.pt.webp"
 +++

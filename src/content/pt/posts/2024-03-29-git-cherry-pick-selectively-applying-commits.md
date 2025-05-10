@@ -5,7 +5,7 @@ type = "post"
 slug = "git-cherry-pick-selectively-applying-commits"
 aliases = ["/git-cherry-pick-selectively-applying-commits"]
 translationKey = "git-cherry-pick-selectively-applying-commits"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-cherry-pick-selectively-applying-commits.pt.webp"
 +++

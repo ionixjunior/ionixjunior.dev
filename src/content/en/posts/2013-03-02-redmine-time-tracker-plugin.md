@@ -4,8 +4,8 @@ date = 2013-03-02
 type = "post"
 slug = "redmine-time-tracker-plugin"
 translationKey = "redmine-time-tracker-plugin"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["insights"]
+tags = ["open-source"]
 +++
 
 In the initial tests I performed with Redmine, I noticed that the time tracking feature it provides is somewhat limited, and as far as I could see, there isn't a client similar to Worklog, especially an open-source one, for seamless time tracking.

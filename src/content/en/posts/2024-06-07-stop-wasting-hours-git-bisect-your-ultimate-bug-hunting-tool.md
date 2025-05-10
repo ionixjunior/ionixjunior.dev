@@ -4,7 +4,7 @@ date = 2024-06-07
 type = "post"
 slug = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
 translationKey = "stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/stop-wasting-hours-git-bisect-your-ultimate-bug-hunting-tool.en.webp"
 +++

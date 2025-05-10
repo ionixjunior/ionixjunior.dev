@@ -4,7 +4,7 @@ date = 2017-01-08
 type = "post"
 slug = "how-to-series"
 translationKey = "how-to-series"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

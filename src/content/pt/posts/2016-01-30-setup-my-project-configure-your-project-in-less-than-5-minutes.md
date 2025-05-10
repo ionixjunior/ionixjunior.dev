@@ -5,8 +5,8 @@ type = "post"
 slug = "setup-my-project-configure-your-project-in-less-than-5-minutes"
 aliases = ["/setup-my-project-configure-your-project-in-less-than-5-minutes"]
 translationKey = "setup-my-project-configure-your-project-in-less-than-5-minutes"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["insights"]
+tags = ["tips"]
 +++
 
 Essa dica é destinada a desenvolvedores Java e se chama SetupMyProject.

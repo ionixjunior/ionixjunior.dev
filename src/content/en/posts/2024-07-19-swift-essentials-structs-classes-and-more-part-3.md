@@ -4,8 +4,8 @@ date = 2024-07-19
 type = "post"
 slug = "swift-essentials-structs-classes-and-more-part-3"
 translationKey = "swift-essentials-structs-classes-and-more-part-3"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift ui"]
 image = "/img/cards/swift-essentials-structs-classes-and-more-part-3.en.webp"
 +++
 

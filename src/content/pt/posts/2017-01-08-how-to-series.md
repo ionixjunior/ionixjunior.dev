@@ -5,7 +5,7 @@ type = "post"
 slug = "how-to-series"
 aliases = ["/how-to-series"]
 translationKey = "how-to-series"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

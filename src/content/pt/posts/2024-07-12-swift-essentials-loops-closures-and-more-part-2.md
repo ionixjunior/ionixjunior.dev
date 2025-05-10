@@ -5,8 +5,8 @@ type = "post"
 slug = "swift-essentials-loops-closures-and-more-part-2"
 aliases = ["/swift-essentials-loops-closures-and-more-part-2"]
 translationKey = "swift-essentials-loops-closures-and-more-part-2"
-categories = ["TODO"]
-tags = ["100DaysOfSwiftUI"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift ui"]
 image = "/img/cards/swift-essentials-loops-closures-and-more-part-2.pt.webp"
 +++
 

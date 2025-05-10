@@ -4,7 +4,7 @@ date = 2024-03-15
 type = "post"
 slug = "git-log-command-navigating-your-projects-history"
 translationKey = "git-log-command-navigating-your-projects-history"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-log-command-navigating-your-projects-history.en.webp"
 +++

@@ -4,8 +4,8 @@ date = 2024-06-21
 type = "post"
 slug = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
 translationKey = "the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape"
-categories = ["TODO"]
-tags = ["career"]
+categories = ["career"]
+tags = ["tips", "mentorship"]
 image = "/img/cards/the-power-of-patience-and-persistence-how-to-thrive-in-the-everevolving-tech-landscape.en.webp"
 +++
 

@@ -5,7 +5,7 @@ type = "post"
 slug = "xamarin-forms-preventing-double-click"
 aliases = ["/xamarin-forms-preventing-double-click"]
 translationKey = "xamarin-forms-preventing-double-click"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

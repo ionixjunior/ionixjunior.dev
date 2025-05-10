@@ -4,7 +4,7 @@ date = 2024-01-26
 type = "post"
 slug = "git-add-command-explained-a-step-by-step-tutorial"
 translationKey = "git-add-command-explained-a-step-by-step-tutorial"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-add-command-explained-a-step-by-step-tutorial.en.webp"
 +++

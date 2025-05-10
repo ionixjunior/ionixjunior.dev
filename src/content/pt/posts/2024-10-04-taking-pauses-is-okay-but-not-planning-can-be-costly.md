@@ -5,8 +5,8 @@ type = "post"
 slug = "taking-pauses-is-okay-but-not-planning-can-be-costly"
 aliases = ["/taking-pauses-is-okay-but-not-planning-can-be-costly"]
 translationKey = "taking-pauses-is-okay-but-not-planning-can-be-costly"
-categories = ["TODO"]
-tags = ["carreira"]
+categories = ["carreira"]
+tags = ["dicas", "mentoria"]
 image = "/img/cards/taking-pauses-is-okay-but-not-planning-can-be-costly.pt.webp"
 +++
 

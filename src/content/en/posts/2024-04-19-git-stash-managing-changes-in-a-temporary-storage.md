@@ -4,7 +4,7 @@ date = 2024-04-19
 type = "post"
 slug = "git-stash-managing-changes-in-a-temporary-storage"
 translationKey = "git-stash-managing-changes-in-a-temporary-storage"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-stash-managing-changes-in-a-temporary-storage.en.webp"
 +++

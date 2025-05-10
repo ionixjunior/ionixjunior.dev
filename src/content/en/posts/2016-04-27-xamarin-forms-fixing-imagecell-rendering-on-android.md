@@ -5,7 +5,7 @@ type = "post"
 slug = "xamarin-forms-fixing-imagecell-rendering-on-android"
 translationKey = "xamarin-forms-fixing-imagecell-rendering-on-android"
 image = "/img/imagecell-ios-and-android.png"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin", "android"]
 +++
 

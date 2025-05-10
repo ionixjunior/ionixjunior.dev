@@ -4,8 +4,8 @@ date = 2014-08-26
 type = "post"
 slug = "storage-almost-full-never-again"
 translationKey = "storage-almost-full-never-again"
-categories = ["TODO"]
-tags = ["misc"]
+categories = ["insights"]
+tags = ["tips"]
 +++
 
 You buy a brand new smartphone and start filling it with photos, videos, and apps. After some time, you see that dreaded message saying there's no more space on your device to store information. Now, what do you do?

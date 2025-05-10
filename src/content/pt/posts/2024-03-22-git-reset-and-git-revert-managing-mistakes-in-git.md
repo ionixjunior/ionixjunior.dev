@@ -5,7 +5,7 @@ type = "post"
 slug = "git-reset-and-git-revert-managing-mistakes-in-git"
 aliases = ["/git-reset-and-git-revert-managing-mistakes-in-git"]
 translationKey = "git-reset-and-git-revert-managing-mistakes-in-git"
-categories = ["TODO"]
+categories = ["tools"]
 tags = ["git"]
 image = "/img/cards/git-reset-and-git-revert-managing-mistakes-in-git.pt.webp"
 +++

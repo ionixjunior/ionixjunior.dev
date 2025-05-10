@@ -4,8 +4,8 @@ date = 2023-12-03
 type = "post"
 slug = "book-tracking-app-clone-using-view-code-in-swift"
 translationKey = "book-tracking-app-clone-using-view-code-in-swift"
-categories = ["TODO"]
-tags = ["swift", "view-code"]
+categories = ["mobile"]
+tags = ["iOS", "swift", "view-code"]
 image = "/img/cards/book-tracking-app-clone-using-view-code-in-swift.en.webp"
 +++
 

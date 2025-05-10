@@ -5,7 +5,7 @@ type = "post"
 slug = "hotreload-a-free-tool-for-xaml-ui-development"
 aliases = ["/hotreload-a-free-tool-for-xaml-ui-development"]
 translationKey = "hotreload-a-free-tool-for-xaml-ui-development"
-categories = ["TODO"]
+categories = ["mobile"]
 tags = ["xamarin"]
 +++
 

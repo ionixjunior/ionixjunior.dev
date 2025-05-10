@@ -5,8 +5,8 @@ type = "post"
 slug = "my-100-days-of-swift-cool-projects-and-what-i-learned"
 aliases = ["/my-100-days-of-swift-cool-projects-and-what-i-learned"]
 translationKey = "my-100-days-of-swift-cool-projects-and-what-i-learned"
-categories = ["TODO"]
-tags = ["swift"]
+categories = ["mobile"]
+tags = ["swift", "100 days of swift"]
 image = "/img/cards/my-100-days-of-swift-cool-projects-and-what-i-learned.pt.webp"
 +++
 

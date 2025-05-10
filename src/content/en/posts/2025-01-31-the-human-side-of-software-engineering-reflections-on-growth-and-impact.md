@@ -4,8 +4,8 @@ date = 2025-01-31
 type = "post"
 slug = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
 translationKey = "the-human-side-of-software-engineering-reflections-on-growth-and-impact"
-categories = ["TODO"]
-tags = ["career"]
+categories = ["career"]
+tags = ["tips", "mentorship"]
 image = "/img/cards/the-human-side-of-software-engineering-reflections-on-growth-and-impact.en.webp"
 +++
 
