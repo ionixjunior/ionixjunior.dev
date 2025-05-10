@@ -32,6 +32,9 @@ jobs:
 
       - name: Build with Hugo
         run: hugo --source src --minify
+      
+      - name: Prepare root 404 page
+        run: cp src/public/en/404.html src/public/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
