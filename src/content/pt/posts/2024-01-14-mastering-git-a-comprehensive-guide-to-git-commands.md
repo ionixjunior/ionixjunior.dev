@@ -41,8 +41,8 @@ Incentivo você a interagir comigo e com outras pessoas desenvolvedoras na seç�
 Embarque comigo na jornada para dominar o Git – juntos, aprimoraremos nossas habilidades, comando por comando!
 
 [twitter]: https://twitter.com/ionixjunior
-[post_1]:  /git-basics-an-in-depth-look-at-essential-commands/
-[post_2]:  /git-add-command-explained-a-step-by-step-tutorial/
-[post_3]:  /understanding-git-commit-the-heart-of-version-control/
-[post_4]:  /git-push-demystified-pushing-your-commits-with-confidence/
-[post_5]:  /git-pull-vs-fetch-unraveling-the-differences/
+[post_1]:  /pt/git-basics-an-in-depth-look-at-essential-commands/
+[post_2]:  /pt/git-add-command-explained-a-step-by-step-tutorial/
+[post_3]:  /pt/understanding-git-commit-the-heart-of-version-control/
+[post_4]:  /pt/git-push-demystified-pushing-your-commits-with-confidence/
+[post_5]:  /pt/git-pull-vs-fetch-unraveling-the-differences/

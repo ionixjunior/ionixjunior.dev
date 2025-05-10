@@ -95,5 +95,5 @@ Seja gentil com seus colegas e tente explicar o código que você está desenvol
 
 Vejo você no próximo post. Até mais!
 
-[git_basics_post]: /git-basics-an-in-depth-look-at-essential-commands/#git-commit
+[git_basics_post]: /pt/git-basics-an-in-depth-look-at-essential-commands/#git-commit
 [git_commit_post]:  https://cbea.ms/git-commit/

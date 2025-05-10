@@ -177,8 +177,8 @@ Don't be afraid to make mistakes, learn from them, and keep moving forward. Reme
 [ps_autolayout]:     https://app.pluralsight.com/library/courses/ios-auto-layout-fundamentals/table-of-contents
 [study_guide_ios]:   https://medium.com/@ronanrodrigo/follow-this-path-a-study-guide-for-software-development-with-swift-180ba093a752
 [roadmap_sh]:        https://roadmap.sh
-[csharp_to_swift]:   /{{ site.lang }}/my-journey-in-mobile-development-from-csharp-to-swift/
+[csharp_to_swift]:   /en/my-journey-in-mobile-development-from-csharp-to-swift/
 [hawkingwithswift]:  https://www.hackingwithswift.com
 [sean_allen]:        https://www.youtube.com/@seanallen
 [code_with_chris]:   https://www.youtube.com/@CodeWithChris
-[open_source_post]:  /{{ site.lang }}/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects/
+[open_source_post]:  /en/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects/

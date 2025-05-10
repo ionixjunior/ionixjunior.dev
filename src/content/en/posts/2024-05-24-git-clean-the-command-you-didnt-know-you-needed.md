@@ -46,4 +46,4 @@ While simple, `git clean` is incredibly useful.  Many times, we manually delete 
 
 See you in the next post!
 
-[git_basics_post]: /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/
+[git_basics_post]: /en/git-basics-an-in-depth-look-at-essential-commands/

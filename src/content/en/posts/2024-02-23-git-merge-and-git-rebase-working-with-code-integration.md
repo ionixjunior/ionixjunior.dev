@@ -206,4 +206,4 @@ Working with code integration in Git requires a nuanced understanding of the `gi
 Stay tuned for more insights into mastering Git and unlocking the full potential of version control. Happy coding!
 
 [book_tracking_repository]: https://github.com/ionixjunior/BookTracking
-[last_post]:                /{{ site.lang }}/git-push-demystified-pushing-your-commits-with-confidence/#force-pushing
+[last_post]:                /en/git-push-demystified-pushing-your-commits-with-confidence/#force-pushing

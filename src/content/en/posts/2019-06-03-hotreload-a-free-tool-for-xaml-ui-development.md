@@ -57,7 +57,7 @@ Below is the comparative table of UI tools (now including **HotReload**):
 
 That's all for today, folks. Thanks, and have a great day!
 
-[post-primeiro-comparativo]: /{{ site.lang }}/xamarin-forms-and-ui-which-tool-is-more-productive
+[post-primeiro-comparativo]: /en/xamarin-forms-and-ui-which-tool-is-more-productive
 [hot-reload]:                https://github.com/AndreiMisiukevich/HotReload
 [akamud]:                    https://github.com/akamud
 [review-akamud]:             http://high5devs.com/2019/04/hotreload-desenvolvendo-telas-mais-rapido-para-xamarin-forms-de-maneira-gratuita/

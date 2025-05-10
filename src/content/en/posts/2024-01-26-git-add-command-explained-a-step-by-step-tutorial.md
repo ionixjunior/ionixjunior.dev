@@ -504,5 +504,5 @@ That's it! Do you use this command? Did you already know these possibilities or 
 
 See you soon!
 
-[git_add_last_post]: /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/#git-add
+[git_add_last_post]: /en/git-basics-an-in-depth-look-at-essential-commands/#git-add
 [book_tracking_repo]: https://github.com/ionixjunior/BookTracking

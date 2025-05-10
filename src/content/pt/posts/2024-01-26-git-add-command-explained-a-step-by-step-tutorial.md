@@ -507,5 +507,5 @@ Ao embarcar em sua jornada com o Git, deixe a área de preparação ser sua alia
 
 Até breve!
 
-[git_add_last_post]: /git-basics-an-in-depth-look-at-essential-commands/#git-add
+[git_add_last_post]: /pt/git-basics-an-in-depth-look-at-essential-commands/#git-add
 [book_tracking_repo]: https://github.com/ionixjunior/BookTracking

@@ -108,6 +108,6 @@ And you? What's your throughts? Which of these flows have you used? Tell me in t
 [book_tracking_repository]:   https://github.com/ionixjunior/BookTracking
 [vincent_driessen_twitter]:   https://twitter.com/nvie
 [git_flow_post]:              https://nvie.com/posts/a-successful-git-branching-model/
-[last_post]:                  /{{ site.lang }}/mastering-git-branching-basics-exploring-the-git-branch-command
+[last_post]:                  /en/mastering-git-branching-basics-exploring-the-git-branch-command
 [gitlab_flow_post]:           https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/
 [gitlab_flow_best_practices]: https://about.gitlab.com/topics/version-control/what-are-gitlab-flow-best-practices/

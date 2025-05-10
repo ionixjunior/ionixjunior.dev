@@ -142,12 +142,12 @@ Então, o que você está esperando? Não tenha medo. Deixe de lado os receios, 
 
 Até o próximo post!
 
-[carreira_transicao_post]:    /my-journey-in-mobile-development-from-csharp-to-swift/
+[carreira_transicao_post]:    /pt/my-journey-in-mobile-development-from-csharp-to-swift/
 [firefox_ios]:                https://github.com/mozilla-mobile/firefox-ios
 [problema]:                   https://github.com/mozilla-mobile/firefox-ios/issues/19645
 [up_for_grabs]:               https://up-for-grabs.net/#/
-[git_push_post]:              /git-push-demystified-pushing-your-commits-with-confidence/
-[git_rebase_post]:            /git-merge-and-git-rebase-working-with-code-integration/
+[git_push_post]:              /pt/git-push-demystified-pushing-your-commits-with-confidence/
+[git_rebase_post]:            /pt/git-merge-and-git-rebase-working-with-code-integration/
 [github_create_pr_from_fork]: https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 [pr]:                         https://github.com/mozilla-mobile/firefox-ios/pull/19765
 [bitwarden_issue]:            https://github.com/bitwarden/mobile/issues/1824#issuecomment-1287978943

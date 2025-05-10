@@ -40,8 +40,8 @@ I encourage you to engage with me and fellow developers in the comments section.
 Embark with me on the journey to Git mastery – together, we'll enhance our skills, one command at a time!
 
 [twitter]: https://twitter.com/ionixjunior
-[post_1]:  /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/
-[post_2]:  /{{ site.lang }}/git-add-command-explained-a-step-by-step-tutorial/
-[post_3]:  /{{ site.lang }}/understanding-git-commit-the-heart-of-version-control/
-[post_4]:  /{{ site.lang }}/git-push-demystified-pushing-your-commits-with-confidence/
-[post_5]:  /{{ site.lang }}/git-pull-vs-fetch-unraveling-the-differences/
+[post_1]:  /en/git-basics-an-in-depth-look-at-essential-commands/
+[post_2]:  /en/git-add-command-explained-a-step-by-step-tutorial/
+[post_3]:  /en/understanding-git-commit-the-heart-of-version-control/
+[post_4]:  /en/git-push-demystified-pushing-your-commits-with-confidence/
+[post_5]:  /en/git-pull-vs-fetch-unraveling-the-differences/

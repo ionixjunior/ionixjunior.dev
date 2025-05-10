@@ -94,5 +94,5 @@ Be kind to your colleagues and try to explain the code you are developing in you
 
 See you in the next post. Bye!
 
-[git_basics_post]: /{{ site.lang }}/git-basics-an-in-depth-look-at-essential-commands/#git-commit
+[git_basics_post]: /en/git-basics-an-in-depth-look-at-essential-commands/#git-commit
 [git_commit_post]:  https://cbea.ms/git-commit/

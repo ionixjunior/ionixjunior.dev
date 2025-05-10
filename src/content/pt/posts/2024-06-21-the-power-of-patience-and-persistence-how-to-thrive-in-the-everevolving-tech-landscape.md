@@ -178,8 +178,8 @@ Não tenha medo de cometer erros, aprenda com eles e continue em frente. Lembre-
 [ps_autolayout]:     https://app.pluralsight.com/library/courses/ios-auto-layout-fundamentals/table-of-contents
 [study_guide_ios]:   https://medium.com/@ronanrodrigo/siga-por-este-caminho-um-guia-de-estudos-sobre-desenvolvimento-de-software-db857c4f04f9
 [roadmap_sh]:        https://roadmap.sh
-[csharp_to_swift]:   /my-journey-in-mobile-development-from-csharp-to-swift/
+[csharp_to_swift]:   /pt/my-journey-in-mobile-development-from-csharp-to-swift/
 [hawkingwithswift]:  https://www.hackingwithswift.com
 [sean_allen]:        https://www.youtube.com/@seanallen
 [code_with_chris]:   https://www.youtube.com/@CodeWithChris
-[open_source_post]:  /you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects/
+[open_source_post]:  /pt/you-dont-need-to-be-a-senior-to-contribute-to-open-source-projects/

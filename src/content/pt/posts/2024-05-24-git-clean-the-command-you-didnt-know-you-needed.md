@@ -47,4 +47,4 @@ Embora simples, `git clean` é incrivelmente útil. Muitas vezes, excluímos arq
 
 Até o próximo post!
 
-[git_basics_post]: /git-basics-an-in-depth-look-at-essential-commands/
+[git_basics_post]: /pt/git-basics-an-in-depth-look-at-essential-commands/

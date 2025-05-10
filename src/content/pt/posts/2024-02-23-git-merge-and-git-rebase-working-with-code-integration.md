@@ -207,4 +207,4 @@ Trabalhar com integração de código no Git requer uma compreensão sutil dos c
 Fique atento para mais insights sobre dominar o Git e desbloquear todo o potencial do controle de versão. Até mais!
 
 [book_tracking_repository]: https://github.com/ionixjunior/BookTracking
-[last_post]:                /git-push-demystified-pushing-your-commits-with-confidence/#force-pushing
+[last_post]:                /pt/git-push-demystified-pushing-your-commits-with-confidence/#force-pushing

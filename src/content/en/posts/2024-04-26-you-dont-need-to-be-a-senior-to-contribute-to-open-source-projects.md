@@ -141,12 +141,12 @@ So, what are you waiting for? Don't be afraid. Let go of fear, shame, and the im
 
 Happy coding!
 
-[career_transition_post]:     /{{ site.lang }}/my-journey-in-mobile-development-from-csharp-to-swift/
+[career_transition_post]:     /en/my-journey-in-mobile-development-from-csharp-to-swift/
 [firefox_ios]:                https://github.com/mozilla-mobile/firefox-ios
 [issue]:                      https://github.com/mozilla-mobile/firefox-ios/issues/19645
 [up_for_grabs]:               https://up-for-grabs.net/#/
-[git_push_post]:              /{{ site.lang }}/git-push-demystified-pushing-your-commits-with-confidence/
-[git_rebase_post]:            /{{ site.lang }}/git-merge-and-git-rebase-working-with-code-integration/
+[git_push_post]:              /en/git-push-demystified-pushing-your-commits-with-confidence/
+[git_rebase_post]:            /en/git-merge-and-git-rebase-working-with-code-integration/
 [github_create_pr_from_fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 [pr]:                         https://github.com/mozilla-mobile/firefox-ios/pull/19765
 [bitwarden_issue]:            https://github.com/bitwarden/mobile/issues/1824#issuecomment-1287978943
