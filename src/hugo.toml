@@ -5,10 +5,10 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
 [params]
-  role = "Mobile Engineer"
+  role = "Staff Software Engineer"
   postsPerPage = 5
   google_analytics = "G-G7JHVXT0LV"
-  description = "Ione Souza Junior - Mobile Engineer"
+  description = "Ione Souza Junior - Staff Software Engineer"
 
 [params.social]
   twitter = "ionixjunior"
