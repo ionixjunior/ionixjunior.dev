@@ -5,6 +5,10 @@
 {{ if .IsHome }}
   <meta name="description" content="{{ .Site.Params.description }}">
 {{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if .Data.Singular }}
+<meta name="robots" content="noindex, follow">
+{{ end }}
 <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ .Permalink }}" />
