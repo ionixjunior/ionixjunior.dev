@@ -1,7 +1,7 @@
 <!-- Header partial: site header/navigation for Hugo -->
 <header class="site-header header{{ if eq .Site.Params.header "large" }} header--large{{ end }}">
   <div class="container">
-    <h1 class="logo"><a href="/">{{ .Site.Title }}</a></h1>
+    <h1 class="logo"><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
     {{ if eq .Site.Language.Lang "en" }}
       <a href="/pt/" class="lang-button" aria-label="Change language">
         <span aria-hidden="true">🇧🇷</span>
@@ -11,7 +11,7 @@
         <span aria-hidden="true">🇺🇸</span>
       </a>
     {{ end }}
-    <h2 class="logo"><a href="/">{{ .Site.Params.role }}</a></h2>
+    <h2 class="logo"><a href="{{ "/" | relLangURL }}">{{ .Site.Params.role }}</a></h2>
     <nav class="nav-collapse">
       <ul class="noList">
         {{ range $i, $link := .Site.Menus.main }}
