@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ .Permalink }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // If this is the root page redirecting to /en/, show language selector instead
+    if (window.location.pathname === '/' && '{{ .Permalink }}'.includes('/en/')) {
+      // Load the language selector page content
+      fetch('/language-selector/')
+        .then(r => r.text())
+        .then(html => {
+          document.open();
+          document.write(html);
+          document.close();
+        });
+    } else {
+      // Normal redirect
+      window.location.replace('{{ .Permalink }}');
+    }
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+  </noscript>
+</head>
+<body>
+  <noscript>
+    <p>Redirecting to <a href="{{ .Permalink }}">{{ .Permalink }}</a></p>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+    {{ if not hugo.IsServer }}
+      {{ partial "google_analytics.html" . }}
+    {{ end }}
+    <style>
+      .language-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .language-selector .prompt {
+        opacity: 0.6;
+      }
+      .language-buttons {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      .language-buttons .flag {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header header">
+      <div class="container">
+        <h1 class="logo"><a href="/">{{ .Site.Title }}</a></h1>
+        <h2 class="logo"><a href="/">{{ .Site.Params.role }}</a></h2>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container">
+        <div id="home">
+          <div class="language-selector">
+            <h1 class="pageTitle">Home</h1>
+            <p class="prompt">Choose your language / Escolha seu idioma</p>
+            <div class="language-buttons">
+              <a href="/en/" class="button__outline">
+                <span class="flag">🇺🇸</span>
+                English
+              </a>
+              <a href="/pt/" class="button__outline">
+                <span class="flag">🇧🇷</span>
+                Português
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
