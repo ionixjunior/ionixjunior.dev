@@ -12,7 +12,7 @@ This project uses [Apple's native container technology](https://github.com/apple
 
 - macOS 26 (Tahoe) or later
 - Apple Silicon Mac
-- Apple Container CLI: `brew install container`
+- Apple Container CLI
 
 ### Running the Development Server
 
