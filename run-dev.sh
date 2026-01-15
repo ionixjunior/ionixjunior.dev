@@ -15,4 +15,4 @@ container run \
   --publish 1313:1313 \
   --volume "$SCRIPT_DIR/src:/src" \
   "$IMAGE" \
-  server --bind 0.0.0.0 --baseURL=http://localhost:1313
+  server --bind 0.0.0.0 --baseURL=http://localhost:1313 --poll 700ms
