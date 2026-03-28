@@ -9,7 +9,7 @@ tags = ["dicas"]
 image = "/img/cards/falls-make-us-grow.pt.webp"
 +++
 
-Às vezes, o caminho da carreira parece menos uma trajetória reta (ou subida constante) e mais uma montanha-russa: emocionante, imprevisível e cheia de altos e baixos. Você já se sentiu preso nos momentos baixos, duvidando se está realmente progredindo?
+Às vezes, o caminho da carreira parece menos uma subida constante e mais uma montanha‑russa: emocionante, imprevisível e cheia de altos e baixos. Você já se sentiu preso nos momentos baixos, se perguntando se está mesmo progredindo?
 
 Bem, essa é a minha forma de enxergar a progressão na carreira: há altos e baixos. É difícil pensar sobre isso, porque como podemos imaginar a necessidade de cair antes de voltar a subir?
 
