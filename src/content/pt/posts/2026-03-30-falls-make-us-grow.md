@@ -19,9 +19,9 @@ Quando eu caio, preciso de um momento comigo mesmo para refletir. Pode levar dia
 
 Se você é alguém que tem facilidade para refletir, entende o quão importante é essa fase. Pode não ser fácil entender por que você falhou, mas quando você enxerga o quadro geral, consegue encontrar outro caminho a seguir e começar a crescer de novo.
 
-Depois de começar a crescer de novo, você pode sentir que ainda não sabe o suficiente. A maioria das pessoas sente a síndrome do impostor nesse caso, e não é tão bom sentir isso o tempo todo. Quando foi a última vez que você perguntou a si mesmo: esse sentimento é sobre minhas habilidades ou sobre minhas expectativas?
+Depois de começar a crescer novamente, você pode sentir que ainda não sabe o suficiente. A maioria das pessoas sente a síndrome do impostor nesse caso, e não é tão bom sentir isso o tempo todo. Quando foi a última vez que você perguntou a si mesmo: esse sentimento é sobre minhas habilidades ou sobre minhas expectativas?
 
-Mas o tempo passa e as coisas vão melhorando. Depois de adquirir mais conhecimento, você esquece os momentos mais difíceis e aproveita as novas conquistas, até começar a agir com excesso de confiança, o famoso efeito Dunning‑Kruger.
+Mas o tempo passa e as coisas vão melhorando. Depois de adquirir mais conhecimento, você esquece os momentos difíceis e aproveita as novas conquistas, até começar a agir com excesso de confiança, o famoso efeito Dunning‑Kruger.
 
 Não é incomum achar que já sabe muito porque trabalhou duro. Você se sente empoderado, animado e cheio de entusiasmo. Mesmo que não conheça algo muito bem, você tenta. Parece que nada pode te parar.
 
