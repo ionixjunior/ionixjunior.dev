@@ -1,6 +1,6 @@
 +++
 title = "Reconstruindo o Rider dentro do VS Code"
-date = 2026-08-14
+date = 2026-08-05
 type = "post"
 slug = "rebuilding-rider-inside-vs-code"
 translationKey = "rebuilding-rider-inside-vs-code"
