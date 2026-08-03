@@ -1,6 +1,6 @@
 +++
 title = "Eu estava errado sobre o VS Code"
-date = 2026-08-07
+date = 2026-08-03
 type = "post"
 slug = "i-was-wrong-about-vs-code"
 translationKey = "i-was-wrong-about-vs-code"
