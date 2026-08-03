@@ -1,6 +1,6 @@
 +++
 title = "A extensão que eu criei, e a IDE que deixei de precisar"
-date = 2026-08-21
+date = 2026-08-07
 type = "post"
 slug = "the-extension-i-built-and-the-ide-i-stopped-needing"
 translationKey = "the-extension-i-built-and-the-ide-i-stopped-needing"
